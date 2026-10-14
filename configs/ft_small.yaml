@@ -1,0 +1,8 @@
+# Plain full fine-tuning (alpha = beta = 0) of Whisper small on ASCEND train + NSC train
+run: ft_small
+model: small
+lr: 1.25e-5
+epochs: 3
+batch: 32
+warmup: 500
+eval_every: 1000

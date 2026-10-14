@@ -1,0 +1,18 @@
+1238 speaker channels in 622 sessions
+train: 35653 utts, 40.0 h, mixed 62.4%, speakers 412
+val: 3367 utts, 3.0 h, mixed 25.4%, speakers 60
+test: 8876 utts, 8.0 h, mixed 28.5%, speakers 120
+diff_test: 4086 utts, 4.0 h, mixed 29.1%, speakers 626
+room  drop_reason    
+diff                     207969
+      duration             7259
+      empty               31904
+      partner_overlap    108855
+      speaker_seen         1097
+      unk                   951
+same                     211499
+      duration             4182
+      empty               21518
+      partner_overlap     91380
+      unk                   995
+PREP_DONE
