@@ -25,6 +25,16 @@ def _ggml_job(args):
     return X.ggml_transcribe(rows, b, threads)
 
 
+def subset(rows, name, spec):
+    n = dict(x.split(":") for x in spec.split(",")).get(name, "0")
+    n = int(n)
+    if not n or n >= len(rows):
+        return rows
+    import random
+    keep = set(random.Random(425).sample(range(len(rows)), n))
+    return [r for i, r in enumerate(rows) if i in keep]
+
+
 def run(fmt, rows, target, workers, threads):
     parts = [rows[i::workers] for i in range(workers)]
     fn = _ct2_job if fmt == "ct2_int8" else _ggml_job
@@ -46,6 +56,8 @@ def main():
     ap.add_argument("--sets", nargs="+", default=manifest.EVAL_TEST)
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--threads", type=int, default=4)
+    ap.add_argument("--subset", default="ascend_test:0,nsc_test:4000,nsc_diff_test:2000",
+                    help="set:n (0 = all) seeded random subset per set; R compares the same utterances")
     a = ap.parse_args()
     exp = manifest.path(f"ckpt/export/{a.tag}_{a.method}")
     targets = {}
@@ -65,7 +77,7 @@ def main():
         meta["file_mb"] = round(size / 2**20, 1)
         with open(manifest.path(f"preds/{name}.jsonl"), "w", encoding="utf-8") as f:
             for s in a.sets:
-                rows = manifest.load(s)
+                rows = subset(manifest.load(s), s, a.subset)
                 res, cpu_s = run(fmt, rows, tgt, a.workers, a.threads)
                 meta["cpu_seconds"][s] = round(cpu_s, 1)
                 for r, (hyp, lang) in zip(rows, res):

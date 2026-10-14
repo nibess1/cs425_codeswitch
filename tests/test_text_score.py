@@ -123,3 +123,12 @@ def test_normalize_idempotent_and_target_consistent():
         n = normalize(x)
         assert normalize(n) == n
         assert label(training_target(x)).units == label(x).units
+
+
+def test_flag_precision_recall():
+    from csasr.score.flags import flag_pr
+    rows = [dict(ref="deadline 是 十号", hyp="deadline 是 11号", flags=["11 号"]),   # TP, recalled
+            dict(ref="deadline 是 十号", hyp="deadline 是 10号", flags=["10 号"]),   # FP
+            dict(ref="我 要 panadol", hyp="我 要 panado", flags=[])]               # missed critical error
+    m = flag_pr(rows)
+    assert (m["tp"], m["fp"], m["ref_err"], m["ref_err_flagged"]) == (1, 1, 2, 1)

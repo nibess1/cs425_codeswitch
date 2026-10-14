@@ -62,3 +62,34 @@ polyclinic
 预约
 诊所
 医院
+# Added with the stress set (stress/sentences.tsv)
+阿司匹林
+咳嗽药
+押金
+定金
+收据
+发票
+身份证
+护照
+学费
+房租
+工资
+贷款
+保险
+期末考
+小考
+面试
+复诊
+手术
+血压
+体温
+发烧
+药房
+metformin
+prednisolone
+amoxicillin
+ibuprofen
+blood pressure
+temperature
+pin
+mrt

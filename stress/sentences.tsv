@@ -1,0 +1,121 @@
+id	main	text
+zh001	zh	医生说我要吃 Panadol 两粒，一天三次
+zh002	zh	你的 assignment 星期五晚上十二点前要交
+zh003	zh	这个 project 的 deadline 是十月二十号
+zh004	zh	我刚刚转了 fifty dollars 给你，你 check 一下
+zh005	zh	药房说 amoxicillin 要吃满七天才可以停
+zh006	zh	明天早上九点有 midterm，你不要迟到
+zh007	zh	我的 password 改了，新的有十二个字
+zh008	zh	这个月的 rent 是一千八百块
+zh009	zh	老师说 presentation 每组只有十五分钟
+zh010	zh	你记得带 insulin 去，放在冰箱第二层
+zh011	zh	我们约了 polyclinic 下午三点半
+zh012	zh	那个 invoice 写错了，应该是三百二十块
+zh013	zh	他说 database 昨晚又 crash 了
+zh014	zh	快递说 parcel 星期三会到
+zh015	zh	我已经 email 给教授了，但是他还没回
+zh016	zh	这个 module 的 quiz 占百分之二十
+zh017	zh	护士说 vaccine 打完要等十五分钟
+zh018	zh	我的 salary 每个月二十五号进账
+zh019	zh	你把 receipt 拍照 send 给我
+zh020	zh	医生开了 ibuprofen，饭后才可以吃
+zh021	zh	明天的 lecture 改到 Zoom 上
+zh022	zh	这个 server 每天凌晨两点会 restart
+zh023	zh	我们的 tutorial 在十一月五号
+zh024	zh	你要先付 deposit 五百块
+zh025	zh	那个 report 要写三千个字
+zh026	zh	他吃了 antibiotics 还是没好
+zh027	zh	我们 lab 的 booking 是礼拜四早上
+zh028	zh	这张 MRT card 里面还有八块五
+zh029	zh	她的 appointment 改到下个星期一
+zh030	zh	考试前一天不要 overnight
+zh031	zh	你帮我 book 一个 meeting room，下午两点
+zh032	zh	医院说 booster 要隔六个月才可以打
+zh033	zh	我的 GPA 这个学期是三点八
+zh034	zh	这个 python script 跑了四十分钟
+zh035	zh	那个 loan 要分十二期还
+zh036	zh	医生说 cough syrup 一次十毫升
+zh037	zh	你的 submission 系统显示 late 两天
+zh038	zh	我们 group 的 slides 还差五页
+zh039	zh	他在 hospital 住了三个晚上
+zh040	zh	我的 phone bill 这个月八十九块
+zh041	zh	这个 Java assignment 有十道题
+zh042	zh	明年一月我要去 clinic 拿 report
+zh043	zh	妈妈的 metformin 快吃完了，要再拿
+zh044	zh	我们的 finals 从十二月一号开始
+zh045	zh	这个 laptop 打折以后是一千两百块
+zh046	zh	你把 file 上传到 shared drive
+zh047	zh	他说 aspirin 不可以跟这个药一起吃
+zh048	zh	我的 flight 是早上六点十五分
+zh049	zh	那个 PIN 是四个数字，你不要告诉别人
+zh050	zh	我们的 budget 只有两千块
+zh051	zh	她每天要量两次 blood pressure
+zh052	zh	这个 bug 要在 release 之前 fix
+zh053	zh	你的 reference letter 我星期二给你
+zh054	zh	我们约了 dentist 八号早上
+zh055	zh	这个 course 一共有十三个 week
+zh056	zh	他的 temperature 是三十八度五
+zh057	zh	我刚 transfer 了一百二十块的 deposit
+zh058	zh	下个 sem 的 timetable 还没出来
+zh059	zh	医生说 prednisolone 要慢慢减量
+zh060	zh	这个 interview 是下午四点在 level 3
+en001	en	the doctor told me to take 退烧药 every six hours
+en002	en	my 作业 is due on Friday at midnight
+en003	en	I paid two hundred dollars for the 押金 already
+en004	en	the 考试 starts at nine so please come early
+en005	en	can you send me the 报告 before Tuesday
+en006	en	my grandmother needs her 胰岛素 every morning
+en007	en	the 诊所 opens at eight thirty on Saturday
+en008	en	I made an 预约 with the doctor for next Monday
+en009	en	she said the 疫苗 has two doses
+en010	en	we need to finish the 项目 by the twentieth
+en011	en	my 密码 has twelve characters now
+en012	en	the 房租 went up to one thousand eight hundred
+en013	en	he took 抗生素 for seven days
+en014	en	the 截止日期 for registration is the fifteenth of November
+en015	en	I lost my 收据 so I cannot claim the forty dollars
+en016	en	the 医院 called and changed my appointment to three p m
+en017	en	our 老师 wants the slides by Thursday
+en018	en	the 工资 comes in on the twenty fifth
+en019	en	please bring your 身份证 for the exam
+en020	en	my mother keeps the 药 in the second drawer
+en021	en	I think the 会议 is at two thirty
+en022	en	the 发票 says three hundred and twenty dollars
+en023	en	he has a 发烧 of thirty eight point five
+en024	en	we have a 小考 every Wednesday
+en025	en	the 讲座 is moved to Zoom tomorrow
+en026	en	my 血压 was one forty over ninety
+en027	en	can you check the 银行 transfer of fifty dollars
+en028	en	the 毕业典礼 is on the tenth of December
+en029	en	I need to renew my 护照 before March
+en030	en	the 牙医 appointment is at eight on Friday
+en031	en	the 学费 is due by the end of this month
+en032	en	our 组员 has not submitted his part yet
+en033	en	the nurse said 布洛芬 only after meals
+en034	en	I booked the 会议室 from two to four
+en035	en	my 航班 leaves at six fifteen in the morning
+en036	en	the 贷款 has twelve monthly payments
+en037	en	the 期末考 starts on the first of December
+en038	en	we only have two thousand dollars of 预算
+en039	en	he forgot the 门卡 so he could not enter level five
+en040	en	the 咳嗽药 is ten millilitres each time
+en041	en	my 成绩单 shows three point eight this semester
+en042	en	the 快递 will arrive on Wednesday
+en043	en	please 签名 here and here
+en044	en	the 教授 replied to my email at eleven
+en045	en	I need the 推荐信 by next Tuesday
+en046	en	we sat for the 面试 at four p m
+en047	en	the 课程 has thirteen weeks in total
+en048	en	the 电费 this month is ninety two dollars
+en049	en	my 体温 was normal this morning
+en050	en	the 药房 closes at nine tonight
+en051	en	don't forget your 学生证 for the library
+en052	en	the 合同 ends on the thirty first of January
+en053	en	he said the 阿司匹林 cannot be taken with this
+en054	en	my 保险 covers up to five thousand dollars
+en055	en	the 时间表 for next semester is not out yet
+en056	en	she has a 复诊 two weeks from now
+en057	en	we need eight copies of the 表格
+en058	en	the 停车费 is two dollars per hour
+en059	en	I'll pay the 定金 of one hundred twenty dollars today
+en060	en	the 手术 is scheduled for seven a m on Monday

@@ -187,3 +187,4 @@ class Trainer:
         if not cfg.eval_every:
             self.save("best")
         self.log(event="done", best=self.best)
+        open(os.path.join(self.log_dir, "done.flag"), "w").write(str(self.best))

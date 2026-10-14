@@ -12,7 +12,7 @@ from .confusion import DEFAULT_TAU, LaBSE
 from .metrics import analyze, corpus_metrics
 
 _LABSE = None
-STATS_VERSION = 4  # bump whenever csasr/text or csasr/score changes
+STATS_VERSION = 5  # bump whenever csasr/text or csasr/score changes
 
 
 def labse():
