@@ -1,0 +1,14 @@
+[project]
+name = "csasr"
+version = "0.1.0"
+description = "Robust and compact recognition of code-switched speech (CS425)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["csasr*"]
+
+[tool.setuptools.package-data]
+"csasr.text" = ["critical_terms.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
