@@ -42,6 +42,9 @@ def main():
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
 
+    if a.precision == "int8_bnb":
+        # LLM.int8 has a large fixed cost per matmul call, so fewer, larger decoding steps help a lot
+        a.batch = max(a.batch, 160)
     tag = a.model_tag or a.model
     name = a.out or f"{tag}__{a.precision}__{a.method}"
     out_path = manifest.path(f"preds/{name}.jsonl")

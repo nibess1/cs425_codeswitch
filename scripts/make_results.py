@@ -268,7 +268,8 @@ def lid():
     for p in sorted(glob.glob(manifest.path("ckpt/lid_*/val_metrics.json"))):
         j = json.load(open(p))
         for s, v in j.items():
-            rows.append(dict(head=p.split(os.sep)[-2], set=s, frame_acc=f(v["frame_acc"]),
+            rows.append(dict(head=p.split(os.sep)[-2], set=s, speech_lang_acc=f(v.get("speech_lang_acc")),
+                             frame_acc=f(v["frame_acc"]),
                              frame_acc_unsmoothed=f(v["frame_acc_raw"]),
                              boundary_median_ms=round(1000 * v["boundary_median_s"]) if v["boundary_median_s"] is not None else None,
                              within_100ms=f(v["boundary_within_100ms"]), switch_detected=f(v["switch_detect_rate"])))

@@ -32,11 +32,9 @@ def pad_labels(frames: np.ndarray) -> np.ndarray:
     return out
 
 
-def smooth(pred: np.ndarray, min_seg: float = 0.2) -> np.ndarray:
-    """5-frame median filter, then repeatedly merge the shortest segment (< min_seg) into
-    its longer neighbour."""
-    p = median_filter(pred, size=5, mode="nearest")
-    min_len = int(round(min_seg / FRAME))
+def _merge_short(p: np.ndarray, min_len: int) -> np.ndarray:
+    """Repeatedly merge the shortest run (< min_len) into its longer neighbour."""
+    p = p.copy()
     while True:
         b = np.flatnonzero(np.diff(p)) + 1
         starts, ends = np.r_[0, b], np.r_[b, len(p)]
@@ -53,6 +51,17 @@ def smooth(pred: np.ndarray, min_seg: float = 0.2) -> np.ndarray:
         else:
             fill = p[starts[k] - 1] if lens[k - 1] >= lens[k + 1] else p[ends[k]]
         p[starts[k]: ends[k]] = fill
+
+
+def smooth(pred: np.ndarray, min_seg: float = 0.2) -> np.ndarray:
+    """5-frame median filter, then merge language (en/zh) runs shorter than min_seg into the
+    neighbouring language. Runs are measured over speech frames only, so short pauses
+    between words are kept as non-speech and do not split or absorb a language run."""
+    p = median_filter(pred, size=5, mode="nearest")
+    speech = np.flatnonzero(p != 2)
+    if len(speech):
+        p[speech] = _merge_short(p[speech], int(round(min_seg / FRAME)))
+    return p
 
 
 def switch_points(lab: np.ndarray) -> list[int]:

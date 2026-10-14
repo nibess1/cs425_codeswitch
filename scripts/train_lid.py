@@ -62,6 +62,7 @@ def evaluate(enc, head, dl):
     head.eval()
     acc_n = acc_d = 0
     raw_n = 0
+    lang_n = lang_d = 0
     bes = []
     per_class = np.zeros((3, 3))
     for feats, lab, n in dl:
@@ -73,12 +74,15 @@ def evaluate(enc, head, dl):
             Ps = smooth(P.copy())
             v = L >= 0
             acc_n += (Ps[v] == L[v]).sum(); raw_n += (P[v] == L[v]).sum(); acc_d += v.sum()
+            sp = (L == 0) | (L == 1)  # language accuracy on speech frames (what re-ranking uses)
+            lang_n += (logits[k, : n[k]][:, :2].argmax(-1).cpu().numpy()[sp] == L[sp]).sum(); lang_d += sp.sum()
             for t, p in zip(L[v], Ps[v]):
                 per_class[t, p] += 1
             bes += boundary_error(L, Ps)
     head.train()
     bes = np.array(bes)
     return dict(frame_acc=float(acc_n / acc_d), frame_acc_raw=float(raw_n / acc_d),
+                speech_lang_acc=float(lang_n / max(lang_d, 1)),
                 boundary_median_s=float(np.nanmedian(bes)) if len(bes) else None,
                 boundary_within_100ms=float(np.mean(bes <= 0.1)) if len(bes) else None,
                 switch_detect_rate=float(np.mean(~np.isnan(bes))) if len(bes) else None,
@@ -92,21 +96,28 @@ def main():
     ap.add_argument("--epochs", type=float, default=2)
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--lr", type=float, default=1e-3)
+    ap.add_argument("--eval_only", action="store_true", help="re-evaluate the saved head")
     a = ap.parse_args()
     random.seed(0); torch.manual_seed(0)
     tok, fe = load_processor("small")
     model = load_model(manifest.path(a.encoder) if os.path.isdir(manifest.path(a.encoder)) else a.encoder, "fp16")
     enc = model.get_encoder().eval()
     head = LIDHead(model.config.d_model).cuda()
-    tr = FrameSet(TRAIN, fe)
+    out = manifest.path(f"ckpt/{a.run}")
     va = {n: DataLoader(FrameSet([(n, m)], fe, limit=800), batch_size=64, num_workers=8, collate_fn=collate)
           for n, m in VAL}
+    if a.eval_only:
+        head.load_state_dict(torch.load(os.path.join(out, "head.pt"))["state"])
+        res = {n: evaluate(enc, head, d) for n, d in va.items()}
+        json.dump(res, open(os.path.join(out, "val_metrics.json"), "w"), indent=1)
+        print(json.dumps({k: {kk: vv for kk, vv in v.items() if kk != "confusion"} for k, v in res.items()}))
+        return
+    tr = FrameSet(TRAIN, fe)
     dl = DataLoader(tr, batch_size=a.batch, shuffle=True, num_workers=12, collate_fn=collate, drop_last=True,
                     persistent_workers=True)
     opt = torch.optim.AdamW(head.parameters(), lr=a.lr, weight_decay=0.01)
     total = int(len(dl) * a.epochs)
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=a.lr, total_steps=total, pct_start=0.05)
-    out = manifest.path(f"ckpt/{a.run}")
     os.makedirs(out, exist_ok=True)
     log = open(manifest.path(f"runs/{a.run}.log.jsonl"), "w")
     step = 0
