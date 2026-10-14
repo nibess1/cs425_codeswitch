@@ -1,0 +1,139 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- whisper.cpp version: 1.9.5-dev
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- ggml version: 0.26.0
+-- ggml commit:  0c7be69
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nibras/cs425-codeswitch-asr/third_party/whisper.cpp/build
+[  1%] Building CXX object examples/deprecation-warning/CMakeFiles/bench.dir/deprecation-warning.cpp.o
+[  2%] Building CXX object examples/deprecation-warning/CMakeFiles/main.dir/deprecation-warning.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[  8%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  8%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[ 15%] Linking CXX executable ../../bin/bench
+[ 16%] Linking CXX executable ../../bin/main
+[ 16%] Built target bench
+[ 16%] Built target main
+[ 17%] Linking CXX shared library ../../bin/libggml-base.so
+[ 17%] Built target ggml-base
+[ 19%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[ 21%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[ 21%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[ 23%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[ 25%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[ 25%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[ 26%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled-kernel.cpp.o
+[ 28%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[ 32%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled.cpp.o
+[ 35%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[ 35%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[ 38%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[ 38%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[ 39%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 39%] Built target ggml-cpu
+[ 41%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[ 42%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.o
+[ 43%] Linking CXX shared library ../../bin/libggml.so
+[ 43%] Built target ggml
+[ 44%] Building CXX object src/CMakeFiles/whisper.dir/aneforge/whisper-aneforge.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/whisper.dir/whisper.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/parakeet.dir/parakeet.cpp.o
+[ 48%] Linking CXX shared library ../bin/libparakeet.so
+[ 48%] Built target parakeet
+[ 50%] Linking CXX shared library ../bin/libwhisper.so
+[ 50%] Built target whisper
+[ 51%] Building CXX object examples/bench/CMakeFiles/whisper-bench.dir/bench.cpp.o
+[ 52%] Building CXX object examples/CMakeFiles/common.dir/common.cpp.o
+[ 53%] Building CXX object examples/CMakeFiles/common.dir/common-ggml.cpp.o
+[ 56%] Building CXX object examples/CMakeFiles/common.dir/grammar-parser.cpp.o
+[ 56%] Building CXX object examples/CMakeFiles/common.dir/common-whisper.cpp.o
+[ 57%] Linking CXX executable ../../bin/whisper-bench
+[ 57%] Built target whisper-bench
+[ 58%] Linking CXX static library libcommon.a
+[ 58%] Built target common
+[ 60%] Building CXX object tests/CMakeFiles/test-parakeet-full-diffusion.dir/test-parakeet-full.cpp.o
+[ 62%] Building CXX object examples/cli/CMakeFiles/whisper-cli.dir/cli.cpp.o
+[ 62%] Building CXX object tests/CMakeFiles/test-vad-full.dir/test-vad-full.cpp.o
+[ 65%] Building CXX object examples/parakeet-cli/CMakeFiles/parakeet-cli.dir/parakeet-cli.cpp.o
+[ 66%] Building CXX object examples/server/CMakeFiles/whisper-server.dir/server.cpp.o
+[ 67%] Building CXX object tests/CMakeFiles/test-whisper-lang-detect-abort.dir/test-whisper-lang-detect-abort.cpp.o
+[ 67%] Building CXX object tests/CMakeFiles/test-parakeet-full-gb1.dir/test-parakeet-full.cpp.o
+[ 70%] Building CXX object tests/CMakeFiles/test-parakeet.dir/test-parakeet.cpp.o
+[ 70%] Building CXX object tests/CMakeFiles/test-common-utf8.dir/test-common-utf8.cpp.o
+[ 71%] Building CXX object tests/CMakeFiles/test-whisper-buffer-loader.dir/test-whisper-buffer-loader.cpp.o
+[ 73%] Building CXX object examples/quantize/CMakeFiles/whisper-quantize.dir/quantize.cpp.o
+[ 74%] Building CXX object tests/CMakeFiles/test-parakeet-full-jfk.dir/test-parakeet-full.cpp.o
+[ 75%] Building CXX object examples/parakeet-quantize/CMakeFiles/parakeet-quantize.dir/parakeet-quantize.cpp.o
+[ 78%] Building CXX object examples/vad-speech-segments/CMakeFiles/whisper-vad-speech-segments.dir/speech.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/test-vad.dir/test-vad.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/test-whisper-zero-samples.dir/test-whisper-zero-samples.cpp.o
+[ 80%] Linking CXX executable ../bin/test-whisper-buffer-loader
+[ 82%] Linking CXX executable ../bin/test-whisper-zero-samples
+[ 83%] Linking CXX executable ../bin/test-whisper-lang-detect-abort
+[ 83%] Built target test-whisper-buffer-loader
+[ 83%] Built target test-whisper-zero-samples
+[ 83%] Built target test-whisper-lang-detect-abort
+[ 84%] Linking CXX executable ../bin/test-common-utf8
+[ 85%] Linking CXX executable ../bin/test-vad-full
+[ 87%] Linking CXX executable ../bin/test-parakeet
+[ 88%] Linking CXX executable ../bin/test-vad
+[ 88%] Built target test-common-utf8
+[ 88%] Built target test-vad-full
+[ 88%] Built target test-vad
+[ 88%] Built target test-parakeet
+[ 89%] Linking CXX executable ../../bin/parakeet-quantize
+[ 91%] Linking CXX executable ../bin/test-parakeet-full-gb1
+[ 92%] Linking CXX executable ../bin/test-parakeet-full-jfk
+[ 92%] Built target parakeet-quantize
+[ 93%] Linking CXX executable ../bin/test-parakeet-full-diffusion
+[ 93%] Built target test-parakeet-full-gb1
+[ 94%] Linking CXX executable ../../bin/parakeet-cli
+[ 94%] Built target test-parakeet-full-jfk
+[ 94%] Built target test-parakeet-full-diffusion
+[ 96%] Linking CXX executable ../../bin/whisper-vad-speech-segments
+[ 96%] Built target parakeet-cli
+[ 96%] Built target whisper-vad-speech-segments
+[ 97%] Linking CXX executable ../../bin/whisper-quantize
+[ 97%] Built target whisper-quantize
+[ 98%] Linking CXX executable ../../bin/whisper-cli
+[ 98%] Built target whisper-cli
+[100%] Linking CXX executable ../../bin/whisper-server
+[100%] Built target whisper-server
+BUILD_DONE

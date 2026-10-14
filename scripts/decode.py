@@ -38,6 +38,7 @@ def main():
     ap.add_argument("--beams", type=int, default=1)
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--skip_modules", nargs="*", default=None, help="modules kept 16-bit (mixed precision)")
+    ap.add_argument("--adapter", default=None, help="QLoRA adapter dir (base --model loaded in NF4)")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
 
@@ -46,14 +47,18 @@ def main():
     out_path = manifest.path(f"preds/{name}.jsonl")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     torch.cuda.reset_peak_memory_stats()
-    model = load_model(a.model, a.precision, skip_modules=a.skip_modules)
-    tok, fe = load_processor(a.processor or a.model)
-    if tok is None:
-        tok, fe = load_processor(a.processor or "small")
+    if a.adapter:
+        from csasr.quant.qat import load_qlora_for_eval
+        model = load_qlora_for_eval(a.model, a.adapter)
+    else:
+        model = load_model(manifest.path(a.model) if os.path.isdir(manifest.path(a.model)) else a.model,
+                           a.precision, skip_modules=a.skip_modules)
+    tok, fe = load_processor(a.processor or "small")  # all multilingual sizes share these
     meta = dict(model=tag, precision=a.precision, method=a.method, lang=a.lang, beams=a.beams,
                 footprint_mb=round(model.get_memory_footprint() / 2**20, 1),
                 gpu_alloc_after_load_mb=round(torch.cuda.memory_allocated() / 2**20, 1),
-                quantized_modules=quantized_modules(model) if "bnb" in a.precision else [],
+                quantized_modules=quantized_modules(model) if ("bnb" in a.precision or a.adapter) else [],
+                adapter=a.adapter,
                 skip_modules=a.skip_modules or [], git=git_hash(), sets=a.sets)
     dec = Decoder(model, tok, fe)
     t0 = time.time()

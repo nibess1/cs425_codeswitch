@@ -87,6 +87,8 @@ def _collate(b):
 
 class Decoder:
     def __init__(self, model, tok, fe, device="cuda"):
+        if hasattr(model, "get_base_model"):  # PEFT: LoRA layers are injected into the base model
+            model = model.get_base_model()
         self.model, self.tok, self.fe, self.device = model, tok, fe, device
         t = tok.convert_tokens_to_ids
         self.sot, self.trans, self.notime = t("<|startoftranscript|>"), t("<|transcribe|>"), t("<|notimestamps|>")

@@ -80,7 +80,8 @@ class Trainer:
             model = WhisperForConditionalGeneration.from_pretrained(src, torch_dtype=torch.float32)
             model.config.forced_decoder_ids = None
             model.generation_config.forced_decoder_ids = None
-        self.model = model.cuda()
+        quantized = getattr(model, "is_loaded_in_4bit", False) or hasattr(model, "peft_config")
+        self.model = model if quantized else model.cuda()
         self.extra_loss = extra_loss
         rows = [r for s in cfg.train_sets for r in manifest.load(s)]
         random.Random(cfg.seed).shuffle(rows)

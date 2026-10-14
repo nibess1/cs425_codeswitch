@@ -12,7 +12,7 @@ cffi==2.1.1
 charset-normalizer==3.5.2
 cloudpickle==3.1.2
 cn2an==0.5.24
-ctranslate2==4.8.3
+ctranslate2==4.5.0
 datasets==3.1.0
 decorator==5.3.1
 dill==0.3.8
@@ -91,6 +91,7 @@ soundfile==0.14.0
 soxr==1.1.0
 statsmodels==0.15.0
 sympy==1.13.1
+tabulate==0.10.0
 tensorboard==2.21.0
 tensorboard-data-server==0.7.2
 threadpoolctl==3.7.0
