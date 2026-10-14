@@ -13,7 +13,8 @@ from csasr.text.units import label, split_units, training_target
 def test_normalize_basic():
     assert normalize("我明天要交 Assignment 啦！") == "我明天要交 assignment 啦"
     assert normalize("這個 E-mail，OK？") == "这个 email ok"
-    assert normalize("十号") == normalize("10号") == "10号"
+    assert normalize("十号") == normalize("10号") == "10 号"
+    assert normalize("周四，一份") == "周四一份" and normalize("三十块") == "30 块"
     assert normalize("一起去") == "一起去"
 
 
@@ -114,3 +115,11 @@ def test_identity_zero_and_fragility_shape():
     q = to_arrays(M.analyze([("我明天要交 assignment 啦", "我明天要交 啦")] * 5))
     f = fragility(a, q, boot_idx(5, 50))
     assert np.isnan(f["R"]) and not f["reportable"]  # matrix error unchanged -> R not reported
+
+
+def test_normalize_idempotent_and_target_consistent():
+    for x in ["他们both alright的话那十个人", "這個E-mail，OK？", "<mandarin>特地:te di</mandarin> go [lah]",
+              "我明天要交assignment啦", "deadline是十号", "o.k. lah 一起去", "周四，一份发表于", "二零二六年，三，十"]:
+        n = normalize(x)
+        assert normalize(n) == n
+        assert label(training_target(x)).units == label(x).units

@@ -45,9 +45,13 @@ def strip_markers(text: str) -> str:
 
 # --- step 2: Chinese numerals -> digits -------------------------------------
 _NUM_CH = "零〇一二两三四五六七八九十百千万亿"
-# Convert a numeral run when it is >= 2 chars, or 1 char followed by a counter
-# that makes it clearly a number (date, time, money, age, percent).
-_NUM_RUN = re.compile(rf"[{_NUM_CH}]{{2,}}|[{_NUM_CH}](?=[号日月年点块元岁%％])")
+# Convert a numeral run only when it is clearly a number: it contains a magnitude
+# (十百千万亿), or is followed by a counter (date, time, money, age), or is >= 3 digit
+# characters (years, phone numbers). Bare runs like 四一 in 周四一份 are left alone.
+_NUM_RUN = re.compile(
+    rf"[{_NUM_CH}]*[十百千万亿][{_NUM_CH}]*"
+    rf"|[{_NUM_CH}]+(?=[号日月年点块元岁])"
+    rf"|[零〇一二三四五六七八九]{{3,}}")
 # Idioms / fixed words containing numerals that must not be converted.
 _NUM_KEEP = ("一一", "一些", "一下", "一起", "一直", "一定", "一样", "一般", "一点点", "万一", "十分",
              "千万", "一万", "三三两两", "一边", "一切")
@@ -81,6 +85,8 @@ VARIANTS = {
     "yah": "ya", "uhh": "uh", "mmm": "mm",
     "wi-fi": "wifi", "t-shirt": "tshirt", "t-shirts": "tshirts",
 }
+_SCRIPT_GAP = re.compile(rf"(?<=[{HAN}])(?=[^{HAN}\s])|(?<=[^{HAN}\s])(?=[{HAN}])")
+_HAN_SPACE = re.compile(rf"(?<=[{HAN}]) (?=[{HAN}])")
 _PUNCT_KEEP_INSIDE = re.compile(r"(?<=\w)['’](?=\w)")
 
 
@@ -102,10 +108,16 @@ def normalize(text: str) -> str:
     text = unicodedata.normalize("NFKC", text)
     text = strip_markers(text)
     text = _t2s.convert(text)
-    text = chinese_numerals_to_digits(text)
     text = text.lower()
+    # space at every Han / non-Han boundary first, so "他们both alright的话" maps variants
+    # the same way as "他们 both alright 的话" (normalize must be idempotent)
+    text = _SCRIPT_GAP.sub(" ", text)
     # variants are matched with in-word "-" and "." still present (e-mail, o.k.)
     text = _strip_punct(text, keep="-.")
     text = " ".join(VARIANTS.get(t.strip(".-"), t) for t in text.split())
     text = _strip_punct(text)
-    return " ".join(VARIANTS.get(t, t) for t in text.split())
+    # numerals last, on punctuation-free text, so a second pass sees the same runs
+    text = chinese_numerals_to_digits(" ".join(text.split()))
+    text = _SCRIPT_GAP.sub(" ", text)
+    text = " ".join(VARIANTS.get(t, t) for t in text.split())
+    return _HAN_SPACE.sub("", text)  # canonical: no spaces between Chinese characters

@@ -31,6 +31,7 @@ PARTNER_OVERLAP_MAX = 0.25  # proxy for audible untranscribed partner speech (PE
 def parse_file(args):
     rec, partner_tg = args
     ivs = read_textgrid(rec["textgrid"])
+    wav_dur = sf.info(rec["wav"]).duration  # a few transcripts run past the end of the audio
     partner = []
     if partner_tg:
         partner = sorted((a, b) for a, b, t in read_textgrid(partner_tg) if t not in SILENCE)
@@ -44,6 +45,8 @@ def parse_file(args):
             drop = "unk"
         elif dur < MIN_DUR or dur > MAX_DUR:
             drop = "duration"
+        elif b > wav_dur:
+            drop = "beyond_audio"
         norm = normalize(txt)
         if not norm and not drop:
             drop = "empty"
