@@ -1,0 +1,76 @@
+model,precision,model_file_size_MB,model_memory_footprint_MB,n_quantized_linear_layers
+base,"CTranslate2 float32 (CPU, reference)",139.5,,
+base,CTranslate2 int8 (CPU),73.9,,
+base,"16-bit (GPU, HF)",,138.5,0.0
+base,"whisper.cpp F16 (CPU, reference)",141.1,,
+base,whisper.cpp Q4_0 (CPU),44.3,,
+base,whisper.cpp Q5_0 (CPU),52.7,,
+base,whisper.cpp Q8_0 (CPU),78.0,,
+base,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+base,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+ft_base,CTranslate2 int8 (CPU),73.9,,
+ft_base,"16-bit (GPU, HF)",,138.5,0.0
+ft_base,whisper.cpp Q4_0 (CPU),44.3,,
+ft_base,whisper.cpp Q5_0 (CPU),52.7,,
+ft_base,whisper.cpp Q8_0 (CPU),78.0,,
+ft_base,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+ft_base,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+ft_small,CTranslate2 int8 (CPU),237.7,,
+ft_small,"16-bit (GPU, HF)",,461.1,0.0
+ft_small,whisper.cpp Q4_0 (CPU),138.7,,
+ft_small,whisper.cpp Q5_0 (CPU),167.1,,
+ft_small,whisper.cpp Q8_0 (CPU),252.2,,
+ft_small,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
+ft_small,"4-bit NF4 (GPU, simulated)",,177.6,192.0
+ft_small,"4-bit NF4 (GPU, simulated)",,201.2,176.0
+ft_small,"4-bit NF4 (GPU, simulated)",,187.7,186.0
+ft_small,"4-bit NF4 (GPU, simulated)",,211.3,170.0
+ft_small,"4-bit NF4 (GPU, simulated)",,245.1,148.0
+ft_small,"4-bit NF4 (GPU, simulated)",,447.6,10.0
+ft_small,"4-bit NF4 (GPU, simulated)",,450.9,6.0
+ft_tiny,CTranslate2 int8 (CPU),39.7,,
+ft_tiny,"16-bit (GPU, HF)",,72.0,0.0
+ft_tiny,whisper.cpp Q4_0 (CPU),24.1,,
+ft_tiny,whisper.cpp Q5_0 (CPU),28.5,,
+ft_tiny,whisper.cpp Q8_0 (CPU),41.5,,
+ft_tiny,"8-bit LLM.int8 (GPU, simulated)",,56.3,64.0
+ft_tiny,"4-bit NF4 (GPU, simulated)",,48.4,64.0
+full_base,"16-bit (GPU, HF)",,138.5,0.0
+full_base,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+full_base,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+rw_base,"16-bit (GPU, HF)",,138.5,0.0
+rw_base,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+rw_base,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+rw_base_a0.5_b0.5,"16-bit (GPU, HF)",,138.5,0.0
+rw_base_a0.5_b0,"16-bit (GPU, HF)",,138.5,0.0
+rw_base_a1_b0.5,"16-bit (GPU, HF)",,138.5,0.0
+rw_base_a1_b0,"16-bit (GPU, HF)",,138.5,0.0
+rw_base_a2_b0.5,"16-bit (GPU, HF)",,138.5,0.0
+rw_base_a2_b0,"16-bit (GPU, HF)",,138.5,0.0
+sem_base_l0.1_r0.2,"16-bit (GPU, HF)",,138.5,0.0
+sem_base_l0.1_r0.5,"16-bit (GPU, HF)",,138.5,0.0
+sem_base_l0.3_r0.2,"16-bit (GPU, HF)",,138.5,0.0
+sem_base_l0.3_r0.5,"16-bit (GPU, HF)",,138.5,0.0
+semonly_base,"16-bit (GPU, HF)",,138.5,0.0
+semonly_base,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+semonly_base,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+small,"CTranslate2 float32 (CPU, reference)",462.2,,
+small,CTranslate2 int8 (CPU),237.7,,
+small,"16-bit (GPU, HF)",,461.1,0.0
+small,whisper.cpp Q4_0 (CPU),138.7,,
+small,whisper.cpp Q5_0 (CPU),167.1,,
+small,whisper.cpp Q8_0 (CPU),252.2,,
+small,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
+small,"4-bit NF4 (GPU, simulated)",,177.6,192.0
+sub_small,"16-bit (GPU, HF)",,461.1,0.0
+sub_small,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
+sub_small,"4-bit NF4 (GPU, simulated)",,177.6,192.0
+tiny,"CTranslate2 float32 (CPU, reference)",73.1,,
+tiny,CTranslate2 int8 (CPU),39.7,,
+tiny,"16-bit (GPU, HF)",,72.0,0.0
+tiny,"whisper.cpp F16 (CPU, reference)",74.1,,
+tiny,whisper.cpp Q4_0 (CPU),24.1,,
+tiny,whisper.cpp Q5_0 (CPU),28.5,,
+tiny,whisper.cpp Q8_0 (CPU),41.5,,
+tiny,"8-bit LLM.int8 (GPU, simulated)",,56.3,64.0
+tiny,"4-bit NF4 (GPU, simulated)",,48.4,64.0

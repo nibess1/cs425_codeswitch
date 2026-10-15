@@ -1,0 +1,9 @@
+system_id,word_language,n_word_types_seen_in_both_roles,n_embedded_tokens,n_matrix_tokens,error_when_embedded_pct,error_when_matrix_pct,difference_points,difference_ci95_low,difference_ci95_high
+small__fp16__offshelf_free,English words,725,3094,15637,81.51,66.07,15.44,12.14,18.56
+small__fp16__offshelf_free,Chinese characters,559,7793,14992,54.54,28.57,25.97,23.89,27.83
+base__fp16__offshelf_free,English words,725,3094,15637,86.94,67.27,19.67,16.69,22.49
+base__fp16__offshelf_free,Chinese characters,559,7793,14992,71.13,39.14,31.98,30.49,33.4
+ft_base__fp16__ft,English words,725,3094,15637,26.71,18.76,7.95,5.87,10.56
+ft_base__fp16__ft,Chinese characters,559,7793,14992,19.62,18.32,1.3,0.16,2.54
+ft_small__fp16__ft,English words,725,3094,15637,23.08,15.68,7.4,5.15,10.07
+ft_small__fp16__ft,Chinese characters,559,7793,14992,15.16,14.9,0.26,-0.8,1.35
