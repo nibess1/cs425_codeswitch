@@ -103,7 +103,18 @@ def main():
     ap.add_argument("--tag", required=True)
     ap.add_argument("--lid", required=True)
     ap.add_argument("--val_limit", type=int, default=1500)
+    ap.add_argument("--loop_filter", action="store_true",
+                    help="post-hoc variant: drop candidates with gzip compression ratio > 2.4 (Whisper's "
+                         "repetition heuristic) before re-ranking; writes *_filt systems; needs cached features")
     a = ap.parse_args()
+    cache = manifest.path(f"preds/{a.tag}__rerank_feats.pkl")
+    sets = {s: manifest.load(s)[: a.val_limit] for s in manifest.EVAL_VAL}
+    sets.update({s: manifest.load(s) for s in manifest.EVAL_TEST})
+    if a.loop_filter:
+        allf = pickle.load(open(cache, "rb"))
+        allf = {s: {u: ([c for c in cs if RR.compression_ratio(c["text"]) <= 2.4] or cs) for u, cs in d.items()}
+                for s, d in allf.items()}
+        return tune_and_write(a, sets, allf, suffix="_filt")
     tok, fe = load_processor("small")
     model = load_model(manifest.path(a.model), "fp16")
     dec = Decoder(model, tok, fe)
@@ -115,10 +126,7 @@ def main():
     head.load_state_dict(ck["state"])
     ctc = RR.CTCScorer(Aligner())
     spanner = TokenSpans(tok)
-    cache = manifest.path(f"preds/{a.tag}__rerank_feats.pkl")
     allf = pickle.load(open(cache, "rb")) if os.path.exists(cache) else {}
-    sets = {s: manifest.load(s)[: a.val_limit] for s in manifest.EVAL_VAL}
-    sets.update({s: manifest.load(s) for s in manifest.EVAL_TEST})
     for s, rows in sets.items():
         if s in allf:
             continue
@@ -127,6 +135,10 @@ def main():
         pickle.dump(allf, open(cache, "wb"))
         print(f"{s}: features for {len(rows)} utts in {time.time() - t0:.0f}s", flush=True)
 
+    tune_and_write(a, sets, allf)
+
+
+def tune_and_write(a, sets, allf, suffix=""):
     # tune on pooled validation
     vrows = [(r, s) for s in manifest.EVAL_VAL for r in sets[s]]
     vfeat = {r["utt_id"]: allf[s][r["utt_id"]] for r, s in vrows}
@@ -135,9 +147,9 @@ def main():
     best_mms = min(((g, e) for g, e in itertools.product(GAMMAS, ETAS) if g > 0),
                    key=lambda ge: grid[f"{ge[0]},{ge[1]}"])
     best_dev = min(((0.0, e) for e in ETAS), key=lambda ge: grid[f"{ge[0]},{ge[1]}"])
-    variants = {"rerank_lp": (0.0, 0.0), "rerank_mms": best_mms, "rerank_ondevice": best_dev}
+    variants = {f"rerank_lp{suffix}": (0.0, 0.0), f"rerank_mms{suffix}": best_mms, f"rerank_ondevice{suffix}": best_dev}
     json.dump(dict(grid_val_MER=grid, chosen={k: v for k, v in variants.items()}),
-              open(manifest.path(f"results/rerank_{a.tag}.json"), "w"), indent=1)
+              open(manifest.path(f"results/rerank_{a.tag}{suffix}.json"), "w"), indent=1)
     for name, (g, e) in variants.items():
         with open(manifest.path(f"preds/{a.tag}__fp16__{name}.jsonl"), "w", encoding="utf-8") as f:
             for s in manifest.EVAL_TEST + manifest.EVAL_VAL:

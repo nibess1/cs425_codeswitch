@@ -10,6 +10,8 @@ Candidates: beam-4 outputs (4 returned) under <|zh|>, <|en|> and a free language
   cross-attention word timestamps (on-device variant, gamma = 0).
 Critical terms are flagged (not corrected) when the top candidates disagree on them.
 """
+import zlib
+
 import librosa
 import numpy as np
 import torch
@@ -136,3 +138,9 @@ def ranked(cands, gamma, eta):
 
 def choose(cands, gamma, eta):
     return ranked(cands, gamma, eta)[0]
+
+
+def compression_ratio(text: str) -> float:
+    """Whisper's repetition heuristic: UTF-8 length / zlib-compressed length (> 2.4 = loop)."""
+    b = text.encode("utf-8")
+    return len(b) / max(1, len(zlib.compress(b)))
