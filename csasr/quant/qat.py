@@ -50,4 +50,8 @@ def merge_adapter(base_path: str, adapter_dir: str, out_dir: str):
     m = PeftModel.from_pretrained(base, path(adapter_dir)).merge_and_unload()
     m.generation_config.forced_decoder_ids = None
     m.save_pretrained(path(out_dir), safe_serialization=True)
+    # exporters (CTranslate2, whisper.cpp) need the tokenizer and feature extractor next to the weights
+    from transformers import WhisperFeatureExtractor, WhisperTokenizer
+    WhisperTokenizer.from_pretrained("openai/whisper-small").save_pretrained(path(out_dir))
+    WhisperFeatureExtractor.from_pretrained("openai/whisper-small").save_pretrained(path(out_dir))
     return path(out_dir)
