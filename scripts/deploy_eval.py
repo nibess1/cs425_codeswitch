@@ -37,7 +37,7 @@ def subset(rows, name, spec):
 
 def run(fmt, rows, target, workers, threads):
     parts = [rows[i::workers] for i in range(workers)]
-    fn = _ct2_job if fmt == "ct2_int8" else _ggml_job
+    fn = _ct2_job if fmt.startswith("ct2") else _ggml_job
     with ProcessPoolExecutor(workers) as ex:
         res = list(ex.map(fn, [(p, target, threads) for p in parts]))
     out = [None] * len(rows)
@@ -52,7 +52,8 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--tag", required=True)
     ap.add_argument("--method", required=True)
-    ap.add_argument("--formats", nargs="+", default=["ct2_int8", "ggml_q8_0", "ggml_q5_0", "ggml_q4_0"])
+    ap.add_argument("--formats", nargs="+", default=["ct2_int8", "ggml_q8_0", "ggml_q5_0", "ggml_q4_0"],
+                    help="also: ct2_f32, ggml_f16 (same-backend 16-bit references for R)")
     ap.add_argument("--sets", nargs="+", default=manifest.EVAL_TEST)
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--threads", type=int, default=4)
@@ -63,9 +64,11 @@ def main():
     targets = {}
     if "ct2_int8" in a.formats:
         targets["ct2_int8"] = X.to_ct2(a.model, os.path.join(exp, "ct2_int8"))
+    if "ct2_f32" in a.formats:
+        targets["ct2_f32"] = X.to_ct2(a.model, os.path.join(exp, "ct2_f32"), quant="float16")
     g = [f.split("_", 1)[1] for f in a.formats if f.startswith("ggml_")]
     if g:
-        bins = X.to_ggml(a.model, os.path.join(exp, "ggml"), g)
+        bins = X.to_ggml(a.model, os.path.join(exp, "ggml"), [q for q in g if q != "f16"])
         targets.update({f"ggml_{q}": bins[q] for q in g})
     for fmt, tgt in targets.items():
         name = f"{a.tag}__{fmt}__{a.method}"

@@ -90,10 +90,14 @@ class CTCScorer:
         units = split_units(normalize(text))
         words = [romanize_unit(u, self.al.allowed) for u in units]
         tokens = [self.al.dict[c] for w in words for c in w]
-        if not tokens or len(tokens) > em.shape[0]:
+        repeats = sum(a == b for a, b in zip(tokens, tokens[1:]))
+        if not tokens or len(tokens) + repeats > em.shape[0]:
+            return -np.inf, units, None  # candidate too long for the audio: impossible under CTC
+        try:
+            ali, scores = torchaudio.functional.forced_align(em.unsqueeze(0), torch.tensor([tokens], device=em.device),
+                                                             blank=0)
+        except RuntimeError:
             return -np.inf, units, None
-        ali, scores = torchaudio.functional.forced_align(em.unsqueeze(0), torch.tensor([tokens], device=em.device),
-                                                         blank=0)
         lp = float(scores[0].sum())
         spans = torchaudio.functional.merge_tokens(ali[0], scores[0].exp())
         sec = wav_len / 16000 / em.shape[0]

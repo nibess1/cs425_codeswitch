@@ -21,7 +21,11 @@ RES = manifest.path("results")
 TEST = manifest.EVAL_TEST
 SIZES = ["tiny", "base", "small"]
 SIM_PREC = ["fp16", "int8_bnb", "nf4_bnb"]
-DEP_PREC = ["ct2_int8", "ggml_q8_0", "ggml_q5_0", "ggml_q4_0"]
+DEP_PREC = ["ct2_f32", "ct2_int8", "ggml_f16", "ggml_q8_0", "ggml_q5_0", "ggml_q4_0"]
+# 16-bit reference for R / Rec: the same decoder implementation, so only the weights differ
+# (HF and CPU decoders differ in repetition behaviour on off-the-shelf models)
+REF16 = {"int8_bnb": "fp16", "nf4_bnb": "fp16", "ct2_int8": "ct2_f32",
+         "ggml_q8_0": "ggml_f16", "ggml_q5_0": "ggml_f16", "ggml_q4_0": "ggml_f16"}
 # (set, main language) slices for R: Chinese-main (embedded English) and English-main (embedded Mandarin)
 R_SLICES = [("ascend_test", "zh"), ("nsc_test", "en"), ("nsc_test", "zh"), ("nsc_diff_test", "en")]
 
@@ -179,14 +183,17 @@ def quant():
                                      cs_E_emb=f(r.cs_E_emb, r.cs_E_emb_lo, r.cs_E_emb_hi),
                                      cs_E_mat=f(r.cs_E_mat, r.cs_E_mat_lo, r.cs_E_mat_hi), CWER=f(r.CWER),
                                      size_mb=meta.get("footprint_mb", meta.get("file_mb"))))
-                if prec == "fp16":
+                if prec not in REF16:
+                    continue
+                ref16 = f"{tag}__{REF16[prec]}__{method}"
+                if not have(ref16):
                     continue
                 for s, main in R_SLICES:
                     try:
-                        fr = R.fragility(base, name, s, main=main)
+                        fr = R.fragility(ref16, name, s, main=main)
                     except KeyError:
                         continue
-                    frs.append(dict(model=tag, method=method, precision=prec, set=s, main=main,
+                    frs.append(dict(model=tag, method=method, precision=prec, ref16=REF16[prec], set=s, main=main,
                                     d_emb=f(fr["d_emb"], *fr["d_emb_ci"]), d_mat=f(fr["d_mat"], *fr["d_mat_ci"]),
                                     R=(f"{fr['R']:.2f} [{fr['R_ci'][0]:.2f}, {fr['R_ci'][1]:.2f}]" if fr["reportable"]
                                        else "not reported (matrix change within noise)")))

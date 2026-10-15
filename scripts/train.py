@@ -26,6 +26,11 @@ def main():
         v = getattr(a, name)
         if v is not None:
             cfg[name] = yaml.safe_load(v)
+    # YAML 1.1 reads "1e-4" (no decimal point) as a string: cast to the declared field type
+    for k, v in list(cfg.items()):
+        t = fields[k].type
+        if isinstance(v, str) and t in (float, int, "float", "int"):
+            cfg[k] = float(v) if t in (float, "float") else int(v)
     cfg = TrainConfig(**cfg)
     extra = None
     if cfg.lambda_sem > 0:

@@ -68,7 +68,9 @@ def to_ggml(model: str, out_dir: str, quants=("q8_0", "q5_0", "q4_0")) -> dict:
 
 
 class CT2Decoder:
-    def __init__(self, ct2_dir, threads=4, compute_type="int8"):
+    def __init__(self, ct2_dir, threads=4, compute_type=None):
+        # an unquantized export (float16 weights) is run in float32: the same-backend 16-bit reference
+        compute_type = compute_type or ("float32" if "f32" in os.path.basename(ct2_dir.rstrip("/")) else "int8")
         import ctranslate2
         from transformers import WhisperFeatureExtractor, WhisperTokenizer
         self.m = ctranslate2.models.Whisper(ct2_dir, device="cpu", compute_type=compute_type, intra_threads=threads)

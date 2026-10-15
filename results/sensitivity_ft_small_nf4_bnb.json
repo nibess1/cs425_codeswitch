@@ -1,0 +1,195 @@
+{
+ "kl": [
+  [
+   "model.encoder.layers.0",
+   0.0036513046999266455
+  ],
+  [
+   "model.encoder.layers.1",
+   0.0013013397230005887
+  ],
+  [
+   "model.encoder.layers.2",
+   0.0010363468445237555
+  ],
+  [
+   "model.encoder.layers.3",
+   0.0009377386987578516
+  ],
+  [
+   "model.encoder.layers.4",
+   0.0011235115804798588
+  ],
+  [
+   "model.encoder.layers.5",
+   0.00114619471372049
+  ],
+  [
+   "model.encoder.layers.6",
+   0.001234111519042
+  ],
+  [
+   "model.encoder.layers.7",
+   0.0022539671670272006
+  ],
+  [
+   "model.encoder.layers.8",
+   0.0013348771151079173
+  ],
+  [
+   "model.encoder.layers.9",
+   0.0015382800498230792
+  ],
+  [
+   "model.encoder.layers.10",
+   0.0013717862530212988
+  ],
+  [
+   "model.encoder.layers.11",
+   0.0016108449051948446
+  ],
+  [
+   "model.decoder.layers.0",
+   0.0007243110112680101
+  ],
+  [
+   "model.decoder.layers.1",
+   0.0001650158275088864
+  ],
+  [
+   "model.decoder.layers.2",
+   0.000334443578534606
+  ],
+  [
+   "model.decoder.layers.3",
+   0.00036764689012900437
+  ],
+  [
+   "model.decoder.layers.4",
+   0.0005827979363089145
+  ],
+  [
+   "model.decoder.layers.5",
+   0.0006734634035769667
+  ],
+  [
+   "model.decoder.layers.6",
+   0.0006644938429114632
+  ],
+  [
+   "model.decoder.layers.7",
+   0.0009353858061745015
+  ],
+  [
+   "model.decoder.layers.8",
+   0.001369724688138347
+  ],
+  [
+   "model.decoder.layers.9",
+   0.001373726861770614
+  ],
+  [
+   "model.decoder.layers.10",
+   0.0013731979132792522
+  ],
+  [
+   "model.decoder.layers.11",
+   0.0023840733503195967
+  ],
+  [
+   "ALL",
+   0.029631060808999573
+  ]
+ ],
+ "val_fp16": [
+  0.3030163308609698,
+  0.2585114422462069
+ ],
+ "val_quant": [
+  0.29974544602006314,
+  0.27416823299164844
+ ],
+ "confirm_top5": [
+  {
+   "block": "model.encoder.layers.0",
+   "kl": 0.0036513046999266455,
+   "val_cs_E_emb": 0.2966434112933019,
+   "val_MER": 0.2599453562501211
+  },
+  {
+   "block": "model.decoder.layers.11",
+   "kl": 0.0023840733503195967,
+   "val_cs_E_emb": 0.3269787224081535,
+   "val_MER": 0.2603135233592342
+  },
+  {
+   "block": "model.encoder.layers.7",
+   "kl": 0.0022539671670272006,
+   "val_cs_E_emb": 0.28968001364062634,
+   "val_MER": 0.2528726723118957
+  },
+  {
+   "block": "model.encoder.layers.11",
+   "kl": 0.0016108449051948446,
+   "val_cs_E_emb": 0.3114007218164767,
+   "val_MER": 0.2572131687561765
+  },
+  {
+   "block": "model.encoder.layers.9",
+   "kl": 0.0015382800498230792,
+   "val_cs_E_emb": 0.2985715825021077,
+   "val_MER": 0.2583370472997849
+  }
+ ],
+ "mixed": [
+  {
+   "k": 1,
+   "keep16": [
+    "model.encoder.layers.0"
+   ],
+   "val_cs_E_emb": 0.3014404532374992,
+   "val_MER": 0.27007964035886606
+  },
+  {
+   "k": 2,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.11"
+   ],
+   "val_cs_E_emb": 0.2994754435073161,
+   "val_MER": 0.26852946305733716
+  },
+  {
+   "k": 3,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.11",
+    "model.encoder.layers.7"
+   ],
+   "val_cs_E_emb": 0.30263997071491605,
+   "val_MER": 0.2702927897378263
+  },
+  {
+   "k": 6,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.11",
+    "model.encoder.layers.7",
+    "model.encoder.layers.11",
+    "model.encoder.layers.9",
+    "model.decoder.layers.9"
+   ],
+   "val_cs_E_emb": 0.3039265105791364,
+   "val_MER": 0.26523533629158835
+  }
+ ],
+ "chosen": {
+  "k": 2,
+  "keep16": [
+   "model.encoder.layers.0",
+   "model.decoder.layers.11"
+  ],
+  "val_cs_E_emb": 0.2994754435073161,
+  "val_MER": 0.26852946305733716
+ }
+}

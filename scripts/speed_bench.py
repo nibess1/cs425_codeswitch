@@ -79,9 +79,9 @@ def run_child(kind, target, clips, mode="plain"):
         for c in clips:
             cmd += ["-f", c]
         t0 = time.time()
-        p = subprocess.run(cmd, capture_output=True, text=True)
+        p = subprocess.run(cmd, capture_output=True)  # whisper.cpp may split UTF-8 characters
         dt = time.time() - t0
-        m = re.search(r"(\d+)\s+maximum resident set size", p.stderr)
+        m = re.search(r"(\d+)\s+maximum resident set size", p.stderr.decode("utf-8", errors="replace"))
         return dt, int(m.group(1)) / 2**20 if m else None
     code = (f"import sys,json,resource; sys.path.insert(0,{os.path.dirname(os.path.abspath(__file__))!r});"
             f"from speed_bench import child_ct2; dt=child_ct2({target!r},{clips!r},{mode!r});"
