@@ -132,27 +132,61 @@ The weights are tuned on validation. There are two variants: *with MMS* (an uppe
 
 **Loop filter (post-hoc check, tuned on val only, labelled `*_filt`).** Candidates whose gzip compression ratio is above 2.4 (Whisper's own repetition heuristic) are dropped before re-ranking. This recovers most of the damage: val NSC goes from 61.0 to 32.2 for the score-only pick, and ASCEND val reaches 23.1, better than greedy's 25.7. On test, though, all filtered variants are still significantly worse than greedy on NSC (+2.2 to +4.9 points) and neutral on ASCEND.
 
-**Conclusion.** Re-ranking as specified doesn't help; greedy decoding with the model's own language choice is better. This is reported as a negative result. The team lead then chose to skip further re-ranking runs. The full-small re-ranking had already finished, so its results are reported too.
+**First reading (15 Oct, superseded).** "Re-ranking as specified doesn't help." The team lead
+then chose to skip further re-ranking; the full-small run had already finished, so all three
+re-ranked systems are reported.
+
+**Corrected reading (17 Oct).** The table above compares re-ranked systems with *plain*
+fine-tuning, which mixes the training effect with the re-ranking effect. Compared with each
+system's **own greedy output** (filtered variants; points, * = CI excludes 0):
+
+| System | ASCEND MER | ASCEND embedded | NSC MER | Diff Room MER |
+|---|---|---|---|---|
+| plain FT base | −1.0 / −0.9 | −14.8 / −14.5 (CI incl. 0) | +2.4* / +2.3* | +4.9* / +4.7* |
+| full base | **−0.9* / −0.7*** | **−4.2* / −4.3*** | +0.1 / −0.1 | +0.7* / +0.5* |
+| full small | −0.3 / −0.4 | −1.9 / **−3.0*** | +0.8* / +0.8* | +1.4* / +1.2* |
+
+(Each cell gives the score-only filtered and on-device filtered variants.) The unfiltered
+with-MMS variant is +0.3* to +1.9* MER on all sets for the full systems.
+
+**Conclusion for the report.**
+- Re-ranking **helps embedded English inside Chinese-main speech** (ASCEND): embedded-word error falls by 3–4 points for the full systems, and MER falls slightly for full base.
+- It **slightly hurts English-main speech** (NSC): MER rises by 0–1.4 points.
+- Without the loop filter it is harmful, because length-normalised scores favour repetition loops.
+- **On-device cost is high.** On the MacBook (CTranslate2 int8, fine-tuned base, 4 threads), plain decoding runs at RTF 0.29, adding the LID head gives 0.40, and on-device re-ranking gives 2.30, roughly 8× slower and slower than real time.
 
 ## 15 Oct: quantization (RQ3)
 - **Simulated (GPU, bitsandbytes):** int8 (LLM.int8) and NF4, linear layers only; proj_out, convolutions, embeddings and layer norms stay 16-bit. Measured memory footprints are in `10_model_size_and_memory.csv`.
 - **Deployed (CPU):** CTranslate2 int8 and whisper.cpp Q8_0/Q5_0/Q4_0, on a fixed seeded subset (all ASCEND test, 4,000 NSC test and 2,000 Diff Room utterances).
 - **Finding / fix:** off-the-shelf HF greedy fp16 decoding loops far more than the CPU decoders: 8.2k vs 3.8k inserted units on the same 4,000 NSC utterances. That made CPU-quantized models look up to 20 points *better*. Deployed rows are therefore compared with a 16-bit run of **the same backend** (CTranslate2 float32, whisper.cpp F16), so only the weights differ.
-- **Fine-tuned models barely change at 8-bit.** For most slices the matrix-error change is within noise, so R isn't reported (the proposal's own rule). At NF4, small's R estimates are 0.4–0.5 with CIs spanning 1, so there's no evidence that embedded words suffer more.
+- **8-bit is safe** in every backend (LLM.int8, CTranslate2 int8, whisper.cpp Q8_0) and every size: embedded and matrix error change by at most about ±2 points, so R isn't reportable (the matrix change is within noise, as the proposal anticipated).
+- **4-bit hurts embedded units more in smaller models.** R is significantly above 1 in several slices (`06_fragility_ratio_R.csv`):
+
+  | Model | Format | Slice | R |
+  |---|---|---|---|
+  | fine-tuned tiny | NF4 | Chinese-main ASCEND | 3.47 [1.85, 6.13] |
+  | fine-tuned base | whisper.cpp Q4_0 | Chinese-main ASCEND | 4.4 [1.8, 12.2] |
+  | full base | NF4 | English-main NSC | 1.75 [1.05, 3.03] |
+  | full base | NF4 | NSC Diff Room | 1.64 [0.74, 3.29] |
+  | fine-tuned tiny | whisper.cpp Q4_0 | English-main NSC | 1.4 [1.01, 1.86] |
+
+  So both directions are affected: embedded English (ASCEND) and embedded Mandarin (NSC). This contradicts the off-the-shelf pilot (R ≈ 0.6) and supports the proposal's expectation that R > 1 for fine-tuned models.
+- **Small is robust even at 4-bit.** Changes are about 1 point and R is about 1 or not reportable.
+- **The fixes can't be judged on small.** Mixed precision and QAT were run on small, where the NF4 loss is already within noise, so the recovery rate Rec is undefined (`quant.md`). They should be re-run on base or tiny, where 4-bit loss is significant (future work).
 - **Sensitivity scan (A6)** on fine-tuned small, NF4: the most sensitive blocks are encoder layer 0 and decoder layer 11. Keeping those 2 blocks at 16-bit gives val MER 26.9 against 27.4 all-NF4 and 25.9 at fp16. The full-small scan has also finished.
-- **QAT (QLoRA, rank 16, NF4 base):** fine-tuned small is done.
+- **QAT (QLoRA, rank 16, NF4 base):** done for fine-tuned small and full small (val MER 19.3 for full small with adapters, against 18.2 at 16-bit).
   - The full-small QAT ran out of memory (NF4 plus semantic-loss candidates) and was rerun at batch 8 × 4 accumulation.
   - Merged checkpoints lacked tokenizer files, so whisper.cpp conversion failed; `merge_adapter` now saves them.
 
 ## RQ1 findings
 - **Same word, embedded vs matrix** (`11_*.csv`). Off-the-shelf small: English words +15 points worse when embedded [12, 19], Chinese characters +26 points. Fine-tuned small: English +7 [5, 10], Chinese +0.3 (not significant). Fine-tuning closes the gap for embedded Mandarin but not for embedded English.
-- **Errors are rarely translations.** Only 0.4–3% of embedded units end up in a translation block. Off-the-shelf Whisper instead *transliterates* embedded English phonetically (deadline→得来, python→派森, hong kong→红矿). LaBSE separates the two cleanly: translations score 0.86–0.95, transliterations 0.26–0.49. τ stays PENDING_HUMAN.
+- **Errors are rarely translations.** Only 0.4–5.5% of embedded units end up in a translation block. Off-the-shelf Whisper instead *transliterates* embedded English phonetically (deadline→得来, python→派森, hong kong→红矿). LaBSE separates the two cleanly: translations score 0.86–0.95, transliterations 0.26–0.49. τ stays PENDING_HUMAN.
 - **Logistic regression (A5)** with a speaker-cluster bootstrap: see `12_rq1_logistic_regression.csv`.
 
 ## Speed (MacBook M2 Pro, 4 threads, 100 clips, 259 s of audio)
 - Off-the-shelf models are measured. Examples: tiny CTranslate2 int8 RTF 0.14 / 376 MB; base whisper.cpp Q8_0 RTF 0.25 / 194 MB; small CTranslate2 int8 RTF 0.98 / 848 MB.
 - One run (small Q5_0) was invalidated because the laptop slept; it will be re-run under `caffeinate`.
-- Fine-tuned models: pending.
+- Fine-tuned models were measured on 17 Oct under `caffeinate`. The LID head adds about 40% to the decoding time (an extra encoder pass), and on-device re-ranking is about 8× slower. See `13_speed_macbook.csv`.
 
 ## Open items
 See `PENDING_HUMAN.md`:

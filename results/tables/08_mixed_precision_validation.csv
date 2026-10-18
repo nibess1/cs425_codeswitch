@@ -5,3 +5,9 @@ ft_small,NF4 with most sensitive blocks at 16-bit,1,30.14,27.01,encoder.layers.0
 ft_small,NF4 with most sensitive blocks at 16-bit,2,29.95,26.85,encoder.layers.0; decoder.layers.11,True
 ft_small,NF4 with most sensitive blocks at 16-bit,3,30.26,27.03,encoder.layers.0; decoder.layers.11; encoder.layers.7,False
 ft_small,NF4 with most sensitive blocks at 16-bit,6,30.39,26.52,encoder.layers.0; decoder.layers.11; encoder.layers.7; encoder.layers.11; encoder.layers.9; decoder.layers.9,False
+full_small,all 16-bit,0,26.31,23.75,,
+full_small,all linear layers NF4,0,28.29,24.46,,
+full_small,NF4 with most sensitive blocks at 16-bit,1,28.48,24.7,encoder.layers.0,False
+full_small,NF4 with most sensitive blocks at 16-bit,2,28.16,24.67,encoder.layers.0; encoder.layers.7,False
+full_small,NF4 with most sensitive blocks at 16-bit,3,28.4,24.6,encoder.layers.0; encoder.layers.7; decoder.layers.11,False
+full_small,NF4 with most sensitive blocks at 16-bit,6,26.88,24.06,encoder.layers.0; encoder.layers.7; decoder.layers.11; encoder.layers.9; encoder.layers.11; decoder.layers.8,True

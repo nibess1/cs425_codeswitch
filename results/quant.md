@@ -49,9 +49,15 @@
 | ft_base      | ft            | nf4_bnb     | ascend_test   | 21.6 [20.4, 22.8]    | 45.5 [39.2, 51.5]    | 16.6 [14.8, 18.2]    |   24.7 |      75.5 |
 | ft_base      | ft            | nf4_bnb     | nsc_test      | 29.7 [28.4, 30.9]    | 31.8 [29.4, 34.5]    | 27.9 [25.4, 30.7]    |   22.2 |      75.5 |
 | ft_base      | ft            | nf4_bnb     | nsc_diff_test | 23.8 [22.4, 25.3]    | 26.9 [24.0, 31.1]    | 22.3 [20.4, 24.5]    |   18.3 |      75.5 |
+| ft_base      | ft            | ct2_f32     | ascend_test   | 20.7 [19.2, 22.1]    | 46.9 [35.8, 62.0]    | 15.4 [13.7, 17.1]    |   24.7 |     139.5 |
+| ft_base      | ft            | ct2_f32     | nsc_test      | 27.4 [26.2, 28.6]    | 31.2 [28.4, 34.2]    | 24.5 [22.2, 26.9]    |   20.1 |     139.5 |
+| ft_base      | ft            | ct2_f32     | nsc_diff_test | 22.7 [21.2, 24.2]    | 25.6 [22.6, 28.7]    | 21.2 [18.7, 24.1]    |   17.5 |     139.5 |
 | ft_base      | ft            | ct2_int8    | ascend_test   | 20.8 [19.3, 22.3]    | 47.1 [35.9, 62.1]    | 16.0 [14.2, 17.7]    |   27.2 |      73.9 |
 | ft_base      | ft            | ct2_int8    | nsc_test      | 27.6 [26.4, 28.7]    | 31.2 [28.5, 34.1]    | 24.5 [22.3, 26.9]    |   21   |      73.9 |
 | ft_base      | ft            | ct2_int8    | nsc_diff_test | 22.8 [21.3, 24.3]    | 25.3 [22.5, 28.5]    | 21.7 [19.2, 24.7]    |   16.9 |      73.9 |
+| ft_base      | ft            | ggml_f16    | ascend_test   | 20.5 [19.3, 21.7]    | 39.4 [33.8, 44.9]    | 16.1 [14.3, 17.8]    |   23.5 |     141.1 |
+| ft_base      | ft            | ggml_f16    | nsc_test      | 25.6 [24.7, 26.5]    | 29.0 [27.0, 31.3]    | 21.4 [19.9, 22.8]    |   19.6 |     141.1 |
+| ft_base      | ft            | ggml_f16    | nsc_diff_test | 20.8 [19.7, 22.0]    | 23.7 [21.0, 26.4]    | 18.3 [16.6, 20.1]    |   16.3 |     141.1 |
 | ft_base      | ft            | ggml_q8_0   | ascend_test   | 20.6 [19.4, 21.8]    | 40.2 [34.7, 45.8]    | 16.0 [14.3, 17.8]    |   22.2 |      78   |
 | ft_base      | ft            | ggml_q8_0   | nsc_test      | 25.6 [24.7, 26.5]    | 28.9 [26.8, 31.1]    | 21.8 [20.2, 23.3]    |   19.9 |      78   |
 | ft_base      | ft            | ggml_q8_0   | nsc_diff_test | 20.9 [19.7, 22.1]    | 23.9 [21.2, 26.8]    | 18.6 [16.7, 20.4]    |   16.6 |      78   |
@@ -70,9 +76,15 @@
 | ft_small     | ft            | nf4_bnb     | ascend_test   | 15.2 [14.1, 16.4]    | 31.4 [25.9, 36.8]    | 11.6 [10.2, 13.1]    |   12.3 |     177.6 |
 | ft_small     | ft            | nf4_bnb     | nsc_test      | 23.1 [22.1, 24.2]    | 24.9 [22.7, 27.5]    | 21.7 [20.0, 23.6]    |   15.3 |     177.6 |
 | ft_small     | ft            | nf4_bnb     | nsc_diff_test | 20.0 [18.4, 21.9]    | 21.4 [19.3, 23.5]    | 19.4 [16.7, 23.0]    |   14   |     177.6 |
+| ft_small     | ft            | ct2_f32     | ascend_test   | 14.8 [13.7, 15.8]    | 30.6 [25.3, 35.9]    | 11.2 [9.8, 12.6]     |   19.8 |     462.2 |
+| ft_small     | ft            | ct2_f32     | nsc_test      | 21.4 [20.6, 22.3]    | 23.9 [21.7, 26.2]    | 18.7 [17.3, 20.1]    |   14.1 |     462.2 |
+| ft_small     | ft            | ct2_f32     | nsc_diff_test | 18.9 [17.6, 20.4]    | 23.8 [20.0, 28.8]    | 17.2 [15.1, 19.4]    |   12.7 |     462.2 |
 | ft_small     | ft            | ct2_int8    | ascend_test   | 14.8 [13.7, 15.9]    | 31.0 [25.5, 36.3]    | 11.1 [9.7, 12.5]     |   19.8 |     237.7 |
 | ft_small     | ft            | ct2_int8    | nsc_test      | 21.6 [20.7, 22.5]    | 24.3 [22.0, 26.7]    | 19.0 [17.4, 20.5]    |   14.1 |     237.7 |
 | ft_small     | ft            | ct2_int8    | nsc_diff_test | 18.7 [17.4, 20.0]    | 21.7 [18.8, 24.6]    | 17.1 [15.1, 19.1]    |   13.6 |     237.7 |
+| ft_small     | ft            | ggml_f16    | ascend_test   | 14.8 [13.8, 15.9]    | 30.8 [25.6, 36.1]    | 11.3 [9.8, 12.8]     |   18.5 |     465   |
+| ft_small     | ft            | ggml_f16    | nsc_test      | 20.7 [19.9, 21.5]    | 23.7 [21.5, 26.0]    | 17.6 [16.3, 18.9]    |   13.3 |     465   |
+| ft_small     | ft            | ggml_f16    | nsc_diff_test | 17.2 [16.1, 18.4]    | 20.0 [17.6, 22.3]    | 15.2 [13.5, 16.9]    |   12.1 |     465   |
 | ft_small     | ft            | ggml_q8_0   | ascend_test   | 14.9 [13.9, 16.0]    | 31.1 [25.6, 36.2]    | 11.4 [9.9, 12.9]     |   18.5 |     252.2 |
 | ft_small     | ft            | ggml_q8_0   | nsc_test      | 20.7 [19.9, 21.5]    | 23.4 [21.2, 25.7]    | 17.7 [16.4, 19.0]    |   13.5 |     252.2 |
 | ft_small     | ft            | ggml_q8_0   | nsc_diff_test | 17.2 [16.1, 18.4]    | 20.2 [17.8, 22.5]    | 15.1 [13.4, 16.8]    |   12.4 |     252.2 |
@@ -91,9 +103,15 @@
 | ft_tiny      | ft            | nf4_bnb     | ascend_test   | 32.8 [30.1, 36.1]    | 68.7 [60.3, 76.9]    | 25.3 [23.0, 27.8]    |   46.9 |      48.4 |
 | ft_tiny      | ft            | nf4_bnb     | nsc_test      | 43.6 [41.6, 45.6]    | 49.1 [42.7, 56.7]    | 40.0 [37.2, 43.2]    |   32.5 |      48.4 |
 | ft_tiny      | ft            | nf4_bnb     | nsc_diff_test | 34.4 [32.3, 36.6]    | 38.2 [33.3, 44.0]    | 32.2 [28.8, 35.8]    |   25.8 |      48.4 |
+| ft_tiny      | ft            | ct2_f32     | ascend_test   | 26.0 [24.5, 27.5]    | 52.9 [45.8, 60.1]    | 20.7 [18.7, 22.8]    |   33.3 |      73.1 |
+| ft_tiny      | ft            | ct2_f32     | nsc_test      | 33.6 [32.4, 34.8]    | 36.4 [33.6, 39.7]    | 30.5 [28.2, 32.8]    |   29.7 |      73.1 |
+| ft_tiny      | ft            | ct2_f32     | nsc_diff_test | 26.8 [25.4, 28.2]    | 30.5 [27.7, 33.7]    | 24.7 [22.5, 27.0]    |   20.2 |      73.1 |
 | ft_tiny      | ft            | ct2_int8    | ascend_test   | 26.7 [25.2, 28.4]    | 51.8 [44.9, 58.6]    | 21.9 [19.4, 24.8]    |   33.3 |      39.7 |
 | ft_tiny      | ft            | ct2_int8    | nsc_test      | 33.5 [32.3, 34.6]    | 36.7 [33.8, 40.1]    | 29.7 [27.8, 31.7]    |   29.5 |      39.7 |
 | ft_tiny      | ft            | ct2_int8    | nsc_diff_test | 27.0 [25.6, 28.4]    | 31.3 [28.5, 34.6]    | 24.8 [22.5, 27.0]    |   19.6 |      39.7 |
+| ft_tiny      | ft            | ggml_f16    | ascend_test   | 26.3 [24.9, 27.8]    | 51.9 [45.3, 58.7]    | 21.2 [18.9, 23.5]    |   35.8 |      74.1 |
+| ft_tiny      | ft            | ggml_f16    | nsc_test      | 31.6 [30.7, 32.6]    | 33.9 [31.5, 36.5]    | 27.3 [25.7, 28.9]    |   28.1 |      74.1 |
+| ft_tiny      | ft            | ggml_f16    | nsc_diff_test | 25.4 [24.2, 26.7]    | 29.2 [26.3, 32.1]    | 22.9 [21.0, 24.8]    |   19   |      74.1 |
 | ft_tiny      | ft            | ggml_q8_0   | ascend_test   | 26.2 [24.8, 27.7]    | 52.5 [46.0, 59.6]    | 20.8 [18.7, 23.0]    |   35.8 |      41.5 |
 | ft_tiny      | ft            | ggml_q8_0   | nsc_test      | 31.6 [30.6, 32.5]    | 33.8 [31.4, 36.5]    | 27.3 [25.8, 28.8]    |   28.3 |      41.5 |
 | ft_tiny      | ft            | ggml_q8_0   | nsc_diff_test | 25.5 [24.3, 26.8]    | 29.0 [26.2, 32.0]    | 23.1 [21.2, 24.9]    |   17.8 |      41.5 |
@@ -112,6 +130,33 @@
 | full_base    | full          | nf4_bnb     | ascend_test   | 21.6 [20.3, 22.8]    | 41.6 [36.0, 47.5]    | 17.4 [15.5, 19.4]    |   28.4 |      75.5 |
 | full_base    | full          | nf4_bnb     | nsc_test      | 27.8 [27.2, 28.4]    | 30.3 [28.7, 31.8]    | 24.7 [23.6, 25.8]    |   22.6 |      75.5 |
 | full_base    | full          | nf4_bnb     | nsc_diff_test | 22.4 [21.5, 23.3]    | 24.6 [22.8, 26.6]    | 21.3 [19.9, 22.7]    |   18.9 |      75.5 |
+| full_small   | full          | fp16        | ascend_test   | 14.6 [13.6, 15.7]    | 29.8 [24.2, 35.0]    | 11.0 [9.5, 12.4]     |   17.3 |     461.1 |
+| full_small   | full          | fp16        | nsc_test      | 20.7 [20.1, 21.2]    | 21.3 [20.1, 22.7]    | 18.7 [17.7, 19.7]    |   14.1 |     461.1 |
+| full_small   | full          | fp16        | nsc_diff_test | 17.1 [16.2, 18.1]    | 18.7 [17.1, 20.6]    | 15.3 [14.3, 16.6]    |   12.5 |     461.1 |
+| full_small   | full          | int8_bnb    | ascend_test   | 14.5 [13.5, 15.6]    | 28.9 [23.7, 34.0]    | 10.7 [9.4, 12.1]     |   18.5 |     272.1 |
+| full_small   | full          | int8_bnb    | nsc_test      | 20.7 [20.1, 21.3]    | 21.3 [20.0, 22.6]    | 18.6 [17.5, 19.6]    |   13.8 |     272.1 |
+| full_small   | full          | int8_bnb    | nsc_diff_test | 17.2 [16.3, 18.2]    | 18.7 [17.1, 20.5]    | 15.4 [14.4, 16.7]    |   13.1 |     272.1 |
+| full_small   | full          | nf4_bnb     | ascend_test   | 14.7 [13.7, 15.7]    | 30.7 [25.8, 36.1]    | 11.0 [9.6, 12.4]     |   17.3 |     177.6 |
+| full_small   | full          | nf4_bnb     | nsc_test      | 21.1 [20.5, 21.8]    | 21.8 [20.5, 23.1]    | 19.3 [18.3, 20.4]    |   15   |     177.6 |
+| full_small   | full          | nf4_bnb     | nsc_diff_test | 17.4 [16.6, 18.3]    | 18.8 [17.3, 20.6]    | 15.8 [14.6, 17.0]    |   14.4 |     177.6 |
+| full_small   | full          | ct2_f32     | ascend_test   | 14.6 [13.6, 15.6]    | 29.8 [24.2, 35.0]    | 11.0 [9.5, 12.4]     |   17.3 |     462.2 |
+| full_small   | full          | ct2_f32     | nsc_test      | 21.0 [20.2, 21.9]    | 22.9 [20.7, 25.0]    | 18.0 [16.6, 19.3]    |   13.9 |     462.2 |
+| full_small   | full          | ct2_f32     | nsc_diff_test | 18.2 [16.9, 19.4]    | 20.4 [17.5, 23.2]    | 16.7 [14.7, 18.7]    |   12.4 |     462.2 |
+| full_small   | full          | ct2_int8    | ascend_test   | 14.6 [13.5, 15.6]    | 30.1 [24.7, 35.4]    | 10.6 [9.1, 12.0]     |   16   |     237.7 |
+| full_small   | full          | ct2_int8    | nsc_test      | 21.1 [20.3, 22.0]    | 23.0 [20.9, 25.2]    | 18.2 [16.9, 19.5]    |   13.9 |     237.7 |
+| full_small   | full          | ct2_int8    | nsc_diff_test | 18.4 [17.1, 19.9]    | 20.5 [17.7, 23.3]    | 16.8 [14.7, 18.8]    |   12.4 |     237.7 |
+| full_small   | full          | ggml_f16    | ascend_test   | 14.7 [13.6, 15.7]    | 30.1 [24.5, 35.5]    | 11.1 [9.6, 12.5]     |   18.5 |     465   |
+| full_small   | full          | ggml_f16    | nsc_test      | 20.3 [19.6, 21.1]    | 22.0 [19.9, 24.1]    | 17.1 [15.8, 18.3]    |   13.5 |     465   |
+| full_small   | full          | ggml_f16    | nsc_diff_test | 16.8 [15.7, 17.9]    | 18.6 [16.2, 21.1]    | 14.8 [13.2, 16.6]    |   11.8 |     465   |
+| full_small   | full          | ggml_q8_0   | ascend_test   | 14.6 [13.6, 15.6]    | 30.7 [24.9, 36.3]    | 11.1 [9.6, 12.5]     |   18.5 |     252.2 |
+| full_small   | full          | ggml_q8_0   | nsc_test      | 20.3 [19.5, 21.1]    | 22.0 [19.9, 24.2]    | 17.1 [15.8, 18.2]    |   13.9 |     252.2 |
+| full_small   | full          | ggml_q8_0   | nsc_diff_test | 16.9 [15.7, 18.0]    | 18.7 [16.2, 21.1]    | 14.8 [13.1, 16.6]    |   11.2 |     252.2 |
+| full_small   | full          | ggml_q5_0   | ascend_test   | 14.7 [13.6, 15.7]    | 29.6 [24.3, 35.0]    | 11.0 [9.6, 12.4]     |   16   |     167.1 |
+| full_small   | full          | ggml_q5_0   | nsc_test      | 20.4 [19.6, 21.2]    | 22.7 [20.6, 24.7]    | 17.0 [15.8, 18.2]    |   14.1 |     167.1 |
+| full_small   | full          | ggml_q5_0   | nsc_diff_test | 17.0 [15.9, 18.2]    | 18.9 [16.5, 21.3]    | 15.1 [13.4, 16.9]    |   10.3 |     167.1 |
+| full_small   | full          | ggml_q4_0   | ascend_test   | 14.7 [13.7, 15.8]    | 29.0 [23.9, 34.4]    | 11.0 [9.6, 12.5]     |   18.5 |     138.7 |
+| full_small   | full          | ggml_q4_0   | nsc_test      | 21.0 [20.2, 21.8]    | 22.3 [20.3, 24.4]    | 17.8 [16.5, 19.0]    |   12.8 |     138.7 |
+| full_small   | full          | ggml_q4_0   | nsc_diff_test | 17.2 [16.1, 18.3]    | 19.3 [17.0, 21.7]    | 15.1 [13.6, 16.8]    |   10.9 |     138.7 |
 | rw_base      | rw            | fp16        | ascend_test   | 20.5 [19.3, 21.7]    | 40.7 [34.8, 46.3]    | 15.7 [13.9, 17.4]    |   24.7 |     138.5 |
 | rw_base      | rw            | fp16        | nsc_test      | 27.8 [26.8, 28.9]    | 28.3 [26.6, 30.1]    | 26.8 [24.3, 29.7]    |   20.7 |     138.5 |
 | rw_base      | rw            | fp16        | nsc_diff_test | 21.8 [20.7, 23.1]    | 23.1 [21.3, 25.0]    | 21.0 [18.8, 23.7]    |   17.9 |     138.5 |
@@ -151,6 +196,9 @@
 | small        | offshelf_free | ct2_int8    | ascend_test   | 26.6 [25.0, 28.2]    | 57.5 [50.1, 65.3]    | 20.4 [18.1, 23.2]    |   34.6 |     237.7 |
 | small        | offshelf_free | ct2_int8    | nsc_test      | 53.8 [52.2, 55.3]    | 71.6 [67.9, 75.3]    | 57.2 [53.8, 60.5]    |   72.4 |     237.7 |
 | small        | offshelf_free | ct2_int8    | nsc_diff_test | 47.6 [45.3, 49.8]    | 67.1 [62.0, 73.5]    | 53.7 [48.8, 58.7]    |   68.9 |     237.7 |
+| small        | offshelf_free | ggml_f16    | ascend_test   | 26.1 [24.7, 27.6]    | 55.1 [48.3, 61.4]    | 19.2 [17.1, 21.7]    |   35.8 |     465   |
+| small        | offshelf_free | ggml_f16    | nsc_test      | 81.4 [80.1, 82.5]    | 80.7 [77.4, 84.2]    | 72.5 [69.5, 75.3]    |   85.4 |     465   |
+| small        | offshelf_free | ggml_f16    | nsc_diff_test | 78.3 [76.5, 80.2]    | 75.2 [70.1, 80.9]    | 67.7 [63.7, 71.9]    |   84.3 |     465   |
 | small        | offshelf_free | ggml_q8_0   | ascend_test   | 26.1 [24.6, 27.6]    | 55.6 [48.6, 62.3]    | 19.1 [17.1, 21.6]    |   35.8 |     252.2 |
 | small        | offshelf_free | ggml_q8_0   | nsc_test      | 81.4 [80.2, 82.5]    | 80.7 [77.2, 84.3]    | 72.5 [69.4, 75.3]    |   84.9 |     252.2 |
 | small        | offshelf_free | ggml_q8_0   | nsc_diff_test | 78.5 [76.7, 80.3]    | 75.2 [70.2, 80.9]    | 67.7 [63.7, 71.7]    |   85.8 |     252.2 |
@@ -247,6 +295,22 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 | ft_base      | ft            | nf4_bnb     | fp16     | nsc_test      | en     | 2.5 [0.2, 4.8]       | -1.3 [-4.4, 1.5]     | not reported (matrix change within noise) |
 | ft_base      | ft            | nf4_bnb     | fp16     | nsc_test      | zh     | -3.3 [-9.4, 1.2]     | 2.4 [-2.9, 7.3]      | not reported (matrix change within noise) |
 | ft_base      | ft            | nf4_bnb     | fp16     | nsc_diff_test | en     | 3.5 [0.6, 8.0]       | 0.3 [-2.7, 2.5]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ct2_int8    | ct2_f32  | ascend_test   | zh     | -0.1 [-3.2, 2.6]     | 0.7 [0.2, 1.2]       | -0.21 [-6.42, 4.92]                       |
+| ft_base      | ft            | ct2_int8    | ct2_f32  | nsc_test      | en     | 0.4 [-1.0, 2.3]      | -0.6 [-2.1, 0.7]     | not reported (matrix change within noise) |
+| ft_base      | ft            | ct2_int8    | ct2_f32  | nsc_test      | zh     | -1.2 [-7.2, 2.8]     | 1.0 [-0.4, 3.1]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ct2_int8    | ct2_f32  | nsc_diff_test | en     | -0.4 [-1.3, 0.5]     | 0.2 [-0.3, 0.7]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q8_0   | ggml_f16 | ascend_test   | zh     | 1.0 [0.1, 2.3]       | -0.0 [-0.3, 0.3]     | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | en     | -0.0 [-0.5, 0.3]     | 0.0 [-0.2, 0.3]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | zh     | -0.4 [-1.1, 0.5]     | 0.9 [-0.4, 2.9]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q8_0   | ggml_f16 | nsc_diff_test | en     | 0.3 [-0.3, 0.9]      | 0.1 [-0.2, 0.3]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q5_0   | ggml_f16 | ascend_test   | zh     | 5.3 [1.7, 9.4]       | 0.5 [-0.2, 1.3]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | en     | 0.8 [-0.3, 1.8]      | 1.6 [-0.1, 4.5]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | zh     | 0.4 [-1.0, 1.9]      | 0.7 [-0.4, 1.7]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q5_0   | ggml_f16 | nsc_diff_test | en     | 1.1 [-0.0, 2.3]      | 0.5 [-0.2, 1.3]      | not reported (matrix change within noise) |
+| ft_base      | ft            | ggml_q4_0   | ggml_f16 | ascend_test   | zh     | 8.2 [3.7, 13.1]      | 1.9 [0.8, 3.0]       | 4.40 [1.78, 12.17]                        |
+| ft_base      | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | en     | 3.3 [1.9, 4.7]       | 1.7 [0.8, 2.5]       | 1.93 [0.97, 4.66]                         |
+| ft_base      | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | zh     | 2.5 [-0.3, 5.3]      | 3.2 [1.7, 4.8]       | 0.79 [-0.08, 2.12]                        |
+| ft_base      | ft            | ggml_q4_0   | ggml_f16 | nsc_diff_test | en     | 2.8 [1.3, 4.4]       | 2.5 [1.4, 3.6]       | 1.12 [0.48, 2.45]                         |
 | ft_small     | ft            | int8_bnb    | fp16     | ascend_test   | zh     | -0.4 [-1.2, 0.3]     | -0.3 [-0.6, 0.0]     | not reported (matrix change within noise) |
 | ft_small     | ft            | int8_bnb    | fp16     | nsc_test      | en     | 1.2 [0.0, 2.5]       | 0.3 [-0.2, 1.1]      | not reported (matrix change within noise) |
 | ft_small     | ft            | int8_bnb    | fp16     | nsc_test      | zh     | 0.2 [-0.5, 0.9]      | -0.2 [-0.5, 0.2]     | not reported (matrix change within noise) |
@@ -255,6 +319,22 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 | ft_small     | ft            | nf4_bnb     | fp16     | nsc_test      | en     | 1.3 [-2.5, 5.0]      | 3.2 [0.7, 6.0]       | 0.40 [-1.78, 1.46]                        |
 | ft_small     | ft            | nf4_bnb     | fp16     | nsc_test      | zh     | 0.8 [-0.5, 2.1]      | 1.6 [0.7, 2.6]       | 0.51 [-0.48, 1.41]                        |
 | ft_small     | ft            | nf4_bnb     | fp16     | nsc_diff_test | en     | -1.9 [-8.1, 1.5]     | 2.9 [0.2, 6.6]       | -0.65 [-12.25, 1.55]                      |
+| ft_small     | ft            | ct2_int8    | ct2_f32  | ascend_test   | zh     | 0.6 [-0.8, 2.6]      | 0.0 [-0.4, 0.4]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ct2_int8    | ct2_f32  | nsc_test      | en     | 0.1 [-0.3, 0.7]      | 0.1 [-0.2, 0.4]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ct2_int8    | ct2_f32  | nsc_test      | zh     | 1.0 [-0.6, 3.5]      | 0.7 [-0.3, 2.3]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ct2_int8    | ct2_f32  | nsc_diff_test | en     | -2.6 [-8.7, 0.4]     | -0.2 [-1.3, 0.7]     | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q8_0   | ggml_f16 | ascend_test   | zh     | 0.4 [-1.0, 2.0]      | 0.1 [-0.0, 0.2]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | en     | -0.3 [-0.8, 0.2]     | 0.1 [-0.1, 0.3]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | zh     | -0.3 [-1.0, 0.4]     | 0.2 [-0.1, 0.4]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q8_0   | ggml_f16 | nsc_diff_test | en     | 0.0 [-0.2, 0.4]      | -0.2 [-0.5, 0.0]     | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q5_0   | ggml_f16 | ascend_test   | zh     | 0.8 [-0.8, 2.7]      | 0.2 [-0.2, 0.5]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | en     | 0.7 [-0.1, 1.4]      | 0.3 [-0.3, 0.8]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | zh     | 1.1 [-1.1, 3.8]      | 0.1 [-1.0, 1.3]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q5_0   | ggml_f16 | nsc_diff_test | en     | 1.2 [0.3, 2.2]       | 0.1 [-0.3, 0.5]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q4_0   | ggml_f16 | ascend_test   | zh     | -3.7 [-6.5, -0.6]    | -0.0 [-0.6, 0.6]     | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | en     | 1.4 [-0.0, 2.6]      | 1.4 [0.7, 2.2]       | 0.96 [-0.01, 2.55]                        |
+| ft_small     | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | zh     | 0.2 [-1.9, 2.6]      | 0.2 [-0.8, 1.0]      | not reported (matrix change within noise) |
+| ft_small     | ft            | ggml_q4_0   | ggml_f16 | nsc_diff_test | en     | 1.5 [0.3, 2.7]       | 1.2 [0.4, 2.1]       | 1.22 [0.31, 3.32]                         |
 | ft_tiny      | ft            | int8_bnb    | fp16     | ascend_test   | zh     | -0.7 [-3.8, 2.7]     | 1.9 [-0.5, 6.2]      | not reported (matrix change within noise) |
 | ft_tiny      | ft            | int8_bnb    | fp16     | nsc_test      | en     | -0.1 [-2.1, 1.2]     | 0.2 [-1.0, 1.6]      | not reported (matrix change within noise) |
 | ft_tiny      | ft            | int8_bnb    | fp16     | nsc_test      | zh     | -1.2 [-2.5, -0.0]    | -1.4 [-4.0, 0.5]     | not reported (matrix change within noise) |
@@ -263,6 +343,22 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 | ft_tiny      | ft            | nf4_bnb     | fp16     | nsc_test      | en     | 11.2 [5.5, 18.9]     | 9.2 [6.3, 12.4]      | 1.22 [0.63, 2.13]                         |
 | ft_tiny      | ft            | nf4_bnb     | fp16     | nsc_test      | zh     | 17.3 [7.0, 31.9]     | 2.8 [-3.9, 9.4]      | not reported (matrix change within noise) |
 | ft_tiny      | ft            | nf4_bnb     | fp16     | nsc_diff_test | en     | 6.4 [2.2, 12.1]      | 8.8 [5.1, 13.3]      | 0.73 [0.29, 1.51]                         |
+| ft_tiny      | ft            | ct2_int8    | ct2_f32  | ascend_test   | zh     | -1.4 [-4.5, 1.8]     | 1.2 [-0.0, 3.1]      | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ct2_int8    | ct2_f32  | nsc_test      | en     | 0.6 [-0.5, 1.5]      | -0.5 [-1.3, 0.2]     | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ct2_int8    | ct2_f32  | nsc_test      | zh     | -0.3 [-2.2, 2.0]     | -1.2 [-4.1, 1.0]     | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ct2_int8    | ct2_f32  | nsc_diff_test | en     | 1.3 [-0.2, 2.7]      | 0.1 [-0.6, 0.8]      | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q8_0   | ggml_f16 | ascend_test   | zh     | 0.1 [-0.9, 1.4]      | -0.3 [-0.8, 0.2]     | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | en     | 0.2 [-0.6, 1.1]      | 0.2 [-0.2, 0.7]      | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q8_0   | ggml_f16 | nsc_test      | zh     | -1.0 [-2.4, 0.2]     | -0.3 [-1.1, 0.3]     | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q8_0   | ggml_f16 | nsc_diff_test | en     | -0.2 [-0.9, 0.5]     | 0.0 [-0.4, 0.5]      | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q5_0   | ggml_f16 | ascend_test   | zh     | 3.1 [-1.0, 7.3]      | 0.8 [-0.6, 2.3]      | not reported (matrix change within noise) |
+| ft_tiny      | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | en     | 1.9 [0.3, 3.5]       | 2.5 [1.6, 3.4]       | 0.76 [0.14, 1.62]                         |
+| ft_tiny      | ft            | ggml_q5_0   | ggml_f16 | nsc_test      | zh     | 4.3 [1.3, 7.5]       | 1.9 [0.2, 3.6]       | 2.29 [0.45, 12.73]                        |
+| ft_tiny      | ft            | ggml_q5_0   | ggml_f16 | nsc_diff_test | en     | 0.2 [-1.4, 1.6]      | 1.5 [0.5, 2.6]       | 0.10 [-1.00, 1.56]                        |
+| ft_tiny      | ft            | ggml_q4_0   | ggml_f16 | ascend_test   | zh     | 10.9 [4.4, 17.9]     | 8.1 [6.2, 10.0]      | 1.34 [0.52, 2.31]                         |
+| ft_tiny      | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | en     | 8.9 [6.8, 11.0]      | 6.4 [5.2, 7.6]       | 1.40 [1.01, 1.86]                         |
+| ft_tiny      | ft            | ggml_q4_0   | ggml_f16 | nsc_test      | zh     | 10.6 [7.3, 14.0]     | 7.5 [5.7, 9.6]       | 1.40 [0.91, 2.03]                         |
+| ft_tiny      | ft            | ggml_q4_0   | ggml_f16 | nsc_diff_test | en     | 5.8 [3.5, 8.1]       | 5.8 [4.1, 7.6]       | 1.00 [0.57, 1.61]                         |
 | full_base    | full          | int8_bnb    | fp16     | ascend_test   | zh     | -2.8 [-5.2, -0.4]    | 0.4 [-0.1, 0.9]      | not reported (matrix change within noise) |
 | full_base    | full          | int8_bnb    | fp16     | nsc_test      | en     | 0.3 [-0.1, 0.7]      | -0.1 [-0.3, 0.2]     | not reported (matrix change within noise) |
 | full_base    | full          | int8_bnb    | fp16     | nsc_test      | zh     | 0.4 [-0.5, 1.3]      | 0.1 [-0.6, 0.6]      | not reported (matrix change within noise) |
@@ -271,6 +367,30 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 | full_base    | full          | nf4_bnb     | fp16     | nsc_test      | en     | 3.0 [2.0, 4.1]       | 1.7 [1.1, 2.5]       | 1.75 [1.05, 3.03]                         |
 | full_base    | full          | nf4_bnb     | fp16     | nsc_test      | zh     | 2.6 [0.9, 4.1]       | 1.7 [0.8, 2.6]       | 1.47 [0.50, 3.53]                         |
 | full_base    | full          | nf4_bnb     | fp16     | nsc_diff_test | en     | 2.2 [1.1, 3.4]       | 1.4 [0.7, 2.1]       | 1.64 [0.74, 3.29]                         |
+| full_small   | full          | int8_bnb    | fp16     | ascend_test   | zh     | -1.0 [-2.8, 0.9]     | -0.2 [-0.5, 0.0]     | not reported (matrix change within noise) |
+| full_small   | full          | int8_bnb    | fp16     | nsc_test      | en     | 0.0 [-0.3, 0.3]      | -0.1 [-0.2, 0.1]     | not reported (matrix change within noise) |
+| full_small   | full          | int8_bnb    | fp16     | nsc_test      | zh     | -0.2 [-0.8, 0.4]     | -0.2 [-0.8, 0.3]     | not reported (matrix change within noise) |
+| full_small   | full          | int8_bnb    | fp16     | nsc_diff_test | en     | 0.0 [-0.3, 0.3]      | 0.1 [-0.1, 0.3]      | not reported (matrix change within noise) |
+| full_small   | full          | nf4_bnb     | fp16     | ascend_test   | zh     | 0.7 [-1.7, 3.2]      | -0.1 [-0.6, 0.5]     | not reported (matrix change within noise) |
+| full_small   | full          | nf4_bnb     | fp16     | nsc_test      | en     | 0.5 [-0.3, 1.2]      | 0.5 [-0.0, 0.9]      | not reported (matrix change within noise) |
+| full_small   | full          | nf4_bnb     | fp16     | nsc_test      | zh     | 0.4 [-0.8, 1.6]      | 0.8 [0.0, 1.7]       | 0.47 [-2.44, 3.77]                        |
+| full_small   | full          | nf4_bnb     | fp16     | nsc_diff_test | en     | -0.2 [-1.1, 0.7]     | 0.6 [0.2, 1.1]       | -0.30 [-2.30, 1.62]                       |
+| full_small   | full          | ct2_int8    | ct2_f32  | ascend_test   | zh     | 0.4 [-1.2, 2.1]      | -0.4 [-0.8, -0.1]    | -0.91 [-8.32, 4.65]                       |
+| full_small   | full          | ct2_int8    | ct2_f32  | nsc_test      | en     | 0.2 [-0.2, 0.7]      | 0.2 [-0.1, 0.5]      | not reported (matrix change within noise) |
+| full_small   | full          | ct2_int8    | ct2_f32  | nsc_test      | zh     | -0.3 [-1.4, 0.8]     | 0.3 [-0.2, 0.7]      | not reported (matrix change within noise) |
+| full_small   | full          | ct2_int8    | ct2_f32  | nsc_diff_test | en     | 0.1 [-0.4, 0.6]      | 0.1 [-0.3, 0.3]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q8_0   | ggml_f16 | ascend_test   | zh     | 0.7 [-0.1, 1.8]      | 0.0 [-0.1, 0.1]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q8_0   | ggml_f16 | nsc_test      | en     | -0.0 [-0.3, 0.3]     | -0.1 [-0.3, 0.1]     | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q8_0   | ggml_f16 | nsc_test      | zh     | 0.0 [-0.5, 0.6]      | 0.0 [-0.3, 0.3]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q8_0   | ggml_f16 | nsc_diff_test | en     | 0.1 [-0.3, 0.6]      | -0.1 [-0.4, 0.2]     | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q5_0   | ggml_f16 | ascend_test   | zh     | -0.8 [-2.6, 1.2]     | -0.1 [-0.5, 0.4]     | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q5_0   | ggml_f16 | nsc_test      | en     | 0.6 [-0.1, 1.4]      | 0.2 [-0.3, 0.6]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q5_0   | ggml_f16 | nsc_test      | zh     | 0.9 [-0.5, 2.2]      | -0.5 [-1.3, 0.2]     | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q5_0   | ggml_f16 | nsc_diff_test | en     | 0.0 [-0.8, 0.9]      | 0.4 [-0.0, 0.9]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q4_0   | ggml_f16 | ascend_test   | zh     | -1.1 [-3.8, 1.5]     | 0.0 [-0.6, 0.6]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q4_0   | ggml_f16 | nsc_test      | en     | -0.1 [-1.1, 0.9]     | 0.9 [0.2, 1.6]       | -0.08 [-1.93, 1.39]                       |
+| full_small   | full          | ggml_q4_0   | ggml_f16 | nsc_test      | zh     | 1.5 [-0.3, 3.6]      | 0.3 [-0.9, 1.5]      | not reported (matrix change within noise) |
+| full_small   | full          | ggml_q4_0   | ggml_f16 | nsc_diff_test | en     | 0.2 [-1.3, 1.6]      | 0.7 [0.1, 1.3]       | 0.25 [-3.29, 3.95]                        |
 | rw_base      | rw            | int8_bnb    | fp16     | ascend_test   | zh     | -2.6 [-5.3, -0.0]    | 0.1 [-0.3, 0.5]      | not reported (matrix change within noise) |
 | rw_base      | rw            | int8_bnb    | fp16     | nsc_test      | en     | 1.0 [-0.8, 4.1]      | -1.3 [-2.9, -0.0]    | -0.79 [-11.81, 1.44]                      |
 | rw_base      | rw            | int8_bnb    | fp16     | nsc_test      | zh     | -1.7 [-5.3, 0.6]     | 1.1 [-1.5, 3.8]      | not reported (matrix change within noise) |
@@ -299,6 +419,18 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 | small        | offshelf_free | ct2_int8    | ct2_f32  | nsc_test      | en     | -0.1 [-3.8, 2.9]     | 0.5 [-1.8, 3.0]      | not reported (matrix change within noise) |
 | small        | offshelf_free | ct2_int8    | ct2_f32  | nsc_test      | zh     | 0.7 [-1.3, 3.0]      | 0.5 [-1.2, 2.2]      | not reported (matrix change within noise) |
 | small        | offshelf_free | ct2_int8    | ct2_f32  | nsc_diff_test | en     | -5.3 [-10.0, -1.4]   | 2.2 [-0.7, 5.6]      | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q8_0   | ggml_f16 | ascend_test   | zh     | 0.8 [-1.7, 3.6]      | -0.0 [-0.4, 0.6]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q8_0   | ggml_f16 | nsc_test      | en     | -0.1 [-1.4, 1.1]     | 0.3 [-0.3, 1.0]      | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q8_0   | ggml_f16 | nsc_test      | zh     | 0.6 [-0.9, 2.1]      | -0.8 [-1.8, 0.0]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q8_0   | ggml_f16 | nsc_diff_test | en     | -0.0 [-1.5, 1.1]     | -0.1 [-1.6, 1.3]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q5_0   | ggml_f16 | ascend_test   | zh     | 2.1 [-2.5, 6.8]      | 0.1 [-0.9, 1.0]      | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q5_0   | ggml_f16 | nsc_test      | en     | -1.6 [-3.7, 0.3]     | 1.5 [0.3, 2.9]       | -1.08 [-5.09, 0.42]                       |
+| small        | offshelf_free | ggml_q5_0   | ggml_f16 | nsc_test      | zh     | -1.8 [-4.8, 0.8]     | -0.5 [-1.9, 1.0]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q5_0   | ggml_f16 | nsc_diff_test | en     | -2.0 [-5.6, 1.0]     | -0.6 [-3.2, 1.8]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q4_0   | ggml_f16 | ascend_test   | zh     | 7.3 [0.7, 14.0]      | 0.3 [-1.0, 1.5]      | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q4_0   | ggml_f16 | nsc_test      | en     | -0.4 [-2.7, 1.7]     | 2.8 [1.1, 4.8]       | -0.16 [-1.38, 0.64]                       |
+| small        | offshelf_free | ggml_q4_0   | ggml_f16 | nsc_test      | zh     | 3.5 [0.1, 6.8]       | -0.6 [-2.6, 1.1]     | not reported (matrix change within noise) |
+| small        | offshelf_free | ggml_q4_0   | ggml_f16 | nsc_diff_test | en     | 0.1 [-2.7, 3.2]      | 1.9 [-0.4, 4.4]      | not reported (matrix change within noise) |
 | sub_small    | sub           | int8_bnb    | fp16     | ascend_test   | zh     | 0.7 [-0.8, 2.3]      | 0.1 [-0.2, 0.4]      | not reported (matrix change within noise) |
 | sub_small    | sub           | int8_bnb    | fp16     | nsc_test      | en     | 0.1 [-0.4, 0.7]      | 0.1 [-1.0, 1.2]      | not reported (matrix change within noise) |
 | sub_small    | sub           | int8_bnb    | fp16     | nsc_test      | zh     | -0.5 [-2.8, 1.4]     | -0.3 [-1.5, 0.7]     | not reported (matrix change within noise) |
@@ -336,15 +468,24 @@ d_emb / d_mat: change in embedded / matrix error (points) vs the same model at 1
 
 loss: embedded-error increase from quantization (points). Rec is reported with a CI only when the loss CI excludes 0.
 
-| fix                             | model    | precision   | set           | main   | loss             | Rec                       |
-|:--------------------------------|:---------|:------------|:--------------|:-------|:-----------------|:--------------------------|
-| mixed precision top-2 at 16-bit | ft_small | nf4_bnb     | ascend_test   | zh     | 1.2 [-1.8, 4.1]  | -0.93 (loss within noise) |
-| mixed precision top-2 at 16-bit | ft_small | nf4_bnb     | nsc_test      | en     | 1.3 [-2.5, 5.0]  | 0.88 (loss within noise)  |
-| mixed precision top-2 at 16-bit | ft_small | nf4_bnb     | nsc_test      | zh     | 0.8 [-0.5, 2.1]  | -0.01 (loss within noise) |
-| mixed precision top-2 at 16-bit | ft_small | nf4_bnb     | nsc_diff_test | en     | -1.9 [-8.1, 1.5] | 1.11 (loss within noise)  |
+| fix                             | model      | precision   | set           | main   | loss             | Rec                       |
+|:--------------------------------|:-----------|:------------|:--------------|:-------|:-----------------|:--------------------------|
+| mixed precision top-2 at 16-bit | ft_small   | nf4_bnb     | ascend_test   | zh     | 1.2 [-1.8, 4.1]  | -0.93 (loss within noise) |
+| mixed precision top-2 at 16-bit | ft_small   | nf4_bnb     | nsc_test      | en     | 1.3 [-2.5, 5.0]  | 0.88 (loss within noise)  |
+| mixed precision top-2 at 16-bit | ft_small   | nf4_bnb     | nsc_test      | zh     | 0.8 [-0.5, 2.1]  | -0.01 (loss within noise) |
+| mixed precision top-2 at 16-bit | ft_small   | nf4_bnb     | nsc_diff_test | en     | -1.9 [-8.1, 1.5] | 1.11 (loss within noise)  |
+| QLoRA QAT (adapters 16-bit)     | ft_small   | nf4_bnb     | ascend_test   | zh     | 1.2 [-1.8, 4.1]  | 2.85 (loss within noise)  |
+| QLoRA QAT (adapters 16-bit)     | ft_small   | nf4_bnb     | nsc_test      | en     | 1.3 [-2.5, 5.0]  | -0.07 (loss within noise) |
+| QLoRA QAT (adapters 16-bit)     | ft_small   | nf4_bnb     | nsc_test      | zh     | 0.8 [-0.5, 2.1]  | 2.97 (loss within noise)  |
+| QLoRA QAT (adapters 16-bit)     | ft_small   | nf4_bnb     | nsc_diff_test | en     | -1.9 [-8.1, 1.5] | -0.34 (loss within noise) |
+| QLoRA QAT (adapters 16-bit)     | full_small | nf4_bnb     | ascend_test   | zh     | 0.7 [-1.7, 3.2]  | 2.52 (loss within noise)  |
+| QLoRA QAT (adapters 16-bit)     | full_small | nf4_bnb     | nsc_test      | en     | 0.5 [-0.3, 1.2]  | -0.15 (loss within noise) |
+| QLoRA QAT (adapters 16-bit)     | full_small | nf4_bnb     | nsc_test      | zh     | 0.4 [-0.8, 1.6]  | 3.13 (loss within noise)  |
+| QLoRA QAT (adapters 16-bit)     | full_small | nf4_bnb     | nsc_diff_test | en     | -0.2 [-1.1, 0.7] | 1.26 (loss within noise)  |
 
 ## Sensitivity scan (A6)
 
-| file                              | top5_by_KL                                                                                                                              |   all_quantized_KL |   chosen_k |
-|:----------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|-------------------:|-----------:|
-| sensitivity_ft_small_nf4_bnb.json | encoder.layers.0 (0.0037), decoder.layers.11 (0.0024), encoder.layers.7 (0.0023), encoder.layers.11 (0.0016), encoder.layers.9 (0.0015) |          0.0296311 |          2 |
+| file                                | top5_by_KL                                                                                                                              |   all_quantized_KL |   chosen_k |
+|:------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|-------------------:|-----------:|
+| sensitivity_ft_small_nf4_bnb.json   | encoder.layers.0 (0.0037), decoder.layers.11 (0.0024), encoder.layers.7 (0.0023), encoder.layers.11 (0.0016), encoder.layers.9 (0.0015) |          0.0296311 |          2 |
+| sensitivity_full_small_nf4_bnb.json | encoder.layers.0 (0.0044), encoder.layers.7 (0.0028), decoder.layers.11 (0.0024), encoder.layers.9 (0.0021), encoder.layers.11 (0.0020) |          0.0349246 |          6 |

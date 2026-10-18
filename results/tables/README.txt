@@ -1,4 +1,4 @@
-CS425 results tables (exported 2026-10-15 10:05)
+CS425 results tables (exported 2026-10-17 14:08)
 All *_pct columns are percentages (21.35 = 21.35%). Test sets unless the name says val.
 MER = (substitutions + deletions + insertions) / reference units; one unit = one Chinese
 character, English word or digit string. Role rates charge insertions to error blocks, so

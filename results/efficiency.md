@@ -15,12 +15,17 @@ Only linear layers are quantized; conv front-end, embeddings, layer norms and pr
 | ft_small     | fp16        | ft            |              461.1 |                          0 |                 3412   |
 | ft_small     | int8_bnb    | ft            |              272.1 |                        192 |                10105.1 |
 | ft_small     | nf4_bnb     | ft            |              177.6 |                        192 |                 3126.5 |
+| ft_small     | nf4_qlora   | qat_ft        |              202.3 |                        192 |                 3522.6 |
 | ft_tiny      | fp16        | ft            |               72   |                          0 |                  737   |
 | ft_tiny      | int8_bnb    | ft            |               56.3 |                         64 |                 3216.3 |
 | ft_tiny      | nf4_bnb     | ft            |               48.4 |                         64 |                  713.5 |
 | full_base    | fp16        | full          |              138.5 |                          0 |                 1194.9 |
 | full_base    | int8_bnb    | full          |               96.5 |                         96 |                 4282.8 |
 | full_base    | nf4_bnb     | full          |               75.5 |                         96 |                 1134.6 |
+| full_small   | fp16        | full          |              461.1 |                          0 |                 3387.6 |
+| full_small   | int8_bnb    | full          |              272.1 |                        192 |                10095.6 |
+| full_small   | nf4_bnb     | full          |              177.6 |                        192 |                 3116   |
+| full_small   | nf4_qlora   | qat_full      |              202.3 |                        192 |                 3522.6 |
 | rw_base      | fp16        | rw            |              138.5 |                          0 |                 1195   |
 | rw_base      | int8_bnb    | rw            |               96.5 |                         96 |                 4282.8 |
 | rw_base      | nf4_bnb     | rw            |               75.5 |                         96 |                 1134.6 |
