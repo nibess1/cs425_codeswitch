@@ -228,3 +228,25 @@ Diff Room ablation: C, D, E), smu2 CPUs (exports, signal processing), MacBook (s
   - **New held-out Diff Room test:** a 4 h random sample from the E-test sessions (the existing Diff Room test spans all sessions and is kept as is for the main tables).
   - **Training:** each condition uses the `ft_base` recipe with no tuning. A = existing `ft_base`; B = 40 h Diff Room (all-mixed first, up to 30 h, then English-only, as for Same Room); C = 20 h Same Room (random half of the A training set) + 20 h Diff Room (random half of B).
   - **Evaluation:** once on the Same Room test and once on the E Diff Room test.
+
+### 20 Oct: results of the first CPU stages
+- **A3 (speaker-cluster bootstrap).** `csasr/score/bootstrap.speaker_arrays()` sums each speaker's counts, so resampling rows equals resampling whole speakers (every metric is a ratio of sums). A test checks that the speaker-level and utterance-level point estimates are identical. `report.table(..., speaker_ci=True)` and `report.compare(..., speaker_ci=True)` add `*_spk_lo/hi` for the NSC sets. ASCEND stays utterance-level, with CIs labelled optimistic.
+- **A4 (version and licence).** The Dropbox share has only the 4 audio and script folders, with **no VERSION, UPDATE HISTORY or LICENCE file**, so the licence terms couldn't be confirmed (`data/nsc_part4/VERSION.txt`). Following the brief, section D labelling uses **ASCEND and the stress set only**. NSC is processed only automatically (signals and rules); I don't read or judge NSC transcripts. Logged in PENDING_HUMAN.
+- **C4 (switching statistics)**, from `results/switch_stats.csv`. NSC train was selected code-switched-first, so the fair comparison is against the random Diff Room sample:
+
+  | | ASCEND | NSC Diff Room |
+  |---|---|---|
+  | code-switched utterances | 26.8% | 29.1% |
+  | switches per code-switched utterance | 2.12 | 2.85 |
+  | median switches | 2 | 2 |
+  | embedded span (units) | 2.0 | 2.8 |
+  | main language | 69% Chinese-main | 80% English-main |
+
+  NSC isn't more code-switched per utterance, but its switches are more frequent within an utterance and its embedded spans are longer.
+- **E data fix.** The first split by session failed its own speaker-disjointness assertion, because one Diff Room speaker recorded 2 sessions. The split now uses connected speaker–session groups (union-find); the manifests from the failed run were deleted before use.
+- **D1 (translation blocks).**
+  - Items: every error block, across all systems, on ASCEND test and val, where an embedded run was replaced by other-script text. That gives 10,166 occurrences, deduplicated to **1,768 unique (reference, output) pairs** (`data/llm_labels/d1_pairs.csv`).
+  - Labels (annotator 1, me), using `prompts/translation_rubric.md`: transliteration 1,157, other 498, translation 113 (`data/llm_labels/d1_labels_annotator1.csv`).
+  - A second, independent subagent annotator, which sees only the rubric and the items, is running.
+  - **τ by the pre-registered rule** (best unique-pair F1 of "CC-CEDICT or LaBSE ≥ τ" vs *translation*): **τ = 0.65** (P 0.61, R 0.71, F1 0.65). Occurrence-weighted F1 would favour 0.70 (0.88); the rule says unique pairs, so 0.65 is used. A sensitivity table at 0.5/0.6/0.7/0.8 will be reported.
+- **C3 (transliteration detector, `csasr/score/translit.py`).** The Han side is romanized with pypinyin, both sides are encoded with Metaphone, and similarity = 1 − normalised Levenshtein. The threshold is the best F1 vs *transliteration* on the D1 pairs: **θ = 0.1** (P 0.75, R 0.91, F1 0.82; flat at 0.80–0.82 up to 0.25). The new field `N_tl_E` and metric `translit_rate` count embedded units in a cross-script block that isn't a translation and has similarity ≥ θ. `STATS_VERSION` = 6.

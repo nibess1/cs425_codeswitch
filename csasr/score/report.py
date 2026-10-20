@@ -12,7 +12,7 @@ from .confusion import DEFAULT_TAU, LaBSE
 from .metrics import analyze, corpus_metrics
 
 _LABSE = None
-STATS_VERSION = 5  # bump whenever csasr/text or csasr/score changes
+STATS_VERSION = 6  # bump whenever csasr/text or csasr/score changes
 
 
 def labse():
@@ -58,7 +58,19 @@ def _align(ids_a, st_a, ids_b, st_b):
     return [st_a[ia[u]] for u in common], [st_b[pos[u]] for u in common]
 
 
-def table(names: list[str], sets: list[str] | None = None, B=BS.B_DEFAULT, main=None, **kw) -> pd.DataFrame:
+_SPK = {}
+
+
+def speakers_of(set_name: str) -> dict:
+    """utt_id -> speaker for a manifest set (cached)."""
+    if set_name not in _SPK:
+        from ..data import manifest
+        _SPK[set_name] = {r["utt_id"]: r["speaker"] for r in manifest.load(set_name)}
+    return _SPK[set_name]
+
+
+def table(names: list[str], sets: list[str] | None = None, B=BS.B_DEFAULT, main=None, speaker_ci=False,
+          **kw) -> pd.DataFrame:
     """One row per (system, set): point estimates and 95% CIs."""
     rows = []
     for n in names:
@@ -66,6 +78,7 @@ def table(names: list[str], sets: list[str] | None = None, B=BS.B_DEFAULT, main=
             if sets and s not in sets:
                 continue
             if main:
+                ids = [u for u, x in zip(ids, st) if x["main"] == main]
                 st = [x for x in st if x["main"] == main]
             if not st:
                 continue
@@ -73,16 +86,25 @@ def table(names: list[str], sets: list[str] | None = None, B=BS.B_DEFAULT, main=
             idx = BS.boot_idx(len(st), B)
             m = corpus_metrics(st)
             row = dict(system=n, set=s, n_utt=len(st), N=m["N"], N_E=m["N_E"], N_crit=m["N_crit"])
-            for k in ["MER", "sMER", "CWER", "E_E", "E_Ms", "E_Mi", "E_sw", "cs_E_emb", "cs_E_mat", "conf_rate"]:
+            for k in ["MER", "sMER", "CWER", "E_E", "E_Ms", "E_Mi", "E_sw", "cs_E_emb", "cs_E_mat", "conf_rate",
+                      "translit_rate"]:
                 row[k] = BS.point(a, k)
                 lo, hi = BS.metric_ci(a, k, idx)
                 row[k + "_lo"], row[k + "_hi"] = lo, hi
+            if speaker_ci and not s.startswith("ascend"):
+                spk_map = speakers_of(s)
+                sa = BS.speaker_arrays(st, [spk_map.get(u, u) for u in ids])
+                sidx = BS.boot_idx(sa["n_speakers"], B)
+                row["n_speakers"] = sa["n_speakers"]
+                for k in ["MER", "E_E", "cs_E_emb", "CWER"]:
+                    lo, hi = BS.metric_ci(sa, k, sidx)
+                    row[k + "_spk_lo"], row[k + "_spk_hi"] = lo, hi
             rows.append(row)
     return pd.DataFrame(rows)
 
 
 def compare(a: str, b: str, set_name: str, metrics=("MER", "E_E", "cs_E_emb", "CWER", "sMER"), B=BS.B_DEFAULT,
-            main=None, **kw) -> dict:
+            main=None, speaker_ci=False, **kw) -> dict:
     """Paired bootstrap of metric(b) - metric(a) on the utterances both systems decoded."""
     ia, sa = stats(a, **kw)[set_name]
     ib, sb = stats(b, **kw)[set_name]
@@ -92,7 +114,21 @@ def compare(a: str, b: str, set_name: str, metrics=("MER", "E_E", "cs_E_emb", "C
         sa, sb = [sa[i] for i in keep], [sb[i] for i in keep]
     A, Bb = BS.to_arrays(sa), BS.to_arrays(sb)
     idx = BS.boot_idx(len(sa), B)
-    return {m: BS.paired_diff(A, Bb, m, idx) for m in metrics}
+    out = {m: BS.paired_diff(A, Bb, m, idx) for m in metrics}
+    if speaker_ci and not set_name.startswith("ascend"):
+        spk_map = speakers_of(set_name)
+        pos = {u: i for i, u in enumerate(ib)}
+        common = [u for u in ia if u in pos]
+        if main:
+            ma = dict(zip(ia, stats(a, **kw)[set_name][1]))
+            common = [u for u in common if ma[u]["main"] == main]
+        spks = [spk_map.get(u, u) for u in common]
+        SA, SB = BS.speaker_arrays(sa, spks), BS.speaker_arrays(sb, spks)
+        sidx = BS.boot_idx(SA["n_speakers"], B)
+        for m in metrics:
+            d = BS.paired_diff(SA, SB, m, sidx)
+            out[m].update(spk_lo=d["lo"], spk_hi=d["hi"], spk_sig=d["sig"], n_speakers=SA["n_speakers"])
+    return out
 
 
 def fragility(sys16: str, sysq: str, set_name: str, main=None, B=BS.B_DEFAULT, **kw) -> dict:

@@ -1,0 +1,135 @@
+{
+ "kl": [
+  [
+   "model.encoder.layers.0",
+   0.029817630676371047
+  ],
+  [
+   "model.encoder.layers.1",
+   0.005679848886569943
+  ],
+  [
+   "model.encoder.layers.2",
+   0.00660879803677441
+  ],
+  [
+   "model.encoder.layers.3",
+   0.007377565269433022
+  ],
+  [
+   "model.encoder.layers.4",
+   0.005628702173705603
+  ],
+  [
+   "model.encoder.layers.5",
+   0.006179974669298739
+  ],
+  [
+   "model.decoder.layers.0",
+   0.004083477449501893
+  ],
+  [
+   "model.decoder.layers.1",
+   0.0018712507612553724
+  ],
+  [
+   "model.decoder.layers.2",
+   0.003479286488192594
+  ],
+  [
+   "model.decoder.layers.3",
+   0.003856668914094598
+  ],
+  [
+   "model.decoder.layers.4",
+   0.005287761164794523
+  ],
+  [
+   "model.decoder.layers.5",
+   0.012271988115662909
+  ],
+  [
+   "ALL",
+   0.0968267723463303
+  ]
+ ],
+ "val_fp16": [
+  0.3321923229335702,
+  0.2939329935861414
+ ],
+ "val_quant": [
+  0.3567786538164,
+  0.3060243765380665
+ ],
+ "confirm_top5": [
+  {
+   "block": "model.encoder.layers.0",
+   "kl": 0.029817630676371047,
+   "val_cs_E_emb": 0.341281932266615,
+   "val_MER": 0.3011800724707889
+  },
+  {
+   "block": "model.decoder.layers.5",
+   "kl": 0.012271988115662909,
+   "val_cs_E_emb": 0.33221490064761405,
+   "val_MER": 0.2954831708876703
+  },
+  {
+   "block": "model.encoder.layers.3",
+   "kl": 0.007377565269433022,
+   "val_cs_E_emb": 0.3377760726994863,
+   "val_MER": 0.2962970139709729
+  },
+  {
+   "block": "model.encoder.layers.2",
+   "kl": 0.00660879803677441,
+   "val_cs_E_emb": 0.33266670783629215,
+   "val_MER": 0.2957738291317069
+  },
+  {
+   "block": "model.encoder.layers.5",
+   "kl": 0.006179974669298739,
+   "val_cs_E_emb": 0.3399824676903452,
+   "val_MER": 0.2971496114868138
+  }
+ ],
+ "mixed": [
+  {
+   "k": 1,
+   "keep16": [
+    "model.encoder.layers.0"
+   ],
+   "val_cs_E_emb": 0.34341206690222004,
+   "val_MER": 0.3005600015501773
+  },
+  {
+   "k": 2,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.5"
+   ],
+   "val_cs_E_emb": 0.3401365340834706,
+   "val_MER": 0.29914546476253223
+  },
+  {
+   "k": 3,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.5",
+    "model.encoder.layers.3"
+   ],
+   "val_cs_E_emb": 0.3344610297919926,
+   "val_MER": 0.2960838645920127
+  }
+ ],
+ "chosen": {
+  "k": 3,
+  "keep16": [
+   "model.encoder.layers.0",
+   "model.decoder.layers.5",
+   "model.encoder.layers.3"
+  ],
+  "val_cs_E_emb": 0.3344610297919926,
+  "val_MER": 0.2960838645920127
+ }
+}

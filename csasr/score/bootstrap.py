@@ -17,9 +17,29 @@ def to_arrays(stats: list[dict]) -> dict:
     return a
 
 
+def speaker_arrays(stats: list[dict], speakers: list[str]) -> dict:
+    """Cluster arrays for a speaker-level bootstrap: one row per speaker with the summed counts
+    of all its utterances (and of its code-switched utterances in '<field>__cs'). Every metric
+    is a ratio of sums, so resampling these rows == resampling whole speakers."""
+    a = to_arrays(stats)
+    spk = np.array(speakers)
+    uniq, inv = np.unique(spk, return_inverse=True)
+    out = {}
+    w = a["cs_mask"].astype(float)
+    for k in NUM_FIELDS:
+        out[k] = np.bincount(inv, weights=a[k], minlength=len(uniq))
+        out[k + "__cs"] = np.bincount(inv, weights=a[k] * w, minlength=len(uniq))
+    out["cs_mask"] = None
+    out["n_speakers"] = len(uniq)
+    return out
+
+
 def _rate(a, idx, num, den, cs=False):
     """Vectorised ratio of sums over bootstrap index matrix idx (B x n)."""
-    if cs:
+    if cs and a.get("cs_mask") is None:  # speaker-cluster arrays carry pre-masked sums
+        nu = sum(a[k + "__cs"] for k in num)[idx].sum(1)
+        de = sum(a[k + "__cs"] for k in den)[idx].sum(1)
+    elif cs:
         w = a["cs_mask"].astype(float)
         nu = (sum(a[k] for k in num) * w)[idx].sum(1)
         de = (sum(a[k] for k in den) * w)[idx].sum(1)
@@ -41,6 +61,7 @@ METRICS = {
     "cs_E_emb": (["K_E"], ["N_E"], True),
     "cs_E_mat": (["K_Ms", "K_Mi"], ["N_Ms", "N_Mi"], True),
     "conf_rate": (["N_conf_E"], ["N_E"], False),
+    "translit_rate": (["N_tl_E"], ["N_E"], False),
 }
 
 
@@ -58,7 +79,7 @@ def ci(x):
 
 def point(a, name):
     num, den, cs = METRICS[name]
-    idx = np.arange(len(a["N"]))[None, :]
+    idx = np.arange(len(a["N"]))[None, :]  # also valid for speaker arrays (sums are identical)
     return float(_rate(a, idx, num, den, cs)[0])
 
 

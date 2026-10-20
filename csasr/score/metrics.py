@@ -11,7 +11,8 @@ from .align import score
 from .confusion import DEFAULT_TAU, cedict_match
 
 ROLES = ("E", "Ms", "Mi", "neu", "bal")
-NUM_FIELDS = (["N", "S", "D", "I", "err", "orphan", "N_sw", "K_sw", "N_conf_E", "smer", "crit_n", "crit_err", "mixed"]
+NUM_FIELDS = (["N", "S", "D", "I", "err", "orphan", "N_sw", "K_sw", "N_conf_E", "N_tl_E", "smer", "crit_n", "crit_err",
+               "mixed"]
               + [f"N_{r}" for r in ROLES] + [f"K_{r}" for r in ROLES] + [f"X_{r}" for r in ROLES])
 
 
@@ -52,7 +53,15 @@ def analyze(pairs, labse=None, tau=DEFAULT_TAU, rho0=0.5, keep_units=False):
                 cands.append((b, r, h, cedict_match(zh, en)))
                 if labse is not None:
                     sim_pairs.append((r, h))
-        prepared.append((lab, hyp_units, hyp_langs, sc, cands))
+        # C3: embedded run replaced by other-script text (any output unit in the main language)
+        tl = []
+        if lab.main in ("zh", "en"):
+            emb = "en" if lab.main == "zh" else "zh"
+            for b in sc.blocks:
+                if (b.ref_idx and b.hyp_idx and all(lab.roles[i] == "E" for i in b.ref_idx)
+                        and any(hyp_langs[j] == lab.main for j in b.hyp_idx)):
+                    tl.append((b, _side(lab.units, b.ref_idx, emb), _side(hyp_units, b.hyp_idx, lab.main)))
+        prepared.append((lab, hyp_units, hyp_langs, sc, cands, tl))
 
     sims = {}
     if labse is not None and sim_pairs:
@@ -60,12 +69,16 @@ def analyze(pairs, labse=None, tau=DEFAULT_TAU, rho0=0.5, keep_units=False):
             sims[(a, b)] = s
 
     out = []
-    for lab, hyp_units, hyp_langs, sc, cands in prepared:
+    from .translit import THETA, phonetic_similarity
+    for lab, hyp_units, hyp_langs, sc, cands, tl in prepared:
         for b, r, h, dict_hit in cands:
             sim = sims.get((r, h), 1.0 if dict_hit else 0.0) if labse is not None else (1.0 if dict_hit else 0.0)
             b.sim = sim
             b.confusion = dict_hit or (labse is not None and sim >= tau)
-        out.append(_counts(lab, hyp_units, sc, rho0, keep_units))
+        d = _counts(lab, hyp_units, sc, rho0, keep_units)
+        d["N_tl_E"] = float(sum(len(b.ref_idx) for b, r, h in tl
+                                if not b.confusion and phonetic_similarity(r, h) >= THETA))
+        out.append(d)
     return out
 
 
@@ -139,4 +152,5 @@ def corpus_metrics(stats: list[dict] | dict) -> dict:
     m["cs_E_Mi"] = _ratio(tcs["K_Mi"], tcs["N_Mi"])
     m["cs_N_emb"] = tcs["N_E"]
     m["conf_rate"] = _ratio(t["N_conf_E"], t["N_E"])
+    m["translit_rate"] = _ratio(t["N_tl_E"], t["N_E"])
     return m

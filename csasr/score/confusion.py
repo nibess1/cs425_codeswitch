@@ -12,7 +12,7 @@ from functools import lru_cache
 
 CEDICT_PATH = os.environ.get("CSASR_CEDICT", os.path.expanduser("~/cs425-codeswitch-asr/data/lex/cedict_ts.u8"))
 SIM_CACHE = os.environ.get("CSASR_SIMCACHE", os.path.expanduser("~/cs425-codeswitch-asr/data/lex/labse_cache.json.gz"))
-DEFAULT_TAU = float(os.environ.get("CSASR_TAU", "0.70"))
+DEFAULT_TAU = float(os.environ.get("CSASR_TAU", "0.65"))  # D1: best F1 vs labels (PROCESS_LOG 20 Oct)
 
 _PAREN = re.compile(r"\([^)]*\)")
 _STOP = {"a", "an", "the", "to", "of", "one's", "sb", "sth", "something", "someone"}

@@ -1,0 +1,108 @@
+{
+ "kl": [
+  [
+   "model.encoder.layers.0",
+   0.08419513800844848
+  ],
+  [
+   "model.encoder.layers.1",
+   0.012228180438341639
+  ],
+  [
+   "model.encoder.layers.2",
+   0.017093731452358183
+  ],
+  [
+   "model.encoder.layers.3",
+   0.015129528015024702
+  ],
+  [
+   "model.decoder.layers.0",
+   0.011870659568162653
+  ],
+  [
+   "model.decoder.layers.1",
+   0.00604418410322868
+  ],
+  [
+   "model.decoder.layers.2",
+   0.008745176279646017
+  ],
+  [
+   "model.decoder.layers.3",
+   0.02141865346103011
+  ],
+  [
+   "ALL",
+   0.19156531583116973
+  ]
+ ],
+ "val_fp16": [
+  0.4313771249416764,
+  0.3746003449144496
+ ],
+ "val_quant": [
+  0.5571053757023217,
+  0.512507993101711
+ ],
+ "confirm_top5": [
+  {
+   "block": "model.encoder.layers.0",
+   "kl": 0.08419513800844848,
+   "val_cs_E_emb": 0.45242971288376094,
+   "val_MER": 0.40291045788362045
+  },
+  {
+   "block": "model.decoder.layers.3",
+   "kl": 0.02141865346103011,
+   "val_cs_E_emb": 0.4870278820754187,
+   "val_MER": 0.39643846764973745
+  },
+  {
+   "block": "model.encoder.layers.2",
+   "kl": 0.017093731452358183,
+   "val_cs_E_emb": 0.46714879619602345,
+   "val_MER": 0.3868273683802585
+  },
+  {
+   "block": "model.encoder.layers.3",
+   "kl": 0.015129528015024702,
+   "val_cs_E_emb": 0.47060990711209527,
+   "val_MER": 0.39897688298099093
+  },
+  {
+   "block": "model.encoder.layers.1",
+   "kl": 0.012228180438341639,
+   "val_cs_E_emb": 0.4439954843357469,
+   "val_MER": 0.38345573274943323
+  }
+ ],
+ "mixed": [
+  {
+   "k": 1,
+   "keep16": [
+    "model.encoder.layers.0"
+   ],
+   "val_cs_E_emb": 0.4965318254985747,
+   "val_MER": 0.45127598969132093
+  },
+  {
+   "k": 2,
+   "keep16": [
+    "model.encoder.layers.0",
+    "model.decoder.layers.3"
+   ],
+   "val_cs_E_emb": 0.48949122873038964,
+   "val_MER": 0.4464704400565815
+  }
+ ],
+ "chosen": {
+  "k": 2,
+  "keep16": [
+   "model.encoder.layers.0",
+   "model.decoder.layers.3"
+  ],
+  "val_cs_E_emb": 0.48949122873038964,
+  "val_MER": 0.4464704400565815
+ }
+}

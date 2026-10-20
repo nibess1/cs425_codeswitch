@@ -1,0 +1,10 @@
+corpus,splits,n_utterances,code_switched_utterances_pct,switches_per_utterance_all,switches_per_code_switched_utterance_mean,switches_per_code_switched_utterance_median,embedded_span_units_mean,embedded_span_units_median,embedded_spans_single_unit_pct,units_per_utterance_mean,main_chinese_pct,main_english_pct,main_balanced_pct
+ASCEND (spontaneous),ascend_train+ascend_val+ascend_test,12314,26.8,0.566,2.12,2.0,1.98,1.0,61.5,11.8,68.9,29.5,1.6
+"ASCEND (spontaneous), Chinese-main only",ascend_train+ascend_val+ascend_test,8484,27.3,0.65,2.38,2.0,1.65,1.0,66.1,13.6,100.0,0.0,0.0
+"ASCEND (spontaneous), English-main only",ascend_train+ascend_val+ascend_test,3637,21.6,0.326,1.51,1.0,3.12,2.0,45.6,7.6,0.0,100.0,0.0
+NSC Part 4 Same Room (asked to switch),nsc_train+nsc_val+nsc_test,47890,53.5,1.541,2.88,2.0,2.77,2.0,38.1,14.2,25.9,69.6,4.4
+"NSC Part 4 Same Room (asked to switch), Chinese-main only",nsc_train+nsc_val+nsc_test,12421,82.9,2.47,2.98,2.0,1.73,1.0,64.6,14.8,100.0,0.0,0.0
+"NSC Part 4 Same Room (asked to switch), English-main only",nsc_train+nsc_val+nsc_test,33340,39.6,1.159,2.92,2.0,3.67,3.0,14.7,14.3,0.0,100.0,0.0
+NSC Part 4 Diff Room (asked to switch),nsc_diff_test,4085,29.1,0.831,2.85,2.0,2.81,2.0,37.5,12.1,17.3,80.4,2.3
+"NSC Part 4 Diff Room (asked to switch), Chinese-main only",nsc_diff_test,708,66.2,1.976,2.98,2.0,1.72,1.0,63.6,13.3,100.0,0.0,0.0
+"NSC Part 4 Diff Room (asked to switch), English-main only",nsc_diff_test,3283,19.1,0.548,2.87,2.0,3.74,3.0,15.0,11.9,0.0,100.0,0.0

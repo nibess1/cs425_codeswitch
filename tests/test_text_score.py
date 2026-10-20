@@ -132,3 +132,21 @@ def test_flag_precision_recall():
             dict(ref="我 要 panadol", hyp="我 要 panado", flags=[])]               # missed critical error
     m = flag_pr(rows)
     assert (m["tp"], m["fp"], m["ref_err"], m["ref_err_flagged"]) == (1, 1, 2, 1)
+
+
+def test_speaker_bootstrap_point_equals_utterance_point():
+    from csasr.score.bootstrap import metric_ci, point, speaker_arrays
+    st = M.analyze([("我明天要交 assignment 啦", "我明天要交 啦"), ("then we go 吃饭 lah", "then we go eat lah"),
+                    ("你好 hello", "你好 hello world"), ("ok 我 deadline", "ok 我 deadline")])
+    a = to_arrays(st)
+    sa = speaker_arrays(st, ["s1", "s1", "s2", "s3"])
+    assert sa["n_speakers"] == 3
+    for k in ("MER", "cs_E_emb", "E_E"):
+        assert abs(point(a, k) - point(sa, k)) < 1e-12
+    lo, hi = metric_ci(sa, "MER", boot_idx(3, 200))
+    assert lo <= point(sa, "MER") <= hi
+
+
+def test_transliteration_rate():
+    st = M.analyze([("我明天要交 deadline 啦", "我明天要交得来啦"), ("我明天要交 assignment 啦", "我明天要交作业啦")])
+    assert st[0]["N_tl_E"] == 1 and st[1]["N_tl_E"] == 0  # 得来 sounds like deadline; 作业 doesn't
