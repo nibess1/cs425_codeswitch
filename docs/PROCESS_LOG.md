@@ -193,3 +193,38 @@ See `PENDING_HUMAN.md`:
 - stress-set recordings
 - hand checks of critical words, translation blocks, alignments and partner leakage
 - the IMDA release number
+
+---
+
+## 20 Oct: second run (final-report brief). Rules fixed BEFORE looking at any new test result
+Compute for this run: **GPU 5** (quantization fixes, B), **GPU 7** (LID heads, TTS stress set,
+Diff Room ablation: C, D, E), smu2 CPUs (exports, signal processing), MacBook (speed only).
+
+### A1/A2 findings (data integrity, pool-level only, no test scores used)
+- **Diff Room pool:** after the Same Room filters there are 207,969 utterances, **212.3 h**, 322 sessions and 637 speakers (Same Room: 211,499 / 193.2 h / 298 / 593).
+- **Speaker overlap:** 4 speakers appear in both rooms (1782, 1783, 1786, 1787).
+  - None of the Diff Room test speakers is in Same Room train or val; their Diff Room utterances were already dropped as `speaker_seen` (1,097 utterances).
+  - 1786 and 1787 are in Same Room *test*, which is not training leakage.
+  - **The existing Diff Room test is therefore speaker-disjoint from all training; no rebuild needed.**
+- **626 vs 120 speakers is not a parsing bug.** The Diff Room test is a random 4 h *utterance* sample over all 322 Diff Room sessions (Diff Room was test-only), so it has many speakers with few utterances each (median 6). Same Room test is an 8 h sample from the 20% of sessions held out (median 73 per speaker). Speaker-cluster CIs (A3) account for this.
+
+### Pre-registered decision rules
+- **B1, mixed precision (k):** the same rule as for small. k ∈ {1, 2, ⌊n/8⌋, ⌊n/4⌋} blocks kept at 16-bit, chosen by the lowest pooled val embedded error (cs_E_emb), ties to the smaller k. Then run once on test.
+- **B3, QAT:** QLoRA rank 16, 1 epoch, lr 1e-4, the same loss as the model's own training. The checkpoint is the one with the lowest mean val MER. No tuning on test.
+- **B4, Rec and R:** reported only where the 16-bit→4-bit embedded change has a 95% CI excluding 0. The slices are the same as in `06_fragility_ratio_R.csv`.
+- **C1, LID gate:** a clip is re-ranked only if the smoothed LID head output contains a language run of at least θ ms in the minority language. θ ∈ {0 (any switch), 200, 400, 800, ∞ = never}.
+  - θ is chosen by the lowest pooled val MER of the gated system, using the re-ranking weights already chosen on val (filtered variants).
+  - Ties go to the larger θ, which means fewer clips re-ranked.
+- **C2, per-model LID heads:** the same recipe as `lid_ft_base` (2 epochs, lr 1e-3). Reported on val only, then used in C1 with the C1 rule.
+- **C3, transliteration:** the phonetic-similarity threshold is chosen for the best F1 against my D1 labels (transliteration vs not), on the D1 pairs only.
+- **D1, τ:** the best F1 of "CC-CEDICT match OR LaBSE ≥ τ" against my labels (translation vs not), over τ in steps of 0.05. A sensitivity table at τ ∈ {0.5, 0.6, 0.7, 0.8} is reported regardless.
+- **D2, critical words:** CWER is reported under both the rule tagger and the adjudicated labels. No tuning.
+- **D3, leakage:**
+  - The combination rule is set on a pilot of NSC **val** clips only. It assigns clean / faint / partner-words-audible from thresholds on the four signals, written down before scoring test.
+  - Test utterances are then flagged once.
+  - The sensitivity re-score excludes flagged utterances.
+- **E, Diff Room ablation:**
+  - **Split:** Diff Room split by session 70/10/20 (seed 425). Sessions of the 4 dual-room speakers are excluded from E-train and E-val.
+  - **New held-out Diff Room test:** a 4 h random sample from the E-test sessions (the existing Diff Room test spans all sessions and is kept as is for the main tables).
+  - **Training:** each condition uses the `ft_base` recipe with no tuning. A = existing `ft_base`; B = 40 h Diff Room (all-mixed first, up to 30 h, then English-only, as for Same Room); C = 20 h Same Room (random half of the A training set) + 20 h Diff Room (random half of B).
+  - **Evaluation:** once on the Same Room test and once on the E Diff Room test.
