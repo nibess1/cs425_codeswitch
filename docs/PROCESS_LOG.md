@@ -311,3 +311,29 @@ Diff Room ablation: C, D, E), smu2 CPUs (exports, signal processing), MacBook (s
   The rule tagger finds only about a quarter of the critical words, mostly numbers and dates, which fine-tuning handles well. With names, places, brands and course terms included, **fine-tuning's critical-word gain shrinks to about a third** (small: −6.3 points rather than −16.0). Both CWERs will be reported.
 - **Audit:** `review/critical_audit.csv` (50 random disagreements with rule-tagger, annotator and adjudicated labels).
 - **NSC transcripts** were not hand-labelled (A4), so NSC CWER stays rule-tagger only.
+
+### 23 Oct: D3 partner leakage (NSC licence confirmed by the team lead, so NSC transcripts may be read)
+- **Environment incident.** `pip install speechbrain` upgraded torch to 2.14 (too new for the GPU driver) and pulled in CUDA 13 libraries. Fixed by force-reinstalling torch/torchaudio 2.5.1+cu124 with their CUDA 12 dependencies and using speechbrain 1.0.3; `pip check` is clean and the 21 tests pass.
+- **Signals** (`scripts/leak_signals.py`, `leak_s5.py`; 16,328 clips: NSC val as pilot, Same Room test, Diff Room test):
+  - **s1:** overlap with the partner's transcribed speech.
+  - **s2:** envelope correlation with the partner's channel. *Not directional:* in Same Room both phones record whoever is talking (median r = 0.74 vs 0.01 in Diff Room), so it measures acoustic coupling, not leakage, and isn't used in the rule.
+  - **s3:** ECAPA (spkrec-ecapa-voxceleb), the max over 1.5 s windows of cos(partner) − cos(self), against enrollment from up to 8 clean utterances per channel (816 channels).
+  - **s4:** inserted units matching the partner's ±2 s transcript.
+  - **s5** (added after the pilot showed that leaked speech is often *substituted*, not inserted): output units absent from the reference but present in the partner's ±2 s transcript, excluding common words.
+- **Pilot** (val only). I judged the 103 val clips with s5 ≥ 1 or s3 > 0.2 against the partner transcript: 30 partner-words-audible, 33 faint, 40 clean. Rule fixed from the pilot, before test:
+  - **partner_words_audible** if (s5 ≥ 2 and s3 > −0.15) or (s5 ≥ 1 and s3 > 0.1) or (s3 > 0.2 and ref_recall < 0.3)
+  - **faint** if otherwise s3 > 0.2
+  - **clean** otherwise
+
+  The rule agrees with my pilot judgement on 82.5% of those hard cases.
+- **Test.** The rule is applied once. The 158 borderline test clips were judged by me from text and numbers only (`data/llm_labels/d3_test_judgements.csv`); there the rule agreed with my judgement 63% of the time, mostly "rule faint, judged clean" where the output matches the reference. Final labels:
+
+  | Test set | Clean | Partner words audible | Faint | Flagged |
+  |---|---|---|---|---|
+  | Same Room | 98.25% | 0.88% | 0.87% | **1.75%** |
+  | Diff Room | 99.85% | 0.07% | 0.07% | 0.15% |
+
+  The Diff Room rate is consistent with separate rooms.
+- **Sensitivity** (flagged clips excluded). Same Room MER falls by about 1 point for fine-tuned models: ft_small 21.37 → 20.32, full_small 20.65 → 19.71, ft_base 28.39 → 27.25, full_base 26.07 → 25.17. The off-the-shelf small falls 55.07 → 54.40, and Diff Room changes by ≤ 0.3. Embedded-unit error changes by ≤ 1.3 points. **No conclusion changes.**
+- **Audit:** `review/leak_audit.csv` (10 flagged + 10 cleared clips, with audio paths and signals).
+- **Single annotator.** I made all D3 judgements. There was no second D3 annotator, because judging a clip needs the partner transcript and the signal values, so the labels are single-annotator; the audit above is the human check.
