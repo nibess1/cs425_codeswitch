@@ -43,7 +43,55 @@ def term_list() -> tuple[set[str], list[str]]:
     return en, zh
 
 
+_LABELS_FILE = os.environ.get("CSASR_CRITICAL_LABELS", "")
+
+
+@lru_cache(maxsize=1)
+def labelled_critical() -> frozenset:
+    """Word types judged critical by the D2 annotation (adjudicated), one per line."""
+    if not _LABELS_FILE or not os.path.exists(_LABELS_FILE):
+        return frozenset()
+    return frozenset(l.strip() for l in open(_LABELS_FILE, encoding="utf-8") if l.strip())
+
+
+def tag_critical_from_labels(lab) -> list[tuple[int, int]]:
+    """D2 mode: a unit (English word / digit string) or a jieba word over a Chinese run is
+    critical if its type is in the adjudicated list; digit strings always are (rubric)."""
+    import jieba
+    crit = labelled_critical()
+    units, n = lab.units, len(lab.units)
+    spans, i = [], 0
+    while i < n:
+        if lab.langs[i] == "zh":
+            j = i
+            while j < n and lab.langs[j] == "zh":
+                j += 1
+            k = i
+            for w in jieba.lcut("".join(units[i:j])):
+                if w in crit:
+                    spans.append((k, k + len(w)))
+                k += len(w)
+            i = j
+            continue
+        # multi-word Latin types (e.g. "hong kong") first, then single units
+        hit = None
+        for L in (3, 2):
+            if i + L <= n and " ".join(units[i:i + L]) in crit:
+                hit = (i, i + L)
+                break
+        if hit is None and (units[i] in crit or units[i].isdigit()):
+            hit = (i, i + 1)
+        if hit:
+            spans.append(hit)
+            i = hit[1]
+        else:
+            i += 1
+    return spans
+
+
 def tag_critical(lab) -> list[tuple[int, int]]:
+    if _LABELS_FILE:
+        return tag_critical_from_labels(lab)
     units = lab.units
     n = len(units)
     crit = [False] * n

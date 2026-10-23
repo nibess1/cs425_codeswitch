@@ -30,7 +30,9 @@ def read_preds(name_or_path: str) -> list[dict]:
 def stats(name_or_path: str, use_labse=True, tau=DEFAULT_TAU, rho0=0.5, refresh=False) -> dict:
     """{set_name: (utt_ids, list_of_stat_dicts)} with an on-disk cache next to the preds."""
     p = name_or_path if name_or_path.endswith(".jsonl") else path(f"preds/{name_or_path}.jsonl")
-    cache = p.replace(".jsonl", f".stats{'' if use_labse else '_nolabse'}.pkl")
+    crit = os.environ.get("CSASR_CRITICAL_LABELS", "")
+    crit_tag = "_critD2" if crit else ""  # D2 adjudicated critical words vs the rule tagger
+    cache = p.replace(".jsonl", f".stats{'' if use_labse else '_nolabse'}{crit_tag}.pkl")
     key = (STATS_VERSION, tau, rho0, os.path.getmtime(p))
     if not refresh and os.path.exists(cache):
         c = pickle.load(open(cache, "rb"))

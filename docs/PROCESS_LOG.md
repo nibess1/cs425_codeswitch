@@ -250,3 +250,64 @@ Diff Room ablation: C, D, E), smu2 CPUs (exports, signal processing), MacBook (s
   - A second, independent subagent annotator, which sees only the rubric and the items, is running.
   - **τ by the pre-registered rule** (best unique-pair F1 of "CC-CEDICT or LaBSE ≥ τ" vs *translation*): **τ = 0.65** (P 0.61, R 0.71, F1 0.65). Occurrence-weighted F1 would favour 0.70 (0.88); the rule says unique pairs, so 0.65 is used. A sensitivity table at 0.5/0.6/0.7/0.8 will be reported.
 - **C3 (transliteration detector, `csasr/score/translit.py`).** The Han side is romanized with pypinyin, both sides are encoded with Metaphone, and similarity = 1 − normalised Levenshtein. The threshold is the best F1 vs *transliteration* on the D1 pairs: **θ = 0.1** (P 0.75, R 0.91, F1 0.82; flat at 0.80–0.82 up to 0.25). The new field `N_tl_E` and metric `translit_rate` count embedded units in a cross-script block that isn't a translation and has similarity ≥ θ. `STATS_VERSION` = 6.
+
+### 23 Oct: D1 finished (two annotators, adjudicated)
+- **Annotator 2.** A fresh subagent that saw only `prompts/translation_rubric.md` and the 1,768 items, never annotator 1's labels. It labelled transliteration 945, other 713, translation 110 (`data/llm_labels/d1_labels_annotator2.csv`).
+- **Agreement (Cohen's κ, annotator 1 vs 2):**
+
+  | Comparison | Raw agreement | κ |
+  |---|---|---|
+  | 3-class | 0.798 | **0.62** |
+  | translation vs rest | 0.981 | **0.84** |
+  | transliteration vs rest | 0.813 | 0.62 |
+  | other vs rest | 0.800 | 0.56 |
+
+  Most disagreements (269 of 358) were pairs annotator 1 called transliteration and annotator 2 called other.
+- **Adjudication** (annotator 1, with both reasons visible). Rules applied to all 358 disagreements:
+  - **R1:** transliteration needs the sound-alike rendering in the *other* script relative to the reference. English sound-alike garble of an English word (complain→company) is ordinary misrecognition, so *other*. English sound-alikes of a Chinese reference (我们不能→"one more banana") *are* transliterations.
+  - **R2:** a single-syllable partial match isn't enough.
+  - **R3:** a multi-word reference counts as transliteration if at least half its syllables are rendered by sound.
+  - **R4:** a filler or interjection equivalent counts as translation even with extra words.
+
+  Result: transliteration 963, other 689, translation 116 (`d1_labels_adjudicated.csv`). The adjudication sided with annotator 2 in 252 cases, annotator 1 in 104, and neither in 2.
+- **Thresholds re-selected on the adjudicated labels with the same rules:** τ = **0.65** (F1 0.66, P 0.62, R 0.71) and θ = **0.1** (F1 0.74, P 0.62, R 0.90), both unchanged.
+- **Audit:** `review/translation_audit.csv` (30 random pairs).
+
+### D2 in progress
+- **Candidates:** 335 unique words from ASCEND test + the stress sentences, combining the rule tagger with a broad finder (digits/numerals, Latin words outside the top-5k English list, fuzzy term matches, jieba nr/ns/nt/nz).
+- **Annotator 1:** critical 222, not critical 113.
+- **Annotator 1 vs the rule tagger:** agreement 0.773, κ **0.55**. The rule tagger flags 10 words annotator 1 rejects (function words via substring matches, `块`, `report`). It misses 66 that annotator 1 accepts: almost all names, places, brands, exams and course terms (深圳, toefl, mcgrady, alipay, semester…), because it has no named-entity component.
+- **Finder recall:** reading 500 random ASCEND test utterances in full found **34 critical words the finder missed**. The main gaps are `ai` (×8), `hong kong` written as two words (×4), product names (`mac`, `iphone`, `windows`), school years (`大二`, `大四`) and durations (`一个月`, `one year`).
+- **Annotator 2:** a fresh subagent with only the rubric and items is running.
+
+### 23 Oct: D2 finished (two annotators, adjudicated)
+- **Annotator 2.** A fresh subagent that saw only `prompts/critical_rubric.md` and the 335 items, without annotator 1's labels or the rule-tagger column. It labelled critical 232, not critical 103.
+- **Agreement:**
+
+  | Comparison | Raw agreement | κ |
+  |---|---|---|
+  | annotator 1 vs 2 | 0.899 | **0.77** |
+  | annotator 1 vs rule tagger | 0.773 | 0.55 |
+  | annotator 2 vs rule tagger | 0.731 | 0.47 |
+- **Adjudication** of the 34 disagreements (sided with annotator 2 in 27, annotator 1 in 7):
+  - *Critical:* names, places, brands and their fragments (博, 中国式家长, 回大陆, 福建人), language names (a fact about the conversation), degree levels, technical terms, time parts (9 点, p m), and the World Cup.
+  - *Not critical:* `有 1 点` ("a bit"), generic roles (tutor, supervisor), and everyday objects and actions (parcel, email, booking, slides, bug, 门卡, 面试).
+
+  Result: critical 229, not critical 106. Adding the 20 extra types found by reading 500 utterances gives a **critical-word list of 249 types** (`data/llm_labels/d2_critical_words.txt`).
+- **New CWER mode (b).** `CSASR_CRITICAL_LABELS=<list>` makes the tagger mark adjudicated word types (English words, multi-word Latin types, jieba words over Chinese runs) plus every digit string. Stats are cached separately (`*_critD2.pkl`).
+- **CWER on ASCEND test, (a) rule tagger vs (b) adjudicated labels:**
+
+  | System | (a) 81 critical words | (b) 298 critical words |
+  |---|---|---|
+  | off-the-shelf small | 35.8 | 36.2 |
+  | ft tiny | 33.3 | 45.0 |
+  | ft base | 24.7 | 38.9 |
+  | ft small | 19.8 | 29.9 |
+  | full base | 21.0 | 36.6 |
+  | full small | 17.3 | 27.5 |
+  | ft small NF4 | 12.3 | 26.5 |
+  | ft tiny NF4 | 46.9 | 53.0 |
+
+  The rule tagger finds only about a quarter of the critical words, mostly numbers and dates, which fine-tuning handles well. With names, places, brands and course terms included, **fine-tuning's critical-word gain shrinks to about a third** (small: −6.3 points rather than −16.0). Both CWERs will be reported.
+- **Audit:** `review/critical_audit.csv` (50 random disagreements with rule-tagger, annotator and adjudicated labels).
+- **NSC transcripts** were not hand-labelled (A4), so NSC CWER stays rule-tagger only.
