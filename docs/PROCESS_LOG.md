@@ -373,3 +373,17 @@ Paired deltas vs A (positive = worse than A):
 - C: +0.6 [-0.5, 1.7] on Diff Room and -0.1 [-1.2, 1.0] on Same Room (both n.s.).
 
 **Negative / null result.** Training on Diff Room audio does *not* help on Diff Room test speech. Same Room training is as good or better on both rooms, and mixing the two is indistinguishable from Same Room alone. The Same-vs-Diff Room gap in the main tables is therefore not a training-domain mismatch. A plausible but untested reading is that Diff Room speech is simply easier (the earlier D3 result showed less partner leakage). B is slightly better on ASCEND (20.2 vs 21.3), with overlapping CIs.
+
+### 25 Oct: D1 τ sensitivity (`results/d1_tau_sensitivity.csv`)
+Translation detector (CC-CEDICT match OR LaBSE ≥ τ) vs adjudicated *translation* labels on the 1,768 D1 pairs. Each pair is scored once ("pair") and weighted by its occurrence count across all systems ("occ").
+
+| τ | Pair P / R / F1 | Occ P / R / F1 | Flagged occurrences (× τ=0.65) |
+|---|---|---|---|
+| 0.50 | 0.36 / 0.90 / 0.52 | 0.57 / 0.98 / 0.72 | 1.53 |
+| 0.60 | 0.53 / 0.81 / 0.64 | 0.72 / 0.96 / 0.83 | 1.19 |
+| **0.65** | 0.62 / 0.71 / **0.66** | 0.82 / 0.93 / 0.87 | 1.00 |
+| 0.70 | 0.66 / 0.59 / 0.62 | 0.85 / 0.91 / **0.88** | 0.95 |
+| 0.80 | 0.82 / 0.36 / 0.50 | 0.89 / 0.49 / 0.63 | 0.49 |
+
+- conf_rate scales roughly with the flagged-occurrence count: about ±20% for τ in 0.6–0.7, ×1.5 at 0.5 and ×0.5 at 0.8.
+- conf_rate is small for every system (≤ 1.7% of embedded units), so the RQ1 conclusion that translations are a minor error source holds for all τ ≤ 0.7.

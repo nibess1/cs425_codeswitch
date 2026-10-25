@@ -170,7 +170,7 @@ def quant():
             if method.endswith("_val") or method.startswith(("val", "smoke")) or method.startswith("rerank"):
                 continue
             base = f"{tag}__fp16__{method}"
-            if not have(base):
+            if not have(base) and not method.endswith("_merged"):
                 continue
             for prec in SIM_PREC + DEP_PREC:
                 name = f"{tag}__{prec}__{method}"
@@ -213,10 +213,11 @@ def quant():
         prec = "nf4_bnb" if "nf4" in p else "int8_bnb"
         k = j["chosen"]["k"]
         fix = f"{tag}__{prec}__mp{k}"
+        src = "full" if tag.startswith("full") else "ft"
         for s, main in R_SLICES:
-            if have(fix) and have(f"{tag}__fp16__ft") and have(f"{tag}__{prec}__ft"):
+            if have(fix) and have(f"{tag}__fp16__{src}") and have(f"{tag}__{prec}__{src}"):
                 try:
-                    rc = R.recovery(f"{tag}__fp16__ft", f"{tag}__{prec}__ft", fix, s, main=main)
+                    rc = R.recovery(f"{tag}__fp16__{src}", f"{tag}__{prec}__{src}", fix, s, main=main)
                 except KeyError:
                     continue
                 recs.append(dict(fix=f"mixed precision top-{k} at 16-bit", model=tag, precision=prec, set=s, main=main,
@@ -238,6 +239,25 @@ def quant():
                                  loss=f(rc["loss"], *rc["loss_ci"]),
                                  Rec=(f"{rc['Rec']:.2f} [{rc['Rec_ci'][0]:.2f}, {rc['Rec_ci'][1]:.2f}]"
                                       if rc["Rec_ci"][0] is not None else f"{rc['Rec']:.2f} (loss within noise)")))
+    # merged QAT re-quantized (simulated NF4 and deployed formats) vs the same-backend 16-bit reference
+    for m in sorted(glob.glob(manifest.path("preds/*__qat_*_merged.meta.json"))):
+        name = os.path.basename(m)[:-10]
+        tag, prec, method = name.split("__")
+        if prec not in REF16:
+            continue
+        src = method[len("qat_"):-len("_merged")]
+        b16, bq = f"{tag}__{REF16[prec]}__{src}", f"{tag}__{prec}__{src}"
+        for s, main in R_SLICES:
+            if have(b16) and have(bq):
+                try:
+                    rc = R.recovery(b16, bq, name, s, main=main)
+                except KeyError:
+                    continue
+                recs.append(dict(fix="QAT merged, re-quantized", model=tag, precision=prec, set=s, main=main,
+                                 loss=f(rc["loss"], *rc["loss_ci"]),
+                                 Rec=(f"{rc['Rec']:.2f} [{rc['Rec_ci'][0]:.2f}, {rc['Rec_ci'][1]:.2f}]"
+                                      if rc["Rec_ci"][0] is not None else f"{rc['Rec']:.2f} (loss within noise)")))
+    pd.DataFrame(recs).to_csv(os.path.join(RES, "recovery.csv"), index=False)
     body += ("\n\n## Recovery Rec = (Eq_emb - Eq,fix_emb) / (Eq_emb - E16_emb)\n\n"
              "loss: embedded-error increase from quantization (points). Rec is reported with a CI only when the loss"
              " CI excludes 0.\n\n" + md(pd.DataFrame(recs)))
