@@ -1,4 +1,5 @@
 """Scoring API on prediction files: cached per-utterance stats, tables, comparisons."""
+import hashlib
 import json
 import os
 import pickle
@@ -33,7 +34,8 @@ def stats(name_or_path: str, use_labse=True, tau=DEFAULT_TAU, rho0=0.5, refresh=
     crit = os.environ.get("CSASR_CRITICAL_LABELS", "")
     crit_tag = "_critD2" if crit else ""  # D2 adjudicated critical words vs the rule tagger
     cache = p.replace(".jsonl", f".stats{'' if use_labse else '_nolabse'}{crit_tag}.pkl")
-    key = (STATS_VERSION, tau, rho0, os.path.getmtime(p))
+    crit_hash = hashlib.md5(open(crit, "rb").read()).hexdigest() if crit else ""  # label list is part of the key
+    key = (STATS_VERSION, tau, rho0, os.path.getmtime(p)) + ((crit_hash,) if crit else ())
     if not refresh and os.path.exists(cache):
         c = pickle.load(open(cache, "rb"))
         if c.get("key") == key:

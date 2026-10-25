@@ -1,0 +1,31 @@
+model,variant,system_id,set,MER_pct,MER_ci95_low,MER_ci95_high,embedded_unit_error_pct
+full_base,greedy,full_base__fp16__full,ASCEND,20.26,19.0,21.43,39.2
+full_base,greedy,full_base__fp16__full,NSC Same Room,26.07,25.48,26.63,27.37
+full_base,greedy,full_base__fp16__full,NSC Diff Room,21.06,20.24,21.98,22.54
+full_base,always re-rank (on-device),full_base__fp16__rerank_ondevice_filt,ASCEND,19.61,18.43,20.75,34.89
+full_base,always re-rank (on-device),full_base__fp16__rerank_ondevice_filt,NSC Same Room,25.95,25.36,26.5,27.07
+full_base,always re-rank (on-device),full_base__fp16__rerank_ondevice_filt,NSC Diff Room,21.52,20.71,22.43,22.06
+full_base,LID-gated (shared head),full_base__fp16__rerank_ondevice_filt_gated,ASCEND,118.26,112.25,125.03,102.46
+full_base,LID-gated (shared head),full_base__fp16__rerank_ondevice_filt_gated,NSC Same Room,25.71,25.14,26.25,26.95
+full_base,LID-gated (shared head),full_base__fp16__rerank_ondevice_filt_gated,NSC Diff Room,20.72,19.94,21.63,21.82
+full_base,LID-gated (own head),fullown_base__fp16__rerank_ondevice_filt_gated,ASCEND,116.68,110.71,123.4,100.73
+full_base,LID-gated (own head),fullown_base__fp16__rerank_ondevice_filt_gated,NSC Same Room,25.71,25.14,26.25,26.95
+full_base,LID-gated (own head),fullown_base__fp16__rerank_ondevice_filt_gated,NSC Diff Room,20.75,19.97,21.67,21.91
+full_base,always re-rank (MMS),full_base__fp16__rerank_mms_filt,ASCEND,21.25,19.99,22.52,34.06
+full_base,always re-rank (MMS),full_base__fp16__rerank_mms_filt,NSC Same Room,26.33,25.77,26.9,27.3
+full_base,always re-rank (MMS),full_base__fp16__rerank_mms_filt,NSC Diff Room,22.09,21.27,23.05,22.4
+full_small,greedy,full_small__fp16__full,ASCEND,14.64,13.6,15.67,29.82
+full_small,greedy,full_small__fp16__full,NSC Same Room,20.65,20.07,21.24,21.34
+full_small,greedy,full_small__fp16__full,NSC Diff Room,17.13,16.2,18.13,18.71
+full_small,always re-rank (on-device),full_small__fp16__rerank_ondevice_filt,ASCEND,14.26,13.23,15.28,26.81
+full_small,always re-rank (on-device),full_small__fp16__rerank_ondevice_filt,NSC Same Room,21.45,20.92,21.96,21.61
+full_small,always re-rank (on-device),full_small__fp16__rerank_ondevice_filt,NSC Diff Room,18.37,17.47,19.33,18.93
+full_small,LID-gated (shared head),full_small__fp16__rerank_ondevice_filt_gated,ASCEND,116.58,110.53,123.53,98.15
+full_small,LID-gated (shared head),full_small__fp16__rerank_ondevice_filt_gated,NSC Same Room,20.55,19.98,21.09,21.57
+full_small,LID-gated (shared head),full_small__fp16__rerank_ondevice_filt_gated,NSC Diff Room,17.19,16.28,18.16,18.64
+full_small,LID-gated (own head),fullown_small__fp16__rerank_ondevice_filt_gated,ASCEND,116.74,110.21,123.18,99.58
+full_small,LID-gated (own head),fullown_small__fp16__rerank_ondevice_filt_gated,NSC Same Room,20.43,19.88,20.96,21.43
+full_small,LID-gated (own head),fullown_small__fp16__rerank_ondevice_filt_gated,NSC Diff Room,17.14,16.23,18.11,18.71
+full_small,always re-rank (MMS),full_small__fp16__rerank_mms_filt,ASCEND,15.69,14.66,16.74,25.17
+full_small,always re-rank (MMS),full_small__fp16__rerank_mms_filt,NSC Same Room,21.79,21.23,22.32,21.38
+full_small,always re-rank (MMS),full_small__fp16__rerank_mms_filt,NSC Diff Room,18.65,17.76,19.63,19.09

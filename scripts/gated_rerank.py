@@ -44,7 +44,7 @@ def minority_run_ms(pred: np.ndarray) -> float:
 
 
 @torch.no_grad()
-def lid_runs(rows, head_ckpt, bs=32):
+def lid_runs(rows, head_ckpt, set_name, bs=32):
     ck = torch.load(manifest.path(head_ckpt), map_location="cpu", weights_only=False)
     model = load_model(manifest.path(ck["encoder"]), "fp16")
     enc = model.get_encoder().eval()
@@ -59,7 +59,7 @@ def lid_runs(rows, head_ckpt, bs=32):
         pred = head(enc(x.cuda().half()).last_hidden_state.float()).argmax(-1).cpu().numpy()
         for r, w, p in zip(chunk, wavs, pred):
             n = min(1500, int(np.ceil(len(w) / 16000 / FRAME)))
-            out[r["utt_id"]] = minority_run_ms(smooth(p[:n].copy()))
+            out[(set_name, r["utt_id"])] = minority_run_ms(smooth(p[:n].copy()))
     return out
 
 
@@ -71,7 +71,7 @@ def main():
     ap.add_argument("--weights", default=None, help="results/rerank_<tag>_filt.json (default)")
     ap.add_argument("--lid", required=True)
     ap.add_argument("--out_tag", required=True, help="model tag of the output systems")
-    ap.add_argument("--suffix", default="gated")
+    ap.add_argument("--suffix", default="gatedv2")
     ap.add_argument("--val_limit", type=int, default=1500)
     a = ap.parse_args()
     feats = pickle.load(open(manifest.path(f"preds/{a.tag}__rerank_feats.pkl"), "rb"))
@@ -81,15 +81,15 @@ def main():
     greedy = {}
     for name in (a.greedy, a.greedy_val or a.greedy + "_val"):
         for r in R.read_preds(name):
-            greedy[r["utt_id"]] = r["hyp"]
+            greedy[(r["set"], r["utt_id"])] = r["hyp"]
     sets = {s: manifest.load(s)[: a.val_limit] for s in manifest.EVAL_VAL}
     sets.update({s: manifest.load(s) for s in manifest.EVAL_TEST})
-    cache = manifest.path(f"preds/{a.out_tag}__lidruns_{os.path.basename(os.path.dirname(a.lid))}.pkl")
+    cache = manifest.path(f"preds/{a.out_tag}__lidruns_v2_{os.path.basename(os.path.dirname(a.lid))}.pkl")
     runs = pickle.load(open(cache, "rb")) if os.path.exists(cache) else {}
     for s, rows in sets.items():
-        todo = [r for r in rows if r["utt_id"] not in runs]
+        todo = [r for r in rows if (s, r["utt_id"]) not in runs]
         if todo:
-            runs.update(lid_runs(todo, a.lid))
+            runs.update(lid_runs(todo, a.lid, s))
             pickle.dump(runs, open(cache, "wb"))
     report = {"lid_head": a.lid, "thetas": {}, "chosen": {}, "share_reranked": {}}
     for variant in ("rerank_ondevice_filt", "rerank_mms_filt"):
@@ -97,9 +97,10 @@ def main():
 
         def hyp(r, theta):
             c = feats[r["set_name"]].get(r["utt_id"]) or []
-            if c and runs[r["utt_id"]] >= theta and runs[r["utt_id"]] >= 0:
+            k = (r["set_name"], r["utt_id"])  # ASCEND val and test reuse utt_ids, so key by set
+            if c and runs[k] >= theta and runs[k] >= 0:
                 return RR.choose(c, g, e)["text"], True
-            return greedy[r["utt_id"]], False
+            return greedy[k], False
 
         vrows = [dict(r, set_name=s) for s in manifest.EVAL_VAL for r in sets[s]]
         val = {}

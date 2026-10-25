@@ -1,0 +1,9 @@
+task,comparison,n_items,raw_agreement,cohen_kappa
+"D1 translation/transliteration (1,768 ASCEND pairs)","annotator 1 vs 2, 3-class",1768,0.798,0.62
+"D1 translation/transliteration (1,768 ASCEND pairs)","annotator 1 vs 2, translation vs rest",1768,0.981,0.842
+"D1 translation/transliteration (1,768 ASCEND pairs)","annotator 1 vs 2, transliteration vs rest",1768,0.813,0.619
+"D1 translation/transliteration (1,768 ASCEND pairs)","annotator 1 vs 2, other vs rest",1768,0.8,0.564
+D2 critical words (335 candidate types),annotator 1 vs 2,335,0.899,0.768
+D2 critical words (335 candidate types),annotator 1 vs rule tagger,335,0.773,0.548
+D2 critical words (335 candidate types),annotator 2 vs rule tagger,335,0.731,0.465
+D3 partner leakage (158 borderline test clips),signal rule vs annotator 1,158,0.633,0.29

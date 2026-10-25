@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from csasr.data import manifest  # noqa: E402
 from csasr.score import report as R  # noqa: E402
 
@@ -42,7 +43,9 @@ METRICS = [("MER", "MER_pct", "mixed error rate over all units"),
            ("cs_E_mat", "matrix_unit_error_codeswitched_pct", "matrix (Ms+Mi) error on code-switched utterances"),
            ("conf_rate", "translation_rate_pct", "share of embedded units replaced by a translation"),
            ("sMER", "semantic_MER_pct", "MER with partial credit for correct translations (rho0=0.5)"),
-           ("CWER", "critical_word_error_pct", "share of critical words not reproduced exactly")]
+           ("CWER", "critical_word_error_pct", "share of critical words not reproduced exactly"),
+           ("translit_rate", "transliteration_rate_pct",
+            "share of embedded units replaced by a sound-alike in the other script (C3, theta=0.1)")]
 
 README = []
 
@@ -253,11 +256,11 @@ def main():
     for p in sorted(glob.glob(manifest.path("preds/*.meta.json"))):
         m = json.load(open(p))
         if "footprint_mb" in m:
-            rows.append({"model": m["model"], "precision": PREC_NAME.get(m["precision"], m["precision"]),
+            rows.append({"model": m["model"], "method": m.get("method"), "precision": PREC_NAME.get(m["precision"], m["precision"]),
                          "model_memory_footprint_MB": m["footprint_mb"],
                          "n_quantized_linear_layers": m.get("quantized_modules_n", 0)})
         elif "file_mb" in m:
-            rows.append({"model": m["model"], "precision": PREC_NAME.get(m["precision"], m["precision"]),
+            rows.append({"model": m["model"], "method": m.get("method"), "precision": PREC_NAME.get(m["precision"], m["precision"]),
                          "model_file_size_MB": m["file_mb"]})
     pd.DataFrame(rows).drop_duplicates().to_csv(os.path.join(OUT, "10_model_size_and_memory.csv"), index=False)
     doc("10_model_size_and_memory.csv", "Measured GPU memory footprint (bitsandbytes) and CPU model file sizes.", [])
@@ -287,12 +290,15 @@ def main():
              ("emb_en", "interaction"), ("logf", "log training frequency"), ("dur", "spoken length (s)"),
              ("nsc", "NSC corpus"), ("ci95", "bootstrap over speakers")])
 
+    import export_tables_extra
+    export_tables_extra.run(OUT, doc, SET_NAME, PREC_NAME, METHOD_NAME)
+
     with open(os.path.join(OUT, "README.txt"), "w") as f:
         f.write("CS425 results tables (exported " + pd.Timestamp.now().strftime("%Y-%m-%d %H:%M") + ")\n"
                 "All *_pct columns are percentages (21.35 = 21.35%). Test sets unless the name says val.\n"
                 "MER = (substitutions + deletions + insertions) / reference units; one unit = one Chinese\n"
                 "character, English word or digit string. Role rates charge insertions to error blocks, so\n"
-                "they can exceed 100%. Speed on the MacBook is in 13_speed_macbook.csv.\n\n" + "".join(README))
+                "they can exceed 100%. Speed on the MacBook is in 13_speed_macbook.csv.\nSYNTHETIC = text-to-speech audio, not human speech.\n\n" + "".join(README))
     print("wrote", sorted(os.listdir(OUT)))
 
 

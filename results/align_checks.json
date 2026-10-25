@@ -1,0 +1,65 @@
+{
+ "a_fleurs_splices_known_switches": {
+  "n": 629,
+  "median_ms": 10.4,
+  "mean_ms": 53.2,
+  "within_50ms_pct": 87.3,
+  "within_100ms_pct": 93.5
+ },
+ "b_mms_vs_whisper_xattn_at_switches": {
+  "n": 1299,
+  "median_ms": 73.0,
+  "mean_ms": 140.6,
+  "within_50ms_pct": 34.9,
+  "within_100ms_pct": 61.9
+ },
+ "c_mms_vs_textgrid_edges": {
+  "nsc_test": {
+   "first_word_start_after_edge": {
+    "n": 8871,
+    "median_ms": 64.0,
+    "mean_ms": 177.0,
+    "within_50ms_pct": 36.6,
+    "within_100ms_pct": 61.9
+   },
+   "last_word_end_before_edge": {
+    "n": 8871,
+    "median_ms": 121.0,
+    "mean_ms": 203.0,
+    "within_50ms_pct": 27.4,
+    "within_100ms_pct": 41.9
+   }
+  },
+  "nsc_diff_test": {
+   "first_word_start_after_edge": {
+    "n": 4084,
+    "median_ms": 80.0,
+    "mean_ms": 193.0,
+    "within_50ms_pct": 32.2,
+    "within_100ms_pct": 60.6
+   },
+   "last_word_end_before_edge": {
+    "n": 4084,
+    "median_ms": 103.0,
+    "mean_ms": 201.9,
+    "within_50ms_pct": 27.4,
+    "within_100ms_pct": 45.2
+   }
+  }
+ },
+ "lid_boundary_median_ms_for_reference": {
+  "lid_ft_base": {
+   "ascend_val": 60,
+   "nsc_val": 120
+  },
+  "lid_full_base": {
+   "ascend_val": 60,
+   "nsc_val": 100
+  },
+  "lid_full_small": {
+   "ascend_val": 20,
+   "nsc_val": 80
+  }
+ },
+ "a_note": "true switch = midpoint of the 100 ms silence between pieces (first run used the piece start, adding ~50 ms)"
+}

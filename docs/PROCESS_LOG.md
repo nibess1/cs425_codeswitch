@@ -387,3 +387,12 @@ Translation detector (CC-CEDICT match OR LaBSE ≥ τ) vs adjudicated *translati
 
 - conf_rate scales roughly with the flagged-occurrence count: about ±20% for τ in 0.6–0.7, ×1.5 at 0.5 and ×0.5 at 0.8.
 - conf_rate is small for every system (≤ 1.7% of embedded units), so the RQ1 conclusion that translations are a minor error source holds for all τ ≤ 0.7.
+
+### 25 Oct: two bugs found while building the final tables (F1)
+- **C1 gated re-ranking: ASCEND rows were wrong.** `gated_rerank.py` keyed the greedy outputs and the LID-run cache by `utt_id` alone, but ASCEND val and test reuse the same ids (`ascend_00000` …).
+  - Effect: ASCEND test clips were scored against val transcripts (MER ≈ 117%), and the ASCEND part of the val θ selection used the wrong greedy outputs. NSC ids are unique, so NSC rows were unaffected.
+  - Fix: key everything by (set, utt_id) with a fresh LID-run cache (`*__lidruns_v2_*`). Rerun as new system ids `*_gatedv2` (`scripts/queue_c7b.sh`); the old `*_gated` files are kept but not reported.
+  - The full_base N-best feature cache had been lost, so it is rebuilt under a new tag `fullshared_base` (same model + shared lid_ft_base head; `scripts/queue_c7c.sh`). Re-ranking is deterministic, so the val-chosen weights are expected to match the 20 Oct run; this is checked.
+- **D2 CWER mode (b): stale caches.** The stats cache key did not include the critical-word list, so some systems kept caches built from an earlier list (1,648 or 850 "critical" words on ASCEND test instead of 298).
+  - Fix: the label-file hash is now part of the cache key (label mode only). Mode (b) tables and the stress-set mode (b) CSV are recomputed.
+  - Mode (a) numbers are unaffected.

@@ -1,3 +1,7 @@
 head,val_set,language_accuracy_on_speech_frames_pct,frame_accuracy_3class_smoothed_pct,frame_accuracy_3class_unsmoothed_pct,switch_boundary_error_median_ms,switches_within_100ms_pct,switches_detected_pct
 lid_ft_base,ASCEND val,95.96,85.92,87.2,60,43.75,75.37
 lid_ft_base,NSC Same Room val,95.36,82.87,83.04,120,41.09,84.62
+lid_full_base,ASCEND val,95.93,85.94,87.17,60,44.85,76.84
+lid_full_base,NSC Same Room val,95.3,82.91,83.04,100,42.21,83.68
+lid_full_small,ASCEND val,97.7,87.5,89.12,20,55.15,77.57
+lid_full_small,NSC Same Room val,96.44,83.92,84.52,80,44.28,84.62

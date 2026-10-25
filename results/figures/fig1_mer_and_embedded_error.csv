@@ -1,0 +1,25 @@
+system,system_id,set,MER_pct,MER_ci95_low_pct,MER_ci95_high_pct,embedded_unit_error_pct,embedded_unit_error_ci95_low_pct,embedded_unit_error_ci95_high_pct
+base off-the-shelf,base__fp16__offshelf_free,ASCEND,35.84,34.04,37.78,83.07,71.17,98.25
+base off-the-shelf,base__fp16__offshelf_free,NSC Same Room,71.09,68.95,73.38,101.82,96.09,107.5
+base off-the-shelf,base__fp16__offshelf_free,NSC Diff Room,64.15,60.92,67.74,103.07,90.57,115.68
+base fine-tuned,ft_base__fp16__ft,ASCEND,21.27,19.29,23.6,55.28,36.28,86.25
+base fine-tuned,ft_base__fp16__ft,NSC Same Room,28.39,27.25,29.75,30.98,28.25,34.38
+base fine-tuned,ft_base__fp16__ft,NSC Diff Room,22.35,21.0,23.85,23.99,22.16,25.83
+small fine-tuned,ft_small__fp16__ft,ASCEND,14.78,13.7,15.84,30.58,25.32,35.88
+small fine-tuned,ft_small__fp16__ft,NSC Same Room,21.37,20.57,22.24,23.75,21.6,26.29
+small fine-tuned,ft_small__fp16__ft,NSC Diff Room,19.01,17.6,20.64,22.93,19.18,28.17
+tiny fine-tuned,ft_tiny__fp16__ft,ASCEND,26.07,24.63,27.53,53.22,46.0,60.42
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Same Room,34.46,33.28,35.78,36.18,33.44,39.16
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Diff Room,26.81,25.45,28.41,29.83,27.48,32.67
+base full system,full_base__fp16__full,ASCEND,20.26,19.0,21.43,39.2,33.73,44.74
+base full system,full_base__fp16__full,NSC Same Room,26.07,25.48,26.63,27.37,25.91,28.88
+base full system,full_base__fp16__full,NSC Diff Room,21.06,20.24,21.98,22.54,20.67,24.42
+small full system,full_small__fp16__full,ASCEND,14.64,13.6,15.67,29.82,24.24,34.99
+small full system,full_small__fp16__full,NSC Same Room,20.65,20.07,21.24,21.34,20.06,22.71
+small full system,full_small__fp16__full,NSC Diff Room,17.13,16.2,18.13,18.71,17.14,20.56
+small off-the-shelf,small__fp16__offshelf_free,ASCEND,26.27,24.45,28.07,56.79,49.46,64.32
+small off-the-shelf,small__fp16__offshelf_free,NSC Same Room,55.07,53.45,56.67,76.67,72.9,81.26
+small off-the-shelf,small__fp16__offshelf_free,NSC Diff Room,48.76,46.42,51.26,72.7,66.49,79.7
+tiny off-the-shelf,tiny__fp16__offshelf_free,ASCEND,52.7,47.31,59.6,125.56,108.22,145.51
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Same Room,93.59,90.47,96.68,132.97,124.07,142.72
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Diff Room,81.04,76.71,85.36,118.2,107.84,129.16

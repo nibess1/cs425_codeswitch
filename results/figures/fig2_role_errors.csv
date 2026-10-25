@@ -1,0 +1,73 @@
+system,system_id,set,role,error_pct,ci95_low,ci95_high
+base off-the-shelf,base__fp16__offshelf_free,ASCEND,E (embedded),83.07,71.17,98.25
+base off-the-shelf,base__fp16__offshelf_free,NSC Same Room,E (embedded),101.82,96.09,107.5
+base off-the-shelf,base__fp16__offshelf_free,NSC Diff Room,E (embedded),103.07,90.57,115.68
+base fine-tuned,ft_base__fp16__ft,ASCEND,E (embedded),55.28,36.28,86.25
+base fine-tuned,ft_base__fp16__ft,NSC Same Room,E (embedded),30.98,28.25,34.38
+base fine-tuned,ft_base__fp16__ft,NSC Diff Room,E (embedded),23.99,22.16,25.83
+small fine-tuned,ft_small__fp16__ft,ASCEND,E (embedded),30.58,25.32,35.88
+small fine-tuned,ft_small__fp16__ft,NSC Same Room,E (embedded),23.75,21.6,26.29
+small fine-tuned,ft_small__fp16__ft,NSC Diff Room,E (embedded),22.93,19.18,28.17
+tiny fine-tuned,ft_tiny__fp16__ft,ASCEND,E (embedded),53.22,46.0,60.42
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Same Room,E (embedded),36.18,33.44,39.16
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Diff Room,E (embedded),29.83,27.48,32.67
+base full system,full_base__fp16__full,ASCEND,E (embedded),39.2,33.73,44.74
+base full system,full_base__fp16__full,NSC Same Room,E (embedded),27.37,25.91,28.88
+base full system,full_base__fp16__full,NSC Diff Room,E (embedded),22.54,20.67,24.42
+small full system,full_small__fp16__full,ASCEND,E (embedded),29.82,24.24,34.99
+small full system,full_small__fp16__full,NSC Same Room,E (embedded),21.34,20.06,22.71
+small full system,full_small__fp16__full,NSC Diff Room,E (embedded),18.71,17.14,20.56
+small off-the-shelf,small__fp16__offshelf_free,ASCEND,E (embedded),56.79,49.46,64.32
+small off-the-shelf,small__fp16__offshelf_free,NSC Same Room,E (embedded),76.67,72.9,81.26
+small off-the-shelf,small__fp16__offshelf_free,NSC Diff Room,E (embedded),72.7,66.49,79.7
+tiny off-the-shelf,tiny__fp16__offshelf_free,ASCEND,E (embedded),125.56,108.22,145.51
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Same Room,E (embedded),132.97,124.07,142.72
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Diff Room,E (embedded),118.2,107.84,129.16
+base off-the-shelf,base__fp16__offshelf_free,ASCEND,Ms (matrix at switch),37.82,32.81,42.73
+base off-the-shelf,base__fp16__offshelf_free,NSC Same Room,Ms (matrix at switch),83.48,77.82,90.1
+base off-the-shelf,base__fp16__offshelf_free,NSC Diff Room,Ms (matrix at switch),72.61,66.74,78.49
+base fine-tuned,ft_base__fp16__ft,ASCEND,Ms (matrix at switch),19.67,16.22,23.07
+base fine-tuned,ft_base__fp16__ft,NSC Same Room,Ms (matrix at switch),29.64,27.02,33.14
+base fine-tuned,ft_base__fp16__ft,NSC Diff Room,Ms (matrix at switch),24.56,22.42,26.67
+small fine-tuned,ft_small__fp16__ft,ASCEND,Ms (matrix at switch),15.45,12.06,18.84
+small fine-tuned,ft_small__fp16__ft,NSC Same Room,Ms (matrix at switch),23.86,21.25,27.5
+small fine-tuned,ft_small__fp16__ft,NSC Diff Room,Ms (matrix at switch),21.66,19.16,25.06
+tiny fine-tuned,ft_tiny__fp16__ft,ASCEND,Ms (matrix at switch),25.94,21.77,30.46
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Same Room,Ms (matrix at switch),37.51,34.81,40.88
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Diff Room,Ms (matrix at switch),29.17,26.5,32.37
+base full system,full_base__fp16__full,ASCEND,Ms (matrix at switch),19.23,15.71,22.73
+base full system,full_base__fp16__full,NSC Same Room,Ms (matrix at switch),26.84,25.26,28.37
+base full system,full_base__fp16__full,NSC Diff Room,Ms (matrix at switch),23.74,21.71,25.85
+small full system,full_small__fp16__full,ASCEND,Ms (matrix at switch),15.64,12.15,18.84
+small full system,full_small__fp16__full,NSC Same Room,Ms (matrix at switch),22.36,20.88,23.8
+small full system,full_small__fp16__full,NSC Diff Room,Ms (matrix at switch),20.25,18.51,22.3
+small off-the-shelf,small__fp16__offshelf_free,ASCEND,Ms (matrix at switch),25.51,21.05,30.29
+small off-the-shelf,small__fp16__offshelf_free,NSC Same Room,Ms (matrix at switch),70.79,65.9,76.35
+small off-the-shelf,small__fp16__offshelf_free,NSC Diff Room,Ms (matrix at switch),61.29,56.77,66.24
+tiny off-the-shelf,tiny__fp16__offshelf_free,ASCEND,Ms (matrix at switch),57.06,46.34,69.9
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Same Room,Ms (matrix at switch),109.07,101.81,116.98
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Diff Room,Ms (matrix at switch),97.07,88.67,106.65
+base off-the-shelf,base__fp16__offshelf_free,ASCEND,Mi (other matrix),31.31,29.71,33.13
+base off-the-shelf,base__fp16__offshelf_free,NSC Same Room,Mi (other matrix),64.0,61.74,66.34
+base off-the-shelf,base__fp16__offshelf_free,NSC Diff Room,Mi (other matrix),55.73,52.65,59.19
+base fine-tuned,ft_base__fp16__ft,ASCEND,Mi (other matrix),18.31,17.09,19.56
+base fine-tuned,ft_base__fp16__ft,NSC Same Room,Mi (other matrix),27.79,26.52,29.34
+base fine-tuned,ft_base__fp16__ft,NSC Diff Room,Mi (other matrix),21.62,20.08,23.42
+small fine-tuned,ft_small__fp16__ft,ASCEND,Mi (other matrix),13.18,12.16,14.3
+small fine-tuned,ft_small__fp16__ft,NSC Same Room,Mi (other matrix),20.64,19.88,21.43
+small fine-tuned,ft_small__fp16__ft,NSC Diff Room,Mi (other matrix),18.03,16.5,19.82
+tiny fine-tuned,ft_tiny__fp16__ft,ASCEND,Mi (other matrix),23.41,22.07,24.96
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Same Room,Mi (other matrix),33.79,32.53,35.31
+tiny fine-tuned,ft_tiny__fp16__ft,NSC Diff Room,Mi (other matrix),25.89,24.49,27.52
+base full system,full_base__fp16__full,ASCEND,Mi (other matrix),18.54,17.36,19.85
+base full system,full_base__fp16__full,NSC Same Room,Mi (other matrix),25.52,24.91,26.17
+base full system,full_base__fp16__full,NSC Diff Room,Mi (other matrix),20.33,19.49,21.33
+small full system,full_small__fp16__full,ASCEND,Mi (other matrix),13.02,12.01,14.02
+small full system,full_small__fp16__full,NSC Same Room,Mi (other matrix),20.09,19.47,20.73
+small full system,full_small__fp16__full,NSC Diff Room,Mi (other matrix),16.22,15.23,17.32
+small off-the-shelf,small__fp16__offshelf_free,ASCEND,Mi (other matrix),23.36,21.79,25.04
+small off-the-shelf,small__fp16__offshelf_free,NSC Same Room,Mi (other matrix),48.64,47.1,50.23
+small off-the-shelf,small__fp16__offshelf_free,NSC Diff Room,Mi (other matrix),42.2,39.77,44.87
+tiny off-the-shelf,tiny__fp16__offshelf_free,ASCEND,Mi (other matrix),46.01,40.6,52.98
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Same Room,Mi (other matrix),85.3,82.21,88.37
+tiny off-the-shelf,tiny__fp16__offshelf_free,NSC Diff Room,Mi (other matrix),72.17,67.73,76.47

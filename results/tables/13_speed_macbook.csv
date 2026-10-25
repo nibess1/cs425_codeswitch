@@ -1,0 +1,61 @@
+model,export_format,pipeline,cpu_threads,audio_seconds,processing_seconds,real_time_factor,peak_memory_RSS_MB,model_file_MB,n_clips
+ft_base,CTranslate2 int8 (CPU),ASR + LID head (separate module),4,258.9,78.8,0.3044,492.9,73.9,100
+ft_base,CTranslate2 int8 (CPU),ASR beam 4 + LID head + on-device re-ranking,4,258.9,450.13,1.7389,491.1,73.9,100
+ft_base,CTranslate2 int8 (CPU),ASR only,4,258.9,56.02,0.2164,482.1,73.9,100
+ft_base,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,84.45,0.3262,254.9,141.1,100
+ft_base,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,43.92,0.1697,156.6,44.3,100
+ft_base,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,104.19,0.4025,164.5,52.7,100
+ft_base,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,43.82,0.1693,189.6,78.0,100
+ft_base (QAT merged),CTranslate2 int8 (CPU),ASR only,4,258.9,54.3,0.2098,491.7,71.8,100
+ft_base (QAT merged),whisper.cpp Q4_0 (CPU),ASR only,4,258.9,44.25,0.1709,160.7,44.3,100
+ft_small,CTranslate2 int8 (CPU),ASR only,4,258.9,188.71,0.729,840.6,237.7,100
+ft_small,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,325.39,1.2571,650.1,465.0,100
+ft_small,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,146.59,0.5663,320.4,138.7,100
+ft_small,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,405.13,1.5651,350.2,167.1,100
+ft_small,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,147.55,0.57,425.0,252.2,100
+ft_small (QAT merged),CTranslate2 int8 (CPU),ASR only,4,258.9,188.16,0.7269,847.5,234.3,100
+ft_small (QAT merged),"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,328.15,1.2677,649.3,465.0,100
+ft_small (QAT merged),whisper.cpp Q4_0 (CPU),ASR only,4,258.9,146.44,0.5657,322.1,138.7,100
+ft_small (QAT merged),whisper.cpp Q5_0 (CPU),ASR only,4,258.9,406.53,1.5705,345.4,167.1,100
+ft_small (QAT merged),whisper.cpp Q8_0 (CPU),ASR only,4,258.9,147.93,0.5715,425.3,252.2,100
+ft_tiny,CTranslate2 int8 (CPU),ASR only,4,258.9,27.57,0.1065,376.8,39.7,100
+ft_tiny,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,38.4,0.1483,171.4,74.1,100
+ft_tiny,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,22.37,0.0864,118.1,24.1,100
+ft_tiny,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,45.83,0.1771,122.5,28.5,100
+ft_tiny,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,22.32,0.0862,135.1,41.5,100
+ft_tiny (QAT merged),CTranslate2 int8 (CPU),ASR only,4,258.9,27.46,0.1061,377.1,38.1,100
+ft_tiny (QAT merged),whisper.cpp Q4_0 (CPU),ASR only,4,258.9,21.87,0.0845,117.8,24.1,100
+full_base,CTranslate2 int8 (CPU),ASR + LID head (separate module),4,258.9,76.67,0.2962,508.2,73.9,100
+full_base,CTranslate2 int8 (CPU),ASR beam 4 + LID head + on-device re-ranking,4,258.9,455.85,1.761,508.1,73.9,100
+full_base,CTranslate2 int8 (CPU),ASR only,4,258.9,54.27,0.2097,493.6,73.9,100
+full_base,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,86.94,0.3359,261.3,141.1,100
+full_base,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,44.48,0.1718,161.0,44.3,100
+full_base,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,107.29,0.4145,171.3,52.7,100
+full_base,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,45.51,0.1758,195.8,78.0,100
+full_base (QAT merged),CTranslate2 int8 (CPU),ASR only,4,258.9,54.71,0.2113,489.9,71.8,100
+full_base (QAT merged),whisper.cpp Q4_0 (CPU),ASR only,4,258.9,43.59,0.1684,160.5,44.3,100
+full_small,CTranslate2 int8 (CPU),ASR only,4,258.9,192.03,0.7419,839.2,237.7,100
+full_small,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,336.29,1.2992,650.2,465.0,100
+full_small,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,151.22,0.5842,315.3,138.7,100
+full_small,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,406.43,1.5701,348.9,167.1,100
+full_small,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,148.34,0.5731,426.9,252.2,100
+full_small (QAT merged),CTranslate2 int8 (CPU),ASR only,4,258.9,191.92,0.7414,847.4,234.3,100
+full_small (QAT merged),"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,326.14,1.2599,656.8,465.0,100
+full_small (QAT merged),whisper.cpp Q4_0 (CPU),ASR only,4,258.9,147.56,0.57,322.4,138.7,100
+full_small (QAT merged),whisper.cpp Q5_0 (CPU),ASR only,4,258.9,405.95,1.5683,343.7,167.1,100
+full_small (QAT merged),whisper.cpp Q8_0 (CPU),ASR only,4,258.9,148.74,0.5746,425.2,252.2,100
+offshelf_base,CTranslate2 int8 (CPU),ASR only,4,258.9,59.04,0.2281,491.5,73.9,100
+offshelf_base,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,92.42,0.357,261.7,141.1,100
+offshelf_base,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,51.51,0.199,153.5,44.3,100
+offshelf_base,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,111.72,0.4316,162.3,52.7,100
+offshelf_base,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,50.63,0.1956,191.3,78.0,100
+offshelf_small,CTranslate2 int8 (CPU),ASR only,4,258.9,203.32,0.7855,853.6,237.7,100
+offshelf_small,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,328.97,1.2709,643.8,465.0,100
+offshelf_small,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,154.45,0.5967,317.0,138.7,100
+offshelf_small,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,410.02,1.584,343.7,167.1,100
+offshelf_small,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,150.33,0.5808,427.3,252.2,100
+offshelf_tiny,CTranslate2 int8 (CPU),ASR only,4,258.9,28.07,0.1084,373.1,39.7,100
+offshelf_tiny,"whisper.cpp F16 (CPU, reference)",ASR only,4,258.9,44.17,0.1706,164.3,74.1,100
+offshelf_tiny,whisper.cpp Q4_0 (CPU),ASR only,4,258.9,43.98,0.1699,109.0,24.1,100
+offshelf_tiny,whisper.cpp Q5_0 (CPU),ASR only,4,258.9,48.85,0.1887,113.3,28.5,100
+offshelf_tiny,whisper.cpp Q8_0 (CPU),ASR only,4,258.9,26.44,0.1022,128.1,41.5,100

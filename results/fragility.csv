@@ -103,6 +103,22 @@ full_base,full,nf4_bnb,fp16,ascend_test,zh,"1.3 [-2.6, 5.5]","1.7 [0.8, 2.6]","0
 full_base,full,nf4_bnb,fp16,nsc_test,en,"3.0 [2.0, 4.1]","1.7 [1.1, 2.5]","1.75 [1.05, 3.03]"
 full_base,full,nf4_bnb,fp16,nsc_test,zh,"2.6 [0.9, 4.1]","1.7 [0.8, 2.6]","1.47 [0.50, 3.53]"
 full_base,full,nf4_bnb,fp16,nsc_diff_test,en,"2.2 [1.1, 3.4]","1.4 [0.7, 2.1]","1.64 [0.74, 3.29]"
+full_base,full,ct2_int8,ct2_f32,ascend_test,zh,"-3.7 [-5.9, -1.5]","0.1 [-0.4, 0.7]",not reported (matrix change within noise)
+full_base,full,ct2_int8,ct2_f32,nsc_test,en,"0.1 [-0.5, 0.7]","-0.2 [-0.5, 0.2]",not reported (matrix change within noise)
+full_base,full,ct2_int8,ct2_f32,nsc_test,zh,"-0.0 [-1.2, 1.0]","-0.2 [-1.6, 0.9]",not reported (matrix change within noise)
+full_base,full,ct2_int8,ct2_f32,nsc_diff_test,en,"-0.3 [-1.2, 0.6]","0.6 [0.1, 1.2]","-0.46 [-3.46, 1.73]"
+full_base,full,ggml_q8_0,ggml_f16,ascend_test,zh,"1.2 [-0.5, 3.1]","0.2 [-0.2, 0.6]",not reported (matrix change within noise)
+full_base,full,ggml_q8_0,ggml_f16,nsc_test,en,"-0.2 [-0.7, 0.3]","0.0 [-0.2, 0.3]",not reported (matrix change within noise)
+full_base,full,ggml_q8_0,ggml_f16,nsc_test,zh,"1.1 [-0.3, 3.0]","-0.2 [-0.9, 0.3]",not reported (matrix change within noise)
+full_base,full,ggml_q8_0,ggml_f16,nsc_diff_test,en,"0.2 [-0.4, 0.8]","0.1 [-0.3, 0.4]",not reported (matrix change within noise)
+full_base,full,ggml_q5_0,ggml_f16,ascend_test,zh,"1.8 [-2.0, 5.8]","1.4 [0.5, 2.3]","1.27 [-1.41, 6.44]"
+full_base,full,ggml_q5_0,ggml_f16,nsc_test,en,"1.0 [0.0, 2.1]","0.1 [-0.5, 0.7]",not reported (matrix change within noise)
+full_base,full,ggml_q5_0,ggml_f16,nsc_test,zh,"0.3 [-1.3, 2.0]","1.2 [0.3, 2.0]","0.28 [-1.69, 2.92]"
+full_base,full,ggml_q5_0,ggml_f16,nsc_diff_test,en,"0.9 [-0.2, 2.1]","0.5 [-0.2, 1.2]",not reported (matrix change within noise)
+full_base,full,ggml_q4_0,ggml_f16,ascend_test,zh,"7.1 [2.6, 11.8]","2.3 [1.3, 3.4]","3.07 [1.07, 6.96]"
+full_base,full,ggml_q4_0,ggml_f16,nsc_test,en,"3.3 [1.9, 4.7]","2.6 [1.6, 3.5]","1.28 [0.74, 2.32]"
+full_base,full,ggml_q4_0,ggml_f16,nsc_test,zh,"0.9 [-1.5, 3.3]","3.2 [1.9, 4.4]","0.28 [-0.60, 1.13]"
+full_base,full,ggml_q4_0,ggml_f16,nsc_diff_test,en,"2.6 [0.8, 4.3]","1.5 [0.3, 2.5]","1.76 [0.44, 8.26]"
 full_small,full,int8_bnb,fp16,ascend_test,zh,"-1.0 [-2.8, 0.9]","-0.2 [-0.5, 0.0]",not reported (matrix change within noise)
 full_small,full,int8_bnb,fp16,nsc_test,en,"0.0 [-0.3, 0.3]","-0.1 [-0.2, 0.1]",not reported (matrix change within noise)
 full_small,full,int8_bnb,fp16,nsc_test,zh,"-0.2 [-0.8, 0.4]","-0.2 [-0.8, 0.3]",not reported (matrix change within noise)

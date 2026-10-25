@@ -1,0 +1,7 @@
+system_id,test_set,n_critical_rule,CWER_rule_pct,CWER_rule_ci95,n_critical_labels,CWER_labels_pct,CWER_labels_ci95
+small__fp16__offshelf_free,ASCEND test,81,35.8,"[24.64, 47.37]",298,36.24,"[29.96, 42.3]"
+ft_tiny__fp16__ft,ASCEND test,81,33.33,"[23.07, 44.26]",1648,72.57,"[69.78, 75.26]"
+ft_base__fp16__ft,ASCEND test,81,24.69,"[14.81, 34.78]",850,65.53,"[61.48, 69.84]"
+ft_small__fp16__ft,ASCEND test,81,19.75,"[10.26, 29.63]",298,44.97,"[38.62, 50.77]"
+full_base__fp16__full,ASCEND test,81,20.99,"[11.69, 31.11]",1648,28.28,"[25.81, 31.07]"
+full_small__fp16__full,ASCEND test,81,17.28,"[9.21, 26.67]",850,21.06,"[17.95, 24.24]"
