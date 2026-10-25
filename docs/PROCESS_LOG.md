@@ -337,3 +337,39 @@ Diff Room ablation: C, D, E), smu2 CPUs (exports, signal processing), MacBook (s
 - **Sensitivity** (flagged clips excluded). Same Room MER falls by about 1 point for fine-tuned models: ft_small 21.37 → 20.32, full_small 20.65 → 19.71, ft_base 28.39 → 27.25, full_base 26.07 → 25.17. The off-the-shelf small falls 55.07 → 54.40, and Diff Room changes by ≤ 0.3. Embedded-unit error changes by ≤ 1.3 points. **No conclusion changes.**
 - **Audit:** `review/leak_audit.csv` (10 flagged + 10 cleared clips, with audio paths and signals).
 - **Single annotator.** I made all D3 judgements. There was no second D3 annotator, because judging a clip needs the partner transcript and the signal values, so the labels are single-annotator; the audit above is the human check.
+
+### 25 Oct: remaining compute, D4 and B2
+- **E fix.** The Diff Room ablation manifests were built from `pool.parquet`, whose `target` field predates the 14 Oct normalizer fix (`十个` not converted), so token-role mapping failed in queue C7. `scripts/relabel_manifests.py` now also covers `data/nsc_e` (2,785 targets refreshed), and the B/C trainings were relaunched on GPU 7.
+- **B2 (deployed mixed precision) is not possible in whisper.cpp.**
+  - Patching `whisper-quantize` to keep chosen tensors at F16 (env `WHISPER_QUANT_KEEP`) works: the file grows from 25.3 to 27.9 MB for tiny with encoder block 0 kept.
+  - But whisper.cpp's model loader allocates every weight at the file's global type, so it rejects the file ("tensor 'encoder.blocks.0.attn.key.weight' has wrong size").
+  - Mixed precision would need a loader rewrite, so, as the brief allows, **mixed precision is reported for NF4 (bitsandbytes) only**. The partial outputs were deleted.
+- **D4 (alignment quality, `results/align_checks.json`):**
+
+  | Check | n | Median | Within 50 ms | Within 100 ms |
+  |---|---|---|---|---|
+  | (a) MMS at known switch times (300 FLEURS splices) | 629 | **10 ms** | 87% | 94% |
+  | (b) MMS vs Whisper cross-attention at switches (500 ASCEND + NSC test utterances) | 1,299 | 73 ms | 35% | 62% |
+  | (c) NSC Same Room: first word after interval start | | 64 ms | | |
+  | (c) NSC Same Room: last word before interval end | | 121 ms | | |
+  | (c) NSC Diff Room: first word / last word | | 80 / 103 ms | | |
+
+  - For (a), a first run took the piece start as the true switch, which added the ~50 ms half-gap of silence. It was corrected to the gap midpoint.
+  - For (b), the disagreement includes Whisper's own timing error, so it's an upper bound on MMS's error on conversational speech.
+  - For (c), the gaps are expected: interval padding / silence.
+  - **Conclusion.** Against the LID boundary errors (`lid_ft_base` 60 / 120 ms ASCEND / NSC; `lid_full_base` 60 / 100; `lid_full_small` 20 / 80), the aligner contributes about 10 ms on clean read speech and at most about 70 ms on conversation. Most of the LID boundary error, especially on NSC, is the head's own.
+
+### 25 Oct: E (Diff Room training ablation) results
+All three models use the ft_base recipe, fp16, greedy decoding. `results/e_diffroom_ablation.csv`.
+
+| Train data | Same Room test MER | E Diff Room test MER | E Diff Room E_E | ASCEND MER |
+|---|---|---|---|---|
+| A: 40 h Same Room (`esame_base` = ft_base) | 28.4 [27.2, 29.7] | **21.6** [20.5, 22.8] | 24.0 | 21.3 |
+| B: 40 h Diff Room (`ediff_base`) | 32.3 [30.7, 34.1] | 23.6 [21.9, 25.5] | 27.1 | 20.2 |
+| C: 20 h Same + 20 h Diff (`emix_base`) | 28.3 [27.1, 29.6] | 22.2 [20.8, 23.7] | 23.6 | 20.3 |
+
+Paired deltas vs A (positive = worse than A):
+- B: +2.0 [0.4, 3.8] MER on the Diff Room test (significant) and +3.9 [2.0, 5.8] on the Same Room test (significant).
+- C: +0.6 [-0.5, 1.7] on Diff Room and -0.1 [-1.2, 1.0] on Same Room (both n.s.).
+
+**Negative / null result.** Training on Diff Room audio does *not* help on Diff Room test speech. Same Room training is as good or better on both rooms, and mixing the two is indistinguishable from Same Room alone. The Same-vs-Diff Room gap in the main tables is therefore not a training-domain mismatch. A plausible but untested reading is that Diff Room speech is simply easier (the earlier D3 result showed less partner leakage). B is slightly better on ASCEND (20.2 vs 21.3), with overlapping CIs.

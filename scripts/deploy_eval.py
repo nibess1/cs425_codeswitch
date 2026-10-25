@@ -57,10 +57,11 @@ def main():
     ap.add_argument("--sets", nargs="+", default=manifest.EVAL_TEST)
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--threads", type=int, default=4)
+    ap.add_argument("--export_dir", default=None, help="reuse ckpt/export/<this> (default <tag>_<method>)")
     ap.add_argument("--subset", default="ascend_test:0,nsc_test:4000,nsc_diff_test:2000",
                     help="set:n (0 = all) seeded random subset per set; R compares the same utterances")
     a = ap.parse_args()
-    exp = manifest.path(f"ckpt/export/{a.tag}_{a.method}")
+    exp = manifest.path(f"ckpt/export/{a.export_dir or a.tag + '_' + a.method}")
     targets = {}
     if "ct2_int8" in a.formats:
         targets["ct2_int8"] = X.to_ct2(a.model, os.path.join(exp, "ct2_int8"))
