@@ -435,3 +435,9 @@ Separate from the frozen `results-final` (25 Oct). No existing result, table, ch
 - analyze() takes 0.03 s per MRT call after the romanisation cache warms up (1.8 s for the first 50 steps), so no extra caching is needed.
 - 3–8% of candidates contain at least one transliterated embedded unit (0.06–0.28 such units per candidate), so the penalty does fire.
 - 24/24 tests pass, including the γ = 0 equivalence test and the toy pair (得来 vs 苹果 for "deadline": same c_sem, and only the transliteration is penalised).
+
+**26 Oct deviation: unattended tail.** smu2 access is ending, so the steps after the base grid run unattended via `scripts/queue_tl_all.sh`:
+- apply the rule above mechanically (`scripts/select_tl.py`) and append the choice here;
+- then train small at the chosen γ (GPU 7);
+- then decode test (GPUs 5 and 7) and build tables 25, 25b and 25c (`scripts/make_tl_tables.py`).
+Test decoding is gated on the selection entry (`queue_tl_test.sh` refuses without it). If no γ qualifies, small is skipped instead of asking the team. REPORT, KEY_NUMBERS and the `results-translit` tag are left for whoever next has access, because commits and pushes need an interactive session.
