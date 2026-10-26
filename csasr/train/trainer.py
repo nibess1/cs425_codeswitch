@@ -50,6 +50,8 @@ class TrainConfig:
     mrt_batch: int = 8
     limit_train: int | None = None
     lora: bool = False                  # QLoRA QAT (csasr/quant/qat.py builds the model)
+    translit_gamma: float = 0.0         # third run: MRT extra cost per transliterated embedded unit
+    save_epochs: bool = False           # also keep ckpt/<run>/epoch{k} (not used for selection)
 
 
 def set_seed(s):
@@ -92,6 +94,7 @@ class Trainer:
         self.val = {s: manifest.load(s)[: cfg.val_limit] for s in cfg.val_sets}
         steps_per_epoch = math.ceil(len(rows) / (cfg.batch * cfg.grad_accum))
         self.total = int(steps_per_epoch * cfg.epochs)
+        self.steps_per_epoch = steps_per_epoch
         params = [p for p in self.model.parameters() if p.requires_grad]
         self.opt = torch.optim.AdamW(params, lr=cfg.lr, weight_decay=cfg.weight_decay, betas=(0.9, 0.98), eps=1e-6)
         w, T = cfg.warmup, self.total
@@ -172,6 +175,8 @@ class Trainer:
                              **{k: float(np.mean([a[k] for a in acc if k in a])) for k in keys},
                              it_s=round(50 / (time.time() - t0), 2))
                     acc, t0 = [], time.time()
+                if cfg.save_epochs and self.step % self.steps_per_epoch == 0:
+                    self.save(f"epoch{self.step // self.steps_per_epoch}")
                 if cfg.save_every and self.step % cfg.save_every == 0:
                     self.save("last")
                 if cfg.eval_every and (self.step % cfg.eval_every == 0 or self.step == self.total):

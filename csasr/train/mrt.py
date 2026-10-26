@@ -10,7 +10,14 @@ candidate per embedded word in which that word is swapped for its dictionary tra
 Duplicates after normalisation are removed; clips whose candidates all cost the same are
 skipped. Deviation from the proposal: candidates are generated from the current model on a
 sub-batch every `mrt_every` steps (fresher than once per epoch), not precomputed.
+
+Third run (26 Oct): optional transliteration penalty. The cost becomes
+C(y^, y) + gamma * N_tl(y^), where N_tl counts embedded reference units that y^ renders as a
+phonetic transliteration (csasr/score/translit.py, unchanged; `N_tl_E` from analyze()). C is a
+raw unit count, so gamma is the extra cost per transliterated unit; gamma = 0 is the old loss.
 """
+import time
+
 import jieba
 import torch
 import torch.nn.functional as F
@@ -62,6 +69,13 @@ def _join(units):
     return s
 
 
+def mrt_cost(stats: dict, gamma: float = 0.0) -> float:
+    """Per-candidate MRT cost: semantic cost plus gamma per transliterated embedded unit."""
+    if not gamma:
+        return stats["smer"]
+    return stats["smer"] + gamma * stats["N_tl_E"]
+
+
 class SemanticMRT:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -102,8 +116,13 @@ class SemanticMRT:
         for ci, row in enumerate(rows):
             for norm in cands[ci]:
                 pairs.append((row["ref_raw"], norm)); owners.append(ci)
+        t_an = time.time()
         st = analyze(pairs, labse=self.labse, rho0=cfg.rho0)
-        costs = [s["smer"] for s in st]
+        t_an = time.time() - t_an
+        gamma = getattr(cfg, "translit_gamma", 0.0)
+        costs = [mrt_cost(s, gamma) for s in st]
+        diag = {"t_analyze": t_an, "tl_cand_share": sum(s["N_tl_E"] > 0 for s in st) / max(1, len(st)),
+                "tl_units_mean": sum(s["N_tl_E"] for s in st) / max(1, len(st))}
         self.calls += 1
         if self.calls % 50 == 0:
             self.labse.save()
@@ -115,7 +134,7 @@ class SemanticMRT:
             by.setdefault(ci, []).append(norm_cost)
         keep = {ci for ci, cs in by.items() if len(cs) > 1 and max(cs) > min(cs)}
         if not keep:
-            return {"loss": feats.new_zeros(()), "mrt_skipped": 1.0}
+            return {"loss": feats.new_zeros(()), "mrt_skipped": 1.0, **diag}
         k = 0
         for ci in range(len(rows)):
             for norm, (lang, ids) in cands[ci].items():
@@ -144,4 +163,4 @@ class SemanticMRT:
             c = cost_t[m]
             loss = loss + (p * (c - c.mean())).sum()
         loss = loss / len(sel)
-        return {"loss": cfg.lambda_sem * loss, "l_sem": float(loss), "n_cand": len(seqs) / len(sel)}
+        return {"loss": cfg.lambda_sem * loss, "l_sem": float(loss), "n_cand": len(seqs) / len(sel), **diag}

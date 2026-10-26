@@ -396,3 +396,42 @@ Translation detector (CC-CEDICT match OR LaBSE ≥ τ) vs adjudicated *translati
 - **D2 CWER mode (b): stale caches.** The stats cache key did not include the critical-word list, so some systems kept caches built from an earlier list (1,648 or 850 "critical" words on ASCEND test instead of 298).
   - Fix: the label-file hash is now part of the cache key (label mode only). Mode (b) tables and the stress-set mode (b) CSV are recomputed.
   - Mode (a) numbers are unaffected.
+
+## 26 Oct: third run (transliteration loss). Rules fixed BEFORE looking at any new test result
+Separate from the frozen `results-final` (25 Oct). No existing result, table, checkpoint or prediction is changed; everything here gets new system ids and is tagged `results-translit`. GPUs 5 and 7 only.
+
+**Question.** Does adding a transliteration penalty to the semantic MRT cost reduce transliteration of embedded words (deadline → 得来) at 16 bit without hurting MER?
+
+**Change.** The per-candidate MRT cost becomes c(y) = c_sem(y) + γ · N_tl(y).
+- c_sem is the existing semantic cost (`smer` from `analyze()`, a raw count of units).
+- N_tl(y) is the number of embedded reference units that y renders as a transliteration: cross-script, not a translation, phonetic similarity ≥ θ = 0.1. This is the existing `N_tl_E` from `csasr/score/translit.py`, unchanged.
+- γ = 0 reproduces the current loss exactly (unit test).
+- Deviation from the brief, decided with the user before any training: the brief wrote γ·N_tl/N, but c_sem is not divided by N, so γ/N would add almost nothing. With γ·N_tl, a transliterated embedded unit costs 1 + γ instead of 1.
+- translit.py, θ, τ, the normaliser and the scorer are unchanged.
+
+**Grid (base).**
+- `fulltl_base_g0.5` and `fulltl_base_g1`, with everything else as full_base (`sem_base_l0.1_r0.5`): same data, seed 425, 3 epochs, α = β = 0.5, λ = 0.1, ρ0 = 0.5, MRT sub-batch 8 every 4 steps, and the same checkpoint rule (best mean val MER on 600 utts per val set, evaluated every 1000 steps).
+- Per-epoch checkpoints are also saved; they are not used for selection.
+- **Noise control:** `fulltl_base_g0` (γ = 0 retrain, same seed). GPU training is not bit-reproducible, so this row shows run-to-run noise. It is reported but takes no part in selection.
+
+**Selection rule (val only).** All quantities are means over ascend_val and nsc_val (full val sets, fp16 greedy, free language), scored with `scripts/score.py`; CWER uses the rule tagger.
+- Eligible: val MER ≤ full_base val MER + 0.5 points, AND val CWER ≤ full_base val CWER.
+- Choose the eligible γ with the lowest val translit_rate.
+- If none is eligible, this is a negative result: it is reported as such, and the small run is not launched without checking with the team.
+
+**Small.** One run, `fulltl_small_g<γ*>`, at the chosen γ, with everything else as full_small (MRT sub-batch 4).
+
+**Reporting (16 bit only, no quantization).**
+- Paired bootstrap vs the same-size full system (full_base, full_small) on MER, embedded error E, CWER (rule tagger, and the adjudicated D2 list via `CSASR_CRITICAL_LABELS` as in table 24), translit_rate and translation_rate.
+- NSC rows also get speaker-cluster CIs. ASCEND CIs are flagged as optimistic (2 test speakers).
+- The γ = 0 control is shown alongside as the noise reference.
+- New tables only: `25_transliteration_loss.csv` and `25b_transliteration_loss_val.csv`.
+
+**Caveat.** The same detector (translit.py) defines the training penalty and the evaluation metric, so a lower translit_rate alone could just be the model learning to avoid the detector's patterns. The claim rests on MER and E; translit_rate is supporting evidence only.
+
+**26 Oct smoke test** (`smoke_tl_base_g1`, not a reported system; GPU 5; 200 steps on 6,400 clips, γ = 1, eval off):
+- Loss is finite: l_role 1.70 → 1.08, and l_sem fluctuates around 0, as in full_base.
+- Speed is 1.76–1.91 it/s at steady state, vs a median of 1.74 for full_base.
+- analyze() takes 0.03 s per MRT call after the romanisation cache warms up (1.8 s for the first 50 steps), so no extra caching is needed.
+- 3–8% of candidates contain at least one transliterated embedded unit (0.06–0.28 such units per candidate), so the penalty does fire.
+- 24/24 tests pass, including the γ = 0 equivalence test and the toy pair (得来 vs 苹果 for "deadline": same c_sem, and only the transliteration is penalised).
