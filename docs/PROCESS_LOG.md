@@ -441,3 +441,9 @@ Separate from the frozen `results-final` (25 Oct). No existing result, table, ch
 - then train small at the chosen γ (GPU 7);
 - then decode test (GPUs 5 and 7) and build tables 25, 25b and 25c (`scripts/make_tl_tables.py`).
 Test decoding is gated on the selection entry (`queue_tl_test.sh` refuses without it). If no γ qualifies, small is skipped instead of asking the team. REPORT, KEY_NUMBERS and the `results-translit` tag are left for whoever next has access, because commits and pushes need an interactive session.
+
+**26 Oct bug: LaBSE cache race.** `fulltl_base_g0` crashed at step ~200 with FileNotFoundError on `data/lex/labse_cache.json.gz.tmp`.
+- Cause: every trainer saves the shared similarity cache through the same fixed temp path, and this is the first time two MRT trainers ran at once (GPUs 5 and 7). The gzip handle was also never closed before the rename.
+- Fix (`csasr/score/confusion.py` `LaBSE.save`): a per-process temp file, closed before the rename. Only the cache file write changes; no similarity value or score changes.
+- g0.5 and g1 were already running with the old code, so they can crash the same way.
+- `queue_tl_all.sh` therefore retrains any crashed base run under a new id `<id>r` with the same settings; the crashed run directory is kept. `fulltl_base_g0` will be retrained as `fulltl_base_g0r`.

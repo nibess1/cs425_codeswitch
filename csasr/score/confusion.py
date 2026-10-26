@@ -130,7 +130,8 @@ class LaBSE:
     def save(self):
         if self._dirty:
             os.makedirs(os.path.dirname(SIM_CACHE), exist_ok=True)
-            tmp = SIM_CACHE + ".tmp"
-            json.dump(self.cache, gzip.open(tmp, "wt"))
+            tmp = f"{SIM_CACHE}.{os.getpid()}.tmp"  # per process: parallel trainers share the cache
+            with gzip.open(tmp, "wt") as f:
+                json.dump(self.cache, f)
             os.replace(tmp, SIM_CACHE)
             self._dirty = 0

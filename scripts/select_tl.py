@@ -59,7 +59,7 @@ def main():
     df = pd.DataFrame(rows)
     df.to_csv(manifest.path("results/tl_val.csv"), index=False)
     out = dict(chosen=chosen, negative_result=chosen is None,
-               gamma=float(chosen.split("_g")[-1]) if chosen else None, baseline=a.baseline,
+               gamma=float(chosen.split("_g")[-1].rstrip("r")) if chosen else None, baseline=a.baseline,
                rule="mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base; min translit_rate")
     json.dump(out, open(manifest.path("results/chosen_tl.json"), "w"), indent=1)
     cols = ["system", "role", "MER_mean", "CWER_mean", "E_E_mean", "translit_rate_mean", "conf_rate_mean"]
