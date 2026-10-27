@@ -447,3 +447,33 @@ Test decoding is gated on the selection entry (`queue_tl_test.sh` refuses withou
 - Fix (`csasr/score/confusion.py` `LaBSE.save`): a per-process temp file, closed before the rename. Only the cache file write changes; no similarity value or score changes.
 - g0.5 and g1 were already running with the old code, so they can crash the same way.
 - `queue_tl_all.sh` therefore retrains any crashed base run under a new id `<id>r` with the same settings; the crashed run directory is kept. `fulltl_base_g0` will be retrained as `fulltl_base_g0r`.
+
+### 26 Oct 22:56: third-run selection recorded (automatic, before any test decode)
+Applied by `scripts/select_tl.py` (rule above); val numbers in `results/tl_val.csv` (fractions, not %).
+- Retrained after a crash (new id with suffix r, same settings): 0
+```
+          system                     role  MER_mean  CWER_mean  E_E_mean  translit_rate_mean  conf_rate_mean eligible  chosen
+       full_base                 baseline  0.271304   0.238095  0.388509            0.056563        0.016484      NaN   False
+ fulltl_base_g0r control (not selectable)  0.273526   0.245957  0.393030            0.058564        0.014483      NaN   False
+fulltl_base_g0.5                candidate  0.272084   0.248091  0.382976            0.056369        0.015544    False   False
+  fulltl_base_g1                candidate  0.270117   0.247866  0.390880            0.058162        0.016728    False   False
+{"chosen": null, "negative_result": true, "gamma": null, "baseline": "full_base__fp16__full_val", "rule": "mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base; min translit_rate"}
+```
+- **No γ qualified: negative result.** Small was not trained (the team could not be asked: smu2 access ended).
+- Correction (27 Oct): the line above says "smu2 access ended". It had not. The rule still applied, small was not trained, and the user then chose to continue without the exploratory small run.
+
+### 27 Oct: third-run test results (decoded after the selection entry above; tables 25, 25b, 25c)
+Paired vs full_base, in points (negative = better). Full CIs, including speaker-cluster CIs for NSC, are in `results/tables/25_transliteration_loss.csv`.
+- **MER:**
+  - γ = 1: −0.37 / −0.04 / −0.02 (ASCEND / NSC Same / NSC Diff), all n.s.
+  - γ = 0.5: −0.27 / +0.17 / **+0.31 [0.00, 0.62]*** on NSC Diff (worse).
+  - γ = 0 control: −0.14 / −0.09 / −0.08, all n.s.
+- **Embedded error E:** n.s. for every run and set (−0.79 to +0.60).
+- **Transliteration rate:**
+  - γ = 1: −0.65 / −0.25 / −0.05, all n.s.
+  - γ = 0.5: +0.13 / +0.05 / −0.39, all n.s.
+  - γ = 0 control: +0.91 / −0.07 / +0.21, all n.s.
+- **CWER:** γ = 0.5 on NSC Same with the adjudicated list is +1.52 [0.06, 3.08]* (speaker CI [0.00, 3.16]); with the rule tagger it is +1.11, n.s. Every other CWER change is n.s.
+- **Translation rate:** n.s. everywhere.
+
+**Conclusion: negative result.** The penalty does not measurably reduce transliteration, MER or E. γ = 1 points the right way on transliteration, but by less than the γ = 0 control's run-to-run spread. The penalty touches only 3–8% of candidates, so the training signal is weak. Raising γ or MRT coverage (mrt_batch / mrt_every) would be the next test; it was not run.

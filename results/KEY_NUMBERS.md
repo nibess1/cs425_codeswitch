@@ -85,6 +85,16 @@
 | CWER ASCEND, rule tagger vs adjudicated labels, full small | 17.3 → 27.5 | 24 |
 | SYNTHETIC stress set, full small, clean vs phone MER | 22.3 vs 36.8 | 17 |
 
+## Third run (26 Oct, tag `results-translit`): transliteration-penalised MRT — negative result
+| Number | Value | Source |
+|---|---|---|
+| Val selection | no γ qualified: CWER +1.0 pt over full_base for γ = 0.5 and 1 (the γ = 0 retrain control is +0.8, i.e. noise); small not trained | 25b |
+| γ = 1 vs full_base, test MER | ASCEND −0.37 [−0.81, 0.02] · NSC Same −0.04 [−0.21, 0.16] · NSC Diff −0.02 [−0.26, 0.23] (all n.s.) | 25 |
+| γ = 1 vs full_base, transliteration rate | −0.65 / −0.25 / −0.05 pts (all n.s.; γ = 0 control spread up to ±0.9) | 25 |
+| γ = 0.5 vs full_base, NSC Diff MER | +0.31 [0.00, 0.62]* (worse) | 25 |
+| Embedded error E, any γ, any set | n.s. (−0.8 to +0.6 pts) | 25 |
+| Share of MRT candidates the penalty touches | 3–8% | training logs |
+
 ## NSC attribution statement (for slides and report)
 > Contains information from the National Speech Corpus (Part 4) accessed from the Infocomm Media Development Authority of Singapore (IMDA), which is made available under the terms of the Singapore Open Data Licence version 1.0.
 

@@ -1,0 +1,7 @@
+{
+ "chosen": null,
+ "negative_result": true,
+ "gamma": null,
+ "baseline": "full_base__fp16__full_val",
+ "rule": "mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base; min translit_rate"
+}

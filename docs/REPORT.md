@@ -300,3 +300,42 @@ The model's own head reuses that model's encoder pass. The LID head adds about 0
   1. The first gated re-ranking run had an ASCEND val/test id collision. It was rerun as `*_gatedv2`, and only those runs are reported.
   2. Stale critical-word caches made the label-based CWER inconsistent. They were recomputed.
 - **Single-machine speed.** The MacBook numbers are from one machine (Apple M2 Pro). Relative order between formats may differ on x86 or phone CPUs.
+
+## 10. Third run (26 Oct): transliteration-penalised MRT (tables 25, 25b, 25c) — negative result
+This run is separate from the frozen `results-final` numbers above, which it does not change; it is tagged `results-translit`. The rules were fixed in PROCESS_LOG before training.
+
+**Change.** The cost of each MRT candidate becomes c_sem(y) + γ · N_tl(y). Here N_tl counts embedded reference units that the candidate renders as a phonetic transliteration, using the C3 detector `translit.py` unchanged (θ = 0.1). A transliterated unit therefore costs 1 + γ instead of 1, and γ = 0 is exactly the old loss (unit-tested).
+- Base: γ ∈ {0.5, 1}, everything else as full_base.
+- Noise control: a γ = 0 retrain with the same settings and seed. GPU training is not bit-reproducible.
+
+**Selection on val.** The rule: MER ≤ full_base + 0.5 points, CWER ≤ full_base, then lowest transliteration rate. **Neither γ qualified**, because both had val CWER about 1 point above full_base (24.8 vs 23.8). The γ = 0 control, which uses the unchanged loss, was also 0.8 points above (24.6). The CWER failure is therefore within retraining noise, but by the rule it is a negative result, so small was not trained.
+
+| Val, mean of ASCEND + NSC (%) | MER | CWER | Embedded error | Transliteration |
+|---|---|---|---|---|
+| full_base | 27.13 | 23.81 | 38.85 | 5.66 |
+| γ = 0 retrain (control) | 27.35 | 24.60 | 39.30 | 5.86 |
+| γ = 0.5 | 27.21 | 24.81 | 38.30 | 5.64 |
+| γ = 1 | 27.01 | 24.79 | 39.09 | 5.82 |
+
+**Test (decoded after the selection was recorded).** These are paired differences vs full_base in points; negative = better; * = the CI excludes 0. The ASCEND CIs are optimistic (2 test speakers). On NSC the speaker-cluster CIs agree with the utterance CIs.
+
+| | ASCEND MER | NSC Same MER | NSC Diff MER | Transliteration rate (ASCEND / Same / Diff) |
+|---|---|---|---|---|
+| γ = 0 control | −0.14 [−0.56, 0.27] | −0.09 [−0.29, 0.14] | −0.08 [−0.28, 0.11] | +0.91 / −0.07 / +0.21 (all n.s.) |
+| γ = 0.5 | −0.27 [−0.78, 0.22] | +0.17 [−0.13, 0.46] | **+0.31 [0.00, 0.62]*** | +0.13 / +0.05 / −0.39 (all n.s.) |
+| γ = 1 | −0.37 [−0.81, 0.02] | −0.04 [−0.21, 0.16] | −0.02 [−0.26, 0.23] | −0.65 / −0.25 / −0.05 (all n.s.) |
+
+- **Embedded error E** is not significant anywhere; the changes range from −0.8 to +0.6 points.
+- **Translation rate** is not significant anywhere.
+- **CWER:**
+  - γ = 0.5 on NSC Same with the adjudicated list: +1.5 [0.1, 3.1]* (utterance CI). The speaker CI just touches 0: [0.0, 3.2].
+  - With the rule tagger it is +1.1 (n.s.).
+  - γ = 1 is n.s. everywhere.
+
+**Reading.**
+- The penalty does not measurably reduce transliteration on test. γ = 1 points the right way on all three sets (−0.65 / −0.25 / −0.05 points), but every CI includes 0, and the size is no bigger than the γ = 0 control's run-to-run spread (up to 0.9 points on ASCEND).
+- The penalty does not reduce MER or E either.
+- γ = 0.5 is slightly worse on NSC Diff MER (+0.3) and on NSC Same labelled-list CWER (+1.5).
+- **Likely reason:** the penalty rarely applies. Only 3–8% of MRT candidates contain a transliterated embedded unit (training log `tl_cand_share`), MRT runs on 8 clips every 4th step, and transliteration is already only 3.5–6% of embedded units in full_base.
+- **Caveat:** the same detector defines the training penalty and the evaluation rate, so even a translit_rate drop alone would not be strong evidence. MER and E, which the claim rests on, do not move.
+- **Bug during the run:** parallel trainers raced on the shared LaBSE cache file. The fix changed only how the file is written. The crashed γ = 0 run was retrained under a new id, `fulltl_base_g0r`.
