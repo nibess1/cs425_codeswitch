@@ -41,6 +41,8 @@ def main():
     ap.add_argument("--baseline", required=True)
     ap.add_argument("--runs", nargs="+", required=True)
     ap.add_argument("--control", nargs="*", default=[])
+    ap.add_argument("--tag", default="tl", help="outputs results/chosen_<tag>.json and results/<tag>_val.csv")
+    ap.add_argument("--cwer_margin", type=float, default=0.0, help="points of val CWER allowed above baseline")
     a = ap.parse_args()
     base = val_row(a.baseline, a.baseline.split("__")[0], "baseline")
     rows = [base]
@@ -49,7 +51,7 @@ def main():
     for r in a.runs:
         x = val_row(f"{r}__fp16__fulltl_val", r, "candidate")
         x["mer_ok"] = x["MER_mean"] <= base["MER_mean"] + 0.005
-        x["cwer_ok"] = x["CWER_mean"] <= base["CWER_mean"]
+        x["cwer_ok"] = x["CWER_mean"] <= base["CWER_mean"] + a.cwer_margin / 100
         x["eligible"] = x["mer_ok"] and x["cwer_ok"]
         rows.append(x)
     el = [x for x in rows if x.get("eligible")]
@@ -57,11 +59,11 @@ def main():
     for x in rows:
         x["chosen"] = x["system"] == chosen
     df = pd.DataFrame(rows)
-    df.to_csv(manifest.path("results/tl_val.csv"), index=False)
+    df.to_csv(manifest.path(f"results/{a.tag}_val.csv"), index=False)
     out = dict(chosen=chosen, negative_result=chosen is None,
                gamma=float(chosen.split("_g")[-1].rstrip("r")) if chosen else None, baseline=a.baseline,
-               rule="mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base; min translit_rate")
-    json.dump(out, open(manifest.path("results/chosen_tl.json"), "w"), indent=1)
+               rule=f"mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base+{a.cwer_margin}pt; min translit_rate")
+    json.dump(out, open(manifest.path(f"results/chosen_{a.tag}.json"), "w"), indent=1)
     cols = ["system", "role", "MER_mean", "CWER_mean", "E_E_mean", "translit_rate_mean", "conf_rate_mean"]
     cols += [c for c in ("eligible", "chosen") if c in df]
     print(df[cols].to_string(index=False))

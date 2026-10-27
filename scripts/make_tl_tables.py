@@ -39,6 +39,8 @@ def pairs_default():
     out = []
     for f in sorted(glob.glob(manifest.path("preds/fulltl_*__fp16__fulltl.meta.json"))):
         run = os.path.basename(f).split("__")[0]
+        if "_base_l" in run:  # fourth-run ids are tabulated separately (table 26)
+            continue
         base = "full_small__fp16__full" if "_small_" in run else "full_base__fp16__full"
         out.append((base, f"{run}__fp16__fulltl"))
     return out
@@ -61,8 +63,11 @@ def main():
     ap.add_argument("--sets", nargs="*", default=SETS)
     ap.add_argument("--labels_child", action="store_true")
     ap.add_argument("--suffix", default="")
+    ap.add_argument("--names", default="25_transliteration_loss,25b_transliteration_loss_val,25c_transliteration_loss_absolute")
+    ap.add_argument("--val_csv", default="results/tl_val.csv")
     a = ap.parse_args()
     pairs = [tuple(x.split(":")) for x in a.pairs] if a.pairs else pairs_default()
+    n1, n2, n3 = a.names.split(",")
     if a.labels_child:
         return cwer_labels(pairs, a.sets)
     assert pairs, "no fulltl test predictions"
@@ -93,7 +98,7 @@ def main():
                 row["critical_word_error_labels_speaker_ci95_low"] = p(x["spk_lo"])
                 row["critical_word_error_labels_speaker_ci95_high"] = p(x["spk_hi"])
             rows.append(row)
-    pd.DataFrame(rows).to_csv(os.path.join(TAB, f"25_transliteration_loss{a.suffix}.csv"), index=False)
+    pd.DataFrame(rows).to_csv(os.path.join(TAB, f"{n1}{a.suffix}.csv"), index=False)
 
     names = sorted({x for pr in pairs for x in pr})
     t = R.table(names, a.sets, speaker_ci=True)
@@ -102,15 +107,15 @@ def main():
     t = t[keep].copy()
     for c in t.columns[5:]:
         t[c] = t[c].map(p)
-    t.to_csv(os.path.join(TAB, f"25c_transliteration_loss_absolute{a.suffix}.csv"), index=False)
+    t.to_csv(os.path.join(TAB, f"{n3}{a.suffix}.csv"), index=False)
 
-    v = manifest.path("results/tl_val.csv")
+    v = manifest.path(a.val_csv)
     if os.path.exists(v):
         dv = pd.read_csv(v)
         for c in dv.columns:
             if c.split("_")[0] in ("MER", "CWER", "E", "cs", "translit", "conf"):
                 dv[c] = dv[c].map(p)
-        dv.to_csv(os.path.join(TAB, f"25b_transliteration_loss_val{a.suffix}.csv"), index=False)
+        dv.to_csv(os.path.join(TAB, f"{n2}{a.suffix}.csv"), index=False)
     print(pd.DataFrame(rows)[["system_id", "set_id", "MER_change_points", "MER_ci95_low", "MER_ci95_high",
                               "embedded_error_change_points", "transliteration_rate_change_points"]].to_string())
 

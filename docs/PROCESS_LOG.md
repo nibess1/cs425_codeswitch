@@ -477,3 +477,32 @@ Paired vs full_base, in points (negative = better). Full CIs, including speaker-
 - **Translation rate:** n.s. everywhere.
 
 **Conclusion: negative result.** The penalty does not measurably reduce transliteration, MER or E. γ = 1 points the right way on transliteration, but by less than the γ = 0 control's run-to-run spread. The penalty touches only 3–8% of candidates, so the training signal is weak. Raising γ or MRT coverage (mrt_batch / mrt_every) would be the next test; it was not run.
+
+## 27 Oct: fourth run (loss-scale diagnosis + λ retune). Rules fixed BEFORE looking at any new result
+**Why the third run found nothing: loss scale.** `scripts/loss_scale_probe.py` measures gradient L2 norms on 40 training batches from full_base (`ckpt/sem_base_l0.1_r0.5/best`), with no weight updates; output in `results/loss_scale_probe.json`.
+- Role-weighted CE: 5.66 per step.
+- Semantic MRT term at λ = 1: 14.35 on an MRT step. At the used λ = 0.1 that is 0.25× the role gradient, or 0.06× averaged over steps (MRT runs on every 4th step).
+- Transliteration part inside the combined loss, |∇(sem + γ·tl) − ∇sem| at γ = 1, λ = 1: 1.69. At λ = 0.1 that is **0.03× the role gradient on MRT steps, about 0.0075× averaged over steps**. It is non-zero on 27.5% of MRT sub-batches and nearly orthogonal to the role gradient (cos 0.004).
+- So the third-run penalty was about 1/130 of the main loss, too weak to change behaviour.
+- Logged loss values understate this further: λ·|L_sem| per step is about 1.6% of L_role, because the MRT value is mean-subtracted and averages near 0.
+- (A first probe version measured the transliteration term on its own, at 13.1. That normalises over only the clips where N_tl varies, so it overstates the term; it is kept as `loss_scale_probe_v1.json` and not used.)
+
+**Grid (base), new ids `fulltl_base_l<λ>_g<γ>`.**
+- λ ∈ {0.4, 1} × γ ∈ {0, 3}, with everything else as full_base (seed 425, α = β = 0.5, ρ0 = 0.5, MRT sub-batch 8 every 4 steps, same checkpoint rule).
+- λ = 0.4 makes the semantic MRT gradient about equal to the role gradient on MRT steps; λ = 1 makes it about 2.5×.
+- γ = 3 makes the transliteration part 0.36× (λ = 0.4) or 0.9× (λ = 1) of the role gradient on MRT steps.
+- The γ = 0 runs at each λ separate the effect of stronger MRT from the effect of the transliteration penalty.
+
+**Selection rule (val only; means over ascend_val + nsc_val; CWER from the rule tagger).**
+- Eligible: γ = 3 runs with val MER ≤ full_base + 0.5 points and val CWER ≤ full_base + 1.0 point.
+- The CWER margin is new. It is set from the third run's γ = 0 retrain, which differed by 0.8 points from full_base with an identical loss, i.e. run-to-run noise.
+- Choose the eligible run with the lowest val translit_rate. If none is eligible, this is a negative result.
+- The γ = 0 runs are controls and are never selected.
+- Small is not part of this run.
+
+**Reporting.**
+- Test is decoded for all four runs, only after the selection is recorded.
+- Paired bootstrap vs full_base, and each γ = 3 run vs its same-λ γ = 0 control, on MER, E, CWER (rule tagger and labels), translit_rate and translation_rate.
+- NSC rows also get speaker CIs; ASCEND CIs are flagged as optimistic.
+- New tables only: `26_lambda_retune.csv`, `26b_lambda_retune_val.csv` and `26c_lambda_retune_absolute.csv`.
+- The same-detector caveat from the third run applies.

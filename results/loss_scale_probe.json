@@ -1,0 +1,47 @@
+{
+ "model": "ckpt/sem_base_l0.1_r0.5/best",
+ "batches": 40,
+ "mrt_batch": 8,
+ "note": "grad L2 norms; MRT terms at lambda = 1 on an MRT step; in training MRT fires every 4th step",
+ "mean_norm": {
+  "role": 5.655717206001282,
+  "sem": 14.348395812511445,
+  "tl": 13.120734691619873,
+  "sem+tl": 15.406145405769347,
+  "tl_in_combined": 1.6912995961960404
+ },
+ "median_norm": {
+  "role": 5.627387285232544,
+  "sem": 12.99577283859253,
+  "tl": 0.0,
+  "sem+tl": 13.552685737609863,
+  "tl_in_combined": 0.03411918692290783
+ },
+ "share_batches_nonzero": {
+  "sem": 1.0,
+  "tl": 0.275,
+  "sem+tl": 1.0
+ },
+ "mean_norm_when_nonzero": {
+  "sem": 14.348395812511445,
+  "tl": 47.71176251498136,
+  "sem+tl": 15.406145405769347
+ },
+ "cos_with_role_grad": {
+  "sem": 0.028874432609882206,
+  "tl": 0.004046661980365488,
+  "sem+tl": 0.02844911620777566
+ },
+ "ratio_to_role_at_lambda0.1_per_mrt_step": {
+  "sem": 0.2536971932982498,
+  "tl": 0.2319906426314502,
+  "sem+tl": 0.27239950026889403,
+  "tl_in_combined": 0.02990424617414397
+ },
+ "ratio_to_role_at_lambda0.1_averaged_over_steps": {
+  "sem": 0.06342429832456245,
+  "tl": 0.05799766065786255,
+  "sem+tl": 0.06809987506722351,
+  "tl_in_combined": 0.007476061543535992
+ }
+}

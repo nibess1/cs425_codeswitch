@@ -1,0 +1,43 @@
+{
+ "model": "ckpt/sem_base_l0.1_r0.5/best",
+ "batches": 40,
+ "mrt_batch": 8,
+ "note": "grad L2 norms; MRT terms at lambda = 1 on an MRT step; in training MRT fires every 4th step",
+ "mean_norm": {
+  "role": 5.655737864971161,
+  "sem": 14.349210953712463,
+  "tl": 13.121054080128669,
+  "sem+tl": 15.407446730136872
+ },
+ "median_norm": {
+  "role": 5.627288341522217,
+  "sem": 12.995147228240967,
+  "tl": 0.0,
+  "sem+tl": 13.553399562835693
+ },
+ "share_batches_nonzero": {
+  "sem": 1.0,
+  "tl": 0.275,
+  "sem+tl": 1.0
+ },
+ "mean_norm_when_nonzero": {
+  "sem": 14.349210953712463,
+  "tl": 47.71292392774062,
+  "sem+tl": 15.407446730136872
+ },
+ "cos_with_role_grad": {
+  "sem": 0.028903106600046156,
+  "tl": 0.004049941643395207,
+  "sem+tl": 0.028469453350408003
+ },
+ "ratio_to_role_at_lambda0.1_per_mrt_step": {
+  "sem": 0.2537106792481379,
+  "tl": 0.23199544238770292,
+  "sem+tl": 0.27242151418584953
+ },
+ "ratio_to_role_at_lambda0.1_averaged_over_steps": {
+  "sem": 0.06342766981203447,
+  "tl": 0.05799886059692573,
+  "sem+tl": 0.06810537854646238
+ }
+}
