@@ -506,3 +506,32 @@ Paired vs full_base, in points (negative = better). Full CIs, including speaker-
 - NSC rows also get speaker CIs; ASCEND CIs are flagged as optimistic.
 - New tables only: `26_lambda_retune.csv`, `26b_lambda_retune_val.csv` and `26c_lambda_retune_absolute.csv`.
 - The same-detector caveat from the third run applies.
+
+### 27 Oct 15:47: fourth-run (λ retune) selection recorded, before any test decode
+Applied by `scripts/select_tl.py --tag lam --cwer_margin 1.0`; val numbers in `results/lam_val.csv` (fractions).
+```
+             system                     role  MER_mean  CWER_mean  E_E_mean  translit_rate_mean  conf_rate_mean eligible  chosen
+          full_base                 baseline  0.271304   0.238095  0.388509            0.056563        0.016484      NaN   False
+fulltl_base_l0.4_g0 control (not selectable)  0.273125   0.239443  0.399250            0.058492        0.018155      NaN   False
+  fulltl_base_l1_g0 control (not selectable)  0.271779   0.257300  0.384121            0.060285        0.016362      NaN   False
+fulltl_base_l0.4_g3                candidate  0.273577   0.257862  0.385396            0.056735        0.017094    False   False
+  fulltl_base_l1_g3                candidate  0.273847   0.241352  0.389227            0.061297        0.019913     True    True
+{"chosen": "fulltl_base_l1_g3", "negative_result": false, "gamma": 3.0, "baseline": "full_base__fp16__full_val", "rule": "mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base+1.0pt; min translit_rate"}
+```
+- Chosen: **fulltl_base_l1_g3**.
+
+### 27 Oct: fourth-run test results (decoded after the selection entry above; tables 26, 26b, 26c)
+- **Val:** only λ = 1, γ = 3 passed the CWER limit (24.1 vs the 24.8 limit), so the rule chose it. Its val translit_rate was the highest of all runs (6.13% vs full_base 5.66%). λ = 0.4, γ = 3 failed CWER (25.8).
+- **Test, chosen run vs full_base, MER:** +0.12 [−0.36, 0.56] / +0.26 [−0.03, 0.60] / +0.19 [−0.11, 0.48] (ASCEND / NSC Same / NSC Diff), all n.s.
+- **Test, chosen run vs full_base, E and translit_rate:** n.s. on every set (translit_rate +0.26 / −0.04 / −0.27).
+- **The penalty's own effect, γ = 3 vs the same-λ γ = 0:**
+  - λ = 1: MER +0.32 [0.04, 0.65]* on NSC Same (worse); translit_rate n.s. (−0.13 / +0.27 / −0.21).
+  - λ = 0.4: MER +0.35 [0.08, 0.62]* on NSC Diff (worse); translit_rate −1.04 / −0.11 / −0.16, all n.s.
+- **Stronger MRT alone, γ = 0:**
+  - λ = 1: E +0.69 [0.09, 1.34]* on NSC Same and CWER (rule tagger) +6.2 [1.4, 12.0]* on ASCEND, both worse.
+  - λ = 0.4: nothing significant.
+
+**Conclusion: negative result.** Scaling the transliteration gradient up to about 0.9× the role gradient on MRT steps still does not reduce transliteration, and it costs up to +0.35 MER.
+- Hypothesis, not tested: MRT only moves probability among the generated candidates. The correct embedded word is often not among them, and the dictionary-swap candidates are translations, which are only half-penalised. So the penalty pushes the model away from transliterations without a correct alternative to move toward.
+- Val translation rate rose for λ = 1, γ = 3 (1.99% vs 1.65%), which fits this, but test is mixed.
+- Next test: add the reference transcript itself as an MRT candidate. Not run.

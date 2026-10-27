@@ -95,6 +95,15 @@
 | Embedded error E, any γ, any set | n.s. (−0.8 to +0.6 pts) | 25 |
 | Share of MRT candidates the penalty touches | 3–8% | training logs |
 
+## Fourth run (27 Oct, tag `results-lambda`): loss-scale diagnosis + λ retune — negative result
+| Number | Value | Source |
+|---|---|---|
+| Transliteration gradient vs role gradient, third-run setting (λ 0.1, γ 1) | 0.03× on MRT steps, ≈ 0.0075× averaged (≈ 1/130) | loss_scale_probe.json |
+| Semantic MRT gradient vs role gradient, λ 0.1 | 0.25× on MRT steps, 0.06× averaged | loss_scale_probe.json |
+| Chosen on val (λ 1, γ 3) vs full_base, test MER | +0.12 / +0.26 / +0.19 (ASCEND / NSC Same / NSC Diff; n.s.) | 26 |
+| Same, transliteration rate | +0.26 / −0.04 / −0.27 (n.s.) | 26 |
+| Penalty alone (γ 3 vs γ 0, same λ), MER | up to +0.35* worse; transliteration n.s. | 26 |
+
 ## NSC attribution statement (for slides and report)
 > Contains information from the National Speech Corpus (Part 4) accessed from the Infocomm Media Development Authority of Singapore (IMDA), which is made available under the terms of the Singapore Open Data Licence version 1.0.
 

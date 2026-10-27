@@ -339,3 +339,41 @@ This run is separate from the frozen `results-final` numbers above, which it doe
 - **Likely reason:** the penalty rarely applies. Only 3–8% of MRT candidates contain a transliterated embedded unit (training log `tl_cand_share`), MRT runs on 8 clips every 4th step, and transliteration is already only 3.5–6% of embedded units in full_base.
 - **Caveat:** the same detector defines the training penalty and the evaluation rate, so even a translit_rate drop alone would not be strong evidence. MER and E, which the claim rests on, do not move.
 - **Bug during the run:** parallel trainers raced on the shared LaBSE cache file. The fix changed only how the file is written. The crashed γ = 0 run was retrained under a new id, `fulltl_base_g0r`.
+
+## 11. Fourth run (27 Oct): why the penalty did nothing, and a λ retune (tables 26, 26b, 26c) — negative result
+**Diagnosis: loss scale.** `scripts/loss_scale_probe.py` measures gradient L2 norms on 40 training batches from full_base, without updating weights; output in `results/loss_scale_probe.json`. The transliteration part is measured as ‖∇(sem + γ·tl) − ∇sem‖, which is exact because the MRT gradient is linear in the cost.
+
+| Term | Gradient norm | vs role CE, on an MRT step | Averaged over steps (MRT every 4th step) |
+|---|---|---|---|
+| Role-weighted CE | 5.66 | 1 | 1 |
+| Semantic MRT, λ = 0.1 | 1.43 | 0.25 | 0.06 |
+| Transliteration part, λ = 0.1, γ = 1 | 0.17 | 0.03 | ≈ 0.0075 |
+
+- The third-run penalty was about 1/130 of the main loss.
+- It is non-zero on 27.5% of MRT sub-batches, and its direction is unrelated to the role gradient (cosine 0.004).
+- Logged loss values hide this: the MRT value is mean-subtracted, so it averages near 0.
+
+**Retune.** λ ∈ {0.4, 1} × γ ∈ {0, 3} on base.
+- λ = 0.4 puts the semantic gradient at about 1× role on MRT steps, λ = 1 at about 2.5×.
+- γ = 3 puts the transliteration part at 0.36× (λ = 0.4) or 0.9× (λ = 1).
+- The γ = 0 runs are controls.
+- Rule, fixed before training: val MER ≤ full_base + 0.5, val CWER ≤ full_base + 1.0 (the margin is the third run's retrain noise), then lowest val translit_rate.
+- Only λ = 1, γ = 3 qualified, so it was chosen, even though it had the highest val translit_rate (6.13% vs 5.66%).
+
+**Test** (points; negative = better; * = the CI excludes 0; ASCEND CIs are optimistic; NSC speaker CIs agree):
+
+| Comparison | MER: ASCEND / NSC Same / NSC Diff | Transliteration rate | Other significant changes |
+|---|---|---|---|
+| λ 1, γ 3 (chosen) vs full_base | +0.12 / +0.26 / +0.19 (n.s.) | +0.26 / −0.04 / −0.27 (n.s.) | none |
+| λ 1, γ 3 vs λ 1, γ 0 | +0.24 / **+0.32*** / +0.03 | −0.13 / +0.27 / −0.21 (n.s.) | none |
+| λ 0.4, γ 3 vs λ 0.4, γ 0 | +0.34 / +0.10 / **+0.35*** | −1.04 / −0.11 / −0.16 (n.s.) | none |
+| λ 1, γ 0 vs full_base | −0.12 / −0.06 / +0.16 (n.s.) | n.s. | E +0.69* (NSC Same); CWER +6.2* (ASCEND) |
+| λ 0.4, γ 0 vs full_base | −0.30 / +0.01 / −0.09 (n.s.) | n.s. | none |
+
+**Reading.**
+- Even at about 0.9× the role gradient, the penalty does not reduce transliteration, and it costs up to +0.35 MER. A stronger semantic MRT (λ = 1) on its own also hurts E and CWER.
+- So weight was not the only problem.
+- Hypothesis, not tested: MRT only reweights the candidates it generates. The correct embedded word is often missing from them, and the dictionary-swap candidates are translations (only half-penalised), so the penalty has no correct alternative to move toward.
+- Val translation rate rose for the chosen run (1.99% vs 1.65%), which fits, but test is mixed.
+- Next test: add the reference itself as a candidate.
+- The same-detector caveat from §10 applies.

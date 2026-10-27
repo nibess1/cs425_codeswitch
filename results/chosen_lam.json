@@ -1,0 +1,7 @@
+{
+ "chosen": "fulltl_base_l1_g3",
+ "negative_result": false,
+ "gamma": 3.0,
+ "baseline": "full_base__fp16__full_val",
+ "rule": "mean over ascend_val+nsc_val; MER <= base+0.5pt and CWER <= base+1.0pt; min translit_rate"
+}
