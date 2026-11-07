@@ -143,3 +143,23 @@ SYNTHETIC = text-to-speech audio, not human speech.
 24_cwer_rule_vs_labels.csv
   D2: CWER with (a) the rule tagger vs (b) the adjudicated critical-word list (249 types + every digit string).
 
+
+--- Added 7 Nov 2026 (tag results-human; plan in docs/TESTING_PLAN.md) ---
+HUMAN = the team's phone recordings of the stress set: 120 sentences, 3 readers (40 each, 20 English-main +
+20 Mandarin-main), one take per sentence, 48 kHz m4a -> 16 kHz. References are the prompt sentences.
+CIs are utterance bootstraps; with 3 readers they are optimistic. Method suffix _human (synthetic runs are _stress).
+
+27_stress_set_HUMAN.csv
+  Every system and precision on the human stress set (scripts/make_human_tables.py).
+    main: all / zh-main (embedded English) / en-main (embedded Mandarin)
+    CWER_rule_pct / CWER_labels_pct: critical-word error with (a) the rule tagger / (b) the adjudicated D2 list
+    other columns as in 02 / 17
+
+27b_human_fragility_R.csv
+  kind = R: change from the same-backend 16/32-bit reference to the quantized model (points), and R.
+    reportable: False when the matrix change's CI includes 0 (same rule as 06); use the two changes instead
+  kind = Rec: recovery of the 4-bit embedded loss by mixed precision, QLoRA, or QLoRA merged -> Q4_0 (as 14).
+    d_embedded_points is then the 4-bit loss; reportable: False when the loss CI includes 0
+
+27c_human_vs_synthetic.csv
+  The same systems on human audio vs the SYNTHETIC set (clean TTS, TTS + phone channel); same 120 sentences.

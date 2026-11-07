@@ -1,0 +1,121 @@
+member	sentence_id	text
+rui_cong	en001	the doctor told me to take 退烧药 every six hours
+rui_cong	en003	I paid two hundred dollars for the 押金 already
+rui_cong	en004	the 考试 starts at nine so please come early
+rui_cong	en006	my grandmother needs her 胰岛素 every morning
+rui_cong	en009	she said the 疫苗 has two doses
+rui_cong	en010	we need to finish the 项目 by the twentieth
+rui_cong	en019	please bring your 身份证 for the exam
+rui_cong	en020	my mother keeps the 药 in the second drawer
+rui_cong	en021	I think the 会议 is at two thirty
+rui_cong	en031	the 学费 is due by the end of this month
+rui_cong	en034	I booked the 会议室 from two to four
+rui_cong	en036	the 贷款 has twelve monthly payments
+rui_cong	en037	the 期末考 starts on the first of December
+rui_cong	en043	please 签名 here and here
+rui_cong	en044	the 教授 replied to my email at eleven
+rui_cong	en046	we sat for the 面试 at four p m
+rui_cong	en055	the 时间表 for next semester is not out yet
+rui_cong	en057	we need eight copies of the 表格
+rui_cong	en058	the 停车费 is two dollars per hour
+rui_cong	en059	I'll pay the 定金 of one hundred twenty dollars today
+rui_cong	zh003	这个 project 的 deadline 是十月二十号
+rui_cong	zh004	我刚刚转了 fifty dollars 给你，你 check 一下
+rui_cong	zh005	药房说 amoxicillin 要吃满七天才可以停
+rui_cong	zh006	明天早上九点有 midterm，你不要迟到
+rui_cong	zh021	明天的 lecture 改到 Zoom 上
+rui_cong	zh022	这个 server 每天凌晨两点会 restart
+rui_cong	zh024	你要先付 deposit 五百块
+rui_cong	zh025	那个 report 要写三千个字
+rui_cong	zh026	他吃了 antibiotics 还是没好
+rui_cong	zh028	这张 MRT card 里面还有八块五
+rui_cong	zh029	她的 appointment 改到下个星期一
+rui_cong	zh031	你帮我 book 一个 meeting room，下午两点
+rui_cong	zh032	医院说 booster 要隔六个月才可以打
+rui_cong	zh037	你的 submission 系统显示 late 两天
+rui_cong	zh038	我们 group 的 slides 还差五页
+rui_cong	zh039	他在 hospital 住了三个晚上
+rui_cong	zh040	我的 phone bill 这个月八十九块
+rui_cong	zh044	我们的 finals 从十二月一号开始
+rui_cong	zh050	我们的 budget 只有两千块
+rui_cong	zh054	我们约了 dentist 八号早上
+phoebe	en002	my 作业 is due on Friday at midnight
+phoebe	en005	can you send me the 报告 before Tuesday
+phoebe	en011	my 密码 has twelve characters now
+phoebe	en014	the 截止日期 for registration is the fifteenth of November
+phoebe	en015	I lost my 收据 so I cannot claim the forty dollars
+phoebe	en016	the 医院 called and changed my appointment to three p m
+phoebe	en017	our 老师 wants the slides by Thursday
+phoebe	en018	the 工资 comes in on the twenty fifth
+phoebe	en023	he has a 发烧 of thirty eight point five
+phoebe	en024	we have a 小考 every Wednesday
+phoebe	en026	my 血压 was one forty over ninety
+phoebe	en027	can you check the 银行 transfer of fifty dollars
+phoebe	en028	the 毕业典礼 is on the tenth of December
+phoebe	en030	the 牙医 appointment is at eight on Friday
+phoebe	en032	our 组员 has not submitted his part yet
+phoebe	en033	the nurse said 布洛芬 only after meals
+phoebe	en035	my 航班 leaves at six fifteen in the morning
+phoebe	en038	we only have two thousand dollars of 预算
+phoebe	en039	he forgot the 门卡 so he could not enter level five
+phoebe	en056	she has a 复诊 two weeks from now
+phoebe	zh002	你的 assignment 星期五晚上十二点前要交
+phoebe	zh008	这个月的 rent 是一千八百块
+phoebe	zh010	你记得带 insulin 去，放在冰箱第二层
+phoebe	zh013	他说 database 昨晚又 crash 了
+phoebe	zh014	快递说 parcel 星期三会到
+phoebe	zh015	我已经 email 给教授了，但是他还没回
+phoebe	zh016	这个 module 的 quiz 占百分之二十
+phoebe	zh020	医生开了 ibuprofen，饭后才可以吃
+phoebe	zh023	我们的 tutorial 在十一月五号
+phoebe	zh030	考试前一天不要 overnight
+phoebe	zh042	明年一月我要去 clinic 拿 report
+phoebe	zh046	你把 file 上传到 shared drive
+phoebe	zh047	他说 aspirin 不可以跟这个药一起吃
+phoebe	zh048	我的 flight 是早上六点十五分
+phoebe	zh051	她每天要量两次 blood pressure
+phoebe	zh052	这个 bug 要在 release 之前 fix
+phoebe	zh055	这个 course 一共有十三个 week
+phoebe	zh057	我刚 transfer 了一百二十块的 deposit
+phoebe	zh058	下个 sem 的 timetable 还没出来
+phoebe	zh059	医生说 prednisolone 要慢慢减量
+bridgette	en007	the 诊所 opens at eight thirty on Saturday
+bridgette	en008	I made an 预约 with the doctor for next Monday
+bridgette	en012	the 房租 went up to one thousand eight hundred
+bridgette	en013	he took 抗生素 for seven days
+bridgette	en022	the 发票 says three hundred and twenty dollars
+bridgette	en025	the 讲座 is moved to Zoom tomorrow
+bridgette	en029	I need to renew my 护照 before March
+bridgette	en040	the 咳嗽药 is ten millilitres each time
+bridgette	en041	my 成绩单 shows three point eight this semester
+bridgette	en042	the 快递 will arrive on Wednesday
+bridgette	en045	I need the 推荐信 by next Tuesday
+bridgette	en047	the 课程 has thirteen weeks in total
+bridgette	en048	the 电费 this month is ninety two dollars
+bridgette	en049	my 体温 was normal this morning
+bridgette	en050	the 药房 closes at nine tonight
+bridgette	en051	don't forget your 学生证 for the library
+bridgette	en052	the 合同 ends on the thirty first of January
+bridgette	en053	he said the 阿司匹林 cannot be taken with this
+bridgette	en054	my 保险 covers up to five thousand dollars
+bridgette	en060	the 手术 is scheduled for seven a m on Monday
+bridgette	zh001	医生说我要吃 Panadol 两粒，一天三次
+bridgette	zh007	我的 password 改了，新的有十二个字
+bridgette	zh009	老师说 presentation 每组只有十五分钟
+bridgette	zh011	我们约了 polyclinic 下午三点半
+bridgette	zh012	那个 invoice 写错了，应该是三百二十块
+bridgette	zh017	护士说 vaccine 打完要等十五分钟
+bridgette	zh018	我的 salary 每个月二十五号进账
+bridgette	zh019	你把 receipt 拍照 send 给我
+bridgette	zh027	我们 lab 的 booking 是礼拜四早上
+bridgette	zh033	我的 GPA 这个学期是三点八
+bridgette	zh034	这个 python script 跑了四十分钟
+bridgette	zh035	那个 loan 要分十二期还
+bridgette	zh036	医生说 cough syrup 一次十毫升
+bridgette	zh041	这个 Java assignment 有十道题
+bridgette	zh043	妈妈的 metformin 快吃完了，要再拿
+bridgette	zh045	这个 laptop 打折以后是一千两百块
+bridgette	zh049	那个 PIN 是四个数字，你不要告诉别人
+bridgette	zh053	你的 reference letter 我星期二给你
+bridgette	zh056	他的 temperature 是三十八度五
+bridgette	zh060	这个 interview 是下午四点在 level 3

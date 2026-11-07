@@ -108,3 +108,16 @@
 > Contains information from the National Speech Corpus (Part 4) accessed from the Infocomm Media Development Authority of Singapore (IMDA), which is made available under the terms of the Singapore Open Data Licence version 1.0.
 
 This follows the licence's standard template. **Check it against the exact wording on the licence page before submission** (`PENDING_HUMAN.md` item 2).
+
+## Human stress recordings (7 Nov, tag `results-human`): 120 phone recordings, 3 readers
+| Number | Value | Source |
+|---|---|---|
+| Size | 120 utts, 10.7 min, 227 embedded units, 3 readers (40 each) | 27 |
+| Full small, 16-bit: MER / embedded error | 13.4 / 27.8 (synthetic clean: 22.3 / 54.6) | 27, 27c |
+| Off-the-shelf small, 16-bit: MER / embedded | 33.6 / 83.9; transliteration 48% of embedded units | 27 |
+| Off-shelf → ft small, embedded error | −52.5 [−65.3, −39.8]* | score.py --compare |
+| 8-bit, any backend | no ΔE CI excludes 0 | 27b |
+| Full small NF4, ΔE / ΔM | **+7.6 [2.6, 13.3]*** / −1.4 [−3.1, 0.3] (corpora: robust) | 27b |
+| Ft base Q4_0, ΔE / R | +8.9 [2.9, 15.4]* / 3.0 [0.9, 8.8] | 27b |
+| Full base NF4 / Q4_0, ΔE | +8.6 [0.4, 16.8]* / +7.2 [0.0, 13.9]* | 27b |
+| Tiny 4-bit | dominated by single-clip repetition loops; no conclusion | d5h_per_speaker |

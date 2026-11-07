@@ -1,0 +1,25 @@
+utt_id,speaker,ref,ref_units_missing_in_all,units_all_systems_wrote,full_small_hyp
+stress_bridgette_en007,bridgette,the 诊所 opens at eight thirty on saturday,opens,open,the 诊所 open at eight thirty on saturday
+stress_bridgette_en025,bridgette,the 讲座 is moved to zoom tomorrow,moved,move,the 奖座 is move to zoom tomorrow
+stress_bridgette_en029,bridgette,i need to renew my 护照 before march,护,片,i need to renew my 照片 before march
+stress_bridgette_en040,bridgette,the 咳嗽药 is ten millilitres each time,millilitres,millimeters,the 咳嗽药 is ten millimeters each time
+stress_bridgette_en060,bridgette,the 手术 is scheduled for seven a m on monday,手 术,show,the show shoe is scheduled for seven a m on monday
+stress_bridgette_zh011,bridgette,我们约了 polyclinic 下午 3 点半,polyclinic,polytechnic,我们约了 polytechnic 下午 3 点半
+stress_bridgette_zh019,bridgette,你把 receipt 拍照 send 给我,send 拍,先 片,你把 receipt 照片先给我
+stress_bridgette_zh033,bridgette,我的 gpa 这个学期是 3 点八,gpa,gba,我的 gba 这个学期是 3 点八
+stress_bridgette_zh034,bridgette,这个 python script 跑了四十分钟,十 四,40,这个 python script 跑了 40 分钟
+stress_bridgette_zh036,bridgette,医生说 cough syrup 一次 10 毫升,升 毫,好,医生说 cough syrup 一次时好生
+stress_bridgette_zh043,bridgette,妈妈的 metformin 快吃完了要再拿,metformin 再,mat 在,妈妈的 mat form in 快吃完了要在哪
+stress_bridgette_zh060,bridgette,这个 interview 是下午 4 点在 level 3,3,three,这个 interview 是下午 4 点在 level three
+stress_phoebe_en023,phoebe,he has a 发烧 of thirty eight point five,发 烧,far,he has a far shell of thirty eight point five
+stress_phoebe_en033,phoebe,the nurse said 布洛芬 only after meals,布 洛 芬,不 分,the nurse said 不落分 only after meals
+stress_phoebe_en039,phoebe,he forgot the 门卡 so he could not enter level five,enter,answer,he forgot the 门卡 so he could not answer level five
+stress_phoebe_zh020,phoebe,医生开了 ibuprofen 饭后才可以吃,饭,晚,医生开了 ibuprofen 晚后才可以吃
+stress_phoebe_zh051,phoebe,她每天要量两次 blood pressure,她,他,他每天要量量次 blood pressure
+stress_phoebe_zh055,phoebe,这个 course 一共有 13 个 week,一,以,这个 course 以共有 13 个 week
+stress_rui_cong_en006,rui_cong,my grandmother needs her 胰岛素 every morning,grandmother 岛 素 胰,grandma,my grandma needs her 疑宝书 every morning
+stress_rui_cong_en009,rui_cong,she said the 疫苗 has two doses,疫 苗,email,she said the email has two doses
+stress_rui_cong_en044,rui_cong,the 教授 replied to my email at eleven,replied,reply,the 教授 reply to my email at eleven
+stress_rui_cong_zh028,rui_cong,这张 mrt card 里面还有 8 块五,mrt 张,m r t 个,这个 m r t card 里面还有 8 块五
+stress_rui_cong_zh029,rui_cong,她的 appointment 改到下个星期一,她,他,他的 appointment 改到下个星期一
+stress_rui_cong_zh038,rui_cong,我们 group 的 slides 还差五页,五 页,5 月,我们 group 的 slides 还差 5 月

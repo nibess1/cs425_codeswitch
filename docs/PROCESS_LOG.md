@@ -535,3 +535,24 @@ fulltl_base_l0.4_g3                candidate  0.273577   0.257862  0.385396     
 - Hypothesis, not tested: MRT only moves probability among the generated candidates. The correct embedded word is often not among them, and the dictionary-swap candidates are translations, which are only half-penalised. So the penalty pushes the model away from transliterations without a correct alternative to move toward.
 - Val translation rate rose for λ = 1, γ = 3 (1.99% vs 1.65%), which fits this, but test is mixed.
 - Next test: add the reference transcript itself as an MRT candidate. Not run.
+
+## 7 Nov: human stress recordings (tag `results-human`). Plan written before any decode: `docs/TESTING_PLAN.md`
+Separate from all earlier tags; no existing prediction, table or checkpoint is changed (md5 of 209 earlier files checked before and after: unchanged).
+
+**Data.** 120 phone recordings (Rui Cong, Phoebe, Bridgette; 40 each, 20 en-main + 20 zh-main; IDs match `stress/assignments.tsv`). m4a (two readers AAC stereo 48 kHz, one ALAC mono 48 kHz) → ffmpeg PCM wav (`data/stress/audio/<reader>/`, originals in `data/stress/audio_m4a/`) → `scripts/prepare_stress.py` unchanged (mono, 16 kHz, FLAC) → set `stress_test`: 120 utts, 642.6 s, 1,166 units, 227 embedded. References = prompt sentences (decided with Nibras).
+
+**Runs** (`scripts/queue_h.sh`, tmux `h_human`, GPU 5 after `nvidia-smi` showed GPUs 5 and 7 idle; CPU for deployed formats; log `logs/queue_h_20261107.log`). Method suffix `_human`. 47 systems: off-the-shelf small fp16; ft_tiny/base/small, full_base/small × {fp16, int8_bnb, nf4_bnb, ct2_f32, ct2_int8, ggml_f16, ggml_q8_0, ggml_q4_0}; repairs for ft_tiny and full_base (mp2/mp3 NF4, QLoRA NF4, QLoRA merged → Q4_0).
+
+**Tables.** `scripts/make_human_tables.py` → `results/tables/27_stress_set_HUMAN.csv`, `27b_human_fragility_R.csv`, `27c_human_vs_synthetic.csv`, `results/d5h_*.csv`; `scripts/make_human_figure.py` → `fig8_human_quant_delta`.
+
+**Results** (utterance CIs; 3 readers, so optimistic).
+- 16-bit: off-shelf small MER 33.6 / E 83.9; ft tiny 34.6 / 70.5; ft base 23.0 / 49.7; full base 24.4 / 50.7; ft small 14.3 / 31.4; full small 13.4 / 27.8. Human audio is much easier than the synthetic voices (E 15–27 points lower for every fine-tuned model).
+- Full vs ft: n.s. (small E −3.6 [−10.0, 2.7]; base +0.9 [−5.3, 6.5]). Off-shelf → ft small: E −52.5 [−65.3, −39.8]*.
+- Switch points: Ms > Mi in 4/5 fine-tuned models (full small 12.4 vs 9.0). Embedded Mandarin (en-main) harder than embedded English (full small 33.8 vs 18.5), but those sentences hold the rarer drug terms.
+- 8-bit: no ΔE CI excludes 0 in any backend.
+- 4-bit ΔE: ft base Q4_0 +8.9 [2.9, 15.4]* (ΔM +3.0*, R 3.0 [0.9, 8.8]); full base NF4 +8.6 [0.4, 16.8]*, Q4_0 +7.2 [0.0, 13.9]*; **full small NF4 +7.6 [2.6, 13.3]*** with ΔM −1.4 n.s. (small was robust on the corpora); small Q4_0 ≤ 1.2 pts.
+- Tiny 4-bit is dominated by repetition loops on single clips (NF4: `stress_bridgette_en042`, 120 inserted units; without it ΔE +0.5). No conclusion for tiny.
+- Repairs (full base NF4): mixed precision Rec 0.22 [−1.81, 0.83], QLoRA 0.40 [−0.50, 1.49], merged → Q4_0 0.91 [−0.23, 3.53]: none excludes 0.
+- 24 clips where all five fine-tuned 16-bit models agree on the same departure from the prompt (`results/d5h_flagged_clips.csv`): likely reading variants (opens→open, grandmother→grandma), homophones (她/他), normaliser mismatches (level 3 vs three; 四十 vs 40; mrt vs m r t) and real errors (polyclinic→polytechnic). Not checked by listening.
+
+**Paper.** New §10 (Human Stress Recordings, Table 5), data paragraph + Table 1 row, abstract/intro/RQ3/conclusion/limitations/ethics/appendix updated. The main text was already ~1 column over 8 pages before this; to fit, the R table, Rec table, speed table and role-error figure moved to the appendix and several paragraphs were condensed (no result removed except the Q5_0 speed remark in §Deployment). Main text now ends on page 8.

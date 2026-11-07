@@ -1,0 +1,26 @@
+label,system_id,d_embedded_points,d_embedded_ci95_low,d_embedded_ci95_high,d_matrix_points,d_matrix_ci95_low,d_matrix_ci95_high
+"ft tiny, LLM.int8",ft_tiny__int8_bnb__ft_human,1.27,-1.84,4.4,0.36,-1.28,2.14
+"ft tiny, NF4",ft_tiny__nf4_bnb__ft_human,17.65,-7.31,57.0,13.26,-0.54,35.56
+"ft tiny, CT2 int8",ft_tiny__ct2_int8__ft_human,-0.87,-7.66,4.74,-2.47,-7.72,0.97
+"ft tiny, Q8_0",ft_tiny__ggml_q8_0__ft_human,0.88,-1.24,4.08,-0.11,-0.78,0.59
+"ft tiny, Q4_0",ft_tiny__ggml_q4_0__ft_human,5.13,-2.9,14.64,7.47,3.8,11.33
+"ft base, LLM.int8",ft_base__int8_bnb__ft_human,1.59,-1.76,4.46,0.71,-1.04,3.48
+"ft base, NF4",ft_base__nf4_bnb__ft_human,5.53,-0.19,11.44,0.37,-1.18,1.88
+"ft base, CT2 int8",ft_base__ct2_int8__ft_human,0.12,-3.0,2.69,0.03,-0.85,0.95
+"ft base, Q8_0",ft_base__ggml_q8_0__ft_human,0.0,-1.28,1.3,0.22,-0.32,0.69
+"ft base, Q4_0",ft_base__ggml_q4_0__ft_human,8.92,2.85,15.42,2.98,1.02,5.34
+"full base, LLM.int8",full_base__int8_bnb__full_human,0.44,-2.11,3.54,-0.37,-2.06,1.0
+"full base, NF4",full_base__nf4_bnb__full_human,8.58,0.36,16.79,-1.28,-3.94,1.17
+"full base, CT2 int8",full_base__ct2_int8__full_human,0.17,-3.17,3.56,-0.88,-2.76,0.57
+"full base, Q8_0",full_base__ggml_q8_0__full_human,-0.38,-4.31,3.15,-0.61,-3.34,1.44
+"full base, Q4_0",full_base__ggml_q4_0__full_human,7.22,0.02,13.93,1.96,-1.2,5.03
+"ft small, LLM.int8",ft_small__int8_bnb__ft_human,2.97,-0.65,7.6,-1.2,-4.13,0.61
+"ft small, NF4",ft_small__nf4_bnb__ft_human,4.09,-1.73,10.13,0.46,-1.2,2.23
+"ft small, CT2 int8",ft_small__ct2_int8__ft_human,2.24,-1.64,6.93,-0.9,-4.03,1.01
+"ft small, Q8_0",ft_small__ggml_q8_0__ft_human,-0.07,-1.72,1.67,-0.76,-2.64,0.35
+"ft small, Q4_0",ft_small__ggml_q4_0__ft_human,-1.17,-5.77,2.8,-0.85,-4.57,1.76
+"full small, LLM.int8",full_small__int8_bnb__full_human,1.91,-0.46,5.41,0.07,-1.18,1.39
+"full small, NF4",full_small__nf4_bnb__full_human,7.64,2.59,13.3,-1.37,-3.12,0.3
+"full small, CT2 int8",full_small__ct2_int8__full_human,0.37,-2.15,3.49,0.02,-0.77,0.81
+"full small, Q8_0",full_small__ggml_q8_0__full_human,1.32,0.0,3.43,0.0,0.0,0.0
+"full small, Q4_0",full_small__ggml_q4_0__full_human,1.1,-1.81,3.98,0.06,-1.37,1.62

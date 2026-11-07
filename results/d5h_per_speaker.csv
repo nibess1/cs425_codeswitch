@@ -1,0 +1,424 @@
+system,speaker,main,n_utt,MER_pct,E_E_pct,E_Ms_pct,E_Mi_pct,E_sw_pct,CWER_pct,insertions
+ft_base__ct2_f32__ft_human,bridgette,all,40,24.23,55.27,15.12,17.86,32.85,28.79,8
+ft_base__ct2_f32__ft_human,bridgette,zh-main (embedded English),20,21.26,40.37,16.36,19.59,25.49,27.27,5
+ft_base__ct2_f32__ft_human,bridgette,en-main (embedded Mandarin),20,27.62,63.83,13.75,15.59,39.38,30.3,3
+ft_base__ct2_f32__ft_human,phoebe,all,40,21.65,47.37,13.79,14.55,29.03,27.87,15
+ft_base__ct2_f32__ft_human,phoebe,zh-main (embedded English),20,18.27,38.71,14.58,11.11,24.68,23.08,10
+ft_base__ct2_f32__ft_human,phoebe,en-main (embedded Mandarin),20,25.13,53.33,12.82,18.1,33.33,31.43,5
+ft_base__ct2_f32__ft_human,rui_cong,all,40,23.33,46.75,18.33,16.83,29.25,30.0,12
+ft_base__ct2_f32__ft_human,rui_cong,zh-main (embedded English),20,20.79,25.81,17.65,20.09,20.73,24.24,4
+ft_base__ct2_f32__ft_human,rui_cong,en-main (embedded Mandarin),20,26.06,60.87,19.23,13.37,38.31,37.04,8
+ft_base__ct2_int8__ft_human,bridgette,all,40,23.97,54.73,14.68,17.75,31.68,27.27,7
+ft_base__ct2_int8__ft_human,bridgette,zh-main (embedded English),20,20.29,31.48,15.53,20.22,21.6,24.24,4
+ft_base__ct2_int8__ft_human,bridgette,en-main (embedded Mandarin),20,28.18,68.09,13.75,14.52,40.62,30.3,3
+ft_base__ct2_int8__ft_human,phoebe,all,40,22.42,47.37,16.09,15.02,30.32,27.87,13
+ft_base__ct2_int8__ft_human,phoebe,zh-main (embedded English),20,18.78,38.71,16.67,11.11,25.97,23.08,10
+ft_base__ct2_int8__ft_human,phoebe,en-main (embedded Mandarin),20,26.18,53.33,15.38,19.05,34.62,31.43,3
+ft_base__ct2_int8__ft_human,rui_cong,all,40,22.82,47.62,16.48,16.59,28.62,31.67,11
+ft_base__ct2_int8__ft_human,rui_cong,zh-main (embedded English),20,19.31,25.81,17.65,17.76,20.73,27.27,3
+ft_base__ct2_int8__ft_human,rui_cong,en-main (embedded Mandarin),20,26.6,62.32,14.96,15.35,37.01,37.04,8
+ft_base__fp16__ft_human,bridgette,all,40,23.97,55.27,15.12,17.4,32.85,28.79,8
+ft_base__fp16__ft_human,bridgette,zh-main (embedded English),20,21.26,40.37,16.36,19.59,25.49,27.27,5
+ft_base__fp16__ft_human,bridgette,en-main (embedded Mandarin),20,27.07,63.83,13.75,14.52,39.38,30.3,3
+ft_base__fp16__ft_human,phoebe,all,40,21.65,47.37,13.79,14.55,29.03,27.87,15
+ft_base__fp16__ft_human,phoebe,zh-main (embedded English),20,18.27,38.71,14.58,11.11,24.68,23.08,10
+ft_base__fp16__ft_human,phoebe,en-main (embedded Mandarin),20,25.13,53.33,12.82,18.1,33.33,31.43,5
+ft_base__fp16__ft_human,rui_cong,all,40,23.33,46.75,18.33,16.83,29.25,30.0,12
+ft_base__fp16__ft_human,rui_cong,zh-main (embedded English),20,20.79,25.81,17.65,20.09,20.73,24.24,4
+ft_base__fp16__ft_human,rui_cong,en-main (embedded Mandarin),20,26.06,60.87,19.23,13.37,38.31,37.04,8
+ft_base__ggml_f16__ft_human,bridgette,all,40,24.74,58.42,16.9,17.01,35.39,30.3,9
+ft_base__ggml_f16__ft_human,bridgette,zh-main (embedded English),20,21.26,40.37,16.36,19.59,25.49,27.27,5
+ft_base__ggml_f16__ft_human,bridgette,en-main (embedded Mandarin),20,28.73,68.79,17.5,13.62,44.17,33.33,4
+ft_base__ggml_f16__ft_human,phoebe,all,40,21.91,47.37,13.79,15.02,29.03,27.87,14
+ft_base__ggml_f16__ft_human,phoebe,zh-main (embedded English),20,18.78,38.71,14.58,12.04,24.68,23.08,10
+ft_base__ggml_f16__ft_human,phoebe,en-main (embedded Mandarin),20,25.13,53.33,12.82,18.1,33.33,31.43,4
+ft_base__ggml_f16__ft_human,rui_cong,all,40,24.1,55.41,17.59,15.62,33.02,31.67,11
+ft_base__ggml_f16__ft_human,rui_cong,zh-main (embedded English),20,19.8,29.03,17.65,17.76,21.95,27.27,4
+ft_base__ggml_f16__ft_human,rui_cong,en-main (embedded Mandarin),20,28.72,73.19,17.52,13.37,44.81,37.04,7
+ft_base__ggml_q4_0__ft_human,bridgette,all,40,29.12,69.59,19.64,19.53,41.06,31.82,12
+ft_base__ggml_q4_0__ft_human,bridgette,zh-main (embedded English),20,23.67,50.0,15.91,20.9,28.87,27.27,7
+ft_base__ggml_q4_0__ft_human,bridgette,en-main (embedded Mandarin),20,35.36,80.85,23.75,17.74,51.88,36.36,5
+ft_base__ggml_q4_0__ft_human,phoebe,all,40,23.97,50.88,14.18,16.9,30.54,32.79,16
+ft_base__ggml_q4_0__ft_human,phoebe,zh-main (embedded English),20,21.32,44.09,17.36,12.96,28.57,30.77,11
+ft_base__ggml_q4_0__ft_human,phoebe,en-main (embedded Mandarin),20,26.7,55.56,10.26,20.95,32.48,34.29,5
+ft_base__ggml_q4_0__ft_human,rui_cong,all,40,30.51,67.51,25.69,19.18,42.52,40.0,19
+ft_base__ggml_q4_0__ft_human,rui_cong,zh-main (embedded English),20,24.75,33.06,22.06,23.83,26.22,36.36,5
+ft_base__ggml_q4_0__ft_human,rui_cong,en-main (embedded Mandarin),20,36.7,90.72,30.43,14.26,59.87,44.44,14
+ft_base__ggml_q8_0__ft_human,bridgette,all,40,24.74,58.42,16.9,17.01,35.39,30.3,9
+ft_base__ggml_q8_0__ft_human,bridgette,zh-main (embedded English),20,21.26,40.37,16.36,19.59,25.49,27.27,5
+ft_base__ggml_q8_0__ft_human,bridgette,en-main (embedded Mandarin),20,28.73,68.79,17.5,13.62,44.17,33.33,4
+ft_base__ggml_q8_0__ft_human,phoebe,all,40,22.42,48.68,13.79,15.02,29.35,29.51,15
+ft_base__ggml_q8_0__ft_human,phoebe,zh-main (embedded English),20,19.29,38.71,14.58,12.04,24.68,26.92,10
+ft_base__ggml_q8_0__ft_human,phoebe,en-main (embedded Mandarin),20,25.65,55.56,12.82,18.1,33.97,31.43,5
+ft_base__ggml_q8_0__ft_human,rui_cong,all,40,24.36,54.11,19.26,15.87,33.33,31.67,11
+ft_base__ggml_q8_0__ft_human,rui_cong,zh-main (embedded English),20,20.3,29.03,17.65,18.69,21.95,27.27,4
+ft_base__ggml_q8_0__ft_human,rui_cong,en-main (embedded Mandarin),20,28.72,71.01,21.37,12.87,45.45,37.04,7
+ft_base__int8_bnb__ft_human,bridgette,all,40,27.06,53.83,17.26,21.47,33.33,30.3,16
+ft_base__int8_bnb__ft_human,bridgette,zh-main (embedded English),20,27.05,36.42,20.45,26.78,26.53,30.3,13
+ft_base__int8_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,27.07,63.83,13.75,14.52,39.38,30.3,3
+ft_base__int8_bnb__ft_human,phoebe,all,40,21.65,48.68,13.79,14.08,29.03,27.87,14
+ft_base__int8_bnb__ft_human,phoebe,zh-main (embedded English),20,17.77,38.71,14.58,10.19,24.68,23.08,10
+ft_base__int8_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,25.65,55.56,12.82,18.1,33.33,31.43,4
+ft_base__int8_bnb__ft_human,rui_cong,all,40,23.33,51.52,17.59,15.62,31.13,31.67,10
+ft_base__int8_bnb__ft_human,rui_cong,zh-main (embedded English),20,19.31,25.81,17.65,17.76,20.73,27.27,3
+ft_base__int8_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,27.66,68.84,17.52,13.37,42.21,37.04,7
+ft_base__nf4_bnb__ft_human,bridgette,all,40,27.32,63.22,13.86,19.73,35.16,31.82,15
+ft_base__nf4_bnb__ft_human,bridgette,zh-main (embedded English),20,25.6,54.76,13.96,22.07,29.48,33.33,11
+ft_base__nf4_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,29.28,68.09,13.75,16.67,40.21,30.3,4
+ft_base__nf4_bnb__ft_human,phoebe,all,40,22.68,52.19,12.68,14.69,29.48,29.51,16
+ft_base__nf4_bnb__ft_human,phoebe,zh-main (embedded English),20,19.29,37.63,14.24,12.5,24.03,23.08,11
+ft_base__nf4_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,26.18,62.22,10.77,16.95,34.87,34.29,5
+ft_base__nf4_bnb__ft_human,rui_cong,all,40,24.1,50.65,17.22,17.31,30.5,30.0,12
+ft_base__nf4_bnb__ft_human,rui_cong,zh-main (embedded English),20,20.79,25.81,15.69,21.03,19.51,24.24,4
+ft_base__nf4_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,27.66,67.39,19.23,13.37,42.21,37.04,8
+ft_small__ct2_f32__ft_human,bridgette,all,40,17.27,32.77,14.29,13.37,22.68,19.7,19
+ft_small__ct2_f32__ft_human,bridgette,zh-main (embedded English),20,22.22,45.37,20.45,18.65,29.93,24.24,18
+ft_small__ct2_f32__ft_human,bridgette,en-main (embedded Mandarin),20,11.6,25.53,7.5,6.45,16.25,15.15,1
+ft_small__ct2_f32__ft_human,phoebe,all,40,11.86,28.51,11.11,6.42,18.92,16.39,2
+ft_small__ct2_f32__ft_human,phoebe,zh-main (embedded English),20,6.6,6.45,8.33,5.56,7.79,7.69,0
+ft_small__ct2_f32__ft_human,phoebe,en-main (embedded Mandarin),20,17.28,43.7,14.53,7.3,29.91,22.86,2
+ft_small__ct2_f32__ft_human,rui_cong,all,40,13.85,32.9,12.41,8.41,20.44,16.67,8
+ft_small__ct2_f32__ft_human,rui_cong,zh-main (embedded English),20,12.87,23.66,11.11,12.15,15.85,15.15,3
+ft_small__ct2_f32__ft_human,rui_cong,en-main (embedded Mandarin),20,14.89,39.13,14.1,4.46,25.32,18.52,5
+ft_small__ct2_int8__ft_human,bridgette,all,40,15.46,36.26,12.1,9.77,22.52,19.7,7
+ft_small__ct2_int8__ft_human,bridgette,zh-main (embedded English),20,15.46,35.19,12.5,12.3,21.13,21.21,4
+ft_small__ct2_int8__ft_human,bridgette,en-main (embedded Mandarin),20,15.47,36.88,11.67,6.45,23.75,18.18,3
+ft_small__ct2_int8__ft_human,phoebe,all,40,11.86,29.17,11.69,5.95,19.57,16.39,3
+ft_small__ct2_int8__ft_human,phoebe,zh-main (embedded English),20,6.6,8.06,9.38,4.63,9.09,7.69,1
+ft_small__ct2_int8__ft_human,phoebe,en-main (embedded Mandarin),20,17.28,43.7,14.53,7.3,29.91,22.86,2
+ft_small__ct2_int8__ft_human,rui_cong,all,40,14.87,35.5,14.63,8.41,22.96,18.33,9
+ft_small__ct2_int8__ft_human,rui_cong,zh-main (embedded English),20,13.86,23.66,15.03,12.15,18.29,15.15,4
+ft_small__ct2_int8__ft_human,rui_cong,en-main (embedded Mandarin),20,15.96,43.48,14.1,4.46,27.92,22.22,5
+ft_small__fp16__ft_human,bridgette,all,40,17.27,32.77,14.29,13.37,22.68,19.7,19
+ft_small__fp16__ft_human,bridgette,zh-main (embedded English),20,22.22,45.37,20.45,18.65,29.93,24.24,18
+ft_small__fp16__ft_human,bridgette,en-main (embedded Mandarin),20,11.6,25.53,7.5,6.45,16.25,15.15,1
+ft_small__fp16__ft_human,phoebe,all,40,11.86,28.51,11.11,6.42,18.92,16.39,2
+ft_small__fp16__ft_human,phoebe,zh-main (embedded English),20,6.6,6.45,8.33,5.56,7.79,7.69,0
+ft_small__fp16__ft_human,phoebe,en-main (embedded Mandarin),20,17.28,43.7,14.53,7.3,29.91,22.86,2
+ft_small__fp16__ft_human,rui_cong,all,40,13.85,32.9,12.41,8.41,20.44,16.67,8
+ft_small__fp16__ft_human,rui_cong,zh-main (embedded English),20,12.87,23.66,11.11,12.15,15.85,15.15,3
+ft_small__fp16__ft_human,rui_cong,en-main (embedded Mandarin),20,14.89,39.13,14.1,4.46,25.32,18.52,5
+ft_small__ggml_f16__ft_human,bridgette,all,40,18.56,38.51,12.1,13.64,23.62,21.21,15
+ft_small__ggml_f16__ft_human,bridgette,zh-main (embedded English),20,20.77,35.19,16.29,18.31,23.47,24.24,13
+ft_small__ggml_f16__ft_human,bridgette,en-main (embedded Mandarin),20,16.02,40.43,7.5,7.53,23.75,18.18,2
+ft_small__ggml_f16__ft_human,phoebe,all,40,10.82,27.19,9.58,5.63,17.42,16.39,2
+ft_small__ggml_f16__ft_human,phoebe,zh-main (embedded English),20,5.08,3.23,8.33,3.7,6.49,7.69,0
+ft_small__ggml_f16__ft_human,phoebe,en-main (embedded Mandarin),20,16.75,43.7,11.11,7.62,28.21,22.86,2
+ft_small__ggml_f16__ft_human,rui_cong,all,40,14.87,36.36,12.78,8.89,22.33,18.33,9
+ft_small__ggml_f16__ft_human,rui_cong,zh-main (embedded English),20,12.87,23.66,11.11,12.15,15.85,15.15,3
+ft_small__ggml_f16__ft_human,rui_cong,en-main (embedded Mandarin),20,17.02,44.93,14.96,5.45,29.22,22.22,6
+ft_small__ggml_q4_0__ft_human,bridgette,all,40,16.49,38.96,9.72,10.54,22.52,24.24,8
+ft_small__ggml_q4_0__ft_human,bridgette,zh-main (embedded English),20,15.94,38.89,7.95,12.02,19.72,30.3,5
+ft_small__ggml_q4_0__ft_human,bridgette,en-main (embedded Mandarin),20,17.13,39.01,11.67,8.6,25.0,18.18,3
+ft_small__ggml_q4_0__ft_human,phoebe,all,40,11.34,30.48,11.3,4.69,20.0,18.03,2
+ft_small__ggml_q4_0__ft_human,phoebe,zh-main (embedded English),20,6.09,8.06,11.46,2.78,10.39,7.69,1
+ft_small__ggml_q4_0__ft_human,phoebe,en-main (embedded Mandarin),20,16.75,45.93,11.11,6.67,29.49,25.71,1
+ft_small__ggml_q4_0__ft_human,rui_cong,all,40,13.85,29.22,13.33,9.38,19.39,16.67,11
+ft_small__ggml_q4_0__ft_human,rui_cong,zh-main (embedded English),20,11.88,12.9,11.76,13.08,12.2,12.12,3
+ft_small__ggml_q4_0__ft_human,rui_cong,en-main (embedded Mandarin),20,15.96,40.22,15.38,5.45,27.06,22.22,8
+ft_small__ggml_q8_0__ft_human,bridgette,all,40,15.98,37.16,10.52,10.54,22.08,19.7,7
+ft_small__ggml_q8_0__ft_human,bridgette,zh-main (embedded English),20,15.94,31.48,13.26,12.84,20.19,21.21,5
+ft_small__ggml_q8_0__ft_human,bridgette,en-main (embedded Mandarin),20,16.02,40.43,7.5,7.53,23.75,18.18,2
+ft_small__ggml_q8_0__ft_human,phoebe,all,40,11.6,29.17,11.69,5.48,19.57,16.39,3
+ft_small__ggml_q8_0__ft_human,phoebe,zh-main (embedded English),20,6.09,8.06,9.38,3.7,9.09,7.69,1
+ft_small__ggml_q8_0__ft_human,phoebe,en-main (embedded Mandarin),20,17.28,43.7,14.53,7.3,29.91,22.86,2
+ft_small__ggml_q8_0__ft_human,rui_cong,all,40,14.62,35.5,12.41,8.89,21.7,18.33,8
+ft_small__ggml_q8_0__ft_human,rui_cong,zh-main (embedded English),20,12.87,23.66,11.11,12.15,15.85,15.15,3
+ft_small__ggml_q8_0__ft_human,rui_cong,en-main (embedded Mandarin),20,16.49,43.48,14.1,5.45,27.92,22.22,5
+ft_small__int8_bnb__ft_human,bridgette,all,40,15.21,37.16,10.12,9.77,22.52,21.21,6
+ft_small__int8_bnb__ft_human,bridgette,zh-main (embedded English),20,15.46,38.89,12.5,11.48,22.54,24.24,4
+ft_small__int8_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,14.92,36.17,7.5,7.53,22.5,18.18,2
+ft_small__int8_bnb__ft_human,phoebe,all,40,12.37,30.48,11.69,6.42,20.22,16.39,3
+ft_small__int8_bnb__ft_human,phoebe,zh-main (embedded English),20,7.61,11.29,9.38,5.56,10.39,7.69,1
+ft_small__int8_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,17.28,43.7,14.53,7.3,29.91,22.86,2
+ft_small__int8_bnb__ft_human,rui_cong,all,40,14.36,35.5,12.41,8.41,21.7,18.33,8
+ft_small__int8_bnb__ft_human,rui_cong,zh-main (embedded English),20,12.87,23.66,11.11,12.15,15.85,15.15,3
+ft_small__int8_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,15.96,43.48,14.1,4.46,27.92,22.22,5
+ft_small__nf4_bnb__ft_human,bridgette,all,40,16.49,35.2,9.04,12.47,20.29,22.73,10
+ft_small__nf4_bnb__ft_human,bridgette,zh-main (embedded English),20,20.77,40.91,14.98,17.88,24.84,27.27,10
+ft_small__nf4_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,11.6,31.91,2.5,5.38,16.25,18.18,0
+ft_small__nf4_bnb__ft_human,phoebe,all,40,14.18,30.92,12.07,9.39,20.65,18.03,5
+ft_small__nf4_bnb__ft_human,phoebe,zh-main (embedded English),20,9.64,20.97,11.46,5.56,15.58,7.69,3
+ft_small__nf4_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,18.85,37.78,12.82,13.33,25.64,25.71,2
+ft_small__nf4_bnb__ft_human,rui_cong,all,40,16.15,40.26,15.0,8.89,24.84,21.67,9
+ft_small__nf4_bnb__ft_human,rui_cong,zh-main (embedded English),20,13.37,19.35,15.69,12.15,17.07,18.18,4
+ft_small__nf4_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,19.15,54.35,14.1,5.45,33.12,25.93,5
+ft_tiny__ct2_f32__ft_human,bridgette,all,40,32.22,65.54,26.19,19.15,44.04,45.45,21
+ft_tiny__ct2_f32__ft_human,bridgette,zh-main (embedded English),20,31.88,50.0,26.14,22.68,35.21,54.55,13
+ft_tiny__ct2_f32__ft_human,bridgette,en-main (embedded Mandarin),20,32.6,74.47,26.25,14.52,51.88,36.36,8
+ft_tiny__ct2_f32__ft_human,phoebe,all,40,31.19,73.03,21.84,19.01,43.98,42.62,22
+ft_tiny__ct2_f32__ft_human,phoebe,zh-main (embedded English),20,23.86,45.16,22.92,14.81,32.47,42.31,12
+ft_tiny__ct2_f32__ft_human,phoebe,en-main (embedded Mandarin),20,38.74,92.22,20.51,23.33,55.34,42.86,10
+ft_tiny__ct2_f32__ft_human,rui_cong,all,40,40.77,71.48,29.68,32.15,46.38,45.0,49
+ft_tiny__ct2_f32__ft_human,rui_cong,zh-main (embedded English),20,47.03,60.35,32.43,46.14,42.99,42.42,39
+ft_tiny__ct2_f32__ft_human,rui_cong,en-main (embedded Mandarin),20,34.04,78.99,26.07,17.33,50.0,48.15,10
+ft_tiny__ct2_int8__ft_human,bridgette,all,40,31.96,66.67,19.15,21.28,40.67,43.94,22
+ft_tiny__ct2_int8__ft_human,bridgette,zh-main (embedded English),20,32.37,53.7,19.32,25.55,32.39,51.52,16
+ft_tiny__ct2_int8__ft_human,bridgette,en-main (embedded Mandarin),20,31.49,74.11,18.96,15.68,48.02,36.36,6
+ft_tiny__ct2_int8__ft_human,phoebe,all,40,29.9,70.7,24.41,16.45,44.28,42.62,19
+ft_tiny__ct2_int8__ft_human,phoebe,zh-main (embedded English),20,21.83,44.62,24.65,10.49,33.33,42.31,10
+ft_tiny__ct2_int8__ft_human,phoebe,en-main (embedded Mandarin),20,38.22,88.67,24.1,22.57,55.09,42.86,9
+ft_tiny__ct2_int8__ft_human,rui_cong,all,40,35.13,70.13,25.0,25.72,42.45,46.67,22
+ft_tiny__ct2_int8__ft_human,rui_cong,zh-main (embedded English),20,34.16,46.24,24.84,32.71,32.93,42.42,11
+ft_tiny__ct2_int8__ft_human,rui_cong,en-main (embedded Mandarin),20,36.17,86.23,25.21,18.32,52.6,51.85,11
+ft_tiny__fp16__ft_human,bridgette,all,40,32.22,65.54,26.19,19.15,44.04,45.45,21
+ft_tiny__fp16__ft_human,bridgette,zh-main (embedded English),20,31.88,50.0,26.14,22.68,35.21,54.55,13
+ft_tiny__fp16__ft_human,bridgette,en-main (embedded Mandarin),20,32.6,74.47,26.25,14.52,51.88,36.36,8
+ft_tiny__fp16__ft_human,phoebe,all,40,31.7,73.03,22.99,19.48,44.62,42.62,22
+ft_tiny__fp16__ft_human,phoebe,zh-main (embedded English),20,24.87,45.16,25.0,15.74,33.77,42.31,12
+ft_tiny__fp16__ft_human,phoebe,en-main (embedded Mandarin),20,38.74,92.22,20.51,23.33,55.34,42.86,10
+ft_tiny__fp16__ft_human,rui_cong,all,40,40.0,72.78,29.12,30.71,46.7,45.0,47
+ft_tiny__fp16__ft_human,rui_cong,zh-main (embedded English),20,45.54,63.58,31.45,43.34,43.6,42.42,37
+ft_tiny__fp16__ft_human,rui_cong,en-main (embedded Mandarin),20,34.04,78.99,26.07,17.33,50.0,48.15,10
+ft_tiny__ggml_f16__ft_human,bridgette,all,40,30.93,66.22,22.32,18.57,42.22,45.45,18
+ft_tiny__ggml_f16__ft_human,bridgette,zh-main (embedded English),20,30.92,53.7,26.14,21.04,36.62,54.55,12
+ft_tiny__ggml_f16__ft_human,bridgette,en-main (embedded Mandarin),20,30.94,73.4,18.12,15.32,47.19,36.36,6
+ft_tiny__ggml_f16__ft_human,phoebe,all,40,30.41,69.17,23.83,18.17,43.85,40.98,23
+ft_tiny__ggml_f16__ft_human,phoebe,zh-main (embedded English),20,26.4,47.31,25.69,17.59,35.06,42.31,13
+ft_tiny__ggml_f16__ft_human,phoebe,en-main (embedded Mandarin),20,34.55,84.22,21.54,18.76,52.52,40.0,10
+ft_tiny__ggml_f16__ft_human,rui_cong,all,40,31.79,68.4,23.15,21.63,41.19,43.33,20
+ft_tiny__ggml_f16__ft_human,rui_cong,zh-main (embedded English),20,30.69,52.69,22.88,26.64,34.15,39.39,10
+ft_tiny__ggml_f16__ft_human,rui_cong,en-main (embedded Mandarin),20,32.98,78.99,23.5,16.34,48.7,48.15,10
+ft_tiny__ggml_q4_0__ft_human,bridgette,all,40,36.86,61.08,31.05,28.4,44.56,40.91,20
+ft_tiny__ggml_q4_0__ft_human,bridgette,zh-main (embedded English),20,40.58,56.67,30.53,36.56,40.47,51.52,17
+ft_tiny__ggml_q4_0__ft_human,bridgette,en-main (embedded Mandarin),20,32.6,63.62,31.63,17.69,48.19,30.3,3
+ft_tiny__ggml_q4_0__ft_human,phoebe,all,40,32.22,74.34,24.52,18.86,46.88,47.54,24
+ft_tiny__ggml_q4_0__ft_human,phoebe,zh-main (embedded English),20,32.49,74.19,28.47,18.83,47.62,53.85,18
+ft_tiny__ggml_q4_0__ft_human,phoebe,en-main (embedded Mandarin),20,31.94,74.44,19.66,18.89,46.15,42.86,6
+ft_tiny__ggml_q4_0__ft_human,rui_cong,all,40,44.62,83.35,37.02,33.18,56.3,56.67,33
+ft_tiny__ggml_q4_0__ft_human,rui_cong,zh-main (embedded English),20,47.52,71.55,42.43,41.76,53.44,57.58,18
+ft_tiny__ggml_q4_0__ft_human,rui_cong,en-main (embedded Mandarin),20,41.49,91.29,29.94,24.09,59.34,55.56,15
+ft_tiny__ggml_q4_0__qat_ft_merged_human,bridgette,all,40,42.53,74.41,31.47,33.86,51.11,43.94,22
+ft_tiny__ggml_q4_0__qat_ft_merged_human,bridgette,zh-main (embedded English),20,45.89,56.17,32.09,45.09,41.25,54.55,15
+ft_tiny__ggml_q4_0__qat_ft_merged_human,bridgette,en-main (embedded Mandarin),20,38.67,84.89,30.79,19.12,59.85,33.33,7
+ft_tiny__ggml_q4_0__qat_ft_merged_human,phoebe,all,40,34.54,81.69,26.15,20.74,51.4,44.26,25
+ft_tiny__ggml_q4_0__qat_ft_merged_human,phoebe,zh-main (embedded English),20,31.98,72.85,32.47,18.36,49.57,50.0,19
+ft_tiny__ggml_q4_0__qat_ft_merged_human,phoebe,en-main (embedded Mandarin),20,37.17,87.78,18.38,23.17,53.21,40.0,6
+ft_tiny__ggml_q4_0__qat_ft_merged_human,rui_cong,all,40,46.41,80.96,42.93,35.11,58.21,51.67,31
+ft_tiny__ggml_q4_0__qat_ft_merged_human,rui_cong,zh-main (embedded English),20,50.0,53.52,56.63,45.35,55.46,54.55,17
+ft_tiny__ggml_q4_0__qat_ft_merged_human,rui_cong,en-main (embedded Mandarin),20,42.55,99.46,25.0,24.26,61.15,48.15,14
+ft_tiny__ggml_q8_0__ft_human,bridgette,all,40,30.93,66.22,22.32,18.57,42.22,45.45,18
+ft_tiny__ggml_q8_0__ft_human,bridgette,zh-main (embedded English),20,30.92,53.7,26.14,21.04,36.62,54.55,12
+ft_tiny__ggml_q8_0__ft_human,bridgette,en-main (embedded Mandarin),20,30.94,73.4,18.12,15.32,47.19,36.36,6
+ft_tiny__ggml_q8_0__ft_human,phoebe,all,40,29.12,66.97,23.45,16.76,42.56,40.98,22
+ft_tiny__ggml_q8_0__ft_human,phoebe,zh-main (embedded English),20,23.86,41.94,25.0,14.81,32.47,42.31,12
+ft_tiny__ggml_q8_0__ft_human,phoebe,en-main (embedded Mandarin),20,34.55,84.22,21.54,18.76,52.52,40.0,10
+ft_tiny__ggml_q8_0__ft_human,rui_cong,all,40,33.33,73.16,23.89,22.44,42.45,43.33,24
+ft_tiny__ggml_q8_0__ft_human,rui_cong,zh-main (embedded English),20,30.69,52.69,22.88,26.64,34.15,39.39,10
+ft_tiny__ggml_q8_0__ft_human,rui_cong,en-main (embedded Mandarin),20,36.17,86.96,25.21,17.99,51.3,48.15,14
+ft_tiny__int8_bnb__ft_human,bridgette,all,40,33.51,65.32,25.1,21.28,43.32,43.94,26
+ft_tiny__int8_bnb__ft_human,bridgette,zh-main (embedded English),20,34.78,53.7,23.86,26.37,35.21,51.52,19
+ft_tiny__int8_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,32.04,71.99,26.46,14.61,50.52,36.36,7
+ft_tiny__int8_bnb__ft_human,phoebe,all,40,31.96,73.9,23.37,19.48,45.27,44.26,23
+ft_tiny__int8_bnb__ft_human,phoebe,zh-main (embedded English),20,25.38,47.31,25.69,15.74,35.06,42.31,13
+ft_tiny__int8_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,38.74,92.22,20.51,23.33,55.34,45.71,10
+ft_tiny__int8_bnb__ft_human,rui_cong,all,40,40.51,75.87,28.43,30.65,47.17,45.0,46
+ft_tiny__int8_bnb__ft_human,rui_cong,zh-main (embedded English),20,45.05,55.11,32.19,44.16,40.85,42.42,34
+ft_tiny__int8_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,35.64,89.86,23.5,16.34,53.9,48.15,12
+ft_tiny__nf4_bnb__ft_human,bridgette,all,40,72.16,126.45,59.57,58.03,92.46,50.0,144
+ft_tiny__nf4_bnb__ft_human,bridgette,zh-main (embedded English),20,39.61,60.76,29.82,33.49,41.58,54.55,15
+ft_tiny__nf4_bnb__ft_human,bridgette,en-main (embedded Mandarin),20,109.39,164.18,92.29,90.23,137.6,45.45,129
+ft_tiny__nf4_bnb__ft_human,phoebe,all,40,31.44,67.5,25.25,21.0,43.94,39.34,19
+ft_tiny__nf4_bnb__ft_human,phoebe,zh-main (embedded English),20,26.9,51.61,25.0,19.44,36.36,42.31,11
+ft_tiny__nf4_bnb__ft_human,phoebe,en-main (embedded Mandarin),20,36.13,78.44,25.56,22.6,51.41,37.14,8
+ft_tiny__nf4_bnb__ft_human,rui_cong,all,40,40.0,71.73,32.57,30.22,48.04,50.0,28
+ft_tiny__nf4_bnb__ft_human,rui_cong,zh-main (embedded English),20,38.12,51.08,30.88,34.42,38.52,42.42,15
+ft_tiny__nf4_bnb__ft_human,rui_cong,en-main (embedded Mandarin),20,42.02,85.65,34.79,25.78,58.18,59.26,13
+ft_tiny__nf4_bnb__mp2_human,bridgette,all,40,35.82,68.92,22.92,26.47,43.65,48.48,24
+ft_tiny__nf4_bnb__mp2_human,bridgette,zh-main (embedded English),20,34.3,61.11,17.05,28.83,33.8,51.52,17
+ft_tiny__nf4_bnb__mp2_human,bridgette,en-main (embedded Mandarin),20,37.57,73.4,29.38,23.39,52.4,45.45,7
+ft_tiny__nf4_bnb__mp2_human,phoebe,all,40,31.96,71.82,24.87,21.49,45.02,40.98,24
+ft_tiny__nf4_bnb__mp2_human,phoebe,zh-main (embedded English),20,23.35,49.19,23.44,16.2,34.42,34.62,12
+ft_tiny__nf4_bnb__mp2_human,phoebe,en-main (embedded Mandarin),20,40.84,87.41,26.64,26.93,55.48,45.71,12
+ft_tiny__nf4_bnb__mp2_human,rui_cong,all,40,104.62,192.86,100.14,76.44,126.05,41.67,295
+ft_tiny__nf4_bnb__mp2_human,rui_cong,zh-main (embedded English),20,49.5,63.58,36.36,48.01,46.65,42.42,41
+ft_tiny__nf4_bnb__mp2_human,rui_cong,en-main (embedded Mandarin),20,163.83,279.98,183.55,106.56,210.61,40.74,254
+ft_tiny__nf4_qlora__qat_ft_human,bridgette,all,40,37.89,66.78,32.54,27.09,47.74,50.0,20
+ft_tiny__nf4_qlora__qat_ft_human,bridgette,zh-main (embedded English),20,32.85,42.59,26.14,27.05,32.39,54.55,9
+ft_tiny__nf4_qlora__qat_ft_human,bridgette,en-main (embedded Mandarin),20,43.65,80.67,39.58,27.15,61.35,45.45,11
+ft_tiny__nf4_qlora__qat_ft_human,phoebe,all,40,35.05,74.78,29.89,23.08,49.89,45.9,23
+ft_tiny__nf4_qlora__qat_ft_human,phoebe,zh-main (embedded English),20,27.92,59.14,25.0,19.14,39.39,46.15,13
+ft_tiny__nf4_qlora__qat_ft_human,phoebe,en-main (embedded Mandarin),20,42.41,85.56,35.9,27.14,60.26,45.71,10
+ft_tiny__nf4_qlora__qat_ft_human,rui_cong,all,40,40.51,70.92,30.86,31.93,46.89,46.67,45
+ft_tiny__nf4_qlora__qat_ft_human,rui_cong,zh-main (embedded English),20,46.04,57.12,34.07,45.52,42.78,42.42,35
+ft_tiny__nf4_qlora__qat_ft_human,rui_cong,en-main (embedded Mandarin),20,34.57,80.22,26.67,17.52,51.26,51.85,10
+full_base__ct2_f32__full_human,bridgette,all,40,27.06,51.4,18.73,21.04,32.3,33.33,10
+full_base__ct2_f32__full_human,bridgette,zh-main (embedded English),20,26.57,27.28,20.61,26.69,23.15,33.33,8
+full_base__ct2_f32__full_human,bridgette,en-main (embedded Mandarin),20,27.62,65.25,16.67,13.62,40.42,33.33,2
+full_base__ct2_f32__full_human,phoebe,all,40,21.13,50.0,13.79,12.68,29.68,29.51,14
+full_base__ct2_f32__full_human,phoebe,zh-main (embedded English),20,19.29,41.94,14.58,12.04,25.97,26.92,11
+full_base__ct2_f32__full_human,phoebe,en-main (embedded Mandarin),20,23.04,55.56,12.82,13.33,33.33,31.43,3
+full_base__ct2_f32__full_human,rui_cong,all,40,24.62,49.78,21.85,16.59,33.33,28.33,11
+full_base__ct2_f32__full_human,rui_cong,zh-main (embedded English),20,20.3,23.66,18.95,19.16,20.73,21.21,3
+full_base__ct2_f32__full_human,rui_cong,en-main (embedded Mandarin),20,29.26,67.39,25.64,13.86,46.75,37.04,8
+full_base__ct2_int8__full_human,bridgette,all,40,24.48,55.97,17.76,17.05,34.0,28.79,6
+full_base__ct2_int8__full_human,bridgette,zh-main (embedded English),20,20.77,32.41,16.48,20.49,22.54,27.27,4
+full_base__ct2_int8__full_human,bridgette,en-main (embedded Mandarin),20,28.73,69.5,19.17,12.54,44.17,30.3,2
+full_base__ct2_int8__full_human,phoebe,all,40,20.36,44.74,12.64,13.62,27.1,29.51,14
+full_base__ct2_int8__full_human,phoebe,zh-main (embedded English),20,18.27,38.71,12.5,12.04,23.38,23.08,11
+full_base__ct2_int8__full_human,phoebe,en-main (embedded Mandarin),20,22.51,48.89,12.82,15.24,30.77,34.29,3
+full_base__ct2_int8__full_human,rui_cong,all,40,24.62,51.08,20.74,17.31,33.33,30.0,10
+full_base__ct2_int8__full_human,rui_cong,zh-main (embedded English),20,19.8,26.88,16.99,19.63,20.73,24.24,2
+full_base__ct2_int8__full_human,rui_cong,en-main (embedded Mandarin),20,29.79,67.39,25.64,14.85,46.75,37.04,8
+full_base__fp16__full_human,bridgette,all,40,27.06,51.4,18.73,21.04,32.3,33.33,10
+full_base__fp16__full_human,bridgette,zh-main (embedded English),20,26.57,27.28,20.61,26.69,23.15,33.33,8
+full_base__fp16__full_human,bridgette,en-main (embedded Mandarin),20,27.62,65.25,16.67,13.62,40.42,33.33,2
+full_base__fp16__full_human,phoebe,all,40,21.13,50.0,13.79,12.68,29.68,29.51,14
+full_base__fp16__full_human,phoebe,zh-main (embedded English),20,19.29,41.94,14.58,12.04,25.97,26.92,11
+full_base__fp16__full_human,phoebe,en-main (embedded Mandarin),20,23.04,55.56,12.82,13.33,33.33,31.43,3
+full_base__fp16__full_human,rui_cong,all,40,24.87,50.65,22.22,16.59,33.96,28.33,12
+full_base__fp16__full_human,rui_cong,zh-main (embedded English),20,20.3,23.66,18.95,19.16,20.73,21.21,3
+full_base__fp16__full_human,rui_cong,en-main (embedded Mandarin),20,29.79,68.84,26.5,13.86,48.05,37.04,9
+full_base__ggml_f16__full_human,bridgette,all,40,29.12,57.7,19.52,21.81,35.83,36.36,15
+full_base__ggml_f16__full_human,bridgette,zh-main (embedded English),20,29.47,37.16,22.12,28.06,27.84,36.36,13
+full_base__ggml_f16__full_human,bridgette,en-main (embedded Mandarin),20,28.73,69.5,16.67,13.62,42.92,36.36,2
+full_base__ggml_f16__full_human,phoebe,all,40,20.1,48.68,10.34,12.68,27.74,27.87,13
+full_base__ggml_f16__full_human,phoebe,zh-main (embedded English),20,17.26,38.71,8.33,12.04,20.78,23.08,9
+full_base__ggml_f16__full_human,phoebe,en-main (embedded Mandarin),20,23.04,55.56,12.82,13.33,34.62,31.43,4
+full_base__ggml_f16__full_human,rui_cong,all,40,23.59,51.95,20.0,15.38,33.33,28.33,9
+full_base__ggml_f16__full_human,rui_cong,zh-main (embedded English),20,18.32,23.66,18.95,16.82,20.73,21.21,2
+full_base__ggml_f16__full_human,rui_cong,en-main (embedded Mandarin),20,29.26,71.01,21.37,13.86,46.75,37.04,7
+full_base__ggml_q4_0__full_human,bridgette,all,40,25.52,55.97,17.96,18.37,34.77,33.33,11
+full_base__ggml_q4_0__full_human,bridgette,zh-main (embedded English),20,23.19,43.52,16.48,21.31,26.76,30.3,7
+full_base__ggml_q4_0__full_human,bridgette,en-main (embedded Mandarin),20,28.18,63.12,19.58,14.52,41.88,36.36,4
+full_base__ggml_q4_0__full_human,phoebe,all,40,25.77,54.82,19.92,16.43,36.13,34.43,18
+full_base__ggml_q4_0__full_human,phoebe,zh-main (embedded English),20,26.4,53.76,25.69,15.74,37.66,30.77,14
+full_base__ggml_q4_0__full_human,phoebe,en-main (embedded Mandarin),20,25.13,55.56,12.82,17.14,34.62,37.14,4
+full_base__ggml_q4_0__full_human,rui_cong,all,40,29.49,68.83,19.44,20.43,39.62,40.0,17
+full_base__ggml_q4_0__full_human,rui_cong,zh-main (embedded English),20,22.77,32.26,16.67,23.83,22.56,33.33,5
+full_base__ggml_q4_0__full_human,rui_cong,en-main (embedded Mandarin),20,36.7,93.48,23.08,16.83,57.79,48.15,12
+full_base__ggml_q4_0__qat_full_merged_human,bridgette,all,40,27.84,55.16,22.6,20.23,36.95,36.36,11
+full_base__ggml_q4_0__qat_full_merged_human,bridgette,zh-main (embedded English),20,27.54,41.3,25.34,24.59,31.41,36.36,7
+full_base__ggml_q4_0__qat_full_merged_human,bridgette,en-main (embedded Mandarin),20,28.18,63.12,19.58,14.52,41.88,36.36,4
+full_base__ggml_q4_0__qat_full_merged_human,phoebe,all,40,24.74,45.61,17.85,18.69,30.45,32.79,13
+full_base__ggml_q4_0__qat_full_merged_human,phoebe,zh-main (embedded English),20,22.34,31.18,19.44,17.59,24.68,30.77,8
+full_base__ggml_q4_0__qat_full_merged_human,phoebe,en-main (embedded Mandarin),20,27.23,55.56,15.9,19.81,36.15,34.29,5
+full_base__ggml_q4_0__qat_full_merged_human,rui_cong,all,40,29.49,59.37,17.86,23.9,33.57,38.33,22
+full_base__ggml_q4_0__qat_full_merged_human,rui_cong,zh-main (embedded English),20,24.26,29.03,12.75,28.04,18.9,30.3,8
+full_base__ggml_q4_0__qat_full_merged_human,rui_cong,en-main (embedded Mandarin),20,35.11,79.81,24.54,19.52,49.2,48.15,14
+full_base__ggml_q8_0__full_human,bridgette,all,40,23.97,54.28,13.89,17.6,31.02,30.3,7
+full_base__ggml_q8_0__full_human,bridgette,zh-main (embedded English),20,20.29,31.48,11.36,20.63,19.01,27.27,5
+full_base__ggml_q8_0__full_human,bridgette,en-main (embedded Mandarin),20,28.18,67.38,16.67,13.62,41.67,33.33,2
+full_base__ggml_q8_0__full_human,phoebe,all,40,22.16,51.32,12.64,14.55,29.68,29.51,15
+full_base__ggml_q8_0__full_human,phoebe,zh-main (embedded English),20,20.3,45.16,12.5,13.89,25.97,26.92,11
+full_base__ggml_q8_0__full_human,phoebe,en-main (embedded Mandarin),20,24.08,55.56,12.82,15.24,33.33,31.43,4
+full_base__ggml_q8_0__full_human,rui_cong,all,40,24.1,51.52,20.37,16.35,33.33,30.0,9
+full_base__ggml_q8_0__full_human,rui_cong,zh-main (embedded English),20,19.31,22.58,19.61,18.69,20.73,24.24,2
+full_base__ggml_q8_0__full_human,rui_cong,en-main (embedded Mandarin),20,29.26,71.01,21.37,13.86,46.75,37.04,7
+full_base__int8_bnb__full_human,bridgette,all,40,26.55,55.0,19.92,19.18,34.72,33.33,8
+full_base__int8_bnb__full_human,bridgette,zh-main (embedded English),20,24.15,34.69,19.85,22.6,25.49,33.33,5
+full_base__int8_bnb__full_human,bridgette,en-main (embedded Mandarin),20,29.28,66.67,20.0,14.7,42.92,33.33,3
+full_base__int8_bnb__full_human,phoebe,all,40,21.65,50.0,13.79,13.62,29.68,29.51,14
+full_base__int8_bnb__full_human,phoebe,zh-main (embedded English),20,19.29,41.94,14.58,12.04,25.97,26.92,11
+full_base__int8_bnb__full_human,phoebe,en-main (embedded Mandarin),20,24.08,55.56,12.82,15.24,33.33,31.43,3
+full_base__int8_bnb__full_human,rui_cong,all,40,23.85,48.48,19.63,16.59,31.45,28.33,11
+full_base__int8_bnb__full_human,rui_cong,zh-main (embedded English),20,20.3,23.66,18.95,19.16,20.73,21.21,3
+full_base__int8_bnb__full_human,rui_cong,en-main (embedded Mandarin),20,27.66,65.22,20.51,13.86,42.86,37.04,8
+full_base__nf4_bnb__full_human,bridgette,all,40,26.03,60.14,16.07,17.91,35.1,31.82,11
+full_base__nf4_bnb__full_human,bridgette,zh-main (embedded English),20,22.71,50.0,13.64,18.85,27.46,30.3,9
+full_base__nf4_bnb__full_human,bridgette,en-main (embedded Mandarin),20,29.83,65.96,18.75,16.67,41.88,33.33,2
+full_base__nf4_bnb__full_human,phoebe,all,40,21.65,54.61,10.92,12.68,29.03,29.51,16
+full_base__nf4_bnb__full_human,phoebe,zh-main (embedded English),20,17.77,32.26,10.42,12.96,19.48,23.08,9
+full_base__nf4_bnb__full_human,phoebe,en-main (embedded Mandarin),20,25.65,70.0,11.54,12.38,38.46,34.29,7
+full_base__nf4_bnb__full_human,rui_cong,all,40,26.92,62.99,19.72,17.67,37.37,33.33,13
+full_base__nf4_bnb__full_human,rui_cong,zh-main (embedded English),20,21.78,30.11,22.88,19.63,25.61,24.24,4
+full_base__nf4_bnb__full_human,rui_cong,en-main (embedded Mandarin),20,32.45,85.14,15.6,15.59,49.89,44.44,9
+full_base__nf4_bnb__mp3_human,bridgette,all,40,25.52,65.32,15.77,15.08,37.47,33.33,12
+full_base__nf4_bnb__mp3_human,bridgette,zh-main (embedded English),20,21.74,50.0,11.36,17.62,26.06,33.33,8
+full_base__nf4_bnb__mp3_human,bridgette,en-main (embedded Mandarin),20,29.83,74.11,20.62,11.74,47.6,33.33,4
+full_base__nf4_bnb__mp3_human,phoebe,all,40,22.42,50.22,14.18,14.32,30.65,29.51,17
+full_base__nf4_bnb__mp3_human,phoebe,zh-main (embedded English),20,20.3,39.25,15.28,13.43,25.32,23.08,12
+full_base__nf4_bnb__mp3_human,phoebe,en-main (embedded Mandarin),20,24.61,57.78,12.82,15.24,35.9,34.29,5
+full_base__nf4_bnb__mp3_human,rui_cong,all,40,26.67,56.82,18.06,20.19,34.43,31.67,11
+full_base__nf4_bnb__mp3_human,rui_cong,zh-main (embedded English),20,21.78,26.88,16.99,23.36,20.73,24.24,4
+full_base__nf4_bnb__mp3_human,rui_cong,en-main (embedded Mandarin),20,31.91,76.99,19.44,16.83,49.03,40.74,7
+full_base__nf4_qlora__qat_full_human,bridgette,all,40,25.77,51.22,17.98,20.31,32.45,30.3,9
+full_base__nf4_qlora__qat_full_human,bridgette,zh-main (embedded English),20,23.67,39.63,16.82,22.6,25.49,30.3,6
+full_base__nf4_qlora__qat_full_human,bridgette,en-main (embedded Mandarin),20,28.18,57.87,19.25,17.31,38.62,30.3,3
+full_base__nf4_qlora__qat_full_human,phoebe,all,40,23.97,53.95,14.02,15.87,31.74,34.43,14
+full_base__nf4_qlora__qat_full_human,phoebe,zh-main (embedded English),20,20.81,38.71,12.5,15.74,23.38,30.77,10
+full_base__nf4_qlora__qat_full_human,phoebe,en-main (embedded Mandarin),20,27.23,64.44,15.9,16.0,40.0,37.14,4
+full_base__nf4_qlora__qat_full_human,rui_cong,all,40,27.95,62.01,19.17,19.47,36.64,31.67,15
+full_base__nf4_qlora__qat_full_human,rui_cong,zh-main (embedded English),20,22.77,26.88,18.95,22.9,21.95,24.24,5
+full_base__nf4_qlora__qat_full_human,rui_cong,en-main (embedded Mandarin),20,33.51,85.69,19.44,15.84,52.27,40.74,10
+full_small__ct2_f32__full_human,bridgette,all,40,14.95,34.46,11.31,9.77,21.19,19.7,5
+full_small__ct2_f32__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__ct2_f32__full_human,bridgette,en-main (embedded Mandarin),20,13.81,31.91,10.0,6.45,20.0,15.15,1
+full_small__ct2_f32__full_human,phoebe,all,40,11.08,25.0,9.2,7.04,16.13,18.03,0
+full_small__ct2_f32__full_human,phoebe,zh-main (embedded English),20,7.11,9.68,8.33,5.56,9.09,7.69,0
+full_small__ct2_f32__full_human,phoebe,en-main (embedded Mandarin),20,15.18,35.56,10.26,8.57,23.08,25.71,0
+full_small__ct2_f32__full_human,rui_cong,all,40,14.1,24.24,16.48,10.34,19.18,15.0,10
+full_small__ct2_f32__full_human,rui_cong,zh-main (embedded English),20,13.86,9.68,17.65,14.95,14.63,12.12,4
+full_small__ct2_f32__full_human,rui_cong,en-main (embedded Mandarin),20,14.36,34.06,14.96,5.45,24.03,18.52,6
+full_small__ct2_int8__full_human,bridgette,all,40,15.21,34.46,11.31,10.23,21.19,19.7,5
+full_small__ct2_int8__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__ct2_int8__full_human,bridgette,en-main (embedded Mandarin),20,14.36,31.91,10.0,7.53,20.0,15.15,1
+full_small__ct2_int8__full_human,phoebe,all,40,10.31,25.0,8.05,6.1,15.48,16.39,0
+full_small__ct2_int8__full_human,phoebe,zh-main (embedded English),20,6.6,9.68,6.25,5.56,7.79,7.69,0
+full_small__ct2_int8__full_human,phoebe,en-main (embedded Mandarin),20,14.14,35.56,10.26,6.67,23.08,22.86,0
+full_small__ct2_int8__full_human,rui_cong,all,40,14.87,25.32,16.11,11.54,18.87,15.0,9
+full_small__ct2_int8__full_human,rui_cong,zh-main (embedded English),20,13.86,6.45,16.67,16.36,12.8,12.12,3
+full_small__ct2_int8__full_human,rui_cong,en-main (embedded Mandarin),20,15.96,38.04,15.38,6.44,25.32,18.52,6
+full_small__fp16__full_human,bridgette,all,40,14.95,34.46,11.31,9.77,21.19,19.7,5
+full_small__fp16__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__fp16__full_human,bridgette,en-main (embedded Mandarin),20,13.81,31.91,10.0,6.45,20.0,15.15,1
+full_small__fp16__full_human,phoebe,all,40,11.08,25.0,9.2,7.04,16.13,18.03,0
+full_small__fp16__full_human,phoebe,zh-main (embedded English),20,7.11,9.68,8.33,5.56,9.09,7.69,0
+full_small__fp16__full_human,phoebe,en-main (embedded Mandarin),20,15.18,35.56,10.26,8.57,23.08,25.71,0
+full_small__fp16__full_human,rui_cong,all,40,14.1,24.24,16.48,10.34,19.18,15.0,10
+full_small__fp16__full_human,rui_cong,zh-main (embedded English),20,13.86,9.68,17.65,14.95,14.63,12.12,4
+full_small__fp16__full_human,rui_cong,en-main (embedded Mandarin),20,14.36,34.06,14.96,5.45,24.03,18.52,6
+full_small__ggml_f16__full_human,bridgette,all,40,15.72,34.46,13.69,10.23,22.52,19.7,6
+full_small__ggml_f16__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__ggml_f16__full_human,bridgette,en-main (embedded Mandarin),20,15.47,31.91,15.0,7.53,22.5,15.15,2
+full_small__ggml_f16__full_human,phoebe,all,40,11.08,25.0,9.2,7.04,16.13,18.03,0
+full_small__ggml_f16__full_human,phoebe,zh-main (embedded English),20,7.11,9.68,8.33,5.56,9.09,7.69,0
+full_small__ggml_f16__full_human,phoebe,en-main (embedded Mandarin),20,15.18,35.56,10.26,8.57,23.08,25.71,0
+full_small__ggml_f16__full_human,rui_cong,all,40,13.33,21.43,16.11,10.1,17.61,15.0,9
+full_small__ggml_f16__full_human,rui_cong,zh-main (embedded English),20,12.87,6.45,16.67,14.49,12.8,12.12,3
+full_small__ggml_f16__full_human,rui_cong,en-main (embedded Mandarin),20,13.83,31.52,15.38,5.45,22.73,18.52,6
+full_small__ggml_q4_0__full_human,bridgette,all,40,16.75,35.81,13.69,11.16,23.18,22.73,7
+full_small__ggml_q4_0__full_human,bridgette,zh-main (embedded English),20,16.91,38.89,12.5,13.11,22.54,27.27,4
+full_small__ggml_q4_0__full_human,bridgette,en-main (embedded Mandarin),20,16.57,34.04,15.0,8.6,23.75,18.18,3
+full_small__ggml_q4_0__full_human,phoebe,all,40,10.57,23.68,9.58,6.42,15.7,19.67,1
+full_small__ggml_q4_0__full_human,phoebe,zh-main (embedded English),20,4.57,6.45,6.25,2.78,6.49,11.54,0
+full_small__ggml_q4_0__full_human,phoebe,en-main (embedded Mandarin),20,16.75,35.56,13.68,10.16,24.79,25.71,1
+full_small__ggml_q4_0__full_human,rui_cong,all,40,13.85,24.68,15.56,10.1,18.24,15.0,8
+full_small__ggml_q4_0__full_human,rui_cong,zh-main (embedded English),20,13.37,6.45,18.63,14.49,14.02,12.12,3
+full_small__ggml_q4_0__full_human,rui_cong,en-main (embedded Mandarin),20,14.36,36.96,11.54,5.45,22.73,18.52,5
+full_small__ggml_q8_0__full_human,bridgette,all,40,15.72,34.46,13.69,10.23,22.52,19.7,6
+full_small__ggml_q8_0__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__ggml_q8_0__full_human,bridgette,en-main (embedded Mandarin),20,15.47,31.91,15.0,7.53,22.5,15.15,2
+full_small__ggml_q8_0__full_human,phoebe,all,40,11.34,26.32,9.2,7.04,16.77,18.03,0
+full_small__ggml_q8_0__full_human,phoebe,zh-main (embedded English),20,7.11,9.68,8.33,5.56,9.09,7.69,0
+full_small__ggml_q8_0__full_human,phoebe,en-main (embedded Mandarin),20,15.71,37.78,10.26,8.57,24.36,25.71,0
+full_small__ggml_q8_0__full_human,rui_cong,all,40,13.85,24.03,16.11,10.1,18.87,16.67,9
+full_small__ggml_q8_0__full_human,rui_cong,zh-main (embedded English),20,12.87,6.45,16.67,14.49,12.8,12.12,3
+full_small__ggml_q8_0__full_human,rui_cong,en-main (embedded Mandarin),20,14.89,35.87,15.38,5.45,25.32,22.22,6
+full_small__int8_bnb__full_human,bridgette,all,40,14.95,34.46,11.31,9.77,21.19,19.7,5
+full_small__int8_bnb__full_human,bridgette,zh-main (embedded English),20,15.94,38.89,12.5,12.3,22.54,24.24,4
+full_small__int8_bnb__full_human,bridgette,en-main (embedded Mandarin),20,13.81,31.91,10.0,6.45,20.0,15.15,1
+full_small__int8_bnb__full_human,phoebe,all,40,12.37,25.0,10.73,8.76,16.99,18.03,1
+full_small__int8_bnb__full_human,phoebe,zh-main (embedded English),20,8.12,9.68,8.33,7.41,9.09,7.69,0
+full_small__int8_bnb__full_human,phoebe,en-main (embedded Mandarin),20,16.75,35.56,13.68,10.16,24.79,25.71,1
+full_small__int8_bnb__full_human,rui_cong,all,40,14.1,29.87,13.89,9.38,19.18,16.67,8
+full_small__int8_bnb__full_human,rui_cong,zh-main (embedded English),20,11.88,10.75,13.07,13.08,12.2,12.12,2
+full_small__int8_bnb__full_human,rui_cong,en-main (embedded Mandarin),20,16.49,42.75,14.96,5.45,26.62,22.22,6
+full_small__nf4_bnb__full_human,bridgette,all,40,13.14,37.16,6.55,7.44,19.87,19.7,7
+full_small__nf4_bnb__full_human,bridgette,zh-main (embedded English),20,14.49,50.0,7.95,9.02,23.94,24.24,7
+full_small__nf4_bnb__full_human,bridgette,en-main (embedded Mandarin),20,11.6,29.79,5.0,5.38,16.25,15.15,0
+full_small__nf4_bnb__full_human,phoebe,all,40,11.08,27.63,9.2,6.1,17.42,19.67,0
+full_small__nf4_bnb__full_human,phoebe,zh-main (embedded English),20,6.09,9.68,6.25,4.63,7.79,7.69,0
+full_small__nf4_bnb__full_human,phoebe,en-main (embedded Mandarin),20,16.23,40.0,12.82,7.62,26.92,28.57,0
+full_small__nf4_bnb__full_human,rui_cong,all,40,17.18,41.56,15.56,10.1,25.16,20.0,8
+full_small__nf4_bnb__full_human,rui_cong,zh-main (embedded English),20,12.38,12.9,11.76,14.02,12.2,12.12,2
+full_small__nf4_bnb__full_human,rui_cong,en-main (embedded Mandarin),20,22.34,60.87,20.51,5.94,38.96,29.63,6
+small__fp16__offshelf_free_human,bridgette,all,40,32.99,85.81,12.5,23.26,45.03,62.12,9
+small__fp16__offshelf_free_human,bridgette,zh-main (embedded English),20,24.15,90.74,12.5,13.93,42.25,51.52,9
+small__fp16__offshelf_free_human,bridgette,en-main (embedded Mandarin),20,43.09,82.98,12.5,35.48,47.5,72.73,0
+small__fp16__offshelf_free_human,phoebe,all,40,30.41,74.81,13.63,21.73,38.85,52.46,8
+small__fp16__offshelf_free_human,phoebe,zh-main (embedded English),20,16.24,45.16,10.42,11.11,22.08,23.08,3
+small__fp16__offshelf_free_human,phoebe,en-main (embedded Mandarin),20,45.03,95.24,17.58,32.65,55.4,74.29,5
+small__fp16__offshelf_free_human,rui_cong,all,40,37.44,91.13,22.04,25.48,51.36,53.33,13
+small__fp16__offshelf_free_human,rui_cong,zh-main (embedded English),20,31.19,69.35,28.43,24.3,43.9,30.3,8
+small__fp16__offshelf_free_human,rui_cong,en-main (embedded Mandarin),20,44.15,105.8,13.68,26.73,59.31,81.48,5
