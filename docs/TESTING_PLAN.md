@@ -68,7 +68,7 @@ Copied to the team folder `results/` and `paper/figures/`.
 2. **Folder names** (`bridge-`, `phoebe-`, `ruicong-cs425-recordings`) are mapped to `bridgette`, `phoebe`, `rui_cong`.
 3. **Silence.** About 1 s of silence at each end, by instruction. Not trimmed (the pipeline doesn't trim other sets);
    insertions are reported since Whisper can hallucinate on silence.
-4. **References are prompts**, not transcripts of what was said. A reader's slip counts as a model error.
+4. **References are prompts.** The readers confirmed (7 Nov) that every clip follows its sentence exactly, so the prompt is an exact transcript.
 5. **Design.** 3 readers, each reading different sentences, one take: reader and sentence are confounded. The
    synthetic set had 4 voices reading all 120. A speaker-cluster CI is meaningless with 3 readers, so CIs are
    utterance bootstraps and are optimistic (as for ASCEND). About a quarter as many embedded units as the
@@ -78,4 +78,4 @@ Copied to the team folder `results/` and `paper/figures/`.
    synthetic set, so comparisons are fair; the normalizer is not changed.
 7. **Mandarin tokenization** is unchanged (one unit per Han character, jieba only for main-language labels); the
    sentences are Simplified, so OpenCC does nothing.
-8. **Reader metadata** (L1, accent, phone model) is not in the repo; it must come from the readers.
+8. **Readers:** all three are English-speaking Singaporeans of Chinese background (confirmed 7 Nov). Phone models not recorded.
