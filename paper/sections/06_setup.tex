@@ -1,0 +1,41 @@
+\section{Experimental Setup}
+\label{sec:setup}
+
+\paragraph{Model.}
+Whisper~\citep{radford2023whisper} is a Transformer encoder--decoder. The encoder reads an 80-bin log-Mel spectrogram of a 30\,s window (shorter clips are padded; all our clips are under 30\,s, so no chunking is needed) through two convolution layers and a stack of self-attention blocks; the decoder generates byte-level BPE tokens, starting with a language token. We use three sizes: tiny (39M parameters, 4 encoder and 4 decoder layers, width 384), base (74M, 6+6, width 512) and small (244M, 12+12, width 768). Audio is resampled to 16\,kHz mono, and references are normalised into units as in \S\ref{sec:task}.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l>{\raggedright\arraybackslash}p{0.68\columnwidth}}
+\toprule
+Setting & Value \\
+\midrule
+Optimiser & AdamW, $\beta=(0.9, 0.98)$, $\epsilon=10^{-6}$, weight decay 0.01, gradient clip 1.0 \\
+Learning rate & tiny $3.75{\times}10^{-5}$, base $2.5{\times}10^{-5}$, small $1.25{\times}10^{-5}$; 500 warm-up steps, then linear decay to 0 \\
+Batch, epochs & 32 utterances (small: $16\times2$ accumulation); 3 epochs; bf16; seed 425 \\
+Targets & main-language token first; at most 128 tokens \\
+Checkpoint & lowest mean val MER, checked every 1{,}000 steps on 600 utterances per val set \\
+Role loss & $\alpha=0.5$, $\beta=0.5$ \\
+Sem.\ loss & $\lambda=0.1$, $\rho_0=0.5$; candidates every 4 steps on a sub-batch of 8 (small: 4) \\
+LID head & 2 layers on the frozen encoder; AdamW, one-cycle, peak lr $10^{-3}$; 2 epochs; batch 32 \\
+Re-ranking & $\le12$ candidates (beam 4 $\times$ 3 language prefixes); gzip ratio $\le2.4$; gate $\theta_{\text{gate}}=200$\,ms \\
+Mixed prec. & blocks kept at 16-bit: ft tiny 2, full base 3 (chosen on val) \\
+QLoRA & rank 16, scale 32, dropout 0.05 on all attention and MLP projections; lr $10^{-4}$, 100 warm-up steps, 1 epoch \\
+Thresholds & translation $\tau=0.65$; transliteration $\theta=0.1$ \\
+Decoding & greedy, $\le128$ tokens; language token restricted to zh/en (HF, CTranslate2) \\
+\bottomrule
+\end{tabular}
+\caption{Key hyper-parameters. Learning rates and batch sizes are per model; loss weights were tuned on base (Appendix~\ref{sec:appendix}) and reused unchanged.}
+\label{tab:hparams}
+\end{table}
+
+\paragraph{Models and training.}
+We fine-tune Whisper tiny, base and small on ASCEND and NSC training data together, updating all weights (Table~\ref{tab:hparams}). The loss weights were tuned on base by grid search ($\alpha \in \{0.5,1,2\}$, $\beta \in \{0,0.5\}$, then $\lambda \in \{0.1,0.3\}$, $\rho_0 \in \{0.2,0.5\}$) and used unchanged for small: $\alpha=\beta=0.5$, $\lambda=0.1$, $\rho_0=0.5$ (Appendix~\ref{sec:appendix}). The transliteration penalty was tested on base in two rounds: $\gamma \in \{0.5, 1\}$ at $\lambda=0.1$, then $\lambda \in \{0.4, 1\} \times \gamma \in \{0, 3\}$; each round included a $\gamma=0$ retrain to measure run-to-run noise. The gate threshold was chosen from $\theta_{\text{gate}} \in \{0, 200, 400, 800, \infty\}$\,ms; 200\,ms won for every model. Every selection rule was written down before any test result was examined.
+
+\paragraph{Quantization.}
+On GPU we use bitsandbytes LLM.int8~\citep{dettmers2022llmint8} and NF4 on all linear layers, compared with the 16-bit Hugging Face model. On CPU we use CTranslate2 int8 (compared with CTranslate2 float32) and whisper.cpp Q8\_0, Q5\_0 and Q4\_0 (compared with whisper.cpp F16). CPU rows use a fixed subset of the test sets: all of ASCEND test, 4{,}000 NSC Same Room and 2{,}000 Different Room utterances.
+
+\paragraph{Decoding and hardware.}
+Decoding is greedy with a 128-token cap unless stated. Hugging Face and CTranslate2 restrict the language token to Mandarin or English; whisper.cpp chooses among all languages. The main training runs used one NVIDIA L40S GPU. Speed is measured on a MacBook Pro (Apple M2 Pro, 4 threads, plugged in) on 100 test clips totalling 259\,s.

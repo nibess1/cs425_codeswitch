@@ -1,0 +1,29 @@
+\section{Task and Metrics}
+\label{sec:task}
+
+\paragraph{Units and roles.}
+A shared text normaliser turns every reference and hypothesis into \emph{units}: one Chinese character, one English word or one digit string. The \emph{matrix} language of a sentence is the language with more words once the Chinese part is segmented into words; sentences with a tie are \emph{balanced} and count towards the overall error rate only. Every unit gets one of three roles that do not overlap: \emph{embedded} (\Emb), a unit in the non-matrix language; \emph{matrix at a switch} (\Ms), a matrix unit directly before or after a change of language; and \emph{matrix elsewhere} (\Mi). In ``\zh{我明天要交} assignment \zh{啦}'', ``assignment'' is \Emb, \zh{交} and \zh{啦} are \Ms{} and \zh{我明天要} are \Mi.
+
+\paragraph{Error rates.}
+The mixed error rate is
+\begin{equation}
+  \text{MER} = \frac{S + D + I}{N},
+\end{equation}
+where $S$, $D$ and $I$ are the numbers of substituted, deleted and inserted units in the best alignment of hypothesis and reference, and $N$ is the number of reference units.
+To give each error a role, a second alignment pass charges every block of errors, including its insertions, to the reference units it covers. The error rate of a role is then the errors charged to that role divided by its number of units; because insertions are included, it can exceed 100\%. We also report the \emph{critical-word error rate} (CWER), the share of critical words (numbers, dates, names, places, course codes) not reproduced exactly; the \emph{translation rate}, the share of embedded units replaced by their translation; and the \emph{transliteration rate}, the share replaced by a sound-alike in the other script (\S\ref{sec:data}).
+
+\paragraph{Fragility and recovery.}
+To ask whether quantization hurts embedded units more than matrix units, we compute on code-switched utterances
+\begin{equation}
+  R = \frac{\Delta_{\Emb}}{\Delta_{M}},
+\end{equation}
+where $\Delta_{\Emb}$ is the change in embedded-unit error (points) from the 16-bit to the quantized model and $\Delta_{M}$ the same change for matrix units (\Ms{} and \Mi{} together).
+$R>1$ means quantization hurts embedded units more. $R$ is reported only when the confidence interval of $\Delta_M$ excludes 0; otherwise the ratio is unstable and we report the two changes. Each quantized model is compared with a 16-bit run of the \emph{same} backend, so that differences between decoders are not credited to quantization. For a repair applied to a quantized model, the recovery is
+\begin{equation}
+  \text{Rec} = \frac{E_{q} - E_{q,\text{fix}}}{E_{q} - E_{16}},
+\end{equation}
+where $E_{16}$, $E_{q}$ and $E_{q,\text{fix}}$ are the embedded-unit errors of the 16-bit model, the quantized model and the quantized model with the repair.
+$\text{Rec}=1$ means the repair removes the whole quantization loss and $0$ means it does not help. Rec is reported only where the quantization loss $E_q - E_{16}$ has a confidence interval excluding 0.
+
+\paragraph{Confidence intervals.}
+All intervals are 95\% bootstrap intervals over 1{,}000 resamples, paired when comparing two systems on the same utterances. For NSC we also resample whole speakers (speaker-cluster bootstrap), which gives wider intervals; these are the ones we quote for NSC claims. ASCEND test has only two speakers, so its utterance-level intervals are optimistic.

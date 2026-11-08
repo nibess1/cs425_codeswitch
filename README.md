@@ -30,6 +30,53 @@ Use **one GPU** (`CUDA_VISIBLE_DEVICES=<free id>`), and run long jobs inside `tm
 
 Not in git: `data/`, `ckpt/`, `preds/`, `runs/`.
 
+## Reproduce (pre-processing → training → testing → scoring)
+Run from the repository root with the `cs425` environment active; pick an idle GPU with
+`CUDA_VISIBLE_DEVICES=<id>`. The `scripts/queue_*.sh` files chain these steps exactly as we ran them.
+Hyper-parameters are in `configs/*.yaml` (CLI flags override them) and in Table 2 of the report.
+
+```bash
+# 1. Pre-processing: 16 kHz mono FLAC clips + JSONL manifests in data/<corpus>/manifests/
+huggingface-cli download CAiRE/ASCEND --repo-type dataset --local-dir data/ascend/hf
+python scripts/prepare_ascend.py                        # official splits
+python scripts/fetch_nsc_dropbox.py fetch data/nsc_part4 -j 2 --only cs-chn && python scripts/prepare_nsc.py
+python scripts/prepare_fleurs.py                        # spliced clips for the language-ID head
+python scripts/prepare_stress.py                        # human stress set: data/stress/audio/<reader>/<id>.wav
+python scripts/align.py ascend_train nsc_train ascend_val nsc_val   # MMS word times
+
+# 2. Training (checkpoints in ckpt/<run>/best)
+python scripts/train.py configs/ft_base.yaml            # plain fine-tuning; also ft_tiny.yaml, ft_small.yaml
+python scripts/train.py configs/ft_base.yaml --run full_base --alpha 0.5 --beta 0.5 --lambda_sem 0.1 --rho0 0.5
+python scripts/train_lid.py --encoder ckpt/ft_base/best --run lid_ft_base
+python scripts/train.py configs/ft_base.yaml --run qat_full_base --model ckpt/full_base/best \
+       --lora true --lr 1e-4 --epochs 1 --warmup 100
+
+# 3. Testing (predictions in preds/<model>__<precision>__<method>.jsonl)
+python scripts/decode.py --model ckpt/full_base/best --model_tag full_base --precision nf4_bnb --method full
+python scripts/deploy_eval.py --model ckpt/full_base/best --tag full_base --method full \
+       --formats ct2_f32 ct2_int8 ggml_f16 ggml_q8_0 ggml_q4_0
+python scripts/sensitivity.py --model ckpt/full_base/best --tag full_base       # mixed-precision blocks
+python scripts/rerank.py --model ckpt/full_base/best --tag full_base --lid ckpt/lid_ft_base/head.pt --loop_filter
+
+# 4. Scoring and tables (results/tables/*.csv, results/figures/)
+python scripts/score.py full_base__fp16__full full_base__nf4_bnb__full      # every metric, 95% CIs
+python scripts/score.py --fragility full_base__fp16__full full_base__nf4_bnb__full --set nsc_test --main en
+python scripts/make_results.py && python scripts/export_tables.py && python scripts/make_figures.py
+```
+
+**Human stress recordings (tables 27–28, Nov 2026).** `GPU=<id> bash scripts/queue_h.sh` decodes every
+system and format on set `stress_test` (method suffix `_human`); then `python scripts/make_human_tables.py`,
+`python scripts/make_human_figure.py` and `python scripts/make_examples.py`. The recordings themselves are not
+in this repository.
+
+**Human label audits (table 20c).** Put the filled audits in `review/*_human.csv` and the answer keys in
+`review/keys/` (both gitignored), then `python scripts/score_audits.py`.
+
+**Number check.** `python scripts/check_paper_numbers.py <paper_dir> results/tables` lists every decimal
+number in the report that is not in the tables its section draws on (expected misses: hyper-parameters,
+thresholds, derived differences). In the results-heavy sections most random numbers also match something,
+so it catches mistakes mainly in the smaller sections.
+
 ## Prediction format
 Every decoder writes JSONL, one line per utterance:
 ```json

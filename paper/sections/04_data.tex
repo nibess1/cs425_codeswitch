@@ -1,0 +1,36 @@
+\section{Data}
+\label{sec:data}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Set & Utts & Hours & CS\% & \Emb{} units & Spk \\
+\midrule
+ASCEND train & 9{,}869 & 8.8 & 28 & 7{,}081 & 18 \\
+ASCEND val & 1{,}130 & 0.9 & 18 & 471 & 3 \\
+ASCEND test & 1{,}315 & 0.9 & 28 & 772 & 2 \\
+NSC train & 35{,}647 & 40.0 & 62 & 105{,}493 & 412 \\
+NSC val & 3{,}367 & 3.0 & 25 & 4{,}099 & 60 \\
+NSC test (Same) & 8{,}876 & 8.0 & 29 & 11{,}042 & 120 \\
+NSC test (Diff) & 4{,}085 & 4.0 & 29 & 5{,}648 & 626 \\
+Stress (human) & 120 & 0.18 & 100 & 227 & 3 \\
+\bottomrule
+\end{tabular}
+\caption{Data. CS\% = share of utterances that contain a switch; Spk = speakers. NSC = NSC Part~4, Mandarin speakers; Same = Same Room, Diff = Different Room (Zoom). Stress = our phone recordings (test only).}
+\label{tab:data}
+\end{table}
+
+\paragraph{Corpora.}
+ASCEND~\citep{lovenia2022ascend} is spontaneous Mandarin--English conversation; most of its sentences are Mandarin-main with English embedded. NSC Part~4~\citep{koh2019nsc} is conversational Singapore speech; we keep the Mandarin-speaking participants, found from the speaker information sheet, so most sentences are English-main with Mandarin embedded. NSC comes in two recording conditions: \emph{Same Room}, with both speakers in one room, and \emph{Different Room}, recorded over Zoom. Table~\ref{tab:data} gives the splits.
+
+\paragraph{Sampling and splits.}
+NSC training is capped at 40\,h out of about 193\,h of usable Same Room speech, taking code-switched utterances first (up to 30\,h) and then English-only ones. NSC validation and test are random samples within a session-level speaker split, and the Different Room test is a random 4\,h sample over all sessions. No Different Room test speaker appears in any training split; four speakers recorded in both rooms are removed from the Different Room test. ASCEND validation and test speakers do not appear in training. Code-switched NSC utterances contain more switches than ASCEND ones (2.85 vs 2.12 per utterance, Different Room) and longer embedded spans (2.8 vs 2.0 units), because NSC speakers were asked to switch.
+
+\paragraph{Human stress recordings.}
+To test critical words in real voices, we wrote 120 code-switched sentences dense in names, numbers, drug and course terms (\emph{my \zh{密码} has twelve characters now}), 60 English-main and 60 Mandarin-main. Three of the authors, English-speaking Singaporeans of Chinese background, each read a different 40 (20 of each kind), one take per sentence, into their own phone's built-in microphone in a quiet room at 20--30\,cm, with about 1\,s of silence at each end. The 48\,kHz files (two readers AAC, one ALAC) go through the corpora's pipeline (16\,kHz mono); clips last 3.8--7.2\,s, 10.7\,min in total. The readers confirmed that every clip follows its sentence exactly, so the prompt is the reference.
+
+\paragraph{Labels.}
+Word times come from forced alignment with MMS~\citep{pratap2024mms} on romanised text~\citep{hermjakob2018uroman}. On FLEURS~\citep{conneau2023fleurs} clips spliced at known switch times, the aligned switch is a median of 10\,ms from the true one. To tell translations from transliterations, two LLM annotators labelled 1{,}768 ASCEND reference--output pairs and their labels were adjudicated (Cohen's $\kappa=0.84$ for translation vs.\ the rest). A word pair counts as a \emph{translation} if it is in CC-CEDICT~\citep{cccedict} or its LaBSE similarity is at least $\tau=0.65$, chosen on these labels; it counts as a \emph{transliteration} if it is in the other script, is not a translation, and its phonetic similarity (pinyin and Metaphone codes, compared by edit distance) is at least $\theta=0.1$. The critical-word list combines a rule tagger with a list labelled the same way ($\kappa=0.77$). Two small human audits of these labels are reported in Limitations.

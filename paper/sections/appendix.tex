@@ -1,0 +1,105 @@
+\section{Additional Results}
+\label{sec:appendix}
+
+\subsection{Hyperparameter selection}
+Grids were run on base and scored on pooled ASCEND + NSC validation (Table~\ref{tab:grid}). Role weights: lowest embedded error among runs whose MER is at most 1 point above plain fine-tuning. Semantic loss: lowest semantic MER among runs whose critical-word error does not rise.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Run & MER & \Emb & CWER & Chosen \\
+\midrule
+plain fine-tuning & 31.42 & 36.13 & 27.91 & \\
+$\alpha{=}0.5, \beta{=}0$ & 31.57 & 35.04 & 28.35 & \\
+$\alpha{=}0.5, \beta{=}0.5$ & 30.44 & 33.50 & 27.91 & \checkmark \\
+$\alpha{=}1, \beta{=}0$ & 34.34 & 44.82 & 27.47 & \\
+$\alpha{=}1, \beta{=}0.5$ & 31.28 & 33.90 & 29.45 & \\
+$\alpha{=}2, \beta{=}0$ & 32.49 & 33.69 & 28.57 & \\
+$\alpha{=}2, \beta{=}0.5$ & 32.81 & 37.02 & 29.01 & \\
+\midrule
+$\lambda{=}0.1, \rho_0{=}0.2$ & 29.41 & 33.02 & 25.49 & \\
+$\lambda{=}0.1, \rho_0{=}0.5$ & 29.39 & 33.22 & 26.81 & \checkmark \\
+$\lambda{=}0.3, \rho_0{=}0.2$ & 29.62 & 33.33 & 27.03 & \\
+$\lambda{=}0.3, \rho_0{=}0.5$ & 29.44 & 33.06 & 26.59 & \\
+\bottomrule
+\end{tabular}
+\caption{Validation grids on base (\%). Semantic-loss runs use $\alpha=\beta=0.5$.}
+\label{tab:grid}
+\end{table}
+
+\subsection{Language-ID head}
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+Head & Accuracy (\%) & Boundary (ms) & Found (\%) \\
+\midrule
+shared (ft base) & 96.0 / 95.4 & 60 / 120 & 75 / 85 \\
+own, full base & 95.9 / 95.3 & 60 / 100 & 77 / 84 \\
+own, full small & 97.7 / 96.4 & 20 / 80 & 78 / 85 \\
+\bottomrule
+\end{tabular}}
+\caption{Language-ID head on validation (ASCEND / NSC). Accuracy on speech frames; median distance from a true switch to the nearest predicted one; share of switches detected.}
+\label{tab:lid}
+\end{table}
+The model's own head gives the same re-ranking accuracy as the shared head; its benefit is speed, because it reuses the model's encoder pass.
+
+\subsection{Label agreement and the translation threshold}
+Two LLM annotators labelled each item independently, the second seeing only the written rubric. On 1{,}768 ASCEND pairs, agreement was 0.798 ($\kappa=0.62$) over three classes and 0.981 ($\kappa=0.84$) for translation vs.\ the rest. On 335 candidate critical-word types, agreement was 0.899 ($\kappa=0.77$); the rule tagger agreed less with either annotator ($\kappa=0.55$ and $0.47$), mostly because it has no named-entity component. Human audits of small samples agree less with these labels ($\kappa=0.15$ for translation labels, $n=26$; $\kappa=0.32$ for critical words, $n=50$; see Limitations); results table 20c lists every comparison with its interval. With $\tau$ between 0.6 and 0.7 the number of flagged translation occurrences changes by about $\pm$20\%, and translations remain a small share of embedded errors for every $\tau \le 0.7$.
+
+\subsection{Partner speech and alignment}
+In NSC Same Room recordings the partner's voice is sometimes audible. A signal rule (overlap with the partner's transcript, speaker-embedding similarity, and output words that appear in the partner's transcript) flags 1.75\% of Same Room and 0.15\% of Different Room test utterances. Removing them lowers Same Room MER by about one point for every fine-tuned model (full small: 20.65 $\rightarrow$ 19.71) and changes no conclusion. Forced-alignment boundaries are within a median of 10\,ms of known switches in FLEURS splices (87\% within 50\,ms) and a median of 73\,ms from Whisper's cross-attention times at real switches.
+
+\subsection{Training on Different Room audio}
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcc}
+\toprule
+NSC training data (40\,h) & Same test & Diff (held-out) \\
+\midrule
+Same Room (= ft base) & 28.4 & 21.6 \\
+Different Room & 32.3 & 23.6 \\
+20\,h Same + 20\,h Diff & 28.3 & 22.2 \\
+\bottomrule
+\end{tabular}
+\caption{MER (\%) of base when NSC training audio comes from the Different Room condition (Different Room split by session; ASCEND training data unchanged).}
+\label{tab:diffroom}
+\end{table}
+Training on Different Room audio does not help on Different Room test speech: training only on it is 2.0 points worse [0.4, 3.8] (Table~\ref{tab:diffroom}). The gap between the two rooms in Table~\ref{tab:main} is therefore not a mismatch between training and test conditions.
+
+\subsection{Transliteration penalty}
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{MER} & \multicolumn{3}{c}{Transliteration rate} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Run & A & S & D & A & S & D \\
+\midrule
+$\lambda{=}0.1$, $\gamma{=}0$ (control) & $-$0.14 & $-$0.09 & $-$0.08 & +0.91 & $-$0.07 & +0.21 \\
+$\lambda{=}0.1$, $\gamma{=}0.5$ & $-$0.27 & +0.17 & \textbf{+0.31} & +0.13 & +0.05 & $-$0.39 \\
+$\lambda{=}0.1$, $\gamma{=}1$ & $-$0.37 & $-$0.04 & $-$0.02 & $-$0.65 & $-$0.25 & $-$0.05 \\
+$\lambda{=}1$, $\gamma{=}0$ (control) & $-$0.12 & $-$0.06 & +0.16 & +0.39 & $-$0.31 & $-$0.05 \\
+$\lambda{=}1$, $\gamma{=}3$ (chosen) & +0.12 & +0.26 & +0.19 & +0.26 & $-$0.04 & $-$0.27 \\
+\bottomrule
+\end{tabular}}
+\caption{Transliteration penalty on base: paired test differences vs.\ the full base system (points; negative = better). A = ASCEND, S = NSC Same Room, D = NSC Different Room. Bold: CI excludes 0. Embedded error changes are not significant for any penalised run.}
+\label{tab:tl}
+\end{table}
+At $\lambda=0.1$, no $\gamma$ passed the validation rule (MER at most 0.5 points and critical-word error no higher than the full system), so small was not trained. In the second round the rule allowed critical-word error up to 1 point higher, the size of the first round's retrain noise; only $\lambda=1, \gamma=3$ qualified, although it had the highest validation transliteration rate.
+
+\subsection{Synthetic stress set}
+We synthesised 120 code-switched sentences rich in critical words with CosyVoice~2 in four voices, clean and through a simulated phone channel (300--3400\,Hz, 8\,kHz, room reverberation, 20\,dB noise). The phone channel roughly doubles errors and embedded words suffer most (full small: MER 22.3\% clean, 36.8\% phone; embedded error 54.6\% and 74.5\%). Embedded error is high even on clean speech: the same sentences read by people give 15--27 points lower embedded error for every fine-tuned model (\S\ref{sec:human}), which confirms that the synthetic voices often mispronounce embedded words. This set therefore supports only relative comparisons.
+
+

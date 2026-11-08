@@ -163,3 +163,9 @@ CIs are utterance bootstraps; with 3 readers they are optimistic. Method suffix 
 
 27c_human_vs_synthetic.csv
   The same systems on human audio vs the SYNTHETIC set (clean TTS, TTS + phone channel); same 120 sentences.
+
+20c_human_audit_agreement.csv  (8 Nov)
+  Human audits of the automated labels: one team member per audit, small samples.
+    D1: 30 random ASCEND output pairs (26 labelled), human vs adjudicated LLM label
+    D2: 50 critical-word candidates sampled from rule-tagger / annotator disagreements (harder than random)
+    *_ci95_*: bootstrap over audit items (1000 resamples); note: why kappa is undefined, if it is

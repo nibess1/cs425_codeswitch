@@ -1,0 +1,6 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+Embedded words fail more often than the same words in the matrix language; fine-tuning closes this gap for embedded Mandarin but not English, and the remaining errors are rarely translations (many look like transliterations, though our automatic count is likely high). Role-weighted and semantic losses give small but reliable gains, and language-ID re-ranking helps only when gated. 8-bit quantization is safe; 4-bit hurts embedded words more than the rest, in tiny and base on the corpora and, on our phone recordings, even in small, and our repairs do not transfer to the deployed format. On device, 8-bit is the safe default.
+
+Future work: more speakers and unprompted switching; losses that act on every embedded word against transliteration rather than on whole candidates; and repairs trained on the deployed format's own grid.

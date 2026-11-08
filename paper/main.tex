@@ -1,0 +1,67 @@
+% CS425 group project paper. Compile with XeLaTeX (needed for the Chinese examples):
+%   latexmk -xelatex main.tex
+\documentclass[11pt]{article}
+
+% "preprint" = named authors + page numbers. Use "final" for camera-ready style without page numbers.
+\usepackage[preprint]{acl}
+
+% ---- Fonts (XeLaTeX) ----
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{}
+% Chinese text: wrap it in \zh{...} (works without xeCJK/ctex)
+\IfFontExistsTF{Noto Serif CJK SC}{\newfontfamily\zhfont{Noto Serif CJK SC}}{%
+  \IfFontExistsTF{Songti SC}{\newfontfamily\zhfont{Songti SC}}{\newfontfamily\zhfont{FandolSong-Regular}}}
+\newcommand{\zh}[1]{{\zhfont #1}}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+\graphicspath{{figures/}}
+
+% Notation used throughout
+\newcommand{\Emb}{\textsc{E}}          % embedded unit
+\newcommand{\Ms}{M\textsubscript{s}}   % matrix unit at a switch
+\newcommand{\Mi}{M\textsubscript{i}}   % matrix unit elsewhere
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\src}[1]{\textcolor{gray}{\footnotesize[source: #1]}}  % remove before submission
+
+\title{Robust and Compact Recognition of Code-Switched Speech}
+
+\author{Rui Cong \and Phoebe \and Nibras \and Bridgette \\
+  School of Computing and Information Systems, Singapore Management University}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_task_metrics}
+\input{sections/04_data}
+\input{sections/05_methods}
+\input{sections/06_setup}
+\input{sections/06b_running}
+\input{sections/07_rq1}
+\input{sections/08_rq2}
+\input{sections/09_rq3}
+\input{sections/09b_human}
+\input{sections/09c_examples_table}
+\input{sections/10_deployment}
+\input{sections/11_conclusion}
+
+% ---- Not counted towards the 8-page limit ----
+\input{sections/12_limitations}
+\input{sections/13_ethics}
+
+\bibliography{refs}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

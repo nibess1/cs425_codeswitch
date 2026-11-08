@@ -1,0 +1,15 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Whisper on code-switched speech.}
+Whisper~\citep{radford2023whisper}, trained on weakly labelled multilingual speech, is a strong starting point for Mandarin--English recognition. Fine-tuning it on code-switched corpora lowers its error rate considerably~\citep{yang2024adapting,zhou2025csdialogue}. Even at full precision, Whisper can drop embedded words or output their translation instead of a transcription~\citep{peng2023prompting}. These studies report one overall error rate, so they do not show which words in a mixed sentence are lost, or whether the losses come from a word's language or from its role in the sentence.
+
+\paragraph{Training for switches and for sequence-level cost.}
+\citet{ugan2025adapting} give tokens at switch points extra weight during training, the closest prior work to our role-weighted loss; we weight embedded units and matrix units next to a switch separately. Minimum word error rate training~\citep{prabhavalkar2018mwer} lowers the expected error over a set of candidate transcripts instead of the error of each token; our semantic loss follows this approach with a cost that gives partial credit to correct translations, found with a dictionary~\citep{cccedict} and LaBSE sentence embeddings~\citep{feng2022labse}.
+
+\paragraph{Quantizing speech models.}
+Weights can be stored in 8 bits~\citep{dettmers2022llmint8} or in 4 bits with NF4, and low-rank adapters~\citep{hu2022lora} can be trained on top of a 4-bit model~\citep{dettmers2023qlora}. For Whisper, \citet{sohler2026quantizing} study how quantization design choices affect recognition error, and \citet{ferraz2024efficient} find that compression hurts languages with less training data more. On-device runtimes such as CTranslate2~\citep{ctranslate2} and whisper.cpp~\citep{whispercpp} use their own quantization formats. These studies do not look at code-switched speech, where a small group of embedded words could be damaged while the overall error rate barely changes.
+
+\paragraph{What we change.}
+Our starting point is Whisper fully fine-tuned on code-switched Mandarin--English speech, as in \citet{yang2024adapting} and \citet{zhou2025csdialogue}. Relative to that work we (i) score every error by the role of the unit it hits instead of reporting one overall rate; (ii) weight embedded units and matrix units at a switch separately in the loss, where \citet{ugan2025adapting} weight switch points only; (iii) add a minimum-risk loss whose cost forgives correct translations, where MWER training~\citep{prabhavalkar2018mwer} counts every word alike; (iv) re-rank candidates with a frame-level language-ID head, applied only when a switch is heard; and (v) measure quantization separately for embedded and matrix units with a fragility ratio, in the formats used on device, and test two repairs.
+

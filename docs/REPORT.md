@@ -35,6 +35,7 @@ Results were frozen on 25 Oct (tag `results-final`).
 | NSC Part 4 Same Room train (Mandarin speakers) | 35,647 | 40.0 | 62% | 105,493 | 412 |
 | NSC Same Room val / test | 3,367 / 8,876 | 3.0 / 8.0 | 25% / 29% | 4,099 / 11,042 | 60 / 120 |
 | NSC Different Room test (Zoom) | 4,085 | 4.0 | 29% | 5,648 | 626 |
+| Stress set, **HUMAN** (phone recordings, 3 readers × 40 sentences) | 120 | 0.18 | 100% | 227 | 3 |
 | Stress set, **SYNTHETIC** (TTS, 4 voices × 120 sentences, clean + phone channel) | 480 + 480 | 0.6 + 0.6 | 100% | 908 | 4 voices |
 
 **NSC sampling**
@@ -52,9 +53,9 @@ Results were frozen on 25 Oct (tag `results-final`).
 | ASCEND (spontaneous) | 26.8% | 2.12 | 2.0 units |
 | NSC Diff Room (random sample, asked to switch) | 29.1% | 2.85 | 2.8 units |
 
-NSC Same Room train is 53.5% code-switched only because it was selected mixed-first. NSC speakers switch about as often per utterance as ASCEND speakers, but more times within a code-switched utterance and in longer spans. This is the "deliberate switching" caveat in §8.
+NSC Same Room train is 62% code-switched only because it was selected mixed-first (table 01). NSC speakers switch about as often per utterance as ASCEND speakers, but more times within a code-switched utterance and in longer spans. This is the "deliberate switching" caveat in §8.
 
-**Licence.** NSC is used under the Singapore Open Data Licence v1.0, confirmed by the team. The attribution sentence must be copied from the licence page (`PENDING_HUMAN.md` item 2). The Dropbox share has no VERSION file; `data/nsc_part4/VERSION.txt` records the manifest hash and download date.
+**Licence.** NSC is used under the Singapore Open Data Licence v1.0, confirmed by the team. The attribution notice (access date 14 October 2026) is in `results/KEY_NUMBERS.md` and the paper's Ethics section; the licence text is in `LICENCE.txt`. IMDA does not number NSC releases; we used the 6-part release (last updated July 2021 per IMDA) downloaded on 14 October 2026, identified by the manifest hash in `data/nsc_part4/VERSION.txt`. The Dropbox share has no VERSION file; `data/nsc_part4/VERSION.txt` records the manifest hash and download date.
 
 ## 2. Baselines and fine-tuning (table 02, figure 1)
 | System | ASCEND MER | ASCEND E | NSC Same MER | NSC Same E | NSC Diff MER | NSC Diff E |
@@ -210,7 +211,22 @@ The model's own head reuses that model's encoder pass. The LID head adds about 0
   - The practical answer is Q8_0: it is as fast as Q4_0 on the M2 and causes no embedded-unit loss (§7).
 - **Sensitivity scans (A6):** the most sensitive blocks are always early encoder layers (layer 0 first) and the last decoder layer (`07_*.csv`).
 
-## 6. Synthetic stress set (D5; table 17) — SYNTHETIC, not human speech
+## 6. Stress set: human recordings (tables 27, 27b, 27c, 28; 7 Nov)
+120 code-switched sentences rich in critical words, read once each on a phone by three team members (English-speaking Singaporeans of Chinese background; 40 each, 20 English-main + 20 Mandarin-main; every clip follows its sentence exactly). Same pipeline and metrics as the corpora; utterance CIs, optimistic with 3 readers. Plan: `docs/TESTING_PLAN.md`; details: PROCESS_LOG 7 Nov.
+
+| System (16-bit) | MER | Embedded error | Synthetic clean, embedded |
+|---|---|---|---|
+| off-the-shelf small | 33.6 | 83.9 | 76.7 |
+| ft tiny | 34.6 | 70.5 | 85.3 |
+| ft base / full base | 23.0 / 24.4 | 49.7 / 50.7 | 70.4 / 69.4 |
+| ft small / full small | 14.3 / 13.4 | 31.4 / 27.8 | 54.6 / 54.6 |
+
+- Human speech is far easier than the synthetic voices (embedded error 15–27 points lower for every fine-tuned model).
+- 8-bit: no embedded-error change with a CI excluding 0, in any backend.
+- 4-bit: embedded error +7–9 points for base (ft base Q4_0 +8.9 [2.9, 15.4]; full base NF4 +8.6 [0.4, 16.8]) and for **full small NF4 +7.6 [2.6, 13.3]** with no measurable matrix change; small was robust on the corpora. Tiny is dominated by single-clip repetition loops.
+- Qualitative: 16 random clips with three systems' outputs in table 28 / report Table 10.
+
+### 6b. Synthetic stress set (D5; table 17) — SYNTHETIC, not human speech
 **How it was made.** 120 code-switched sentences rich in critical terms (names, numbers, course codes) were synthesised by CosyVoice 2-0.5B (Apache-2.0) zero-shot, in 4 voices prompted by FLEURS clips (2 English, 2 Mandarin speakers; CC-BY 4.0). They were also passed through a simulated phone channel: 300–3400 Hz, 8 kHz round trip, synthetic room impulse response, 20 dB noise.
 
 **Results (clean / phone):**
@@ -226,7 +242,7 @@ The model's own head reuses that model's encoder pass. The LID head adds about 0
 
 - **The phone channel roughly doubles errors**, and embedded words suffer most.
 - **Sizes rank as on real data.** 4-bit (NF4, Q4_0) hurts tiny and base most: ft tiny MER 39.5 → 47.9 at NF4. 8-bit changes are within noise.
-- **Absolute embedded error is very high even for clean TTS.** This suggests the zero-shot voices often mispronounce embedded words, so this set is useful only for *relative* comparisons, and the human recordings (`PENDING_HUMAN.md` item 1) are still needed.
+- **Absolute embedded error is very high even for clean TTS.** This suggests the zero-shot voices often mispronounce embedded words, so this set is useful only for *relative* comparisons; §6 has the human recordings.
 
 ## 7. Efficiency (MacBook Pro M2 Pro, 4 threads, 100 test clips / 259 s; table 13, figure 6)
 | Model | Format | File MB | Peak RSS MB | RTF | NSC Same MER (CPU subset) |
@@ -286,13 +302,13 @@ The model's own head reuses that model's encoder pass. The LID head adds about 0
 
   | Check | How it was done | Agreement | Human audit |
   |---|---|---|---|
-  | D1 translation / transliteration labels (1,768 ASCEND pairs) → τ, θ | 2 independent LLM annotators (the second a fresh agent seeing only the rubric), adjudicated | κ 0.62 (3-class), **0.84** (translation vs rest) | `review/translation_audit.csv`, 30 pairs, **not yet done** |
-  | D2 critical words (335 types) | 2 LLM annotators, adjudicated, + 500-utterance read-through for recall | κ **0.77**; vs rule tagger 0.55 / 0.47 | `review/critical_audit.csv`, 50 words, **not yet done** |
-  | D3 partner leakage (NSC) | signal rule piloted on val; 158 borderline test clips judged by one annotator from text and signals | rule vs annotator κ 0.29 (63% agreement on hard cases) | `review/leak_audit.csv`, 20 clips, **not yet done** |
+  | D1 translation / transliteration labels (1,768 ASCEND pairs) → τ, θ | 2 independent LLM annotators (the second a fresh agent seeing only the rubric), adjudicated | κ 0.62 (3-class), **0.84** (translation vs rest) | 30 random pairs, 26 labelled by one person: agreement 58% [39, 77], κ 0.15 [0.00, 0.40]; no translations either side; the person called 11 of 13 LLM 'transliterations' unrelated (table 20c) |
+  | D2 critical words (335 types) | 2 LLM annotators, adjudicated, + 500-utterance read-through for recall | κ **0.77**; vs rule tagger 0.55 / 0.47 | 50 words from tagger/annotator disagreements, one person: agreement with adjudicated 66% [54, 78], κ 0.32 [0.12, 0.55]; person stricter (15 of 38 'critical' rejected) (table 20c) |
+  | D3 partner leakage (NSC) | signal rule piloted on val; 158 borderline test clips judged by one annotator from text and signals | rule vs annotator κ 0.29 (63% agreement on hard cases) | not audited (decision 8 Nov) |
   | D4 alignment quality | synthetic splices with known switches + cross-checks | – | optional (`PENDING_HUMAN.md`) |
-  | D5 stress set | **SYNTHETIC** TTS | – | human recordings **pending** |
+  | D5 stress set | human recordings (§6) + SYNTHETIC TTS | – | readers confirmed every clip matches its sentence |
 
-  **No label in this report was checked by a person.** The LLM annotators are a stand-in, and the audit files are ready for the team.
+  **Human checks are small single-annotator samples** (decision 8 Nov: final). They suggest the automatic labels overcount transliterations and critical words; the conclusion that translations are rare is unaffected.
 - **Deployed accuracy** was measured on a fixed seeded subset of about 7.3k test utterances. whisper.cpp detects the language among all languages rather than zh/en only.
 - **Semantic-loss candidates** were generated during training (every 4 steps) rather than once per epoch.
 - **Re-ranking loop filter:** the post-hoc version is reported alongside the specified one.

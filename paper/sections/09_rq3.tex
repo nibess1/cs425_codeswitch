@@ -1,0 +1,60 @@
+\section{RQ3: Quantization}
+\label{sec:rq3}
+
+
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcccc}
+\toprule
+Model & Format & Slice & $\Delta_{\Emb}$ & $\Delta_M$ & $R$ \\
+\midrule
+ft tiny & NF4 & A, zh & +16.2 & +4.7 & 3.47 \\
+ft base & Q4\_0 & A, zh & +8.2 & +1.9 & 4.40 \\
+full base & Q4\_0 & A, zh & +7.1 & +2.3 & 3.07 \\
+full base & NF4 & N, en & +3.0 & +1.7 & 1.75 \\
+ft tiny & Q4\_0 & N, en & +8.9 & +6.4 & 1.40 \\
+\bottomrule
+\end{tabular}
+\caption{4-bit settings where $R$ is reportable and its 95\% CI excludes 1. Slice: A = ASCEND, N = NSC Same Room; zh / en = Mandarin-main (embedded English) / English-main (embedded Mandarin). $\Delta$ in points.}
+\label{tab:R}
+\end{table}
+
+\paragraph{8-bit is safe.}
+In every backend (LLM.int8, CTranslate2 int8, whisper.cpp Q8\_0) and model size, no 8-bit setting hurts embedded units more than matrix units: no 8-bit $R$ has an interval above 1, and the matrix change is mostly within noise.
+
+\paragraph{4-bit hurts embedded units more in the smaller models.}
+For fine-tuned tiny and base, 4-bit quantization raises embedded error 1.4 to 4.4 times as much as matrix error (Table~\ref{tab:R}; e.g.\ ft tiny NF4 on ASCEND: $R=3.47$ [1.85, 6.13]). This happens for both embedded English (ASCEND) and embedded Mandarin (NSC), and in both NF4 and whisper.cpp Q4\_0. On the corpora small is robust (but see \S\ref{sec:human}): its errors change by about one point and $R$ is about 1 or not reportable. Our off-the-shelf pilot had suggested the opposite ($R \approx 0.6$), but that does not carry over to fine-tuned models. In our per-block scan, the first encoder layer is always the most sensitive block.
+
+
+
+
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllcc}
+\toprule
+Repair & Model & Slice & Loss & Rec \\
+\midrule
+Mixed (2 blocks) & ft tiny & A, zh & 16.2 & \textbf{0.65} \\
+ & ft tiny & N, en & 11.2 & \textbf{0.77} \\
+Mixed (3 blocks) & full base & N, en & 3.0 & \textbf{0.70} \\
+ & full base & D, en & 2.2 & \textbf{0.48} \\
+QLoRA (NF4) & ft tiny & A, zh & 16.2 & \textbf{0.83} \\
+ & ft tiny & N, en & 11.2 & \textbf{0.72} \\
+ & full base & N, en & 3.0 & \textbf{0.77} \\
+ & ft base & N, en & 2.5 & $-$0.30 \\
+QLoRA $\rightarrow$ Q4\_0 & ft tiny & N, en & 8.9 & $-$0.12 \\
+ & full base & N, en & 3.3 & 0.06 \\
+\bottomrule
+\end{tabular}
+\caption{Recovery of the 4-bit embedded-error loss (points). D = NSC Different Room. Bold: CI of Rec excludes 0. QLoRA $\rightarrow$ Q4\_0: adapters merged and re-quantized for whisper.cpp.}
+\label{tab:rec}
+\end{table}
+
+\paragraph{Repairs work for NF4 but not for the deployed format.}
+Keeping the two or three most sensitive blocks at 16-bit, or adding QLoRA adapters, recovers about half to nine-tenths of the NF4 embedded-error loss for tiny and full base (Table~\ref{tab:rec}); QLoRA does not help fine-tuned base, whose loss is small. When the QLoRA adapters are merged into the weights and the model is re-quantized to whisper.cpp Q4\_0, the recovery disappears: no slice has a Rec interval above 0, and for tiny on the Different Room test the merged model is slightly worse than plain Q4\_0. The adapters were trained against NF4's grid, not Q4\_0's block-wise one, and whisper.cpp cannot load mixed-precision files at all. In practice the answer for whisper.cpp is Q8\_0, which is as fast as Q4\_0 on our laptop (\S\ref{sec:deploy}) and changes embedded error by at most 1.2 points for any fine-tuned model.

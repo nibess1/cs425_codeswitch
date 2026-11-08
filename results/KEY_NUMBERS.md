@@ -105,9 +105,9 @@
 | Penalty alone (γ 3 vs γ 0, same λ), MER | up to +0.35* worse; transliteration n.s. | 26 |
 
 ## NSC attribution statement (for slides and report)
-> Contains information from the National Speech Corpus (Part 4) accessed from the Infocomm Media Development Authority of Singapore (IMDA), which is made available under the terms of the Singapore Open Data Licence version 1.0.
+> Contains information from the National Speech Corpus (Part 4) accessed on 14 October 2026 from the Infocomm Media Development Authority of Singapore (IMDA), which is made available under the terms of the Singapore Open Data Licence version 1.0 (https://data.gov.sg/open-data-licence).
 
-This follows the licence's standard template. **Check it against the exact wording on the licence page before submission** (`PENDING_HUMAN.md` item 2).
+Checked 29 Oct against the licence text (example notice in its Attribution clause): the notice must name the dataset, the access date, the source and link to the licence. Access date set on 2 Nov to 14 October 2026, the download date recorded in `data/nsc_part4/VERSION.txt` (earlier drafts said 8, then 13 October). Licence text saved in `LICENCE.txt`.
 
 ## Human stress recordings (7 Nov, tag `results-human`): 120 phone recordings, 3 readers
 | Number | Value | Source |
@@ -121,3 +121,10 @@ This follows the licence's standard template. **Check it against the exact wordi
 | Ft base Q4_0, ΔE / R | +8.9 [2.9, 15.4]* / 3.0 [0.9, 8.8] | 27b |
 | Full base NF4 / Q4_0, ΔE | +8.6 [0.4, 16.8]* / +7.2 [0.0, 13.9]* | 27b |
 | Tiny 4-bit | dominated by single-clip repetition loops; no conclusion | d5h_per_speaker |
+
+## Human audits of the automated labels (8 Nov; table 20c; one person each, small samples)
+| Number | Value | Source |
+|---|---|---|
+| D1 translation labels, human vs adjudicated LLM (26 pairs) | agreement 58% [39, 77], κ 0.15 [0.00, 0.40]; no translations on either side | 20c |
+| D1: LLM "transliterations" the person called unrelated | 11 of 13 | 20c / score_audits.py |
+| D2 critical words, human vs adjudicated (50 hard items) | agreement 66% [54, 78], κ 0.32 [0.12, 0.55] | 20c |

@@ -1,0 +1,17 @@
+utt_id,speaker,main,reference,offshelf_small_16bit,offshelf_small_16bit_embedded_errors,full_small_16bit,full_small_16bit_embedded_errors,full_small_nf4,full_small_nf4_embedded_errors,n_embedded_units
+stress_bridgette_zh011,bridgette,zh,我们约了 polyclinic 下午三点半,我們約了POLITICNIC下午3點半,1,我们约了 polytechnic 下午 3 点半,1,我们圆了 polytechnic 下午 3 点半,1,1
+stress_bridgette_zh017,bridgette,zh,护士说 vaccine 打完要等十五分钟,"護士說,  vaccine 打完要等 15 分鐘",0,抢了 15 分钟抢了 15 分钟,1,忽视说 vaccine 打完要等 15 分钟,0,1
+stress_bridgette_zh034,bridgette,zh,这个 python script 跑了四十分钟,这个排队script跑了40分钟,2,这个 python script 跑了 40 分钟,0,这个 python script 跑了 40 分钟,0,2
+stress_phoebe_zh010,phoebe,zh,你记得带 insulin 去，放在冰箱第二层,你記得帶 Insulin 區放在冰箱第二重,0,你记得带 insulin 去放在冰箱第二从,0,你记得带 insulin 去放在冰箱第二从,0,1
+stress_phoebe_zh016,phoebe,zh,这个 module 的 quiz 占百分之二十,"這個Module的Quiz,占20%",0,这个 module 的 quiz 占百分之二十,0,这个 module 的 quiz 占百分之二十,0,2
+stress_phoebe_zh052,phoebe,zh,这个 bug 要在 release 之前 fix,这个bug要在release之前fix。,0,这个 bug 要在 release 之前 fix,0,这个 bug 要在 release 之前 fix,0,3
+stress_phoebe_zh059,phoebe,zh,医生说 prednisolone 要慢慢减量,"醫生說,Pretinicillin要慢慢解釋",1,医生说 pratnicillin your 慢慢减凉,1,医生说 pratnicillin your 慢慢减量,1,1
+stress_rui_cong_zh025,rui_cong,zh,那个 report 要写三千个字,那个report要写3000个字,0,那个 report 要写 3000 个字,0,那个 report 要写 3000 个字,0,1
+stress_bridgette_en050,bridgette,en,the 药房 closes at nine tonight,The yellow phone closes at 9pm tonight.,2,the 药房 closes at nine tonight,0,the 药房 closes at nine tonight,0,2
+stress_phoebe_en033,phoebe,en,the nurse said 布洛芬 only after meals,The nurse said bull often only after meals.,3,the nurse said 不落分 only after meals,3,dinner set 不落分 only after meals,3,3
+stress_phoebe_en039,phoebe,en,he forgot the 门卡 so he could not enter level five,He forgot the Munkah so he could not answer level 5.,2,he forgot the 门卡 so he could not answer level five,0,he forgot the 门卡 so he could not answer level five,0,2
+stress_rui_cong_en019,rui_cong,en,please bring your 身份证 for the exam,Please remember to bring your shuffling jump for the exam.,3,please remember to bring your 身份证 for the exam,0,please remember to bring your 身分证 for the exam,1,3
+stress_rui_cong_en020,rui_cong,en,my mother keeps the 药 in the second drawer,My mother keeps the yao in the second drawer.,1,my mother keeps the 药 in the second drawer,0,my mother keeps the 药 in the second drawer,0,1
+stress_rui_cong_en034,rui_cong,en,I booked the 会议室 from two to four,I bought the Huyish from 2 to 4.,3,i book the hui yi shah from two to four,3,i book the hui yi shah from two to four,3,3
+stress_rui_cong_en036,rui_cong,en,the 贷款 has twelve monthly payments,The Taekwun has 12 monthly payments.,2,the 贷款 has twelve monthly payments,0,the 贷款 has twelve monthly payments,0,2
+stress_rui_cong_en037,rui_cong,en,the 期末考 starts on the first of December,The team who caused that on the 1st of December,3,the 齐木考 starts on the first of december,2,the 起目靠 start on the first of december,3,3
