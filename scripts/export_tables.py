@@ -293,12 +293,17 @@ def main():
     import export_tables_extra
     export_tables_extra.run(OUT, doc, SET_NAME, PREC_NAME, METHOD_NAME)
 
-    with open(os.path.join(OUT, "README.txt"), "w") as f:
+    readme = os.path.join(OUT, "README.txt")
+    added = ""  # sections appended by hand for later runs ("--- Added <date>") survive a re-export
+    if os.path.exists(readme):
+        old = open(readme, encoding="utf-8").read()
+        added = old[old.find("--- Added"):] if "--- Added" in old else ""
+    with open(readme, "w") as f:
         f.write("CS425 results tables (exported " + pd.Timestamp.now().strftime("%Y-%m-%d %H:%M") + ")\n"
                 "All *_pct columns are percentages (21.35 = 21.35%). Test sets unless the name says val.\n"
                 "MER = (substitutions + deletions + insertions) / reference units; one unit = one Chinese\n"
                 "character, English word or digit string. Role rates charge insertions to error blocks, so\n"
-                "they can exceed 100%. Speed on the MacBook is in 13_speed_macbook.csv.\nSYNTHETIC = text-to-speech audio, not human speech.\n\n" + "".join(README))
+                "they can exceed 100%. Speed on the MacBook is in 13_speed_macbook.csv.\nSYNTHETIC = text-to-speech audio, not human speech.\n\n" + "".join(README) + added)
     print("wrote", sorted(os.listdir(OUT)))
 
 

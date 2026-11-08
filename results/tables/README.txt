@@ -1,4 +1,4 @@
-CS425 results tables (exported 2026-10-25 18:52)
+CS425 results tables (exported 2026-11-08 23:57)
 All *_pct columns are percentages (21.35 = 21.35%). Test sets unless the name says val.
 MER = (substitutions + deletions + insertions) / reference units; one unit = one Chinese
 character, English word or digit string. Role rates charge insertions to error blocks, so
@@ -142,7 +142,6 @@ SYNTHETIC = text-to-speech audio, not human speech.
 
 24_cwer_rule_vs_labels.csv
   D2: CWER with (a) the rule tagger vs (b) the adjudicated critical-word list (249 types + every digit string).
-
 
 --- Added 7 Nov 2026 (tag results-human; plan in docs/TESTING_PLAN.md) ---
 HUMAN = the team's phone recordings of the stress set: 120 sentences, 3 readers (40 each, 20 English-main +

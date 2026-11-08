@@ -15,26 +15,34 @@ ediff_base,eabl,"16-bit (GPU, HF)",,138.5,0.0
 emix_base,eabl,"16-bit (GPU, HF)",,138.5,0.0
 esame_base,eabl,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,ft,"CTranslate2 float32 (CPU, reference)",139.5,,
+ft_base,ft_human,"CTranslate2 float32 (CPU, reference)",139.5,,
 ft_base,ft_stress,"CTranslate2 float32 (CPU, reference)",139.5,,
 ft_base,ft,CTranslate2 int8 (CPU),73.9,,
+ft_base,ft_human,CTranslate2 int8 (CPU),73.9,,
 ft_base,ft_stress,CTranslate2 int8 (CPU),73.9,,
 ft_base,qat_ft_merged,CTranslate2 int8 (CPU),71.8,,
 ft_base,ft,"16-bit (GPU, HF)",,138.5,0.0
+ft_base,ft_human,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,ft_stress,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,ft_val,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,qat_ft_merged_val,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,val,"16-bit (GPU, HF)",,138.5,0.0
 ft_base,ft,"whisper.cpp F16 (CPU, reference)",141.1,,
+ft_base,ft_human,"whisper.cpp F16 (CPU, reference)",141.1,,
 ft_base,ft_stress,"whisper.cpp F16 (CPU, reference)",141.1,,
 ft_base,ft,whisper.cpp Q4_0 (CPU),44.3,,
+ft_base,ft_human,whisper.cpp Q4_0 (CPU),44.3,,
 ft_base,ft_stress,whisper.cpp Q4_0 (CPU),44.3,,
 ft_base,qat_ft_merged,whisper.cpp Q4_0 (CPU),44.3,,
 ft_base,ft,whisper.cpp Q5_0 (CPU),52.7,,
 ft_base,ft,whisper.cpp Q8_0 (CPU),78.0,,
+ft_base,ft_human,whisper.cpp Q8_0 (CPU),78.0,,
 ft_base,ft_stress,whisper.cpp Q8_0 (CPU),78.0,,
 ft_base,ft,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+ft_base,ft_human,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
 ft_base,ft_stress,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
 ft_base,ft,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+ft_base,ft_human,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 ft_base,ft_stress,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 ft_base,mp1,"4-bit NF4 (GPU, simulated)",,80.0,90.0
 ft_base,qat_ft_merged,"4-bit NF4 (GPU, simulated)",,75.5,96.0
@@ -49,28 +57,36 @@ ft_base,val_only_encoder_layers_3,"4-bit NF4 (GPU, simulated)",,134.0,6.0
 ft_base,val_only_encoder_layers_5,"4-bit NF4 (GPU, simulated)",,134.0,6.0
 ft_base,qat_ft,4-bit NF4 + QLoRA adapters (QAT),,83.7,96.0
 ft_small,ft,"CTranslate2 float32 (CPU, reference)",462.2,,
+ft_small,ft_human,"CTranslate2 float32 (CPU, reference)",462.2,,
 ft_small,ft_stress,"CTranslate2 float32 (CPU, reference)",462.2,,
 ft_small,ft,CTranslate2 int8 (CPU),237.7,,
+ft_small,ft_human,CTranslate2 int8 (CPU),237.7,,
 ft_small,ft_stress,CTranslate2 int8 (CPU),237.7,,
 ft_small,qat_ft_merged,CTranslate2 int8 (CPU),234.3,,
 ft_small,ft,"16-bit (GPU, HF)",,461.1,0.0
+ft_small,ft_human,"16-bit (GPU, HF)",,461.1,0.0
 ft_small,ft_stress,"16-bit (GPU, HF)",,461.1,0.0
 ft_small,ft_val,"16-bit (GPU, HF)",,461.1,0.0
 ft_small,qat_ft_merged_val,"16-bit (GPU, HF)",,461.1,0.0
 ft_small,val,"16-bit (GPU, HF)",,461.1,0.0
 ft_small,ft,"whisper.cpp F16 (CPU, reference)",465.0,,
+ft_small,ft_human,"whisper.cpp F16 (CPU, reference)",465.0,,
 ft_small,ft_stress,"whisper.cpp F16 (CPU, reference)",465.0,,
 ft_small,ft,whisper.cpp Q4_0 (CPU),138.7,,
+ft_small,ft_human,whisper.cpp Q4_0 (CPU),138.7,,
 ft_small,ft_stress,whisper.cpp Q4_0 (CPU),138.7,,
 ft_small,qat_ft_merged,whisper.cpp Q4_0 (CPU),138.7,,
 ft_small,ft,whisper.cpp Q5_0 (CPU),167.1,,
 ft_small,qat_ft_merged,whisper.cpp Q5_0 (CPU),167.1,,
 ft_small,ft,whisper.cpp Q8_0 (CPU),252.2,,
+ft_small,ft_human,whisper.cpp Q8_0 (CPU),252.2,,
 ft_small,ft_stress,whisper.cpp Q8_0 (CPU),252.2,,
 ft_small,qat_ft_merged,whisper.cpp Q8_0 (CPU),252.2,,
 ft_small,ft,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
+ft_small,ft_human,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
 ft_small,ft_stress,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
 ft_small,ft,"4-bit NF4 (GPU, simulated)",,177.6,192.0
+ft_small,ft_human,"4-bit NF4 (GPU, simulated)",,177.6,192.0
 ft_small,ft_stress,"4-bit NF4 (GPU, simulated)",,177.6,192.0
 ft_small,mp2,"4-bit NF4 (GPU, simulated)",,201.2,176.0
 ft_small,qat_ft_merged,"4-bit NF4 (GPU, simulated)",,177.6,192.0
@@ -86,28 +102,38 @@ ft_small,val_only_encoder_layers_7,"4-bit NF4 (GPU, simulated)",,450.9,6.0
 ft_small,val_only_encoder_layers_9,"4-bit NF4 (GPU, simulated)",,450.9,6.0
 ft_small,qat_ft,4-bit NF4 + QLoRA adapters (QAT),,202.3,192.0
 ft_tiny,ft,"CTranslate2 float32 (CPU, reference)",73.1,,
+ft_tiny,ft_human,"CTranslate2 float32 (CPU, reference)",73.1,,
 ft_tiny,ft_stress,"CTranslate2 float32 (CPU, reference)",73.1,,
 ft_tiny,ft,CTranslate2 int8 (CPU),39.7,,
+ft_tiny,ft_human,CTranslate2 int8 (CPU),39.7,,
 ft_tiny,ft_stress,CTranslate2 int8 (CPU),39.7,,
 ft_tiny,qat_ft_merged,CTranslate2 int8 (CPU),38.1,,
 ft_tiny,ft,"16-bit (GPU, HF)",,72.0,0.0
+ft_tiny,ft_human,"16-bit (GPU, HF)",,72.0,0.0
 ft_tiny,ft_stress,"16-bit (GPU, HF)",,72.0,0.0
 ft_tiny,ft_val,"16-bit (GPU, HF)",,72.0,0.0
 ft_tiny,qat_ft_merged_val,"16-bit (GPU, HF)",,72.0,0.0
 ft_tiny,val,"16-bit (GPU, HF)",,72.0,0.0
 ft_tiny,ft,"whisper.cpp F16 (CPU, reference)",74.1,,
+ft_tiny,ft_human,"whisper.cpp F16 (CPU, reference)",74.1,,
 ft_tiny,ft_stress,"whisper.cpp F16 (CPU, reference)",74.1,,
 ft_tiny,ft,whisper.cpp Q4_0 (CPU),24.1,,
+ft_tiny,ft_human,whisper.cpp Q4_0 (CPU),24.1,,
 ft_tiny,ft_stress,whisper.cpp Q4_0 (CPU),24.1,,
 ft_tiny,qat_ft_merged,whisper.cpp Q4_0 (CPU),24.1,,
+ft_tiny,qat_ft_merged_human,whisper.cpp Q4_0 (CPU),24.1,,
 ft_tiny,ft,whisper.cpp Q5_0 (CPU),28.5,,
 ft_tiny,ft,whisper.cpp Q8_0 (CPU),41.5,,
+ft_tiny,ft_human,whisper.cpp Q8_0 (CPU),41.5,,
 ft_tiny,ft_stress,whisper.cpp Q8_0 (CPU),41.5,,
 ft_tiny,ft,"8-bit LLM.int8 (GPU, simulated)",,56.3,64.0
+ft_tiny,ft_human,"8-bit LLM.int8 (GPU, simulated)",,56.3,64.0
 ft_tiny,ft_stress,"8-bit LLM.int8 (GPU, simulated)",,56.3,64.0
 ft_tiny,ft,"4-bit NF4 (GPU, simulated)",,48.4,64.0
+ft_tiny,ft_human,"4-bit NF4 (GPU, simulated)",,48.4,64.0
 ft_tiny,ft_stress,"4-bit NF4 (GPU, simulated)",,48.4,64.0
 ft_tiny,mp2,"4-bit NF4 (GPU, simulated)",,54.3,48.0
+ft_tiny,mp2_human,"4-bit NF4 (GPU, simulated)",,54.3,48.0
 ft_tiny,qat_ft_merged,"4-bit NF4 (GPU, simulated)",,48.4,64.0
 ft_tiny,val,"4-bit NF4 (GPU, simulated)",,48.4,64.0
 ft_tiny,val_mp1,"4-bit NF4 (GPU, simulated)",,50.9,58.0
@@ -118,29 +144,40 @@ ft_tiny,val_only_encoder_layers_1,"4-bit NF4 (GPU, simulated)",,69.5,6.0
 ft_tiny,val_only_encoder_layers_2,"4-bit NF4 (GPU, simulated)",,69.5,6.0
 ft_tiny,val_only_encoder_layers_3,"4-bit NF4 (GPU, simulated)",,69.5,6.0
 ft_tiny,qat_ft,4-bit NF4 + QLoRA adapters (QAT),,52.5,64.0
+ft_tiny,qat_ft_human,4-bit NF4 + QLoRA adapters (QAT),,52.5,64.0
 full_base,full,"CTranslate2 float32 (CPU, reference)",139.5,,
+full_base,full_human,"CTranslate2 float32 (CPU, reference)",139.5,,
 full_base,full_stress,"CTranslate2 float32 (CPU, reference)",139.5,,
 full_base,full,CTranslate2 int8 (CPU),73.9,,
+full_base,full_human,CTranslate2 int8 (CPU),73.9,,
 full_base,full_stress,CTranslate2 int8 (CPU),73.9,,
 full_base,qat_full_merged,CTranslate2 int8 (CPU),71.8,,
 full_base,full,"16-bit (GPU, HF)",,138.5,0.0
+full_base,full_human,"16-bit (GPU, HF)",,138.5,0.0
 full_base,full_stress,"16-bit (GPU, HF)",,138.5,0.0
 full_base,full_val,"16-bit (GPU, HF)",,138.5,0.0
 full_base,qat_full_merged_val,"16-bit (GPU, HF)",,138.5,0.0
 full_base,val,"16-bit (GPU, HF)",,138.5,0.0
 full_base,full,"whisper.cpp F16 (CPU, reference)",141.1,,
+full_base,full_human,"whisper.cpp F16 (CPU, reference)",141.1,,
 full_base,full_stress,"whisper.cpp F16 (CPU, reference)",141.1,,
 full_base,full,whisper.cpp Q4_0 (CPU),44.3,,
+full_base,full_human,whisper.cpp Q4_0 (CPU),44.3,,
 full_base,full_stress,whisper.cpp Q4_0 (CPU),44.3,,
 full_base,qat_full_merged,whisper.cpp Q4_0 (CPU),44.3,,
+full_base,qat_full_merged_human,whisper.cpp Q4_0 (CPU),44.3,,
 full_base,full,whisper.cpp Q5_0 (CPU),52.7,,
 full_base,full,whisper.cpp Q8_0 (CPU),78.0,,
+full_base,full_human,whisper.cpp Q8_0 (CPU),78.0,,
 full_base,full_stress,whisper.cpp Q8_0 (CPU),78.0,,
 full_base,full,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
+full_base,full_human,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
 full_base,full_stress,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
 full_base,full,"4-bit NF4 (GPU, simulated)",,75.5,96.0
+full_base,full_human,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 full_base,full_stress,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 full_base,mp3,"4-bit NF4 (GPU, simulated)",,90.5,74.0
+full_base,mp3_human,"4-bit NF4 (GPU, simulated)",,90.5,74.0
 full_base,qat_full_merged,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 full_base,val,"4-bit NF4 (GPU, simulated)",,75.5,96.0
 full_base,val_mp1,"4-bit NF4 (GPU, simulated)",,80.0,90.0
@@ -152,29 +189,38 @@ full_base,val_only_encoder_layers_2,"4-bit NF4 (GPU, simulated)",,134.0,6.0
 full_base,val_only_encoder_layers_3,"4-bit NF4 (GPU, simulated)",,134.0,6.0
 full_base,val_only_encoder_layers_5,"4-bit NF4 (GPU, simulated)",,134.0,6.0
 full_base,qat_full,4-bit NF4 + QLoRA adapters (QAT),,83.7,96.0
+full_base,qat_full_human,4-bit NF4 + QLoRA adapters (QAT),,83.7,96.0
 full_small,full,"CTranslate2 float32 (CPU, reference)",462.2,,
+full_small,full_human,"CTranslate2 float32 (CPU, reference)",462.2,,
 full_small,full_stress,"CTranslate2 float32 (CPU, reference)",462.2,,
 full_small,full,CTranslate2 int8 (CPU),237.7,,
+full_small,full_human,CTranslate2 int8 (CPU),237.7,,
 full_small,full_stress,CTranslate2 int8 (CPU),237.7,,
 full_small,qat_full_merged,CTranslate2 int8 (CPU),234.3,,
 full_small,full,"16-bit (GPU, HF)",,461.1,0.0
+full_small,full_human,"16-bit (GPU, HF)",,461.1,0.0
 full_small,full_stress,"16-bit (GPU, HF)",,461.1,0.0
 full_small,full_val,"16-bit (GPU, HF)",,461.1,0.0
 full_small,qat_full_merged_val,"16-bit (GPU, HF)",,461.1,0.0
 full_small,val,"16-bit (GPU, HF)",,461.1,0.0
 full_small,full,"whisper.cpp F16 (CPU, reference)",465.0,,
+full_small,full_human,"whisper.cpp F16 (CPU, reference)",465.0,,
 full_small,full_stress,"whisper.cpp F16 (CPU, reference)",465.0,,
 full_small,full,whisper.cpp Q4_0 (CPU),138.7,,
+full_small,full_human,whisper.cpp Q4_0 (CPU),138.7,,
 full_small,full_stress,whisper.cpp Q4_0 (CPU),138.7,,
 full_small,qat_full_merged,whisper.cpp Q4_0 (CPU),138.7,,
 full_small,full,whisper.cpp Q5_0 (CPU),167.1,,
 full_small,qat_full_merged,whisper.cpp Q5_0 (CPU),167.1,,
 full_small,full,whisper.cpp Q8_0 (CPU),252.2,,
+full_small,full_human,whisper.cpp Q8_0 (CPU),252.2,,
 full_small,full_stress,whisper.cpp Q8_0 (CPU),252.2,,
 full_small,qat_full_merged,whisper.cpp Q8_0 (CPU),252.2,,
 full_small,full,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
+full_small,full_human,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
 full_small,full_stress,"8-bit LLM.int8 (GPU, simulated)",,272.1,192.0
 full_small,full,"4-bit NF4 (GPU, simulated)",,177.6,192.0
+full_small,full_human,"4-bit NF4 (GPU, simulated)",,177.6,192.0
 full_small,full_stress,"4-bit NF4 (GPU, simulated)",,177.6,192.0
 full_small,mp6,"4-bit NF4 (GPU, simulated)",,245.1,148.0
 full_small,qat_full_merged,"4-bit NF4 (GPU, simulated)",,177.6,192.0
@@ -189,6 +235,20 @@ full_small,val_only_encoder_layers_11,"4-bit NF4 (GPU, simulated)",,450.9,6.0
 full_small,val_only_encoder_layers_7,"4-bit NF4 (GPU, simulated)",,450.9,6.0
 full_small,val_only_encoder_layers_9,"4-bit NF4 (GPU, simulated)",,450.9,6.0
 full_small,qat_full,4-bit NF4 + QLoRA adapters (QAT),,202.3,192.0
+fulltl_base_g0.5,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_g0.5,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_g0r,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_g0r,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_g1,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_g1,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l0.4_g0,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l0.4_g0,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l0.4_g3,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l0.4_g3,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l1_g0,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l1_g0,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l1_g3,fulltl,"16-bit (GPU, HF)",,138.5,0.0
+fulltl_base_l1_g3,fulltl_val,"16-bit (GPU, HF)",,138.5,0.0
 rw_base,rw,"16-bit (GPU, HF)",,138.5,0.0
 rw_base,rw_val,"16-bit (GPU, HF)",,138.5,0.0
 rw_base,rw,"8-bit LLM.int8 (GPU, simulated)",,96.5,96.0
@@ -212,6 +272,7 @@ small,offshelf_free,CTranslate2 int8 (CPU),237.7,,
 small,offshelf_both,"16-bit (GPU, HF)",,461.1,0.0
 small,offshelf_en,"16-bit (GPU, HF)",,461.1,0.0
 small,offshelf_free,"16-bit (GPU, HF)",,461.1,0.0
+small,offshelf_free_human,"16-bit (GPU, HF)",,461.1,0.0
 small,offshelf_free_stress,"16-bit (GPU, HF)",,461.1,0.0
 small,offshelf_zh,"16-bit (GPU, HF)",,461.1,0.0
 small,offshelf_free,"whisper.cpp F16 (CPU, reference)",465.0,,
