@@ -10,8 +10,9 @@ import os
 import re
 from functools import lru_cache
 
-CEDICT_PATH = os.environ.get("CSASR_CEDICT", os.path.expanduser("~/cs425-codeswitch-asr/data/lex/cedict_ts.u8"))
-SIM_CACHE = os.environ.get("CSASR_SIMCACHE", os.path.expanduser("~/cs425-codeswitch-asr/data/lex/labse_cache.json.gz"))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CEDICT_PATH = os.environ.get("CSASR_CEDICT", os.path.join(ROOT, "data/lex/cedict_ts.u8"))
+SIM_CACHE = os.environ.get("CSASR_SIMCACHE", os.path.join(ROOT, "data/lex/labse_cache.json.gz"))
 DEFAULT_TAU = float(os.environ.get("CSASR_TAU", "0.65"))  # D1: best F1 vs labels (PROCESS_LOG 20 Oct)
 
 _PAREN = re.compile(r"\([^)]*\)")
@@ -33,8 +34,9 @@ def _sing(w: str) -> str:
 def cedict():
     """zh2en: simplified headword -> set of normalized glosses; en2zh: gloss -> [headwords]."""
     zh2en, en2zh = {}, {}
-    if not os.path.exists(CEDICT_PATH):
-        return zh2en, en2zh
+    if not os.path.exists(CEDICT_PATH):  # an empty dictionary would silently change the confusion rates
+        raise FileNotFoundError(f"CC-CEDICT not found at {CEDICT_PATH}; it ships in data/lex/ "
+                                "(or download it from https://www.mdbg.net/chinese/dictionary?page=cc-cedict)")
     line_re = re.compile(r"^(\S+) (\S+) \[[^\]]*\] /(.*)/\s*$")
     for line in open(CEDICT_PATH, encoding="utf-8"):
         if line.startswith("#"):

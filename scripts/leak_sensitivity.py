@@ -1,6 +1,7 @@
 import os, sys, csv, random
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root
 import pandas as pd
-D = os.path.expanduser("~/cs425-codeswitch-asr"); sys.path.insert(0, D); os.chdir(D)
+D = ROOT; sys.path.insert(0, D); os.chdir(D)
 from csasr.score import report as R
 from csasr.score.metrics import corpus_metrics
 from csasr.data import manifest

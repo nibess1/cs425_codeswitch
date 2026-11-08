@@ -1,0 +1,1769 @@
+pair_id,label,reason
+d1_00000,translation,equivalent filler zh->en
+d1_00001,translation,equivalent filler
+d1_00002,translation,equivalent filler
+d1_00003,translation,equivalent filler
+d1_00004,translation,equivalent filler
+d1_00005,translation,equivalent interjection
+d1_00006,transliteration,wan yi er sounds like one year
+d1_00007,transliteration,phonetic rendering of alipay
+d1_00008,transliteration,de chosen for sound of the
+d1_00009,other,liao means chat; neither sound nor meaning
+d1_00010,transliteration,en sounds like and
+d1_00011,transliteration,colleague sound-alike for college
+d1_00012,translation,equivalent filler
+d1_00013,other,filler to article; unclear
+d1_00014,transliteration,pi gu partial sound of peaceful
+d1_00015,transliteration,fang xiang partial sound of function
+d1_00016,transliteration,e sounds like article a
+d1_00017,transliteration,na wo sounds like now
+d1_00018,transliteration,lai sounds like lei
+d1_00019,other,ting unrelated to take
+d1_00020,other,unrelated function words
+d1_00021,other,but vs then; different meaning
+d1_00022,transliteration,phonetic alipay
+d1_00023,transliteration,en sounds like and
+d1_00024,transliteration,di er sounds like deers
+d1_00025,transliteration,qu chat sounds like chitchat
+d1_00026,other,go vs in unrelated
+d1_00027,other,filler vs and unclear
+d1_00028,transliteration,condition lai sounds like conditioner
+d1_00029,other,hui sui ran unrelated
+d1_00030,transliteration,bei sounds like big
+d1_00031,other,view vs real unrelated
+d1_00032,transliteration,ban ming ton phonetic badminton
+d1_00033,transliteration,ou xi a phonetic OCR
+d1_00034,other,er qie unrelated to ok
+d1_00035,other,ta unrelated to car
+d1_00036,transliteration,pao sounds like part
+d1_00037,other,di unrelated to cliff
+d1_00038,translation,equivalent interjection
+d1_00039,transliteration,bu ge sounds like book
+d1_00040,transliteration,wan yi ren sounds like one year
+d1_00041,other,ying gai unrelated to AI
+d1_00042,other,filler vs yeah unclear
+d1_00043,transliteration,point hai sounds like pointer
+d1_00044,transliteration,fang bian partial sound of function
+d1_00045,transliteration,ying fu sounds like info
+d1_00046,other,hallucinated extra words
+d1_00047,other,du ge means read; not book
+d1_00048,other,so vs but different meaning
+d1_00049,other,go vs to unclear
+d1_00050,transliteration,ou xi ya phonetic OCR
+d1_00051,other,spelling variant smartphone; not other script word
+d1_00052,other,an quan unrelated
+d1_00053,other,ge zhuan ye unrelated
+d1_00054,transliteration,diu sounds like due
+d1_00055,translation,equivalent interjection
+d1_00056,other,mixed unrelated words
+d1_00057,translation,xiang gang = Hong Kong
+d1_00058,transliteration,bi jing sounds like busi-
+d1_00059,translation,yi ge = one
+d1_00060,transliteration,gan sao partial sound of games
+d1_00061,transliteration,ming tian partial sound of mainland
+d1_00062,translation,equivalent fillers
+d1_00063,transliteration,bing partial sound of build
+d1_00064,transliteration,east de sounds like eastern
+d1_00065,transliteration,dou gou sounds like logo
+d1_00066,transliteration,pao sounds like -port
+d1_00067,other,li mian unrelated to work
+d1_00068,transliteration,na wo sounds like now
+d1_00069,transliteration,ni you sounds like new
+d1_00070,translation,equivalent particle
+d1_00071,other,unrelated
+d1_00072,transliteration,cert ye sounds like third year
+d1_00073,other,bu ting unrelated
+d1_00074,transliteration,xin nian sounds like senior
+d1_00075,translation,jiu shi = this is
+d1_00076,transliteration,wo shou sounds like workshop
+d1_00077,transliteration,lai sounds like line
+d1_00078,transliteration,lao fei sounds like latte
+d1_00079,transliteration,cert ye sounds like third year
+d1_00080,transliteration,cong ting de approximates computer
+d1_00081,transliteration,ollie pei sounds like alipay
+d1_00082,transliteration,san ge yi que approximates sandwiches
+d1_00083,transliteration,kan ting le approximates computer
+d1_00084,other,go vs been
+d1_00085,translation,shi = is
+d1_00086,other,hallucinated question
+d1_00087,translation,suo yi = so
+d1_00088,transliteration,bi jing sounds like busi-
+d1_00089,translation,equivalent filler
+d1_00090,transliteration,nong wo sounds like normal
+d1_00091,transliteration,pa zhang sounds like part time
+d1_00092,other,que shi unrelated
+d1_00093,transliteration,the chosen for sound of de
+d1_00094,other,de unrelated to part
+d1_00095,transliteration,can de crowd sounds like candy crush
+d1_00096,transliteration,mei zhuo sounds like major
+d1_00097,transliteration,sou suo de sounds like social
+d1_00098,transliteration,x de sounds like accident
+d1_00099,transliteration,mei juan sounds like major
+d1_00100,transliteration,dang ming dan sounds like badminton
+d1_00101,transliteration,yin ke sounds like in case
+d1_00102,transliteration,bu lai sounds like -ply
+d1_00103,transliteration,mai yi dian sounds like minded
+d1_00104,transliteration,wen yi sounds like one year
+d1_00105,transliteration,fen po sounds like -ming pool
+d1_00106,transliteration,qu check sounds like chitchat
+d1_00107,transliteration,force ye sounds like fourth year
+d1_00108,transliteration,o c a spells OCR phonetically
+d1_00109,other,letter spelling of us
+d1_00110,other,then um unrelated
+d1_00111,translation,equivalent filler
+d1_00112,other,chu lai unrelated
+d1_00113,other,hallucinated question
+d1_00114,transliteration,wan yi sounds like one year
+d1_00115,translation,jiu shi = this is
+d1_00116,other,qu unrelated to gym
+d1_00117,transliteration,guo sounds like -go
+d1_00118,other,jiu ren unrelated
+d1_00119,transliteration,gou sounds like go
+d1_00120,other,unrelated
+d1_00121,other,xu yao unrelated
+d1_00122,transliteration,suo sounds like so
+d1_00123,translation,qing kuang = situation
+d1_00124,transliteration,you shi sounds like user
+d1_00125,transliteration,ma yi dian sounds like minded
+d1_00126,transliteration,ke ding sounds like collect
+d1_00127,transliteration,mei jue sounds like major
+d1_00128,transliteration,shuo sounds like so
+d1_00129,translation,zhong guo = China
+d1_00130,transliteration,e sounds like a
+d1_00131,transliteration,hong kuang sounds like hong kong
+d1_00132,translation,so we are starting ~ so we are going to
+d1_00133,other,bu dong unrelated
+d1_00134,transliteration,all the zhao sounds like outdoor
+d1_00135,transliteration,lao tui sounds like latte
+d1_00136,other,xiang dao = think of; not mention
+d1_00137,transliteration,wan yi sounds like one year
+d1_00138,transliteration,mo nai sounds like mall
+d1_00139,other,unrelated
+d1_00140,other,tuan unrelated to time
+d1_00141,transliteration,sao a la bei approximates koala bear
+d1_00142,transliteration,pao sounds like pool
+d1_00143,transliteration,la cai sounds like latte
+d1_00144,other,zhe zhong unrelated
+d1_00145,other,unrelated English words
+d1_00146,transliteration,yan chi dai sounds like entry level
+d1_00147,other,de shi hou unrelated
+d1_00148,transliteration,yan chui dai sounds like entry level
+d1_00149,transliteration,hong kong phonetic
+d1_00150,translation,xin jia po = Singapore
+d1_00151,transliteration,its also fun sounds like cha shao fan
+d1_00152,transliteration,stress sounds like dress
+d1_00153,transliteration,yan su sounds like entry
+d1_00154,transliteration,ying gai sounds like in case
+d1_00155,transliteration,ba zi ran sounds like but when
+d1_00156,transliteration,in the sounds like yin wei
+d1_00157,other,mixed fillers and words
+d1_00158,transliteration,all the zhao shi approximates outdoor swimming
+d1_00159,other,movies unrelated
+d1_00160,transliteration,yan xu sounds like entry
+d1_00161,transliteration,bu ge sounds like book
+d1_00162,other,mei you unrelated
+d1_00163,other,bu yong unrelated
+d1_00164,transliteration,ke a sounds like collect
+d1_00165,transliteration,bao zhi sounds like sports
+d1_00166,transliteration,sky jiu sounds like schedule
+d1_00167,other,di fang means place
+d1_00168,transliteration,dan ming ci sounds like badminton
+d1_00169,transliteration,sou suo sounds like social
+d1_00170,transliteration,sheng yin sounds like senior
+d1_00171,transliteration,uncle de sounds like on computer
+d1_00172,other,de unrelated
+d1_00173,transliteration,x xuan sounds like exchange
+d1_00174,transliteration,phonetic neural network
+d1_00175,transliteration,pao sounds like part
+d1_00176,transliteration,fen xi sounds like fancy
+d1_00177,transliteration,pai gei sounds like package
+d1_00178,other,hui lai unrelated
+d1_00179,transliteration,san ying sounds like sign in
+d1_00180,other,hallucinated question
+d1_00181,translation,jiu shi ~ just a (meaning)
+d1_00182,transliteration,qiu zhe sounds like children
+d1_00183,translation,jiu shi ~ just
+d1_00184,other,ken ding shi unrelated
+d1_00185,transliteration,ba zi ran sounds like but when
+d1_00186,other,tai guo unrelated
+d1_00187,other,so vs right
+d1_00188,other,tan unrelated to time
+d1_00189,other,ge zhong unrelated
+d1_00190,transliteration,di bei sounds like debate
+d1_00191,other,yao unrelated
+d1_00192,transliteration,zai ming ting sounds like badminton
+d1_00193,transliteration,kan bu ni sounds like company
+d1_00194,transliteration,ta pack sounds like topic
+d1_00195,other,shi unrelated to so
+d1_00196,other,an an ke yi unrelated
+d1_00197,transliteration,na wo sounds like now
+d1_00198,transliteration,kong jie ting sounds like quantity
+d1_00199,transliteration,geng ting de approximates computer
+d1_00200,transliteration,shi nian sounds like tennis
+d1_00201,transliteration,bai ming teng sounds like badminton
+d1_00202,translation,li liang = strength
+d1_00203,transliteration,ka x deng sounds like car accident
+d1_00204,transliteration,mu ban pei mian sounds like mobile payment
+d1_00205,transliteration,rt kou sounds like article
+d1_00206,transliteration,mei jue sounds like major
+d1_00207,transliteration,pei pei sounds like paper
+d1_00208,translation,shi qing ~ situation
+d1_00209,transliteration,pai sen sounds like python
+d1_00210,other,xiang zi = box
+d1_00211,transliteration,san wei que shi sounds like sandwiches
+d1_00212,other,pi ping unrelated
+d1_00213,transliteration,cl de sounds like sell
+d1_00214,transliteration,ka sounds like car
+d1_00215,transliteration,pai pian sounds like package
+d1_00216,other,hallucinated question
+d1_00217,translation,peng you translates friends
+d1_00218,transliteration,bi jing shi sounds like business
+d1_00219,transliteration,mu ban pei men sounds like mobile payment
+d1_00220,transliteration,kong jie ting sounds like quantity
+d1_00221,transliteration,ba ze sounds like budget
+d1_00222,transliteration,tao bie sounds like topic
+d1_00223,other,hai you unrelated
+d1_00224,transliteration,pi suo sounds like peaceful
+d1_00225,transliteration,you dian sounds like user
+d1_00226,transliteration,na wo sounds like now
+d1_00227,transliteration,er yi sounds like AI
+d1_00228,transliteration,di er sounds like deers
+d1_00229,transliteration,post lai sounds like postcard
+d1_00230,transliteration,class all fun sounds like cha shao fan
+d1_00231,other,movie unrelated
+d1_00232,transliteration,sounds so fun ~ cha shao fan
+d1_00233,translation,xue sheng = students
+d1_00234,translation,shuo = say
+d1_00235,transliteration,pa pa sounds like part time
+d1_00236,other,de mo yang unrelated
+d1_00237,translation,zi xing ka ~ self-driving car
+d1_00238,other,mixed unrelated
+d1_00239,transliteration,kong dian ti sounds like quantity
+d1_00240,transliteration,pao tang sounds like part time
+d1_00241,transliteration,bi xu ness sounds like business
+d1_00242,transliteration,xin lie sounds like senior
+d1_00243,transliteration,de lai sounds like deadline
+d1_00244,other,dan shi unrelated
+d1_00245,other,unrelated
+d1_00246,transliteration,ju min sounds like gym
+d1_00247,translation,nü peng you ~ female friends
+d1_00248,transliteration,ban ming tan sounds like badminton
+d1_00249,transliteration,dou kou sounds like local
+d1_00250,transliteration,e qian sounds like urgent
+d1_00251,other,ying gai jiu unrelated
+d1_00252,transliteration,one more banana sounds like wo men bu neng
+d1_00253,transliteration,sai ying sounds like sign in
+d1_00254,transliteration,qiu zhe sounds like children
+d1_00255,transliteration,yan fei da ji sounds like entry level
+d1_00256,transliteration,fan xie sounds like fancy
+d1_00257,transliteration,dan ming dan sounds like badminton
+d1_00258,transliteration,bi jing in sounds like business
+d1_00259,other,jin liang unrelated
+d1_00260,other,unrelated
+d1_00261,transliteration,fen sui sounds like fancy
+d1_00262,transliteration,yi ai sounds like AI
+d1_00263,transliteration,er sounds like a
+d1_00264,other,di yi unrelated
+d1_00265,translation,equivalent interjection
+d1_00266,other,you know unrelated
+d1_00267,translation,jiao huan = exchange
+d1_00268,translation,jiao huan xue sheng = exchange students
+d1_00269,transliteration,hong kao sounds like hong kong
+d1_00270,transliteration,kan dao sounds like canto-
+d1_00271,transliteration,san wei sounds like sandwiches
+d1_00272,translation,we can't = wo men bu neng
+d1_00273,translation,ji shu = technique
+d1_00274,other,dian hua = phone
+d1_00275,transliteration,mei zhe sounds like major
+d1_00276,transliteration,dan ming kan sounds like badminton
+d1_00277,other,unrelated
+d1_00278,transliteration,pai sheng zhe sounds like passenger
+d1_00279,transliteration,pritic xuan sounds like prediction
+d1_00280,transliteration,yuan shui sounds like entry
+d1_00281,transliteration,da lock sounds like dialogue
+d1_00282,other,mixed unrelated
+d1_00283,transliteration,kong kao sounds like hong kong
+d1_00284,transliteration,ju man sounds like gym
+d1_00285,transliteration,dou ming tan sounds like badminton
+d1_00286,other,to do so unrelated
+d1_00287,transliteration,kong tie ting sounds like quantity
+d1_00288,transliteration,wan yi yan sounds like one year
+d1_00289,transliteration,todd sounds like ta ta
+d1_00290,translation,do this thing ~ make this decision
+d1_00291,transliteration,mu ba pei sounds like mobile payment
+d1_00292,transliteration,mu er sounds like mall
+d1_00293,transliteration,mu biao pei men sounds like mobile payment
+d1_00294,transliteration,ali pei sounds like alipay
+d1_00295,translation,you can = ni jiu ke yi
+d1_00296,transliteration,hong hong sounds like hong kong
+d1_00297,transliteration,pang pang sounds like part time
+d1_00298,transliteration,tou sounds like talk
+d1_00299,transliteration,all the shui ying fu ~ outdoor swimming pool
+d1_00300,transliteration,ta s all fun ~ cha shao fan
+d1_00301,transliteration,shou sounds like so
+d1_00302,transliteration,ge jiu ge sounds like graduate
+d1_00303,transliteration,xin li sounds like senior
+d1_00304,other,so vs we unrelated
+d1_00305,other,mixed unrelated
+d1_00306,transliteration,ren he sounds like rank
+d1_00307,transliteration,shi bu bai shi sounds like supervisor
+d1_00308,transliteration,backmint sound-alike of badminton
+d1_00309,transliteration,point de sounds like pointer
+d1_00310,transliteration,grade sounds like mcgrady
+d1_00311,transliteration,lang zhi tou sounds like lunch talk
+d1_00312,transliteration,just sounds like dress
+d1_00313,transliteration,ei sounds like a
+d1_00314,transliteration,kai xin deng sounds like car accident
+d1_00315,translation,information = info
+d1_00316,transliteration,slowly pei sounds like sleepy
+d1_00317,transliteration,office de sounds like officer
+d1_00318,transliteration,bang qian partial sound of function
+d1_00319,translation,di biao = low standard
+d1_00320,transliteration,ye yao sounds like AI
+d1_00321,transliteration,fu ke shi sounds like focus
+d1_00322,transliteration,qiu teng sounds like tutor
+d1_00323,other,zuo unrelated to book
+d1_00324,transliteration,you se sounds like user
+d1_00325,other,bu ran unrelated
+d1_00326,transliteration,ren ke sounds like rank
+d1_00327,transliteration,xing gan po sounds like singapore
+d1_00328,transliteration,lei a sounds like lay up
+d1_00329,transliteration,xu jia jiu sounds like schedule
+d1_00330,transliteration,lang qi tou sounds like lunch talk
+d1_00331,transliteration,chuan se ya sounds like trust ai
+d1_00332,transliteration,well more but no ~ wo men bu neng
+d1_00333,transliteration,todd sounds like ta ta
+d1_00334,transliteration,ka de men sounds like customer
+d1_00335,other,an quan de ai qing unrelated
+d1_00336,other,feng suo unrelated
+d1_00337,transliteration,gan xing sounds like consent
+d1_00338,transliteration,its also all fun ~ cha shao fan
+d1_00339,transliteration,hao wei er sounds like hardware
+d1_00340,transliteration,nero niu rou ~ neural
+d1_00341,other,mixed unrelated
+d1_00342,transliteration,fan xin sounds like fancy
+d1_00343,transliteration,pinyin of Yao Ming (name romanized)
+d1_00344,transliteration,then lai sounds like deadline
+d1_00345,transliteration,mai ke li sounds like michael
+d1_00346,transliteration,tao sounds like talk
+d1_00347,transliteration,extended sounds like exchange
+d1_00348,other,ju jue unrelated
+d1_00349,transliteration,mo sounds like mall
+d1_00350,transliteration,you put ah ~ ye bu la
+d1_00351,transliteration,willness ~ awareness
+d1_00352,transliteration,lao zuo sounds like latte
+d1_00353,transliteration,ta shi all fun ~ cha shao fan
+d1_00354,transliteration,bi jing ye shi sounds like business
+d1_00355,transliteration,koha la bei sounds like koala bear
+d1_00356,transliteration,to you but ~ ye bu la
+d1_00357,transliteration,table sounds like tutor
+d1_00358,transliteration,ben lai sounds like deadline
+d1_00359,transliteration,qu qian de sounds like chitchat
+d1_00360,other,mixed unrelated
+d1_00361,transliteration,ni ye shi sounds like near sea
+d1_00362,transliteration,hen duo guo sounds like logo
+d1_00363,other,mixed unrelated
+d1_00364,transliteration,hai bu sounds like happen
+d1_00365,transliteration,natural ~ neural
+d1_00366,transliteration,wei ni sounds like wind
+d1_00367,transliteration,da cai sounds like latte
+d1_00368,transliteration,ba zi ben sounds like but when
+d1_00369,transliteration,family pao sounds like final report
+d1_00370,other,er qie ye unrelated
+d1_00371,transliteration,xiao cheng sounds like shout
+d1_00372,other,so vs but you different meaning
+d1_00373,other,bu fen = part; not baseline
+d1_00374,other,go vs you
+d1_00375,transliteration,ba zhe ge sounds like but when
+d1_00376,transliteration,phonetic alipay
+d1_00377,transliteration,dexon ren ~ lecture room
+d1_00378,transliteration,pinyin of name
+d1_00379,transliteration,in a sounds like yin wei
+d1_00380,transliteration,a qiu sounds like essay
+d1_00381,transliteration,deng light sounds like deadline
+d1_00382,transliteration,mei jin sounds like major
+d1_00383,transliteration,hong kao sounds like homework
+d1_00384,transliteration,qiu zhe sounds like children
+d1_00385,transliteration,a li pei sounds like alipay
+d1_00386,transliteration,toss over fun ~ cha shao fan
+d1_00387,transliteration,da wang sounds like dialogue
+d1_00388,transliteration,qu qian sounds like chitchat
+d1_00389,transliteration,ying bi ting sounds like in between
+d1_00390,translation,xue sheng translates student
+d1_00391,other,hallucinated sentence
+d1_00392,transliteration,feng kong sounds like hong kong
+d1_00393,other,ben lai ke yi unrelated
+d1_00394,transliteration,bai ming teng sounds like badminton
+d1_00395,transliteration,mn qu sounds like elementary
+d1_00396,transliteration,ni ni si sounds like near sea
+d1_00397,transliteration,xm hampem ~ accident happen
+d1_00398,transliteration,shen me feng sounds like smart phone
+d1_00399,other,zhuang bei = equipment
+d1_00400,other,ren de unrelated
+d1_00401,transliteration,mu ban pei zhi sounds like mobile payments
+d1_00402,transliteration,zan lia ying sounds like sign in
+d1_00403,transliteration,mei zhu sounds like major
+d1_00404,transliteration,shen me yao feng sounds like smartphone
+d1_00405,other,bu tong de di fang unrelated
+d1_00406,transliteration,tiao te sounds like tutor
+d1_00407,other,zhan shi unrelated
+d1_00408,other,zuo shen me unrelated
+d1_00409,transliteration,ken ding shi sounds like cantonese
+d1_00410,other,fang shi unrelated
+d1_00411,transliteration,quan yi si partial sound of choice
+d1_00412,other,mixed
+d1_00413,transliteration,ai dao sounds like idol
+d1_00414,other,tax unrelated
+d1_00415,transliteration,rang wo chi tang ~ lunch talk
+d1_00416,other,unrelated
+d1_00417,transliteration,sorry sounds like suo yi
+d1_00418,transliteration,yi liang qu sounds like electric
+d1_00419,transliteration,de part sounds like report
+d1_00420,transliteration,di wei sounds like due
+d1_00421,transliteration,dai guo sounds like level
+d1_00422,transliteration,bi jing na xie sounds like business
+d1_00423,transliteration,ban quan sounds like function
+d1_00424,other,hui rang unrelated
+d1_00425,other,a unrelated to part
+d1_00426,translation,3 nian = third years
+d1_00427,transliteration,bai ming tuan sounds like badminton
+d1_00428,transliteration,micr jue deng ~ michael jordan
+d1_00429,other,wan quan unrelated
+d1_00430,other,unrelated
+d1_00431,translation,uh in = e zai
+d1_00432,transliteration,xiao de sounds like shout
+d1_00433,transliteration,po po sounds like pool
+d1_00434,other,mixed unrelated
+d1_00435,other,hallucinated question
+d1_00436,transliteration,ting sounds like take
+d1_00437,transliteration,yin wei a sounds like india
+d1_00438,other,wo unrelated to work
+d1_00439,transliteration,hong guo sounds like homework
+d1_00440,transliteration,wen yi shi sounds like one year
+d1_00441,other,mixed unrelated
+d1_00442,translation,gui = expensive
+d1_00443,transliteration,complaint ~ company
+d1_00444,transliteration,bi jing ness sounds like business
+d1_00445,translation,equivalent filler
+d1_00446,other,unrelated
+d1_00447,other,unrelated
+d1_00448,other,de ze ren unrelated
+d1_00449,other,de shi jian unrelated
+d1_00450,transliteration,hao kong sounds like hong kong
+d1_00451,transliteration,ying que ding sounds like interesting
+d1_00452,transliteration,mei nü de partial sound
+d1_00453,transliteration,de le kou ~ the court
+d1_00454,other,to show us unrelated
+d1_00455,transliteration,kan ta ni sounds like canto-
+d1_00456,transliteration,ying te bie sounds like interview
+d1_00457,other,qu unrelated
+d1_00458,transliteration,bei partial sound of build
+d1_00459,transliteration,hai xiu sounds like high standard
+d1_00460,transliteration,sneria ~ scenario
+d1_00461,transliteration,lu bu sounds like group
+d1_00462,other,mixed unrelated
+d1_00463,other,o unrelated to idol
+d1_00464,transliteration,zhun partial sound of stress
+d1_00465,transliteration,qian fen sounds like expensive
+d1_00466,transliteration,extrace ~ exchange
+d1_00467,other,zhan shi de jian unrelated
+d1_00468,transliteration,hong kang sounds like hong kong
+d1_00469,transliteration,su du bai sheng sounds like supervisor
+d1_00470,transliteration,mian tuan partial sound of badminton
+d1_00471,transliteration,pa tai sounds like part time
+d1_00472,transliteration,kong kong sounds like hong kong
+d1_00473,transliteration,hong kao sounds like hong kong
+d1_00474,transliteration,pa tang sounds like part time
+d1_00475,other,that unrelated to ta ta
+d1_00476,transliteration,yan shui sounds like entry
+d1_00477,other,mixed unrelated
+d1_00478,transliteration,shi hao wan de partial sound of hardware
+d1_00479,transliteration,ai ya sounds like AI
+d1_00480,transliteration,a li pei sounds like alipay
+d1_00481,transliteration,mei nü sounds like major
+d1_00482,transliteration,ke er sounds like collect
+d1_00483,transliteration,kor ala bei sounds like koala bear
+d1_00484,transliteration,kao kao lü sounds like college
+d1_00485,other,start vs kind of
+d1_00486,transliteration,san wei que shi sounds like sandwiches
+d1_00487,other,du unrelated to so
+d1_00488,transliteration,x ray sounds like accident
+d1_00489,transliteration,content ting sounds like quantity
+d1_00490,transliteration,er yi a sounds like AI
+d1_00491,translation,suo yi = so
+d1_00492,other,tai ji unrelated
+d1_00493,transliteration,bi jing sounds like business
+d1_00494,transliteration,doctor ren ~ lecture room
+d1_00495,other,lai unrelated
+d1_00496,transliteration,can de quite ~ candy crush
+d1_00497,transliteration,lao tie sounds like latte
+d1_00498,transliteration,all the zhao shu ~ outdoor swimming
+d1_00499,transliteration,mei guo sounds like major
+d1_00500,transliteration,pa tong sounds like part time
+d1_00501,other,unrelated
+d1_00502,transliteration,geng ping deng approximates computer
+d1_00503,other,bu dong unrelated
+d1_00504,other,unrelated
+d1_00505,transliteration,kou a la bei sounds like koala bear
+d1_00506,other,unrelated
+d1_00507,transliteration,tan partial sound of topic
+d1_00508,transliteration,all zao sounds like outdoor
+d1_00509,transliteration,yel ming ~ yao ming
+d1_00510,transliteration,ren ke sounds like rank
+d1_00511,other,unrelated
+d1_00512,transliteration,po le sounds like pool
+d1_00513,transliteration,rang shi tan ~ lunch talk
+d1_00514,other,hai unrelated
+d1_00515,other,unrelated
+d1_00516,other,filler vs that
+d1_00517,other,mei you vs you
+d1_00518,transliteration,mind de sounds like minded
+d1_00519,transliteration,koharabe ~ koala bear
+d1_00520,transliteration,net net world ~ neural network
+d1_00521,transliteration,wen yi er sounds like one year
+d1_00522,transliteration,pai she sounds like python
+d1_00523,other,unrelated
+d1_00524,translation,equivalent filler
+d1_00525,transliteration,bi jing nes sounds like business
+d1_00526,transliteration,deng lai sounds like deadline
+d1_00527,transliteration,yan xu da jia ~ entry level
+d1_00528,other,pian yi = cheap (opposite)
+d1_00529,transliteration,tiao zhan sounds like tutor
+d1_00530,other,na unrelated
+d1_00531,transliteration,sheng ti man da ~ sentiment analysis
+d1_00532,transliteration,sir er sounds like third
+d1_00533,transliteration,dou pai sounds like apply
+d1_00534,transliteration,hao duo de sounds like hardware
+d1_00535,transliteration,shi hui mai shui sounds like supervisor
+d1_00536,other,unrelated
+d1_00537,transliteration,bai shui pao partial sound of basketball
+d1_00538,transliteration,bai mi de sounds like badminton
+d1_00539,transliteration,bai ming ci sounds like badminton
+d1_00540,transliteration,su lin pao ~ swim properly
+d1_00541,transliteration,mo zhuang ding ~ mcgrady
+d1_00542,other,unrelated
+d1_00543,transliteration,suo yi yao sounds like share?
+d1_00544,other,unrelated
+d1_00545,other,unrelated
+d1_00546,transliteration,ha wei sounds like hardware
+d1_00547,transliteration,todd how ~ ta ta
+d1_00548,transliteration,de pan sounds like the part
+d1_00549,other,shi unrelated
+d1_00550,transliteration,bei ta drive ~ data driver
+d1_00551,transliteration,dian man li sounds like deep learning
+d1_00552,transliteration,tiao yu sounds like tutor
+d1_00553,transliteration,fa yi dao sounds like final
+d1_00554,transliteration,yan shui sounds like entry
+d1_00555,other,unrelated
+d1_00556,transliteration,feng kong sounds like hong kong
+d1_00557,transliteration,x de happy ~ accident happen
+d1_00558,translation,and then = ran hou
+d1_00559,transliteration,tiao tiao sounds like tutor
+d1_00560,transliteration,xchange ~ exchange
+d1_00561,transliteration,kong kong sounds like hong kong
+d1_00562,other,ping chang unrelated
+d1_00563,other,kuai unrelated
+d1_00564,transliteration,gui ju partial sound of graduate
+d1_00565,transliteration,pa tang sounds like part time
+d1_00566,other,unrelated
+d1_00567,translation,suo yi = so
+d1_00568,transliteration,lao shi de sounds like lunch talk
+d1_00569,other,dong xi unrelated
+d1_00570,transliteration,r c pei ~ alipay
+d1_00571,transliteration,ban ming tian sounds like badminton
+d1_00572,transliteration,narrow network ~ neural network
+d1_00573,transliteration,my culture ~ michael jordan
+d1_00574,transliteration,lei shang sounds like lay up
+d1_00575,transliteration,rang ta sounds like lunch talk
+d1_00576,transliteration,hai yao pen sounds like happen
+d1_00577,transliteration,mo er sounds like mall
+d1_00578,transliteration,ming tian sounds like mainland
+d1_00579,other,shuai unrelated
+d1_00580,other,hallucinated extra words
+d1_00581,transliteration,country de ~ computer
+d1_00582,other,sui ran unrelated
+d1_00583,transliteration,x yuan sounds like exchange
+d1_00584,transliteration,ollie pei ~ alipay
+d1_00585,other,unrelated
+d1_00586,other,ge unrelated
+d1_00587,other,du = read; not book
+d1_00588,transliteration,complain ~ company
+d1_00589,transliteration,di liu sounds like due
+d1_00590,other,unrelated
+d1_00591,transliteration,ying yu a sounds like india
+d1_00592,other,unrelated
+d1_00593,other,chuang zao unrelated
+d1_00594,transliteration,ni ke yi qu sounds like in case
+d1_00595,other,peng you unrelated to tony
+d1_00596,transliteration,tiao wu tai sounds like tutor
+d1_00597,transliteration,im country ~ on computer
+d1_00598,other,hallucinated question
+d1_00599,transliteration,mang case sounds like monkeys
+d1_00600,transliteration,we can de sounds like weekend
+d1_00601,transliteration,rang wo chi tou ~ lunch talk
+d1_00602,transliteration,dan ming tian sounds like badminton
+d1_00603,transliteration,pao tang sounds like part time
+d1_00604,transliteration,net net world ~ neural network
+d1_00605,transliteration,hong kang sounds like hong kong
+d1_00606,transliteration,wan yi ren sounds like one year
+d1_00607,transliteration,mind ye sounds like minded
+d1_00608,transliteration,x xuan sounds like exchange
+d1_00609,other,unrelated
+d1_00610,other,hallucinated question
+d1_00611,other,unrelated
+d1_00612,transliteration,pa tang sounds like part time
+d1_00613,transliteration,mei jie le sounds like major
+d1_00614,transliteration,mai ke jie er deng ~ michael jordan
+d1_00615,translation,di biao zhun = low standard
+d1_00616,transliteration,pai sheng sounds like python
+d1_00617,other,bu ting de unrelated
+d1_00618,transliteration,fan gong wo sounds like final
+d1_00619,other,de peng you unrelated
+d1_00620,other,xue sheng unrelated to program
+d1_00621,transliteration,the sir ye ~ third year
+d1_00622,transliteration,dagger d fung ~ zhao ge di fang
+d1_00623,transliteration,ha wei sounds like hardware
+d1_00624,transliteration,ke yi pei dao ~ compare to
+d1_00625,transliteration,po chui de sounds like portrait
+d1_00626,other,unrelated
+d1_00627,transliteration,celd ~ self
+d1_00628,other,unrelated
+d1_00629,transliteration,shen me feng sounds like smartphone
+d1_00630,transliteration,bu zou de sounds like blockchain
+d1_00631,translation,so we will ~ so we now start
+d1_00632,transliteration,10 yue sounds like tennis
+d1_00633,transliteration,wo lian ge gams ~ olympic games
+d1_00634,other,unrelated
+d1_00635,other,jiao unrelated
+d1_00636,other,unrelated
+d1_00637,transliteration,shou fei ren sounds like software
+d1_00638,transliteration,dagger d vong ~ zhao ge di fang
+d1_00639,other,unrelated
+d1_00640,other,unrelated
+d1_00641,other,hui zuo unrelated
+d1_00642,transliteration,extremes ~ exchange
+d1_00643,other,hallucinated
+d1_00644,transliteration,fang wen partial sound of uniforms
+d1_00645,other,unrelated
+d1_00646,other,unrelated
+d1_00647,transliteration,yan xu dai hui ~ entry level
+d1_00648,transliteration,its all fun ~ cha shao fan
+d1_00649,translation,they will = ta men jiu yao
+d1_00650,other,repetition loop
+d1_00651,translation,gong zuo ~ project (work)
+d1_00652,transliteration,lang man partial sound of expensive
+d1_00653,other,de she ji unrelated
+d1_00654,other,zhan lan unrelated
+d1_00655,transliteration,yi bei zi tong ~ electric engineering
+d1_00656,transliteration,dan ming tun sounds like badminton
+d1_00657,other,unrelated
+d1_00658,other,jue se unrelated
+d1_00659,transliteration,chore yi si sounds like choice
+d1_00660,transliteration,diu tai sounds like tutor
+d1_00661,other,que ding unrelated
+d1_00662,transliteration,dan ming tun sounds like badminton
+d1_00663,transliteration,10 yi sounds like tennis
+d1_00664,transliteration,ke yi sounds like corey
+d1_00665,transliteration,kong tie ting sounds like quantity
+d1_00666,transliteration,snerry ~ scenario
+d1_00667,translation,so were gonna ~ so we now start
+d1_00668,transliteration,extantue ~ exchange
+d1_00669,transliteration,hao wei sounds like hardware
+d1_00670,translation,xi tong = system
+d1_00671,transliteration,mei jie sounds like major
+d1_00672,transliteration,bai mei nan ~ badminton
+d1_00673,other,unrelated
+d1_00674,other,unrelated
+d1_00675,transliteration,stress for ~ dress formal
+d1_00676,transliteration,yan cui sounds like entry
+d1_00677,transliteration,di er sounds like deers
+d1_00678,transliteration,ta pek sounds like topic
+d1_00679,other,unrelated
+d1_00680,transliteration,mei jue sounds like major
+d1_00681,transliteration,ei i sounds like AI
+d1_00682,other,unrelated
+d1_00683,transliteration,full ke shi sounds like focus
+d1_00684,other,activity unrelated
+d1_00685,other,jiu ren shi unrelated
+d1_00686,other,ta unrelated
+d1_00687,transliteration,make guo sounds like mei guo
+d1_00688,transliteration,ben ming de sounds like badminton
+d1_00689,other,unrelated
+d1_00690,transliteration,kong jie qian sounds like quantity
+d1_00691,transliteration,kou a la bei sounds like koala bear
+d1_00692,other,unrelated
+d1_00693,other,unrelated
+d1_00694,transliteration,po sounds like pool
+d1_00695,transliteration,de pa sounds like report
+d1_00696,other,mixed unrelated
+d1_00697,other,spelling variant smartphone
+d1_00698,transliteration,gou hai ling ji ~ go hiking
+d1_00699,other,unrelated
+d1_00700,transliteration,wan ye er sounds like one year
+d1_00701,transliteration,bu ge sounds like book
+d1_00702,transliteration,soulful ~ software
+d1_00703,transliteration,koha ala bayer ~ koala bear
+d1_00704,other,unrelated
+d1_00705,transliteration,bu ge sounds like book
+d1_00706,transliteration,macrady ~ mcgrady
+d1_00707,transliteration,macrady ~ mcgrady
+d1_00708,transliteration,dou go sounds like logo
+d1_00709,other,unrelated
+d1_00710,other,unrelated
+d1_00711,other,unrelated
+d1_00712,transliteration,kan ting se approximates computer
+d1_00713,other,unrelated
+d1_00714,transliteration,bang ming e ~ badminton
+d1_00715,other,unrelated
+d1_00716,transliteration,sai shi sounds like size
+d1_00717,transliteration,zai min can ~ badminton
+d1_00718,transliteration,bang ming ~ badminton
+d1_00719,transliteration,shuang partial sound of shop
+d1_00720,transliteration,simi ~ simulate
+d1_00721,transliteration,smart feng ~ smartphone
+d1_00722,other,zuo unrelated
+d1_00723,other,unrelated
+d1_00724,transliteration,ming tian ~ mainland
+d1_00725,transliteration,bang ming hen ~ badminton
+d1_00726,transliteration,chao chao fun ~ cha shao fan
+d1_00727,transliteration,zai min tai ~ badminton
+d1_00728,transliteration,ou xi a ~ OCR
+d1_00729,transliteration,to you ~ ye bu la
+d1_00730,transliteration,ge ge partial sound of graduate
+d1_00731,transliteration,zai ming dian ~ badminton
+d1_00732,transliteration,fan si sounds like fancy
+d1_00733,transliteration,complain ~ company
+d1_00734,transliteration,pa tang sounds like part time
+d1_00735,transliteration,tong li sounds like tony
+d1_00736,other,de unrelated
+d1_00737,other,graduate vs undergraduate morphology
+d1_00738,transliteration,zai ming tian ~ badminton
+d1_00739,transliteration,content ti ~ quantity
+d1_00740,transliteration,busy de ~ business
+d1_00741,transliteration,bei bei sounds like big big
+d1_00742,transliteration,prepare ~ professor
+d1_00743,other,zhe bian unrelated
+d1_00744,other,mixed fillers
+d1_00745,transliteration,de pao ~ report
+d1_00746,transliteration,gan cui partial sound of games
+d1_00747,transliteration,mang de case ~ monkeys
+d1_00748,transliteration,bao sounds like part
+d1_00749,other,repetition loop
+d1_00750,other,unrelated
+d1_00751,transliteration,tu fei partial sound of topic
+d1_00752,transliteration,si li pei sounds like sleepy
+d1_00753,transliteration,kou a la bei ~ koala bear
+d1_00754,transliteration,yin wei sounds like india
+d1_00755,other,unrelated
+d1_00756,other,di unrelated
+d1_00757,transliteration,you buy ~ ye bu la
+d1_00758,transliteration,backman ~ badminton
+d1_00759,other,unrelated
+d1_00760,transliteration,find le ~ final
+d1_00761,other,gong unrelated
+d1_00762,transliteration,de pao ~ report
+d1_00763,transliteration,lang zhi de ~ lunch talk
+d1_00764,transliteration,mo lun ~ mall
+d1_00765,transliteration,kong jie ti ~ quantity
+d1_00766,transliteration,ba juan ~ budget
+d1_00767,transliteration,kan ting de ~ computer
+d1_00768,transliteration,bi jing ~ business
+d1_00769,other,unrelated
+d1_00770,transliteration,similar ~ simulate
+d1_00771,transliteration,complain to ~ company
+d1_00772,transliteration,net net ~ neural network
+d1_00773,transliteration,kan ting ~ computer
+d1_00774,transliteration,yin ke ~ in case
+d1_00775,transliteration,smartp ~ spark point
+d1_00776,transliteration,same ye ~ senior
+d1_00777,transliteration,de pao le ~ report
+d1_00778,translation,hen = very
+d1_00779,transliteration,ba zi ran ~ but when
+d1_00780,transliteration,yin ke yi ~ in case
+d1_00781,transliteration,ba zi ran ~ but when
+d1_00782,other,unrelated
+d1_00783,transliteration,wan yi ren ~ one year
+d1_00784,transliteration,will miss ~ awareness
+d1_00785,transliteration,kan partial sound of car
+d1_00786,transliteration,complaint ~ company
+d1_00787,translation,ji qiao ~ technique
+d1_00788,translation,nian dai ~ generation
+d1_00789,other,unrelated
+d1_00790,transliteration,kan ta na ~ canto-
+d1_00791,transliteration,hong kou ~ hong kong
+d1_00792,other,unrelated
+d1_00793,transliteration,xin ling ~ senior
+d1_00794,translation,na shi yuan yin = thats the reason
+d1_00795,transliteration,fang shi partial sound of function
+d1_00796,translation,so we are going to ~ so we now start
+d1_00797,transliteration,hong kong phonetic
+d1_00798,transliteration,daxxern ~ lecture
+d1_00799,transliteration,a li pei ~ alipay
+d1_00800,other,unrelated
+d1_00801,other,jiao unrelated
+d1_00802,transliteration,da walk ~ dialogue
+d1_00803,transliteration,qu bie ~ chitchat
+d1_00804,transliteration,sheng ti man da ~ sentiment
+d1_00805,transliteration,ying que shi ding ~ interesting
+d1_00806,transliteration,xing gan po ~ singapore
+d1_00807,transliteration,dai ming ci ~ badminton
+d1_00808,transliteration,sou she ~ social
+d1_00809,other,unrelated
+d1_00810,transliteration,xden ~ accident
+d1_00811,other,unrelated
+d1_00812,other,unrelated
+d1_00813,transliteration,de le cod ~ the court
+d1_00814,transliteration,yall mean ~ yao ming
+d1_00815,transliteration,hai li pei ~ alipay
+d1_00816,translation,just is ~ jiu shi
+d1_00817,transliteration,nero ~ neural
+d1_00818,transliteration,fa dong ~ final
+d1_00819,transliteration,tiao wu te ~ tutor
+d1_00820,other,jin unrelated
+d1_00821,transliteration,hang kong ~ hong kong
+d1_00822,transliteration,jin men ~ gym
+d1_00823,translation,equivalent interjection
+d1_00824,transliteration,dang ming tian ~ badminton
+d1_00825,transliteration,bu tao ~ blockchain
+d1_00826,transliteration,dai ming tan ~ badminton
+d1_00827,transliteration,shen me fang fa ~ smart phone
+d1_00828,transliteration,qiu tui ~ tutor
+d1_00829,other,da unrelated
+d1_00830,transliteration,dai ming ~ badminton
+d1_00831,other,ma unrelated
+d1_00832,transliteration,la qu tou ~ lunch talk
+d1_00833,transliteration,chuan shui ya ~ trust ai
+d1_00834,other,filler vs then
+d1_00835,transliteration,shen me ~ smart
+d1_00836,transliteration,ye ~ AI
+d1_00837,transliteration,shen me ~ smart
+d1_00838,other,repetition loop
+d1_00839,transliteration,mei shi de ~ make sense
+d1_00840,transliteration,yi liang ~ electric
+d1_00841,transliteration,dou ming tan ~ badminton
+d1_00842,other,unrelated
+d1_00843,other,unrelated
+d1_00844,translation,zuo de shi qing ~ make this decision
+d1_00845,translation,so were now going to
+d1_00846,other,unrelated
+d1_00847,other,unrelated
+d1_00848,transliteration,one more ~ wo men
+d1_00849,other,unrelated
+d1_00850,translation,ji shu = technical
+d1_00851,other,ge shi bai unrelated
+d1_00852,translation,hao hao de shi wu ~ favourite foods
+d1_00853,translation,xue sheng = students
+d1_00854,other,unrelated
+d1_00855,other,repetition loop
+d1_00856,transliteration,fan le wo ~ final
+d1_00857,transliteration,tao ni ~ tony
+d1_00858,other,unrelated
+d1_00859,other,zai ci unrelated
+d1_00860,transliteration,kong jian ~ hong kong
+d1_00861,other,shen unrelated
+d1_00862,other,zhao unrelated
+d1_00863,translation,so were just going to
+d1_00864,transliteration,da dao ~ dialogue
+d1_00865,transliteration,dou ge ~ book
+d1_00866,transliteration,huang kong ~ hong kong
+d1_00867,translation,wei shen me qu kan chu xiang gang ~ why come to hong kong
+d1_00868,transliteration,gong kang ~ hong kong
+d1_00869,transliteration,like a d phone ~ zhao ge di fang
+d1_00870,transliteration,xing ge po ~ singapore
+d1_00871,other,unrelated
+d1_00872,transliteration,mei juan ~ major
+d1_00873,transliteration,univers de ~ university
+d1_00874,other,qu juan unrelated
+d1_00875,other,fo yun unrelated
+d1_00876,transliteration,hao wei ~ hardware
+d1_00877,other,de peng you unrelated
+d1_00878,transliteration,ju luo ~ gym
+d1_00879,translation,peng you translates friends
+d1_00880,transliteration,tuo er si ji ~ too risky
+d1_00881,translation,just ~ jiu shi
+d1_00882,transliteration,bai ming dan ~ badminton
+d1_00883,other,unrelated
+d1_00884,transliteration,fang bian ~ fancy
+d1_00885,transliteration,ma ke li de ~ mcgrady
+d1_00886,transliteration,pa tao ~ part time
+d1_00887,transliteration,dou kou ~ local
+d1_00888,other,unrelated
+d1_00889,transliteration,e qian de ~ urgent
+d1_00890,transliteration,xuan jiu ~ schedule
+d1_00891,transliteration,shi gai jiu ~ schedule
+d1_00892,transliteration,rang ren chi tao ~ lunch talk
+d1_00893,other,yin wei unrelated
+d1_00894,transliteration,coxie ~ car accident
+d1_00895,transliteration,x de habond ~ accident happen
+d1_00896,other,unrelated
+d1_00897,other,de unrelated
+d1_00898,transliteration,wo xi yao ~ OCR
+d1_00899,transliteration,yan shui ~ entry level
+d1_00900,transliteration,an chui dai ~ entry level
+d1_00901,transliteration,mo ba pei ~ mobile payments
+d1_00902,transliteration,mo mo ~ mall
+d1_00903,transliteration,mu gang pei men ~ mobile payment
+d1_00904,transliteration,a li pei ~ alipay
+d1_00905,transliteration,zai san yin ~ sign in
+d1_00906,other,unrelated
+d1_00907,transliteration,cai kong tuan provis ~ technology privacy
+d1_00908,translation,equivalent filler
+d1_00909,other,de gan jue unrelated
+d1_00910,transliteration,xin li ~ senior
+d1_00911,transliteration,qiu ceng ~ tutor
+d1_00912,transliteration,x games ~ exchange
+d1_00913,transliteration,yan bi jun ~ in between
+d1_00914,transliteration,mei si ~ make sense
+d1_00915,other,dan unrelated
+d1_00916,transliteration,d power ~ department
+d1_00917,other,unrelated
+d1_00918,transliteration,shi bu wan zheng ~ supervisor
+d1_00919,transliteration,ju ment ~ gym
+d1_00920,transliteration,basky ~ basketball
+d1_00921,transliteration,ban ming pan ~ badminton
+d1_00922,translation,an men xue xiao: school translated
+d1_00923,transliteration,wan yi ye ~ one year
+d1_00924,transliteration,yin te bie ~ interview
+d1_00925,transliteration,bo shou ~ workshop
+d1_00926,transliteration,ei ei ~ AI
+d1_00927,other,unrelated
+d1_00928,translation,zuo de ~ make (partial)
+d1_00929,translation,qing kuang = situation
+d1_00930,transliteration,x de cop ~ accident
+d1_00931,translation,hen duo ren dou hui you de ~ most people have
+d1_00932,transliteration,nerve row ~ neural network
+d1_00933,transliteration,oc a ~ OCR
+d1_00934,transliteration,yan shui dai ~ entry level
+d1_00935,transliteration,mu hua ~ mall
+d1_00936,transliteration,er fusion ~ verification
+d1_00937,transliteration,prology ~ privacy
+d1_00938,transliteration,qi jian ~ chitchat
+d1_00939,transliteration,yi bei zi ~ electric
+d1_00940,transliteration,su du huai shi ~ supervisor
+d1_00941,other,jue ding unrelated
+d1_00942,transliteration,nero ~ neural
+d1_00943,other,unrelated
+d1_00944,transliteration,qian partial sound of expensive
+d1_00945,other,unrelated
+d1_00946,other,unrelated
+d1_00947,transliteration,xue indoya ~ ling dui
+d1_00948,transliteration,hao wei ~ hardware
+d1_00949,other,unrelated
+d1_00950,transliteration,feng kong ~ hong kong
+d1_00951,transliteration,qu yi ~ choice
+d1_00952,transliteration,niu rou ~ neural
+d1_00953,transliteration,ding na ~ deep learning
+d1_00954,transliteration,cai kong provid ~ technology privacy
+d1_00955,transliteration,fu ke ~ focus
+d1_00956,other,unrelated
+d1_00957,transliteration,kong kuang ~ hong kong
+d1_00958,other,dao unrelated
+d1_00959,transliteration,da box ~ dialogue
+d1_00960,transliteration,tax ~ dialogue system
+d1_00961,transliteration,yong shou ~ user
+d1_00962,transliteration,hong hong ~ hong kong
+d1_00963,other,unrelated
+d1_00964,transliteration,like a thief ~ zhao ge di fang
+d1_00965,other,unrelated
+d1_00966,other,yi zhong unrelated
+d1_00967,transliteration,ju jue ~ gym
+d1_00968,transliteration,dan ming teng ~ badminton
+d1_00969,transliteration,ban ming tan ~ badminton
+d1_00970,transliteration,bai ming dan ~ badminton
+d1_00971,transliteration,pai le partial ~ talent
+d1_00972,transliteration,kong tie tie ~ quantity
+d1_00973,transliteration,ken da ni ~ canto-
+d1_00974,transliteration,sou suo le ~ social
+d1_00975,transliteration,rang ren chi ~ lunch talk
+d1_00976,transliteration,one more button ~ wo men bu neng
+d1_00977,other,unrelated
+d1_00978,other,xian unrelated
+d1_00979,transliteration,netherworld ~ neural network
+d1_00980,transliteration,yan shui dai ~ entry level
+d1_00981,transliteration,yan xu dai ~ entry level
+d1_00982,transliteration,de pei fen ~ payments
+d1_00983,transliteration,mo xing ~ mall
+d1_00984,transliteration,mu wai pei fen ~ mobile payment
+d1_00985,transliteration,san yin ~ sign in
+d1_00986,other,unrelated
+d1_00987,transliteration,pricot osy ~ privacy
+d1_00988,transliteration,of tiong ~ opportunity
+d1_00989,transliteration,they are poor ~ ye bu la
+d1_00990,transliteration,kong jie ting ~ quantity
+d1_00991,other,yi si unrelated
+d1_00992,transliteration,mo feng ~ mall
+d1_00993,transliteration,fan xi ~ fancy
+d1_00994,transliteration,act together ~ accident
+d1_00995,other,unrelated
+d1_00996,transliteration,feng kang ~ hong kong
+d1_00997,transliteration,make wo ~ mei guo
+d1_00998,transliteration,backman tian ~ badminton
+d1_00999,transliteration,bai mei ~ badminton
+d1_01000,transliteration,mai kao ~ michael
+d1_01001,transliteration,kong pai ting ~ quantity
+d1_01002,transliteration,wan yi yang ~ one year
+d1_01003,transliteration,pa tang ~ part time
+d1_01004,transliteration,lo kou ~ logo
+d1_01005,transliteration,will and stuff ~ awareness
+d1_01006,transliteration,ba hua ji ~ budget
+d1_01007,other,unrelated
+d1_01008,transliteration,xing ren shi ~ simulate
+d1_01009,other,ta unrelated
+d1_01010,other,fei chang unrelated
+d1_01011,transliteration,o c yang ~ OCR
+d1_01012,transliteration,yan fei da ~ entry level
+d1_01013,other,unrelated
+d1_01014,transliteration,mo ren ~ mall
+d1_01015,transliteration,of tiong ~ opportunity
+d1_01016,transliteration,staffs all fun ~ cha shao fan
+d1_01017,transliteration,force ye ~ fourth year
+d1_01018,transliteration,make sure ~ mei guo
+d1_01019,transliteration,complain ~ company
+d1_01020,transliteration,pao han ~ part time
+d1_01021,transliteration,lao shi ~ lunch talk
+d1_01022,transliteration,er yi i ~ AI
+d1_01023,transliteration,kan ting dao ~ computer
+d1_01024,transliteration,ren shui ~ entry level
+d1_01025,transliteration,r b pei ~ alipay
+d1_01026,transliteration,a li pei ~ alipay
+d1_01027,transliteration,kong jie ting ~ quantity
+d1_01028,transliteration,7 pian ~ chitchat
+d1_01029,transliteration,complain ~ company
+d1_01030,transliteration,bai ling diao ~ badminton
+d1_01031,transliteration,graded ~ mcgrady
+d1_01032,transliteration,willingness ~ awareness
+d1_01033,transliteration,ba ci ~ budget
+d1_01034,transliteration,yan shui ~ entry level
+d1_01035,transliteration,si yi pei ~ sleepy
+d1_01036,other,ta unrelated
+d1_01037,transliteration,pi su ~ peaceful
+d1_01038,transliteration,a la pei ~ koala bear
+d1_01039,transliteration,ming tian ~ mainland
+d1_01040,other,unrelated
+d1_01041,transliteration,ba zi ran ~ but when
+d1_01042,transliteration,jiu bei ~ debate
+d1_01043,transliteration,ming tian ~ mainland
+d1_01044,other,tai unrelated
+d1_01045,transliteration,action ~ accident
+d1_01046,other,unrelated
+d1_01047,transliteration,act ~ accident
+d1_01048,other,a unrelated
+d1_01049,transliteration,kao kao li ~ college
+d1_01050,transliteration,ba zi ran ~ but when
+d1_01051,transliteration,ba zi ran ~ but when
+d1_01052,other,tai shi unrelated
+d1_01053,transliteration,all the zhao ~ outdoor
+d1_01054,transliteration,kor ala bei ~ koala bear
+d1_01055,translation,so it is a ~ suo yi zhe ge
+d1_01056,transliteration,yin ke yi ~ in case
+d1_01057,other,unrelated
+d1_01058,transliteration,ge ju de guo ~ graduate
+d1_01059,other,unrelated
+d1_01060,transliteration,extend ~ exchange
+d1_01061,transliteration,cong ting le ~ computer
+d1_01062,transliteration,bu ke ~ book
+d1_01063,other,unrelated
+d1_01064,transliteration,geng ting se ~ computer
+d1_01065,transliteration,yan shui dai ~ entry level
+d1_01066,other,lun ge unrelated
+d1_01067,transliteration,x xun ~ exchange
+d1_01068,other,unrelated
+d1_01069,transliteration,net net ~ neural network
+d1_01070,transliteration,yan shen ~ entry
+d1_01071,transliteration,ca tuo tuo fun ~ cha shao fan
+d1_01072,transliteration,x juan ~ exchange
+d1_01073,transliteration,bi jing shi ~ business
+d1_01074,transliteration,mao ~ mall
+d1_01075,transliteration,ta shuo fun ~ cha shao fan
+d1_01076,transliteration,complain ~ company
+d1_01077,transliteration,mao neng ~ mall
+d1_01078,other,unrelated
+d1_01079,other,spelling variant fintech
+d1_01080,transliteration,ren ~ room
+d1_01081,transliteration,yan xu dai ~ entry level
+d1_01082,other,unrelated
+d1_01083,other,unrelated
+d1_01084,transliteration,koha a la bei er ~ koala bear
+d1_01085,other,unrelated
+d1_01086,transliteration,complain ~ computer
+d1_01087,transliteration,south of one ~ cha shao fan
+d1_01088,transliteration,hong se ~ hong kong
+d1_01089,translation,3 nian = third years
+d1_01090,transliteration,complain ~ company
+d1_01091,transliteration,smart point ~ three pointer
+d1_01092,transliteration,wan yi yi ~ one year
+d1_01093,other,na xie unrelated
+d1_01094,transliteration,xin de ~ accident
+d1_01095,transliteration,chemist san ~ chemistry
+d1_01096,transliteration,yi lai qu ~ electric
+d1_01097,other,cai unrelated
+d1_01098,transliteration,sheng yin ~ senior
+d1_01099,other,unrelated
+d1_01100,other,ran hou unrelated
+d1_01101,transliteration,qu jia ~ chitchat
+d1_01102,other,unrelated
+d1_01103,transliteration,excelent ~ exchange
+d1_01104,transliteration,cert ye ~ third year
+d1_01105,other,di fang = place
+d1_01106,other,unrelated
+d1_01107,transliteration,back main tian ~ badminton
+d1_01108,transliteration,sheng ming tian ~ badminton
+d1_01109,other,unrelated
+d1_01110,transliteration,admin qu ~ elementary
+d1_01111,transliteration,grade trace ~ tracy mcgrady
+d1_01112,transliteration,greedy ~ mcgrady
+d1_01113,transliteration,kong jie ti ~ quantity
+d1_01114,transliteration,wan yi wai ~ one year
+d1_01115,transliteration,wan yi ge ~ one
+d1_01116,transliteration,pa ta ~ part time
+d1_01117,other,unrelated
+d1_01118,transliteration,e chun ~ urgent
+d1_01119,transliteration,lai dian ~ minded
+d1_01120,transliteration,lao shi tuo ~ lunch talk
+d1_01121,transliteration,yi lai ~ AI
+d1_01122,transliteration,kai xin deng ~ car accident
+d1_01123,other,unrelated
+d1_01124,transliteration,smart xiong ~ smartphone
+d1_01125,transliteration,fan ni ~ fancy
+d1_01126,transliteration,yuan shui ~ entry level
+d1_01127,transliteration,bu guo ~ block
+d1_01128,other,unrelated
+d1_01129,transliteration,dan ying ~ sign in
+d1_01130,other,chemistry vs history
+d1_01131,transliteration,table ~ tutor
+d1_01132,other,jia unrelated
+d1_01133,transliteration,sent essays ~ sentiment analysis
+d1_01134,transliteration,force ye ~ fourth year
+d1_01135,translation,3 yue ~ third? (number)
+d1_01136,other,mixed
+d1_01137,transliteration,ying duo ye ~ ling dui
+d1_01138,transliteration,make sure ~ mei guo
+d1_01139,other,like vs dui
+d1_01140,transliteration,complain ~ company
+d1_01141,transliteration,super wise ~ supervisor
+d1_01142,transliteration,dai ming ~ badminton
+d1_01143,transliteration,primary ming dan ~ badminton
+d1_01144,transliteration,nvent ~ elementary
+d1_01145,transliteration,she ~ jiu shi
+d1_01146,other,unrelated
+d1_01147,other,unrelated
+d1_01148,transliteration,mind dian ~ minded
+d1_01149,transliteration,di qiu ~ due
+d1_01150,transliteration,just ~ dress
+d1_01151,transliteration,list of response ~ this responsibility
+d1_01152,transliteration,send ~ simulate
+d1_01153,transliteration,organisation ~ optimization
+d1_01154,transliteration,natural niu rou ~ neural network
+d1_01155,other,neng li = ability
+d1_01156,transliteration,kan kan ting ~ computer
+d1_01157,transliteration,ou zhi ~ OCR
+d1_01158,transliteration,mao zhuang ~ mall
+d1_01159,transliteration,chao so fun ~ cha shao fan
+d1_01160,transliteration,qu qian ~ chitchat
+d1_01161,transliteration,complain ~ company
+d1_01162,other,unrelated
+d1_01163,transliteration,feng kao ~ hong kong
+d1_01164,transliteration,make sure ~ mei guo
+d1_01165,transliteration,ge zhong ~ graduate
+d1_01166,transliteration,simi ~ simulate
+d1_01167,transliteration,yan chuan ~ entry level
+d1_01168,transliteration,company new ~ computer engineering
+d1_01169,transliteration,and she know ~ national
+d1_01170,transliteration,ti tuan ~ tutor
+d1_01171,transliteration,text ~ dialogue system
+d1_01172,transliteration,sent ~ sentiment
+d1_01173,other,yi xie unrelated
+d1_01174,transliteration,serve ye ~ third year
+d1_01175,other,unrelated
+d1_01176,transliteration,ying duo ye ~ ling dui
+d1_01177,other,ke xue unrelated
+d1_01178,other,unrelated
+d1_01179,transliteration,qu nian lai ren ~ engineering
+d1_01180,other,unrelated
+d1_01181,transliteration,jun ~ gym
+d1_01182,other,unrelated
+d1_01183,transliteration,fairs ming tian ~ badminton
+d1_01184,transliteration,bao ming tan ~ badminton
+d1_01185,transliteration,primary mian teng ~ badminton
+d1_01186,transliteration,nvent ~ elementary
+d1_01187,transliteration,gradey ~ mcgrady
+d1_01188,transliteration,lei ah ~ lay up
+d1_01189,transliteration,wan yi wei ~ one year
+d1_01190,transliteration,wan yi ye ~ one year
+d1_01191,transliteration,pa tang ~ part time
+d1_01192,transliteration,me duo guo ~ logo
+d1_01193,other,unrelated
+d1_01194,transliteration,shuo ke shi ~ focus
+d1_01195,transliteration,e zhen ~ urgent
+d1_01196,transliteration,lang fei ~ lunch talk
+d1_01197,transliteration,po pian de ~ portrait
+d1_01198,transliteration,in te bie ~ interview
+d1_01199,transliteration,just ~ dress
+d1_01200,transliteration,ei ~ AI
+d1_01201,transliteration,er kan ~ a car
+d1_01202,other,unrelated
+d1_01203,transliteration,ban qian ~ function
+d1_01204,transliteration,send ~ simulate
+d1_01205,other,ping tai unrelated
+d1_01206,transliteration,organisation ~ optimization
+d1_01207,transliteration,fan e gan ~ fancy
+d1_01208,transliteration,yuan xuan dai ~ entry level
+d1_01209,transliteration,rou bi ~ robot
+d1_01210,transliteration,r p pei ~ alipay
+d1_01211,transliteration,i bu ~ app
+d1_01212,transliteration,mo ~ mall
+d1_01213,other,unrelated
+d1_01214,transliteration,team tuan ~ tutor
+d1_01215,transliteration,fu ~ food
+d1_01216,transliteration,guan ge ~ one
+d1_01217,transliteration,qu qie ~ chitchat
+d1_01218,other,unrelated
+d1_01219,other,unrelated
+d1_01220,transliteration,self ran ~ software
+d1_01221,transliteration,bang ming ~ badminton
+d1_01222,transliteration,micr jue ding ~ michael jordan
+d1_01223,transliteration,grade ~ mcgrady
+d1_01224,transliteration,ni dou guo ~ logo
+d1_01225,transliteration,miss ~ awareness
+d1_01226,transliteration,la zhi tou ~ lunch talk
+d1_01227,transliteration,po trade ~ portrait
+d1_01228,transliteration,er kai ~ a car
+d1_01229,other,unrelated
+d1_01230,other,unrelated
+d1_01231,transliteration,yuan shui ~ entry
+d1_01232,transliteration,mo rong ~ mall
+d1_01233,other,unrelated
+d1_01234,transliteration,pass ke yi ~ positive
+d1_01235,transliteration,kou a da bei ~ koala bear
+d1_01236,transliteration,manicure ~ many question
+d1_01237,other,bu guo unrelated
+d1_01238,transliteration,ta bei ~ topic
+d1_01239,transliteration,pro pao ~ proposal
+d1_01240,other,unrelated
+d1_01241,other,unrelated
+d1_01242,other,unrelated
+d1_01243,transliteration,cannot say ~ ke neng shi
+d1_01244,transliteration,senior ~ scenery
+d1_01245,transliteration,ba zi fen ~ but when
+d1_01246,transliteration,ni ke yi ~ in case
+d1_01247,transliteration,demand ~ remind
+d1_01248,other,unrelated
+d1_01249,transliteration,lah tai ~ latte
+d1_01250,transliteration,kou a la bei ~ koala bear
+d1_01251,transliteration,pro bang ~ proposal
+d1_01252,other,unrelated
+d1_01253,other,mixed fillers
+d1_01254,transliteration,ba zi fen ~ but when
+d1_01255,transliteration,class mei ci ~ classmates
+d1_01256,transliteration,ao zhao ~ outdoor
+d1_01257,transliteration,ni ke yi ~ in case
+d1_01258,other,unrelated
+d1_01259,other,unrelated
+d1_01260,transliteration,ni ke yi ~ in case
+d1_01261,transliteration,you korea ~ ukulele
+d1_01262,transliteration,kou a la bei ~ koala bear
+d1_01263,other,unrelated
+d1_01264,transliteration,hua ~ part
+d1_01265,other,unrelated
+d1_01266,transliteration,sai kong ~ saigon
+d1_01267,transliteration,you korea ~ ukulele
+d1_01268,other,unrelated
+d1_01269,transliteration,po diao ~ part
+d1_01270,other,shang ban unrelated
+d1_01271,transliteration,si li pi ~ sleepy
+d1_01272,other,unrelated
+d1_01273,translation,fei chang = very
+d1_01274,transliteration,ba zi fen ~ but when
+d1_01275,transliteration,actually ~ accident
+d1_01276,other,hallucinated question
+d1_01277,transliteration,bomb ming tian ~ from mainland
+d1_01278,transliteration,ni ke yi ~ in case
+d1_01279,transliteration,beef lai ~ baseline
+d1_01280,transliteration,you korea ~ ukulele
+d1_01281,transliteration,ming tian ~ mainland
+d1_01282,other,unrelated
+d1_01283,other,repetition loop
+d1_01284,transliteration,ni ke yi ~ in case
+d1_01285,transliteration,tu fei ~ topic
+d1_01286,transliteration,born ming tian ~ from mainland
+d1_01287,transliteration,po he ~ pool
+d1_01288,other,unrelated
+d1_01289,transliteration,they are ~ ye bu la
+d1_01290,translation,equivalent interjection/filler
+d1_01291,transliteration,less ba ~ flexible
+d1_01292,transliteration,toh ni ~ tony
+d1_01293,transliteration,7 qi ~ chitchat
+d1_01294,transliteration,complain ~ company
+d1_01295,transliteration,ge jue scold ~ graduate school
+d1_01296,transliteration,ban ming deng ~ badminton
+d1_01297,transliteration,backman ~ badminton
+d1_01298,other,unrelated
+d1_01299,transliteration,pa tai ~ part time
+d1_01300,transliteration,see ~ simulate
+d1_01301,other,unrelated
+d1_01302,other,unrelated
+d1_01303,transliteration,win de ~ wind
+d1_01304,transliteration,yan shui ~ entry level
+d1_01305,transliteration,r v pei ~ alipay
+d1_01306,transliteration,kan ting ~ computer
+d1_01307,transliteration,koha ala bay ~ koala bear
+d1_01308,transliteration,ba zi fen ~ but when
+d1_01309,transliteration,fen bie ~ swimming pool
+d1_01310,transliteration,near ~ new
+d1_01311,transliteration,hows our fun ~ cha shao fan
+d1_01312,other,unrelated
+d1_01313,transliteration,complain ~ company
+d1_01314,transliteration,self wear ~ software
+d1_01315,transliteration,nong dong gou ~ logo
+d1_01316,transliteration,ou xi na ~ OCR
+d1_01317,transliteration,yan chou ~ entry
+d1_01318,other,bu ting hua unrelated
+d1_01319,translation,favorite translated; foods mis-rendered
+d1_01320,transliteration,niu rou ~ neural network
+d1_01321,other,unrelated
+d1_01322,transliteration,fu ~ food
+d1_01323,transliteration,net net ~ neural network
+d1_01324,transliteration,rly pei ~ alipay
+d1_01325,other,unrelated
+d1_01326,transliteration,x quan ~ exchange
+d1_01327,transliteration,mei jian le ~ major
+d1_01328,transliteration,lun ~ room
+d1_01329,transliteration,net net world ~ neural network
+d1_01330,transliteration,can ting de ~ computer
+d1_01331,transliteration,ying gai ~ in case
+d1_01332,transliteration,can de crack ~ candy crush
+d1_01333,transliteration,ying gai ~ in case
+d1_01334,other,hallucinated
+d1_01335,other,unrelated
+d1_01336,transliteration,koha ala bei ~ koala bear
+d1_01337,other,hallucinated
+d1_01338,transliteration,wan yi ~ one year
+d1_01339,transliteration,force ye ~ fourth year
+d1_01340,other,unrelated
+d1_01341,other,unrelated
+d1_01342,transliteration,que partial ~ chain
+d1_01343,transliteration,mo fen ~ mall
+d1_01344,transliteration,mo ben ~ mall
+d1_01345,other,here unrelated
+d1_01346,transliteration,7 dian ~ chitchat
+d1_01347,other,unrelated
+d1_01348,transliteration,ge zi ~ graduate
+d1_01349,translation,equivalent filler
+d1_01350,transliteration,mei mai ~ major
+d1_01351,transliteration,xing mei you ~ simulate
+d1_01352,transliteration,pai lai de ~ package
+d1_01353,transliteration,yan shui ~ entry level
+d1_01354,transliteration,quan ~ chain
+d1_01355,transliteration,mo on ~ mall
+d1_01356,transliteration,kor ala pei ~ koala bear
+d1_01357,transliteration,kou a la bei ~ koala bear
+d1_01358,other,tai er unrelated
+d1_01359,translation,so = suo yi
+d1_01360,transliteration,kor ala peh ~ koala bear
+d1_01361,transliteration,tan ~ time
+d1_01362,transliteration,po ~ pool
+d1_01363,transliteration,di er yi ~ deers
+d1_01364,translation,equivalent fillers
+d1_01365,other,ne unrelated
+d1_01366,transliteration,tao thing ~ topic
+d1_01367,transliteration,ming tian ~ mainland
+d1_01368,translation,hen exciting = very excited
+d1_01369,transliteration,yin ke yi ~ in case
+d1_01370,other,filler vs part
+d1_01371,transliteration,san wen yi ~ sandwiches
+d1_01372,transliteration,xiao tou ~ shout
+d1_01373,other,unrelated
+d1_01374,transliteration,all the dao ~ outdoor
+d1_01375,transliteration,home kong ~ hong kong
+d1_01376,transliteration,force ye ~ fourth year
+d1_01377,transliteration,microtele ~ michael
+d1_01378,other,unrelated
+d1_01379,other,spelling variant sports
+d1_01380,transliteration,bai ling ~ badminton
+d1_01381,transliteration,bi jing the ~ business
+d1_01382,transliteration,hai yao pan ~ happen
+d1_01383,transliteration,si mi lai ~ simulate
+d1_01384,other,morphological variant optimize
+d1_01385,transliteration,net net ~ neural network
+d1_01386,other,unrelated
+d1_01387,transliteration,yan fei ~ entry level
+d1_01388,other,unrelated
+d1_01389,transliteration,galus god ~ get a score
+d1_01390,translation,hen duo ren you dian hua ~ most people have phones
+d1_01391,other,unrelated
+d1_01392,other,unrelated
+d1_01393,transliteration,mei xue ~ major
+d1_01394,other,filler vs yeah
+d1_01395,transliteration,ba si qi bu ~ basketball
+d1_01396,transliteration,ban ming teng ~ badminton
+d1_01397,translation,yi ren = idol (entertainer)
+d1_01398,translation,she ji ~ schedule/design? weak
+d1_01399,other,xue hui unrelated
+d1_01400,translation,ni xu yao chuan ~ you need to dress
+d1_01401,translation,xuan ze = choice
+d1_01402,translation,wan mei = perfect
+d1_01403,translation,xian xiang ~ scenario (phenomenon)
+d1_01404,translation,zi xing che ~ self-driving car (bicycle) partial
+d1_01405,transliteration,program nan gui ~ problem language
+d1_01406,transliteration,a li pei ~ alipay
+d1_01407,other,unrelated
+d1_01408,translation,he is ~ jiu shi
+d1_01409,transliteration,fan ~ fancy
+d1_01410,translation,xin nian lai yao zhi chi ~ senior to support
+d1_01411,translation,cuo wu shi yin wei = mistake is because
+d1_01412,translation,wo ji de shi di 3 nian = I remember third year
+d1_01413,transliteration,mei jing le ~ major
+d1_01414,transliteration,tiao pi ~ topic
+d1_01415,transliteration,ba si zu ~ basketball
+d1_01416,transliteration,galusko ~ get a score
+d1_01417,transliteration,kan ta na ~ cantonese
+d1_01418,other,unrelated
+d1_01419,transliteration,hong kong phonetic
+d1_01420,other,unrelated
+d1_01421,transliteration,ding yue tou ~ lunch talk
+d1_01422,transliteration,te bie ~ interview
+d1_01423,translation,gong zuo = work
+d1_01424,translation,zi dong jia shi ka = self driving car
+d1_01425,translation,gao ji ~ high standard
+d1_01426,translation,zi xing che ~ self driving car
+d1_01427,transliteration,qiu zheng ~ children
+d1_01428,translation,hen duo ren you shou ji = most people have smartphones
+d1_01429,other,spelling variant bigdata
+d1_01430,transliteration,fan gui ~ problem lan-
+d1_01431,other,unrelated
+d1_01432,transliteration,hong kao ~ hong kong
+d1_01433,other,unrelated
+d1_01434,transliteration,gui ju ~ graduate
+d1_01435,transliteration,kui zhuo xue xiao ~ graduate school
+d1_01436,transliteration,ge di ~ graduate
+d1_01437,transliteration,ba si kipo ~ basketball
+d1_01438,transliteration,an li wei si ku ~ elementary school
+d1_01439,transliteration,san wei ~ sandwiches
+d1_01440,transliteration,intel ~ interview
+d1_01441,other,we dont know vs cannot
+d1_01442,transliteration,xen de ~ accident
+d1_01443,translation,wen ti = problem
+d1_01444,transliteration,mu ban pei he ~ mobile payment
+d1_01445,transliteration,ba si ji pa ~ basketball
+d1_01446,other,unrelated
+d1_01447,translation,i feel like ~ gan jue
+d1_01448,transliteration,pai sen ~ python
+d1_01449,transliteration,san wei ~ sandwiches
+d1_01450,translation,he ~ ta
+d1_01451,transliteration,xin tang ~ syntax
+d1_01452,other,spelling variant bigdata
+d1_01453,transliteration,yan xu ~ entry level
+d1_01454,transliteration,dai biao ~ level
+d1_01455,other,unrelated
+d1_01456,other,unrelated
+d1_01457,transliteration,xc de ~ exchange
+d1_01458,other,unrelated
+d1_01459,other,unrelated
+d1_01460,transliteration,net net ~ neural network
+d1_01461,transliteration,huang kuang ~ hong kong
+d1_01462,transliteration,sophie ~ software
+d1_01463,transliteration,niu rou ~ neural
+d1_01464,other,unrelated
+d1_01465,transliteration,bu gei ~ book
+d1_01466,transliteration,huang kang ~ hong kong
+d1_01467,transliteration,sir er ~ third
+d1_01468,transliteration,dagger d fun ~ zhao ge di fang
+d1_01469,transliteration,kou gua 10 ~ court for tennis
+d1_01470,other,unrelated
+d1_01471,transliteration,su lin pao ~ swim properly
+d1_01472,transliteration,mo gui de ~ mcgrady
+d1_01473,other,ge zheng unrelated
+d1_01474,other,unrelated
+d1_01475,transliteration,mo tuo pi fu ~ most of people
+d1_01476,transliteration,gu zi ~ group
+d1_01477,other,zhao pai unrelated
+d1_01478,transliteration,wei ren ~ wind
+d1_01479,transliteration,ou xiang ~ OCR
+d1_01480,transliteration,bu zou ~ blockchain
+d1_01481,transliteration,mob app ~ mobile payments
+d1_01482,transliteration,pai jiang ~ project
+d1_01483,transliteration,cai geng ~ technology
+d1_01484,other,unrelated
+d1_01485,transliteration,its also fine ~ cha shao fan
+d1_01486,transliteration,dang partial ~ dialogue
+d1_01487,transliteration,qu xian ~ chitchat
+d1_01488,transliteration,sheng ti man da ~ sentiment analysis
+d1_01489,transliteration,ying shi ~ interesting
+d1_01490,transliteration,huang zhuang ~ hong kong
+d1_01491,transliteration,ying bei ting ~ in between
+d1_01492,other,unrelated
+d1_01493,other,unrelated
+d1_01494,transliteration,mei jue ~ major
+d1_01495,transliteration,dan ming ~ badminton
+d1_01496,other,biao yan unrelated
+d1_01497,transliteration,an an ~ elementary
+d1_01498,transliteration,su yin pao ~ swim properly
+d1_01499,transliteration,kan ta ni ~ cantonese
+d1_01500,transliteration,ge zheng ~ urgent
+d1_01501,transliteration,hong kong phonetic
+d1_01502,transliteration,sou xun ~ social
+d1_01503,other,unrelated
+d1_01504,transliteration,chuan shui ya ~ trust ai
+d1_01505,transliteration,one more button ~ wo men bu neng
+d1_01506,transliteration,sneria ~ scenario
+d1_01507,transliteration,shen me ~ smartphone
+d1_01508,other,unrelated
+d1_01509,transliteration,private series ~ technology privacy
+d1_01510,other,unrelated
+d1_01511,transliteration,yalmin ~ yao ming
+d1_01512,transliteration,tai xin ku ~ technical
+d1_01513,transliteration,ge ou shi ~ girls night
+d1_01514,transliteration,gigs ~ graduate students
+d1_01515,other,unrelated
+d1_01516,other,unrelated
+d1_01517,translation,1 = one (partial)
+d1_01518,transliteration,xia chuan ~ hard choice
+d1_01519,other,unrelated
+d1_01520,transliteration,huang kuang ~ hong kong
+d1_01521,transliteration,grages ~ graduate school
+d1_01522,transliteration,cod ~ court
+d1_01523,transliteration,shui ni pao ~ swim properly
+d1_01524,transliteration,mo huang ~ mcgrady
+d1_01525,transliteration,po chui ~ portrait
+d1_01526,other,unrelated
+d1_01527,transliteration,chuan zi ~ choice
+d1_01528,transliteration,niu rou ~ neural
+d1_01529,other,ge xia unrelated
+d1_01530,other,repetition loop
+d1_01531,other,ni unrelated
+d1_01532,other,unrelated
+d1_01533,transliteration,tiao ta ~ tutor
+d1_01534,transliteration,ti ti ~ tutor
+d1_01535,transliteration,diao lai ~ deadline
+d1_01536,other,zhan unrelated
+d1_01537,other,tiao unrelated
+d1_01538,transliteration,7 qie ~ chitchat
+d1_01539,transliteration,xin si tuan ~ system
+d1_01540,transliteration,kong kong ~ hong kong
+d1_01541,other,zhuan zhu unrelated
+d1_01542,transliteration,sem ti men ~ sentiment
+d1_01543,other,unrelated
+d1_01544,transliteration,you chuan ~ user
+d1_01545,other,unrelated
+d1_01546,transliteration,ying bi ting ~ in between
+d1_01547,other,pin pin unrelated
+d1_01548,translation,xue xiao ~ student (partial)
+d1_01549,other,xue xiao unrelated
+d1_01550,other,unrelated
+d1_01551,other,unrelated
+d1_01552,other,unrelated
+d1_01553,transliteration,feng kao ~ hong kong
+d1_01554,other,hallucination
+d1_01555,other,repetition loop
+d1_01556,transliteration,rou ba ~ robotics
+d1_01557,transliteration,hao e ~ hardware
+d1_01558,other,unrelated
+d1_01559,other,repetition loop
+d1_01560,other,unrelated
+d1_01561,transliteration,pei yue ~ paper
+d1_01562,other,zhe ci unrelated
+d1_01563,transliteration,ju ~ gym
+d1_01564,transliteration,ju men ~ gym
+d1_01565,other,unrelated
+d1_01566,transliteration,backman ~ badminton
+d1_01567,transliteration,sky board ~ basketball
+d1_01568,transliteration,guan ming ~ badminton
+d1_01569,other,repetition loop
+d1_01570,transliteration,ba ji bu ~ basketball
+d1_01571,other,unrelated
+d1_01572,other,unrelated
+d1_01573,transliteration,tai ne ~ talent
+d1_01574,other,unrelated
+d1_01575,transliteration,ni si ~ near sea
+d1_01576,transliteration,feng xin ~ fancy
+d1_01577,transliteration,ai de ~ idol
+d1_01578,other,peng you unrelated
+d1_01579,transliteration,lei ~ lay
+d1_01580,transliteration,yin er fang shi ~ uniforms
+d1_01581,transliteration,po cai ~ portrait
+d1_01582,other,hallucination loop
+d1_01583,other,unrelated
+d1_01584,transliteration,ai ai ~ AI
+d1_01585,transliteration,fa sheng zhe ~ passenger
+d1_01586,transliteration,di tai ~ data
+d1_01587,other,mei you unrelated
+d1_01588,other,unrelated
+d1_01589,transliteration,celf zhuan ka ~ self driving car
+d1_01590,transliteration,hai shuai ~ high standard
+d1_01591,other,unrelated
+d1_01592,other,unrelated
+d1_01593,other,unrelated
+d1_01594,transliteration,zhua back ~ drawback
+d1_01595,transliteration,shen me ~ smartphone
+d1_01596,transliteration,sha bing ~ smartphone
+d1_01597,transliteration,mu dao ~ model
+d1_01598,other,unrelated
+d1_01599,transliteration,pai ti ~ package
+d1_01600,other,unrelated
+d1_01601,other,unrelated
+d1_01602,transliteration,wo bu guo ~ block
+d1_01603,other,unrelated
+d1_01604,other,unrelated
+d1_01605,other,unrelated
+d1_01606,other,unrelated
+d1_01607,transliteration,dian yi ~ deadline
+d1_01608,other,liu unrelated
+d1_01609,other,unrelated
+d1_01610,transliteration,qi xian ~ chitchat
+d1_01611,transliteration,shan di ~ study
+d1_01612,transliteration,san tian man da ~ sentiment analysis
+d1_01613,other,hong unrelated
+d1_01614,other,unrelated
+d1_01615,transliteration,ying bi ting ~ in between
+d1_01616,other,unrelated
+d1_01617,other,unrelated
+d1_01618,other,unrelated
+d1_01619,transliteration,tagadee fang ~ zhao ge di fang
+d1_01620,other,zhe ge unrelated
+d1_01621,transliteration,feng kuang ~ hong kong
+d1_01622,other,mei guo unrelated
+d1_01623,transliteration,shu zi bai se ~ supervisor
+d1_01624,other,filler vs and a
+d1_01625,transliteration,shi bu shi bai se ~ supervisor
+d1_01626,transliteration,rou tie ~ robotics
+d1_01627,transliteration,gregis ~ graduate school
+d1_01628,transliteration,mei li ~ major
+d1_01629,transliteration,ke neng de kai zhan ~ communication
+d1_01630,translation,zui hou ~ final
+d1_01631,other,xun xi unrelated
+d1_01632,transliteration,10 ri ~ tennis
+d1_01633,transliteration,dao ming tian ~ badminton
+d1_01634,other,unrelated
+d1_01635,other,unrelated
+d1_01636,transliteration,bai ming pan ~ badminton
+d1_01637,other,ke neng unrelated
+d1_01638,other,unrelated
+d1_01639,transliteration,fan shi ~ fancy
+d1_01640,transliteration,mo gui ~ mcgrady
+d1_01641,transliteration,lei ya ~ lay up
+d1_01642,transliteration,kong dian ti ~ quantity
+d1_01643,transliteration,wan yi er ~ one year
+d1_01644,transliteration,kan ta ni ~ cantonese
+d1_01645,other,unrelated
+d1_01646,other,he ji unrelated
+d1_01647,other,unrelated
+d1_01648,transliteration,ai ai ~ AI
+d1_01649,transliteration,biao ~ build
+d1_01650,translation,zuo yi xie bu tong ~ make different
+d1_01651,other,mo xing = model
+d1_01652,other,unrelated
+d1_01653,transliteration,ka qiu ~ customer
+d1_01654,transliteration,xie huo ~ sell
+d1_01655,other,unrelated
+d1_01656,transliteration,xd hap ~ accident happen
+d1_01657,other,luo unrelated
+d1_01658,transliteration,ta mi ~ technic
+d1_01659,other,unrelated
+d1_01660,transliteration,mo tuo smartful ~ most smart phone
+d1_01661,transliteration,lu ying ~ group
+d1_01662,transliteration,wei ren ~ wind
+d1_01663,transliteration,mob app ~ mobile payments
+d1_01664,transliteration,meng yao ~ mall
+d1_01665,transliteration,mu bao pei men ~ mobile payment
+d1_01666,transliteration,sai ying ~ sign in
+d1_01667,other,unrelated
+d1_01668,transliteration,san tian man da ~ sentiment
+d1_01669,other,unrelated
+d1_01670,transliteration,ying bi tian ~ in between
+d1_01671,transliteration,thecert ~ third
+d1_01672,transliteration,feng kang ~ hong kong
+d1_01673,transliteration,shi hui ba ~ supervisor
+d1_01674,transliteration,shou shi an ~ software
+d1_01675,transliteration,ba shi die ~ basketball
+d1_01676,transliteration,su xun pao ~ swim properly
+d1_01677,transliteration,mo zhuang ~ mcgrady
+d1_01678,other,wo unrelated
+d1_01679,transliteration,e chan ~ urgent
+d1_01680,transliteration,yin te bie ~ interview
+d1_01681,transliteration,chuan xin ~ choice
+d1_01682,other,unrelated
+d1_01683,transliteration,ka si tu men ~ customer
+d1_01684,other,unrelated
+d1_01685,other,unrelated
+d1_01686,transliteration,mo tuo ~ most of people
+d1_01687,other,unrelated
+d1_01688,transliteration,meng ~ mall
+d1_01689,other,unrelated
+d1_01690,transliteration,pribo ~ privacy
+d1_01691,other,unrelated
+d1_01692,transliteration,ni ni ~ near sea
+d1_01693,transliteration,trish greedy ~ tracy mcgrady
+d1_01694,other,unrelated
+d1_01695,transliteration,le gu ~ logo
+d1_01696,transliteration,hong kong phonetic
+d1_01697,other,ji hui unrelated
+d1_01698,other,bian hua unrelated
+d1_01699,transliteration,mo tuo ~ most of people
+d1_01700,transliteration,ding yue neng li ~ deep learning
+d1_01701,transliteration,bu lang fei ~ blockchain
+d1_01702,transliteration,zan lia ~ sign in
+d1_01703,transliteration,fu ke ~ focus
+d1_01704,other,hui tou unrelated
+d1_01705,other,bu ting unrelated
+d1_01706,translation,ran hou ~ and (then)
+d1_01707,transliteration,tie tou ~ tutor
+d1_01708,transliteration,its also a fun ~ cha shao fan
+d1_01709,other,unrelated
+d1_01710,translation,so you will be able to ~ so we now start
+d1_01711,transliteration,da wang ~ dialogue
+d1_01712,transliteration,taxrate ~ dialogue
+d1_01713,other,du ge unrelated
+d1_01714,transliteration,xin qing ~ system
+d1_01715,transliteration,hong peng ~ hong kong
+d1_01716,transliteration,zheng ti men ~ sentiment
+d1_01717,other,unrelated
+d1_01718,other,unrelated
+d1_01719,transliteration,ying die ting ~ in between
+d1_01720,other,unrelated
+d1_01721,other,repetition loop
+d1_01722,other,unrelated
+d1_01723,transliteration,xing ge po ~ singapore
+d1_01724,other,unrelated
+d1_01725,transliteration,mei juan ~ major
+d1_01726,transliteration,rou ba ~ robotics
+d1_01727,transliteration,hao wei ~ hardware
+d1_01728,transliteration,shao fen er ~ software
+d1_01729,transliteration,tong hui kai sheng ~ communication
+d1_01730,other,unrelated
+d1_01731,transliteration,ben ming ~ badminton
+d1_01732,transliteration,bai ming tian ~ badminton
+d1_01733,other,repetition loop
+d1_01734,transliteration,bai ming pan ~ badminton
+d1_01735,transliteration,an an sheng ~ elementary
+d1_01736,transliteration,su lian pang bian ~ swim properly
+d1_01737,transliteration,tai lun ~ talent
+d1_01738,transliteration,kong dian ting ~ quantity
+d1_01739,transliteration,lou kou ~ local
+d1_01740,transliteration,shuo ke si ~ focus
+d1_01741,transliteration,she jiao ~ schedule
+d1_01742,other,hu xi unrelated
+d1_01743,transliteration,lang zhi ~ lunch talk
+d1_01744,transliteration,la qu tou ~ lunch talk
+d1_01745,other,unrelated
+d1_01746,transliteration,bian ~ build
+d1_01747,transliteration,wai si ~ make this
+d1_01748,other,unrelated
+d1_01749,other,men unrelated
+d1_01750,transliteration,xd ~ accident
+d1_01751,other,unrelated
+d1_01752,other,unrelated
+d1_01753,transliteration,xian mei you ~ simulate
+d1_01754,other,unrelated
+d1_01755,transliteration,tao pic ~ topic
+d1_01756,other,unrelated
+d1_01757,other,unrelated
+d1_01758,transliteration,gu shi ~ group
+d1_01759,other,unrelated
+d1_01760,transliteration,pritic ~ prediction
+d1_01761,other,ma unrelated
+d1_01762,other,pan unrelated
+d1_01763,other,unrelated
+d1_01764,transliteration,ke lai ~ collect
+d1_01765,other,an zi unrelated
+d1_01766,transliteration,san yi ~ sign in
+d1_01767,other,unrelated

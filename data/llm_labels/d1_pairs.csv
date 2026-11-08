@@ -1,0 +1,1769 @@
+pair_id,ref_side,out_side,n_occurrences,n_systems,cedict_match,labse_sim
+d1_00000,呃,uh,705,155,False,0.849
+d1_00001,嗯,um,362,143,False,0.726
+d1_00002,呃,um,228,135,False,0.704
+d1_00003,um,嗯,200,148,False,0.726
+d1_00004,um,呃,158,84,False,0.702
+d1_00005,哦,oh,107,107,True,0.904
+d1_00006,one year,玩意儿,96,77,False,0.255
+d1_00007,alipay,阿里佩,96,51,False,0.73
+d1_00008,the,的,89,89,False,0.894
+d1_00009,tell,聊,88,88,False,0.606
+d1_00010,嗯,and,72,67,False,0.472
+d1_00011,college um,colleague 呃,72,72,False,0.577
+d1_00012,uh,呃,70,70,False,0.849
+d1_00013,嗯,a,69,69,False,0.498
+d1_00014,peaceful,屁股,68,68,False,0.266
+d1_00015,function,方向,66,63,False,0.425
+d1_00016,呃,a,65,62,False,0.585
+d1_00017,那我呃嗯,now um,65,65,False,0.625
+d1_00018,leiden,来,62,62,False,0.47
+d1_00019,take,听,57,57,False,0.523
+d1_00020,its a,if 呃,57,57,False,0.621
+d1_00021,但是,then,56,56,False,0.547
+d1_00022,alipay,r d 配,53,30,False,0.361
+d1_00023,and,嗯,49,49,False,0.472
+d1_00024,deers,地儿,46,46,False,0.429
+d1_00025,chitchat,去 chat,46,46,False,0.741
+d1_00026,去,in,46,46,False,0.626
+d1_00027,呃,and,46,44,False,0.508
+d1_00028,conditioner,condition 来,43,43,False,0.55
+d1_00029,voice,会虽然,41,41,False,0.355
+d1_00030,big big,被被,41,41,False,0.296
+d1_00031,um view,嗯 real,41,41,False,0.425
+d1_00032,badminton,班 明 ton,40,20,False,0.572
+d1_00033,ocr,欧西啊,37,37,False,0.331
+d1_00034,ok,而且,37,37,False,0.524
+d1_00035,car,它,35,33,False,0.411
+d1_00036,part,泡,35,35,False,0.451
+d1_00037,cliff,地,35,35,False,0.373
+d1_00038,啊,ah,35,22,True,0.837
+d1_00039,book,布个,35,35,False,0.513
+d1_00040,one year,玩一人,34,34,False,0.431
+d1_00041,ai,应该,34,34,False,0.448
+d1_00042,呃,yeah,34,34,False,0.623
+d1_00043,pointer,point 还,33,33,False,0.65
+d1_00044,function,方便,33,33,False,0.469
+d1_00045,info,应付,32,32,False,0.331
+d1_00046,呃,uh we saw we saw the,32,32,False,0.341
+d1_00047,book,读个,31,31,False,0.621
+d1_00048,所以,but,31,31,False,0.564
+d1_00049,去,to,30,30,False,0.682
+d1_00050,ocr,欧西亚,30,30,False,0.439
+d1_00051,a smart phone,呃 smartphone,30,30,False,0.763
+d1_00052,function,安全,30,30,False,0.383
+d1_00053,graduate,各专业,29,29,False,0.467
+d1_00054,due,丢,28,28,False,0.478
+d1_00055,呀,ah,28,28,True,0.754
+d1_00056,accident,他 们 act 这 边 的,28,28,False,0.138
+d1_00057,hong kong,香港,28,14,False,0.862
+d1_00058,business,毕竟在,27,27,False,0.342
+d1_00059,one,一个,27,27,True,0.954
+d1_00060,games,干扫,27,27,False,0.29
+d1_00061,mainland,明天我们,27,27,False,0.244
+d1_00062,um um,呃呃,27,27,False,0.744
+d1_00063,build,并,26,26,False,0.386
+d1_00064,eastern,east 的,26,26,False,0.97
+d1_00065,logo,都够,26,26,False,0.191
+d1_00066,report,的泡了,25,25,False,0.231
+d1_00067,work,里面,25,25,False,0.438
+d1_00068,那我呃嗯,now,24,24,False,0.466
+d1_00069,new,你有,24,24,False,0.383
+d1_00070,辣,ah,23,23,False,0.413
+d1_00071,嗯我也觉得,whether,23,23,False,0.34
+d1_00072,third year,its cert 也,22,22,False,0.383
+d1_00073,opportunity,不听,22,22,False,0.263
+d1_00074,senior,新年,22,22,False,0.505
+d1_00075,就是,this is a,21,21,False,0.622
+d1_00076,work shop,我手,21,12,False,0.346
+d1_00077,line,来,21,21,False,0.455
+d1_00078,latte,老废,21,21,False,0.339
+d1_00079,third year,cert 也,21,21,False,0.393
+d1_00080,computer,从听的,21,21,False,0.296
+d1_00081,alipay,ollie 陪,21,21,False,0.549
+d1_00082,sandwiches,三个一确是,20,20,False,0.154
+d1_00083,computer,看听了,20,20,False,0.194
+d1_00084,去,been,20,20,False,0.628
+d1_00085,是,is,20,20,False,0.813
+d1_00086,嗯我也觉得,where do you 为 什 么,20,20,False,0.307
+d1_00087,所以这个,so you think the,20,20,False,0.6
+d1_00088,business,毕竟那时,20,20,False,0.284
+d1_00089,呃,um and,20,20,False,0.614
+d1_00090,normal,弄我,19,19,False,0.206
+d1_00091,part time,怕胀,19,19,False,0.223
+d1_00092,chain,确实,19,19,False,0.279
+d1_00093,的,the,19,19,False,0.894
+d1_00094,part,的,19,19,False,0.561
+d1_00095,candy crush,can 的 crowd,19,19,False,0.294
+d1_00096,major,美卓,18,10,False,0.469
+d1_00097,social,搜索的,18,18,False,0.439
+d1_00098,accident,x 的,18,11,False,0.366
+d1_00099,major,美卷,18,18,False,0.316
+d1_00100,badminton,当名单,18,18,False,0.199
+d1_00101,in case,因可以可以让,18,18,False,0.428
+d1_00102,apply,不来,18,18,False,0.295
+d1_00103,minded,卖 1 点,18,18,False,0.234
+d1_00104,one year,文艺,18,18,False,0.313
+d1_00105,swimming pool,分破,18,18,False,0.207
+d1_00106,chitchat,去 check,17,17,False,0.352
+d1_00107,fourth year,force 也,17,17,False,0.393
+d1_00108,ocr,o c 啊,17,17,False,0.573
+d1_00109,us,u s 的,17,17,False,0.658
+d1_00110,嗯,then um,17,17,False,0.53
+d1_00111,嗯,uh,17,15,False,0.849
+d1_00112,apply,出来,17,17,False,0.381
+d1_00113,嗯我也觉得,where do you know 为 什 么,17,17,False,0.271
+d1_00114,one year,万一,17,17,False,0.503
+d1_00115,就是,this is,16,16,False,0.717
+d1_00116,gym,去,16,16,False,0.26
+d1_00117,logo,过,16,16,False,0.192
+d1_00118,student,就认,16,16,False,0.344
+d1_00119,go,够,16,16,False,0.47
+d1_00120,its a,is 呃,16,16,False,0.769
+d1_00121,share,需要,16,16,False,0.343
+d1_00122,so,所,16,16,False,0.625
+d1_00123,situation,情况,15,15,False,0.878
+d1_00124,user,有时候,15,15,False,0.318
+d1_00125,minded,吗 1 点,15,15,False,0.312
+d1_00126,collect,课顶,15,15,False,0.377
+d1_00127,major,美决,15,15,False,0.484
+d1_00128,so,说,15,15,False,0.595
+d1_00129,china,中国,15,15,True,0.876
+d1_00130,a,呃,15,15,False,0.585
+d1_00131,hong kong,红矿,14,14,False,0.346
+d1_00132,所以我们现在开始,so were going to,14,14,False,0.512
+d1_00133,so,不懂,14,14,False,0.357
+d1_00134,outdoor,all the 找,14,14,False,0.442
+d1_00135,latte,老退,14,14,False,0.306
+d1_00136,mention,想到,13,13,False,0.518
+d1_00137,one year,玩意,13,13,False,0.293
+d1_00138,mall,默奈,13,13,False,0.441
+d1_00139,一个,you can,13,13,False,0.512
+d1_00140,time,团,13,13,False,0.437
+d1_00141,koala bear,扫阿拉北的吗,13,13,False,0.096
+d1_00142,pool,泡,13,13,False,0.542
+d1_00143,latte,辣菜,13,13,False,0.287
+d1_00144,so,这种,13,13,False,0.727
+d1_00145,dialogue,tax 或 者 dollar,13,13,False,0.43
+d1_00146,entry level,延迟带过,13,13,False,0.135
+d1_00147,so,的时候,13,13,False,0.551
+d1_00148,entry level,延吹带过,13,13,False,0.109
+d1_00149,hong kong,红空,12,12,False,0.398
+d1_00150,singapore,新加坡,12,12,True,0.929
+d1_00151,叉烧饭,its also fun,12,12,False,0.171
+d1_00152,dress formal,stress 我 们,12,12,False,0.249
+d1_00153,entry level,严肃,12,12,False,0.256
+d1_00154,in case,应该也是让,12,12,False,0.375
+d1_00155,but when we,把自然咪,12,12,False,0.19
+d1_00156,因为,in the in,12,12,False,0.579
+d1_00157,um its um um,嗯 is a 呃,12,12,False,0.721
+d1_00158,outdoor swimming pool,all the 招 式 info,12,12,False,0.158
+d1_00159,voice,movies 虽 然,12,12,False,0.42
+d1_00160,entry level,延续,12,12,False,0.254
+d1_00161,book,不格,12,12,False,0.361
+d1_00162,new,没有,12,12,False,0.501
+d1_00163,build,不用,12,12,False,0.295
+d1_00164,collect,课啊,12,12,False,0.277
+d1_00165,sports,包只,12,12,False,0.316
+d1_00166,schedule,sky 就,12,12,False,0.461
+d1_00167,department,地方,12,9,False,0.579
+d1_00168,badminton,单名词,12,6,False,0.255
+d1_00169,social,搜索,11,11,False,0.382
+d1_00170,senior,声音,11,11,False,0.396
+d1_00171,on computer,uncle 的,11,11,False,0.399
+d1_00172,opportunity,的,11,11,False,0.453
+d1_00173,exchange,x 宣,11,11,False,0.435
+d1_00174,neuralnetwork,net net roe 牛 肉 net work,11,11,False,0.469
+d1_00175,part,炮,11,11,False,0.384
+d1_00176,fancy,分析,11,11,False,0.339
+d1_00177,package,派给,11,11,False,0.488
+d1_00178,apply,回来,11,11,False,0.329
+d1_00179,sign in,三硬,11,11,False,0.281
+d1_00180,感觉还不错,can you have a tour of,10,10,False,0.174
+d1_00181,就是,just a,10,10,True,0.593
+d1_00182,children,球者,10,10,False,0.443
+d1_00183,就是,just,10,10,True,0.634
+d1_00184,computer,肯定是,10,10,False,0.169
+d1_00185,but when,把自然,10,10,False,0.297
+d1_00186,pool,泰国,10,10,False,0.316
+d1_00187,所以,right,10,10,False,0.507
+d1_00188,time,摊,10,10,False,0.38
+d1_00189,energy,各种,10,10,False,0.414
+d1_00190,debate,地被,10,10,False,0.362
+d1_00191,tell,要,10,10,False,0.528
+d1_00192,badminton,在名艇,10,5,False,0.338
+d1_00193,company,看不你,10,10,False,0.259
+d1_00194,topic,他 pack,10,10,False,0.357
+d1_00195,so,是,10,10,False,0.669
+d1_00196,elementary,安安可以,10,10,False,0.224
+d1_00197,那我呃,now,10,10,False,0.497
+d1_00198,quantity,空姐厅,10,10,False,0.261
+d1_00199,computer,更听的,10,10,False,0.257
+d1_00200,tennis,10 年,10,10,False,0.358
+d1_00201,badminton,白名腾,10,10,False,0.421
+d1_00202,strength,力量,10,10,True,0.89
+d1_00203,car accident,卡 x 等,10,10,False,0.29
+d1_00204,mobile payment,木板配面,10,10,False,0.214
+d1_00205,article,rt 口,10,10,False,0.415
+d1_00206,major,媒觉,10,9,False,0.451
+d1_00207,paper,配配,10,10,False,0.398
+d1_00208,situation,事情,10,10,False,0.69
+d1_00209,python,派森,9,9,False,0.492
+d1_00210,strength,箱子,9,9,False,0.299
+d1_00211,sandwiches,三位确实,9,9,False,0.185
+d1_00212,replace,批评,9,9,False,0.376
+d1_00213,sell,cl 的,9,9,False,0.423
+d1_00214,car,卡,9,9,False,0.546
+d1_00215,package,拍片,9,9,False,0.426
+d1_00216,感觉还不错,can you have a tool,9,9,False,0.205
+d1_00217,male friends,美好朋友,9,9,False,0.723
+d1_00218,business,毕竟是,9,9,False,0.335
+d1_00219,mobile payment,木板配门,9,9,False,0.2
+d1_00220,quantity,空姐廷,9,9,False,0.235
+d1_00221,budget,巴则,9,9,False,0.519
+d1_00222,topic,套别,9,9,False,0.411
+d1_00223,i will,还有,9,9,False,0.479
+d1_00224,peaceful,屁所,9,9,False,0.348
+d1_00225,user,有点,9,9,False,0.339
+d1_00226,那我,now,9,9,False,0.532
+d1_00227,ai,而已而已,9,9,False,0.29
+d1_00228,deers,第二,9,9,False,0.376
+d1_00229,postcard,post 来,9,9,False,0.614
+d1_00230,叉烧饭,class all fun,9,9,False,0.157
+d1_00231,voice,movie 虽 然,9,9,False,0.47
+d1_00232,叉烧饭,sounds so fun,9,9,False,0.138
+d1_00233,students,学生,9,9,True,0.942
+d1_00234,就是说,to say,9,9,False,0.636
+d1_00235,part time,趴趴,9,9,False,0.293
+d1_00236,awareness,的模样,9,9,False,0.242
+d1_00237,self driving car,自行卡,9,9,False,0.611
+d1_00238,big big data,bitdata 上 学 期,9,9,False,0.415
+d1_00239,quantity,空点体,9,9,False,0.375
+d1_00240,part time,炮汤,9,9,False,0.278
+d1_00241,business,必 须 ness,9,9,False,0.487
+d1_00242,senior,心裂,8,8,False,0.263
+d1_00243,deadline,得来,8,8,False,0.268
+d1_00244,mistake is because,但是,8,8,False,0.367
+d1_00245,找个,to our,8,8,False,0.381
+d1_00246,gym,居民,8,8,False,0.403
+d1_00247,female friends,女朋友,8,8,False,0.819
+d1_00248,badminton,班明坦,8,8,False,0.638
+d1_00249,local,豆口,8,8,False,0.391
+d1_00250,urgent,噩浅,8,8,False,0.432
+d1_00251,schedule,应该就,8,8,False,0.311
+d1_00252,我们不能,one more banana,8,8,False,0.237
+d1_00253,sign in,塞硬,8,8,False,0.331
+d1_00254,children,求者,8,8,False,0.405
+d1_00255,entry level,严肥大际,8,8,False,0.192
+d1_00256,fancy,fan 写,8,8,False,0.598
+d1_00257,badminton,单名单,8,8,False,0.209
+d1_00258,business,毕 竟 in,8,8,False,0.402
+d1_00259,you know,尽量,8,8,False,0.339
+d1_00260,对最后,like 所 以 我,8,8,False,0.399
+d1_00261,fancy,分岁,8,8,False,0.365
+d1_00262,ai,一爱,8,8,False,0.44
+d1_00263,a,而,8,8,False,0.738
+d1_00264,cliff,第一,8,8,False,0.309
+d1_00265,哦,uh,8,8,False,0.805
+d1_00266,也不辣,you know,8,8,False,0.185
+d1_00267,exchange,交换,8,8,True,0.924
+d1_00268,exchange students,交换学生,8,8,False,0.911
+d1_00269,hong kong,红考,8,8,False,0.449
+d1_00270,cantonese,看到的意思,8,8,False,0.282
+d1_00271,sandwiches,三维去世,8,8,False,0.198
+d1_00272,我们不能,we cant do it,8,8,False,0.808
+d1_00273,technic,技术,8,8,False,0.836
+d1_00274,deadline,电话,8,8,False,0.369
+d1_00275,major,美着,8,7,False,0.356
+d1_00276,badminton,单名看,8,8,False,0.177
+d1_00277,self awareness,要不过有意思,8,8,False,0.168
+d1_00278,passenger,派生者,8,8,False,0.483
+d1_00279,prediction,pritic 选,8,8,False,0.364
+d1_00280,entry level,远水,8,8,False,0.258
+d1_00281,dialogue,打 lock,7,7,False,0.311
+d1_00282,the third i remember third year,我 中 的 3rd,7,7,False,0.618
+d1_00283,hong kong,空靠,7,7,False,0.31
+d1_00284,gym,巨蛮,7,7,False,0.288
+d1_00285,badminton,斗名碳,7,7,False,0.225
+d1_00286,就是说,to do so,7,7,False,0.435
+d1_00287,quantity,空铁艇,7,7,False,0.172
+d1_00288,one year,玩一眼,7,7,False,0.398
+d1_00289,他他,todd,7,7,False,0.349
+d1_00290,make this decision,做这个事情,7,7,False,0.582
+d1_00291,mobile payments,木巴配粉丝,7,7,False,0.138
+d1_00292,mall,木耳,7,7,False,0.297
+d1_00293,mobile payment,目标配门,7,7,False,0.144
+d1_00294,alipay,ali 配,7,7,False,0.643
+d1_00295,你就可以,you can,7,7,False,0.809
+d1_00296,hong kong,轰轰,7,7,False,0.383
+d1_00297,part time,胖胖,7,7,False,0.226
+d1_00298,talk,头,7,7,False,0.447
+d1_00299,outdoor swimming pool,all the 水 应 付,7,7,False,0.377
+d1_00300,叉烧饭,它 s all fun,7,7,False,0.187
+d1_00301,so,受,7,7,False,0.573
+d1_00302,graduate school,各就各,7,7,False,0.286
+d1_00303,senior,心里,7,7,False,0.354
+d1_00304,所以,we,7,7,False,0.49
+d1_00305,呀有时候,ah 也 是,7,7,False,0.621
+d1_00306,rank,任何,7,7,False,0.382
+d1_00307,supervisor,是不白事,7,7,False,0.116
+d1_00308,badminton,backmint 的,7,7,False,0.523
+d1_00309,pointer,point 的,7,7,False,0.668
+d1_00310,mcgrady tracy mcgrady,什 么 grade,7,7,False,0.257
+d1_00311,lunch talk,浪质头,7,7,False,0.16
+d1_00312,dress formal,just 做 了,7,7,False,0.325
+d1_00313,a,诶,7,7,False,0.601
+d1_00314,car accident,开心等,7,7,False,0.2
+d1_00315,info,的 information,7,7,False,0.88
+d1_00316,sleepy,slowly 配,7,7,False,0.412
+d1_00317,officer,office 的,7,7,False,0.753
+d1_00318,function,帮钱,7,7,False,0.352
+d1_00319,low low standard,低标,7,7,False,0.727
+d1_00320,ai,也要,7,7,False,0.463
+d1_00321,focus,福克是,7,7,False,0.364
+d1_00322,tutor,球腾,7,7,False,0.288
+d1_00323,book,做,7,7,False,0.524
+d1_00324,user,幽色,7,7,False,0.321
+d1_00325,professor,不然,7,7,False,0.266
+d1_00326,rank,认可,7,7,False,0.515
+d1_00327,singapore,性感破,7,7,False,0.156
+d1_00328,lay up,雷阿,7,7,False,0.407
+d1_00329,schedule,许家就,7,7,False,0.335
+d1_00330,lunch talk,浪气头,7,7,False,0.128
+d1_00331,trust ai,穿色亚,7,7,False,0.35
+d1_00332,我们不能,well more but no,7,7,False,0.448
+d1_00333,他他,todd todd,7,7,False,0.517
+d1_00334,customer,卡德门,7,7,False,0.435
+d1_00335,entry level,安全的爱情,7,7,False,0.121
+d1_00336,applications,封锁,7,7,False,0.272
+d1_00337,consent,感性,7,7,False,0.442
+d1_00338,叉烧饭,its also all fun,6,6,False,0.101
+d1_00339,hardware,浩威尔,6,6,False,0.398
+d1_00340,neuralnetwork,nero 牛 肉,6,6,False,0.437
+d1_00341,technology privacy,才 可 能 有 些 provid 系,6,6,False,0.137
+d1_00342,fancy,烦心,6,6,False,0.566
+d1_00343,姚明,yao ming,6,6,False,0.633
+d1_00344,deadline,then 来,6,6,False,0.374
+d1_00345,michael,麦克力,6,6,False,0.72
+d1_00346,talk,套,6,6,False,0.406
+d1_00347,exchange student,extended 的,6,6,False,0.3
+d1_00348,graduate,拒绝,6,6,False,0.407
+d1_00349,mall,墨,6,6,False,0.329
+d1_00350,也不辣,you put ah,6,6,False,0.185
+d1_00351,awareness,的 willness,6,6,False,0.553
+d1_00352,latte,老座,6,6,False,0.312
+d1_00353,叉烧饭,它 是 all fun,6,6,False,0.181
+d1_00354,business,毕竟也是,6,6,False,0.301
+d1_00355,koala bear,koha 拉 杯 吗,6,6,False,0.379
+d1_00356,也不辣,to you but,6,6,False,0.251
+d1_00357,tutor,table 了,6,6,False,0.397
+d1_00358,deadline,本来,6,6,False,0.333
+d1_00359,chitchat,去欠的,6,6,False,0.256
+d1_00360,一些领队啊,学 的 应 对 ah,6,6,False,0.09
+d1_00361,near sea,你也是,6,6,False,0.195
+d1_00362,logo,很多过,6,6,False,0.197
+d1_00363,self awareness,staff 的 我 有 n s,6,6,False,0.193
+d1_00364,happen,还不,6,6,False,0.306
+d1_00365,neuralnetwork,natural natural 那 种,6,6,False,0.289
+d1_00366,wind,为你,6,6,False,0.371
+d1_00367,latte,打菜,6,6,False,0.397
+d1_00368,but when we,把 资 本 b,6,6,False,0.223
+d1_00369,final report,family 跑 了,6,6,False,0.299
+d1_00370,ok,而且也,6,6,False,0.468
+d1_00371,shout,笑成,6,6,False,0.509
+d1_00372,所以,but you,6,6,False,0.449
+d1_00373,base line,部分,6,6,False,0.269
+d1_00374,去,you,6,6,False,0.587
+d1_00375,but when,把这个,6,6,False,0.349
+d1_00376,alipay,r d 陪,6,6,False,0.371
+d1_00377,lecture room,dexon dexon 认,6,6,False,0.21
+d1_00378,马猜猜,ma chai chai,6,6,False,0.347
+d1_00379,因为,in a,6,6,False,0.559
+d1_00380,essay,a 球,6,6,False,0.474
+d1_00381,deadline,灯 light,6,6,False,0.373
+d1_00382,major,没劲,6,6,False,0.207
+d1_00383,homework,烘烤,6,6,False,0.321
+d1_00384,children,丘者,6,6,False,0.378
+d1_00385,alipay,阿莉陪,6,6,False,0.664
+d1_00386,叉烧饭,toss over fun,6,6,False,0.193
+d1_00387,dialogue,大王,6,6,False,0.319
+d1_00388,chitchat,区钱,6,6,False,0.297
+d1_00389,in between,硬碧听,6,6,False,0.204
+d1_00390,exchange student,一些学生,6,6,False,0.559
+d1_00391,就是美国学校的,just to make sure you shout out the,6,6,False,0.142
+d1_00392,hong kong,丰空,6,6,False,0.428
+d1_00393,bracket,本来可以,6,6,False,0.106
+d1_00394,badminton,白命腾,6,6,False,0.382
+d1_00395,elementary,mn 去,6,6,False,0.298
+d1_00396,near sea,尼尼斯,6,6,False,0.314
+d1_00397,accident happen,xm 的 hampem,6,6,False,0.208
+d1_00398,smart phone,什么风,6,6,False,0.23
+d1_00399,drawback,装备,6,6,False,0.407
+d1_00400,wind,韧的,6,6,False,0.402
+d1_00401,mobile payments,木板配置,6,6,False,0.211
+d1_00402,sign in,咱俩硬,6,6,False,0.23
+d1_00403,major,美著,6,6,False,0.442
+d1_00404,smartphone,什么要缝,6,6,False,0.142
+d1_00405,opportunity,不同的地方,5,5,False,0.38
+d1_00406,tutor,跳特,5,5,False,0.315
+d1_00407,generation,展示,5,5,False,0.374
+d1_00408,play basketball,做什么,5,5,False,0.265
+d1_00409,cantonese,肯定是,5,5,False,0.218
+d1_00410,uniforms,方式,5,5,False,0.423
+d1_00411,choice,圈意思,5,5,False,0.381
+d1_00412,呀有时候,啊 some,5,5,False,0.69
+d1_00413,idol,爱道,5,5,False,0.431
+d1_00414,lecture room,tax or tax or 认,5,5,False,0.192
+d1_00415,lunch talk,让我吃烫,5,5,False,0.26
+d1_00416,this,list 如,5,5,False,0.54
+d1_00417,所以,sorry,5,5,False,0.398
+d1_00418,electric,一辆去,5,5,False,0.338
+d1_00419,report,的 part,5,5,False,0.432
+d1_00420,due,地位,5,5,False,0.463
+d1_00421,level,带过,5,5,False,0.293
+d1_00422,business,毕竟那些,5,5,False,0.318
+d1_00423,function,ban 权,5,5,False,0.467
+d1_00424,voice,会让,5,5,False,0.415
+d1_00425,part,啊,5,5,False,0.318
+d1_00426,third years,3 年,5,5,False,0.798
+d1_00427,badminton,百命团,5,5,False,0.359
+d1_00428,michael jordan,micr 决 等,5,5,False,0.408
+d1_00429,function,完全,5,5,False,0.483
+d1_00430,找,the 一,5,5,False,0.499
+d1_00431,呃在,uh in,5,5,False,0.819
+d1_00432,shout,笑得,5,5,False,0.511
+d1_00433,pool,破破,5,5,False,0.333
+d1_00434,accident,他 们 act 是 个 人,5,5,False,0.164
+d1_00435,嗯我也觉得,where do you want,5,5,False,0.246
+d1_00436,take,挺,5,5,False,0.497
+d1_00437,india,因为啊,5,5,False,0.28
+d1_00438,work,我,5,5,False,0.437
+d1_00439,homework,红果,5,5,False,0.266
+d1_00440,one year,文艺是,5,5,False,0.302
+d1_00441,outdoor swimming pool,all the news 已 经,5,5,False,0.208
+d1_00442,expensive,贵,5,5,True,0.868
+d1_00443,company engineering,complaintgn2 里,5,5,False,0.248
+d1_00444,business,毕 竟 ness,5,5,False,0.489
+d1_00445,嗯,hmm,5,5,False,0.819
+d1_00446,也不辣,in your book,5,5,False,0.258
+d1_00447,computer engineering,统本来安全利益,5,5,False,0.241
+d1_00448,professor,的责任,5,5,False,0.407
+d1_00449,stress,的时间,5,5,False,0.37
+d1_00450,hong kong,昊空,5,5,False,0.41
+d1_00451,interesting,硬确定,5,5,False,0.254
+d1_00452,graduate,美女的,5,5,False,0.394
+d1_00453,the the court for tennis,的了寇寡,5,5,False,0.007
+d1_00454,就是说,to show us,5,5,False,0.295
+d1_00455,cantonese,看他你意思,5,5,False,0.098
+d1_00456,interview,英特别,5,5,False,0.409
+d1_00457,choice,趣,5,5,False,0.513
+d1_00458,build,被,5,5,False,0.409
+d1_00459,high standard,害羞,5,5,False,0.201
+d1_00460,scenario,sneria 有,5,5,False,0.335
+d1_00461,group,卤布,5,5,False,0.291
+d1_00462,technology privacy,才 更 大 的 一 些 prival 系,5,5,False,0.136
+d1_00463,idol,哦,5,5,False,0.253
+d1_00464,stress,准,4,4,False,0.285
+d1_00465,expensive,浅分,4,4,False,0.38
+d1_00466,exchange,的 extrace,4,4,False,0.396
+d1_00467,generation task,展示的贱,4,4,False,0.146
+d1_00468,hong kong,红扛,4,4,False,0.398
+d1_00469,supervisor,速度白声,4,4,False,0.152
+d1_00470,badminton,面团,4,4,False,0.298
+d1_00471,part time,帕太,4,4,False,0.386
+d1_00472,hong kong,的空空,4,4,False,0.333
+d1_00473,hong kong,红靠,4,4,False,0.365
+d1_00474,part time,帕趟,4,4,False,0.406
+d1_00475,他他,that,4,4,False,0.514
+d1_00476,entry level,延税,4,4,False,0.281
+d1_00477,一些领队,血 in do,4,4,False,0.211
+d1_00478,hardware,是好玩的,4,4,False,0.194
+d1_00479,ai,哎呀,4,3,False,0.56
+d1_00480,alipay,阿里培,4,2,False,0.674
+d1_00481,major,美女,4,3,False,0.396
+d1_00482,collect,课尔,4,4,False,0.396
+d1_00483,koala bear,kor ala 北,4,4,False,0.526
+d1_00484,college um,考考虑呃,4,4,False,0.355
+d1_00485,开始,kind of,4,4,False,0.441
+d1_00486,sandwiches,三维确实,4,4,False,0.189
+d1_00487,so,读,4,4,False,0.444
+d1_00488,accident,x ray 的,4,4,False,0.295
+d1_00489,quantity,content 听,4,4,False,0.447
+d1_00490,ai,而已啊,4,4,False,0.328
+d1_00491,所以这个,so it this,4,4,False,0.898
+d1_00492,pool,泰鸡,4,4,False,0.246
+d1_00493,business,毕竟,4,4,False,0.416
+d1_00494,lecture room,doctor doctor 认,4,4,False,0.34
+d1_00495,i will,来,4,4,False,0.555
+d1_00496,candy crush,can 的 quite,4,4,False,0.2
+d1_00497,latte,老贴,4,4,False,0.308
+d1_00498,outdoor swimming pool,all the 招 数 info,4,4,False,0.141
+d1_00499,major,美国,4,4,False,0.399
+d1_00500,part time,怕痛,4,4,False,0.298
+d1_00501,simulate,兴没有人,4,4,False,0.183
+d1_00502,computer,更平等的,4,4,False,0.374
+d1_00503,block,不懂,4,4,False,0.322
+d1_00504,history,一 three,4,4,False,0.36
+d1_00505,koala bear,口啊辣北海吗,4,4,False,0.069
+d1_00506,professor,那 些 group 还 是,4,4,False,0.17
+d1_00507,topic,潭,4,4,False,0.383
+d1_00508,outdoor,all 早,4,4,False,0.413
+d1_00509,姚明,yel ming,4,4,False,0.495
+d1_00510,rank,任可,4,4,False,0.465
+d1_00511,voice,吗会虽然,4,4,False,0.309
+d1_00512,pool,破了,4,4,False,0.255
+d1_00513,lunch talk,让试探,4,4,False,0.171
+d1_00514,i will,还,4,4,False,0.489
+d1_00515,opportunity,的不停地,4,4,False,0.396
+d1_00516,呃,that,4,4,False,0.521
+d1_00517,没有,you,4,4,False,0.475
+d1_00518,minded,mind 的,4,4,False,0.938
+d1_00519,koala bear,koharabe 吗,4,4,False,0.433
+d1_00520,neuralnetwork,net net world 纽 绕 net world,4,4,False,0.587
+d1_00521,one year,文艺儿,4,4,False,0.264
+d1_00522,python,拍摄,4,4,False,0.301
+d1_00523,opportunity,的不停的进行,4,4,False,0.34
+d1_00524,嗯,mm,4,4,False,0.415
+d1_00525,business,毕 竟 nes,4,4,False,0.401
+d1_00526,deadline,灯来,4,4,False,0.295
+d1_00527,entry level,延续大家给我,4,4,False,0.049
+d1_00528,expensive,便宜,4,4,False,0.74
+d1_00529,tutor,挑战,4,4,False,0.347
+d1_00530,tell,那,4,4,False,0.478
+d1_00531,sentiment analysis,生体满大的心思,4,4,False,0.462
+d1_00532,third i,sir 而,4,4,False,0.489
+d1_00533,apply,都拍,4,4,False,0.354
+d1_00534,hardware,好多的,4,4,False,0.23
+d1_00535,supervisor,是会买水,4,4,False,0.195
+d1_00536,undergraduate,的我,4,4,False,0.265
+d1_00537,basketball,白水泡,4,4,False,0.306
+d1_00538,badminton,白米的,4,4,False,0.357
+d1_00539,badminton,白名词,4,4,False,0.336
+d1_00540,swim properly,苏林炮本里,4,4,False,0.166
+d1_00541,mcgrady tracy mcgrady,墨装丁,4,4,False,0.124
+d1_00542,schedule,手机感就,4,4,False,0.205
+d1_00543,share,所以要,4,4,False,0.286
+d1_00544,make this decision,没必须提醒,4,4,False,0.242
+d1_00545,generation,镜头中,4,4,False,0.293
+d1_00546,hardware,哈薇,4,4,False,0.383
+d1_00547,他他,todd how,4,4,False,0.308
+d1_00548,the part,的盼,4,4,False,0.408
+d1_00549,work,事,4,4,True,0.619
+d1_00550,data driver,被 他 drive,4,4,False,0.441
+d1_00551,deep learning,点满力,4,4,False,0.199
+d1_00552,tutor,跳舆,3,3,False,0.227
+d1_00553,final,发一道,3,3,False,0.363
+d1_00554,entry level,严税,3,3,False,0.303
+d1_00555,entry level,n3 加 入 我,3,3,False,0.304
+d1_00556,hong kong,风空,3,3,False,0.348
+d1_00557,accident happen,x 的 happy,3,3,False,0.355
+d1_00558,对然后当时,and then,3,3,False,0.701
+d1_00559,tutor,跳跳,3,3,False,0.249
+d1_00560,exchange,的 xchange,3,3,False,0.742
+d1_00561,hong kong,空空,3,3,False,0.329
+d1_00562,syntax,平常,3,3,False,0.386
+d1_00563,apply,快,3,3,False,0.356
+d1_00564,graduate school,规矩,3,3,False,0.229
+d1_00565,part time,怕汤,3,3,False,0.249
+d1_00566,awareness,的利用逆思,3,3,False,0.374
+d1_00567,所以这个,so it the,3,3,False,0.858
+d1_00568,lunch talk,老师的,3,3,False,0.294
+d1_00569,personalities,东西,3,3,False,0.45
+d1_00570,alipay,r c 配,3,3,False,0.338
+d1_00571,badminton,班明天,3,2,False,0.273
+d1_00572,neuralnetwork,narrow 牛 肉 network,3,3,False,0.485
+d1_00573,michael jordan,my culture 等,3,3,False,0.259
+d1_00574,lay up,类伤,3,3,False,0.222
+d1_00575,lunch talk,让他,3,3,False,0.13
+d1_00576,happen,还要喷,3,3,False,0.216
+d1_00577,mall,默尔,3,3,False,0.523
+d1_00578,mainland,明天他们,3,3,False,0.242
+d1_00579,pre,摔,3,3,False,0.388
+d1_00580,呃,uh we saw the,3,3,False,0.439
+d1_00581,computer,country 的,3,3,False,0.454
+d1_00582,chain,虽然,3,3,False,0.214
+d1_00583,exchange,x 院,3,3,False,0.415
+d1_00584,alipay,ollie 配,3,3,False,0.533
+d1_00585,opportunity,不听听,3,3,False,0.22
+d1_00586,girls,个,3,3,False,0.465
+d1_00587,book,读,3,3,False,0.641
+d1_00588,company engineering,complain 去 年 而 运,3,3,False,0.281
+d1_00589,due,地流,3,3,False,0.432
+d1_00590,accident happen,x 能 还 要 不 然,3,3,False,0.27
+d1_00591,india,英语啊,3,3,False,0.431
+d1_00592,voice,不会虽然,3,3,False,0.254
+d1_00593,part,创造,3,3,False,0.406
+d1_00594,in case,你可以去去去你,3,3,False,0.167
+d1_00595,tony,朋友,3,3,False,0.397
+d1_00596,tutor,跳舞台,3,3,False,0.252
+d1_00597,on computer,im country 的,3,3,False,0.48
+d1_00598,嗯我也觉得,where do you want 为 什 么,3,3,False,0.229
+d1_00599,monkeys,忙 case,3,3,False,0.264
+d1_00600,weekend,we can 的,3,3,False,0.382
+d1_00601,lunch talk,让我吃头,3,3,False,0.247
+d1_00602,badminton,但明天,3,3,False,0.112
+d1_00603,part time,泡汤,3,3,False,0.325
+d1_00604,neuralnetwork,net net world 纽 绕 network,3,3,False,0.661
+d1_00605,hong kong,宏康,3,3,False,0.601
+d1_00606,one year,万一人,3,3,False,0.484
+d1_00607,minded,mind 也,3,3,False,0.797
+d1_00608,exchange,x 炫,3,3,False,0.392
+d1_00609,um view,嗯 we you,3,3,False,0.425
+d1_00610,嗯我也觉得,why do you know,3,3,False,0.269
+d1_00611,outdoor swimming pool,all the time 全 部,3,3,False,0.29
+d1_00612,part time,趴趟,3,3,False,0.421
+d1_00613,major,没解了,3,3,False,0.171
+d1_00614,michael jordan,麦克杰尔登,3,3,False,0.715
+d1_00615,low low standard,低标准,3,3,False,0.855
+d1_00616,python,派生,3,3,False,0.339
+d1_00617,opportunity,不停地,3,3,False,0.321
+d1_00618,final,翻拱我,3,3,False,0.154
+d1_00619,opportunity,的朋友,3,3,False,0.465
+d1_00620,program,学生,3,3,False,0.434
+d1_00621,third year,the sir 也,3,3,False,0.433
+d1_00622,找个地方,dagger d fung,3,3,False,0.159
+d1_00623,hardware,哈尾,3,3,False,0.39
+d1_00624,compare to um,可以配到,3,3,False,0.359
+d1_00625,portrait,破垂的,3,3,False,0.441
+d1_00626,you need to have um to dress formal,你也有没有去做的,3,3,False,0.245
+d1_00627,self,的 celd,3,3,False,0.351
+d1_00628,most of people have smart phone,摩 托 批 判 hx marvel,3,3,False,0.166
+d1_00629,smartphone,什么风,3,3,False,0.223
+d1_00630,block chain,补奏的特色,3,3,False,0.088
+d1_00631,所以我们现在开始,so we will,3,3,False,0.652
+d1_00632,tennis,10 月,3,3,False,0.322
+d1_00633,olympic games,我 练 个 gams,3,3,False,0.226
+d1_00634,you need to have um to dress formal,我们也有点想做,3,3,False,0.221
+d1_00635,sell,教,3,3,False,0.551
+d1_00636,why why did you come to hong kong,外地去看不出黄康,3,3,False,0.305
+d1_00637,software,收费人,3,3,False,0.308
+d1_00638,找个地方,dagger d vong,3,3,False,0.2
+d1_00639,就是说,to this wall,3,3,False,0.244
+d1_00640,computer engineering,根 本 的 安 全 nearing,2,2,False,0.27
+d1_00641,professor,会做,2,2,False,0.379
+d1_00642,exchange,的 extremes,2,2,False,0.296
+d1_00643,对最后就回到这里,its like so youll just wait out there,2,2,False,0.281
+d1_00644,uniforms,访问,2,2,False,0.299
+d1_00645,make different uh,比较多,2,2,False,0.396
+d1_00646,optimization,我的帮助,2,2,False,0.322
+d1_00647,entry level,延续待会,2,2,False,0.181
+d1_00648,叉烧饭,its all fun,2,2,False,0.164
+d1_00649,他们就要,they will,2,2,False,0.782
+d1_00650,electric engineering,一辈子统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统统,2,2,False,0.054
+d1_00651,project,工作,2,2,False,0.611
+d1_00652,expensive,浪漫,2,2,False,0.45
+d1_00653,research,的设计,2,2,False,0.487
+d1_00654,generation,展览,2,2,False,0.361
+d1_00655,electric engineering,一辈子统续捏,2,2,False,0.17
+d1_00656,badminton,单明屯,2,1,False,0.308
+d1_00657,就是说,to this world,2,2,False,0.283
+d1_00658,work shop,角色,2,2,False,0.296
+d1_00659,choice,chore 意 思,2,2,False,0.4
+d1_00660,tutor,丢台,2,2,False,0.244
+d1_00661,interesting,确定,2,2,False,0.342
+d1_00662,badminton,单名屯,2,1,False,0.247
+d1_00663,tennis,10 一,2,2,False,0.348
+d1_00664,corey,可以,2,2,False,0.344
+d1_00665,quantity,空铁厅,2,2,False,0.193
+d1_00666,scenario,snerry 有,2,1,False,0.343
+d1_00667,所以我们现在开始,so were gonna,2,2,False,0.491
+d1_00668,exchange student,extantue 的 目,2,2,False,0.288
+d1_00669,hardware,浩威,2,2,False,0.395
+d1_00670,system,系统,2,2,True,0.932
+d1_00671,major,美姐,2,2,False,0.397
+d1_00672,badminton,白美男,2,2,False,0.341
+d1_00673,happen,要不然,2,2,False,0.379
+d1_00674,开始,have to,2,2,False,0.454
+d1_00675,dress formal,stress for 了,2,2,False,0.229
+d1_00676,entry level,严粹,2,2,False,0.216
+d1_00677,deers,地而,2,2,False,0.404
+d1_00678,topic,他 pek,2,2,False,0.378
+d1_00679,没有,the,2,2,False,0.473
+d1_00680,major,没决,2,1,False,0.299
+d1_00681,ai,诶 i,2,2,False,0.707
+d1_00682,natural language,n s o 人 家 的 question,2,2,False,0.381
+d1_00683,focus,full 可 是,2,2,False,0.33
+d1_00684,opportunity,的 activity,2,2,False,0.459
+d1_00685,student,就认识,2,2,False,0.38
+d1_00686,apply,他,2,2,False,0.339
+d1_00687,美国,make 过,2,2,False,0.392
+d1_00688,badminton,本名的,2,2,False,0.29
+d1_00689,near sea,是 n t u c,2,2,False,0.341
+d1_00690,quantity,空姐前,2,2,False,0.188
+d1_00691,koala bear,口阿拉北,2,2,False,0.32
+d1_00692,elegantly,i like 这,2,2,False,0.344
+d1_00693,its a,is 啊,2,2,False,0.716
+d1_00694,pool,破,2,2,False,0.355
+d1_00695,report,的怕,2,2,False,0.397
+d1_00696,accident,他 们 action 了,2,2,False,0.227
+d1_00697,a smart phone,啊 smartphone,2,2,False,0.754
+d1_00698,go hiking,够海铃鸡,2,2,False,0.156
+d1_00699,outdoor swimming pool,all the time 随 于 复,2,2,False,0.224
+d1_00700,one year,玩业而,2,2,False,0.353
+d1_00701,book,布格,2,2,False,0.502
+d1_00702,software,soulful 的,2,2,False,0.426
+d1_00703,koala bear,koha ala bayer 吗,2,2,False,0.313
+d1_00704,dialogue,tax 和 rentals,2,2,False,0.235
+d1_00705,book,不隔,2,2,False,0.354
+d1_00706,mcgrady tracy mcgrady,macrady 吹 死 你 macrady,2,2,False,0.726
+d1_00707,mcgrady tracy mcgrady,macrady 吹 牛 macrady,2,2,False,0.733
+d1_00708,logo,都 go,2,2,False,0.289
+d1_00709,chain,现在,2,2,False,0.37
+d1_00710,sports,食物好吃,2,2,False,0.35
+d1_00711,voice,也虽然,2,2,False,0.35
+d1_00712,computer,看听色,2,2,False,0.183
+d1_00713,graduate school,各种就是过后,2,2,False,0.218
+d1_00714,badminton,帮名额,2,2,False,0.236
+d1_00715,language,男伟,2,2,False,0.406
+d1_00716,size,赛士,2,2,False,0.376
+d1_00717,badminton,在民灿,2,1,False,0.332
+d1_00718,badminton,帮名领域,2,2,False,0.294
+d1_00719,shop,双,2,1,False,0.412
+d1_00720,simulate,simi 我 的,2,2,False,0.532
+d1_00721,smartphone,smart 封,2,2,False,0.623
+d1_00722,block,做,2,2,False,0.396
+d1_00723,chain,是有,2,2,False,0.271
+d1_00724,mainland china,明 天 他 们 try 来,2,2,False,0.204
+d1_00725,badminton,帮名痕,2,2,False,0.242
+d1_00726,叉烧饭,超 超 fun,2,2,False,0.296
+d1_00727,badminton,在民态,2,1,False,0.321
+d1_00728,ocr,欧习啊,2,2,False,0.364
+d1_00729,也不辣,to you,2,2,False,0.199
+d1_00730,graduate school,各个,2,2,False,0.294
+d1_00731,badminton,在名店,2,1,False,0.169
+d1_00732,fancy,烦死,2,2,False,0.453
+d1_00733,company engineering,complain 去 年 而 人,2,2,False,0.303
+d1_00734,part time,怕躺,2,2,False,0.262
+d1_00735,tony,通力,2,2,False,0.323
+d1_00736,exchange,的,2,2,False,0.394
+d1_00737,undergraduate,的 graduate,2,2,False,0.829
+d1_00738,badminton,在名天,2,1,False,0.277
+d1_00739,quantity,content 提,2,2,False,0.568
+d1_00740,business,busy 的,2,2,False,0.636
+d1_00741,big big,会被被,2,2,False,0.278
+d1_00742,professor,那 prepare,2,2,False,0.312
+d1_00743,debate,这边,2,2,False,0.271
+d1_00744,um its um um,嗯 is 呃 呃,2,2,False,0.711
+d1_00745,report,的跑,2,2,False,0.419
+d1_00746,games,干脆,2,2,False,0.294
+d1_00747,monkeys,忙 的 case,2,2,False,0.221
+d1_00748,part,报,2,2,False,0.495
+d1_00749,essay,月月月月月月月月,2,2,False,0.244
+d1_00750,professor,那 种 group 还 是,2,2,False,0.19
+d1_00751,topic,兔肥,2,2,False,0.295
+d1_00752,sleepy,丝立陪,2,2,False,0.329
+d1_00753,koala bear,口啊辣北,2,2,False,0.139
+d1_00754,india,因为,2,2,False,0.353
+d1_00755,utility,体,2,2,False,0.353
+d1_00756,cliff,低,2,2,False,0.333
+d1_00757,也不辣,you buy,2,2,False,0.252
+d1_00758,badminton,backman 等,2,2,False,0.446
+d1_00759,happen,下一个盆,2,2,False,0.172
+d1_00760,final,find 了,2,2,False,0.487
+d1_00761,logo,工,2,2,False,0.371
+d1_00762,report,的泡,2,2,False,0.327
+d1_00763,lunch talk,浪质的,2,2,False,0.174
+d1_00764,mall,默论,2,2,False,0.398
+d1_00765,quantity,空姐体,2,2,False,0.259
+d1_00766,budget,八卷,2,2,False,0.256
+d1_00767,computer,看听的,2,2,False,0.251
+d1_00768,business,毕竟应该是,2,2,False,0.262
+d1_00769,um view,呃 real,2,2,False,0.444
+d1_00770,simulate,similar 的,2,2,False,0.622
+d1_00771,company engineering,complain to 年 轮,2,2,False,0.256
+d1_00772,neuralnetwork,net net 肉 牛 肉 net work,2,2,False,0.48
+d1_00773,computer,看 听 听 the,2,2,False,0.297
+d1_00774,in case,因可而成因为,2,2,False,0.483
+d1_00775,spark point,smartp 轮,2,2,False,0.357
+d1_00776,senior,same 也,2,2,False,0.43
+d1_00777,report,的跑了,2,2,False,0.314
+d1_00778,very,很,2,2,False,0.901
+d1_00779,but when we,把自然离,2,2,False,0.226
+d1_00780,in case,因可以这也是让,2,2,False,0.355
+d1_00781,but when we,把 自 然 v,2,2,False,0.238
+d1_00782,dialogue,tax 的 人 体 大 陆,2,2,False,0.145
+d1_00783,one year,玩意人,2,2,False,0.273
+d1_00784,awareness,的 will miss,2,2,False,0.28
+d1_00785,car,看,2,2,False,0.468
+d1_00786,company engineering,complaintgn2 领 域,2,2,False,0.306
+d1_00787,technic,技巧,2,2,False,0.659
+d1_00788,generation,年代,2,2,False,0.659
+d1_00789,problem language,状况的难归,2,2,False,0.413
+d1_00790,cantonese,看他那意思,2,2,False,0.082
+d1_00791,hong kong,红扣,2,2,False,0.36
+d1_00792,problem language,可能难归,2,2,False,0.24
+d1_00793,senior,心灵,2,2,False,0.401
+d1_00794,thats the reason,那是原因,2,2,False,0.807
+d1_00795,function,方式,2,2,False,0.514
+d1_00796,所以我们现在开始,so we are going to,2,2,False,0.689
+d1_00797,hong kong,烘空,2,2,False,0.343
+d1_00798,lecture room,daxxern 的,2,2,False,0.329
+d1_00799,alipay,阿里沛,2,1,False,0.717
+d1_00800,ill say its like a mistake,liphone 还 有 一 个 mixtake,2,2,False,0.183
+d1_00801,tell,教,2,2,True,0.596
+d1_00802,dialogue,大 walk,2,2,False,0.393
+d1_00803,chitchat,区别,2,2,False,0.355
+d1_00804,sentiment analysis,生体满大的事情,2,2,False,0.2
+d1_00805,interesting,硬确实定,2,2,False,0.223
+d1_00806,singapore,性感破了,2,2,False,0.126
+d1_00807,badminton,带名词,2,1,False,0.266
+d1_00808,social,搜射,2,2,False,0.356
+d1_00809,make this decision,没必死的事情,2,2,False,0.135
+d1_00810,accident happen,xden 开 玩 笑,2,2,False,0.402
+d1_00811,mention,用的,2,2,False,0.501
+d1_00812,accident happen,s10 它 本 来,2,2,False,0.168
+d1_00813,the the court,的 了 cod,2,2,False,0.38
+d1_00814,姚明,yall mean,2,2,False,0.326
+d1_00815,alipay,害力配,2,2,False,0.26
+d1_00816,就是,just is,2,2,False,0.719
+d1_00817,neuralnetwork,nerro nero nero nero 然 后,2,2,False,0.381
+d1_00818,final,发动,2,2,False,0.367
+d1_00819,tutor,跳舞特,2,2,False,0.346
+d1_00820,stress,近,2,2,False,0.381
+d1_00821,hong kong,航空,2,2,False,0.306
+d1_00822,gym,劲门,2,2,False,0.36
+d1_00823,yeah,呀,2,2,False,0.64
+d1_00824,badminton,当明天,2,2,False,0.162
+d1_00825,block chain,补套,2,2,False,0.271
+d1_00826,badminton,代名谭,2,1,False,0.215
+d1_00827,smart phone,什么方法,2,2,False,0.198
+d1_00828,tutor,球腿,2,2,False,0.263
+d1_00829,stress,大,2,2,False,0.322
+d1_00830,badminton,带名带,2,1,False,0.349
+d1_00831,master,吗,2,2,False,0.295
+d1_00832,lunch talk,拉去头,2,2,False,0.203
+d1_00833,trust ai,穿谁呀,2,2,False,0.353
+d1_00834,嗯,then,2,2,False,0.41
+d1_00835,smart phone,什么部分,2,2,False,0.207
+d1_00836,ai,也,2,2,False,0.637
+d1_00837,smart phone,什么好朋友,2,1,False,0.284
+d1_00838,electric engineering,一辈子统统统统统统统统,1,1,False,0.104
+d1_00839,make sense,美食的,1,1,False,0.341
+d1_00840,electric engineering,一辆续约,1,1,False,0.208
+d1_00841,badminton,斗名谭,1,1,False,0.314
+d1_00842,就是说,to do this,1,1,False,0.392
+d1_00843,self awareness,社交部的理由,1,1,False,0.189
+d1_00844,make this decision,做的事情,1,1,False,0.339
+d1_00845,所以我们现在开始,so were now going to,1,1,False,0.654
+d1_00846,就是美国学校的,is to learn the,1,1,False,0.42
+d1_00847,找个,to a,1,1,False,0.43
+d1_00848,我们不能,one more,1,1,False,0.371
+d1_00849,就是美国学校的,just to make sure to learn the,1,1,False,0.309
+d1_00850,technical,的技术,1,1,False,0.859
+d1_00851,girls night,个失败,1,1,False,0.347
+d1_00852,favourite foods,好好的食物,1,1,False,0.689
+d1_00853,graduate students,绮丽的学生,1,1,False,0.657
+d1_00854,compare to um,可以说出,1,1,False,0.289
+d1_00855,talk,的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的,1,1,False,0.0
+d1_00856,final,翻了我,1,1,False,0.149
+d1_00857,tony,套你,1,1,False,0.316
+d1_00858,computer engineering,根本的按铃铃,1,1,False,0.103
+d1_00859,size,再次,1,1,False,0.378
+d1_00860,hong kong,空间,1,1,False,0.371
+d1_00861,stress,深,1,1,False,0.365
+d1_00862,tell,找,1,1,False,0.535
+d1_00863,所以我们现在开始,so were just going to,1,1,False,0.554
+d1_00864,dialogue,打到,1,1,False,0.303
+d1_00865,book,都隔,1,1,False,0.364
+d1_00866,hong kong,黄空,1,1,False,0.418
+d1_00867,why why did you come to hong kong,为什么去看出香港,1,1,False,0.711
+d1_00868,hong kong,宫康,1,1,False,0.551
+d1_00869,找个地方,like a d phone,1,1,False,0.223
+d1_00870,singapore,星格破了,1,1,False,0.285
+d1_00871,对最后就回到这里,do it without the lead,1,1,False,0.052
+d1_00872,major,梅卷,1,1,False,0.25
+d1_00873,university,univers 的 地,1,1,False,0.574
+d1_00874,apply,去卷,1,1,False,0.446
+d1_00875,graduate,佛云,1,1,False,0.303
+d1_00876,hardware,浩尾,1,1,False,0.35
+d1_00877,final,的朋友,1,1,False,0.468
+d1_00878,gym,拒络,1,1,False,0.285
+d1_00879,female friends,人家朋友,1,1,False,0.753
+d1_00880,too risky,托尔斯基,1,1,False,0.26
+d1_00881,就是说,just,1,1,False,0.493
+d1_00882,badminton,白命弹,1,1,False,0.45
+d1_00883,near sea,是 nesc,1,1,False,0.317
+d1_00884,fancy,方便,1,1,False,0.484
+d1_00885,mcgrady tracy mcgrady,马 克 里 的 tracing 马 克 里 的,1,1,False,0.676
+d1_00886,part time,帕套,1,1,False,0.351
+d1_00887,local,斗口,1,1,False,0.412
+d1_00888,self awareness,社交社会而已,1,1,False,0.352
+d1_00889,urgent,噩浅的,1,1,False,0.52
+d1_00890,schedule,悬就,1,1,False,0.339
+d1_00891,schedule,是该就,1,1,False,0.295
+d1_00892,lunch talk,让人吃套,1,1,False,0.322
+d1_00893,you,因为,1,1,False,0.529
+d1_00894,car accident,coxie 等,1,1,False,0.317
+d1_00895,accident happen,x 的 habond,1,1,False,0.25
+d1_00896,most of people have smart phone,魔术人和魔术人的心理,1,1,False,0.169
+d1_00897,project,的,1,1,False,0.446
+d1_00898,ocr,我洗腰,1,1,False,0.126
+d1_00899,entry level,延税那个我,1,1,False,0.135
+d1_00900,entry level,安吹戴我,1,1,False,0.06
+d1_00901,mobile payments,膜巴配粉丝,1,1,False,0.152
+d1_00902,mall,默默,1,1,False,0.399
+d1_00903,mobile payment,木杠培门,1,1,False,0.113
+d1_00904,alipay,阿里陪,1,1,False,0.619
+d1_00905,sign in,再三印,1,1,False,0.43
+d1_00906,project,特加根本,1,1,False,0.297
+d1_00907,technology privacy,彩 控 团 的 一 些 provis,1,1,False,0.148
+d1_00908,um,恩,1,1,False,0.67
+d1_00909,opportunity,的感觉,1,1,False,0.498
+d1_00910,senior,心理,1,1,False,0.396
+d1_00911,tutor,球层,1,1,False,0.24
+d1_00912,exchange,的 x games,1,1,False,0.37
+d1_00913,in between,盐比均,1,1,False,0.254
+d1_00914,make sense,美丝,1,1,False,0.344
+d1_00915,mistake is because,但,1,1,False,0.379
+d1_00916,department,d power 文,1,1,False,0.369
+d1_00917,electric engineering,一段时间去练习,1,1,False,0.179
+d1_00918,supervisor,事不完整,1,1,False,0.206
+d1_00919,gym,剧 ment,1,1,False,0.43
+d1_00920,basketball,basky 帮,1,1,False,0.56
+d1_00921,badminton,斑明盘,1,1,False,0.269
+d1_00922,elementary school,安门学校,1,1,False,0.693
+d1_00923,one year,玩一页,1,1,False,0.376
+d1_00924,interview,音特别,1,1,False,0.364
+d1_00925,work shop,博首,1,1,False,0.31
+d1_00926,ai,诶诶,1,1,False,0.636
+d1_00927,choice,图案意思,1,1,False,0.357
+d1_00928,make this decision,做的,1,1,False,0.368
+d1_00929,situation,情况一下,1,1,False,0.599
+d1_00930,accident happen,x 的 cop,1,1,False,0.262
+d1_00931,most of people have smart phone,很多人都会有的,1,1,False,0.502
+d1_00932,neuralnetwork,nerve row 牛 肉 nerve row,1,1,False,0.603
+d1_00933,ocr,oc 啊,1,1,False,0.726
+d1_00934,entry level,延税带给我,1,1,False,0.114
+d1_00935,mall,木画,1,1,False,0.343
+d1_00936,verification,而 fusion,1,1,False,0.365
+d1_00937,technology privacy,彩 空 套 的 一 些 prology,1,1,False,0.17
+d1_00938,chitchat,期监,1,1,False,0.307
+d1_00939,electric engineering,一辈子终于来,1,1,False,0.202
+d1_00940,supervisor,速度坏是,1,1,False,0.125
+d1_00941,generation,决定,1,1,False,0.451
+d1_00942,neuralnetwork,nero 牛 肉 nero,1,1,False,0.378
+d1_00943,opportunity,的普通体,1,1,False,0.415
+d1_00944,expensive,浅,1,1,False,0.506
+d1_00945,generation task,展示的贪选,1,1,False,0.217
+d1_00946,the third i remember third year,我写的,1,1,False,0.322
+d1_00947,一些领队,血 indoya,1,1,False,0.282
+d1_00948,hardware,号位,1,1,False,0.297
+d1_00949,self awareness,社 交 部 的 无 聊 ness,1,1,False,0.263
+d1_00950,hong kong,的风空,1,1,False,0.336
+d1_00951,choice,驱逸,1,1,False,0.374
+d1_00952,neuralnetwork,牛肉,1,1,False,0.224
+d1_00953,deep learning,顶纳,1,1,False,0.297
+d1_00954,technology privacy,彩 空 套 的 一 些 provid 系,1,1,False,0.042
+d1_00955,focus,复刻的,1,1,False,0.341
+d1_00956,professor,会比赛,1,1,False,0.331
+d1_00957,hong kong,空旷,1,1,False,0.301
+d1_00958,tell,到,1,1,False,0.536
+d1_00959,dialogue,打 box,1,1,False,0.367
+d1_00960,dialogue system,tax or attx 呢,1,1,False,0.162
+d1_00961,user,用手,1,1,False,0.574
+d1_00962,hong kong,哄哄,1,1,False,0.339
+d1_00963,the third i remember third year,我身上,1,1,False,0.298
+d1_00964,找个地方,like a thief on,1,1,False,0.188
+d1_00965,electric engineering,一开始确定而已,1,1,False,0.099
+d1_00966,final,一种,1,1,False,0.47
+d1_00967,gym,拒绝,1,1,False,0.33
+d1_00968,badminton,单名腾,1,1,False,0.202
+d1_00969,badminton,斑鸣炭,1,1,False,0.254
+d1_00970,badminton,白鸣弹,1,1,False,0.398
+d1_00971,talent,拍了,1,1,False,0.224
+d1_00972,quantity,空铁铁,1,1,False,0.161
+d1_00973,cantonese,肯答你意思,1,1,False,0.171
+d1_00974,social,搜索了,1,1,False,0.378
+d1_00975,lunch talk,让人吃东西,1,1,False,0.401
+d1_00976,我们不能,one more button out,1,1,False,0.259
+d1_00977,因为,give me a,1,1,False,0.444
+d1_00978,generation,线,1,1,False,0.468
+d1_00979,neuralnetwork,netherworld 牛 肉 netherworld,1,1,False,0.403
+d1_00980,entry level,延水带给我,1,1,False,0.032
+d1_00981,entry level,延续带入,1,1,False,0.331
+d1_00982,payments,的配分,1,1,False,0.474
+d1_00983,mall,模型,1,1,False,0.475
+d1_00984,mobile payment,目外配粉,1,1,False,0.085
+d1_00985,sign in,三印,1,1,False,0.445
+d1_00986,project,特质讲,1,1,False,0.345
+d1_00987,technology privacy,才 可 能 要 有 些 pricot osy,1,1,False,0.132
+d1_00988,opportunity,of tiong 家,1,1,False,0.317
+d1_00989,也不辣,they are poor,1,1,False,0.314
+d1_00990,quantity,空姐听,1,1,False,0.143
+d1_00991,personalities,意思,1,1,False,0.506
+d1_00992,mall,默奉,1,1,False,0.363
+d1_00993,fancy,fan 洗,1,1,False,0.412
+d1_00994,accident,他 们 act together,1,1,False,0.242
+d1_00995,computer,更更的,1,1,False,0.377
+d1_00996,hong kong,疯抗,1,1,False,0.343
+d1_00997,美国,make 我,1,1,False,0.348
+d1_00998,badminton,backman 天,1,1,False,0.438
+d1_00999,badminton,白美大学,1,1,False,0.303
+d1_01000,michael,麦考,1,1,False,0.683
+d1_01001,quantity,空派厅,1,1,False,0.286
+d1_01002,one year,玩一样,1,1,False,0.345
+d1_01003,part time,怕烫,1,1,False,0.212
+d1_01004,logo,咯口,1,1,False,0.399
+d1_01005,awareness,的 will and stuff,1,1,False,0.318
+d1_01006,budget,巴划级,1,1,False,0.411
+d1_01007,lunch talk,让我们知道,1,1,False,0.207
+d1_01008,simulate,兴认识,1,1,False,0.35
+d1_01009,car,他,1,1,False,0.443
+d1_01010,syntax,非常,1,1,False,0.28
+d1_01011,ocr,o c 样,1,1,False,0.665
+d1_01012,entry level,严肥大国,1,1,False,0.092
+d1_01013,block chain,do it 还,1,1,False,0.145
+d1_01014,mall,默认,1,1,False,0.365
+d1_01015,opportunity,of tiong 挺,1,1,False,0.26
+d1_01016,叉烧饭,staffs all fun,1,1,False,0.121
+d1_01017,fourth year i will,force 也 哎 我,1,1,False,0.404
+d1_01018,美国,make sure,1,1,False,0.29
+d1_01019,company engineering,complain 去 哪 里,1,1,False,0.224
+d1_01020,part time,泡汗,1,1,False,0.358
+d1_01021,lunch talk,老师的话,1,1,False,0.421
+d1_01022,ai,而 已 i,1,1,False,0.575
+d1_01023,computer,看听到,1,1,False,0.22
+d1_01024,entry level,人水内,1,1,False,0.338
+d1_01025,alipay,r b 配,1,1,False,0.402
+d1_01026,alipay,阿利沛,1,1,False,0.766
+d1_01027,quantity,空姐庭,1,1,False,0.201
+d1_01028,chitchat,7 片,1,1,False,0.27
+d1_01029,company engineering,complain 去 你 要 回,1,1,False,0.217
+d1_01030,badminton,白铃铞,1,1,False,0.236
+d1_01031,mcgrady,我 graded,1,1,False,0.423
+d1_01032,awareness,的 willingness,1,1,False,0.563
+d1_01033,budget,巴刺,1,1,False,0.459
+d1_01034,entry level,严水内,1,1,False,0.359
+d1_01035,sleepy,似义配,1,1,False,0.337
+d1_01036,time,它,1,1,False,0.436
+d1_01037,peaceful,屁肃,1,1,False,0.37
+d1_01038,koala bear,口 a la pei,1,1,False,0.325
+d1_01039,mainland,明天咱们,1,1,False,0.227
+d1_01040,elegantly,i like 吃,1,1,False,0.324
+d1_01041,but when we,把 自 然 b,1,1,False,0.286
+d1_01042,debate,就被,1,1,False,0.292
+d1_01043,mainland,明天能,1,1,False,0.265
+d1_01044,pool,泰,1,1,False,0.275
+d1_01045,accident,他 们 action 的,1,1,False,0.289
+d1_01046,sports,创造只,1,1,False,0.332
+d1_01047,accident,他 们 act 跟 着,1,1,False,0.169
+d1_01048,line,啊,1,1,False,0.279
+d1_01049,college um,考考力呃,1,1,False,0.457
+d1_01050,but when we,把自然比,1,1,False,0.223
+d1_01051,but when we,把自然力,1,1,False,0.226
+d1_01052,pool,泰式,1,1,False,0.326
+d1_01053,outdoor swimming pool,all the 找 水 应 付,1,1,False,0.311
+d1_01054,koala bear,kor ala 北 的 吗,1,1,False,0.43
+d1_01055,所以这个,so it is a,1,1,False,0.789
+d1_01056,in case,因可以对于让,1,1,False,0.496
+d1_01057,social,的时候有,1,1,False,0.356
+d1_01058,graduate school,各举的过,1,1,False,0.21
+d1_01059,outdoor swimming pool,all the jobs 已 经 for,1,1,False,0.225
+d1_01060,exchange student,extend 这 个,1,1,False,0.253
+d1_01061,computer,从听了,1,1,False,0.171
+d1_01062,book,不可,1,1,False,0.371
+d1_01063,social,所有所有的,1,1,False,0.436
+d1_01064,computer,更听色,1,1,False,0.214
+d1_01065,entry level,延税带过,1,1,False,0.172
+d1_01066,book,论个,1,1,False,0.484
+d1_01067,exchange,x 训,1,1,False,0.423
+d1_01068,social,的时候的,1,1,False,0.438
+d1_01069,neuralnetwork,net net 肉 牛 肉 net 肉,1,1,False,0.353
+d1_01070,entry level,延伸,1,1,False,0.252
+d1_01071,叉烧饭,擦 拖 拖 fun,1,1,False,0.301
+d1_01072,exchange,x 眷,1,1,False,0.412
+d1_01073,business school,毕竟是,1,1,False,0.237
+d1_01074,mall,贸,1,1,False,0.557
+d1_01075,叉烧饭,它 说 fun,1,1,False,0.219
+d1_01076,company engineering,complain 几 年 而 已,1,1,False,0.311
+d1_01077,mall,贸能,1,1,False,0.503
+d1_01078,dialogue,tax 和 rent 代 表,1,1,False,0.248
+d1_01079,fin tech,fintech 就,1,1,False,0.662
+d1_01080,room,认,1,1,False,0.469
+d1_01081,entry level,延续待过,1,1,False,0.199
+d1_01082,um view,嗯 we we,1,1,False,0.426
+d1_01083,outdoor swimming pool,all the jobs 进 步 不 是,1,1,False,0.129
+d1_01084,koala bear,koha 阿 拉 贝 尔 吗,1,1,False,0.392
+d1_01085,opportunity,的不听听,1,1,False,0.262
+d1_01086,computer,complain 跟,1,1,False,0.354
+d1_01087,叉烧饭,south of one,1,1,False,0.169
+d1_01088,hong kong,红色,1,1,False,0.384
+d1_01089,third years,3 年 时 候,1,1,False,0.838
+d1_01090,company engineering,complain 去 年 轻,1,1,False,0.273
+d1_01091,three pointer,smart point 的,1,1,False,0.496
+d1_01092,one year,玩意义,1,1,False,0.23
+d1_01093,uniforms,那些,1,1,False,0.3
+d1_01094,accident,xin 的,1,1,False,0.357
+d1_01095,chemistry,chemist 三,1,1,False,0.711
+d1_01096,electric,一来去,1,1,False,0.28
+d1_01097,size,才,1,1,False,0.343
+d1_01098,senior,声音乐,1,1,False,0.349
+d1_01099,tutor,题部团,1,1,False,0.386
+d1_01100,tell,然后,1,1,False,0.407
+d1_01101,chitchat,去家,1,1,False,0.278
+d1_01102,task,打算了,1,1,False,0.42
+d1_01103,exchange student,excelent 就 问,1,1,False,0.28
+d1_01104,third year,cert 也 leh,1,1,False,0.327
+d1_01105,department,地方要问,1,1,False,0.378
+d1_01106,electric engineering,u h 更 needed 更 贵 人,1,1,False,0.196
+d1_01107,badminton,back main 天,1,1,False,0.319
+d1_01108,badminton,声明天,1,1,False,0.159
+d1_01109,badminton,拳道理你们弹,1,1,False,0.271
+d1_01110,elementary,admin 去,1,1,False,0.281
+d1_01111,mcgrady tracy mcgrady,什 么 grade trace name a grade,1,1,False,0.374
+d1_01112,mcgrady,我 们 greedy,1,1,False,0.293
+d1_01113,quantity,空姐题,1,1,False,0.227
+d1_01114,one year,玩意外,1,1,False,0.22
+d1_01115,one,玩一个,1,1,False,0.6
+d1_01116,part time,爬他,1,1,False,0.175
+d1_01117,self awareness,敲 朗 问 this,1,1,False,0.155
+d1_01118,urgent,恶纯,1,1,False,0.418
+d1_01119,minded,来点,1,1,False,0.35
+d1_01120,lunch talk,老师拖,1,1,False,0.282
+d1_01121,ai,一来,1,1,False,0.477
+d1_01122,car accident,开心灯,1,1,False,0.244
+d1_01123,simulate,随便有了,1,1,False,0.118
+d1_01124,smartphone,smart 凶,1,1,False,0.607
+d1_01125,fancy,返腻,1,1,False,0.389
+d1_01126,entry level,员水加过,1,1,False,0.246
+d1_01127,block,不过,1,1,False,0.236
+d1_01128,chain,是要,1,1,False,0.249
+d1_01129,sign in,担硬,1,1,False,0.274
+d1_01130,history,一 chemistry,1,1,False,0.362
+d1_01131,tutor,table 等 了,1,1,False,0.332
+d1_01132,dialogue,佳,1,1,False,0.339
+d1_01133,sentiment analysis,sent 你 们 的 essays,1,1,False,0.288
+d1_01134,fourth year,force 业,1,1,False,0.387
+d1_01135,third years,3 月,1,1,False,0.515
+d1_01136,呀有时候忙,ah 也 是 忙 学,1,1,False,0.648
+d1_01137,领队啊,赢 多 也 ah,1,1,False,0.212
+d1_01138,美国,make sure that 每 个,1,1,False,0.212
+d1_01139,对,like,1,1,False,0.616
+d1_01140,company engineering,是 complain,1,1,False,0.254
+d1_01141,supervisor,super wise 的,1,1,False,0.49
+d1_01142,badminton,带名领域,1,1,False,0.315
+d1_01143,badminton,primary 名 单,1,1,False,0.236
+d1_01144,elementary,nvent 学,1,1,False,0.46
+d1_01145,就是,she,1,1,False,0.555
+d1_01146,self awareness,staff 的 我 要,1,1,False,0.178
+d1_01147,uniforms,那种,1,1,False,0.28
+d1_01148,minded,mind 点,1,1,False,0.761
+d1_01149,due,地球,1,1,False,0.395
+d1_01150,dress formal,just 出 国 的,1,1,False,0.326
+d1_01151,this responsibility,list of response 没 有 听,1,1,False,0.319
+d1_01152,simulate,send 没 有 like,1,1,False,0.363
+d1_01153,optimization,什 么 organisation,1,1,False,0.355
+d1_01154,neuralnetwork,natural 牛 肉 牛 肉,1,1,False,0.288
+d1_01155,learning,能力,1,1,False,0.439
+d1_01156,computer,看看听说,1,1,False,0.183
+d1_01157,ocr,欧帜,1,1,False,0.439
+d1_01158,mall,贸妆,1,1,False,0.506
+d1_01159,叉烧饭,超 so fun,1,1,False,0.237
+d1_01160,chitchat,去欠,1,1,False,0.305
+d1_01161,company engineering,complain 去 年 而 言,1,1,False,0.281
+d1_01162,感觉还不错,get you have a 做,1,1,False,0.209
+d1_01163,hong kong,封靠,1,1,False,0.385
+d1_01164,美国学校的,make sure that the,1,1,False,0.227
+d1_01165,graduate school,各种,1,1,False,0.283
+d1_01166,simulate,simi 有 了,1,1,False,0.398
+d1_01167,entry level,延传所以大家跟我,1,1,False,0.002
+d1_01168,computer engineering,company 还 是 new 人,1,1,False,0.298
+d1_01169,national taiwan,and she know 台 湾,1,1,False,0.46
+d1_01170,tutor,梯团,1,1,False,0.356
+d1_01171,dialogue system,text 的 人 一 大 多 c 生,1,1,False,0.229
+d1_01172,sentiment analysis,sent 你 们 的 overseas,1,1,False,0.215
+d1_01173,exchange,一些,1,1,False,0.376
+d1_01174,third year,serve 也,1,1,False,0.395
+d1_01175,you know,听到,1,1,False,0.495
+d1_01176,一些领队啊,学 的 赢 多 也 ah,1,1,False,0.169
+d1_01177,graduate,科学,1,1,False,0.431
+d1_01178,electric,research 和,1,1,False,0.35
+d1_01179,engineering,去年来人,1,1,False,0.275
+d1_01180,感觉还不错,can you have a 说 我,1,1,False,0.264
+d1_01181,gym,均,1,1,False,0.309
+d1_01182,flexible,分钟,1,1,False,0.301
+d1_01183,badminton,fairs 明 天,1,1,False,0.163
+d1_01184,badminton,报名坦人,1,1,False,0.232
+d1_01185,badminton,primary 面 疼,1,1,False,0.189
+d1_01186,elementary,nvent 去,1,1,False,0.348
+d1_01187,mcgrady tracy mcgrady,什 么 gradey 确 实 什 么 gradey,1,1,False,0.438
+d1_01188,lay up,累 ah,1,1,False,0.399
+d1_01189,one year,玩意味,1,1,False,0.228
+d1_01190,one year,玩一夜,1,1,False,0.421
+d1_01191,part time,爬汤,1,1,False,0.265
+d1_01192,logo,么多过,1,1,False,0.157
+d1_01193,self awareness,敲分我问一下,1,1,False,0.129
+d1_01194,focus,说可是,1,1,False,0.226
+d1_01195,urgent,呃真,1,1,False,0.303
+d1_01196,lunch talk,浪费的情况,1,1,False,0.211
+d1_01197,portrait,破片的,1,1,False,0.405
+d1_01198,interview,in 特 别,1,1,False,0.394
+d1_01199,dress formal,just 逛 了,1,1,False,0.301
+d1_01200,ai,诶,1,1,False,0.76
+d1_01201,a car,而看,1,1,False,0.489
+d1_01202,accident happen,x 可 能 还 不 懂,1,1,False,0.224
+d1_01203,function,班前,1,1,False,0.443
+d1_01204,simulate,send 没 有 人,1,1,False,0.305
+d1_01205,syntax,平台,1,1,False,0.32
+d1_01206,optimization,什 么 的 organisation,1,1,False,0.402
+d1_01207,fancy,烦恶感,1,1,False,0.53
+d1_01208,entry level,元悬呆过,1,1,False,0.033
+d1_01209,robot,肉笔,1,1,False,0.358
+d1_01210,alipay,r p 配,1,1,False,0.469
+d1_01211,app,i 不,1,1,False,0.387
+d1_01212,mall,莫,1,1,False,0.38
+d1_01213,verification,earner 非 常,1,1,False,0.296
+d1_01214,tutor,team 团,1,1,False,0.473
+d1_01215,food,负,1,1,False,0.332
+d1_01216,one,关个,1,1,False,0.461
+d1_01217,chitchat,区切,1,1,False,0.447
+d1_01218,part,啊的,1,1,False,0.333
+d1_01219,electric,science 和 往,1,1,False,0.391
+d1_01220,software,self 然,1,1,False,0.405
+d1_01221,badminton,帮名课,1,1,False,0.291
+d1_01222,michael jordan,micr 决 定,1,1,False,0.395
+d1_01223,mcgrady tracy mcgrady,什 么 grade d 确 实 什 么 grade d,1,1,False,0.312
+d1_01224,logo,你都过,1,1,False,0.156
+d1_01225,awareness,的 我 要 miss,1,1,False,0.192
+d1_01226,lunch talk,拉纸头,1,1,False,0.152
+d1_01227,portrait,破 trade,1,1,False,0.246
+d1_01228,a car,而开,1,1,False,0.477
+d1_01229,accident happen,x 可 能 还 要 不 然,1,1,False,0.29
+d1_01230,computer,可能听说,1,1,False,0.231
+d1_01231,entry level,元水,1,1,False,0.279
+d1_01232,mall,陌容,1,1,False,0.331
+d1_01233,project,不是讲,1,1,False,0.312
+d1_01234,positive,pass 可 以 是,1,1,False,0.421
+d1_01235,koala bear,口啊啊打北啊,1,1,False,0.11
+d1_01236,many question,manicure 进,1,1,False,0.207
+d1_01237,group work,不过,1,1,False,0.227
+d1_01238,topic,它背,1,1,False,0.359
+d1_01239,proposal,pro 泡 手,1,1,False,0.377
+d1_01240,mainland china,面前的长长才能,1,1,False,0.163
+d1_01241,utility,有天了体,1,1,False,0.256
+d1_01242,work position,我 presentation,1,1,False,0.328
+d1_01243,可能是,cannot say,1,1,False,0.419
+d1_01244,scenery,senior 人,1,1,False,0.407
+d1_01245,but when,把自分,1,1,False,0.292
+d1_01246,in case,你可以让你,1,1,False,0.234
+d1_01247,remind you,demand 就,1,1,False,0.396
+d1_01248,very small,在那边什么,1,1,False,0.256
+d1_01249,latte,lah 太,1,1,False,0.593
+d1_01250,koala bear,口啊辣北也,1,1,False,0.092
+d1_01251,proposal,pro 帮 助,1,1,False,0.465
+d1_01252,from mainland china,bomb 没 那 那 么 长 时 间,1,1,False,0.035
+d1_01253,um its um um,嗯 is 呃,1,1,False,0.71
+d1_01254,but when,把资分,1,1,False,0.164
+d1_01255,classmates,class 每 次,1,1,False,0.614
+d1_01256,outdoor,拗招,1,1,False,0.305
+d1_01257,in case,你可以你你你,1,1,False,0.205
+d1_01258,voice,吗我会虽然,1,1,False,0.273
+d1_01259,from mainland china,bomb 没 那 样 的 差 点,1,1,False,0.038
+d1_01260,in case,你可以你你,1,1,False,0.239
+d1_01261,ukulele,you korea 了,1,1,False,0.261
+d1_01262,koala bear,口啊辣北也有吗,1,1,False,0.046
+d1_01263,voice,会不会虽然,1,1,False,0.278
+d1_01264,part,划,1,1,False,0.55
+d1_01265,mainland china,里 面 他 们 try 来,1,1,False,0.229
+d1_01266,saigon,赛空,1,1,False,0.567
+d1_01267,ukulele,有 korea leh,1,1,False,0.252
+d1_01268,professor,呃 那 些 group 还 是,1,1,False,0.119
+d1_01269,part,破掉,1,1,False,0.561
+d1_01270,china,上班,1,1,False,0.372
+d1_01271,sleepy,丝立屁,1,1,False,0.317
+d1_01272,elegantly,other than 其,1,1,False,0.321
+d1_01273,very,非常,1,1,False,0.896
+d1_01274,but when we,把自分币,1,1,False,0.137
+d1_01275,accident,他 们 actually 人,1,1,False,0.206
+d1_01276,嗯我也觉得,where do you,1,1,False,0.274
+d1_01277,from mainland china,bomb 明 天 能 够 try 呢,1,1,False,0.099
+d1_01278,in case,你可以去去去去你,1,1,False,0.152
+d1_01279,base line,beef 来,1,1,False,0.365
+d1_01280,ukulele,有 korea 了,1,1,False,0.194
+d1_01281,mainland china,明 天 他 们 try 呢,1,1,False,0.192
+d1_01282,outdoor,不知道,1,1,False,0.349
+d1_01283,次就没有再去过了,个 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its very large its 运 动 水 果 its,1,1,False,0.0
+d1_01284,in case,你可以去去去,1,1,False,0.233
+d1_01285,topic,兔废,1,1,False,0.266
+d1_01286,from mainland,born 明 天 能 够,1,1,False,0.327
+d1_01287,pool,破合,1,1,False,0.35
+d1_01288,lecture room,tax 啊 tax 人,1,1,False,0.274
+d1_01289,也不辣,they are,1,1,False,0.193
+d1_01290,哦,um,1,1,False,0.639
+d1_01291,flexible,less 吧,1,1,False,0.25
+d1_01292,tony,toh 你,1,1,False,0.462
+d1_01293,chitchat,7 起,1,1,False,0.225
+d1_01294,company engineering,complain 要 允 论,1,1,False,0.303
+d1_01295,graduate school,个 觉 scold,1,1,False,0.28
+d1_01296,badminton,班明灯,1,1,False,0.369
+d1_01297,badminton,backman 等 于,1,1,False,0.45
+d1_01298,near sea,是 n t s e,1,1,False,0.349
+d1_01299,part time,怕胎,1,1,False,0.272
+d1_01300,simulate,see 没 有 了,1,1,False,0.247
+d1_01301,computer,肯定在,1,1,False,0.193
+d1_01302,language,哪个人,1,1,False,0.421
+d1_01303,wind,win 的,1,1,False,0.505
+d1_01304,entry level,严水那个我,1,1,False,0.101
+d1_01305,alipay,r v 配,1,1,False,0.34
+d1_01306,computer,看听词,1,1,False,0.282
+d1_01307,koala bear,koha ala bay 吗,1,1,False,0.354
+d1_01308,but when we,把自分利,1,1,False,0.161
+d1_01309,swimming pool,分别,1,1,False,0.208
+d1_01310,new,near 有,1,1,False,0.518
+d1_01311,叉烧饭,hows our fun,1,1,False,0.164
+d1_01312,dialogue,tax rate 代 表,1,1,False,0.304
+d1_01313,company engineering,complain 去 年 二 领,1,1,False,0.251
+d1_01314,software,self wear 的,1,1,False,0.348
+d1_01315,logo,nong dong 够,1,1,False,0.318
+d1_01316,ocr,欧西那,1,1,False,0.414
+d1_01317,entry level,延稠,1,1,False,0.202
+d1_01318,opportunity,不听话,1,1,False,0.255
+d1_01319,favourite foods,favorite 书 籍,1,1,False,0.714
+d1_01320,neuralnetwork,牛 牛 肉 network,1,1,False,0.462
+d1_01321,opportunity,不经用,1,1,False,0.421
+d1_01322,food,附,1,1,False,0.337
+d1_01323,neuralnetwork,net net 肉 扭 肉 net work,1,1,False,0.547
+d1_01324,alipay,rly 陪,1,1,False,0.474
+d1_01325,dialogue,tax 和 utility,1,1,False,0.262
+d1_01326,exchange,x 券,1,1,False,0.491
+d1_01327,major,没减了,1,1,False,0.134
+d1_01328,room,论,1,1,False,0.447
+d1_01329,neuralnetwork,net net world 牛 肉 net world,1,1,False,0.416
+d1_01330,computer,can 听 得,1,1,False,0.337
+d1_01331,in case,应该可以去连,1,1,False,0.243
+d1_01332,candy crush,can 的 crack,1,1,False,0.469
+d1_01333,in case,应该可以允认,1,1,False,0.273
+d1_01334,嗯我也觉得,why,1,1,False,0.264
+d1_01335,outdoor swimming pool,all the jobs 已 经 不 开 了 嘛 不,1,1,False,0.215
+d1_01336,koala bear,koha ala 杯 吗,1,1,False,0.36
+d1_01337,嗯我也觉得,where 对 为 什 么,1,1,False,0.342
+d1_01338,one year,万一有人,1,1,False,0.398
+d1_01339,fourth year i will,force 也 哎,1,1,False,0.297
+d1_01340,awareness,的利用逆,1,1,False,0.24
+d1_01341,accident happen,sit down 还 不,1,1,False,0.248
+d1_01342,chain,确,1,1,False,0.294
+d1_01343,mall,默奋,1,1,False,0.364
+d1_01344,mall,默奔,1,1,False,0.41
+d1_01345,也不辣,here,1,1,False,0.201
+d1_01346,chitchat,7 点,1,1,False,0.263
+d1_01347,一些领队啊,学 indian 对 ah,1,1,False,0.095
+d1_01348,graduate,各自,1,1,False,0.423
+d1_01349,呃,uh a,1,1,False,0.739
+d1_01350,major,美卖,1,1,False,0.428
+d1_01351,simulate,兴没有诶,1,1,False,0.188
+d1_01352,package,派来的,1,1,False,0.455
+d1_01353,entry level,严水内的我,1,1,False,0.229
+d1_01354,chain,圈,1,1,False,0.71
+d1_01355,mall,莫 on,1,1,False,0.352
+d1_01356,koala bear,kor ala pei 吗,1,1,False,0.432
+d1_01357,koala bear,口阿拉北的吗,1,1,False,0.193
+d1_01358,pool,泰尔,1,1,False,0.31
+d1_01359,所以,so you,1,1,False,0.755
+d1_01360,koala bear,kor ala peh 吗,1,1,False,0.426
+d1_01361,time,谈,1,1,False,0.489
+d1_01362,pool,泼,1,1,False,0.522
+d1_01363,deers,地而已,1,1,False,0.273
+d1_01364,um um,a 呃,1,1,False,0.726
+d1_01365,line,呢,1,1,False,0.295
+d1_01366,topic,套 thing,1,1,False,0.623
+d1_01367,mainland,明天那么,1,1,False,0.19
+d1_01368,very excited,很 exciting,1,1,False,0.773
+d1_01369,in case,因可以去让,1,1,False,0.402
+d1_01370,part,呃,1,1,False,0.322
+d1_01371,sandwiches,三文一确识,1,1,False,0.195
+d1_01372,shout,笑头,1,1,False,0.528
+d1_01373,college um,诼诼,1,1,False,0.0
+d1_01374,outdoor swimming pool,all the 倒 水 应 付,1,1,False,0.323
+d1_01375,hong kong,home 空,1,1,False,0.434
+d1_01376,fourth year i will,force 也 还 有,1,1,False,0.286
+d1_01377,michael jordan,microtele 交 道 等,1,1,False,0.28
+d1_01378,会啊,伐 ah,1,1,False,0.396
+d1_01379,sport,sports 还,1,1,False,0.875
+d1_01380,badminton,白铃铈,1,1,False,0.236
+d1_01381,business,毕 竟 the,1,1,False,0.428
+d1_01382,happen,还要叛,1,1,False,0.266
+d1_01383,simulate,si mi 来,1,1,False,0.339
+d1_01384,optimization,optimize 一 下,1,1,False,0.851
+d1_01385,neuralnetwork,net net 然 后 牛 肉 net work,1,1,False,0.468
+d1_01386,computer,诼听了,1,1,False,0.098
+d1_01387,entry level,严肥那个我,1,1,False,0.063
+d1_01388,problem language,可能难规,1,1,False,0.336
+d1_01389,to to get a score to,去 galus god,1,1,False,0.303
+d1_01390,most of people have smart phone,很多人都会有电话,1,1,False,0.649
+d1_01391,opportunity,的不停的体验,1,1,False,0.369
+d1_01392,computer engineering,一个组织,1,1,False,0.297
+d1_01393,major,美学,1,1,False,0.372
+d1_01394,yeah,嗯,1,1,True,0.646
+d1_01395,basketball,巴斯奇布,1,1,False,0.579
+d1_01396,badminton,伴明腾,1,1,False,0.311
+d1_01397,idol,艺人,1,1,False,0.482
+d1_01398,schedule,设计,1,1,False,0.517
+d1_01399,lecture,学会,1,1,False,0.62
+d1_01400,you need to have um to dress formal,你需要穿上去,1,1,False,0.59
+d1_01401,choice,选择,1,1,False,0.886
+d1_01402,perfect,完美的,1,1,False,0.954
+d1_01403,scenario,现象,1,1,False,0.677
+d1_01404,self driving car,自行车,1,1,False,0.575
+d1_01405,problem language,program 难 归,1,1,False,0.408
+d1_01406,alipay,阿莉佩,1,1,False,0.782
+d1_01407,找个,like a,1,1,False,0.425
+d1_01408,就是,he is,1,1,False,0.672
+d1_01409,fancy,烦,1,1,False,0.518
+d1_01410,senior to support,新年来要支持,1,1,False,0.489
+d1_01411,mistake is because,错误是因为,1,1,False,0.897
+d1_01412,the third i remember third year,我 记 得 是 第 3 年,1,1,False,0.763
+d1_01413,major,美景了,1,1,False,0.239
+d1_01414,topic topic,调辟,1,1,False,0.301
+d1_01415,basketball,巴斯组,1,1,False,0.422
+d1_01416,to to get a score to,去 galusko,1,1,False,0.374
+d1_01417,cantonese,我看他那意思,1,1,False,0.113
+d1_01418,self awareness,写法文的意思,1,1,False,0.214
+d1_01419,hong kong,轰控,1,1,False,0.462
+d1_01420,lecture,学会刚,1,1,False,0.386
+d1_01421,lunch talk,订阅头,1,1,False,0.236
+d1_01422,interview,特别,1,1,False,0.351
+d1_01423,work,工作,1,1,True,0.949
+d1_01424,self driving car,自动驾驶卡,1,1,False,0.685
+d1_01425,high standard,高级,1,1,False,0.671
+d1_01426,self driving car,自行车的车子,1,1,False,0.671
+d1_01427,children,求整,1,1,False,0.318
+d1_01428,most of people have smart phone,很多人有个手机,1,1,False,0.75
+d1_01429,big big data,bigdata 上 学 期,1,1,False,0.604
+d1_01430,problem language,犯规,1,1,False,0.279
+d1_01431,activity,对不对,1,1,False,0.303
+d1_01432,hong kong,烘烤,1,1,False,0.342
+d1_01433,i will,就是,1,1,False,0.511
+d1_01434,graduate,规矩,1,1,False,0.302
+d1_01435,graduate school,奎卓学校,1,1,False,0.61
+d1_01436,graduate,各地的,1,1,False,0.407
+d1_01437,basketball,巴 斯 kipo,1,1,False,0.538
+d1_01438,elementary school,安利威斯库,1,1,False,0.325
+d1_01439,sandwiches,三维曲室,1,1,False,0.237
+d1_01440,interview,intel 又,1,1,False,0.391
+d1_01441,我们不能,we dont know,1,1,False,0.685
+d1_01442,accident,xen 的,1,1,False,0.406
+d1_01443,problem language,问题,1,1,False,0.6
+d1_01444,mobile payment,木板配合,1,1,False,0.243
+d1_01445,basketball,巴斯基帕,1,1,False,0.529
+d1_01446,opportunity,的不停的,1,1,False,0.326
+d1_01447,感觉还不错,i feel like,1,1,False,0.608
+d1_01448,python,拍森,1,1,False,0.451
+d1_01449,sandwiches,三位去世,1,1,False,0.24
+d1_01450,他他,he,1,1,False,0.723
+d1_01451,syntax,心躺,1,1,False,0.257
+d1_01452,big big data,bitbitdata 上 学 期,1,1,False,0.358
+d1_01453,entry level,延续一大锅,1,1,False,0.056
+d1_01454,level,代表我,1,1,False,0.371
+d1_01455,chain,上,1,1,False,0.367
+d1_01456,outdoor swimming pool,all the news 已 经 出,1,1,False,0.24
+d1_01457,exchange,xc 的,1,1,False,0.434
+d1_01458,tell,对啊,1,1,False,0.41
+d1_01459,apply,我出来,1,1,False,0.285
+d1_01460,neuralnetwork,net net 肉 new 肉 network,1,1,False,0.591
+d1_01461,why why did you come to hong kong,外地去看不出黄狂,1,1,False,0.155
+d1_01462,software,sophie 和,1,1,False,0.362
+d1_01463,neuralnetwork,那种牛肉那种牛肉,1,1,False,0.064
+d1_01464,computer engineering,统本来暂加扭领,1,1,False,0.01
+d1_01465,book,不给,1,1,False,0.388
+d1_01466,why why did you come to hong kong,外地就看不出黄康,1,1,False,0.298
+d1_01467,third i remember third year,sir 而 你 们 是 在 这 儿,1,1,False,0.187
+d1_01468,找个地方,dagger d fun,1,1,False,0.197
+d1_01469,the the court for tennis,的 了 寇 寡 10 室,1,1,False,0.263
+d1_01470,就是说,to use what,1,1,False,0.357
+d1_01471,swim properly,苏林炮本,1,1,False,0.174
+d1_01472,mcgrady tracy mcgrady,魔鬼的举丢魔鬼的,1,1,False,0.281
+d1_01473,urgent,隔整,1,1,False,0.337
+d1_01474,generation,镇的那里,1,1,False,0.306
+d1_01475,most of people have smart phone,摩托皮肤还蛮好,1,1,False,0.272
+d1_01476,group,谷子,1,1,False,0.372
+d1_01477,drawback,招牌,1,1,False,0.305
+d1_01478,wind,韦人的,1,1,False,0.481
+d1_01479,ocr,偶像,1,1,False,0.387
+d1_01480,block chain,补奏特色,1,1,False,0.112
+d1_01481,mobile payments,mob app 裴 面 子,1,1,False,0.4
+d1_01482,project,派讲,1,1,False,0.419
+d1_01483,technology,才更大的一些,1,1,False,0.235
+d1_01484,computer engineering,统本来安全扭领,1,1,False,0.093
+d1_01485,叉烧饭,its also fine,1,1,False,0.161
+d1_01486,dialogue,当,1,1,False,0.289
+d1_01487,chitchat,曲线,1,1,False,0.318
+d1_01488,sentiment analysis,生体满大了事,1,1,False,0.094
+d1_01489,interesting,硬实,1,1,False,0.402
+d1_01490,why why did you come to hong kong,外地就看不出黄状,1,1,False,0.127
+d1_01491,in between,硬碑听,1,1,False,0.092
+d1_01492,找个地方,so im going to leave on,1,1,False,0.201
+d1_01493,对最后就回到这里,so you have to go without the lead,1,1,False,0.101
+d1_01494,major,媒绝,1,1,False,0.445
+d1_01495,badminton,单名语语,1,1,False,0.232
+d1_01496,balance,表演,1,1,False,0.359
+d1_01497,elementary,安安省睡,1,1,False,0.164
+d1_01498,swim properly,苏音泡几,1,1,False,0.145
+d1_01499,cantonese,看 他 你 ins,1,1,False,0.13
+d1_01500,urgent,歌证,1,1,False,0.332
+d1_01501,hong kong,轰空间,1,1,False,0.362
+d1_01502,social,搜寻,1,1,False,0.382
+d1_01503,you need to have um to dress formal,我们也有没有想到却是,1,1,False,0.102
+d1_01504,trust ai,穿谁亚,1,1,False,0.446
+d1_01505,我们不能,one more button,1,1,False,0.29
+d1_01506,scenario,sneria 也,1,1,False,0.362
+d1_01507,smartphone,什么要逢,1,1,False,0.227
+d1_01508,entry level,安全在柔,1,1,False,0.105
+d1_01509,technology privacy,才 更 大 的 一 些 private series,1,1,False,0.271
+d1_01510,对最后就回到这里,so youll just wait outside,1,1,False,0.263
+d1_01511,姚明,yalmin,1,1,False,0.458
+d1_01512,technical,太辛苦,1,1,False,0.344
+d1_01513,girls night,个欧世乱,1,1,False,0.218
+d1_01514,graduate students,gigs 的,1,1,False,0.358
+d1_01515,apply,预 许 在 第 4 年 但,1,1,False,0.306
+d1_01516,natural language processing,的那些事,1,1,False,0.13
+d1_01517,one year,1 月,1,1,False,0.582
+d1_01518,hard choice,吓船,1,1,False,0.223
+d1_01519,现在开始,usual can,1,1,False,0.261
+d1_01520,why why did you come to hong kong,外地就看不出黄狂,1,1,False,0.139
+d1_01521,graduate school,grages 顾,1,1,False,0.299
+d1_01522,the the court for tennis,的 了 cod 410 室,1,1,False,0.258
+d1_01523,swim properly,水泥泡泡里,1,1,False,0.094
+d1_01524,mcgrady tracy mcgrady,默黄币吹识默黄币,1,1,False,0.189
+d1_01525,portrait,魄垂的,1,1,False,0.447
+d1_01526,you need to have um to dress formal,你 也 有 没 有 去 求 jess 装 了,1,1,False,0.266
+d1_01527,choice,串子,1,1,False,0.336
+d1_01528,neuralnetwork,那种牛肉那种肉,1,1,False,0.092
+d1_01529,project,割下,1,1,False,0.396
+d1_01530,python,哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 这 个 那 么 violisound graphics stone i reading i like center recoverymusic wide wrist hopefully launched howization drauf 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 itable sucker 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎,1,1,False,0.011
+d1_01531,tony,你,1,1,False,0.407
+d1_01532,professor,的工程中,1,1,False,0.385
+d1_01533,tutor,挑他,1,1,False,0.319
+d1_01534,tutor,题题,1,1,False,0.483
+d1_01535,deadline,掉来,1,1,False,0.273
+d1_01536,stress,占,1,1,False,0.34
+d1_01537,tell,挑,1,1,False,0.515
+d1_01538,chitchat,7 切,1,1,False,0.297
+d1_01539,system,心思团,1,1,False,0.4
+d1_01540,hong kong,一个空空,1,1,False,0.341
+d1_01541,study,专注,1,1,False,0.495
+d1_01542,sentiment analysis,sem 体 门 发 展 了,1,1,False,0.146
+d1_01543,generation,镈裳镈,1,1,False,0.157
+d1_01544,user,优传,1,1,False,0.359
+d1_01545,why why did you come to hong kong,外面去看情况考,1,1,False,0.142
+d1_01546,in between,硬逼听,1,1,False,0.195
+d1_01547,make sense,拼拼,1,1,False,0.361
+d1_01548,exchange student,一个学校,1,1,False,0.439
+d1_01549,program,学校,1,1,False,0.446
+d1_01550,mistake is because,比赛比赛因为,1,1,False,0.556
+d1_01551,the third i remember third year,这 世 我 也 没 有 再 1 点,1,1,False,0.375
+d1_01552,就是美国学校的,this is a negotiation of the,1,1,False,0.176
+d1_01553,hong kong,风烤,1,1,False,0.332
+d1_01554,最后就回,吧 我 不 你 说 我 要 看 到 因 为 chyba 一 个 gef columns 辈 还 是 你 知 道 我 要 看,1,1,False,0.093
+d1_01555,这里,你 们 越 来 越 清 楚 哎 哎 我 也 越 gigabytes 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎 哎,1,1,False,0.0
+d1_01556,robotics,柔巴的一个,1,1,False,0.189
+d1_01557,hardware,好呃,1,1,False,0.196
+d1_01558,graduate school,关注一个鼓,1,1,False,0.132
+d1_01559,integrities,我 也 很 自 丰 健 碗 蛋 味 还 考 协 商 于 learner nic researchedyeah im music r uss 学 部 晚 上 好 好 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝 喝,1,1,False,0.035
+d1_01560,professor,朋友反思,1,1,False,0.304
+d1_01561,paper,配乐,1,1,False,0.404
+d1_01562,thats the reason,这次,1,1,False,0.436
+d1_01563,gym,聚,1,1,False,0.374
+d1_01564,gym,聚门,1,1,False,0.313
+d1_01565,flexible,solamente 冠 整 wsp e,1,1,False,0.157
+d1_01566,badminton,backman 的,1,1,False,0.474
+d1_01567,basketball,把 sky board,1,1,False,0.315
+d1_01568,badminton,观明看,1,1,False,0.282
+d1_01569,the the court for tennis,对 比 时 候 putter clusters 砤 砤 砤 砣 砕 砟 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕 砕,1,1,False,0.006
+d1_01570,basketball,把机部,1,1,False,0.235
+d1_01571,soccer,这个赵格,1,1,False,0.238
+d1_01572,就是说,to this one,1,1,False,0.414
+d1_01573,talent,台呢,1,1,False,0.244
+d1_01574,swim properly,这 个 zoom 胖 胖 的,1,1,False,0.119
+d1_01575,near sea,你思,1,1,False,0.224
+d1_01576,fancy,封信,1,1,False,0.413
+d1_01577,idol,爱的,1,1,False,0.405
+d1_01578,player,朋友,1,1,False,0.46
+d1_01579,lay,累,1,1,False,0.507
+d1_01580,uniforms,印尔方式,1,1,False,0.328
+d1_01581,portrait,破裁,1,1,False,0.356
+d1_01582,work,范 边 接 下 来 看 到 decentralized box 先 观 看 somewhere pontos 装 k 兴 alban 的 晚 上 进 攻 击 kirbi 那 进 攻 击 wait hurry up 在 这 dramaacakt zooming follow 那 把 机 闩 看 到 vibean 踏 机 d 点 vivow loopang yes zoom to tilt either whenever zoom zoom zoom zoom zoom fold zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom 你 看 到 yesterday zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom auto zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom zoom,1,1,False,0.05
+d1_01583,trust ai,抓 insood,1,1,False,0.343
+d1_01584,ai,哎哎,1,1,False,0.575
+d1_01585,passenger,发生者,1,1,False,0.458
+d1_01586,data,的笛台,1,1,False,0.264
+d1_01587,build,没有,1,1,False,0.303
+d1_01588,因为,ile mistake my,1,1,False,0.298
+d1_01589,self driving car,celf 专 卡,1,1,False,0.257
+d1_01590,high standard,海甩,1,1,False,0.31
+d1_01591,scenario,是职业,1,1,False,0.326
+d1_01592,smart,有 small,1,1,False,0.366
+d1_01593,group,满意,1,1,False,0.414
+d1_01594,drawback,抓 back,1,1,False,0.438
+d1_01595,smartphone,什么情况,1,1,False,0.236
+d1_01596,smartphone,砂冰,1,1,False,0.346
+d1_01597,model,幕道,1,1,False,0.356
+d1_01598,optimization,mukbang 晚 上,1,1,False,0.345
+d1_01599,package,派题,1,1,False,0.501
+d1_01600,semester,什么时候,1,1,False,0.422
+d1_01601,entry level,安全的生活,1,1,False,0.245
+d1_01602,block,我不过,1,1,False,0.227
+d1_01603,block chain,冒 决 瓜 龟 石 coerc ladder,1,1,False,0.145
+d1_01604,sign in,反应,1,1,False,0.399
+d1_01605,technology privacy,查跟大家一起开玩具,1,1,False,0.0
+d1_01606,computer engineering,可能都安全利用,1,1,False,0.177
+d1_01607,deadline,电移,1,1,False,0.268
+d1_01608,tell,留,1,1,False,0.526
+d1_01609,research,的会认为自己的,1,1,False,0.345
+d1_01610,chitchat,期限,1,1,False,0.299
+d1_01611,study,山底,1,1,False,0.437
+d1_01612,sentiment analysis,三天满大的心,1,1,False,0.263
+d1_01613,respond,红,1,1,False,0.449
+d1_01614,why why did you come to hong kong,外外地就看不清空,1,1,False,0.075
+d1_01615,in between,硬笔庭,1,1,False,0.115
+d1_01616,ill say its like a mistake,爱是一个秘密的,1,1,False,0.262
+d1_01617,mistake is because,未成功因为,1,1,False,0.637
+d1_01618,就是美国学校的,just to make sure that the,1,1,False,0.204
+d1_01619,找个地方,tagadee fang,1,1,False,0.211
+d1_01620,like,这个,1,1,False,0.492
+d1_01621,hong kong,疯狂,1,1,False,0.289
+d1_01622,graduate school,美国,1,1,False,0.323
+d1_01623,supervisor,数字白色,1,1,False,0.197
+d1_01624,呃,and a,1,1,False,0.493
+d1_01625,supervisor,是不是白色,1,1,False,0.221
+d1_01626,robotics,柔贴,1,1,False,0.215
+d1_01627,graduate school,gregis 姑,1,1,False,0.288
+d1_01628,major,魅力,1,1,False,0.326
+d1_01629,communication,可能的开战,1,1,False,0.292
+d1_01630,final,一个最后,1,1,False,0.757
+d1_01631,gym,讯息,1,1,False,0.315
+d1_01632,tennis,10 日,1,1,False,0.347
+d1_01633,badminton,到明天,1,1,False,0.152
+d1_01634,the the court for tennis,的了宽宽,1,1,False,0.155
+d1_01635,就是说,to just what,1,1,False,0.461
+d1_01636,badminton,白命判,1,1,False,0.378
+d1_01637,talent,可能,1,1,False,0.478
+d1_01638,swim properly,薯薯炒不然,1,1,False,0.058
+d1_01639,fancy,翻识,1,1,False,0.424
+d1_01640,mcgrady tracy mcgrady,魔鬼的吹死魔鬼的,1,1,False,0.267
+d1_01641,lay up,雷牙,1,1,False,0.4
+d1_01642,quantity,空点提,1,1,False,0.299
+d1_01643,one year,玩意而,1,1,False,0.294
+d1_01644,cantonese,看他你一说,1,1,False,0.14
+d1_01645,self awareness,要保留了这个事情,1,1,False,0.105
+d1_01646,urgent,合级,1,1,False,0.379
+d1_01647,you need to have um to dress formal,你们也会有点缘心,1,1,False,0.208
+d1_01648,ai,爱爱,1,1,False,0.319
+d1_01649,build,表,1,1,False,0.38
+d1_01650,make different uh,做一些不同的不同,1,1,False,0.801
+d1_01651,machine,模型,1,1,False,0.511
+d1_01652,make this decision,没这个事情就这样,1,1,False,0.282
+d1_01653,customer,卡丘吗,1,1,False,0.324
+d1_01654,sell,邪惑,1,1,False,0.369
+d1_01655,technology,频道以及,1,1,False,0.382
+d1_01656,accident happen,xd 的 hap,1,1,False,0.39
+d1_01657,low low standard,落,1,1,False,0.387
+d1_01658,technic,塔米,1,1,False,0.41
+d1_01659,translation,缺乏的一些,1,1,False,0.225
+d1_01660,most of people have smart phone,摩 托 p4 还 有 smartful,1,1,False,0.344
+d1_01661,group,录影,1,1,False,0.396
+d1_01662,wind,为人的,1,1,False,0.391
+d1_01663,mobile payments,mob app 配 置,1,1,False,0.476
+d1_01664,mall,梦要,1,1,False,0.36
+d1_01665,mobile payment,木宝配门,1,1,False,0.156
+d1_01666,sign in,赛英,1,1,False,0.421
+d1_01667,technology,才不能忘记,1,1,False,0.279
+d1_01668,sentiment analysis,三天满大了时间,1,1,False,0.075
+d1_01669,why why did you come to hong kong,外地去看不清,1,1,False,0.163
+d1_01670,in between,硬碧天,1,1,False,0.193
+d1_01671,the third i remember third year,thecert 而 你 们 是 在 thecert,1,1,False,0.282
+d1_01672,hong kong,丰抗,1,1,False,0.325
+d1_01673,supervisor,是会把一寻,1,1,False,0.312
+d1_01674,software,收拾案,1,1,False,0.254
+d1_01675,basketball,把蚀蝶,1,1,False,0.222
+d1_01676,swim properly,苏薰泡布里,1,1,False,0.158
+d1_01677,mcgrady tracy mcgrady,墨装的,1,1,False,0.165
+d1_01678,idol,我,1,1,False,0.337
+d1_01679,urgent,额产,1,1,False,0.37
+d1_01680,interview,因特别,1,1,False,0.324
+d1_01681,choice,串心,1,1,False,0.353
+d1_01682,make this decision,没必须提升球,1,1,False,0.128
+d1_01683,customer,卡斯兔们的,1,1,False,0.343
+d1_01684,accident happen,x 它 还 不 很,1,1,False,0.205
+d1_01685,generation,镇的那种人,1,1,False,0.318
+d1_01686,most of people have smart phone,摩托批判和马扶,1,1,False,0.043
+d1_01687,neuralnetwork,那种用肉拿我给你用了,1,1,False,0.004
+d1_01688,mall,梦,1,1,False,0.399
+d1_01689,project,割下门,1,1,False,0.277
+d1_01690,technology privacy,才 更 大 的 一 些 pribo 系,1,1,False,0.14
+d1_01691,computer engineering,统本来换换换,1,1,False,0.057
+d1_01692,near sea,尼尼尼,1,1,False,0.346
+d1_01693,mcgrady tracy mcgrady,默 黄 币 trish name a greedy,1,1,False,0.284
+d1_01694,cantonese,可能你意思,1,1,False,0.204
+d1_01695,logo,乐故,1,1,False,0.493
+d1_01696,hong kong,轰空空,1,1,False,0.334
+d1_01697,schedule,机会,1,1,False,0.421
+d1_01698,data driver,变化,1,1,False,0.231
+d1_01699,most of people have smart phone,摩托皮头还有马虎,1,1,False,0.151
+d1_01700,deep learning,订阅能力,1,1,False,0.243
+d1_01701,block chain,不浪费,1,1,False,0.079
+d1_01702,sign in,咱俩,1,1,False,0.368
+d1_01703,focus,福克的,1,1,False,0.465
+d1_01704,final,回头,1,1,False,0.398
+d1_01705,opportunity,不停,1,1,False,0.292
+d1_01706,and,然后,1,1,False,0.587
+d1_01707,tutor,贴头的,1,1,False,0.444
+d1_01708,叉烧饭,its also a fun,1,1,False,0.153
+d1_01709,tell,大家有,1,1,False,0.355
+d1_01710,所以我们现在开始,so you will be able to,1,1,False,0.434
+d1_01711,dialogue system,大王的事实在不,1,1,False,0.034
+d1_01712,dialogue,taxrate 到,1,1,False,0.316
+d1_01713,book,独个,1,1,False,0.421
+d1_01714,system,心情,1,1,False,0.467
+d1_01715,hong kong,烘烹,1,1,False,0.353
+d1_01716,sentiment analysis,整体门的事,1,1,False,0.165
+d1_01717,interesting part,确实,1,1,False,0.16
+d1_01718,why why did you come to hong kong,你为什么你做得好吗,1,1,False,0.502
+d1_01719,in between,硬碟停,1,1,False,0.158
+d1_01720,ill say its like a mistake,当时是一个当时是一个,1,1,False,0.131
+d1_01721,graduate school,归学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学学,1,1,False,0.266
+d1_01722,professor,不犯是,1,1,False,0.259
+d1_01723,singapore,性格破,1,1,False,0.224
+d1_01724,对最后就回到这里,so you know youre going to play out the lead,1,1,False,0.084
+d1_01725,major,没卷,1,1,False,0.193
+d1_01726,robotics,柔巴的,1,1,False,0.278
+d1_01727,hardware,好位,1,1,False,0.243
+d1_01728,software,稍分而,1,1,False,0.331
+d1_01729,communication,统绘开圣,1,1,False,0.229
+d1_01730,professor,部分是,1,1,False,0.302
+d1_01731,badminton,本名看,1,1,False,0.199
+d1_01732,badminton,白明天,1,1,False,0.192
+d1_01733,the the court for tennis,的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的,1,1,False,0.022
+d1_01734,badminton,百命判,1,1,False,0.312
+d1_01735,elementary school,安安省局,1,1,False,0.217
+d1_01736,swim properly,苏联旁边,1,1,False,0.042
+d1_01737,talent,太论,1,1,False,0.304
+d1_01738,quantity,空点挺,1,1,False,0.27
+d1_01739,local,楼口,1,1,False,0.42
+d1_01740,focus,说克斯,1,1,False,0.329
+d1_01741,schedule,社交,1,1,False,0.392
+d1_01742,hong kong,呼吸,1,1,False,0.363
+d1_01743,lunch talk,浪质作课,1,1,False,0.238
+d1_01744,lunch talk,拉去投,1,1,False,0.179
+d1_01745,我们不能,well no no,1,1,False,0.545
+d1_01746,build,变,1,1,False,0.436
+d1_01747,make this decision,歪死这些就,1,1,False,0.279
+d1_01748,responsibility,有些人,1,1,False,0.297
+d1_01749,customer,门,1,1,False,0.422
+d1_01750,accident happen,xd 了 它 分,1,1,False,0.264
+d1_01751,sell,要做,1,1,False,0.473
+d1_01752,technology,提供的解决,1,1,False,0.34
+d1_01753,simulate,先没有了,1,1,False,0.113
+d1_01754,low low standard,不断,1,1,False,0.166
+d1_01755,topic,套 pic,1,1,False,0.313
+d1_01756,generation,前卫生,1,1,False,0.324
+d1_01757,most of people have smart phone,有什么时候皮肤还蛮好,1,1,False,0.278
+d1_01758,group,故事,1,1,False,0.38
+d1_01759,drawback,拠本,1,1,False,0.341
+d1_01760,prediction,pritic 是,1,1,False,0.335
+d1_01761,privacy,码,1,1,False,0.31
+d1_01762,applications,盘,1,1,False,0.299
+d1_01763,consent,可能甚至,1,1,False,0.293
+d1_01764,collect,科来,1,1,False,0.489
+d1_01765,app,案子,1,1,False,0.445
+d1_01766,sign in,散意,1,1,False,0.275
+d1_01767,technology privacy,才不能让人家,1,1,False,0.198

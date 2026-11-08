@@ -1,0 +1,1769 @@
+pair_id,label,reason
+d1_00000,translation,equivalent filler
+d1_00001,translation,equivalent filler
+d1_00002,translation,equivalent filler
+d1_00003,translation,equivalent filler
+d1_00004,translation,equivalent filler
+d1_00005,translation,equivalent interjection
+d1_00006,transliteration,wan yi er sounds like one year
+d1_00007,transliteration,a li pei sounds like alipay
+d1_00008,transliteration,de sounds like the
+d1_00009,other,chat does not mean tell
+d1_00010,transliteration,and sounds like en
+d1_00011,translation,um rendered as equivalent filler
+d1_00012,translation,equivalent filler
+d1_00013,other,unrelated article
+d1_00014,transliteration,pi gu partial sound match
+d1_00015,transliteration,fang xiang partial sound match
+d1_00016,transliteration,a sounds like e filler
+d1_00017,transliteration,na wo sounds like now
+d1_00018,transliteration,lai sounds like lei
+d1_00019,other,ting unrelated to take
+d1_00020,other,mixed unrelated block
+d1_00021,other,then does not mean but
+d1_00022,transliteration,phonetic rendering of alipay
+d1_00023,transliteration,en sounds like and
+d1_00024,transliteration,di er sounds like deers
+d1_00025,transliteration,qu sounds like chit
+d1_00026,other,unrelated word
+d1_00027,other,unrelated word
+d1_00028,transliteration,lai approximates -er ending
+d1_00029,other,unrelated words
+d1_00030,transliteration,bei bei sounds like big big
+d1_00031,other,main word view replaced by unrelated
+d1_00032,transliteration,ban ming sounds like badminton
+d1_00033,transliteration,ou xi a sounds like ocr
+d1_00034,other,unrelated word
+d1_00035,other,ta unrelated to car
+d1_00036,transliteration,pao sounds like part
+d1_00037,other,unrelated word
+d1_00038,translation,equivalent interjection
+d1_00039,transliteration,bu ge sounds like book
+d1_00040,transliteration,wan yi ren sounds like one year
+d1_00041,other,unrelated word
+d1_00042,other,yeah not equivalent to filler
+d1_00043,transliteration,hai approximates -er ending
+d1_00044,transliteration,fang bian partial sound match
+d1_00045,transliteration,ying fu sounds like info
+d1_00046,other,repetition hallucination
+d1_00047,other,read not book; no sound match
+d1_00048,other,but does not mean so
+d1_00049,translation,go to meaning
+d1_00050,transliteration,ou xi ya sounds like ocr
+d1_00051,transliteration,e sounds like a
+d1_00052,other,unrelated word
+d1_00053,other,unrelated words
+d1_00054,transliteration,diu sounds like due
+d1_00055,translation,equivalent interjection
+d1_00056,other,too mixed
+d1_00057,translation,standard chinese name
+d1_00058,transliteration,bi jing sounds like business
+d1_00059,translation,same meaning one
+d1_00060,transliteration,gan sao partial sound match
+d1_00061,other,unrelated words
+d1_00062,translation,equivalent fillers
+d1_00063,transliteration,bing partial sound match
+d1_00064,transliteration,de approximates -ern
+d1_00065,transliteration,dou gou sounds like logo
+d1_00066,transliteration,de pao sounds like report
+d1_00067,other,unrelated word
+d1_00068,transliteration,now sounds like na wo
+d1_00069,transliteration,ni you sounds like new
+d1_00070,other,unrelated particle
+d1_00071,other,unrelated word
+d1_00072,transliteration,cert ye sounds like third year
+d1_00073,other,unrelated word
+d1_00074,transliteration,xin nian sounds like senior
+d1_00075,translation,same meaning this is
+d1_00076,transliteration,wo shou sounds like work shop
+d1_00077,transliteration,lai sounds like line
+d1_00078,transliteration,lao fei sounds like latte
+d1_00079,transliteration,cert ye sounds like third year
+d1_00080,transliteration,cong ting de sounds like computer
+d1_00081,transliteration,ollie pei sounds like alipay
+d1_00082,transliteration,san ge partial sound match
+d1_00083,transliteration,kan ting le sounds like computer
+d1_00084,other,unrelated word
+d1_00085,translation,same meaning is
+d1_00086,other,unrelated words
+d1_00087,translation,so translates suoyi
+d1_00088,transliteration,bi jing sounds like business
+d1_00089,translation,equivalent filler
+d1_00090,transliteration,nong wo sounds like normal
+d1_00091,transliteration,pa zhang sounds like part time
+d1_00092,other,unrelated word
+d1_00093,transliteration,the sounds like de
+d1_00094,other,unrelated function word
+d1_00095,transliteration,sound-alike rendering
+d1_00096,transliteration,mei zhuo sounds like major
+d1_00097,transliteration,sou suo sounds like social
+d1_00098,transliteration,x de sounds like accident
+d1_00099,transliteration,mei juan sounds like major
+d1_00100,transliteration,ming dan sounds like minton
+d1_00101,transliteration,yin ke sounds like in case
+d1_00102,transliteration,bu lai sounds like -ply
+d1_00103,transliteration,mai yi dian sounds like minded
+d1_00104,transliteration,wen yi sounds like one year
+d1_00105,transliteration,fen po partial sound match
+d1_00106,transliteration,qu check sounds like chitchat
+d1_00107,transliteration,force ye sounds like fourth year
+d1_00108,transliteration,o c a sounds like ocr
+d1_00109,other,extra de; no replacement meaning
+d1_00110,translation,equivalent filler
+d1_00111,translation,equivalent filler
+d1_00112,transliteration,lai approximates -ply
+d1_00113,other,unrelated words
+d1_00114,transliteration,wan yi sounds like one year
+d1_00115,translation,same meaning this is
+d1_00116,other,unrelated word
+d1_00117,transliteration,guo sounds like go
+d1_00118,other,unrelated words
+d1_00119,transliteration,gou sounds like go
+d1_00120,other,mixed unrelated block
+d1_00121,other,unrelated word
+d1_00122,transliteration,suo sounds like so
+d1_00123,translation,same meaning
+d1_00124,transliteration,you shi sounds like user
+d1_00125,transliteration,ma yi dian sounds like minded
+d1_00126,transliteration,ke ding sounds like collect
+d1_00127,transliteration,mei jue sounds like major
+d1_00128,transliteration,shuo sounds like so
+d1_00129,translation,same meaning
+d1_00130,transliteration,e sounds like a
+d1_00131,transliteration,hong kuang sounds like hong kong
+d1_00132,translation,so were going translates
+d1_00133,other,unrelated words
+d1_00134,transliteration,all the sounds like outdoor
+d1_00135,transliteration,lao tui sounds like latte
+d1_00136,other,different meaning
+d1_00137,transliteration,wan yi sounds like one year
+d1_00138,transliteration,mo nai sounds like mall
+d1_00139,other,unrelated words
+d1_00140,transliteration,tuan partial sound match
+d1_00141,transliteration,a la bei sounds like koala bear
+d1_00142,transliteration,pao sounds like pool
+d1_00143,transliteration,la cai sounds like latte
+d1_00144,other,unrelated word
+d1_00145,other,unrelated words
+d1_00146,transliteration,yan chi dai guo sounds like entry level
+d1_00147,other,unrelated words
+d1_00148,transliteration,yan chui dai guo sounds like entry level
+d1_00149,transliteration,hong kong sound-alike
+d1_00150,translation,standard chinese name
+d1_00151,transliteration,also fun sounds like shao fan
+d1_00152,other,mixed; no clear match
+d1_00153,other,unrelated word
+d1_00154,transliteration,ying gai sounds like in case
+d1_00155,other,unrelated words
+d1_00156,transliteration,in the sounds like yin wei
+d1_00157,translation,equivalent fillers
+d1_00158,other,too mixed
+d1_00159,other,unrelated words
+d1_00160,other,unrelated word
+d1_00161,transliteration,bu ge sounds like book
+d1_00162,other,unrelated word
+d1_00163,other,unrelated word
+d1_00164,transliteration,ke a sounds like collect
+d1_00165,transliteration,bao zhi partial sound match
+d1_00166,transliteration,sky jiu sounds like schedule
+d1_00167,other,unrelated word
+d1_00168,transliteration,ming ci sounds like minton
+d1_00169,transliteration,sou suo sounds like social
+d1_00170,transliteration,sheng yin sounds like senior
+d1_00171,other,unrelated words
+d1_00172,other,unrelated function word
+d1_00173,transliteration,x xuan sounds like exchange
+d1_00174,other,repetition loop
+d1_00175,transliteration,pao sounds like part
+d1_00176,transliteration,fen xi sounds like fancy
+d1_00177,transliteration,pai gei sounds like package
+d1_00178,other,unrelated word
+d1_00179,transliteration,san ying sounds like sign in
+d1_00180,other,unrelated words
+d1_00181,translation,just means jiushi
+d1_00182,other,unrelated word
+d1_00183,translation,just means jiushi
+d1_00184,other,unrelated word
+d1_00185,other,unrelated words
+d1_00186,other,unrelated word
+d1_00187,other,unrelated word
+d1_00188,transliteration,tan sounds like time
+d1_00189,other,unrelated word
+d1_00190,transliteration,di bei sounds like debate
+d1_00191,other,unrelated word
+d1_00192,transliteration,ming ting sounds like minton
+d1_00193,transliteration,kan bu ni sounds like company
+d1_00194,transliteration,ta pack sounds like topic
+d1_00195,other,unrelated word
+d1_00196,other,unrelated words
+d1_00197,transliteration,now sounds like na wo
+d1_00198,transliteration,kong jie ting sounds like quantity
+d1_00199,transliteration,geng ting de sounds like computer
+d1_00200,transliteration,shi nian sounds like tennis
+d1_00201,transliteration,bai ming teng sounds like badminton
+d1_00202,translation,same meaning
+d1_00203,transliteration,ka x deng sounds like car accident
+d1_00204,transliteration,mu ban pei sounds like mobile payment
+d1_00205,transliteration,rt kou sounds like article
+d1_00206,transliteration,mei jue sounds like major
+d1_00207,transliteration,pei pei sounds like paper
+d1_00208,other,different word
+d1_00209,transliteration,pai sen sounds like python
+d1_00210,other,unrelated word
+d1_00211,transliteration,san wei sounds like sandwiches
+d1_00212,other,unrelated word
+d1_00213,transliteration,cl de sounds like sell
+d1_00214,transliteration,ka sounds like car
+d1_00215,transliteration,pai pian sounds like package
+d1_00216,other,unrelated words
+d1_00217,translation,head noun friends translated
+d1_00218,transliteration,bi jing sounds like business
+d1_00219,transliteration,mu ban pei sounds like mobile payment
+d1_00220,transliteration,kong jie ting sounds like quantity
+d1_00221,transliteration,ba ze sounds like budget
+d1_00222,transliteration,tao bie sounds like topic
+d1_00223,other,unrelated words
+d1_00224,transliteration,pi suo sounds like peaceful
+d1_00225,transliteration,you sounds like user
+d1_00226,transliteration,now sounds like na wo
+d1_00227,transliteration,er yi sounds like ai
+d1_00228,transliteration,di er sounds like deers
+d1_00229,other,lai unrelated to card
+d1_00230,transliteration,all fun sounds like shao fan
+d1_00231,other,unrelated words
+d1_00232,transliteration,so fun sounds like shao fan
+d1_00233,translation,same meaning
+d1_00234,translation,say translates shuo
+d1_00235,transliteration,pa pa sounds like part
+d1_00236,other,unrelated words
+d1_00237,transliteration,ka sounds like car
+d1_00238,other,unrelated words
+d1_00239,transliteration,kong dian ti sounds like quantity
+d1_00240,transliteration,pao tang sounds like part time
+d1_00241,transliteration,bi xu ness sounds like business
+d1_00242,transliteration,xin lie sounds like senior
+d1_00243,transliteration,de lai sounds like deadline
+d1_00244,other,unrelated word
+d1_00245,other,unrelated words
+d1_00246,transliteration,ju min sounds like gym
+d1_00247,translation,female friends meaning
+d1_00248,transliteration,ban ming tan sounds like badminton
+d1_00249,transliteration,dou kou sounds like local
+d1_00250,other,unrelated words
+d1_00251,transliteration,jiu approximates -dule
+d1_00252,other,unrelated words
+d1_00253,transliteration,sai ying sounds like sign in
+d1_00254,transliteration,qiu zhe partial sound of children
+d1_00255,transliteration,yan fei sounds like entry level
+d1_00256,transliteration,fan xie sounds like fancy
+d1_00257,transliteration,ming dan sounds like minton
+d1_00258,transliteration,bi jing sounds like business
+d1_00259,other,unrelated word
+d1_00260,other,mixed unrelated
+d1_00261,transliteration,fen sui sounds like fancy
+d1_00262,transliteration,yi ai sounds like ai
+d1_00263,transliteration,er sounds like a
+d1_00264,other,unrelated word
+d1_00265,translation,equivalent interjection
+d1_00266,other,unrelated words
+d1_00267,translation,same meaning
+d1_00268,translation,same meaning
+d1_00269,transliteration,hong kao sounds like hong kong
+d1_00270,transliteration,kan dao sounds like canto-
+d1_00271,transliteration,san wei sounds like sandwiches
+d1_00272,translation,we cant translates
+d1_00273,translation,same meaning
+d1_00274,other,unrelated word
+d1_00275,transliteration,mei zhe sounds like major
+d1_00276,transliteration,ming kan partial sound match
+d1_00277,other,unrelated words
+d1_00278,transliteration,pai sheng zhe sounds like passenger
+d1_00279,transliteration,pritic sounds like predic-
+d1_00280,other,unrelated word
+d1_00281,transliteration,da lock sounds like dialogue
+d1_00282,other,mixed unrelated
+d1_00283,transliteration,kong kao sounds like hong kong
+d1_00284,transliteration,ju man sounds like gym
+d1_00285,transliteration,ming tan sounds like minton
+d1_00286,other,unrelated words
+d1_00287,transliteration,kong tie ting sounds like quantity
+d1_00288,transliteration,wan yi yan sounds like one year
+d1_00289,transliteration,todd sounds like ta ta
+d1_00290,translation,make decision translated as do matter
+d1_00291,transliteration,mu ba pei sounds like mobile payments
+d1_00292,transliteration,mu er sounds like mall
+d1_00293,transliteration,mu biao pei sounds like mobile payment
+d1_00294,transliteration,ali pei sounds like alipay
+d1_00295,translation,you can translates
+d1_00296,transliteration,hong hong sounds like hong kong
+d1_00297,transliteration,pang pang sounds like part
+d1_00298,transliteration,tou sounds like talk
+d1_00299,other,mixed unrelated
+d1_00300,transliteration,all fun sounds like shao fan
+d1_00301,transliteration,shou sounds like so
+d1_00302,other,unrelated words
+d1_00303,transliteration,xin li sounds like senior
+d1_00304,other,unrelated word
+d1_00305,translation,ah equivalent interjection
+d1_00306,other,unrelated word
+d1_00307,transliteration,shi bu bai shi sounds like supervisor
+d1_00308,transliteration,backmint sounds like badminton
+d1_00309,transliteration,de approximates -er
+d1_00310,other,mixed unrelated
+d1_00311,transliteration,lang zhi tou sounds like lunch talk
+d1_00312,other,unrelated words
+d1_00313,transliteration,ei sounds like a
+d1_00314,transliteration,kai xin deng sounds like car accident
+d1_00315,translation,information same meaning
+d1_00316,other,unrelated words
+d1_00317,transliteration,de approximates -er
+d1_00318,transliteration,bang qian partial sound match
+d1_00319,translation,di biao means low standard
+d1_00320,other,unrelated word
+d1_00321,transliteration,fu ke shi sounds like focus
+d1_00322,transliteration,qiu teng sounds like tutor
+d1_00323,other,unrelated word
+d1_00324,transliteration,you se sounds like user
+d1_00325,other,unrelated word
+d1_00326,transliteration,ren ke sounds like rank
+d1_00327,transliteration,xing gan po sounds like singapore
+d1_00328,transliteration,lei a sounds like lay up
+d1_00329,transliteration,jiu approximates -dule
+d1_00330,transliteration,lang qi tou sounds like lunch talk
+d1_00331,transliteration,chuan se ya sounds like trust ai
+d1_00332,other,unrelated words
+d1_00333,transliteration,todd sounds like ta ta
+d1_00334,transliteration,ka de men sounds like customer
+d1_00335,other,unrelated words
+d1_00336,other,unrelated word
+d1_00337,transliteration,gan xing sounds like consent
+d1_00338,transliteration,all fun sounds like shao fan
+d1_00339,transliteration,hao wei er sounds like hardware
+d1_00340,other,unrelated words niu rou
+d1_00341,other,too mixed
+d1_00342,transliteration,fan xin sounds like fancy
+d1_00343,transliteration,pinyin romanization of name
+d1_00344,transliteration,then lai sounds like deadline
+d1_00345,transliteration,mai ke li sounds like michael
+d1_00346,transliteration,tao sounds like talk
+d1_00347,other,unrelated words
+d1_00348,other,unrelated word
+d1_00349,transliteration,mo sounds like mall
+d1_00350,other,unrelated words
+d1_00351,other,unrelated words
+d1_00352,transliteration,lao zuo sounds like latte
+d1_00353,transliteration,all fun sounds like shao fan
+d1_00354,transliteration,bi jing sounds like business
+d1_00355,transliteration,ko la bei sounds like koala bear
+d1_00356,other,unrelated words
+d1_00357,other,unrelated words
+d1_00358,transliteration,ben lai sounds like deadline
+d1_00359,transliteration,qu qian sounds like chitchat
+d1_00360,other,mixed unrelated
+d1_00361,transliteration,ni ye shi sounds like near sea
+d1_00362,transliteration,guo sounds like go
+d1_00363,other,too mixed
+d1_00364,other,unrelated word
+d1_00365,other,repetition and unrelated
+d1_00366,transliteration,wei ni sounds like wind
+d1_00367,transliteration,da cai sounds like latte
+d1_00368,transliteration,ba zi ben sounds like but when
+d1_00369,transliteration,family pao le sounds like final report
+d1_00370,other,unrelated words
+d1_00371,transliteration,xiao cheng sounds like shout
+d1_00372,other,unrelated words
+d1_00373,transliteration,bu fen sounds like base line
+d1_00374,other,unrelated word
+d1_00375,transliteration,ba zhe sounds like but when
+d1_00376,transliteration,phonetic rendering of alipay
+d1_00377,other,repetition hallucination
+d1_00378,transliteration,pinyin romanization of name
+d1_00379,transliteration,in a sounds like yin wei
+d1_00380,other,unrelated words
+d1_00381,transliteration,deng light sounds like deadline
+d1_00382,transliteration,mei jin sounds like major
+d1_00383,transliteration,hong kao sounds like homework
+d1_00384,transliteration,qiu zhe partial sound of children
+d1_00385,transliteration,a li pei sounds like alipay
+d1_00386,transliteration,over fun sounds like shao fan
+d1_00387,transliteration,da wang sounds like dialogue
+d1_00388,transliteration,qu qian sounds like chitchat
+d1_00389,transliteration,ying bi ting sounds like in between
+d1_00390,other,students head noun but exchange unrelated
+d1_00391,other,unrelated words
+d1_00392,transliteration,feng kong sounds like hong kong
+d1_00393,other,unrelated words
+d1_00394,transliteration,bai ming teng sounds like badminton
+d1_00395,transliteration,mn qu partial sound match
+d1_00396,transliteration,ni ni si sounds like near sea
+d1_00397,transliteration,xm de hampem sounds like accident happen
+d1_00398,transliteration,shen me feng sounds like smart phone
+d1_00399,other,unrelated word
+d1_00400,other,unrelated word
+d1_00401,transliteration,mu ban pei sounds like mobile payments
+d1_00402,transliteration,lia ying sounds like sign in
+d1_00403,transliteration,mei zhu sounds like major
+d1_00404,transliteration,shen me yao feng sounds like smartphone
+d1_00405,other,unrelated words
+d1_00406,transliteration,tiao te sounds like tutor
+d1_00407,other,unrelated word
+d1_00408,other,unrelated words
+d1_00409,transliteration,ken ding shi sounds like cantonese
+d1_00410,other,unrelated word
+d1_00411,transliteration,quan yi partial sound of choice
+d1_00412,translation,ah equivalent interjection
+d1_00413,transliteration,ai dao sounds like idol
+d1_00414,other,repetition hallucination
+d1_00415,other,unrelated words
+d1_00416,other,unrelated words
+d1_00417,transliteration,sorry sounds like suo yi
+d1_00418,transliteration,yi liang qu sounds like electric
+d1_00419,transliteration,de part sounds like report
+d1_00420,transliteration,di wei sounds like due
+d1_00421,transliteration,dai guo sounds like level
+d1_00422,transliteration,bi jing sounds like business
+d1_00423,transliteration,ban quan sounds like function
+d1_00424,transliteration,hui rang sounds like voice
+d1_00425,other,unrelated interjection
+d1_00426,translation,3 nian means third years
+d1_00427,transliteration,bai ming tuan sounds like badminton
+d1_00428,transliteration,micr jue deng sounds like michael jordan
+d1_00429,transliteration,wan quan partial sound match
+d1_00430,other,unrelated words
+d1_00431,translation,uh in translates e zai
+d1_00432,transliteration,xiao de sounds like shout
+d1_00433,transliteration,po po sounds like pool
+d1_00434,other,too mixed
+d1_00435,other,unrelated words
+d1_00436,transliteration,ting sounds like take
+d1_00437,transliteration,yin wei a sounds like india
+d1_00438,transliteration,wo sounds like work
+d1_00439,transliteration,hong guo sounds like homework
+d1_00440,transliteration,wen yi sounds like one year
+d1_00441,other,mixed unrelated
+d1_00442,translation,gui means expensive
+d1_00443,other,garbled unrelated
+d1_00444,transliteration,bi jing ness sounds like business
+d1_00445,translation,equivalent filler
+d1_00446,other,unrelated words
+d1_00447,other,unrelated words
+d1_00448,other,unrelated words
+d1_00449,other,unrelated words
+d1_00450,transliteration,hao kong sounds like hong kong
+d1_00451,transliteration,ying que ding sounds like interesting
+d1_00452,other,unrelated word
+d1_00453,other,too mixed
+d1_00454,other,unrelated words
+d1_00455,transliteration,kan ta ni sounds like cantonese
+d1_00456,transliteration,ying te bie sounds like interview
+d1_00457,transliteration,qu sounds like choice
+d1_00458,transliteration,bei sounds like build
+d1_00459,transliteration,hai xiu sounds like high standard
+d1_00460,other,english garble no cross match
+d1_00461,transliteration,lu bu sounds like group
+d1_00462,other,too mixed
+d1_00463,other,unrelated interjection
+d1_00464,other,unrelated word
+d1_00465,transliteration,qian fen partial sound match
+d1_00466,other,english garble
+d1_00467,other,unrelated words
+d1_00468,transliteration,hong kang sounds like hong kong
+d1_00469,transliteration,su du bai sheng sounds like supervisor
+d1_00470,transliteration,mian tuan partial sound match
+d1_00471,transliteration,pa tai sounds like part time
+d1_00472,transliteration,kong kong sounds like hong kong
+d1_00473,transliteration,hong kao sounds like hong kong
+d1_00474,transliteration,pa tang sounds like part time
+d1_00475,transliteration,that sounds like ta ta
+d1_00476,transliteration,yan shui sounds like entry level
+d1_00477,other,mixed unrelated
+d1_00478,transliteration,hao wan sounds like hardware
+d1_00479,transliteration,ai ya sounds like ai
+d1_00480,transliteration,a li pei sounds like alipay
+d1_00481,transliteration,mei nv sounds like major
+d1_00482,transliteration,ke er sounds like collect
+d1_00483,transliteration,kor ala bei sounds like koala bear
+d1_00484,transliteration,kao kao sounds like college
+d1_00485,other,unrelated words
+d1_00486,transliteration,san wei sounds like sandwiches
+d1_00487,other,unrelated word
+d1_00488,transliteration,x ray sounds like accident
+d1_00489,transliteration,content ting sounds like quantity
+d1_00490,transliteration,er yi sounds like ai
+d1_00491,translation,so translates suoyi
+d1_00492,other,unrelated word
+d1_00493,transliteration,bi jing sounds like business
+d1_00494,other,repetition hallucination
+d1_00495,transliteration,lai sounds like i will
+d1_00496,transliteration,can de quite sounds like candy crush
+d1_00497,transliteration,lao tie sounds like latte
+d1_00498,other,too mixed
+d1_00499,transliteration,mei guo sounds like major
+d1_00500,transliteration,pa tong sounds like part time
+d1_00501,transliteration,xing sounds like simu-
+d1_00502,transliteration,geng ping deng sounds like computer
+d1_00503,transliteration,bu dong sounds like block
+d1_00504,other,unrelated words
+d1_00505,transliteration,kou a la bei sounds like koala bear
+d1_00506,other,unrelated words
+d1_00507,transliteration,tan sounds like top-
+d1_00508,transliteration,all zao sounds like outdoor
+d1_00509,transliteration,yel ming sounds like yao ming
+d1_00510,transliteration,ren ke sounds like rank
+d1_00511,other,unrelated words
+d1_00512,transliteration,po le sounds like pool
+d1_00513,other,unrelated words
+d1_00514,other,unrelated word
+d1_00515,transliteration,bu ting partial sound of opportunity
+d1_00516,other,unrelated word
+d1_00517,other,unrelated word
+d1_00518,transliteration,de approximates -ed
+d1_00519,transliteration,koharabe sounds like koala bear
+d1_00520,other,repetition hallucination
+d1_00521,transliteration,wen yi er sounds like one year
+d1_00522,transliteration,pai she sounds like python
+d1_00523,other,partial sound plus extra words
+d1_00524,translation,equivalent filler
+d1_00525,transliteration,bi jing nes sounds like business
+d1_00526,transliteration,deng lai sounds like deadline
+d1_00527,other,mixed extra words
+d1_00528,other,opposite meaning
+d1_00529,transliteration,tiao zhan sounds like tutor
+d1_00530,other,unrelated word
+d1_00531,transliteration,sheng ti sounds like sentiment
+d1_00532,transliteration,sir er sounds like third i
+d1_00533,transliteration,dou pai sounds like apply
+d1_00534,transliteration,hao duo sounds like hardware
+d1_00535,transliteration,shi hui mai shui sounds like supervisor
+d1_00536,other,unrelated words
+d1_00537,transliteration,bai shui pao sounds like basketball
+d1_00538,transliteration,bai mi de sounds like badminton
+d1_00539,transliteration,bai ming ci sounds like badminton
+d1_00540,transliteration,su lin pao sounds like swim properly
+d1_00541,other,unrelated words
+d1_00542,transliteration,jiu approximates -dule
+d1_00543,other,unrelated words
+d1_00544,other,unrelated words
+d1_00545,other,unrelated words
+d1_00546,transliteration,ha wei sounds like hardware
+d1_00547,transliteration,todd sounds like ta ta
+d1_00548,transliteration,de pan sounds like the part
+d1_00549,other,unrelated word
+d1_00550,other,mixed unrelated
+d1_00551,transliteration,dian man li sounds like deep learning
+d1_00552,transliteration,tiao yu sounds like tutor
+d1_00553,transliteration,fa yi dao sounds like final
+d1_00554,transliteration,yan shui sounds like entry level
+d1_00555,other,unrelated words
+d1_00556,transliteration,feng kong sounds like hong kong
+d1_00557,other,english garble no cross match
+d1_00558,translation,and then translates ranhou
+d1_00559,transliteration,tiao tiao sounds like tutor
+d1_00560,other,english garble with de
+d1_00561,transliteration,kong kong sounds like hong kong
+d1_00562,other,unrelated word
+d1_00563,other,unrelated word
+d1_00564,other,unrelated word
+d1_00565,transliteration,pa tang sounds like part time
+d1_00566,other,unrelated words
+d1_00567,translation,so translates suoyi
+d1_00568,transliteration,lao shi sounds like lunch
+d1_00569,other,unrelated word
+d1_00570,transliteration,phonetic rendering of alipay
+d1_00571,transliteration,ban ming tian sounds like badminton
+d1_00572,other,unrelated words niu rou
+d1_00573,transliteration,my culture deng sounds like michael jordan
+d1_00574,transliteration,lei shang sounds like lay up
+d1_00575,transliteration,rang ta sounds like lunch talk
+d1_00576,transliteration,hai yao pen sounds like happen
+d1_00577,transliteration,mo er sounds like mall
+d1_00578,other,unrelated words
+d1_00579,other,unrelated word
+d1_00580,other,hallucinated extra words
+d1_00581,other,english garble
+d1_00582,other,unrelated word
+d1_00583,transliteration,x yuan sounds like exchange
+d1_00584,transliteration,ollie pei sounds like alipay
+d1_00585,transliteration,bu ting partial sound of opportunity
+d1_00586,other,unrelated word
+d1_00587,other,read not book
+d1_00588,other,too mixed
+d1_00589,transliteration,di liu sounds like due
+d1_00590,other,too mixed
+d1_00591,transliteration,ying yu a sounds like india
+d1_00592,other,unrelated words
+d1_00593,other,unrelated word
+d1_00594,other,repetition loop
+d1_00595,other,unrelated word
+d1_00596,transliteration,tiao wu tai sounds like tutor
+d1_00597,other,english garble
+d1_00598,other,unrelated words
+d1_00599,transliteration,mang case sounds like monkeys
+d1_00600,other,english garble with de
+d1_00601,transliteration,rang wo chi tou sounds like lunch talk
+d1_00602,transliteration,dan ming tian sounds like badminton
+d1_00603,transliteration,pao tang sounds like part time
+d1_00604,other,repetition hallucination
+d1_00605,transliteration,hong kang sounds like hong kong
+d1_00606,transliteration,wan yi ren sounds like one year
+d1_00607,transliteration,ye approximates -ed
+d1_00608,transliteration,x xuan sounds like exchange
+d1_00609,translation,um rendered as equivalent filler
+d1_00610,other,unrelated words
+d1_00611,other,unrelated words
+d1_00612,transliteration,pa tang sounds like part time
+d1_00613,transliteration,mei jie sounds like major
+d1_00614,transliteration,mai ke jie er deng sounds like michael jordan
+d1_00615,translation,di biao zhun means low standard
+d1_00616,transliteration,pai sheng sounds like python
+d1_00617,transliteration,bu ting partial sound of opportunity
+d1_00618,transliteration,fan gong sounds like final
+d1_00619,other,unrelated word
+d1_00620,other,unrelated word
+d1_00621,transliteration,sir ye sounds like third year
+d1_00622,transliteration,dagger d fung sounds like zhao ge di fang
+d1_00623,transliteration,ha wei sounds like hardware
+d1_00624,transliteration,ke yi pei dao sounds like compare to
+d1_00625,transliteration,po chui de sounds like portrait
+d1_00626,other,unrelated words
+d1_00627,other,english garble with de
+d1_00628,other,too mixed
+d1_00629,transliteration,shen me feng sounds like smartphone
+d1_00630,transliteration,bu zou sounds like block chain
+d1_00631,translation,so we will translates
+d1_00632,transliteration,shi yue sounds like tennis
+d1_00633,other,too mixed
+d1_00634,other,unrelated words
+d1_00635,other,unrelated word
+d1_00636,transliteration,wai di huang kang sounds like why hong kong
+d1_00637,transliteration,shou fei ren sounds like software
+d1_00638,transliteration,dagger d vong sounds like zhao ge di fang
+d1_00639,other,unrelated words
+d1_00640,other,too mixed
+d1_00641,other,unrelated word
+d1_00642,other,english garble with de
+d1_00643,other,unrelated words
+d1_00644,transliteration,fang wen partial sound of uniforms
+d1_00645,other,unrelated words
+d1_00646,other,unrelated words
+d1_00647,transliteration,yan xu dai hui sounds like entry level
+d1_00648,transliteration,all fun sounds like shao fan
+d1_00649,translation,they will translates
+d1_00650,other,repetition loop
+d1_00651,other,different meaning
+d1_00652,other,unrelated word
+d1_00653,other,unrelated words
+d1_00654,other,unrelated word
+d1_00655,other,unrelated words
+d1_00656,transliteration,dan ming tun sounds like badminton
+d1_00657,other,unrelated words
+d1_00658,other,unrelated word
+d1_00659,transliteration,chore yi sounds like choice
+d1_00660,transliteration,diu tai sounds like tutor
+d1_00661,other,unrelated word
+d1_00662,transliteration,dan ming tun sounds like badminton
+d1_00663,transliteration,shi yi sounds like tennis
+d1_00664,transliteration,ke yi sounds like corey
+d1_00665,transliteration,kong tie ting sounds like quantity
+d1_00666,other,english garble
+d1_00667,translation,so were gonna translates
+d1_00668,other,english garble
+d1_00669,transliteration,hao wei sounds like hardware
+d1_00670,translation,same meaning
+d1_00671,transliteration,mei jie sounds like major
+d1_00672,transliteration,bai mei nan sounds like badminton
+d1_00673,other,unrelated words
+d1_00674,other,unrelated words
+d1_00675,other,english garble with le
+d1_00676,transliteration,yan cui sounds like entry level
+d1_00677,transliteration,di er sounds like deers
+d1_00678,transliteration,ta pek sounds like topic
+d1_00679,other,unrelated word
+d1_00680,transliteration,mei jue sounds like major
+d1_00681,transliteration,ei i sounds like ai
+d1_00682,other,too mixed
+d1_00683,transliteration,full ke shi sounds like focus
+d1_00684,other,unrelated word
+d1_00685,other,unrelated words
+d1_00686,other,unrelated word
+d1_00687,transliteration,make guo sounds like meiguo
+d1_00688,transliteration,ben ming de sounds like badminton
+d1_00689,other,unrelated words
+d1_00690,transliteration,kong jie qian sounds like quantity
+d1_00691,transliteration,kou a la bei sounds like koala bear
+d1_00692,other,unrelated words
+d1_00693,other,mixed unrelated
+d1_00694,transliteration,po sounds like pool
+d1_00695,transliteration,de pa sounds like report
+d1_00696,other,too mixed
+d1_00697,transliteration,a sounds like a
+d1_00698,transliteration,gou hai ling ji sounds like go hiking
+d1_00699,other,unrelated words
+d1_00700,transliteration,wan ye er sounds like one year
+d1_00701,transliteration,bu ge sounds like book
+d1_00702,other,english garble
+d1_00703,other,english garble
+d1_00704,other,unrelated words
+d1_00705,transliteration,bu ge sounds like book
+d1_00706,other,unrelated words
+d1_00707,other,unrelated words
+d1_00708,transliteration,dou go sounds like logo
+d1_00709,other,unrelated word
+d1_00710,other,unrelated words
+d1_00711,other,unrelated words
+d1_00712,transliteration,kan ting se sounds like computer
+d1_00713,other,unrelated words
+d1_00714,transliteration,bang ming e sounds like badminton
+d1_00715,other,unrelated word
+d1_00716,transliteration,sai shi sounds like size
+d1_00717,transliteration,zai min can sounds like badminton
+d1_00718,transliteration,bang ming sounds like badminton
+d1_00719,transliteration,shuang sounds like shop
+d1_00720,other,english garble
+d1_00721,transliteration,feng sounds like phone
+d1_00722,other,unrelated word
+d1_00723,other,unrelated word
+d1_00724,other,unrelated words
+d1_00725,transliteration,bang ming hen sounds like badminton
+d1_00726,transliteration,chao chao fun sounds like cha shao fan
+d1_00727,transliteration,zai min tai sounds like badminton
+d1_00728,transliteration,ou xi a sounds like ocr
+d1_00729,other,unrelated words
+d1_00730,other,unrelated word
+d1_00731,transliteration,zai ming dian sounds like badminton
+d1_00732,transliteration,fan si sounds like fancy
+d1_00733,other,too mixed
+d1_00734,transliteration,pa tang sounds like part time
+d1_00735,transliteration,tong li sounds like tony
+d1_00736,other,unrelated function word
+d1_00737,other,english word with de
+d1_00738,transliteration,zai ming tian sounds like badminton
+d1_00739,other,english garble
+d1_00740,other,english garble
+d1_00741,transliteration,bei bei sounds like big big
+d1_00742,other,unrelated words
+d1_00743,other,unrelated word
+d1_00744,translation,equivalent fillers
+d1_00745,transliteration,de pao sounds like report
+d1_00746,transliteration,gan cui sounds like games
+d1_00747,transliteration,mang de case sounds like monkeys
+d1_00748,transliteration,bao sounds like part
+d1_00749,other,repetition loop
+d1_00750,other,unrelated words
+d1_00751,transliteration,tu fei partial sound of topic
+d1_00752,transliteration,si li pei sounds like sleepy
+d1_00753,transliteration,kou a la bei sounds like koala bear
+d1_00754,transliteration,yin wei sounds like india
+d1_00755,transliteration,ti partial sound of utility
+d1_00756,other,unrelated word
+d1_00757,other,unrelated words
+d1_00758,other,english garble
+d1_00759,transliteration,pen sounds like -pen
+d1_00760,other,english garble
+d1_00761,other,unrelated word
+d1_00762,transliteration,de pao sounds like report
+d1_00763,transliteration,lang zhi sounds like lunch
+d1_00764,transliteration,mo lun sounds like mall
+d1_00765,transliteration,kong jie ti sounds like quantity
+d1_00766,transliteration,ba juan sounds like budget
+d1_00767,transliteration,kan ting de sounds like computer
+d1_00768,transliteration,bi jing sounds like business
+d1_00769,other,main word view replaced by unrelated
+d1_00770,other,english word with de
+d1_00771,other,too mixed
+d1_00772,other,repetition hallucination
+d1_00773,transliteration,kan ting sounds like computer
+d1_00774,transliteration,yin ke sounds like in case
+d1_00775,other,english garble
+d1_00776,other,english garble
+d1_00777,transliteration,de pao sounds like report
+d1_00778,translation,hen means very
+d1_00779,transliteration,ba zi ran sounds like but when
+d1_00780,transliteration,yin ke yi sounds like in case
+d1_00781,transliteration,ba zi ran sounds like but when
+d1_00782,other,too mixed
+d1_00783,transliteration,wan yi ren sounds like one year
+d1_00784,other,english garble
+d1_00785,transliteration,kan partial sound of car
+d1_00786,other,garbled unrelated
+d1_00787,translation,ji qiao means technique
+d1_00788,translation,nian dai means generation
+d1_00789,other,unrelated words
+d1_00790,transliteration,kan ta na sounds like cantonese
+d1_00791,transliteration,hong kou sounds like hong kong
+d1_00792,other,unrelated words
+d1_00793,transliteration,xin ling sounds like senior
+d1_00794,translation,same meaning
+d1_00795,transliteration,fang shi partial sound match
+d1_00796,translation,so we are going translates
+d1_00797,transliteration,hong kong sound-alike
+d1_00798,other,english garble
+d1_00799,transliteration,a li pei sounds like alipay
+d1_00800,other,too mixed
+d1_00801,other,teach not tell
+d1_00802,transliteration,da walk sounds like dialogue
+d1_00803,transliteration,qu bie sounds like chitchat
+d1_00804,transliteration,sheng ti sounds like sentiment
+d1_00805,transliteration,ying que sounds like interesting
+d1_00806,transliteration,xing gan po sounds like singapore
+d1_00807,transliteration,dai ming ci sounds like badminton
+d1_00808,transliteration,sou she sounds like social
+d1_00809,other,unrelated words
+d1_00810,other,too mixed
+d1_00811,other,unrelated word
+d1_00812,other,too mixed
+d1_00813,transliteration,de le cod sounds like the the court
+d1_00814,transliteration,yall mean sounds like yao ming
+d1_00815,transliteration,hai li pei sounds like alipay
+d1_00816,translation,just is means jiushi
+d1_00817,other,repetition loop
+d1_00818,transliteration,fa dong sounds like final
+d1_00819,transliteration,tiao wu te sounds like tutor
+d1_00820,other,unrelated word
+d1_00821,transliteration,hang kong sounds like hong kong
+d1_00822,transliteration,jin men sounds like gym
+d1_00823,translation,equivalent interjection
+d1_00824,transliteration,dang ming tian sounds like badminton
+d1_00825,transliteration,bu tao sounds like block
+d1_00826,transliteration,dai ming tan sounds like badminton
+d1_00827,transliteration,shen me fang sounds like smart phone
+d1_00828,transliteration,qiu tui sounds like tutor
+d1_00829,other,unrelated word
+d1_00830,transliteration,dai ming sounds like badminton
+d1_00831,other,unrelated particle
+d1_00832,transliteration,la qu tou sounds like lunch talk
+d1_00833,transliteration,chuan shui ya sounds like trust ai
+d1_00834,other,unrelated word
+d1_00835,transliteration,shen me sounds like smart
+d1_00836,other,unrelated word
+d1_00837,transliteration,shen me sounds like smart
+d1_00838,other,repetition loop
+d1_00839,transliteration,mei shi sounds like make sense
+d1_00840,transliteration,yi liang sounds like electric
+d1_00841,transliteration,dou ming tan sounds like badminton
+d1_00842,other,unrelated words
+d1_00843,other,unrelated words
+d1_00844,translation,do the matter for make decision
+d1_00845,translation,so were now going translates
+d1_00846,other,unrelated words
+d1_00847,other,unrelated words
+d1_00848,other,unrelated words
+d1_00849,other,unrelated words
+d1_00850,translation,ji shu means technical
+d1_00851,other,unrelated words
+d1_00852,translation,head noun foods translated
+d1_00853,translation,head noun students translated
+d1_00854,transliteration,ke yi sounds like compare
+d1_00855,other,repetition loop
+d1_00856,transliteration,fan le sounds like final
+d1_00857,transliteration,tao ni sounds like tony
+d1_00858,transliteration,gen ben sounds like computer
+d1_00859,transliteration,zai ci sounds like size
+d1_00860,transliteration,kong jian partial sound match
+d1_00861,other,unrelated word
+d1_00862,other,unrelated word
+d1_00863,translation,so were going translates
+d1_00864,transliteration,da dao sounds like dialogue
+d1_00865,transliteration,dou ge sounds like book
+d1_00866,transliteration,huang kong sounds like hong kong
+d1_00867,translation,why and hong kong translated
+d1_00868,transliteration,gong kang sounds like hong kong
+d1_00869,other,english garble
+d1_00870,transliteration,xing ge po sounds like singapore
+d1_00871,other,unrelated words
+d1_00872,transliteration,mei juan sounds like major
+d1_00873,other,english word with de di
+d1_00874,other,unrelated words
+d1_00875,other,unrelated words
+d1_00876,transliteration,hao wei sounds like hardware
+d1_00877,other,unrelated words
+d1_00878,transliteration,ju luo sounds like gym
+d1_00879,translation,head noun friends translated
+d1_00880,transliteration,tuo er si ji sounds like too risky
+d1_00881,translation,just means jiushi
+d1_00882,transliteration,bai ming dan sounds like badminton
+d1_00883,other,english garble
+d1_00884,transliteration,fang bian sounds like fancy
+d1_00885,other,too mixed
+d1_00886,transliteration,pa tao sounds like part time
+d1_00887,transliteration,dou kou sounds like local
+d1_00888,other,unrelated words
+d1_00889,other,unrelated words
+d1_00890,transliteration,jiu approximates -dule
+d1_00891,transliteration,shi gai jiu sounds like schedule
+d1_00892,transliteration,rang ren chi tao sounds like lunch talk
+d1_00893,other,unrelated word
+d1_00894,other,english garble
+d1_00895,other,english garble
+d1_00896,other,unrelated words
+d1_00897,other,unrelated function word
+d1_00898,transliteration,wo xi yao sounds like ocr
+d1_00899,other,mixed extra words
+d1_00900,transliteration,an chui dai sounds like entry level
+d1_00901,transliteration,mo ba pei sounds like mobile payments
+d1_00902,transliteration,mo mo sounds like mall
+d1_00903,transliteration,mu gang pei men sounds like mobile payment
+d1_00904,transliteration,a li pei sounds like alipay
+d1_00905,transliteration,san yin sounds like sign in
+d1_00906,other,unrelated words
+d1_00907,other,too mixed
+d1_00908,translation,equivalent filler
+d1_00909,other,unrelated word
+d1_00910,transliteration,xin li sounds like senior
+d1_00911,transliteration,qiu ceng sounds like tutor
+d1_00912,other,english garble
+d1_00913,transliteration,yan bi jun sounds like in between
+d1_00914,transliteration,mei si sounds like make sense
+d1_00915,other,unrelated word
+d1_00916,other,english garble
+d1_00917,other,unrelated words
+d1_00918,transliteration,shi bu wan sounds like supervisor
+d1_00919,transliteration,ju ment sounds like gym
+d1_00920,other,english garble
+d1_00921,transliteration,ban ming pan sounds like badminton
+d1_00922,transliteration,an men sounds like elementary
+d1_00923,transliteration,wan yi ye sounds like one year
+d1_00924,transliteration,yin te bie sounds like interview
+d1_00925,transliteration,bo shou sounds like work shop
+d1_00926,transliteration,ei ei sounds like ai
+d1_00927,other,unrelated words
+d1_00928,other,unrelated word
+d1_00929,translation,same meaning
+d1_00930,other,english garble
+d1_00931,other,unrelated words
+d1_00932,other,repetition hallucination
+d1_00933,transliteration,oc a sounds like ocr
+d1_00934,transliteration,yan shui dai sounds like entry level
+d1_00935,transliteration,mu hua sounds like mall
+d1_00936,other,english garble
+d1_00937,other,too mixed
+d1_00938,transliteration,qi jian sounds like chitchat
+d1_00939,other,unrelated words
+d1_00940,transliteration,su du huai shi sounds like supervisor
+d1_00941,other,unrelated word
+d1_00942,other,unrelated words niu rou
+d1_00943,transliteration,pu tong ti sounds like -portunity
+d1_00944,other,unrelated word
+d1_00945,other,unrelated words
+d1_00946,other,unrelated words
+d1_00947,other,english garble
+d1_00948,transliteration,hao wei sounds like hardware
+d1_00949,other,unrelated words
+d1_00950,transliteration,feng kong sounds like hong kong
+d1_00951,transliteration,qu yi sounds like choice
+d1_00952,other,unrelated word
+d1_00953,transliteration,ding na sounds like deep learning
+d1_00954,other,too mixed
+d1_00955,transliteration,fu ke sounds like focus
+d1_00956,other,unrelated words
+d1_00957,transliteration,kong kuang sounds like hong kong
+d1_00958,other,unrelated word
+d1_00959,transliteration,da box sounds like dialogue
+d1_00960,other,english garble
+d1_00961,transliteration,yong shou sounds like user
+d1_00962,transliteration,hong hong sounds like hong kong
+d1_00963,other,unrelated words
+d1_00964,other,english garble
+d1_00965,other,unrelated words
+d1_00966,other,unrelated word
+d1_00967,transliteration,ju jue sounds like gym
+d1_00968,transliteration,dan ming teng sounds like badminton
+d1_00969,transliteration,ban ming tan sounds like badminton
+d1_00970,transliteration,bai ming dan sounds like badminton
+d1_00971,other,unrelated word
+d1_00972,transliteration,kong tie sounds like quantity
+d1_00973,transliteration,ken da ni sounds like cantonese
+d1_00974,transliteration,sou suo sounds like social
+d1_00975,other,unrelated words
+d1_00976,other,unrelated words
+d1_00977,other,unrelated words
+d1_00978,other,unrelated word
+d1_00979,other,repetition hallucination
+d1_00980,transliteration,yan shui dai sounds like entry level
+d1_00981,transliteration,yan xu dai sounds like entry level
+d1_00982,transliteration,pei fen sounds like payments
+d1_00983,transliteration,mo xing sounds like mall
+d1_00984,transliteration,mu wai pei fen sounds like mobile payment
+d1_00985,transliteration,san yin sounds like sign in
+d1_00986,other,unrelated words
+d1_00987,other,too mixed
+d1_00988,other,english garble
+d1_00989,other,unrelated words
+d1_00990,transliteration,kong jie ting sounds like quantity
+d1_00991,other,unrelated word
+d1_00992,transliteration,mo feng sounds like mall
+d1_00993,transliteration,fan xi sounds like fancy
+d1_00994,other,english garble
+d1_00995,transliteration,geng geng sounds like computer
+d1_00996,transliteration,feng kang sounds like hong kong
+d1_00997,transliteration,make wo sounds like meiguo
+d1_00998,other,english garble
+d1_00999,transliteration,bai mei sounds like badminton
+d1_01000,transliteration,mai kao sounds like michael
+d1_01001,transliteration,kong pai ting sounds like quantity
+d1_01002,transliteration,wan yi yang sounds like one year
+d1_01003,transliteration,pa tang sounds like part time
+d1_01004,transliteration,lo kou sounds like logo
+d1_01005,other,english garble
+d1_01006,transliteration,ba hua ji sounds like budget
+d1_01007,other,unrelated words
+d1_01008,transliteration,xing sounds like simu-
+d1_01009,other,unrelated word
+d1_01010,other,unrelated word
+d1_01011,transliteration,o c yang sounds like ocr
+d1_01012,transliteration,yan fei sounds like entry level
+d1_01013,other,unrelated words
+d1_01014,transliteration,mo ren sounds like mall
+d1_01015,other,english garble
+d1_01016,transliteration,all fun sounds like shao fan
+d1_01017,transliteration,force ye sounds like fourth year
+d1_01018,transliteration,make sure sounds like meiguo
+d1_01019,other,too mixed
+d1_01020,transliteration,pao han sounds like part time
+d1_01021,transliteration,lao shi sounds like lunch
+d1_01022,transliteration,er yi sounds like ai
+d1_01023,transliteration,kan ting dao sounds like computer
+d1_01024,transliteration,ren shui sounds like entry level
+d1_01025,transliteration,phonetic rendering of alipay
+d1_01026,transliteration,a li pei sounds like alipay
+d1_01027,transliteration,kong jie ting sounds like quantity
+d1_01028,transliteration,qi pian sounds like chitchat
+d1_01029,other,too mixed
+d1_01030,transliteration,bai ling diao sounds like badminton
+d1_01031,other,english garble
+d1_01032,other,english garble
+d1_01033,transliteration,ba ci sounds like budget
+d1_01034,transliteration,yan shui nei sounds like entry level
+d1_01035,transliteration,si yi pei sounds like sleepy
+d1_01036,other,unrelated word
+d1_01037,transliteration,pi su sounds like peaceful
+d1_01038,transliteration,kou a la pei sounds like koala bear
+d1_01039,other,unrelated words
+d1_01040,other,unrelated words
+d1_01041,transliteration,ba zi ran sounds like but when
+d1_01042,transliteration,jiu bei sounds like debate
+d1_01043,other,unrelated words
+d1_01044,other,unrelated word
+d1_01045,other,too mixed
+d1_01046,other,unrelated words
+d1_01047,other,too mixed
+d1_01048,other,unrelated interjection
+d1_01049,transliteration,kao kao li sounds like college
+d1_01050,transliteration,ba zi ran sounds like but when
+d1_01051,transliteration,ba zi ran sounds like but when
+d1_01052,other,unrelated word
+d1_01053,other,mixed unrelated
+d1_01054,transliteration,kor ala bei sounds like koala bear
+d1_01055,translation,so translates suoyi
+d1_01056,transliteration,yin ke yi sounds like in case
+d1_01057,other,unrelated words
+d1_01058,other,unrelated words
+d1_01059,other,mixed unrelated
+d1_01060,other,english garble
+d1_01061,transliteration,cong ting sounds like computer
+d1_01062,transliteration,bu ke sounds like book
+d1_01063,transliteration,suo you sounds like social
+d1_01064,transliteration,geng ting se sounds like computer
+d1_01065,transliteration,yan shui dai guo sounds like entry level
+d1_01066,transliteration,lun ge sounds like book
+d1_01067,transliteration,x xun sounds like exchange
+d1_01068,other,unrelated words
+d1_01069,other,repetition hallucination
+d1_01070,transliteration,yan shen sounds like entry
+d1_01071,other,unrelated words
+d1_01072,transliteration,x juan sounds like exchange
+d1_01073,transliteration,bi jing sounds like business
+d1_01074,transliteration,mao sounds like mall
+d1_01075,transliteration,ta shuo fun sounds like cha shao fan
+d1_01076,other,too mixed
+d1_01077,transliteration,mao neng sounds like mall
+d1_01078,other,unrelated words
+d1_01079,other,english word with jiu
+d1_01080,transliteration,ren sounds like room
+d1_01081,transliteration,yan xu dai guo sounds like entry level
+d1_01082,translation,um rendered as equivalent filler
+d1_01083,other,mixed unrelated
+d1_01084,transliteration,koha a la bei er sounds like koala bear
+d1_01085,transliteration,bu ting partial sound of opportunity
+d1_01086,other,english garble
+d1_01087,transliteration,south of one sounds like cha shao fan
+d1_01088,other,unrelated word
+d1_01089,translation,3 nian means third years
+d1_01090,other,too mixed
+d1_01091,other,english garble
+d1_01092,transliteration,wan yi sounds like one year
+d1_01093,other,unrelated word
+d1_01094,transliteration,xin de sounds like accident
+d1_01095,other,english garble
+d1_01096,transliteration,yi lai qu sounds like electric
+d1_01097,transliteration,cai partial sound of size
+d1_01098,transliteration,sheng yin sounds like senior
+d1_01099,transliteration,ti bu tuan sounds like tutor
+d1_01100,other,unrelated word
+d1_01101,transliteration,qu jia sounds like chitchat
+d1_01102,other,unrelated word
+d1_01103,other,english garble
+d1_01104,transliteration,cert ye sounds like third year
+d1_01105,other,unrelated words
+d1_01106,other,too mixed
+d1_01107,other,english garble
+d1_01108,transliteration,ming tian sounds like minton
+d1_01109,other,unrelated words
+d1_01110,other,english garble
+d1_01111,other,english garble
+d1_01112,other,english garble
+d1_01113,transliteration,kong jie ti sounds like quantity
+d1_01114,transliteration,wan yi sounds like one year
+d1_01115,transliteration,wan sounds like one
+d1_01116,transliteration,pa ta sounds like part time
+d1_01117,other,too mixed
+d1_01118,transliteration,e chun sounds like urgent
+d1_01119,transliteration,lai dian sounds like minded
+d1_01120,transliteration,lao shi tuo sounds like lunch talk
+d1_01121,transliteration,yi lai sounds like ai
+d1_01122,transliteration,kai xin deng sounds like car accident
+d1_01123,other,unrelated words
+d1_01124,transliteration,xiong sounds like phone
+d1_01125,transliteration,fan ni sounds like fancy
+d1_01126,transliteration,yuan shui sounds like entry level
+d1_01127,transliteration,bu guo sounds like block
+d1_01128,other,unrelated words
+d1_01129,transliteration,dan ying sounds like sign in
+d1_01130,other,english garble
+d1_01131,other,english garble
+d1_01132,other,unrelated word
+d1_01133,other,english garble
+d1_01134,transliteration,force ye sounds like fourth year
+d1_01135,other,3 yue means march
+d1_01136,translation,ah equivalent interjection
+d1_01137,other,mixed unrelated
+d1_01138,transliteration,make sure sounds like meiguo
+d1_01139,other,unrelated word
+d1_01140,other,english garble
+d1_01141,other,english garble
+d1_01142,transliteration,dai ming sounds like badminton
+d1_01143,other,english garble
+d1_01144,other,english garble
+d1_01145,transliteration,she sounds like shi
+d1_01146,other,too mixed
+d1_01147,other,unrelated word
+d1_01148,other,english word with dian
+d1_01149,transliteration,di qiu sounds like due
+d1_01150,other,unrelated words
+d1_01151,other,english garble
+d1_01152,other,english garble
+d1_01153,other,english garble
+d1_01154,other,repetition hallucination
+d1_01155,other,unrelated word
+d1_01156,transliteration,kan kan ting sounds like computer
+d1_01157,transliteration,ou zhi sounds like ocr
+d1_01158,transliteration,mao zhuang sounds like mall
+d1_01159,transliteration,chao so fun sounds like cha shao fan
+d1_01160,transliteration,qu qian sounds like chitchat
+d1_01161,other,too mixed
+d1_01162,other,unrelated words
+d1_01163,transliteration,feng kao sounds like hong kong
+d1_01164,transliteration,make sure sounds like meiguo
+d1_01165,other,unrelated word
+d1_01166,other,english garble
+d1_01167,other,mixed extra words
+d1_01168,other,english garble
+d1_01169,other,mixed unrelated
+d1_01170,transliteration,ti tuan sounds like tutor
+d1_01171,other,too mixed
+d1_01172,other,english garble
+d1_01173,other,unrelated word
+d1_01174,transliteration,serve ye sounds like third year
+d1_01175,other,unrelated word
+d1_01176,other,mixed unrelated
+d1_01177,other,unrelated word
+d1_01178,other,english garble
+d1_01179,other,unrelated words
+d1_01180,other,unrelated words
+d1_01181,transliteration,jun sounds like gym
+d1_01182,other,unrelated word
+d1_01183,other,english garble
+d1_01184,transliteration,bao ming tan sounds like badminton
+d1_01185,other,english garble
+d1_01186,other,english garble
+d1_01187,other,english garble
+d1_01188,transliteration,lei ah sounds like lay up
+d1_01189,transliteration,wan yi wei sounds like one year
+d1_01190,transliteration,wan yi ye sounds like one year
+d1_01191,transliteration,pa tang sounds like part time
+d1_01192,transliteration,guo sounds like go
+d1_01193,other,unrelated words
+d1_01194,transliteration,ke shi sounds like -cus
+d1_01195,transliteration,e zhen sounds like urgent
+d1_01196,other,unrelated words
+d1_01197,transliteration,po pian sounds like portrait
+d1_01198,transliteration,in te bie sounds like interview
+d1_01199,other,unrelated words
+d1_01200,transliteration,ei sounds like ai
+d1_01201,transliteration,er kan sounds like a car
+d1_01202,other,too mixed
+d1_01203,transliteration,ban qian sounds like function
+d1_01204,other,english garble
+d1_01205,other,unrelated word
+d1_01206,other,english garble
+d1_01207,transliteration,fan e sounds like fancy
+d1_01208,transliteration,yuan xuan dai guo sounds like entry level
+d1_01209,transliteration,rou bi sounds like robot
+d1_01210,transliteration,phonetic rendering of alipay
+d1_01211,other,english garble
+d1_01212,transliteration,mo sounds like mall
+d1_01213,other,english garble
+d1_01214,other,english garble
+d1_01215,transliteration,fu sounds like food
+d1_01216,transliteration,guan ge sounds like one
+d1_01217,transliteration,qu qie sounds like chitchat
+d1_01218,other,unrelated words
+d1_01219,other,english garble
+d1_01220,other,english garble
+d1_01221,transliteration,bang ming sounds like badminton
+d1_01222,transliteration,micr jue ding sounds like michael jordan
+d1_01223,other,english garble
+d1_01224,transliteration,guo sounds like go
+d1_01225,other,english garble
+d1_01226,transliteration,la zhi tou sounds like lunch talk
+d1_01227,other,english garble
+d1_01228,transliteration,er kai sounds like a car
+d1_01229,other,too mixed
+d1_01230,transliteration,ke neng ting sounds like computer
+d1_01231,transliteration,yuan shui sounds like entry level
+d1_01232,transliteration,mo rong sounds like mall
+d1_01233,other,unrelated words
+d1_01234,other,english garble
+d1_01235,transliteration,kou a da bei sounds like koala bear
+d1_01236,other,english garble
+d1_01237,transliteration,bu guo sounds like group
+d1_01238,transliteration,ta bei sounds like topic
+d1_01239,other,english garble
+d1_01240,other,unrelated words
+d1_01241,other,unrelated words
+d1_01242,other,english garble
+d1_01243,other,unrelated words
+d1_01244,other,english garble
+d1_01245,transliteration,ba zi fen sounds like but when
+d1_01246,transliteration,ni ke yi sounds like in case
+d1_01247,other,english garble
+d1_01248,other,unrelated words
+d1_01249,other,english garble
+d1_01250,transliteration,kou a la bei sounds like koala bear
+d1_01251,other,english garble
+d1_01252,other,mixed unrelated
+d1_01253,translation,equivalent fillers
+d1_01254,transliteration,ba zi fen sounds like but when
+d1_01255,other,english word with extra
+d1_01256,transliteration,ao zhao sounds like outdoor
+d1_01257,other,repetition loop
+d1_01258,other,unrelated words
+d1_01259,other,mixed unrelated
+d1_01260,other,repetition loop
+d1_01261,transliteration,you korea sounds like ukulele
+d1_01262,transliteration,kou a la bei sounds like koala bear
+d1_01263,other,unrelated words
+d1_01264,transliteration,hua partial sound of part
+d1_01265,other,unrelated words
+d1_01266,transliteration,sai kong sounds like saigon
+d1_01267,transliteration,you korea sounds like ukulele
+d1_01268,other,unrelated words
+d1_01269,transliteration,po diao sounds like part
+d1_01270,other,unrelated word
+d1_01271,transliteration,si li pi sounds like sleepy
+d1_01272,other,unrelated words
+d1_01273,translation,fei chang means very
+d1_01274,transliteration,ba zi fen sounds like but when
+d1_01275,other,too mixed
+d1_01276,other,unrelated words
+d1_01277,other,mixed unrelated
+d1_01278,other,repetition loop
+d1_01279,other,english garble
+d1_01280,transliteration,you korea sounds like ukulele
+d1_01281,other,unrelated words
+d1_01282,other,unrelated word
+d1_01283,other,repetition loop
+d1_01284,other,repetition loop
+d1_01285,transliteration,tu fei partial sound of topic
+d1_01286,other,mixed unrelated
+d1_01287,transliteration,po he sounds like pool
+d1_01288,other,repetition hallucination
+d1_01289,other,unrelated words
+d1_01290,other,um not equivalent to oh
+d1_01291,other,english garble
+d1_01292,transliteration,toh ni sounds like tony
+d1_01293,transliteration,qi qi sounds like chitchat
+d1_01294,other,too mixed
+d1_01295,other,too mixed
+d1_01296,transliteration,ban ming deng sounds like badminton
+d1_01297,other,english garble
+d1_01298,other,english garble
+d1_01299,transliteration,pa tai sounds like part time
+d1_01300,other,english garble
+d1_01301,other,unrelated words
+d1_01302,transliteration,na ge ren sounds like language
+d1_01303,other,english word with de
+d1_01304,transliteration,yan shui sounds like entry level
+d1_01305,transliteration,phonetic rendering of alipay
+d1_01306,transliteration,kan ting ci sounds like computer
+d1_01307,other,english garble
+d1_01308,transliteration,ba zi fen sounds like but when
+d1_01309,transliteration,fen bie partial sound match
+d1_01310,other,english garble
+d1_01311,transliteration,hows our fun sounds like cha shao fan
+d1_01312,other,unrelated words
+d1_01313,other,too mixed
+d1_01314,other,english garble
+d1_01315,other,english garble
+d1_01316,transliteration,ou xi na sounds like ocr
+d1_01317,transliteration,yan chou sounds like entry level
+d1_01318,transliteration,bu ting partial sound of opportunity
+d1_01319,other,books not foods
+d1_01320,other,unrelated words niu rou
+d1_01321,other,unrelated words
+d1_01322,transliteration,fu sounds like food
+d1_01323,other,repetition hallucination
+d1_01324,transliteration,rly pei sounds like alipay
+d1_01325,other,unrelated words
+d1_01326,transliteration,x quan sounds like exchange
+d1_01327,transliteration,mei jian sounds like major
+d1_01328,transliteration,lun sounds like room
+d1_01329,other,repetition hallucination
+d1_01330,transliteration,can ting de sounds like computer
+d1_01331,transliteration,ying gai ke sounds like in case
+d1_01332,transliteration,can de crack sounds like candy crush
+d1_01333,transliteration,ying gai ke sounds like in case
+d1_01334,other,unrelated word
+d1_01335,other,mixed unrelated
+d1_01336,other,english garble
+d1_01337,other,unrelated words
+d1_01338,transliteration,wan yi sounds like one year
+d1_01339,transliteration,force ye sounds like fourth year
+d1_01340,other,unrelated words
+d1_01341,other,english garble
+d1_01342,other,unrelated word
+d1_01343,transliteration,mo fen sounds like mall
+d1_01344,transliteration,mo ben sounds like mall
+d1_01345,other,unrelated word
+d1_01346,transliteration,qi dian sounds like chitchat
+d1_01347,other,mixed unrelated
+d1_01348,transliteration,ge zi sounds like gradu-
+d1_01349,translation,equivalent filler
+d1_01350,transliteration,mei mai sounds like major
+d1_01351,other,unrelated words
+d1_01352,transliteration,pai lai sounds like package
+d1_01353,transliteration,yan shui sounds like entry level
+d1_01354,transliteration,quan sounds like chain
+d1_01355,transliteration,mo on sounds like mall
+d1_01356,other,english garble with ma
+d1_01357,transliteration,kou a la bei sounds like koala bear
+d1_01358,other,unrelated word
+d1_01359,translation,so translates suoyi
+d1_01360,other,english garble with ma
+d1_01361,transliteration,tan sounds like time
+d1_01362,transliteration,po sounds like pool
+d1_01363,transliteration,di er sounds like deers
+d1_01364,translation,equivalent filler
+d1_01365,other,unrelated particle
+d1_01366,transliteration,tao thing sounds like topic
+d1_01367,other,unrelated words
+d1_01368,translation,hen means very
+d1_01369,transliteration,yin ke yi sounds like in case
+d1_01370,other,unrelated filler
+d1_01371,transliteration,san wen sounds like sandwiches
+d1_01372,transliteration,xiao tou sounds like shout
+d1_01373,other,unrelated characters
+d1_01374,other,mixed unrelated
+d1_01375,transliteration,home kong sounds like hong kong
+d1_01376,transliteration,force ye sounds like fourth year
+d1_01377,other,english garble
+d1_01378,translation,ah equivalent interjection
+d1_01379,other,english word with hai
+d1_01380,transliteration,bai ling sounds like badminton
+d1_01381,transliteration,bi jing sounds like business
+d1_01382,transliteration,hai yao pan sounds like happen
+d1_01383,other,english garble
+d1_01384,other,english word with yixia
+d1_01385,other,repetition hallucination
+d1_01386,transliteration,ting le sounds like computer
+d1_01387,transliteration,yan fei sounds like entry level
+d1_01388,transliteration,nan gui sounds like language
+d1_01389,other,english garble
+d1_01390,translation,most people have phone translated
+d1_01391,other,partial sound plus extra words
+d1_01392,other,unrelated words
+d1_01393,transliteration,mei xue sounds like major
+d1_01394,translation,equivalent acknowledgement filler
+d1_01395,transliteration,ba si qi bu sounds like basketball
+d1_01396,transliteration,ban ming teng sounds like badminton
+d1_01397,translation,yi ren means entertainer idol
+d1_01398,transliteration,she ji partial sound of schedule
+d1_01399,other,unrelated word
+d1_01400,translation,need to wear translates
+d1_01401,translation,same meaning
+d1_01402,translation,same meaning
+d1_01403,other,different meaning
+d1_01404,other,bicycle not self driving car
+d1_01405,transliteration,nan gui sounds like language
+d1_01406,transliteration,a li pei sounds like alipay
+d1_01407,other,unrelated words
+d1_01408,other,unrelated words
+d1_01409,transliteration,fan sounds like fancy
+d1_01410,translation,support translated as zhichi
+d1_01411,translation,same meaning
+d1_01412,translation,same meaning
+d1_01413,transliteration,mei jing sounds like major
+d1_01414,transliteration,diao pi sounds like topic
+d1_01415,transliteration,ba si zu sounds like basketball
+d1_01416,other,english garble
+d1_01417,transliteration,kan ta na sounds like cantonese
+d1_01418,other,unrelated words
+d1_01419,transliteration,hong kong sound-alike
+d1_01420,other,unrelated words
+d1_01421,other,unrelated words
+d1_01422,transliteration,te bie partial sound of interview
+d1_01423,translation,same meaning
+d1_01424,translation,same meaning
+d1_01425,translation,gao ji means high level
+d1_01426,other,bicycle not self driving car
+d1_01427,transliteration,qiu zheng sounds like children
+d1_01428,translation,most people have phone translated
+d1_01429,other,unrelated words
+d1_01430,transliteration,fan gui sounds like language
+d1_01431,other,unrelated words
+d1_01432,transliteration,hong kao sounds like hong kong
+d1_01433,other,unrelated words
+d1_01434,transliteration,gui ju sounds like gradu-
+d1_01435,translation,head noun school translated
+d1_01436,transliteration,ge di sounds like gradu-
+d1_01437,transliteration,ba si kipo sounds like basketball
+d1_01438,transliteration,an li wei si ku sounds like elementary school
+d1_01439,transliteration,san wei sounds like sandwiches
+d1_01440,other,english garble
+d1_01441,other,different meaning
+d1_01442,transliteration,xen de sounds like accident
+d1_01443,translation,wenti means problem
+d1_01444,transliteration,mu ban pei sounds like mobile payment
+d1_01445,transliteration,ba si ji pa sounds like basketball
+d1_01446,transliteration,bu ting partial sound of opportunity
+d1_01447,translation,i feel translates ganjue
+d1_01448,transliteration,pai sen sounds like python
+d1_01449,transliteration,san wei sounds like sandwiches
+d1_01450,translation,he translates ta
+d1_01451,transliteration,xin tang sounds like syntax
+d1_01452,other,unrelated words
+d1_01453,transliteration,yan xu sounds like entry level
+d1_01454,transliteration,dai biao sounds like level
+d1_01455,other,unrelated word
+d1_01456,other,mixed unrelated
+d1_01457,other,english garble
+d1_01458,other,unrelated words
+d1_01459,other,unrelated words
+d1_01460,other,repetition hallucination
+d1_01461,transliteration,wai di huang kuang sounds like why hong kong
+d1_01462,other,english garble
+d1_01463,other,unrelated words niu rou
+d1_01464,other,unrelated words
+d1_01465,transliteration,bu gei sounds like book
+d1_01466,transliteration,wai di huang kang sounds like why hong kong
+d1_01467,other,mixed unrelated
+d1_01468,transliteration,dagger d fun sounds like zhao ge di fang
+d1_01469,other,too mixed
+d1_01470,other,unrelated words
+d1_01471,transliteration,su lin pao sounds like swim properly
+d1_01472,transliteration,mo gui de sounds like mcgrady
+d1_01473,transliteration,ge zheng sounds like urgent
+d1_01474,other,unrelated words
+d1_01475,transliteration,mo tuo pi fu sounds like most of people
+d1_01476,transliteration,gu zi sounds like group
+d1_01477,other,unrelated word
+d1_01478,transliteration,wei ren sounds like wind
+d1_01479,transliteration,ou xiang sounds like ocr
+d1_01480,transliteration,bu zou sounds like block chain
+d1_01481,transliteration,mob app pei mian sounds like mobile payments
+d1_01482,transliteration,pai jiang sounds like project
+d1_01483,other,unrelated words
+d1_01484,other,unrelated words
+d1_01485,transliteration,its also fine sounds like cha shao fan
+d1_01486,other,unrelated word
+d1_01487,transliteration,qu xian sounds like chitchat
+d1_01488,transliteration,sheng ti sounds like sentiment
+d1_01489,transliteration,ying shi sounds like interesting
+d1_01490,transliteration,wai di huang zhuang sounds like why hong kong
+d1_01491,transliteration,ying bei ting sounds like in between
+d1_01492,other,english garble
+d1_01493,other,unrelated words
+d1_01494,transliteration,mei jue sounds like major
+d1_01495,transliteration,dan ming sounds like badminton
+d1_01496,transliteration,biao yan sounds like balance
+d1_01497,transliteration,an an sounds like elementary
+d1_01498,transliteration,su yin pao sounds like swim properly
+d1_01499,transliteration,kan ta ni sounds like cantonese
+d1_01500,transliteration,ge zheng sounds like urgent
+d1_01501,transliteration,hong kong sound-alike
+d1_01502,transliteration,sou xun sounds like social
+d1_01503,other,unrelated words
+d1_01504,transliteration,chuan shui ya sounds like trust ai
+d1_01505,other,unrelated words
+d1_01506,other,english garble
+d1_01507,transliteration,shen me yao feng sounds like smartphone
+d1_01508,other,unrelated words
+d1_01509,other,too mixed
+d1_01510,other,unrelated words
+d1_01511,transliteration,yalmin sounds like yao ming
+d1_01512,other,unrelated words
+d1_01513,other,unrelated words
+d1_01514,other,english garble
+d1_01515,other,unrelated words
+d1_01516,other,unrelated words
+d1_01517,other,january not one year
+d1_01518,transliteration,xia chuan sounds like hard choice
+d1_01519,other,unrelated words
+d1_01520,transliteration,wai di huang kuang sounds like why hong kong
+d1_01521,other,english garble
+d1_01522,other,too mixed
+d1_01523,transliteration,shui ni pao sounds like swim properly
+d1_01524,transliteration,mo huang bi chui sounds like mcgrady tracy
+d1_01525,transliteration,po chui de sounds like portrait
+d1_01526,other,unrelated words
+d1_01527,transliteration,chuan zi sounds like choice
+d1_01528,other,unrelated words niu rou
+d1_01529,other,unrelated word
+d1_01530,other,repetition loop
+d1_01531,transliteration,ni sounds like -ny
+d1_01532,other,unrelated words
+d1_01533,transliteration,tiao ta sounds like tutor
+d1_01534,transliteration,ti ti sounds like tutor
+d1_01535,transliteration,diao lai sounds like deadline
+d1_01536,other,unrelated word
+d1_01537,other,unrelated word
+d1_01538,transliteration,qi qie sounds like chitchat
+d1_01539,transliteration,xin si tuan sounds like system
+d1_01540,transliteration,kong kong sounds like hong kong
+d1_01541,other,different meaning
+d1_01542,transliteration,sem ti men sounds like sentiment
+d1_01543,other,unrelated characters
+d1_01544,transliteration,you chuan sounds like user
+d1_01545,transliteration,wai mian sounds like why why
+d1_01546,transliteration,ying bi ting sounds like in between
+d1_01547,other,unrelated word
+d1_01548,other,unrelated words
+d1_01549,other,unrelated word
+d1_01550,other,mixed unrelated
+d1_01551,other,unrelated words
+d1_01552,other,unrelated words
+d1_01553,transliteration,feng kao sounds like hong kong
+d1_01554,other,hallucination
+d1_01555,other,repetition loop
+d1_01556,transliteration,rou ba sounds like robotics
+d1_01557,transliteration,hao e sounds like hardware
+d1_01558,other,unrelated words
+d1_01559,other,repetition loop
+d1_01560,other,unrelated words
+d1_01561,transliteration,pei yue sounds like paper
+d1_01562,other,unrelated word
+d1_01563,transliteration,ju sounds like gym
+d1_01564,transliteration,ju men sounds like gym
+d1_01565,other,garbled
+d1_01566,other,english garble
+d1_01567,other,english garble
+d1_01568,transliteration,guan ming kan sounds like badminton
+d1_01569,other,repetition loop
+d1_01570,transliteration,ba ji bu sounds like basketball
+d1_01571,other,unrelated words
+d1_01572,other,unrelated words
+d1_01573,transliteration,tai ne sounds like talent
+d1_01574,other,too mixed
+d1_01575,transliteration,ni si sounds like near sea
+d1_01576,transliteration,feng xin sounds like fancy
+d1_01577,transliteration,ai de sounds like idol
+d1_01578,other,unrelated word
+d1_01579,transliteration,lei sounds like lay
+d1_01580,transliteration,yin er fang sounds like uniforms
+d1_01581,transliteration,po cai sounds like portrait
+d1_01582,other,repetition loop
+d1_01583,other,garbled
+d1_01584,transliteration,ai ai sounds like ai
+d1_01585,transliteration,fa sheng zhe sounds like passenger
+d1_01586,transliteration,di tai sounds like data
+d1_01587,other,unrelated word
+d1_01588,other,english garble
+d1_01589,transliteration,celf zhuan ka sounds like self driving car
+d1_01590,transliteration,hai shuai sounds like high standard
+d1_01591,other,unrelated words
+d1_01592,other,english garble
+d1_01593,other,unrelated word
+d1_01594,transliteration,zhua back sounds like drawback
+d1_01595,transliteration,shen me sounds like smart
+d1_01596,other,unrelated word
+d1_01597,transliteration,mu dao sounds like model
+d1_01598,other,garbled
+d1_01599,transliteration,pai ti sounds like package
+d1_01600,transliteration,shen me shi sounds like semester
+d1_01601,other,unrelated words
+d1_01602,transliteration,bu guo sounds like block
+d1_01603,other,garbled
+d1_01604,other,unrelated word
+d1_01605,other,unrelated words
+d1_01606,other,unrelated words
+d1_01607,transliteration,dian yi sounds like deadline
+d1_01608,other,unrelated word
+d1_01609,other,unrelated words
+d1_01610,transliteration,qi xian sounds like chitchat
+d1_01611,transliteration,shan di sounds like study
+d1_01612,transliteration,san tian man da sounds like sentiment analysis
+d1_01613,other,unrelated word
+d1_01614,transliteration,wai wai di sounds like why why
+d1_01615,transliteration,ying bi ting sounds like in between
+d1_01616,other,unrelated words
+d1_01617,other,mixed unrelated
+d1_01618,transliteration,make sure sounds like meiguo
+d1_01619,transliteration,tagadee fang sounds like zhao ge di fang
+d1_01620,other,unrelated word
+d1_01621,transliteration,feng kuang sounds like hong kong
+d1_01622,other,unrelated word
+d1_01623,transliteration,shu zi bai se sounds like supervisor
+d1_01624,other,unrelated words
+d1_01625,transliteration,shi bu shi bai se sounds like supervisor
+d1_01626,transliteration,rou tie sounds like robotics
+d1_01627,other,english garble
+d1_01628,transliteration,mei li sounds like major
+d1_01629,transliteration,ke neng de kai zhan sounds like communication
+d1_01630,translation,zui hou means final
+d1_01631,other,unrelated word
+d1_01632,transliteration,shi ri sounds like tennis
+d1_01633,transliteration,dao ming tian sounds like badminton
+d1_01634,transliteration,de le kuan sounds like the the court
+d1_01635,other,unrelated words
+d1_01636,transliteration,bai ming pan sounds like badminton
+d1_01637,other,unrelated word
+d1_01638,other,unrelated words
+d1_01639,transliteration,fan shi sounds like fancy
+d1_01640,transliteration,mo gui de sounds like mcgrady
+d1_01641,transliteration,lei ya sounds like lay up
+d1_01642,transliteration,kong dian ti sounds like quantity
+d1_01643,transliteration,wan yi er sounds like one year
+d1_01644,transliteration,kan ta ni sounds like cantonese
+d1_01645,other,unrelated words
+d1_01646,transliteration,he ji sounds like urgent
+d1_01647,other,unrelated words
+d1_01648,transliteration,ai ai sounds like ai
+d1_01649,other,unrelated word
+d1_01650,translation,do some different translates
+d1_01651,other,different meaning
+d1_01652,other,unrelated words
+d1_01653,transliteration,ka qiu sounds like customer
+d1_01654,transliteration,xie sounds like sell
+d1_01655,other,unrelated words
+d1_01656,other,english garble
+d1_01657,transliteration,luo sounds like low
+d1_01658,other,unrelated word
+d1_01659,other,unrelated words
+d1_01660,other,too mixed
+d1_01661,other,unrelated word
+d1_01662,transliteration,wei ren sounds like wind
+d1_01663,transliteration,mob app pei sounds like mobile payments
+d1_01664,transliteration,meng yao sounds like mall
+d1_01665,transliteration,mu bao pei men sounds like mobile payment
+d1_01666,transliteration,sai ying sounds like sign in
+d1_01667,other,unrelated words
+d1_01668,transliteration,san tian man da sounds like sentiment analysis
+d1_01669,transliteration,wai di sounds like why why
+d1_01670,transliteration,ying bi tian sounds like in between
+d1_01671,other,english garble
+d1_01672,transliteration,feng kang sounds like hong kong
+d1_01673,transliteration,shi hui ba sounds like supervisor
+d1_01674,transliteration,shou shi an sounds like software
+d1_01675,transliteration,ba shi die sounds like basketball
+d1_01676,transliteration,su xun pao sounds like swim properly
+d1_01677,transliteration,mo zhuang de sounds like mcgrady
+d1_01678,other,unrelated word
+d1_01679,transliteration,e chan sounds like urgent
+d1_01680,transliteration,yin te bie sounds like interview
+d1_01681,transliteration,chuan xin sounds like choice
+d1_01682,other,unrelated words
+d1_01683,transliteration,ka si tu men sounds like customer
+d1_01684,other,too mixed
+d1_01685,other,unrelated words
+d1_01686,transliteration,mo tuo pi pan sounds like most of people
+d1_01687,other,unrelated words
+d1_01688,transliteration,meng sounds like mall
+d1_01689,other,unrelated words
+d1_01690,other,too mixed
+d1_01691,other,unrelated words
+d1_01692,transliteration,ni ni sounds like near sea
+d1_01693,transliteration,mo huang bi sounds like mcgrady
+d1_01694,transliteration,ke neng ni sounds like cantonese
+d1_01695,transliteration,le gu sounds like logo
+d1_01696,transliteration,hong kong kong sound-alike
+d1_01697,other,unrelated word
+d1_01698,other,unrelated word
+d1_01699,transliteration,mo tuo pi tou sounds like most of people
+d1_01700,transliteration,ding yue neng li sounds like deep learning
+d1_01701,transliteration,bu lang fei sounds like block chain
+d1_01702,transliteration,zan lia sounds like sign in
+d1_01703,transliteration,fu ke sounds like focus
+d1_01704,other,unrelated word
+d1_01705,transliteration,bu ting partial sound of opportunity
+d1_01706,translation,ran hou means and then
+d1_01707,transliteration,tie tou sounds like tutor
+d1_01708,transliteration,its also a fun sounds like cha shao fan
+d1_01709,other,unrelated words
+d1_01710,translation,so you will translates suoyi
+d1_01711,transliteration,da wang sounds like dialogue
+d1_01712,other,english garble
+d1_01713,transliteration,du ge sounds like book
+d1_01714,transliteration,xin qing sounds like system
+d1_01715,transliteration,hong peng sounds like hong kong
+d1_01716,transliteration,zheng ti men sounds like sentiment
+d1_01717,other,unrelated word
+d1_01718,translation,why translated as weishenme
+d1_01719,transliteration,ying die ting sounds like in between
+d1_01720,other,repetition
+d1_01721,other,repetition loop
+d1_01722,transliteration,bu fan shi sounds like professor
+d1_01723,transliteration,xing ge po sounds like singapore
+d1_01724,other,unrelated words
+d1_01725,transliteration,mei juan sounds like major
+d1_01726,transliteration,rou ba de sounds like robotics
+d1_01727,transliteration,hao wei sounds like hardware
+d1_01728,transliteration,shao fen er sounds like software
+d1_01729,other,unrelated words
+d1_01730,transliteration,bu fen shi sounds like professor
+d1_01731,transliteration,ben ming kan sounds like badminton
+d1_01732,transliteration,bai ming tian sounds like badminton
+d1_01733,other,repetition loop
+d1_01734,transliteration,bai ming pan sounds like badminton
+d1_01735,transliteration,an an sheng sounds like elementary
+d1_01736,transliteration,su lian pang bian sounds like swim properly
+d1_01737,transliteration,tai lun sounds like talent
+d1_01738,transliteration,kong dian ting sounds like quantity
+d1_01739,transliteration,lou kou sounds like local
+d1_01740,transliteration,shuo ke si sounds like focus
+d1_01741,transliteration,she jiao sounds like schedule
+d1_01742,other,unrelated word
+d1_01743,transliteration,lang zhi sounds like lunch talk
+d1_01744,transliteration,la qu tou sounds like lunch talk
+d1_01745,other,unrelated words
+d1_01746,other,unrelated word
+d1_01747,other,unrelated words
+d1_01748,other,unrelated words
+d1_01749,other,unrelated word
+d1_01750,other,english garble
+d1_01751,other,unrelated words
+d1_01752,other,unrelated words
+d1_01753,transliteration,xian sounds like simu-
+d1_01754,other,unrelated word
+d1_01755,transliteration,tao pic sounds like topic
+d1_01756,other,unrelated words
+d1_01757,other,unrelated words
+d1_01758,transliteration,gu shi sounds like group
+d1_01759,other,unrelated word
+d1_01760,other,english garble
+d1_01761,other,unrelated word
+d1_01762,other,unrelated word
+d1_01763,other,unrelated words
+d1_01764,transliteration,ke lai sounds like collect
+d1_01765,transliteration,an zi partial sound of app
+d1_01766,transliteration,san yi sounds like sign in
+d1_01767,other,unrelated words

@@ -1,4 +1,8 @@
-data/
+/data/*
+!/data/lex/
+/data/lex/cedict.zip
+!/data/llm_labels/
+!/data/leak/
 ckpt/
 preds/
 runs/

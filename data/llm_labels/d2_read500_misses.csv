@@ -1,0 +1,35 @@
+row,word,category
+20,ai,technical term
+53,hong kong,place (spaced form not caught)
+69,james,person name
+75,七八十,number
+104,ai,technical term
+118,mac,product name
+125,e c e,department acronym
+132,hong kong,place
+133,苹果,brand (Apple)
+156,坑口,place name
+174,奥运会,named event
+185,block chain,technical term
+199,iphone,product name
+202,mac,product name
+207,hong kong,place
+207,us,place
+207,australia,place
+217,big data,technical term
+227,ai,technical term
+262,ai,technical term
+265,hong kong,place
+265,singapore,place
+278,james,person name
+295,one year,duration
+309,大四,school year
+365,mac,product name
+365,windows,product name
+379,ai,technical term
+420,ai,technical term
+424,大二,school year
+448,一个月,duration
+479,iphone,product name
+485,ai,technical term
+491,一个月,duration

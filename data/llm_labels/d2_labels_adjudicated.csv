@@ -1,0 +1,336 @@
+item_id,word,label,basis
+d2_00000,whats,not_critical,agreed
+d2_00001,hobbies,not_critical,agreed
+d2_00002,bussiness,not_critical,adjudicated (A1 critical: organisation/school (business school); A2 not_critical: generic; filler or everyday word)
+d2_00003,南方人,not_critical,agreed
+d2_00004,深圳,critical,agreed
+d2_00005,香港,critical,agreed
+d2_00006,guangzhou,critical,agreed
+d2_00007,guangdong,critical,agreed
+d2_00008,福建,critical,agreed
+d2_00009,um,not_critical,agreed
+d2_00010,semester,critical,agreed
+d2_00011,invested,not_critical,agreed
+d2_00012,consulting,not_critical,agreed
+d2_00013,four,critical,agreed
+d2_00014,bachelorand,not_critical,"adjudicated (A1 not_critical: typo token, degree word generic; A2 critical: academic task or course term)"
+d2_00015,communicate,not_critical,agreed
+d2_00016,givesome,not_critical,agreed
+d2_00017,programing,not_critical,agreed
+d2_00018,python,critical,agreed
+d2_00019,1,not_critical,adjudicated (A1 critical: number; A2 not_critical: generic; filler or everyday word)
+d2_00020,点,not_critical,adjudicated (A1 critical: time/amount unit; A2 not_critical: generic; filler or everyday word)
+d2_00021,回大陆,critical,adjudicated (A1 not_critical: generic phrase; A2 critical: place name)
+d2_00022,likeguangzhou,critical,agreed
+d2_00023,hongkong,critical,agreed
+d2_00024,shenzhen,critical,agreed
+d2_00025,insist,not_critical,agreed
+d2_00026,three,critical,agreed
+d2_00027,东西,not_critical,agreed
+d2_00028,hk,critical,agreed
+d2_00029,unlimited,not_critical,agreed
+d2_00030,project,critical,agreed
+d2_00031,6,critical,agreed
+d2_00032,月,critical,agreed
+d2_00033,号,critical,agreed
+d2_00034,final,critical,agreed
+d2_00035,房租,critical,agreed
+d2_00036,pets,not_critical,agreed
+d2_00037,上海,critical,agreed
+d2_00038,城市,not_critical,agreed
+d2_00039,spicy,not_critical,agreed
+d2_00040,福建人,critical,adjudicated (A1 not_critical: demonym generic; A2 critical: demonym from place name)
+d2_00041,小狗,not_critical,agreed
+d2_00042,泰迪,not_critical,agreed
+d2_00043,换,not_critical,agreed
+d2_00044,台湾,critical,agreed
+d2_00045,台湾大学,critical,agreed
+d2_00046,taiwan,critical,agreed
+d2_00047,100,critical,agreed
+d2_00048,1000,critical,agreed
+d2_00049,tutor,not_critical,adjudicated (A1 critical: academic role/task; A2 not_critical: generic; filler or everyday word)
+d2_00050,年,critical,agreed
+d2_00051,two,critical,agreed
+d2_00052,deadline,critical,agreed
+d2_00053,2,critical,agreed
+d2_00054,chitchat,not_critical,agreed
+d2_00055,聊天,not_critical,agreed
+d2_00056,sentiment,critical,agreed
+d2_00057,块,not_critical,agreed
+d2_00058,4,critical,agreed
+d2_00059,托福,critical,agreed
+d2_00060,美国,critical,agreed
+d2_00061,toefl,critical,agreed
+d2_00062,hundred,critical,agreed
+d2_00063,five,critical,agreed
+d2_00064,90,critical,agreed
+d2_00065,美,not_critical,agreed
+d2_00066,中文,critical,adjudicated (A1 not_critical: language name generic; A2 critical: language name)
+d2_00067,英语,critical,adjudicated (A1 not_critical: language name generic; A2 critical: language name)
+d2_00068,亚洲,critical,agreed
+d2_00069,postgraduate,critical,adjudicated (A1 not_critical: generic academic level; A2 critical: academic task or course term)
+d2_00070,robotics,critical,agreed
+d2_00071,supervisor,not_critical,adjudicated (A1 critical: academic role; A2 not_critical: generic; filler or everyday word)
+d2_00072,undergraduate,critical,adjudicated (A1 not_critical: generic academic level; A2 critical: academic task or course term)
+d2_00073,integrities,critical,adjudicated (A1 not_critical: generic noun; A2 critical: technical domain term)
+d2_00074,secrete,critical,adjudicated (A1 not_critical: generic noun; A2 critical: technical domain term)
+d2_00075,面试,not_critical,adjudicated (A1 critical: interview event; A2 not_critical: generic; filler or everyday word)
+d2_00076,toplaytennis,not_critical,agreed
+d2_00077,exercising,not_critical,agreed
+d2_00078,unbelievable,not_critical,agreed
+d2_00079,左拐,critical,agreed
+d2_00080,tricky,not_critical,agreed
+d2_00081,cups,critical,adjudicated (A1 critical: named event (World Cup); A2 not_critical: generic; filler or everyday word)
+d2_00082,twenty,critical,agreed
+d2_00083,prediction,not_critical,agreed
+d2_00084,中国,critical,agreed
+d2_00085,report,not_critical,adjudicated (A1 not_critical: generic noun; A2 critical: academic report task)
+d2_00086,明星,not_critical,agreed
+d2_00087,博,critical,adjudicated (A1 not_critical: fragment; A2 critical: person name)
+d2_00088,10,critical,agreed
+d2_00089,diner,not_critical,agreed
+d2_00090,weights,not_critical,agreed
+d2_00091,bachelor,critical,adjudicated (A1 not_critical: generic degree; A2 critical: academic task or course term)
+d2_00092,bachelors,critical,adjudicated (A1 not_critical: generic degree; A2 critical: academic task or course term)
+d2_00093,高三,critical,agreed
+d2_00094,didnt,not_critical,agreed
+d2_00095,flexible,not_critical,agreed
+d2_00096,badminton,not_critical,agreed
+d2_00097,beginner,not_critical,agreed
+d2_00098,bracket,not_critical,agreed
+d2_00099,risky,not_critical,agreed
+d2_00100,swim,not_critical,agreed
+d2_00101,星期,critical,agreed
+d2_00102,harden,critical,agreed
+d2_00103,lebron,critical,agreed
+d2_00104,hes,not_critical,agreed
+d2_00105,corey,critical,agreed
+d2_00106,pointer,not_critical,agreed
+d2_00107,mcgrady,critical,agreed
+d2_00108,tracy,critical,agreed
+d2_00109,idol,not_critical,agreed
+d2_00110,姚明,critical,agreed
+d2_00111,rockets,critical,agreed
+d2_00112,crossover,not_critical,agreed
+d2_00113,中国式,critical,adjudicated (A1 not_critical: generic adjective; A2 critical: organisation; brand or app)
+d2_00114,homework,critical,agreed
+d2_00115,quantity,not_critical,agreed
+d2_00116,小学生,not_critical,agreed
+d2_00117,作业,critical,agreed
+d2_00118,exams,critical,agreed
+d2_00119,ust,critical,agreed
+d2_00120,ch,not_critical,agreed
+d2_00121,hometown,not_critical,agreed
+d2_00122,convenient,not_critical,agreed
+d2_00123,mainland,critical,agreed
+d2_00124,3,critical,agreed
+d2_00125,英文歌,not_critical,agreed
+d2_00126,cantonese,critical,adjudicated (A1 not_critical: language name generic; A2 critical: language name)
+d2_00127,粤语,critical,adjudicated (A1 not_critical: language name generic; A2 critical: language name)
+d2_00128,nine,critical,agreed
+d2_00129,2000,critical,agreed
+d2_00130,shen,critical,agreed
+d2_00131,zhen,critical,agreed
+d2_00132,uniforms,not_critical,agreed
+d2_00133,今天,critical,agreed
+d2_00134,明天,critical,agreed
+d2_00135,personalities,not_critical,agreed
+d2_00136,抗议,not_critical,agreed
+d2_00137,urgent,not_critical,agreed
+d2_00138,ielts,critical,agreed
+d2_00139,minded,not_critical,agreed
+d2_00140,alumnus,not_critical,agreed
+d2_00141,fin,critical,agreed
+d2_00142,通讯,not_critical,adjudicated (A1 not_critical: generic field; A2 critical: technical domain term)
+d2_00143,lecture,critical,agreed
+d2_00144,sandwiches,not_critical,agreed
+d2_00145,换衣服,not_critical,agreed
+d2_00146,12,critical,agreed
+d2_00147,万一,not_critical,agreed
+d2_00148,scenario,not_critical,agreed
+d2_00149,percent,critical,agreed
+d2_00150,99,critical,agreed
+d2_00151,0,critical,agreed
+d2_00152,95,critical,agreed
+d2_00153,drawback,not_critical,agreed
+d2_00154,simulate,not_critical,agreed
+d2_00155,technic,not_critical,agreed
+d2_00156,双刃剑,not_critical,agreed
+d2_00157,smartphone,not_critical,agreed
+d2_00158,smartly,not_critical,agreed
+d2_00159,surfing,not_critical,agreed
+d2_00160,普及,not_critical,agreed
+d2_00161,ios,critical,agreed
+d2_00162,fires,not_critical,agreed
+d2_00163,abandon,not_critical,agreed
+d2_00164,续航,not_critical,agreed
+d2_00165,安卓,critical,agreed
+d2_00166,ipad,critical,agreed
+d2_00167,ipod,critical,agreed
+d2_00168,三件套,not_critical,agreed
+d2_00169,syntax,critical,agreed
+d2_00170,analyzed,not_critical,agreed
+d2_00171,optimization,critical,agreed
+d2_00172,neuralnetwork,critical,agreed
+d2_00173,东,not_critical,agreed
+d2_00174,ofo,critical,agreed
+d2_00175,lab,critical,agreed
+d2_00176,ocr,critical,agreed
+d2_00177,protect,not_critical,agreed
+d2_00178,加密,critical,adjudicated (A1 not_critical: generic noun; A2 critical: technical domain term)
+d2_00179,considerd,not_critical,agreed
+d2_00180,robots,not_critical,agreed
+d2_00181,accompany,not_critical,agreed
+d2_00182,wil,not_critical,agreed
+d2_00183,leak,not_critical,agreed
+d2_00184,alipay,critical,agreed
+d2_00185,octopus,critical,agreed
+d2_00186,身份证,critical,agreed
+d2_00187,verification,critical,agreed
+d2_00188,panadol,critical,agreed
+d2_00189,assignment,critical,agreed
+d2_00190,20,critical,agreed
+d2_00191,fifty,critical,agreed
+d2_00192,dollars,critical,agreed
+d2_00193,药房,critical,agreed
+d2_00194,amoxicillin,critical,agreed
+d2_00195,9,critical,adjudicated (A1 critical: time number; A2 not_critical: generic; filler or everyday word)
+d2_00196,midterm,critical,agreed
+d2_00197,password,critical,agreed
+d2_00198,rent,critical,agreed
+d2_00199,1800,critical,agreed
+d2_00200,presentation,critical,agreed
+d2_00201,15,critical,agreed
+d2_00202,insulin,critical,agreed
+d2_00203,polyclinic,critical,agreed
+d2_00204,invoice,critical,agreed
+d2_00205,320,critical,agreed
+d2_00206,database,critical,agreed
+d2_00207,parcel,not_critical,adjudicated (A1 critical: delivery item; A2 not_critical: generic; filler or everyday word)
+d2_00208,email,not_critical,adjudicated (A1 critical: communication channel; A2 not_critical: generic; filler or everyday word)
+d2_00209,module,critical,agreed
+d2_00210,quiz,critical,agreed
+d2_00211,vaccine,critical,agreed
+d2_00212,salary,critical,agreed
+d2_00213,25,critical,agreed
+d2_00214,receipt,critical,agreed
+d2_00215,ibuprofen,critical,agreed
+d2_00216,zoom,critical,agreed
+d2_00217,server,critical,agreed
+d2_00218,restart,not_critical,agreed
+d2_00219,tutorial,critical,agreed
+d2_00220,11,critical,agreed
+d2_00221,5,critical,agreed
+d2_00222,deposit,critical,agreed
+d2_00223,500,critical,agreed
+d2_00224,3000,critical,agreed
+d2_00225,antibiotics,critical,agreed
+d2_00226,booking,not_critical,adjudicated (A1 critical: booking; A2 not_critical: generic; filler or everyday word)
+d2_00227,mrt,critical,agreed
+d2_00228,8,critical,agreed
+d2_00229,appointment,critical,agreed
+d2_00230,考试,critical,agreed
+d2_00231,overnight,not_critical,agreed
+d2_00232,医院,critical,agreed
+d2_00233,booster,critical,agreed
+d2_00234,gpa,critical,agreed
+d2_00235,loan,critical,agreed
+d2_00236,cough,critical,agreed
+d2_00237,syrup,critical,agreed
+d2_00238,submission,critical,agreed
+d2_00239,slides,not_critical,adjudicated (A1 not_critical: generic noun; A2 critical: academic task or course term)
+d2_00240,hospital,critical,agreed
+d2_00241,89,critical,agreed
+d2_00242,java,critical,agreed
+d2_00243,clinic,critical,agreed
+d2_00244,metformin,critical,agreed
+d2_00245,finals,critical,agreed
+d2_00246,1200,critical,agreed
+d2_00247,aspirin,critical,agreed
+d2_00248,分,critical,agreed
+d2_00249,pin,critical,agreed
+d2_00250,blood,critical,agreed
+d2_00251,pressure,critical,agreed
+d2_00252,bug,not_critical,adjudicated (A1 not_critical: generic noun; A2 critical: technical domain term)
+d2_00253,dentist,critical,agreed
+d2_00254,13,critical,agreed
+d2_00255,temperature,critical,agreed
+d2_00256,38,critical,agreed
+d2_00257,120,critical,agreed
+d2_00258,sem,critical,agreed
+d2_00259,timetable,critical,agreed
+d2_00260,prednisolone,critical,agreed
+d2_00261,退烧药,critical,agreed
+d2_00262,six,critical,agreed
+d2_00263,friday,critical,agreed
+d2_00264,押金,critical,agreed
+d2_00265,报告,critical,agreed
+d2_00266,tuesday,critical,agreed
+d2_00267,grandmother,not_critical,agreed
+d2_00268,胰岛素,critical,agreed
+d2_00269,诊所,critical,agreed
+d2_00270,at,not_critical,agreed
+d2_00271,eight,critical,agreed
+d2_00272,thirty,critical,agreed
+d2_00273,saturday,critical,agreed
+d2_00274,预约,critical,agreed
+d2_00275,monday,critical,agreed
+d2_00276,疫苗,critical,agreed
+d2_00277,doses,critical,agreed
+d2_00278,twentieth,critical,agreed
+d2_00279,密码,critical,agreed
+d2_00280,twelve,critical,agreed
+d2_00281,thousand,critical,agreed
+d2_00282,抗生素,critical,agreed
+d2_00283,seven,critical,agreed
+d2_00284,截止,critical,agreed
+d2_00285,日期,critical,agreed
+d2_00286,fifteenth,critical,agreed
+d2_00287,november,critical,agreed
+d2_00288,收据,critical,agreed
+d2_00289,forty,critical,agreed
+d2_00290,p,critical,adjudicated (A1 not_critical: single letter (pm part); A2 critical: date or time)
+d2_00291,m,critical,adjudicated (A1 not_critical: single letter (pm part); A2 critical: date or time)
+d2_00292,thursday,critical,agreed
+d2_00293,工资,critical,agreed
+d2_00294,exam,critical,agreed
+d2_00295,drawer,not_critical,agreed
+d2_00296,i,not_critical,agreed
+d2_00297,发票,critical,agreed
+d2_00298,发烧,critical,agreed
+d2_00299,we,not_critical,agreed
+d2_00300,a,not_critical,agreed
+d2_00301,小考,critical,agreed
+d2_00302,wednesday,critical,agreed
+d2_00303,to,not_critical,agreed
+d2_00304,tomorrow,critical,agreed
+d2_00305,血压,critical,agreed
+d2_00306,ninety,critical,agreed
+d2_00307,tenth,critical,agreed
+d2_00308,december,critical,agreed
+d2_00309,renew,not_critical,agreed
+d2_00310,护照,critical,agreed
+d2_00311,学费,critical,agreed
+d2_00312,布洛芬,critical,agreed
+d2_00313,meals,not_critical,agreed
+d2_00314,booked,not_critical,agreed
+d2_00315,fifteen,critical,agreed
+d2_00316,贷款,critical,agreed
+d2_00317,期末考,critical,agreed
+d2_00318,门卡,not_critical,adjudicated (A1 critical: access card; A2 not_critical: generic; filler or everyday word)
+d2_00319,咳嗽药,critical,agreed
+d2_00320,ten,critical,agreed
+d2_00321,millilitres,critical,agreed
+d2_00322,eleven,critical,agreed
+d2_00323,thirteen,critical,agreed
+d2_00324,体温,critical,agreed
+d2_00325,closes,not_critical,agreed
+d2_00326,tonight,critical,agreed
+d2_00327,january,critical,agreed
+d2_00328,阿司匹林,critical,agreed
+d2_00329,保险,critical,agreed
+d2_00330,复诊,critical,agreed
+d2_00331,定金,critical,agreed
+d2_00332,today,critical,agreed
+d2_00333,手术,critical,agreed
+d2_00334,on,not_critical,agreed

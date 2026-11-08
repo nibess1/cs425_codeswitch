@@ -1,0 +1,7 @@
+data/lex/cedict_ts.u8 is CC-CEDICT, a community-maintained free Chinese-English dictionary,
+published by MDBG (https://www.mdbg.net/chinese/dictionary?page=cc-cedict), downloaded 13 October 2026
+(the file header keeps the full notice).
+
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/).
+Referenced works: CEDICT, Copyright (C) 1997, 1998 Paul Andrew Denisowski.
+The file is redistributed unchanged.

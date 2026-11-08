@@ -1,0 +1,336 @@
+item_id,label,reason
+d2_00000,not_critical,generic; filler or everyday word
+d2_00001,not_critical,generic; filler or everyday word
+d2_00002,not_critical,generic; filler or everyday word
+d2_00003,not_critical,generic; filler or everyday word
+d2_00004,critical,place name
+d2_00005,critical,place name
+d2_00006,critical,place name
+d2_00007,critical,place name
+d2_00008,critical,place name
+d2_00009,not_critical,generic; filler or everyday word
+d2_00010,critical,date or time
+d2_00011,not_critical,generic; filler or everyday word
+d2_00012,not_critical,generic; filler or everyday word
+d2_00013,critical,number or quantity
+d2_00014,critical,academic task or course term
+d2_00015,not_critical,generic; filler or everyday word
+d2_00016,not_critical,generic; filler or everyday word
+d2_00017,not_critical,generic; filler or everyday word
+d2_00018,critical,technical domain term
+d2_00019,not_critical,generic; filler or everyday word
+d2_00020,not_critical,generic; filler or everyday word
+d2_00021,critical,place name
+d2_00022,critical,place name
+d2_00023,critical,place name
+d2_00024,critical,place name
+d2_00025,not_critical,generic; filler or everyday word
+d2_00026,critical,number or quantity
+d2_00027,not_critical,generic; filler or everyday word
+d2_00028,critical,place name
+d2_00029,not_critical,generic; filler or everyday word
+d2_00030,critical,academic task or course term
+d2_00031,critical,date or time
+d2_00032,critical,date or time
+d2_00033,critical,date or time
+d2_00034,critical,academic task or course term
+d2_00035,critical,money or amount
+d2_00036,not_critical,generic; filler or everyday word
+d2_00037,critical,place name
+d2_00038,not_critical,generic; filler or everyday word
+d2_00039,not_critical,generic; filler or everyday word
+d2_00040,critical,demonym from place name
+d2_00041,not_critical,generic; filler or everyday word
+d2_00042,not_critical,generic; filler or everyday word
+d2_00043,not_critical,generic; filler or everyday word
+d2_00044,critical,place name
+d2_00045,critical,place name
+d2_00046,critical,place name
+d2_00047,critical,number or quantity
+d2_00048,critical,number or quantity
+d2_00049,not_critical,generic; filler or everyday word
+d2_00050,critical,date or time
+d2_00051,critical,number or quantity
+d2_00052,critical,date or time
+d2_00053,critical,number or quantity
+d2_00054,not_critical,generic; filler or everyday word
+d2_00055,not_critical,generic; filler or everyday word
+d2_00056,critical,technical domain term
+d2_00057,not_critical,generic; filler or everyday word
+d2_00058,critical,ordinal year as fact
+d2_00059,critical,academic task or course term
+d2_00060,critical,place name
+d2_00061,critical,academic task or course term
+d2_00062,critical,number or quantity
+d2_00063,critical,number or quantity
+d2_00064,critical,number or quantity
+d2_00065,not_critical,generic; filler or everyday word
+d2_00066,critical,language name
+d2_00067,critical,language name
+d2_00068,critical,place name
+d2_00069,critical,academic task or course term
+d2_00070,critical,technical domain term
+d2_00071,not_critical,generic; filler or everyday word
+d2_00072,critical,academic task or course term
+d2_00073,critical,technical domain term
+d2_00074,critical,technical domain term
+d2_00075,not_critical,generic; filler or everyday word
+d2_00076,not_critical,generic; filler or everyday word
+d2_00077,not_critical,generic; filler or everyday word
+d2_00078,not_critical,generic; filler or everyday word
+d2_00079,critical,direction a listener acts on
+d2_00080,not_critical,generic; filler or everyday word
+d2_00081,not_critical,generic; filler or everyday word
+d2_00082,critical,number or quantity
+d2_00083,not_critical,generic; filler or everyday word
+d2_00084,critical,place name
+d2_00085,critical,academic report task
+d2_00086,not_critical,generic; filler or everyday word
+d2_00087,critical,person name
+d2_00088,critical,number or quantity
+d2_00089,not_critical,generic; filler or everyday word
+d2_00090,not_critical,generic; filler or everyday word
+d2_00091,critical,academic task or course term
+d2_00092,critical,academic task or course term
+d2_00093,critical,ordinal year as fact
+d2_00094,not_critical,generic; filler or everyday word
+d2_00095,not_critical,generic; filler or everyday word
+d2_00096,not_critical,generic; filler or everyday word
+d2_00097,not_critical,generic; filler or everyday word
+d2_00098,not_critical,generic; filler or everyday word
+d2_00099,not_critical,generic; filler or everyday word
+d2_00100,not_critical,generic; filler or everyday word
+d2_00101,critical,date or time
+d2_00102,critical,person name
+d2_00103,critical,person name
+d2_00104,not_critical,generic; filler or everyday word
+d2_00105,critical,person name
+d2_00106,not_critical,generic; filler or everyday word
+d2_00107,critical,person name
+d2_00108,critical,person name
+d2_00109,not_critical,generic; filler or everyday word
+d2_00110,critical,person name
+d2_00111,critical,organisation; brand or app
+d2_00112,not_critical,generic; filler or everyday word
+d2_00113,critical,organisation; brand or app
+d2_00114,critical,academic task or course term
+d2_00115,not_critical,generic; filler or everyday word
+d2_00116,not_critical,generic; filler or everyday word
+d2_00117,critical,academic task or course term
+d2_00118,critical,academic task or course term
+d2_00119,critical,organisation; brand or app
+d2_00120,not_critical,generic; filler or everyday word
+d2_00121,not_critical,generic; filler or everyday word
+d2_00122,not_critical,generic; filler or everyday word
+d2_00123,critical,place name
+d2_00124,critical,number or quantity
+d2_00125,not_critical,generic; filler or everyday word
+d2_00126,critical,language name
+d2_00127,critical,language name
+d2_00128,critical,number or quantity
+d2_00129,critical,date or time
+d2_00130,critical,place name
+d2_00131,critical,place name
+d2_00132,not_critical,generic; filler or everyday word
+d2_00133,critical,date or time
+d2_00134,critical,date or time
+d2_00135,not_critical,generic; filler or everyday word
+d2_00136,not_critical,generic; filler or everyday word
+d2_00137,not_critical,generic; filler or everyday word
+d2_00138,critical,academic task or course term
+d2_00139,not_critical,generic; filler or everyday word
+d2_00140,not_critical,generic; filler or everyday word
+d2_00141,critical,technical domain term
+d2_00142,critical,technical domain term
+d2_00143,critical,academic task or course term
+d2_00144,not_critical,generic; filler or everyday word
+d2_00145,not_critical,generic; filler or everyday word
+d2_00146,critical,number or quantity
+d2_00147,not_critical,generic; filler or everyday word
+d2_00148,not_critical,generic; filler or everyday word
+d2_00149,critical,number or quantity
+d2_00150,critical,number or quantity
+d2_00151,critical,number or quantity
+d2_00152,critical,number or quantity
+d2_00153,not_critical,generic; filler or everyday word
+d2_00154,not_critical,generic; filler or everyday word
+d2_00155,not_critical,generic; filler or everyday word
+d2_00156,not_critical,generic; filler or everyday word
+d2_00157,not_critical,generic; filler or everyday word
+d2_00158,not_critical,generic; filler or everyday word
+d2_00159,not_critical,generic; filler or everyday word
+d2_00160,not_critical,generic; filler or everyday word
+d2_00161,critical,organisation; brand or app
+d2_00162,not_critical,generic; filler or everyday word
+d2_00163,not_critical,generic; filler or everyday word
+d2_00164,not_critical,generic; filler or everyday word
+d2_00165,critical,organisation; brand or app
+d2_00166,critical,organisation; brand or app
+d2_00167,critical,organisation; brand or app
+d2_00168,not_critical,generic; filler or everyday word
+d2_00169,critical,technical domain term
+d2_00170,not_critical,generic; filler or everyday word
+d2_00171,critical,technical domain term
+d2_00172,critical,technical domain term
+d2_00173,not_critical,generic; filler or everyday word
+d2_00174,critical,organisation; brand or app
+d2_00175,critical,academic task or course term
+d2_00176,critical,technical domain term
+d2_00177,not_critical,generic; filler or everyday word
+d2_00178,critical,technical domain term
+d2_00179,not_critical,generic; filler or everyday word
+d2_00180,not_critical,generic; filler or everyday word
+d2_00181,not_critical,generic; filler or everyday word
+d2_00182,not_critical,generic; filler or everyday word
+d2_00183,not_critical,generic; filler or everyday word
+d2_00184,critical,organisation; brand or app
+d2_00185,critical,organisation; brand or app
+d2_00186,critical,identity document
+d2_00187,critical,technical domain term
+d2_00188,critical,drug or medical term
+d2_00189,critical,academic task or course term
+d2_00190,critical,number or quantity
+d2_00191,critical,number or quantity
+d2_00192,critical,money or amount
+d2_00193,critical,drug or medical term
+d2_00194,critical,drug or medical term
+d2_00195,not_critical,generic; filler or everyday word
+d2_00196,critical,academic task or course term
+d2_00197,critical,technical domain term
+d2_00198,critical,money or amount
+d2_00199,critical,number or quantity
+d2_00200,critical,academic task or course term
+d2_00201,critical,number or quantity
+d2_00202,critical,drug or medical term
+d2_00203,critical,drug or medical term
+d2_00204,critical,money or amount
+d2_00205,critical,number or quantity
+d2_00206,critical,technical domain term
+d2_00207,not_critical,generic; filler or everyday word
+d2_00208,not_critical,generic; filler or everyday word
+d2_00209,critical,academic task or course term
+d2_00210,critical,academic task or course term
+d2_00211,critical,drug or medical term
+d2_00212,critical,money or amount
+d2_00213,critical,number or quantity
+d2_00214,critical,money or amount
+d2_00215,critical,drug or medical term
+d2_00216,critical,organisation; brand or app
+d2_00217,critical,technical domain term
+d2_00218,not_critical,generic; filler or everyday word
+d2_00219,critical,academic task or course term
+d2_00220,critical,number or quantity
+d2_00221,critical,number or quantity
+d2_00222,critical,money or amount
+d2_00223,critical,number or quantity
+d2_00224,critical,number or quantity
+d2_00225,critical,drug or medical term
+d2_00226,not_critical,generic; filler or everyday word
+d2_00227,critical,organisation; brand or app
+d2_00228,critical,number or quantity
+d2_00229,critical,drug or medical term
+d2_00230,critical,academic task or course term
+d2_00231,not_critical,generic; filler or everyday word
+d2_00232,critical,drug or medical term
+d2_00233,critical,drug or medical term
+d2_00234,critical,academic task or course term
+d2_00235,critical,money or amount
+d2_00236,critical,drug or medical term
+d2_00237,critical,drug or medical term
+d2_00238,critical,academic task or course term
+d2_00239,critical,academic task or course term
+d2_00240,critical,drug or medical term
+d2_00241,critical,number or quantity
+d2_00242,critical,academic task or course term
+d2_00243,critical,drug or medical term
+d2_00244,critical,drug or medical term
+d2_00245,critical,academic task or course term
+d2_00246,critical,number or quantity
+d2_00247,critical,drug or medical term
+d2_00248,critical,date or time
+d2_00249,critical,technical domain term
+d2_00250,critical,drug or medical term
+d2_00251,critical,drug or medical term
+d2_00252,critical,technical domain term
+d2_00253,critical,drug or medical term
+d2_00254,critical,number or quantity
+d2_00255,critical,drug or medical term
+d2_00256,critical,number or quantity
+d2_00257,critical,number or quantity
+d2_00258,critical,date or time
+d2_00259,critical,academic task or course term
+d2_00260,critical,drug or medical term
+d2_00261,critical,drug or medical term
+d2_00262,critical,number or quantity
+d2_00263,critical,date or time
+d2_00264,critical,money or amount
+d2_00265,critical,academic task or course term
+d2_00266,critical,date or time
+d2_00267,not_critical,generic; filler or everyday word
+d2_00268,critical,drug or medical term
+d2_00269,critical,drug or medical term
+d2_00270,not_critical,generic; filler or everyday word
+d2_00271,critical,number or quantity
+d2_00272,critical,number or quantity
+d2_00273,critical,date or time
+d2_00274,critical,drug or medical term
+d2_00275,critical,date or time
+d2_00276,critical,drug or medical term
+d2_00277,critical,drug or medical term
+d2_00278,critical,date or time
+d2_00279,critical,technical domain term
+d2_00280,critical,number or quantity
+d2_00281,critical,number or quantity
+d2_00282,critical,drug or medical term
+d2_00283,critical,number or quantity
+d2_00284,critical,date or time
+d2_00285,critical,date or time
+d2_00286,critical,date or time
+d2_00287,critical,date or time
+d2_00288,critical,money or amount
+d2_00289,critical,number or quantity
+d2_00290,critical,date or time
+d2_00291,critical,date or time
+d2_00292,critical,date or time
+d2_00293,critical,money or amount
+d2_00294,critical,academic task or course term
+d2_00295,not_critical,generic; filler or everyday word
+d2_00296,not_critical,generic; filler or everyday word
+d2_00297,critical,money or amount
+d2_00298,critical,drug or medical term
+d2_00299,not_critical,generic; filler or everyday word
+d2_00300,not_critical,generic; filler or everyday word
+d2_00301,critical,academic task or course term
+d2_00302,critical,date or time
+d2_00303,not_critical,generic; filler or everyday word
+d2_00304,critical,date or time
+d2_00305,critical,drug or medical term
+d2_00306,critical,number or quantity
+d2_00307,critical,date or time
+d2_00308,critical,date or time
+d2_00309,not_critical,generic; filler or everyday word
+d2_00310,critical,identity document
+d2_00311,critical,money or amount
+d2_00312,critical,drug or medical term
+d2_00313,not_critical,generic; filler or everyday word
+d2_00314,not_critical,generic; filler or everyday word
+d2_00315,critical,number or quantity
+d2_00316,critical,money or amount
+d2_00317,critical,academic task or course term
+d2_00318,not_critical,generic; filler or everyday word
+d2_00319,critical,drug or medical term
+d2_00320,critical,number or quantity
+d2_00321,critical,drug or medical term
+d2_00322,critical,number or quantity
+d2_00323,critical,number or quantity
+d2_00324,critical,drug or medical term
+d2_00325,not_critical,generic; filler or everyday word
+d2_00326,critical,date or time
+d2_00327,critical,date or time
+d2_00328,critical,drug or medical term
+d2_00329,critical,money or amount
+d2_00330,critical,drug or medical term
+d2_00331,critical,money or amount
+d2_00332,critical,date or time
+d2_00333,critical,drug or medical term
+d2_00334,not_critical,generic; filler or everyday word

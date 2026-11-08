@@ -1,5 +1,6 @@
 import os, pandas as pd
-D = os.path.expanduser("~/cs425-codeswitch-asr")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root
+D = ROOT
 s = pd.read_parquet(f"{D}/data/leak/signals.parquet")
 amb = pd.read_parquet(f"{D}/data/leak/ambiguous_test.parquet")
 P = {20,55,61,82,83,87,88,89,90,91,92,94,95,96,98,99,100,117,127,128,138,149}

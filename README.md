@@ -5,16 +5,15 @@ semantic minimum-risk training, language-aware re-ranking, and how quantization 
 errors on embedded words. See `PLAN.md` for the full plan and status, and
 `CS425 Proposal (Revised)` for the method.
 
-## Setup (smu2)
+## Setup (Linux or macOS, Python 3.11)
 ```bash
-micromamba create -n cs425 -c conda-forge python=3.11 pip ffmpeg
-micromamba activate cs425
-pip install -r requirements.txt   # pinned
+python3.11 -m venv .venv && source .venv/bin/activate   # or: micromamba create -n cs425 -c conda-forge python=3.11 pip ffmpeg
+pip install -r requirements.txt   # direct dependencies, pinned; requirements-freeze.txt = full environment we ran in
 pip install -e .
-export HF_HOME=~/hf-cache
 pytest                            # normalizer + scorer tests
 ```
-Use **one GPU** (`CUDA_VISIBLE_DEVICES=<free id>`), and run long jobs inside `tmux`.
+Scoring and tables run on CPU. Training and 8/4-bit decoding need one CUDA GPU (`CUDA_VISIBLE_DEVICES=<free id>`);
+`ffmpeg` is needed only to convert the phone recordings.
 
 ## Layout
 | Path | What | Owner |
@@ -89,4 +88,7 @@ Every decoder writes JSONL, one line per utterance:
 - **NSC Part 4**: `python scripts/fetch_nsc_dropbox.py list data/nsc_part4`, then `... fetch data/nsc_part4 -j 2 --only cs-chn`.
   Speaker sheet: `data/nsc_part4/speaker_metadata.xlsx` (it isn't in git; get it from the team drive).
 - **ASCEND**: `CAiRE/ASCEND` on the Hugging Face Hub. **FLEURS**: `google/fleurs` (en_us, cmn_hans_cn).
-- **CC-CEDICT**: `data/lex/cedict_ts.u8` from mdbg.net.
+- **Included small data** (`data/lex`, `data/llm_labels`, `data/leak`): CC-CEDICT (`data/lex/cedict_ts.u8`, CC-BY-SA 4.0,
+  MDBG, from https://www.mdbg.net/chinese/dictionary?page=cc-cedict; see `licences/CC-CEDICT.txt`), the cached LaBSE
+  similarities, the D1/D2 label files and the D3 leakage signals. Scoring needs them; the code stops with an error if
+  CC-CEDICT is missing.

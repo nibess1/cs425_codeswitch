@@ -1,0 +1,1769 @@
+pair_id,label,basis
+d1_00000,translation,agreed
+d1_00001,translation,agreed
+d1_00002,translation,agreed
+d1_00003,translation,agreed
+d1_00004,translation,agreed
+d1_00005,translation,agreed
+d1_00006,transliteration,agreed
+d1_00007,transliteration,agreed
+d1_00008,transliteration,agreed
+d1_00009,other,agreed
+d1_00010,transliteration,agreed
+d1_00011,other,adjudicated (A1 transliteration; A2 translation)
+d1_00012,translation,agreed
+d1_00013,other,agreed
+d1_00014,transliteration,agreed
+d1_00015,transliteration,agreed
+d1_00016,transliteration,agreed
+d1_00017,transliteration,agreed
+d1_00018,transliteration,agreed
+d1_00019,other,agreed
+d1_00020,other,agreed
+d1_00021,other,agreed
+d1_00022,transliteration,agreed
+d1_00023,transliteration,agreed
+d1_00024,transliteration,agreed
+d1_00025,transliteration,agreed
+d1_00026,other,agreed
+d1_00027,other,agreed
+d1_00028,transliteration,agreed
+d1_00029,other,agreed
+d1_00030,transliteration,agreed
+d1_00031,other,agreed
+d1_00032,transliteration,agreed
+d1_00033,transliteration,agreed
+d1_00034,other,agreed
+d1_00035,other,agreed
+d1_00036,transliteration,agreed
+d1_00037,other,agreed
+d1_00038,translation,agreed
+d1_00039,transliteration,agreed
+d1_00040,transliteration,agreed
+d1_00041,other,agreed
+d1_00042,other,agreed
+d1_00043,transliteration,agreed
+d1_00044,transliteration,agreed
+d1_00045,transliteration,agreed
+d1_00046,other,agreed
+d1_00047,other,agreed
+d1_00048,other,agreed
+d1_00049,translation,adjudicated (A1 other; A2 translation)
+d1_00050,transliteration,agreed
+d1_00051,other,adjudicated (A1 other; A2 transliteration)
+d1_00052,other,agreed
+d1_00053,other,agreed
+d1_00054,transliteration,agreed
+d1_00055,translation,agreed
+d1_00056,other,agreed
+d1_00057,translation,agreed
+d1_00058,transliteration,agreed
+d1_00059,translation,agreed
+d1_00060,transliteration,agreed
+d1_00061,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00062,translation,agreed
+d1_00063,transliteration,agreed
+d1_00064,transliteration,agreed
+d1_00065,transliteration,agreed
+d1_00066,transliteration,agreed
+d1_00067,other,agreed
+d1_00068,transliteration,agreed
+d1_00069,transliteration,agreed
+d1_00070,translation,adjudicated (A1 translation; A2 other)
+d1_00071,other,agreed
+d1_00072,transliteration,agreed
+d1_00073,other,agreed
+d1_00074,transliteration,agreed
+d1_00075,translation,agreed
+d1_00076,transliteration,agreed
+d1_00077,transliteration,agreed
+d1_00078,transliteration,agreed
+d1_00079,transliteration,agreed
+d1_00080,transliteration,agreed
+d1_00081,transliteration,agreed
+d1_00082,transliteration,agreed
+d1_00083,transliteration,agreed
+d1_00084,other,agreed
+d1_00085,translation,agreed
+d1_00086,other,agreed
+d1_00087,translation,agreed
+d1_00088,transliteration,agreed
+d1_00089,translation,agreed
+d1_00090,transliteration,agreed
+d1_00091,transliteration,agreed
+d1_00092,other,agreed
+d1_00093,transliteration,agreed
+d1_00094,other,agreed
+d1_00095,transliteration,agreed
+d1_00096,transliteration,agreed
+d1_00097,transliteration,agreed
+d1_00098,transliteration,agreed
+d1_00099,transliteration,agreed
+d1_00100,transliteration,agreed
+d1_00101,transliteration,agreed
+d1_00102,transliteration,agreed
+d1_00103,transliteration,agreed
+d1_00104,transliteration,agreed
+d1_00105,transliteration,agreed
+d1_00106,transliteration,agreed
+d1_00107,transliteration,agreed
+d1_00108,transliteration,agreed
+d1_00109,other,agreed
+d1_00110,translation,adjudicated (A1 other; A2 translation)
+d1_00111,translation,agreed
+d1_00112,other,adjudicated (A1 other; A2 transliteration)
+d1_00113,other,agreed
+d1_00114,transliteration,agreed
+d1_00115,translation,agreed
+d1_00116,other,agreed
+d1_00117,transliteration,agreed
+d1_00118,other,agreed
+d1_00119,transliteration,agreed
+d1_00120,other,agreed
+d1_00121,other,agreed
+d1_00122,transliteration,agreed
+d1_00123,translation,agreed
+d1_00124,transliteration,agreed
+d1_00125,transliteration,agreed
+d1_00126,transliteration,agreed
+d1_00127,transliteration,agreed
+d1_00128,transliteration,agreed
+d1_00129,translation,agreed
+d1_00130,transliteration,agreed
+d1_00131,transliteration,agreed
+d1_00132,translation,agreed
+d1_00133,other,agreed
+d1_00134,transliteration,agreed
+d1_00135,transliteration,agreed
+d1_00136,other,agreed
+d1_00137,transliteration,agreed
+d1_00138,transliteration,agreed
+d1_00139,other,agreed
+d1_00140,other,adjudicated (A1 other; A2 transliteration)
+d1_00141,transliteration,agreed
+d1_00142,transliteration,agreed
+d1_00143,transliteration,agreed
+d1_00144,other,agreed
+d1_00145,other,agreed
+d1_00146,transliteration,agreed
+d1_00147,other,agreed
+d1_00148,transliteration,agreed
+d1_00149,transliteration,agreed
+d1_00150,translation,agreed
+d1_00151,transliteration,agreed
+d1_00152,other,adjudicated (A1 transliteration; A2 other)
+d1_00153,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00154,transliteration,agreed
+d1_00155,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00156,transliteration,agreed
+d1_00157,translation,adjudicated (A1 other; A2 translation)
+d1_00158,other,adjudicated (A1 transliteration; A2 other)
+d1_00159,other,agreed
+d1_00160,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00161,transliteration,agreed
+d1_00162,other,agreed
+d1_00163,other,agreed
+d1_00164,transliteration,agreed
+d1_00165,transliteration,agreed
+d1_00166,transliteration,agreed
+d1_00167,other,agreed
+d1_00168,transliteration,agreed
+d1_00169,transliteration,agreed
+d1_00170,transliteration,agreed
+d1_00171,other,adjudicated (A1 transliteration; A2 other)
+d1_00172,other,agreed
+d1_00173,transliteration,agreed
+d1_00174,other,adjudicated (A1 transliteration; A2 other)
+d1_00175,transliteration,agreed
+d1_00176,transliteration,agreed
+d1_00177,transliteration,agreed
+d1_00178,other,agreed
+d1_00179,transliteration,agreed
+d1_00180,other,agreed
+d1_00181,translation,agreed
+d1_00182,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00183,translation,agreed
+d1_00184,other,agreed
+d1_00185,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00186,other,agreed
+d1_00187,other,agreed
+d1_00188,other,adjudicated (A1 other; A2 transliteration)
+d1_00189,other,agreed
+d1_00190,transliteration,agreed
+d1_00191,other,agreed
+d1_00192,transliteration,agreed
+d1_00193,transliteration,agreed
+d1_00194,transliteration,agreed
+d1_00195,other,agreed
+d1_00196,other,agreed
+d1_00197,transliteration,agreed
+d1_00198,transliteration,agreed
+d1_00199,transliteration,agreed
+d1_00200,transliteration,agreed
+d1_00201,transliteration,agreed
+d1_00202,translation,agreed
+d1_00203,transliteration,agreed
+d1_00204,transliteration,agreed
+d1_00205,transliteration,agreed
+d1_00206,transliteration,agreed
+d1_00207,transliteration,agreed
+d1_00208,other,adjudicated (A1 translation; A2 other)
+d1_00209,transliteration,agreed
+d1_00210,other,agreed
+d1_00211,transliteration,agreed
+d1_00212,other,agreed
+d1_00213,transliteration,agreed
+d1_00214,transliteration,agreed
+d1_00215,transliteration,agreed
+d1_00216,other,agreed
+d1_00217,translation,agreed
+d1_00218,transliteration,agreed
+d1_00219,transliteration,agreed
+d1_00220,transliteration,agreed
+d1_00221,transliteration,agreed
+d1_00222,transliteration,agreed
+d1_00223,other,agreed
+d1_00224,transliteration,agreed
+d1_00225,transliteration,agreed
+d1_00226,transliteration,agreed
+d1_00227,transliteration,agreed
+d1_00228,transliteration,agreed
+d1_00229,other,adjudicated (A1 transliteration; A2 other)
+d1_00230,transliteration,agreed
+d1_00231,other,agreed
+d1_00232,transliteration,agreed
+d1_00233,translation,agreed
+d1_00234,translation,agreed
+d1_00235,transliteration,agreed
+d1_00236,other,agreed
+d1_00237,translation,adjudicated (A1 translation; A2 transliteration)
+d1_00238,other,agreed
+d1_00239,transliteration,agreed
+d1_00240,transliteration,agreed
+d1_00241,transliteration,agreed
+d1_00242,transliteration,agreed
+d1_00243,transliteration,agreed
+d1_00244,other,agreed
+d1_00245,other,agreed
+d1_00246,transliteration,agreed
+d1_00247,translation,agreed
+d1_00248,transliteration,agreed
+d1_00249,transliteration,agreed
+d1_00250,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00251,other,adjudicated (A1 other; A2 transliteration)
+d1_00252,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00253,transliteration,agreed
+d1_00254,transliteration,agreed
+d1_00255,transliteration,agreed
+d1_00256,transliteration,agreed
+d1_00257,transliteration,agreed
+d1_00258,transliteration,agreed
+d1_00259,other,agreed
+d1_00260,other,agreed
+d1_00261,transliteration,agreed
+d1_00262,transliteration,agreed
+d1_00263,transliteration,agreed
+d1_00264,other,agreed
+d1_00265,translation,agreed
+d1_00266,other,agreed
+d1_00267,translation,agreed
+d1_00268,translation,agreed
+d1_00269,transliteration,agreed
+d1_00270,transliteration,agreed
+d1_00271,transliteration,agreed
+d1_00272,translation,agreed
+d1_00273,translation,agreed
+d1_00274,other,agreed
+d1_00275,transliteration,agreed
+d1_00276,transliteration,agreed
+d1_00277,other,agreed
+d1_00278,transliteration,agreed
+d1_00279,transliteration,agreed
+d1_00280,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00281,transliteration,agreed
+d1_00282,other,agreed
+d1_00283,transliteration,agreed
+d1_00284,transliteration,agreed
+d1_00285,transliteration,agreed
+d1_00286,other,agreed
+d1_00287,transliteration,agreed
+d1_00288,transliteration,agreed
+d1_00289,transliteration,agreed
+d1_00290,translation,agreed
+d1_00291,transliteration,agreed
+d1_00292,transliteration,agreed
+d1_00293,transliteration,agreed
+d1_00294,transliteration,agreed
+d1_00295,translation,agreed
+d1_00296,transliteration,agreed
+d1_00297,transliteration,agreed
+d1_00298,transliteration,agreed
+d1_00299,other,adjudicated (A1 transliteration; A2 other)
+d1_00300,transliteration,agreed
+d1_00301,transliteration,agreed
+d1_00302,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00303,transliteration,agreed
+d1_00304,other,agreed
+d1_00305,translation,adjudicated (A1 other; A2 translation)
+d1_00306,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00307,transliteration,agreed
+d1_00308,transliteration,agreed
+d1_00309,transliteration,agreed
+d1_00310,other,adjudicated (A1 transliteration; A2 other)
+d1_00311,transliteration,agreed
+d1_00312,other,adjudicated (A1 transliteration; A2 other)
+d1_00313,transliteration,agreed
+d1_00314,transliteration,agreed
+d1_00315,translation,agreed
+d1_00316,other,adjudicated (A1 transliteration; A2 other)
+d1_00317,transliteration,agreed
+d1_00318,transliteration,agreed
+d1_00319,translation,agreed
+d1_00320,other,adjudicated (A1 transliteration; A2 other)
+d1_00321,transliteration,agreed
+d1_00322,transliteration,agreed
+d1_00323,other,agreed
+d1_00324,transliteration,agreed
+d1_00325,other,agreed
+d1_00326,transliteration,agreed
+d1_00327,transliteration,agreed
+d1_00328,transliteration,agreed
+d1_00329,transliteration,agreed
+d1_00330,transliteration,agreed
+d1_00331,transliteration,agreed
+d1_00332,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00333,transliteration,agreed
+d1_00334,transliteration,agreed
+d1_00335,other,agreed
+d1_00336,other,agreed
+d1_00337,transliteration,agreed
+d1_00338,transliteration,agreed
+d1_00339,transliteration,agreed
+d1_00340,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00341,other,agreed
+d1_00342,transliteration,agreed
+d1_00343,transliteration,agreed
+d1_00344,transliteration,agreed
+d1_00345,transliteration,agreed
+d1_00346,transliteration,agreed
+d1_00347,other,adjudicated (A1 transliteration; A2 other)
+d1_00348,other,agreed
+d1_00349,transliteration,agreed
+d1_00350,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00351,other,adjudicated (A1 transliteration; A2 other)
+d1_00352,transliteration,agreed
+d1_00353,transliteration,agreed
+d1_00354,transliteration,agreed
+d1_00355,transliteration,agreed
+d1_00356,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00357,other,adjudicated (A1 transliteration; A2 other)
+d1_00358,transliteration,agreed
+d1_00359,transliteration,agreed
+d1_00360,other,agreed
+d1_00361,transliteration,agreed
+d1_00362,transliteration,agreed
+d1_00363,other,agreed
+d1_00364,other,adjudicated (A1 transliteration; A2 other)
+d1_00365,other,adjudicated (A1 transliteration; A2 other)
+d1_00366,transliteration,agreed
+d1_00367,transliteration,agreed
+d1_00368,transliteration,agreed
+d1_00369,transliteration,agreed
+d1_00370,other,agreed
+d1_00371,transliteration,agreed
+d1_00372,other,agreed
+d1_00373,other,adjudicated (A1 other; A2 transliteration)
+d1_00374,other,agreed
+d1_00375,transliteration,agreed
+d1_00376,transliteration,agreed
+d1_00377,other,adjudicated (A1 transliteration; A2 other)
+d1_00378,transliteration,agreed
+d1_00379,transliteration,agreed
+d1_00380,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00381,transliteration,agreed
+d1_00382,transliteration,agreed
+d1_00383,transliteration,agreed
+d1_00384,transliteration,agreed
+d1_00385,transliteration,agreed
+d1_00386,transliteration,agreed
+d1_00387,transliteration,agreed
+d1_00388,transliteration,agreed
+d1_00389,transliteration,agreed
+d1_00390,translation,adjudicated (A1 translation; A2 other)
+d1_00391,other,agreed
+d1_00392,transliteration,agreed
+d1_00393,other,agreed
+d1_00394,transliteration,agreed
+d1_00395,transliteration,agreed
+d1_00396,transliteration,agreed
+d1_00397,transliteration,agreed
+d1_00398,transliteration,agreed
+d1_00399,other,agreed
+d1_00400,other,agreed
+d1_00401,transliteration,agreed
+d1_00402,transliteration,agreed
+d1_00403,transliteration,agreed
+d1_00404,transliteration,agreed
+d1_00405,other,agreed
+d1_00406,transliteration,agreed
+d1_00407,other,agreed
+d1_00408,other,agreed
+d1_00409,transliteration,agreed
+d1_00410,other,agreed
+d1_00411,transliteration,agreed
+d1_00412,translation,adjudicated (A1 other; A2 translation)
+d1_00413,transliteration,agreed
+d1_00414,other,agreed
+d1_00415,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00416,other,agreed
+d1_00417,transliteration,agreed
+d1_00418,transliteration,agreed
+d1_00419,transliteration,agreed
+d1_00420,transliteration,agreed
+d1_00421,transliteration,agreed
+d1_00422,transliteration,agreed
+d1_00423,transliteration,agreed
+d1_00424,other,adjudicated (A1 other; A2 transliteration)
+d1_00425,other,agreed
+d1_00426,translation,agreed
+d1_00427,transliteration,agreed
+d1_00428,transliteration,agreed
+d1_00429,other,adjudicated (A1 other; A2 transliteration)
+d1_00430,other,agreed
+d1_00431,translation,agreed
+d1_00432,transliteration,agreed
+d1_00433,transliteration,agreed
+d1_00434,other,agreed
+d1_00435,other,agreed
+d1_00436,transliteration,agreed
+d1_00437,transliteration,agreed
+d1_00438,other,adjudicated (A1 other; A2 transliteration)
+d1_00439,transliteration,agreed
+d1_00440,transliteration,agreed
+d1_00441,other,agreed
+d1_00442,translation,agreed
+d1_00443,other,adjudicated (A1 transliteration; A2 other)
+d1_00444,transliteration,agreed
+d1_00445,translation,agreed
+d1_00446,other,agreed
+d1_00447,other,agreed
+d1_00448,other,agreed
+d1_00449,other,agreed
+d1_00450,transliteration,agreed
+d1_00451,transliteration,agreed
+d1_00452,other,adjudicated (A1 transliteration; A2 other)
+d1_00453,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00454,other,agreed
+d1_00455,transliteration,agreed
+d1_00456,transliteration,agreed
+d1_00457,other,adjudicated (A1 other; A2 transliteration)
+d1_00458,transliteration,agreed
+d1_00459,transliteration,agreed
+d1_00460,other,adjudicated (A1 transliteration; A2 other)
+d1_00461,transliteration,agreed
+d1_00462,other,agreed
+d1_00463,other,agreed
+d1_00464,other,adjudicated (A1 transliteration; A2 other)
+d1_00465,transliteration,agreed
+d1_00466,other,adjudicated (A1 transliteration; A2 other)
+d1_00467,other,agreed
+d1_00468,transliteration,agreed
+d1_00469,transliteration,agreed
+d1_00470,transliteration,agreed
+d1_00471,transliteration,agreed
+d1_00472,transliteration,agreed
+d1_00473,transliteration,agreed
+d1_00474,transliteration,agreed
+d1_00475,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_00476,transliteration,agreed
+d1_00477,other,agreed
+d1_00478,transliteration,agreed
+d1_00479,transliteration,agreed
+d1_00480,transliteration,agreed
+d1_00481,transliteration,agreed
+d1_00482,transliteration,agreed
+d1_00483,transliteration,agreed
+d1_00484,transliteration,agreed
+d1_00485,other,agreed
+d1_00486,transliteration,agreed
+d1_00487,other,agreed
+d1_00488,transliteration,agreed
+d1_00489,transliteration,agreed
+d1_00490,transliteration,agreed
+d1_00491,translation,agreed
+d1_00492,other,agreed
+d1_00493,transliteration,agreed
+d1_00494,other,adjudicated (A1 transliteration; A2 other)
+d1_00495,other,adjudicated (A1 other; A2 transliteration)
+d1_00496,transliteration,agreed
+d1_00497,transliteration,agreed
+d1_00498,other,adjudicated (A1 transliteration; A2 other)
+d1_00499,transliteration,agreed
+d1_00500,transliteration,agreed
+d1_00501,other,adjudicated (A1 other; A2 transliteration)
+d1_00502,transliteration,agreed
+d1_00503,other,adjudicated (A1 other; A2 transliteration)
+d1_00504,other,agreed
+d1_00505,transliteration,agreed
+d1_00506,other,agreed
+d1_00507,transliteration,agreed
+d1_00508,transliteration,agreed
+d1_00509,transliteration,agreed
+d1_00510,transliteration,agreed
+d1_00511,other,agreed
+d1_00512,transliteration,agreed
+d1_00513,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00514,other,agreed
+d1_00515,other,adjudicated (A1 other; A2 transliteration)
+d1_00516,other,agreed
+d1_00517,other,agreed
+d1_00518,transliteration,agreed
+d1_00519,transliteration,agreed
+d1_00520,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00521,transliteration,agreed
+d1_00522,transliteration,agreed
+d1_00523,other,agreed
+d1_00524,translation,agreed
+d1_00525,transliteration,agreed
+d1_00526,transliteration,agreed
+d1_00527,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00528,other,agreed
+d1_00529,transliteration,agreed
+d1_00530,other,agreed
+d1_00531,transliteration,agreed
+d1_00532,transliteration,agreed
+d1_00533,transliteration,agreed
+d1_00534,transliteration,agreed
+d1_00535,transliteration,agreed
+d1_00536,other,agreed
+d1_00537,transliteration,agreed
+d1_00538,transliteration,agreed
+d1_00539,transliteration,agreed
+d1_00540,transliteration,agreed
+d1_00541,other,adjudicated (A1 transliteration; A2 other)
+d1_00542,other,adjudicated (A1 other; A2 transliteration)
+d1_00543,other,adjudicated (A1 transliteration; A2 other)
+d1_00544,other,agreed
+d1_00545,other,agreed
+d1_00546,transliteration,agreed
+d1_00547,transliteration,agreed
+d1_00548,transliteration,agreed
+d1_00549,other,agreed
+d1_00550,other,adjudicated (A1 transliteration; A2 other)
+d1_00551,transliteration,agreed
+d1_00552,transliteration,agreed
+d1_00553,transliteration,agreed
+d1_00554,transliteration,agreed
+d1_00555,other,agreed
+d1_00556,transliteration,agreed
+d1_00557,other,adjudicated (A1 transliteration; A2 other)
+d1_00558,translation,agreed
+d1_00559,transliteration,agreed
+d1_00560,other,adjudicated (A1 transliteration; A2 other)
+d1_00561,transliteration,agreed
+d1_00562,other,agreed
+d1_00563,other,agreed
+d1_00564,other,adjudicated (A1 transliteration; A2 other)
+d1_00565,transliteration,agreed
+d1_00566,other,agreed
+d1_00567,translation,agreed
+d1_00568,transliteration,agreed
+d1_00569,other,agreed
+d1_00570,transliteration,agreed
+d1_00571,transliteration,agreed
+d1_00572,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00573,transliteration,agreed
+d1_00574,transliteration,agreed
+d1_00575,transliteration,agreed
+d1_00576,transliteration,agreed
+d1_00577,transliteration,agreed
+d1_00578,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00579,other,agreed
+d1_00580,other,agreed
+d1_00581,other,adjudicated (A1 transliteration; A2 other)
+d1_00582,other,agreed
+d1_00583,transliteration,agreed
+d1_00584,transliteration,agreed
+d1_00585,other,adjudicated (A1 other; A2 transliteration)
+d1_00586,other,agreed
+d1_00587,other,agreed
+d1_00588,other,adjudicated (A1 transliteration; A2 other)
+d1_00589,transliteration,agreed
+d1_00590,other,agreed
+d1_00591,transliteration,agreed
+d1_00592,other,agreed
+d1_00593,other,agreed
+d1_00594,other,adjudicated (A1 transliteration; A2 other)
+d1_00595,other,agreed
+d1_00596,transliteration,agreed
+d1_00597,other,adjudicated (A1 transliteration; A2 other)
+d1_00598,other,agreed
+d1_00599,transliteration,agreed
+d1_00600,other,adjudicated (A1 transliteration; A2 other)
+d1_00601,transliteration,agreed
+d1_00602,transliteration,agreed
+d1_00603,transliteration,agreed
+d1_00604,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00605,transliteration,agreed
+d1_00606,transliteration,agreed
+d1_00607,transliteration,agreed
+d1_00608,transliteration,agreed
+d1_00609,translation,adjudicated (A1 other; A2 translation)
+d1_00610,other,agreed
+d1_00611,other,agreed
+d1_00612,transliteration,agreed
+d1_00613,transliteration,agreed
+d1_00614,transliteration,agreed
+d1_00615,translation,agreed
+d1_00616,transliteration,agreed
+d1_00617,other,adjudicated (A1 other; A2 transliteration)
+d1_00618,transliteration,agreed
+d1_00619,other,agreed
+d1_00620,other,agreed
+d1_00621,transliteration,agreed
+d1_00622,transliteration,agreed
+d1_00623,transliteration,agreed
+d1_00624,transliteration,agreed
+d1_00625,transliteration,agreed
+d1_00626,other,agreed
+d1_00627,other,adjudicated (A1 transliteration; A2 other)
+d1_00628,other,agreed
+d1_00629,transliteration,agreed
+d1_00630,transliteration,agreed
+d1_00631,translation,agreed
+d1_00632,transliteration,agreed
+d1_00633,other,adjudicated (A1 transliteration; A2 other)
+d1_00634,other,agreed
+d1_00635,other,agreed
+d1_00636,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_00637,transliteration,agreed
+d1_00638,transliteration,agreed
+d1_00639,other,agreed
+d1_00640,other,agreed
+d1_00641,other,agreed
+d1_00642,other,adjudicated (A1 transliteration; A2 other)
+d1_00643,other,agreed
+d1_00644,transliteration,agreed
+d1_00645,other,agreed
+d1_00646,other,agreed
+d1_00647,transliteration,agreed
+d1_00648,transliteration,agreed
+d1_00649,translation,agreed
+d1_00650,other,agreed
+d1_00651,other,adjudicated (A1 translation; A2 other)
+d1_00652,other,adjudicated (A1 transliteration; A2 other)
+d1_00653,other,agreed
+d1_00654,other,agreed
+d1_00655,other,adjudicated (A1 transliteration; A2 other)
+d1_00656,transliteration,agreed
+d1_00657,other,agreed
+d1_00658,other,agreed
+d1_00659,transliteration,agreed
+d1_00660,transliteration,agreed
+d1_00661,other,agreed
+d1_00662,transliteration,agreed
+d1_00663,transliteration,agreed
+d1_00664,transliteration,agreed
+d1_00665,transliteration,agreed
+d1_00666,other,adjudicated (A1 transliteration; A2 other)
+d1_00667,translation,agreed
+d1_00668,other,adjudicated (A1 transliteration; A2 other)
+d1_00669,transliteration,agreed
+d1_00670,translation,agreed
+d1_00671,transliteration,agreed
+d1_00672,transliteration,agreed
+d1_00673,other,agreed
+d1_00674,other,agreed
+d1_00675,other,adjudicated (A1 transliteration; A2 other)
+d1_00676,transliteration,agreed
+d1_00677,transliteration,agreed
+d1_00678,transliteration,agreed
+d1_00679,other,agreed
+d1_00680,transliteration,agreed
+d1_00681,transliteration,agreed
+d1_00682,other,agreed
+d1_00683,transliteration,agreed
+d1_00684,other,agreed
+d1_00685,other,agreed
+d1_00686,other,agreed
+d1_00687,transliteration,agreed
+d1_00688,transliteration,agreed
+d1_00689,other,agreed
+d1_00690,transliteration,agreed
+d1_00691,transliteration,agreed
+d1_00692,other,agreed
+d1_00693,other,agreed
+d1_00694,transliteration,agreed
+d1_00695,transliteration,agreed
+d1_00696,other,agreed
+d1_00697,other,adjudicated (A1 other; A2 transliteration)
+d1_00698,transliteration,agreed
+d1_00699,other,agreed
+d1_00700,transliteration,agreed
+d1_00701,transliteration,agreed
+d1_00702,other,adjudicated (A1 transliteration; A2 other)
+d1_00703,other,adjudicated (A1 transliteration; A2 other)
+d1_00704,other,agreed
+d1_00705,transliteration,agreed
+d1_00706,other,adjudicated (A1 transliteration; A2 other)
+d1_00707,other,adjudicated (A1 transliteration; A2 other)
+d1_00708,transliteration,agreed
+d1_00709,other,agreed
+d1_00710,other,agreed
+d1_00711,other,agreed
+d1_00712,transliteration,agreed
+d1_00713,other,agreed
+d1_00714,transliteration,agreed
+d1_00715,other,agreed
+d1_00716,transliteration,agreed
+d1_00717,transliteration,agreed
+d1_00718,transliteration,agreed
+d1_00719,transliteration,agreed
+d1_00720,other,adjudicated (A1 transliteration; A2 other)
+d1_00721,transliteration,agreed
+d1_00722,other,agreed
+d1_00723,other,agreed
+d1_00724,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00725,transliteration,agreed
+d1_00726,transliteration,agreed
+d1_00727,transliteration,agreed
+d1_00728,transliteration,agreed
+d1_00729,other,adjudicated (A1 transliteration; A2 other)
+d1_00730,other,adjudicated (A1 transliteration; A2 other)
+d1_00731,transliteration,agreed
+d1_00732,transliteration,agreed
+d1_00733,other,adjudicated (A1 transliteration; A2 other)
+d1_00734,transliteration,agreed
+d1_00735,transliteration,agreed
+d1_00736,other,agreed
+d1_00737,other,agreed
+d1_00738,transliteration,agreed
+d1_00739,other,adjudicated (A1 transliteration; A2 other)
+d1_00740,other,adjudicated (A1 transliteration; A2 other)
+d1_00741,transliteration,agreed
+d1_00742,other,adjudicated (A1 transliteration; A2 other)
+d1_00743,other,agreed
+d1_00744,translation,adjudicated (A1 other; A2 translation)
+d1_00745,transliteration,agreed
+d1_00746,transliteration,agreed
+d1_00747,transliteration,agreed
+d1_00748,transliteration,agreed
+d1_00749,other,agreed
+d1_00750,other,agreed
+d1_00751,transliteration,agreed
+d1_00752,transliteration,agreed
+d1_00753,transliteration,agreed
+d1_00754,transliteration,agreed
+d1_00755,other,adjudicated (A1 other; A2 transliteration)
+d1_00756,other,agreed
+d1_00757,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00758,other,adjudicated (A1 transliteration; A2 other)
+d1_00759,other,adjudicated (A1 other; A2 transliteration)
+d1_00760,other,adjudicated (A1 transliteration; A2 other)
+d1_00761,other,agreed
+d1_00762,transliteration,agreed
+d1_00763,transliteration,agreed
+d1_00764,transliteration,agreed
+d1_00765,transliteration,agreed
+d1_00766,transliteration,agreed
+d1_00767,transliteration,agreed
+d1_00768,transliteration,agreed
+d1_00769,other,agreed
+d1_00770,other,adjudicated (A1 transliteration; A2 other)
+d1_00771,other,adjudicated (A1 transliteration; A2 other)
+d1_00772,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00773,transliteration,agreed
+d1_00774,transliteration,agreed
+d1_00775,other,adjudicated (A1 transliteration; A2 other)
+d1_00776,other,adjudicated (A1 transliteration; A2 other)
+d1_00777,transliteration,agreed
+d1_00778,translation,agreed
+d1_00779,transliteration,agreed
+d1_00780,transliteration,agreed
+d1_00781,transliteration,agreed
+d1_00782,other,agreed
+d1_00783,transliteration,agreed
+d1_00784,other,adjudicated (A1 transliteration; A2 other)
+d1_00785,transliteration,agreed
+d1_00786,other,adjudicated (A1 transliteration; A2 other)
+d1_00787,translation,agreed
+d1_00788,translation,agreed
+d1_00789,other,agreed
+d1_00790,transliteration,agreed
+d1_00791,transliteration,agreed
+d1_00792,other,agreed
+d1_00793,transliteration,agreed
+d1_00794,translation,agreed
+d1_00795,transliteration,agreed
+d1_00796,translation,agreed
+d1_00797,transliteration,agreed
+d1_00798,other,adjudicated (A1 transliteration; A2 other)
+d1_00799,transliteration,agreed
+d1_00800,other,agreed
+d1_00801,other,agreed
+d1_00802,transliteration,agreed
+d1_00803,transliteration,agreed
+d1_00804,transliteration,agreed
+d1_00805,transliteration,agreed
+d1_00806,transliteration,agreed
+d1_00807,transliteration,agreed
+d1_00808,transliteration,agreed
+d1_00809,other,agreed
+d1_00810,other,adjudicated (A1 transliteration; A2 other)
+d1_00811,other,agreed
+d1_00812,other,agreed
+d1_00813,transliteration,agreed
+d1_00814,transliteration,agreed
+d1_00815,transliteration,agreed
+d1_00816,translation,agreed
+d1_00817,other,adjudicated (A1 transliteration; A2 other)
+d1_00818,transliteration,agreed
+d1_00819,transliteration,agreed
+d1_00820,other,agreed
+d1_00821,transliteration,agreed
+d1_00822,transliteration,agreed
+d1_00823,translation,agreed
+d1_00824,transliteration,agreed
+d1_00825,transliteration,agreed
+d1_00826,transliteration,agreed
+d1_00827,transliteration,agreed
+d1_00828,transliteration,agreed
+d1_00829,other,agreed
+d1_00830,transliteration,agreed
+d1_00831,other,agreed
+d1_00832,transliteration,agreed
+d1_00833,transliteration,agreed
+d1_00834,other,agreed
+d1_00835,transliteration,agreed
+d1_00836,other,adjudicated (A1 transliteration; A2 other)
+d1_00837,transliteration,agreed
+d1_00838,other,agreed
+d1_00839,transliteration,agreed
+d1_00840,transliteration,agreed
+d1_00841,transliteration,agreed
+d1_00842,other,agreed
+d1_00843,other,agreed
+d1_00844,translation,agreed
+d1_00845,translation,agreed
+d1_00846,other,agreed
+d1_00847,other,agreed
+d1_00848,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00849,other,agreed
+d1_00850,translation,agreed
+d1_00851,other,agreed
+d1_00852,translation,agreed
+d1_00853,translation,agreed
+d1_00854,other,adjudicated (A1 other; A2 transliteration)
+d1_00855,other,agreed
+d1_00856,transliteration,agreed
+d1_00857,transliteration,agreed
+d1_00858,other,adjudicated (A1 other; A2 transliteration)
+d1_00859,other,adjudicated (A1 other; A2 transliteration)
+d1_00860,transliteration,agreed
+d1_00861,other,agreed
+d1_00862,other,agreed
+d1_00863,translation,agreed
+d1_00864,transliteration,agreed
+d1_00865,transliteration,agreed
+d1_00866,transliteration,agreed
+d1_00867,translation,agreed
+d1_00868,transliteration,agreed
+d1_00869,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00870,transliteration,agreed
+d1_00871,other,agreed
+d1_00872,transliteration,agreed
+d1_00873,other,adjudicated (A1 transliteration; A2 other)
+d1_00874,other,agreed
+d1_00875,other,agreed
+d1_00876,transliteration,agreed
+d1_00877,other,agreed
+d1_00878,transliteration,agreed
+d1_00879,translation,agreed
+d1_00880,transliteration,agreed
+d1_00881,translation,agreed
+d1_00882,transliteration,agreed
+d1_00883,other,agreed
+d1_00884,transliteration,agreed
+d1_00885,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00886,transliteration,agreed
+d1_00887,transliteration,agreed
+d1_00888,other,agreed
+d1_00889,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00890,transliteration,agreed
+d1_00891,transliteration,agreed
+d1_00892,transliteration,agreed
+d1_00893,other,agreed
+d1_00894,other,adjudicated (A1 transliteration; A2 other)
+d1_00895,other,adjudicated (A1 transliteration; A2 other)
+d1_00896,other,agreed
+d1_00897,other,agreed
+d1_00898,transliteration,agreed
+d1_00899,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00900,transliteration,agreed
+d1_00901,transliteration,agreed
+d1_00902,transliteration,agreed
+d1_00903,transliteration,agreed
+d1_00904,transliteration,agreed
+d1_00905,transliteration,agreed
+d1_00906,other,agreed
+d1_00907,other,adjudicated (A1 transliteration; A2 other)
+d1_00908,translation,agreed
+d1_00909,other,agreed
+d1_00910,transliteration,agreed
+d1_00911,transliteration,agreed
+d1_00912,other,adjudicated (A1 transliteration; A2 other)
+d1_00913,transliteration,agreed
+d1_00914,transliteration,agreed
+d1_00915,other,agreed
+d1_00916,other,adjudicated (A1 transliteration; A2 other)
+d1_00917,other,agreed
+d1_00918,transliteration,agreed
+d1_00919,transliteration,agreed
+d1_00920,other,adjudicated (A1 transliteration; A2 other)
+d1_00921,transliteration,agreed
+d1_00922,translation,adjudicated (A1 translation; A2 transliteration)
+d1_00923,transliteration,agreed
+d1_00924,transliteration,agreed
+d1_00925,transliteration,agreed
+d1_00926,transliteration,agreed
+d1_00927,other,agreed
+d1_00928,other,adjudicated (A1 translation; A2 other)
+d1_00929,translation,agreed
+d1_00930,other,adjudicated (A1 transliteration; A2 other)
+d1_00931,translation,adjudicated (A1 translation; A2 other)
+d1_00932,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00933,transliteration,agreed
+d1_00934,transliteration,agreed
+d1_00935,transliteration,agreed
+d1_00936,other,adjudicated (A1 transliteration; A2 other)
+d1_00937,other,adjudicated (A1 transliteration; A2 other)
+d1_00938,transliteration,agreed
+d1_00939,other,adjudicated (A1 transliteration; A2 other)
+d1_00940,transliteration,agreed
+d1_00941,other,agreed
+d1_00942,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00943,other,adjudicated (A1 other; A2 transliteration)
+d1_00944,other,adjudicated (A1 transliteration; A2 other)
+d1_00945,other,agreed
+d1_00946,other,agreed
+d1_00947,other,adjudicated (A1 transliteration; A2 other)
+d1_00948,transliteration,agreed
+d1_00949,other,agreed
+d1_00950,transliteration,agreed
+d1_00951,transliteration,agreed
+d1_00952,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00953,transliteration,agreed
+d1_00954,other,adjudicated (A1 transliteration; A2 other)
+d1_00955,transliteration,agreed
+d1_00956,other,agreed
+d1_00957,transliteration,agreed
+d1_00958,other,agreed
+d1_00959,transliteration,agreed
+d1_00960,other,adjudicated (A1 transliteration; A2 other)
+d1_00961,transliteration,agreed
+d1_00962,transliteration,agreed
+d1_00963,other,agreed
+d1_00964,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00965,other,agreed
+d1_00966,other,agreed
+d1_00967,transliteration,agreed
+d1_00968,transliteration,agreed
+d1_00969,transliteration,agreed
+d1_00970,transliteration,agreed
+d1_00971,other,adjudicated (A1 transliteration; A2 other)
+d1_00972,transliteration,agreed
+d1_00973,transliteration,agreed
+d1_00974,transliteration,agreed
+d1_00975,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00976,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00977,other,agreed
+d1_00978,other,agreed
+d1_00979,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_00980,transliteration,agreed
+d1_00981,transliteration,agreed
+d1_00982,transliteration,agreed
+d1_00983,transliteration,agreed
+d1_00984,transliteration,agreed
+d1_00985,transliteration,agreed
+d1_00986,other,agreed
+d1_00987,other,adjudicated (A1 transliteration; A2 other)
+d1_00988,other,adjudicated (A1 transliteration; A2 other)
+d1_00989,other,adjudicated (A1 transliteration; A2 other)
+d1_00990,transliteration,agreed
+d1_00991,other,agreed
+d1_00992,transliteration,agreed
+d1_00993,transliteration,agreed
+d1_00994,other,adjudicated (A1 transliteration; A2 other)
+d1_00995,other,adjudicated (A1 other; A2 transliteration)
+d1_00996,transliteration,agreed
+d1_00997,transliteration,agreed
+d1_00998,other,adjudicated (A1 transliteration; A2 other)
+d1_00999,transliteration,agreed
+d1_01000,transliteration,agreed
+d1_01001,transliteration,agreed
+d1_01002,transliteration,agreed
+d1_01003,transliteration,agreed
+d1_01004,transliteration,agreed
+d1_01005,other,adjudicated (A1 transliteration; A2 other)
+d1_01006,transliteration,agreed
+d1_01007,other,agreed
+d1_01008,transliteration,agreed
+d1_01009,other,agreed
+d1_01010,other,agreed
+d1_01011,transliteration,agreed
+d1_01012,transliteration,agreed
+d1_01013,other,agreed
+d1_01014,transliteration,agreed
+d1_01015,other,adjudicated (A1 transliteration; A2 other)
+d1_01016,transliteration,agreed
+d1_01017,transliteration,agreed
+d1_01018,transliteration,agreed
+d1_01019,other,adjudicated (A1 transliteration; A2 other)
+d1_01020,transliteration,agreed
+d1_01021,transliteration,agreed
+d1_01022,transliteration,agreed
+d1_01023,transliteration,agreed
+d1_01024,transliteration,agreed
+d1_01025,transliteration,agreed
+d1_01026,transliteration,agreed
+d1_01027,transliteration,agreed
+d1_01028,transliteration,agreed
+d1_01029,other,adjudicated (A1 transliteration; A2 other)
+d1_01030,transliteration,agreed
+d1_01031,other,adjudicated (A1 transliteration; A2 other)
+d1_01032,other,adjudicated (A1 transliteration; A2 other)
+d1_01033,transliteration,agreed
+d1_01034,transliteration,agreed
+d1_01035,transliteration,agreed
+d1_01036,other,agreed
+d1_01037,transliteration,agreed
+d1_01038,transliteration,agreed
+d1_01039,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01040,other,agreed
+d1_01041,transliteration,agreed
+d1_01042,transliteration,agreed
+d1_01043,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01044,other,agreed
+d1_01045,other,adjudicated (A1 transliteration; A2 other)
+d1_01046,other,agreed
+d1_01047,other,adjudicated (A1 transliteration; A2 other)
+d1_01048,other,agreed
+d1_01049,transliteration,agreed
+d1_01050,transliteration,agreed
+d1_01051,transliteration,agreed
+d1_01052,other,agreed
+d1_01053,other,adjudicated (A1 transliteration; A2 other)
+d1_01054,transliteration,agreed
+d1_01055,translation,agreed
+d1_01056,transliteration,agreed
+d1_01057,other,agreed
+d1_01058,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01059,other,agreed
+d1_01060,other,adjudicated (A1 transliteration; A2 other)
+d1_01061,transliteration,agreed
+d1_01062,transliteration,agreed
+d1_01063,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01064,transliteration,agreed
+d1_01065,transliteration,agreed
+d1_01066,other,adjudicated (A1 other; A2 transliteration)
+d1_01067,transliteration,agreed
+d1_01068,other,agreed
+d1_01069,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01070,transliteration,agreed
+d1_01071,other,adjudicated (A1 transliteration; A2 other)
+d1_01072,transliteration,agreed
+d1_01073,transliteration,agreed
+d1_01074,transliteration,agreed
+d1_01075,transliteration,agreed
+d1_01076,other,adjudicated (A1 transliteration; A2 other)
+d1_01077,transliteration,agreed
+d1_01078,other,agreed
+d1_01079,other,agreed
+d1_01080,transliteration,agreed
+d1_01081,transliteration,agreed
+d1_01082,translation,adjudicated (A1 other; A2 translation)
+d1_01083,other,agreed
+d1_01084,transliteration,agreed
+d1_01085,other,adjudicated (A1 other; A2 transliteration)
+d1_01086,other,adjudicated (A1 transliteration; A2 other)
+d1_01087,transliteration,agreed
+d1_01088,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01089,translation,agreed
+d1_01090,other,adjudicated (A1 transliteration; A2 other)
+d1_01091,other,adjudicated (A1 transliteration; A2 other)
+d1_01092,transliteration,agreed
+d1_01093,other,agreed
+d1_01094,transliteration,agreed
+d1_01095,other,adjudicated (A1 transliteration; A2 other)
+d1_01096,transliteration,agreed
+d1_01097,other,adjudicated (A1 other; A2 transliteration)
+d1_01098,transliteration,agreed
+d1_01099,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01100,other,agreed
+d1_01101,transliteration,agreed
+d1_01102,other,agreed
+d1_01103,other,adjudicated (A1 transliteration; A2 other)
+d1_01104,transliteration,agreed
+d1_01105,other,agreed
+d1_01106,other,agreed
+d1_01107,other,adjudicated (A1 transliteration; A2 other)
+d1_01108,transliteration,agreed
+d1_01109,other,agreed
+d1_01110,other,adjudicated (A1 transliteration; A2 other)
+d1_01111,other,adjudicated (A1 transliteration; A2 other)
+d1_01112,other,adjudicated (A1 transliteration; A2 other)
+d1_01113,transliteration,agreed
+d1_01114,transliteration,agreed
+d1_01115,transliteration,agreed
+d1_01116,transliteration,agreed
+d1_01117,other,agreed
+d1_01118,transliteration,agreed
+d1_01119,transliteration,agreed
+d1_01120,transliteration,agreed
+d1_01121,transliteration,agreed
+d1_01122,transliteration,agreed
+d1_01123,other,agreed
+d1_01124,transliteration,agreed
+d1_01125,transliteration,agreed
+d1_01126,transliteration,agreed
+d1_01127,transliteration,agreed
+d1_01128,other,agreed
+d1_01129,transliteration,agreed
+d1_01130,other,agreed
+d1_01131,other,adjudicated (A1 transliteration; A2 other)
+d1_01132,other,agreed
+d1_01133,other,adjudicated (A1 transliteration; A2 other)
+d1_01134,transliteration,agreed
+d1_01135,other,adjudicated (A1 translation; A2 other)
+d1_01136,translation,adjudicated (A1 other; A2 translation)
+d1_01137,other,adjudicated (A1 transliteration; A2 other)
+d1_01138,transliteration,agreed
+d1_01139,other,agreed
+d1_01140,other,adjudicated (A1 transliteration; A2 other)
+d1_01141,other,adjudicated (A1 transliteration; A2 other)
+d1_01142,transliteration,agreed
+d1_01143,other,adjudicated (A1 transliteration; A2 other)
+d1_01144,other,adjudicated (A1 transliteration; A2 other)
+d1_01145,transliteration,agreed
+d1_01146,other,agreed
+d1_01147,other,agreed
+d1_01148,other,adjudicated (A1 transliteration; A2 other)
+d1_01149,transliteration,agreed
+d1_01150,other,adjudicated (A1 transliteration; A2 other)
+d1_01151,other,adjudicated (A1 transliteration; A2 other)
+d1_01152,other,adjudicated (A1 transliteration; A2 other)
+d1_01153,other,adjudicated (A1 transliteration; A2 other)
+d1_01154,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01155,other,agreed
+d1_01156,transliteration,agreed
+d1_01157,transliteration,agreed
+d1_01158,transliteration,agreed
+d1_01159,transliteration,agreed
+d1_01160,transliteration,agreed
+d1_01161,other,adjudicated (A1 transliteration; A2 other)
+d1_01162,other,agreed
+d1_01163,transliteration,agreed
+d1_01164,transliteration,agreed
+d1_01165,other,adjudicated (A1 transliteration; A2 other)
+d1_01166,other,adjudicated (A1 transliteration; A2 other)
+d1_01167,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01168,other,adjudicated (A1 transliteration; A2 other)
+d1_01169,translation,adjudicated (A1 transliteration; A2 other)
+d1_01170,transliteration,agreed
+d1_01171,other,adjudicated (A1 transliteration; A2 other)
+d1_01172,other,adjudicated (A1 transliteration; A2 other)
+d1_01173,other,agreed
+d1_01174,transliteration,agreed
+d1_01175,other,agreed
+d1_01176,other,adjudicated (A1 transliteration; A2 other)
+d1_01177,other,agreed
+d1_01178,other,agreed
+d1_01179,other,adjudicated (A1 transliteration; A2 other)
+d1_01180,other,agreed
+d1_01181,transliteration,agreed
+d1_01182,other,agreed
+d1_01183,other,adjudicated (A1 transliteration; A2 other)
+d1_01184,transliteration,agreed
+d1_01185,other,adjudicated (A1 transliteration; A2 other)
+d1_01186,other,adjudicated (A1 transliteration; A2 other)
+d1_01187,other,adjudicated (A1 transliteration; A2 other)
+d1_01188,transliteration,agreed
+d1_01189,transliteration,agreed
+d1_01190,transliteration,agreed
+d1_01191,transliteration,agreed
+d1_01192,transliteration,agreed
+d1_01193,other,agreed
+d1_01194,transliteration,agreed
+d1_01195,transliteration,agreed
+d1_01196,other,adjudicated (A1 transliteration; A2 other)
+d1_01197,transliteration,agreed
+d1_01198,transliteration,agreed
+d1_01199,other,adjudicated (A1 transliteration; A2 other)
+d1_01200,transliteration,agreed
+d1_01201,transliteration,agreed
+d1_01202,other,agreed
+d1_01203,transliteration,agreed
+d1_01204,other,adjudicated (A1 transliteration; A2 other)
+d1_01205,other,agreed
+d1_01206,other,adjudicated (A1 transliteration; A2 other)
+d1_01207,transliteration,agreed
+d1_01208,transliteration,agreed
+d1_01209,transliteration,agreed
+d1_01210,transliteration,agreed
+d1_01211,other,adjudicated (A1 transliteration; A2 other)
+d1_01212,transliteration,agreed
+d1_01213,other,agreed
+d1_01214,other,adjudicated (A1 transliteration; A2 other)
+d1_01215,transliteration,agreed
+d1_01216,transliteration,agreed
+d1_01217,transliteration,agreed
+d1_01218,other,agreed
+d1_01219,other,agreed
+d1_01220,other,adjudicated (A1 transliteration; A2 other)
+d1_01221,transliteration,agreed
+d1_01222,transliteration,agreed
+d1_01223,other,adjudicated (A1 transliteration; A2 other)
+d1_01224,transliteration,agreed
+d1_01225,other,adjudicated (A1 transliteration; A2 other)
+d1_01226,transliteration,agreed
+d1_01227,other,adjudicated (A1 transliteration; A2 other)
+d1_01228,transliteration,agreed
+d1_01229,other,agreed
+d1_01230,other,adjudicated (A1 other; A2 transliteration)
+d1_01231,transliteration,agreed
+d1_01232,transliteration,agreed
+d1_01233,other,agreed
+d1_01234,other,adjudicated (A1 transliteration; A2 other)
+d1_01235,transliteration,agreed
+d1_01236,other,adjudicated (A1 transliteration; A2 other)
+d1_01237,other,adjudicated (A1 other; A2 transliteration)
+d1_01238,transliteration,agreed
+d1_01239,other,adjudicated (A1 transliteration; A2 other)
+d1_01240,other,agreed
+d1_01241,other,agreed
+d1_01242,other,agreed
+d1_01243,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01244,other,adjudicated (A1 transliteration; A2 other)
+d1_01245,transliteration,agreed
+d1_01246,transliteration,agreed
+d1_01247,other,adjudicated (A1 transliteration; A2 other)
+d1_01248,other,agreed
+d1_01249,other,adjudicated (A1 transliteration; A2 other)
+d1_01250,transliteration,agreed
+d1_01251,other,adjudicated (A1 transliteration; A2 other)
+d1_01252,other,agreed
+d1_01253,translation,adjudicated (A1 other; A2 translation)
+d1_01254,transliteration,agreed
+d1_01255,other,adjudicated (A1 transliteration; A2 other)
+d1_01256,transliteration,agreed
+d1_01257,other,adjudicated (A1 transliteration; A2 other)
+d1_01258,other,agreed
+d1_01259,other,agreed
+d1_01260,other,adjudicated (A1 transliteration; A2 other)
+d1_01261,transliteration,agreed
+d1_01262,transliteration,agreed
+d1_01263,other,agreed
+d1_01264,transliteration,agreed
+d1_01265,other,agreed
+d1_01266,transliteration,agreed
+d1_01267,transliteration,agreed
+d1_01268,other,agreed
+d1_01269,transliteration,agreed
+d1_01270,other,agreed
+d1_01271,transliteration,agreed
+d1_01272,other,agreed
+d1_01273,translation,agreed
+d1_01274,transliteration,agreed
+d1_01275,other,adjudicated (A1 transliteration; A2 other)
+d1_01276,other,agreed
+d1_01277,other,adjudicated (A1 transliteration; A2 other)
+d1_01278,other,adjudicated (A1 transliteration; A2 other)
+d1_01279,other,adjudicated (A1 transliteration; A2 other)
+d1_01280,transliteration,agreed
+d1_01281,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01282,other,agreed
+d1_01283,other,agreed
+d1_01284,other,adjudicated (A1 transliteration; A2 other)
+d1_01285,transliteration,agreed
+d1_01286,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01287,transliteration,agreed
+d1_01288,other,agreed
+d1_01289,other,adjudicated (A1 transliteration; A2 other)
+d1_01290,other,adjudicated (A1 translation; A2 other)
+d1_01291,other,adjudicated (A1 transliteration; A2 other)
+d1_01292,transliteration,agreed
+d1_01293,transliteration,agreed
+d1_01294,other,adjudicated (A1 transliteration; A2 other)
+d1_01295,other,adjudicated (A1 transliteration; A2 other)
+d1_01296,transliteration,agreed
+d1_01297,other,adjudicated (A1 transliteration; A2 other)
+d1_01298,other,agreed
+d1_01299,transliteration,agreed
+d1_01300,other,adjudicated (A1 transliteration; A2 other)
+d1_01301,other,agreed
+d1_01302,other,adjudicated (A1 other; A2 transliteration)
+d1_01303,other,adjudicated (A1 transliteration; A2 other)
+d1_01304,transliteration,agreed
+d1_01305,transliteration,agreed
+d1_01306,transliteration,agreed
+d1_01307,other,adjudicated (A1 transliteration; A2 other)
+d1_01308,transliteration,agreed
+d1_01309,transliteration,agreed
+d1_01310,other,adjudicated (A1 transliteration; A2 other)
+d1_01311,transliteration,agreed
+d1_01312,other,agreed
+d1_01313,other,adjudicated (A1 transliteration; A2 other)
+d1_01314,other,adjudicated (A1 transliteration; A2 other)
+d1_01315,other,adjudicated (A1 transliteration; A2 other)
+d1_01316,transliteration,agreed
+d1_01317,transliteration,agreed
+d1_01318,other,adjudicated (A1 other; A2 transliteration)
+d1_01319,other,adjudicated (A1 translation; A2 other)
+d1_01320,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01321,other,agreed
+d1_01322,transliteration,agreed
+d1_01323,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01324,transliteration,agreed
+d1_01325,other,agreed
+d1_01326,transliteration,agreed
+d1_01327,transliteration,agreed
+d1_01328,transliteration,agreed
+d1_01329,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01330,transliteration,agreed
+d1_01331,transliteration,agreed
+d1_01332,transliteration,agreed
+d1_01333,transliteration,agreed
+d1_01334,other,agreed
+d1_01335,other,agreed
+d1_01336,other,adjudicated (A1 transliteration; A2 other)
+d1_01337,other,agreed
+d1_01338,transliteration,agreed
+d1_01339,transliteration,agreed
+d1_01340,other,agreed
+d1_01341,other,agreed
+d1_01342,other,adjudicated (A1 transliteration; A2 other)
+d1_01343,transliteration,agreed
+d1_01344,transliteration,agreed
+d1_01345,other,agreed
+d1_01346,transliteration,agreed
+d1_01347,other,agreed
+d1_01348,transliteration,agreed
+d1_01349,translation,agreed
+d1_01350,transliteration,agreed
+d1_01351,other,adjudicated (A1 transliteration; A2 other)
+d1_01352,transliteration,agreed
+d1_01353,transliteration,agreed
+d1_01354,transliteration,agreed
+d1_01355,transliteration,agreed
+d1_01356,other,adjudicated (A1 transliteration; A2 other)
+d1_01357,transliteration,agreed
+d1_01358,other,agreed
+d1_01359,translation,agreed
+d1_01360,other,adjudicated (A1 transliteration; A2 other)
+d1_01361,transliteration,agreed
+d1_01362,transliteration,agreed
+d1_01363,transliteration,agreed
+d1_01364,translation,agreed
+d1_01365,other,agreed
+d1_01366,transliteration,agreed
+d1_01367,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01368,translation,agreed
+d1_01369,transliteration,agreed
+d1_01370,other,agreed
+d1_01371,transliteration,agreed
+d1_01372,transliteration,agreed
+d1_01373,other,agreed
+d1_01374,other,adjudicated (A1 transliteration; A2 other)
+d1_01375,transliteration,agreed
+d1_01376,transliteration,agreed
+d1_01377,other,adjudicated (A1 transliteration; A2 other)
+d1_01378,translation,adjudicated (A1 other; A2 translation)
+d1_01379,other,agreed
+d1_01380,transliteration,agreed
+d1_01381,transliteration,agreed
+d1_01382,transliteration,agreed
+d1_01383,other,adjudicated (A1 transliteration; A2 other)
+d1_01384,other,agreed
+d1_01385,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01386,other,adjudicated (A1 other; A2 transliteration)
+d1_01387,transliteration,agreed
+d1_01388,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01389,other,adjudicated (A1 transliteration; A2 other)
+d1_01390,translation,agreed
+d1_01391,other,agreed
+d1_01392,other,agreed
+d1_01393,transliteration,agreed
+d1_01394,translation,adjudicated (A1 other; A2 translation)
+d1_01395,transliteration,agreed
+d1_01396,transliteration,agreed
+d1_01397,translation,agreed
+d1_01398,transliteration,adjudicated (A1 translation; A2 transliteration)
+d1_01399,other,agreed
+d1_01400,translation,agreed
+d1_01401,translation,agreed
+d1_01402,translation,agreed
+d1_01403,other,adjudicated (A1 translation; A2 other)
+d1_01404,other,adjudicated (A1 translation; A2 other)
+d1_01405,transliteration,agreed
+d1_01406,transliteration,agreed
+d1_01407,other,agreed
+d1_01408,translation,adjudicated (A1 translation; A2 other)
+d1_01409,transliteration,agreed
+d1_01410,translation,agreed
+d1_01411,translation,agreed
+d1_01412,translation,agreed
+d1_01413,transliteration,agreed
+d1_01414,transliteration,agreed
+d1_01415,transliteration,agreed
+d1_01416,other,adjudicated (A1 transliteration; A2 other)
+d1_01417,transliteration,agreed
+d1_01418,other,agreed
+d1_01419,transliteration,agreed
+d1_01420,other,agreed
+d1_01421,other,adjudicated (A1 transliteration; A2 other)
+d1_01422,transliteration,agreed
+d1_01423,translation,agreed
+d1_01424,translation,agreed
+d1_01425,translation,agreed
+d1_01426,other,adjudicated (A1 translation; A2 other)
+d1_01427,transliteration,agreed
+d1_01428,translation,agreed
+d1_01429,other,agreed
+d1_01430,transliteration,agreed
+d1_01431,other,agreed
+d1_01432,transliteration,agreed
+d1_01433,other,agreed
+d1_01434,transliteration,agreed
+d1_01435,translation,adjudicated (A1 transliteration; A2 translation)
+d1_01436,transliteration,agreed
+d1_01437,transliteration,agreed
+d1_01438,transliteration,agreed
+d1_01439,transliteration,agreed
+d1_01440,other,adjudicated (A1 transliteration; A2 other)
+d1_01441,other,agreed
+d1_01442,transliteration,agreed
+d1_01443,translation,agreed
+d1_01444,transliteration,agreed
+d1_01445,transliteration,agreed
+d1_01446,other,adjudicated (A1 other; A2 transliteration)
+d1_01447,translation,agreed
+d1_01448,transliteration,agreed
+d1_01449,transliteration,agreed
+d1_01450,translation,agreed
+d1_01451,transliteration,agreed
+d1_01452,other,agreed
+d1_01453,transliteration,agreed
+d1_01454,transliteration,agreed
+d1_01455,other,agreed
+d1_01456,other,agreed
+d1_01457,other,adjudicated (A1 transliteration; A2 other)
+d1_01458,other,agreed
+d1_01459,other,agreed
+d1_01460,other,adjudicated (A1 transliteration; A2 other)
+d1_01461,transliteration,agreed
+d1_01462,other,adjudicated (A1 transliteration; A2 other)
+d1_01463,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01464,other,agreed
+d1_01465,transliteration,agreed
+d1_01466,transliteration,agreed
+d1_01467,other,adjudicated (A1 transliteration; A2 other)
+d1_01468,transliteration,agreed
+d1_01469,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01470,other,agreed
+d1_01471,transliteration,agreed
+d1_01472,transliteration,agreed
+d1_01473,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01474,other,agreed
+d1_01475,transliteration,agreed
+d1_01476,transliteration,agreed
+d1_01477,other,agreed
+d1_01478,transliteration,agreed
+d1_01479,transliteration,agreed
+d1_01480,transliteration,agreed
+d1_01481,transliteration,agreed
+d1_01482,transliteration,agreed
+d1_01483,other,adjudicated (A1 transliteration; A2 other)
+d1_01484,other,agreed
+d1_01485,transliteration,agreed
+d1_01486,other,adjudicated (A1 transliteration; A2 other)
+d1_01487,transliteration,agreed
+d1_01488,transliteration,agreed
+d1_01489,transliteration,agreed
+d1_01490,transliteration,agreed
+d1_01491,transliteration,agreed
+d1_01492,other,agreed
+d1_01493,other,agreed
+d1_01494,transliteration,agreed
+d1_01495,transliteration,agreed
+d1_01496,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01497,transliteration,agreed
+d1_01498,transliteration,agreed
+d1_01499,transliteration,agreed
+d1_01500,transliteration,agreed
+d1_01501,transliteration,agreed
+d1_01502,transliteration,agreed
+d1_01503,other,agreed
+d1_01504,transliteration,agreed
+d1_01505,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01506,other,adjudicated (A1 transliteration; A2 other)
+d1_01507,transliteration,agreed
+d1_01508,other,agreed
+d1_01509,other,adjudicated (A1 transliteration; A2 other)
+d1_01510,other,agreed
+d1_01511,transliteration,agreed
+d1_01512,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01513,other,adjudicated (A1 transliteration; A2 other)
+d1_01514,other,adjudicated (A1 transliteration; A2 other)
+d1_01515,other,agreed
+d1_01516,other,agreed
+d1_01517,other,adjudicated (A1 translation; A2 other)
+d1_01518,transliteration,agreed
+d1_01519,other,agreed
+d1_01520,transliteration,agreed
+d1_01521,other,adjudicated (A1 transliteration; A2 other)
+d1_01522,other,adjudicated (A1 transliteration; A2 other)
+d1_01523,transliteration,agreed
+d1_01524,transliteration,agreed
+d1_01525,transliteration,agreed
+d1_01526,other,agreed
+d1_01527,transliteration,agreed
+d1_01528,transliteration,adjudicated (A1 transliteration; A2 other)
+d1_01529,other,agreed
+d1_01530,other,agreed
+d1_01531,other,adjudicated (A1 other; A2 transliteration)
+d1_01532,other,agreed
+d1_01533,transliteration,agreed
+d1_01534,transliteration,agreed
+d1_01535,transliteration,agreed
+d1_01536,other,agreed
+d1_01537,other,agreed
+d1_01538,transliteration,agreed
+d1_01539,transliteration,agreed
+d1_01540,transliteration,agreed
+d1_01541,other,agreed
+d1_01542,transliteration,agreed
+d1_01543,other,agreed
+d1_01544,transliteration,agreed
+d1_01545,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01546,transliteration,agreed
+d1_01547,other,agreed
+d1_01548,other,adjudicated (A1 translation; A2 other)
+d1_01549,other,agreed
+d1_01550,other,agreed
+d1_01551,other,agreed
+d1_01552,other,agreed
+d1_01553,transliteration,agreed
+d1_01554,other,agreed
+d1_01555,other,agreed
+d1_01556,transliteration,agreed
+d1_01557,transliteration,agreed
+d1_01558,other,agreed
+d1_01559,other,agreed
+d1_01560,other,agreed
+d1_01561,transliteration,agreed
+d1_01562,other,agreed
+d1_01563,transliteration,agreed
+d1_01564,transliteration,agreed
+d1_01565,other,agreed
+d1_01566,other,adjudicated (A1 transliteration; A2 other)
+d1_01567,other,adjudicated (A1 transliteration; A2 other)
+d1_01568,transliteration,agreed
+d1_01569,other,agreed
+d1_01570,transliteration,agreed
+d1_01571,other,agreed
+d1_01572,other,agreed
+d1_01573,transliteration,agreed
+d1_01574,other,agreed
+d1_01575,transliteration,agreed
+d1_01576,transliteration,agreed
+d1_01577,transliteration,agreed
+d1_01578,other,agreed
+d1_01579,transliteration,agreed
+d1_01580,transliteration,agreed
+d1_01581,transliteration,agreed
+d1_01582,other,agreed
+d1_01583,other,agreed
+d1_01584,transliteration,agreed
+d1_01585,transliteration,agreed
+d1_01586,transliteration,agreed
+d1_01587,other,agreed
+d1_01588,other,agreed
+d1_01589,transliteration,agreed
+d1_01590,transliteration,agreed
+d1_01591,other,agreed
+d1_01592,other,agreed
+d1_01593,other,agreed
+d1_01594,transliteration,agreed
+d1_01595,transliteration,agreed
+d1_01596,other,adjudicated (A1 transliteration; A2 other)
+d1_01597,transliteration,agreed
+d1_01598,other,agreed
+d1_01599,transliteration,agreed
+d1_01600,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01601,other,agreed
+d1_01602,transliteration,agreed
+d1_01603,other,agreed
+d1_01604,other,agreed
+d1_01605,other,agreed
+d1_01606,other,agreed
+d1_01607,transliteration,agreed
+d1_01608,other,agreed
+d1_01609,other,agreed
+d1_01610,transliteration,agreed
+d1_01611,transliteration,agreed
+d1_01612,transliteration,agreed
+d1_01613,other,agreed
+d1_01614,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01615,transliteration,agreed
+d1_01616,other,agreed
+d1_01617,other,agreed
+d1_01618,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01619,transliteration,agreed
+d1_01620,other,agreed
+d1_01621,transliteration,agreed
+d1_01622,other,agreed
+d1_01623,transliteration,agreed
+d1_01624,other,agreed
+d1_01625,transliteration,agreed
+d1_01626,transliteration,agreed
+d1_01627,other,adjudicated (A1 transliteration; A2 other)
+d1_01628,transliteration,agreed
+d1_01629,transliteration,agreed
+d1_01630,translation,agreed
+d1_01631,other,agreed
+d1_01632,transliteration,agreed
+d1_01633,transliteration,agreed
+d1_01634,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01635,other,agreed
+d1_01636,transliteration,agreed
+d1_01637,other,agreed
+d1_01638,other,agreed
+d1_01639,transliteration,agreed
+d1_01640,transliteration,agreed
+d1_01641,transliteration,agreed
+d1_01642,transliteration,agreed
+d1_01643,transliteration,agreed
+d1_01644,transliteration,agreed
+d1_01645,other,agreed
+d1_01646,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01647,other,agreed
+d1_01648,transliteration,agreed
+d1_01649,other,adjudicated (A1 transliteration; A2 other)
+d1_01650,translation,agreed
+d1_01651,other,agreed
+d1_01652,other,agreed
+d1_01653,transliteration,agreed
+d1_01654,transliteration,agreed
+d1_01655,other,agreed
+d1_01656,other,adjudicated (A1 transliteration; A2 other)
+d1_01657,other,adjudicated (A1 other; A2 transliteration)
+d1_01658,other,adjudicated (A1 transliteration; A2 other)
+d1_01659,other,agreed
+d1_01660,other,adjudicated (A1 transliteration; A2 other)
+d1_01661,other,adjudicated (A1 transliteration; A2 other)
+d1_01662,transliteration,agreed
+d1_01663,transliteration,agreed
+d1_01664,transliteration,agreed
+d1_01665,transliteration,agreed
+d1_01666,transliteration,agreed
+d1_01667,other,agreed
+d1_01668,transliteration,agreed
+d1_01669,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01670,transliteration,agreed
+d1_01671,other,adjudicated (A1 transliteration; A2 other)
+d1_01672,transliteration,agreed
+d1_01673,transliteration,agreed
+d1_01674,transliteration,agreed
+d1_01675,transliteration,agreed
+d1_01676,transliteration,agreed
+d1_01677,transliteration,agreed
+d1_01678,other,agreed
+d1_01679,transliteration,agreed
+d1_01680,transliteration,agreed
+d1_01681,transliteration,agreed
+d1_01682,other,agreed
+d1_01683,transliteration,agreed
+d1_01684,other,agreed
+d1_01685,other,agreed
+d1_01686,transliteration,agreed
+d1_01687,other,agreed
+d1_01688,transliteration,agreed
+d1_01689,other,agreed
+d1_01690,other,adjudicated (A1 transliteration; A2 other)
+d1_01691,other,agreed
+d1_01692,transliteration,agreed
+d1_01693,transliteration,agreed
+d1_01694,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01695,transliteration,agreed
+d1_01696,transliteration,agreed
+d1_01697,other,agreed
+d1_01698,other,agreed
+d1_01699,transliteration,agreed
+d1_01700,transliteration,agreed
+d1_01701,transliteration,agreed
+d1_01702,transliteration,agreed
+d1_01703,transliteration,agreed
+d1_01704,other,agreed
+d1_01705,other,adjudicated (A1 other; A2 transliteration)
+d1_01706,translation,agreed
+d1_01707,transliteration,agreed
+d1_01708,transliteration,agreed
+d1_01709,other,agreed
+d1_01710,translation,agreed
+d1_01711,transliteration,agreed
+d1_01712,other,adjudicated (A1 transliteration; A2 other)
+d1_01713,other,adjudicated (A1 other; A2 transliteration)
+d1_01714,transliteration,agreed
+d1_01715,transliteration,agreed
+d1_01716,transliteration,agreed
+d1_01717,other,agreed
+d1_01718,translation,adjudicated (A1 other; A2 translation)
+d1_01719,transliteration,agreed
+d1_01720,other,agreed
+d1_01721,other,agreed
+d1_01722,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01723,transliteration,agreed
+d1_01724,other,agreed
+d1_01725,transliteration,agreed
+d1_01726,transliteration,agreed
+d1_01727,transliteration,agreed
+d1_01728,transliteration,agreed
+d1_01729,other,adjudicated (A1 transliteration; A2 other)
+d1_01730,transliteration,adjudicated (A1 other; A2 transliteration)
+d1_01731,transliteration,agreed
+d1_01732,transliteration,agreed
+d1_01733,other,agreed
+d1_01734,transliteration,agreed
+d1_01735,transliteration,agreed
+d1_01736,transliteration,agreed
+d1_01737,transliteration,agreed
+d1_01738,transliteration,agreed
+d1_01739,transliteration,agreed
+d1_01740,transliteration,agreed
+d1_01741,transliteration,agreed
+d1_01742,other,agreed
+d1_01743,transliteration,agreed
+d1_01744,transliteration,agreed
+d1_01745,other,agreed
+d1_01746,other,adjudicated (A1 transliteration; A2 other)
+d1_01747,other,adjudicated (A1 transliteration; A2 other)
+d1_01748,other,agreed
+d1_01749,other,agreed
+d1_01750,other,adjudicated (A1 transliteration; A2 other)
+d1_01751,other,agreed
+d1_01752,other,agreed
+d1_01753,transliteration,agreed
+d1_01754,other,agreed
+d1_01755,transliteration,agreed
+d1_01756,other,agreed
+d1_01757,other,agreed
+d1_01758,transliteration,agreed
+d1_01759,other,agreed
+d1_01760,other,adjudicated (A1 transliteration; A2 other)
+d1_01761,other,agreed
+d1_01762,other,agreed
+d1_01763,other,agreed
+d1_01764,transliteration,agreed
+d1_01765,other,adjudicated (A1 other; A2 transliteration)
+d1_01766,transliteration,agreed
+d1_01767,other,agreed
