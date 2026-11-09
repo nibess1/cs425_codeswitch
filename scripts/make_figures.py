@@ -2,6 +2,7 @@
 """F2: presentation figures -> results/figures/figN_*.{png,svg,csv} (CSV = exactly the plotted data).
 
 Reads only results/tables/*.csv and results/speed_macbook.json (run export_tables.py first).
+Figure 8 (human stress set, 7 Nov) reads results/tables/27b_human_fragility_R.csv (make_human_tables.py).
   python scripts/make_figures.py
 """
 import json
@@ -22,6 +23,9 @@ OUT = manifest.path("results/figures")
 SETS = {"ASCEND test (Chinese-main mostly)": "ASCEND", "NSC Part 4 Same Room test": "NSC Same Room",
         "NSC Part 4 Different Room test (Zoom, harder)": "NSC Diff Room"}
 plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False, "svg.fonttype": "none"})
+HUMAN_MODELS = ["ft_tiny", "ft_base", "full_base", "ft_small", "full_small"]
+HUMAN_FMT = {"8-bit LLM.int8 (GPU, simulated)": "LLM.int8", "4-bit NF4 (GPU, simulated)": "NF4",
+       "CTranslate2 int8 (CPU)": "CT2 int8", "whisper.cpp Q8_0 (CPU)": "Q8_0", "whisper.cpp Q4_0 (CPU)": "Q4_0"}
 
 
 def tab(n):
@@ -194,7 +198,32 @@ def main():
         ax.set_title(mdl); ax.set_ylabel("MER (%)")
     axs[0].legend(frameon=False, fontsize=7)
     save(fig, rr.rename(columns={"lo": "MER_ci95_low", "hi": "MER_ci95_high"}), "fig7_reranking_gated")
+    if os.path.exists(os.path.join(T, "27b_human_fragility_R.csv")):
+        human_figure()
+
+
+def human_figure():
+    d = tab("27b_human_fragility_R.csv")
+    d = d[(d.kind == "R") & (d["main"] == "all")].copy()
+    d["format"] = d.precision.map(HUMAN_FMT)
+    d["order"] = d.model.map(HUMAN_MODELS.index) * 10 + d.format.map(list(HUMAN_FMT.values()).index)
+    d = d.sort_values("order")
+    d["label"] = d.model.str.replace("_", " ") + ", " + d.format
+    cols = ["label", "system_id", "d_embedded_points", "d_embedded_ci95_low", "d_embedded_ci95_high",
+            "d_matrix_points", "d_matrix_ci95_low", "d_matrix_ci95_high"]
+    d = d[cols].reset_index(drop=True)
+    fig, axs = plt.subplots(1, 2, figsize=(9, 6.5), sharey=True)
+    forest(axs[0], d, "label", "d_embedded_points", "d_embedded_ci95_low", "d_embedded_ci95_high",
+           xlabel="change in embedded error (points)")
+    forest(axs[1], d, "label", "d_matrix_points", "d_matrix_ci95_low", "d_matrix_ci95_high",
+           xlabel="change in matrix error (points)")
+    axs[0].set_title("Embedded units (E)", fontsize=10)
+    axs[1].set_title("Matrix units (code-switched utterances)", fontsize=10)
+    axs[1].legend(loc="lower right", fontsize=7)
+    save(fig, d, "fig8_human_quant_delta")
 
 
 if __name__ == "__main__":
+    import argparse  # --help prints the docstring above and exits; nothing else is parsed here
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
     main()

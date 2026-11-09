@@ -67,4 +67,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse  # --help prints the docstring above and exits; nothing else is parsed here
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
     main()

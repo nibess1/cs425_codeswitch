@@ -2,7 +2,7 @@
 
 Whisper on mixed English–Mandarin speech: role-level error analysis, role-weighted and
 semantic minimum-risk training, language-aware re-ranking, and how quantization changes
-errors on embedded words. See `PLAN.md` for the full plan and status, and
+errors on embedded words. See `docs/PLAN.md` for the original plan, `docs/PROCESS_LOG.md` for every decision, and
 `CS425 Proposal (Revised)` for the method.
 
 ## Setup (Linux or macOS, Python 3.11)
@@ -24,14 +24,16 @@ Scoring and tables run on CPU. Training and 8/4-bit decoding need one CUDA GPU (
 | `csasr/train/` | full fine-tuning, role-weighted and semantic MRT losses | Phoebe |
 | `csasr/lid/`, `csasr/decode/` | forced alignment, language-ID head, N-best re-ranking, flags, segmented decoding | Bridgette |
 | `csasr/quant/` | bitsandbytes simulation, CTranslate2 / whisper.cpp exports, sensitivity scan, QLoRA QAT | Nibras |
-| `scripts/` | command-line entry points | |
+| `scripts/` | command-line entry points; `scripts/pipeline.sh` runs every experiment in order | |
 | `results/` | tables and figures (every number comes from `scripts/score.py`) | |
 
-Not in git: `data/`, `ckpt/`, `preds/`, `runs/`.
+Not in git: `data/` (except the small `data/lex`, `data/llm_labels`, `data/leak`), `ckpt/`, `preds/`, `runs/`.
 
 ## Reproduce (pre-processing → training → testing → scoring)
 Run from the repository root with the `cs425` environment active; pick an idle GPU with
-`CUDA_VISIBLE_DEVICES=<id>`. The `scripts/queue_*.sh` files chain these steps exactly as we ran them.
+`CUDA_VISIBLE_DEVICES=<id>`. `GPU=<id> bash scripts/pipeline.sh <stage>` chains these steps with the settings each
+run finally used (`DRY=1 bash scripts/pipeline.sh all` prints every command); the run-by-run queue scripts we
+actually used, crash reruns included, are at git tag `paper-final`.
 Hyper-parameters are in `configs/*.yaml` (CLI flags override them) and in Table 2 of the report.
 
 ```bash
@@ -63,9 +65,9 @@ python scripts/score.py --fragility full_base__fp16__full full_base__nf4_bnb__fu
 python scripts/make_results.py && python scripts/export_tables.py && python scripts/make_figures.py
 ```
 
-**Human stress recordings (tables 27–28, Nov 2026).** `GPU=<id> bash scripts/queue_h.sh` decodes every
+**Human stress recordings (tables 27–28, Nov 2026).** `GPU=<id> bash scripts/pipeline.sh stress_human` decodes every
 system and format on set `stress_test` (method suffix `_human`); then `python scripts/make_human_tables.py`,
-`python scripts/make_human_figure.py` and `python scripts/make_examples.py`. The recordings themselves are not
+`python scripts/make_figures.py` (figure 8) and `python scripts/make_examples.py`. The recordings themselves are not
 in this repository.
 
 **Human label audits (table 20c).** Put the filled audits in `review/*_human.csv` and the answer keys in

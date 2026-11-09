@@ -2,7 +2,7 @@
 
 Critical words: numbers, dates, amounts, names, drug names, technical terms.
 This is the automatic labeller; test-set labels are PENDING_HUMAN review
-(see PENDING_HUMAN.md). Returns [start, end) spans over reference units.
+(see docs/PENDING_HUMAN.md). Returns [start, end) spans over reference units.
 """
 import os
 import re
