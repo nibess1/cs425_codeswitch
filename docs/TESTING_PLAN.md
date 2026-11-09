@@ -14,7 +14,7 @@ Tag for everything here: `results-human`. Nothing in `results-final`, `results-t
   `stress/sentences.tsv` is identical to the team's sentence lists (checked 120/120).
 
 ## 2. Pipeline (identical to the earlier experiments)
-Same as the synthetic stress set (D5, `scripts/queue_d5.sh`) and the main test sets:
+Same as the synthetic stress set (D5, `scripts/pipeline.sh stress_synth`; was `queue_d5.sh`, tag paper-final) and the main test sets:
 - `scripts/prepare_stress.py` (unchanged): mean to mono, librosa resample to 16 kHz, FLAC clips, manifest with
   `normalize()` references and `label()` main language. Set name `stress_test` (already in `csasr/data/manifest.py`).
 - No chunking or VAD (every clip < 30 s, one Whisper window), greedy decoding, `--lang free` (HF/CT2 restrict to
@@ -37,7 +37,7 @@ Same as the synthetic stress set (D5, `scripts/queue_d5.sh`) and the main test s
 That is 41 main decodes (+ H4). Each is 120 short clips, minutes per run.
 
 **GPU use.** `nvidia-smi` before launch and before each batch; only GPUs with no process and < 2 GB used
-(on 7 Nov: GPUs 5 and 7). Queue `scripts/queue_h.sh` in tmux session `h_human`, log `logs/queue_h_20261107.log`.
+(on 7 Nov: GPUs 5 and 7). Queue `scripts/queue_h.sh` (now `scripts/pipeline.sh stress_human`) in tmux session `h_human`, log `logs/queue_h_20261107.log`.
 
 ## 4. Outputs (all new files)
 | What | Where (smu2 `~/cs425-codeswitch-asr`) |
