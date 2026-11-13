@@ -31,7 +31,11 @@ EVAL_VAL = ["ascend_val", "nsc_val"]
 
 
 def path(p: str) -> str:
-    return p if os.path.isabs(p) else os.path.join(ROOT, p)
+    if os.path.isabs(p):
+        return p
+    if os.environ.get("CSASR_SAMPLE") and p.startswith("data/"):
+        return os.path.join(ROOT, "sample", p)  # small public sample (scripts/make_sample.py)
+    return os.path.join(ROOT, p)
 
 
 def load(name_or_path: str, limit: int | None = None) -> list[dict]:

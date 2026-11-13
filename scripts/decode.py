@@ -49,21 +49,23 @@ def main():
     name = a.out or f"{tag}__{a.precision}__{a.method}"
     out_path = manifest.path(f"preds/{name}.jsonl")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    torch.cuda.reset_peak_memory_stats()
+    cuda = torch.cuda.is_available()  # CPU fallback (fp32) for the sample on a laptop; too slow for full sets
+    if cuda:
+        torch.cuda.reset_peak_memory_stats()
     if a.adapter:
         from csasr.quant.qat import load_qlora_for_eval
         model = load_qlora_for_eval(a.model, a.adapter)
     else:
         model = load_model(manifest.path(a.model) if os.path.isdir(manifest.path(a.model)) else a.model,
-                           a.precision, skip_modules=a.skip_modules)
+                           a.precision, device="cuda" if cuda else "cpu", skip_modules=a.skip_modules)
     tok, fe = load_processor(a.processor or "small")  # all multilingual sizes share these
     meta = dict(model=tag, precision=a.precision, method=a.method, lang=a.lang, beams=a.beams,
                 footprint_mb=round(model.get_memory_footprint() / 2**20, 1),
-                gpu_alloc_after_load_mb=round(torch.cuda.memory_allocated() / 2**20, 1),
+                gpu_alloc_after_load_mb=round(torch.cuda.memory_allocated() / 2**20, 1) if cuda else None,
                 quantized_modules=quantized_modules(model) if ("bnb" in a.precision or a.adapter) else [],
                 adapter=a.adapter,
                 skip_modules=a.skip_modules or [], git=git_hash(), sets=a.sets)
-    dec = Decoder(model, tok, fe)
+    dec = Decoder(model, tok, fe, device="cuda" if cuda else "cpu")
     t0 = time.time()
     with open(out_path, "w", encoding="utf-8") as f:
         for s in a.sets:
@@ -77,7 +79,7 @@ def main():
                                         model=tag, precision=a.precision, method=a.method, ref=r["ref_raw"],
                                         hyp=hyp, lang_token=lang), ensure_ascii=False) + "\n")
             print(f"{name} {s}: {len(rows)} utts in {time.time() - ts:.0f}s", flush=True)
-    meta["peak_gpu_mb"] = round(torch.cuda.max_memory_allocated() / 2**20, 1)
+    meta["peak_gpu_mb"] = round(torch.cuda.max_memory_allocated() / 2**20, 1) if cuda else None
     meta["wall_s"] = round(time.time() - t0, 1)
     meta["quantized_modules_n"] = len(meta["quantized_modules"])
     json.dump(meta, open(out_path.replace(".jsonl", ".meta.json"), "w"), indent=1)
