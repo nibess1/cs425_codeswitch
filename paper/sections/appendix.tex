@@ -1,7 +1,7 @@
 \section{Additional Results}
 \label{sec:appendix}
 
-\subsection{Hyperparameter selection}
+\subsection{Hyperparameter selection}\label{app:grid}
 Grids were run on base and scored on pooled ASCEND + NSC validation (Table~\ref{tab:grid}). Role weights: lowest embedded error among runs whose MER is at most 1 point above plain fine-tuning. Semantic loss: lowest semantic MER among runs whose critical-word error does not rise.
 
 \begin{table}[h]
@@ -30,7 +30,7 @@ $\lambda{=}0.3, \rho_0{=}0.5$ & 29.44 & 33.06 & 26.59 & \\
 \label{tab:grid}
 \end{table}
 
-\subsection{Language-ID head}
+\subsection{Language-ID head}\label{app:lid}
 \begin{table}[h]
 \centering
 \small
@@ -40,9 +40,9 @@ $\lambda{=}0.3, \rho_0{=}0.5$ & 29.44 & 33.06 & 26.59 & \\
 \toprule
 Head & Accuracy (\%) & Boundary (ms) & Found (\%) \\
 \midrule
-shared (ft base) & 96.0 / 95.4 & 60 / 120 & 75 / 85 \\
-own, full base & 95.9 / 95.3 & 60 / 100 & 77 / 84 \\
-own, full small & 97.7 / 96.4 & 20 / 80 & 78 / 85 \\
+shared (base FT) & 96.0 / 95.4 & 60 / 120 & 75 / 85 \\
+own, base FT+L & 95.9 / 95.3 & 60 / 100 & 77 / 84 \\
+own, small FT+L & 97.7 / 96.4 & 20 / 80 & 78 / 85 \\
 \bottomrule
 \end{tabular}}
 \caption{Language-ID head on validation (ASCEND / NSC). Accuracy on speech frames; median distance from a true switch to the nearest predicted one; share of switches detected.}
@@ -50,13 +50,13 @@ own, full small & 97.7 / 96.4 & 20 / 80 & 78 / 85 \\
 \end{table}
 The model's own head gives the same re-ranking accuracy as the shared head; its benefit is speed, because it reuses the model's encoder pass.
 
-\subsection{Label agreement and the translation threshold}
+\subsection{Label agreement and the translation threshold}\label{app:labels}
 Two LLM annotators labelled each item independently, the second seeing only the written rubric. On 1{,}768 ASCEND pairs, agreement was 0.798 ($\kappa=0.62$) over three classes and 0.981 ($\kappa=0.84$) for translation vs.\ the rest. On 335 candidate critical-word types, agreement was 0.899 ($\kappa=0.77$); the rule tagger agreed less with either annotator ($\kappa=0.55$ and $0.47$), mostly because it has no named-entity component. Human audits of small samples agree less with these labels ($\kappa=0.15$ for translation labels, $n=26$; $\kappa=0.32$ for critical words, $n=50$; see Limitations); results table 20c lists every comparison with its interval. With $\tau$ between 0.6 and 0.7 the number of flagged translation occurrences changes by about $\pm$20\%, and translations remain a small share of embedded errors for every $\tau \le 0.7$.
 
-\subsection{Partner speech and alignment}
-In NSC Same Room recordings the partner's voice is sometimes audible. A signal rule (overlap with the partner's transcript, speaker-embedding similarity, and output words that appear in the partner's transcript) flags 1.75\% of Same Room and 0.15\% of Different Room test utterances. Removing them lowers Same Room MER by about one point for every fine-tuned model (full small: 20.65 $\rightarrow$ 19.71) and changes no conclusion. Forced-alignment boundaries are within a median of 10\,ms of known switches in FLEURS splices (87\% within 50\,ms) and a median of 73\,ms from Whisper's cross-attention times at real switches.
+\subsection{Partner speech and alignment}\label{app:partner}
+In NSC Same Room recordings the partner's voice is sometimes audible. A signal rule (overlap with the partner's transcript, speaker-embedding similarity, and output words that appear in the partner's transcript) flags 1.75\% of Same Room and 0.15\% of Different Room test utterances. Removing them lowers Same Room MER by about one point for every fine-tuned model (small FT+L: 20.65 $\rightarrow$ 19.71) and changes no conclusion. Forced-alignment boundaries are within a median of 10\,ms of known switches in FLEURS splices (87\% within 50\,ms) and a median of 73\,ms from Whisper's cross-attention times at real switches.
 
-\subsection{Training on Different Room audio}
+\subsection{Training on Different Room audio}\label{app:diffroom}
 \begin{table}[h]
 \centering
 \small
@@ -65,7 +65,7 @@ In NSC Same Room recordings the partner's voice is sometimes audible. A signal r
 \toprule
 NSC training data (40\,h) & Same test & Diff (held-out) \\
 \midrule
-Same Room (= ft base) & 28.4 & 21.6 \\
+Same Room (= base FT) & 28.4 & 21.6 \\
 Different Room & 32.3 & 23.6 \\
 20\,h Same + 20\,h Diff & 28.3 & 22.2 \\
 \bottomrule
@@ -75,7 +75,12 @@ Different Room & 32.3 & 23.6 \\
 \end{table}
 Training on Different Room audio does not help on Different Room test speech: training only on it is 2.0 points worse [0.4, 3.8] (Table~\ref{tab:diffroom}). The gap between the two rooms in Table~\ref{tab:main} is therefore not a mismatch between training and test conditions.
 
-\subsection{Transliteration penalty}
+\subsection{Transliteration penalty}\label{app:tl}
+To target transliterations directly, we added an extra cost to each candidate of the semantic loss:
+\begin{equation}
+  c_{\text{tl}}(y) = c(y) + \gamma\, N_{\text{tl}}(y),
+\end{equation}
+where $c(y)$ is the semantic cost (\S\ref{sec:methods}), $N_{\text{tl}}(y)$ is the number of embedded reference words that $y$ writes as a sound-alike in the other script (\S\ref{sec:data}), and $\gamma$ is the extra weight; $\gamma=0$ gives the semantic loss back. We tested it on base in two rounds: $\gamma \in \{0.5, 1\}$ at $\lambda=0.1$, then $\lambda \in \{0.4, 1\} \times \gamma \in \{0, 3\}$. Each round included a $\gamma=0$ retrain to measure run-to-run noise (the ``control'' rows of Table~\ref{tab:tl}). The penalty did not lower transliteration, MER or embedded error on any test set. Its gradient was about 1/130 of the role-weighted loss's, because it acts only when a sampled candidate contains a transliteration; raised to match the main loss ($\lambda=1$, $\gamma=3$), it still did not beat FT+L.
 \begin{table}[h]
 \centering
 \small
@@ -94,12 +99,82 @@ $\lambda{=}1$, $\gamma{=}0$ (control) & $-$0.12 & $-$0.06 & +0.16 & +0.39 & $-$0
 $\lambda{=}1$, $\gamma{=}3$ (chosen) & +0.12 & +0.26 & +0.19 & +0.26 & $-$0.04 & $-$0.27 \\
 \bottomrule
 \end{tabular}}
-\caption{Transliteration penalty on base: paired test differences vs.\ the full base system (points; negative = better). A = ASCEND, S = NSC Same Room, D = NSC Different Room. Bold: CI excludes 0. Embedded error changes are not significant for any penalised run.}
+\caption{Transliteration penalty on base: paired test differences vs.\ base FT+L (points; negative = better). A = ASCEND, S = NSC Same Room, D = NSC Different Room. Bold: CI excludes 0. Embedded error changes are not significant for any penalised run.}
 \label{tab:tl}
 \end{table}
-At $\lambda=0.1$, no $\gamma$ passed the validation rule (MER at most 0.5 points and critical-word error no higher than the full system), so small was not trained. In the second round the rule allowed critical-word error up to 1 point higher, the size of the first round's retrain noise; only $\lambda=1, \gamma=3$ qualified, although it had the highest validation transliteration rate.
+At $\lambda=0.1$, no $\gamma$ passed the validation rule (MER at most 0.5 points and critical-word error no higher than FT+L), so small was not trained. In the second round the rule allowed critical-word error up to 1 point higher, the size of the first round's retrain noise; only $\lambda=1, \gamma=3$ qualified, although it had the highest validation transliteration rate.
 
-\subsection{Synthetic stress set}
-We synthesised 120 code-switched sentences rich in critical words with CosyVoice~2 in four voices, clean and through a simulated phone channel (300--3400\,Hz, 8\,kHz, room reverberation, 20\,dB noise). The phone channel roughly doubles errors and embedded words suffer most (full small: MER 22.3\% clean, 36.8\% phone; embedded error 54.6\% and 74.5\%). Embedded error is high even on clean speech: the same sentences read by people give 15--27 points lower embedded error for every fine-tuned model (\S\ref{sec:human}), which confirms that the synthetic voices often mispronounce embedded words. This set therefore supports only relative comparisons.
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{verbatim}
+# 0. Environment: Python 3.11, one CUDA GPU (CPU formats need ctranslate2 and whisper.cpp)
+micromamba create -n cs425 -c conda-forge python=3.11 pip ffmpeg && micromamba activate cs425
+pip install -r requirements.txt && pip install -e . && pytest        # normaliser + scorer tests
+# 1. Pre-processing: 16 kHz mono FLAC clips + JSONL manifests in data/<corpus>/manifests/
+huggingface-cli download CAiRE/ASCEND --repo-type dataset --local-dir data/ascend/hf
+python scripts/prepare_ascend.py                       # official splits
+python scripts/fetch_nsc_dropbox.py fetch data/nsc_part4 -j 2 --only cs-chn && python scripts/prepare_nsc.py
+python scripts/prepare_fleurs.py                       # spliced clips for the language-ID head
+python scripts/prepare_stress.py                       # our recordings: data/stress/audio/<reader>/<id>.wav
+python scripts/align.py ascend_train nsc_train ascend_val nsc_val    # MMS word times
+# 2. Training (checkpoints in ckpt/<run>/best)
+python scripts/train.py configs/ft_base.yaml           # FT; also ft_tiny.yaml, ft_small.yaml
+python scripts/train.py configs/ft_base.yaml --run full_base --alpha 0.5 --beta 0.5 --lambda_sem 0.1 --rho0 0.5
+python scripts/train_lid.py --encoder ckpt/ft_base/best --run lid_ft_base
+python scripts/train.py configs/ft_base.yaml --run qat_full_base --model ckpt/full_base/best \
+       --lora true --lr 1e-4 --epochs 1 --warmup 100
+# 3. Testing (predictions in preds/<model>__<precision>__<method>.jsonl)
+python scripts/decode.py --model ckpt/full_base/best --model_tag full_base --precision nf4_bnb --method full
+python scripts/deploy_eval.py --model ckpt/full_base/best --tag full_base --method full \
+       --formats ct2_f32 ct2_int8 ggml_f16 ggml_q8_0 ggml_q4_0
+python scripts/sensitivity.py --model ckpt/full_base/best --tag full_base      # mixed-precision blocks
+python scripts/rerank.py --model ckpt/full_base/best --tag full_base --lid ckpt/lid_ft_base/head.pt --loop_filter
+# 4. Scoring and tables (results/tables/*.csv, results/figures/)
+python scripts/score.py full_base__fp16__full full_base__nf4_bnb__full     # all metrics, 95% CIs
+python scripts/score.py --fragility full_base__fp16__full full_base__nf4_bnb__full --set nsc_test --main en
+python scripts/make_results.py && python scripts/export_tables.py && python scripts/make_figures.py
+GPU=0 bash scripts/pipeline.sh stress_human && python scripts/make_human_tables.py   # phone recordings
+\end{verbatim}
+\vspace{-1em}
+\caption{Commands to pre-process the data, train, test and score (run from the repository root; GPU chosen with \texttt{CUDA\_VISIBLE\_DEVICES}). \texttt{scripts/pipeline.sh <stage>} chains these steps with the settings we used; \texttt{DRY=1} prints the commands.}
+\label{tab:commands}
+\end{table*}
+
+\subsection{Synthetic stress set}\label{app:synth}
+We synthesised 120 code-switched sentences rich in critical words with CosyVoice~2 in four voices, clean and through a simulated phone channel (300--3400\,Hz, 8\,kHz, room reverberation, 20\,dB noise). The phone channel roughly doubles errors and embedded words suffer most (small FT+L: MER 22.3\% clean, 36.8\% phone; embedded error 54.6\% and 74.5\%). Embedded error is high even on clean speech: the same sentences read by people give 15--27 points lower embedded error for every fine-tuned model (\S\ref{sec:rq3}), which confirms that the synthetic voices often mispronounce embedded words. This set therefore supports only relative comparisons.
+
+
+
+\subsection{Logistic regression for RQ1}\label{app:reg}
+To separate role from language, we fit
+\begin{equation}
+\begin{split}
+  \operatorname{logit} P(\text{err}) = {}& b_0 + b_{\text{emb}}\,\text{emb} + b_{\text{en}}\,\text{en} \\
+  &+ b_{\text{emb}\times\text{en}}\,\text{emb}\cdot\text{en} \\
+  &+ b_f \log f + b_d\, d + b_c\, \text{nsc},
+\end{split}
+\end{equation}
+where emb, en and nsc are 1 if the unit is embedded, is English, or comes from NSC (else 0); $f$ is the unit's frequency in the training data and $d$ its spoken duration; and each $b$ is a coefficient. It is fit on 46{,}916 units from 122 speakers, with CIs from a speaker bootstrap (Table~\ref{tab:reg}). $b_{\text{emb}}$ is the effect of being embedded for a Chinese character; for an English word it is $b_{\text{emb}} + b_{\text{emb}\times\text{en}}$.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+System & $b_{\text{emb}}$ & $b_{\text{emb}\times\text{en}}$ \\
+\midrule
+small, off-the-shelf & \textbf{0.94} & 0.09 \\
+base, off-the-shelf & \textbf{1.18} & 0.23 \\
+base, FT & 0.01 & \textbf{0.65} \\
+small, FT & $-$0.07 & \textbf{0.79} \\
+\bottomrule
+\end{tabular}
+\caption{Logistic-regression coefficients (log-odds). Bold: 95\% CI excludes 0.}
+\label{tab:reg}
+\end{table}
+
+\subsection{How to run}\label{app:run}
+Table~\ref{tab:commands} lists the commands, run from the root of \url{https://github.com/nibess1/cs425_codeswitch}. \emph{Pre-processing} turns each corpus into 16\,kHz FLAC clips and a JSONL manifest (raw and normalised reference, speaker, main language, duration). \emph{Training} reads a YAML config whose fields can be overridden on the command line (Table~\ref{tab:hparams}). \emph{Testing} decodes the test sets with a 16-bit, simulated 8/4-bit (bitsandbytes) or exported CPU model (CTranslate2, whisper.cpp) and writes one JSONL line per utterance. \emph{Scoring} (\texttt{score.py}) computes every metric of \S\ref{sec:task} with bootstrap intervals.
 
 

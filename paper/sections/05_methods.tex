@@ -1,34 +1,27 @@
 \section{Methods}
 \label{sec:methods}
 
-\paragraph{(a) Role-weighted loss.}
-Standard fine-tuning gives every output token the same cross-entropy loss. We give tokens of embedded units and of matrix units at a switch extra weight:
+We compare four kinds of system: \emph{off-the-shelf} Whisper; \emph{FT}, Whisper fine-tuned with the ordinary loss; \emph{FT+L}, fine-tuned with our two losses (a, b); and FT or FT+L with \emph{gated re-ranking} (c, d). The repairs (e) are applied to quantized FT and FT+L models.
+
+\paragraph{(a) Role-weighted loss (RQ2).}
+Ordinary fine-tuning gives every output token the same cross-entropy loss. We give tokens of embedded words, and of matrix words next to a switch, extra weight:
 \begin{equation}
   \mathcal{L}_{\text{role}} = -\sum_{t} \bigl(1 + \alpha\, e_t + \beta\, s_t\bigr) \log p_\phi(y_t \mid y_{<t}, x),
 \end{equation}
-where $y_t$ is the $t$-th reference token, $x$ the audio, $p_\phi$ the model's probability, $e_t$ and $s_t$ are 1 if token $t$ belongs to an embedded unit or to a matrix unit at a switch, and $\alpha$, $\beta$ are the extra weights ($\alpha=\beta=0$ is ordinary fine-tuning).
-Each token's role is found from the byte span it covers in the byte-level BPE vocabulary, which is exact even when one Chinese character is split across two tokens.
+where $y_t$ is the $t$-th reference token, $x$ the audio, $p_\phi$ the model's probability, $e_t$ and $s_t$ are 1 if token $t$ belongs to an embedded unit or to a matrix unit at a switch (else 0), and $\alpha$, $\beta$ are the extra weights ($\alpha=\beta=0$ is ordinary fine-tuning). A token's role is found from the bytes it covers, which is exact even when one Chinese character is split across two tokens.
 
-\paragraph{(b) Semantic minimum-risk loss.}
-Following minimum word error rate training~\citep{prabhavalkar2018mwer}, we build a set $\mathcal{C}$ of candidate transcripts for each clip and lower their expected cost:
+\paragraph{(b) Semantic minimum-risk loss (RQ2).}
+Following minimum word error rate training~\citep{prabhavalkar2018mwer}, we lower the expected cost over a set $\mathcal{C}$ of candidate transcripts for each clip:
 \begin{equation}
   \mathcal{L}_{\text{sem}} = \sum_{y \in \mathcal{C}} \hat{p}_\phi(y \mid x)\, c(y),
 \end{equation}
-where $\hat{p}_\phi(y \mid x)$ is the model's probability of candidate $y$, renormalised over $\mathcal{C}$, and the cost $c(y)$ counts its unit errors, except that a correct translation of a non-critical embedded word costs $\rho_0<1$ instead of 1; every inserted unit costs 1.
-Beam search alone returns near-identical candidates, so $\mathcal{C}$ pools beam-4 outputs under a forced \texttt{<|zh|>}, a forced \texttt{<|en|>} and a free language token, plus one candidate per embedded word in which that word is swapped for its dictionary translation. Candidates are regenerated with the current model on a sub-batch every four steps. The full training loss is $\mathcal{L} = \mathcal{L}_{\text{role}} + \lambda\, \mathcal{L}_{\text{sem}}$, where $\lambda$ sets the weight of the semantic term. We call fine-tuning with this loss the \emph{full system}.
+where $\hat{p}_\phi(y \mid x)$ is the model's probability of candidate $y$, renormalised over $\mathcal{C}$, and $c(y)$ counts its unit errors, except that a correct translation of a non-critical embedded word costs $\rho_0<1$ instead of 1. $\mathcal{C}$ pools beam-4 outputs under a forced Mandarin, a forced English and a free language token, plus one candidate per embedded word with that word swapped for its dictionary translation. Candidates are regenerated with the current model every four steps. The training loss of FT+L is $\mathcal{L} = \mathcal{L}_{\text{role}} + \lambda\, \mathcal{L}_{\text{sem}}$, where $\lambda$ weights the semantic term. We designed this loss expecting many translation errors; RQ1 shows they are rare, so in practice it acts as a sequence-level minimum-risk loss.
 
-\paragraph{(c) Language-ID head.}
-A two-layer classifier on Whisper's frozen encoder predicts English, Mandarin or non-speech for every 20\,ms frame. It is trained on ASCEND and NSC frames labelled by forced alignment, plus 6{,}000 FLEURS clips spliced from word-sized pieces (15.9\,h), including splices of one language between two speakers so that a change of speaker is not taken as a change of language. Predictions are smoothed with a 5-frame median filter and language runs shorter than 200\,ms are merged into their neighbours.
+\paragraph{(c) Language-ID head (RQ2).}
+A two-layer classifier on Whisper's frozen encoder labels every 20\,ms frame as English, Mandarin or non-speech. It is trained on ASCEND and NSC frames labelled by forced alignment, plus 6{,}000 FLEURS clips spliced from word-sized pieces (15.9\,h), some joining two speakers so that a change of speaker is not taken as a change of language. Output is smoothed with a 5-frame median filter, and language runs under 200\,ms are merged into their neighbours.
 
-\paragraph{(d) Re-ranking and gating.}
-For each clip we pool up to 12 candidates (beam 4 under each of the three language prefixes) and pick one by a weighted sum of three scores: Whisper's log-probability; an acoustic match score from the MMS CTC model on the romanised candidate; and the agreement between each word's language and the language-ID head's prediction over that word's frames. The weights are tuned on validation. The \emph{on-device} variant drops MMS, which is larger than Whisper small, and takes word times from Whisper's cross-attention. Candidates whose gzip compression ratio exceeds 2.4 (Whisper's own repetition check) are removed first. In the \emph{gated} version, a clip is re-ranked only when the language-ID head finds a run of the minority language of at least $\theta_{\text{gate}}$\,ms; otherwise the greedy output is kept.
+\paragraph{(d) Gated re-ranking (RQ2).}
+For each clip we pool up to 12 candidates (beam 4 under each of the three language tokens), drop those that repeat themselves (gzip compression ratio above 2.4, Whisper's own check), and pick one by a weighted sum of three scores: Whisper's log-probability, an acoustic match from the MMS model, and agreement between each word's language and the language-ID head over that word's frames. Weights are tuned on validation. The \emph{on-device} variant drops MMS, which is larger than Whisper small. \emph{Gating}: a clip is re-ranked only when the head hears at least $\theta_{\text{gate}}$\,ms of the minority language; otherwise the greedy output is kept.
 
-\paragraph{(e) Quantization repairs.}
-\emph{Mixed precision}: we quantize one Transformer block at a time to NF4, rank blocks by the KL divergence of the output distribution on embedded-word tokens, and keep the top $k$ blocks at 16-bit. \emph{Quantization-aware fine-tuning}: QLoRA~\citep{dettmers2023qlora} trains 16-bit low-rank adapters (rank 16, one epoch, learning rate $10^{-4}$) on top of the NF4 model with the model's own training loss; we evaluate the adapters both as they are and merged into the weights and re-quantized for whisper.cpp.
-
-\paragraph{(f) Transliteration penalty.}
-To target transliteration directly, we add an extra cost to each candidate:
-\begin{equation}
-  c_{\text{tl}}(y) = c(y) + \gamma\, N_{\text{tl}}(y),
-\end{equation}
-where $c(y)$ is the semantic cost above and $N_{\text{tl}}(y)$ is the number of embedded reference units that $y$ writes as a sound-alike in the other script (detector of \S\ref{sec:data}); a transliterated embedded unit thus costs $1+\gamma$ instead of 1, and $\gamma=0$ gives the semantic loss back.
+\paragraph{(e) Quantization repairs (RQ3).}
+\emph{Mixed precision}: we quantize one Transformer block at a time to NF4, rank blocks by how much the output on embedded-word tokens changes (KL divergence), and keep the top $k$ blocks at 16-bit. \emph{Quantization-aware fine-tuning}: QLoRA~\citep{dettmers2023qlora} trains 16-bit low-rank adapters on top of the NF4 model with the model's own loss. We test the adapters as they are, and merged into the weights and re-quantized for whisper.cpp. A further attempt, a direct penalty on transliterations, is described in Appendix~\ref{app:tl}.

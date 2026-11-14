@@ -1,60 +1,118 @@
 \section{RQ3: Quantization}
 \label{sec:rq3}
 
-
+\textbf{Answer: 8-bit is safe; 4-bit hurts embedded words more in tiny and base; our repairs work in NF4 but not in whisper.cpp's 4-bit format (H3 supported for tiny and base).}
 
 \begin{table}[t]
 \centering
 \small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{llcccc}
+\setlength{\tabcolsep}{2.6pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllccc}
 \toprule
-Model & Format & Slice & $\Delta_{\Emb}$ & $\Delta_M$ & $R$ \\
+Model & Format & Test set, main lang. & $\Delta_{\Emb}$ & $\Delta_M$ & $R$ \\
 \midrule
-ft tiny & NF4 & A, zh & +16.2 & +4.7 & 3.47 \\
-ft base & Q4\_0 & A, zh & +8.2 & +1.9 & 4.40 \\
-full base & Q4\_0 & A, zh & +7.1 & +2.3 & 3.07 \\
-full base & NF4 & N, en & +3.0 & +1.7 & 1.75 \\
-ft tiny & Q4\_0 & N, en & +8.9 & +6.4 & 1.40 \\
+tiny, FT & NF4 & ASCEND, Mandarin & +16.2 & +4.7 & 3.47 \\
+base, FT & Q4\_0 & ASCEND, Mandarin & +8.2 & +1.9 & 4.40 \\
+base, FT+L & Q4\_0 & ASCEND, Mandarin & +7.1 & +2.3 & 3.07 \\
+base, FT+L & NF4 & NSC Same, English & +3.0 & +1.7 & 1.75 \\
+tiny, FT & Q4\_0 & NSC Same, English & +8.9 & +6.4 & 1.40 \\
 \bottomrule
-\end{tabular}
-\caption{4-bit settings where $R$ is reportable and its 95\% CI excludes 1. Slice: A = ASCEND, N = NSC Same Room; zh / en = Mandarin-main (embedded English) / English-main (embedded Mandarin). $\Delta$ in points.}
+\end{tabular}}
+\caption{The five 4-bit settings whose 95\% CI of $R$ excludes 1, out of 20 reportable settings for tiny and base (FT and FT+L; NF4 and Q4\_0). $R>1$ in 14 of the 20 and the CI is below 1 in none. $\Delta$: change in error from the same backend's 16-bit run, in points; ``main lang.'' is the sentence's matrix language.}
 \label{tab:R}
 \end{table}
 
 \paragraph{8-bit is safe.}
-In every backend (LLM.int8, CTranslate2 int8, whisper.cpp Q8\_0) and model size, no 8-bit setting hurts embedded units more than matrix units: no 8-bit $R$ has an interval above 1, and the matrix change is mostly within noise.
+In every backend (LLM.int8, CTranslate2 int8, whisper.cpp Q8\_0) and model size, 8-bit causes no detectable extra harm to embedded words: no 8-bit $R$ has an interval above 1, and the matrix change is mostly within noise.
 
-\paragraph{4-bit hurts embedded units more in the smaller models.}
-For fine-tuned tiny and base, 4-bit quantization raises embedded error 1.4 to 4.4 times as much as matrix error (Table~\ref{tab:R}; e.g.\ ft tiny NF4 on ASCEND: $R=3.47$ [1.85, 6.13]). This happens for both embedded English (ASCEND) and embedded Mandarin (NSC), and in both NF4 and whisper.cpp Q4\_0. On the corpora small is robust (but see \S\ref{sec:human}): its errors change by about one point and $R$ is about 1 or not reportable. Our off-the-shelf pilot had suggested the opposite ($R \approx 0.6$), but that does not carry over to fine-tuned models. In our per-block scan, the first encoder layer is always the most sensitive block.
+\paragraph{4-bit hurts embedded words more in tiny and base.}
+For tiny and base, 4-bit raises embedded error 1.4 to 4.4 times as much as matrix error in the five settings where the interval of $R$ excludes 1 (Table~\ref{tab:R}; e.g.\ tiny FT in NF4 on ASCEND: $R=3.47$ [1.85, 6.13]). Across all 20 reportable tiny and base settings the direction is consistent: $R>1$ in 14 and significantly below 1 in none. This holds for embedded English (ASCEND) and embedded Mandarin (NSC), and in both NF4 and Q4\_0. Small is robust on the corpora: its errors change by about one point. In our per-block scan, the first encoder layer is always the most sensitive block.
 
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.2pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllcc}
+\toprule
+Repair & Model & Test set, main lang. & Loss & Rec [95\% CI] \\
+\midrule
+Mixed & base, FT & NSC Same, English & 2.5 & \textbf{0.86} [0.26, 2.99] \\
+ & base, FT & NSC Diff, English & 3.5 & $-$0.00 [$-$1.10, 0.34] \\
+ & tiny, FT & ASCEND, Mandarin & 16.2 & \textbf{0.65} [0.29, 0.91] \\
+ & tiny, FT & NSC Same, English & 11.2 & \textbf{0.77} [0.40, 1.05] \\
+ & tiny, FT & NSC Same, Mandarin & 17.3 & 0.33 [$-$1.12, 0.78] \\
+ & tiny, FT & NSC Diff, English & 6.4 & \textbf{0.80} [0.28, 1.02] \\
+ & base, FT+L & NSC Same, English & 3.0 & \textbf{0.70} [0.38, 1.04] \\
+ & base, FT+L & NSC Same, Mandarin & 2.6 & 0.10 [$-$1.55, 0.98] \\
+ & base, FT+L & NSC Diff, English & 2.2 & \textbf{0.48} [0.03, 0.90] \\
+\midrule
+QLoRA & base, FT & NSC Same, English & 2.5 & $-$0.30 [$-$3.64, 2.08] \\
+ & base, FT & NSC Diff, English & 3.5 & 0.65 [$-$0.75, 1.05] \\
+ & tiny, FT & ASCEND, Mandarin & 16.2 & \textbf{0.83} [0.57, 1.26] \\
+ & tiny, FT & NSC Same, English & 11.2 & \textbf{0.72} [0.46, 0.98] \\
+ & tiny, FT & NSC Same, Mandarin & 17.3 & \textbf{0.83} [0.39, 1.00] \\
+ & tiny, FT & NSC Diff, English & 6.4 & 0.47 [$-$1.03, 0.92] \\
+ & base, FT+L & NSC Same, English & 3.0 & \textbf{0.77} [0.54, 1.10] \\
+ & base, FT+L & NSC Same, Mandarin & 2.6 & 0.22 [$-$0.75, 0.75] \\
+ & base, FT+L & NSC Diff, English & 2.2 & 0.10 [$-$0.51, 0.47] \\
+\bottomrule
+\end{tabular}}
+\caption{Recovery of the NF4 embedded-error loss, for every slice where the loss (points) has a CI excluding 0. Mixed precision keeps 1 (base FT), 2 (tiny FT) or 3 (base FT+L) blocks at 16-bit. Bold: CI of Rec excludes 0. After merging and re-quantizing to whisper.cpp Q4\_0, no slice has a Rec CI above 0.}
+\label{tab:rec}
+\end{table}
 
-
+\paragraph{The repairs work in NF4 but not in the on-device format.}
+Keeping the two or three most sensitive blocks at 16-bit, or adding QLoRA adapters, recovers about half to four-fifths of the NF4 embedded-error loss where it helps (Table~\ref{tab:rec}). For tiny FT and base FT+L, the recovery interval excludes 0 in 9 of the 14 affected slices. QLoRA does not help base FT, whose loss is small. When the adapters are merged into the weights and the model is re-quantized to whisper.cpp Q4\_0, the recovery disappears: no slice has a Rec interval above 0 (for tiny FT on NSC Same Room, English-main: $-$0.12; base FT+L: 0.06). The adapters were trained against NF4's grid, not Q4\_0's block-wise one, and whisper.cpp cannot load mixed-precision files at all. For whisper.cpp the answer is Q8\_0, which changes embedded error by at most 1.2 points for any fine-tuned model.
 
 
 \begin{table}[t]
 \centering
 \small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{lllcc}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrr}
 \toprule
-Repair & Model & Slice & Loss & Rec \\
+ & \multicolumn{2}{c}{16-bit} & \multicolumn{3}{c}{$\Delta_{\Emb}$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Model & MER & \Emb{} & Q8\_0 & NF4 & Q4\_0 \\
 \midrule
-Mixed (2 blocks) & ft tiny & A, zh & 16.2 & \textbf{0.65} \\
- & ft tiny & N, en & 11.2 & \textbf{0.77} \\
-Mixed (3 blocks) & full base & N, en & 3.0 & \textbf{0.70} \\
- & full base & D, en & 2.2 & \textbf{0.48} \\
-QLoRA (NF4) & ft tiny & A, zh & 16.2 & \textbf{0.83} \\
- & ft tiny & N, en & 11.2 & \textbf{0.72} \\
- & full base & N, en & 3.0 & \textbf{0.77} \\
- & ft base & N, en & 2.5 & $-$0.30 \\
-QLoRA $\rightarrow$ Q4\_0 & ft tiny & N, en & 8.9 & $-$0.12 \\
- & full base & N, en & 3.3 & 0.06 \\
+small, off-the-shelf & 33.6 & 83.9 & & & \\
+tiny, FT & 34.6 & 70.5 & +0.9 & +17.7 & +5.1 \\
+base, FT & 23.0 & 49.7 & 0.0 & +5.5 & \textbf{+8.9} \\
+base, FT+L & 24.4 & 50.7 & $-$0.4 & \textbf{+8.6} & \textbf{+7.2} \\
+small, FT & 14.3 & 31.4 & $-$0.1 & +4.1 & $-$1.2 \\
+small, FT+L & 13.4 & 27.8 & +1.3 & \textbf{+7.6} & +1.1 \\
 \bottomrule
 \end{tabular}
-\caption{Recovery of the 4-bit embedded-error loss (points). D = NSC Different Room. Bold: CI of Rec excludes 0. QLoRA $\rightarrow$ Q4\_0: adapters merged and re-quantized for whisper.cpp.}
-\label{tab:rec}
+\caption{Our phone recordings (120 utterances, 3 readers). Error (\%) at 16-bit, and change in embedded error (points) to whisper.cpp Q8\_0, NF4 and whisper.cpp Q4\_0, each against its own backend's 16-bit run. Bold: 95\% CI excludes 0 (utterance bootstrap; optimistic with 3 readers).}
+\label{tab:human}
 \end{table}
 
-\paragraph{Repairs work for NF4 but not for the deployed format.}
-Keeping the two or three most sensitive blocks at 16-bit, or adding QLoRA adapters, recovers about half to nine-tenths of the NF4 embedded-error loss for tiny and full base (Table~\ref{tab:rec}); QLoRA does not help fine-tuned base, whose loss is small. When the QLoRA adapters are merged into the weights and the model is re-quantized to whisper.cpp Q4\_0, the recovery disappears: no slice has a Rec interval above 0, and for tiny on the Different Room test the merged model is slightly worse than plain Q4\_0. The adapters were trained against NF4's grid, not Q4\_0's block-wise one, and whisper.cpp cannot load mixed-precision files at all. In practice the answer for whisper.cpp is Q8\_0, which is as fast as Q4\_0 on our laptop (\S\ref{sec:deploy}) and changes embedded error by at most 1.2 points for any fine-tuned model.
+\paragraph{On our phone recordings, 4-bit also hurts embedded words.}
+8-bit again causes no detectable change: no 8-bit interval excludes 0 (Table~\ref{tab:human}), though with 227 embedded words the intervals reach up to about 4 points either side. At 4-bit, embedded error rises by 7--9 points for both base models (base FT, Q4\_0: +8.9 [2.9, 15.4]) and for small FT+L in NF4 (+7.6 [2.6, 13.3]), one of the four small-model 4-bit settings, while matrix error mostly does not change measurably (small FT+L: $-$1.4 [$-$3.1, 0.3]). So $R$ is mostly not reportable here. Tiny is dominated by repetition loops on single clips, so we draw no conclusion for it. These intervals are optimistic: there are three readers, and reader, phone and sentence are confounded.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Format & File & RSS & RTF & MER \\
+\midrule
+tiny, FT & Q8\_0 & 42 & 135 & 0.086 & 31.6 \\
+base, FT+L & Q8\_0 & 78 & 196 & 0.176 & 25.8 \\
+base, FT+L & Q4\_0 & 44 & 161 & 0.172 & 28.7 \\
+base, FT+L & F16 & 141 & 261 & 0.336 & 25.7 \\
+small, FT+L & Q8\_0 & 252 & 427 & 0.573 & 20.3 \\
+small, FT+L & Q4\_0 & 139 & 315 & 0.584 & 21.0 \\
+small, FT+L & CT2 int8 & 238 & 839 & 0.742 & 21.1 \\
+small, FT+L & F16 & 465 & 650 & 1.299 & 20.3 \\
+\bottomrule
+\end{tabular}
+\caption{Cost on a MacBook Pro (M2 Pro, 4 threads). File size and peak memory (RSS) in MB; RTF = processing time / audio time (below 1 is faster than real time); MER (\%) on the NSC Same Room CPU subset. Formats are whisper.cpp unless marked CT2 (CTranslate2).}
+\label{tab:speed}
+\end{table}
+
+\paragraph{Cost on a laptop.}
+whisper.cpp Q8\_0 is as fast as Q4\_0, as accurate as F16 and about half its size (Table~\ref{tab:speed}): small FT+L is a 252\,MB file with RTF 0.57 and 20.3\% MER. The language-ID head raises base's RTF from 0.21 to 0.30 (CTranslate2). Re-ranking every clip raises it to 1.76; with gating, which re-ranks about a quarter of clips, we estimate about 0.7 but did not measure it.

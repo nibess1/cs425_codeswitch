@@ -11,14 +11,14 @@
 System & MER & \Emb & MER & \Emb & MER & \Emb \\
 \midrule
 small, off-the-shelf & 26.3 & 56.8 & 55.1 & 76.7 & 48.8 & 72.7 \\
-tiny, fine-tuned & 26.1 & 53.2 & 34.5 & 36.2 & 26.8 & 29.8 \\
-base, fine-tuned & 21.3 & 55.3 & 28.4 & 31.0 & 22.4 & 24.0 \\
-small, fine-tuned & 14.8 & 30.6 & 21.4 & 23.8 & 19.0 & 22.9 \\
-base, full system & 20.3 & 39.2 & 26.1 & 27.4 & 21.1 & 22.5 \\
-small, full system & \textbf{14.6} & \textbf{29.8} & \textbf{20.6} & \textbf{21.3} & \textbf{17.1} & \textbf{18.7} \\
+tiny, FT & 26.1 & 53.2 & 34.5 & 36.2 & 26.8 & 29.8 \\
+base, FT & 21.3 & 55.3 & 28.4 & 31.0 & 22.4 & 24.0 \\
+small, FT & 14.8 & 30.6 & 21.4 & 23.8 & 19.0 & 22.9 \\
+base, FT+L & 20.3 & 39.2 & 26.1 & 27.4 & 21.1 & 22.5 \\
+small, FT+L & \textbf{14.6} & \textbf{29.8} & \textbf{20.6} & \textbf{21.3} & \textbf{17.1} & \textbf{18.7} \\
 \bottomrule
 \end{tabular}
-\caption{Test error (\%) at 16-bit, greedy decoding. \Emb: embedded-unit error. Full system = fine-tuning with $\mathcal{L}_{\text{role}} + \lambda\mathcal{L}_{\text{sem}}$. Speaker-cluster 95\% CIs for small, full system: NSC Same Room MER [18.6, 23.4], Different Room [15.7, 18.6].}
+\caption{Test error (\%) at 16-bit, greedy decoding. \Emb: embedded-word error. FT = ordinary fine-tuning; FT+L = fine-tuning with $\mathcal{L}_{\text{role}} + \lambda\mathcal{L}_{\text{sem}}$. Speaker-cluster 95\% CIs for small, FT+L: NSC Same Room MER [18.6, 23.4], Different Room [15.7, 18.6].}
 \label{tab:main}
 \end{table*}
 
@@ -26,36 +26,35 @@ small, full system & \textbf{14.6} & \textbf{29.8} & \textbf{20.6} & \textbf{21.
 \centering
 \small
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{llcccccc}
+\begin{tabular}{p{2mm}lcccccc}
 \toprule
  & & \multicolumn{2}{c}{ASCEND} & \multicolumn{2}{c}{NSC Same Room} & \multicolumn{2}{c}{NSC Different Room} \\
 \cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
-Compared with & System & MER & \Emb & MER & \Emb & MER & \Emb \\
+\multicolumn{2}{l}{System} & MER & \Emb & MER & \Emb & MER & \Emb \\
 \midrule
-\multirow{5}{*}{plain fine-tuning}
- & base + role-weighted & $-$0.7 & $-$14.6 & $-$0.6 & \textbf{$-$2.7} & $-$0.6 & \textbf{$-$0.9} \\
- & base + semantic only & $-$1.2 & $-$14.6 & \textbf{$-$1.3} & $-$1.7 & \textbf{$-$1.1} & $-$0.4 \\
- & base, full system & $-$1.0 & $-$16.1 & \textbf{$-$2.3} & \textbf{$-$3.6} & \textbf{$-$1.3} & \textbf{$-$1.4} \\
- & small + role-weighted & \textbf{$-$0.5} & $-$2.3 & +0.1 & $-$1.1 & $-$0.9 & $-$3.3 \\
- & small, full system & $-$0.1 & $-$0.8 & \textbf{$-$0.7} & \textbf{$-$2.4} & \textbf{$-$1.9} & \textbf{$-$4.2} \\
+\multicolumn{8}{l}{\emph{(a) Our losses vs.\ ordinary fine-tuning (FT) of the same size}} \\
+ & base, role-weighted only & $-$0.7 & $-$14.6 & $-$0.6 & \textbf{$-$2.7} & $-$0.6 & \textbf{$-$0.9} \\
+ & base, semantic only & $-$1.2 & $-$14.6 & \textbf{$-$1.3} & $-$1.7 & \textbf{$-$1.1} & $-$0.4 \\
+ & base, FT+L (both) & $-$1.0 & $-$16.1 & \textbf{$-$2.3} & \textbf{$-$3.6} & \textbf{$-$1.3} & \textbf{$-$1.4} \\
+ & small, role-weighted only & \textbf{$-$0.5} & $-$2.3 & +0.1 & $-$1.1 & $-$0.9 & $-$3.3 \\
+ & small, FT+L (both) & $-$0.1 & $-$0.8 & \textbf{$-$0.7} & \textbf{$-$2.4} & \textbf{$-$1.9} & \textbf{$-$4.2} \\
 \midrule
-\multirow{2}{*}{own greedy output}
- & base full + gated re-ranking & \textbf{$-$0.7} & \textbf{$-$5.4} & \textbf{$-$0.4} & $-$0.4 & \textbf{$-$0.3} & $-$0.7 \\
- & small full + gated re-ranking & \textbf{$-$0.5} & \textbf{$-$3.9} & $-$0.1 & +0.2 & +0.1 & $-$0.1 \\
+\multicolumn{8}{l}{\emph{(b) On-device gated re-ranking vs.\ the same model's greedy output}} \\
+ & base, FT+L & \textbf{$-$0.7} & \textbf{$-$5.4} & \textbf{$-$0.4} & $-$0.4 & \textbf{$-$0.3} & $-$0.7 \\
+ & small, FT+L & \textbf{$-$0.5} & \textbf{$-$3.9} & $-$0.1 & +0.2 & +0.1 & $-$0.1 \\
 \bottomrule
 \end{tabular}}
-\caption{Paired differences in points (negative = better). Top: each method vs.\ plain fine-tuning of the same size. Bottom: on-device gated re-ranking vs.\ the same model's greedy output. Bold: 95\% CI of the difference excludes 0.}
+\caption{Paired differences in points (negative = better). The two panels use different baselines. Bold: 95\% CI of the difference excludes 0.}
 \label{tab:deltas}
 \end{table*}
 
+\textbf{Answer: yes, but the gains are small; they are reliable on NSC and within noise on ASCEND (H2 partly supported).}
+
 \paragraph{Fine-tuning matters most.}
-Fine-tuning on ASCEND and NSC brings the largest gain, most of all on NSC, where off-the-shelf small reaches 55.1\% MER and fine-tuned small 21.4\% (Table~\ref{tab:main}). Forcing the wrong language token is harmful: off-the-shelf small with a forced \texttt{<|zh|>} token reaches 104.5\% MER on NSC because it inserts text.
+Fine-tuning on ASCEND and NSC brings by far the largest gain, most of all on NSC, where off-the-shelf small has 55.1\% MER and small FT 21.4\% (Table~\ref{tab:main}).
 
-\paragraph{The losses help on NSC.}
-Both losses lower embedded-unit error, and combining them works best (Table~\ref{tab:deltas}, top). The full system is significantly better than plain fine-tuning on both NSC test sets for base and small, in both MER and embedded error, and its critical-word error does not rise. On ASCEND the changes are mostly within noise (two test speakers, and a few long insertion runs widen the intervals). Because so few errors are translations (\S\ref{sec:rq1}), MER with partial credit for translations is almost equal to MER, so the semantic loss acts mainly as a sequence-level minimum-risk loss.
+\paragraph{Our losses help on NSC.}
+Both losses lower embedded error, and together they work best (Table~\ref{tab:deltas}a). FT+L is significantly better than FT on both NSC test sets, for base and small, in both MER and embedded error, and its critical-word error does not rise. These gains (0.7--2.3 MER points) are larger than the 0.2 points by which a retrain of the same system moved. On ASCEND the changes are mostly within noise: there are only two test speakers, and a few long runs of repeated text dominate the embedded error. On our phone recordings, FT+L and FT are within noise of each other (small, embedded: $-$3.6 [$-$10.0, 2.7]). A direct penalty on transliterations did not help (Appendix~\ref{app:tl}).
 
-\paragraph{A direct transliteration penalty does not help.}
-Adding the penalty (f) to the full base system did not lower transliteration, MER or embedded error on any test set (Table~\ref{tab:tl} in the appendix). Its gradient was about 1/130 of the role-weighted loss's, because it acts only when a sampled candidate contains a transliteration; raised to match the main loss ($\lambda=1$, $\gamma=3$), it still did not beat the full system.
-
-\paragraph{Re-ranking helps Mandarin-main speech, if it is gated.}
-Re-ranking every clip lowers embedded error on Mandarin-main ASCEND (full base, on-device: $-4.3$ points) but raises MER on English-main NSC (full base, Different Room: $+0.5$; full small, Same Room: $+0.8$). Without the repetition filter, loops win the length-normalised score (plain fine-tuned base: 60.9\% MER on NSC Same Room vs.\ 28.4\% greedy), and the MMS score favours candidates that insert text. Gating fixes the problem (Table~\ref{tab:deltas}, bottom): re-ranking only the 25--28\% of clips where the language-ID head finds a switch is never significantly worse than greedy decoding, and for full base it is significantly better on all three, while keeping most of the ASCEND embedded-error gain. The head labels 95--98\% of speech frames correctly (Appendix~\ref{sec:appendix}).
+\paragraph{Re-ranking helps only when gated.}
+Re-ranking every clip lowers embedded error on Mandarin-main ASCEND (base FT+L, on-device: $-4.3$ points) but raises MER on English-main NSC (base FT+L, Different Room: $+0.5$; small FT+L, Same Room: $+0.8$). Gating fixes this (Table~\ref{tab:deltas}b). Only the 25--28\% of clips where the language-ID head hears a switch are re-ranked. The result is never significantly worse than greedy decoding, and for base FT+L it is significantly better on all three test sets in MER. Without the repetition filter, re-ranking fails badly, because candidates that repeat themselves win the length-normalised score. The head labels 95--98\% of speech frames correctly (Appendix~\ref{app:lid}).

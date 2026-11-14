@@ -1,6 +1,12 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-Embedded words fail more often than the same words in the matrix language; fine-tuning closes this gap for embedded Mandarin but not English, and the remaining errors are rarely translations (many look like transliterations, though our automatic count is likely high). Role-weighted and semantic losses give small but reliable gains, and language-ID re-ranking helps only when gated. 8-bit quantization is safe; 4-bit hurts embedded words more than the rest, in tiny and base on the corpora and, on our phone recordings, even in small, and our repairs do not transfer to the deployed format. On device, 8-bit is the safe default.
+One overall error rate hides how speech recognisers treat the words that carry the meaning in code-switched speech. Splitting errors by role answers our three questions:
+\begin{itemize}
+  \item \textbf{H1, supported.} Embedded words fail more often than the same words in the matrix language. Fine-tuning closes this gap for embedded Mandarin but not for embedded English. Errors are rarely translations.
+  \item \textbf{H2, partly supported.} Our two losses and gated language-ID re-ranking give small but reliable gains on NSC; on ASCEND and our recordings they are within noise.
+  \item \textbf{H3, supported for tiny and base.} 4-bit hurts embedded words more than other words; our repairs work in NF4 but not in whisper.cpp's 4-bit format.
+\end{itemize}
+\textbf{Recommendation:} on device, use 8-bit. It caused no detectable harm in any backend, and in whisper.cpp it is as fast as 4-bit.
 
-Future work: more speakers and unprompted switching; losses that act on every embedded word against transliteration rather than on whole candidates; and repairs trained on the deployed format's own grid.
+Future work: more speakers and unprompted switching; losses that act on every embedded word rather than on whole candidates; and repairs trained on the deployed format's own grid.

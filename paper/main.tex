@@ -21,6 +21,10 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{xcolor}
+\usepackage{enumitem}
+\setlist[itemize]{nosep,leftmargin=*,topsep=2pt}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
 
 \graphicspath{{figures/}}
 
@@ -29,7 +33,6 @@
 \newcommand{\Ms}{M\textsubscript{s}}   % matrix unit at a switch
 \newcommand{\Mi}{M\textsubscript{i}}   % matrix unit elsewhere
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
-\newcommand{\src}[1]{\textcolor{gray}{\footnotesize[source: #1]}}  % remove before submission
 
 \title{Robust and Compact Recognition of Code-Switched Speech}
 
@@ -46,16 +49,14 @@
 \input{sections/04_data}
 \input{sections/05_methods}
 \input{sections/06_setup}
-\input{sections/06b_running}
 \input{sections/07_rq1}
 \input{sections/08_rq2}
 \input{sections/09_rq3}
-\input{sections/09b_human}
-\input{sections/09c_examples_table}
-\input{sections/10_deployment}
+\input{sections/10_examples}
+\input{sections/10b_applications}
 \input{sections/11_conclusion}
 
-% ---- Not counted towards the 8-page limit ----
+\input{sections/14_contributions}
 \input{sections/12_limitations}
 \input{sections/13_ethics}
 

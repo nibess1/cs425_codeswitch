@@ -4,7 +4,7 @@
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{*{4}{>{\raggedright\arraybackslash}p{0.235\textwidth}}}
 \toprule
-Reference (what was said) & Off-the-shelf small, 16-bit & Full small, 16-bit & Full small, NF4 \\
+Reference (what was said) & Small, off-the-shelf, 16-bit & Small FT+L, 16-bit & Small FT+L, NF4 \\
 \midrule
 \zh{我\hspace{0pt}们\hspace{0pt}约\hspace{0pt}了} polyclinic \zh{下\hspace{0pt}午\hspace{0pt}三\hspace{0pt}点\hspace{0pt}半} & \zh{我\hspace{0pt}們\hspace{0pt}約\hspace{0pt}了}POLI\-TIC\-NIC\zh{下\hspace{0pt}午}3\zh{點\hspace{0pt}半} \textsuperscript{1} & \zh{我\hspace{0pt}们\hspace{0pt}约\hspace{0pt}了} polytechnic \zh{下\hspace{0pt}午} 3 \zh{点\hspace{0pt}半} \textsuperscript{1} & \zh{我\hspace{0pt}们\hspace{0pt}圆\hspace{0pt}了} polytechnic \zh{下\hspace{0pt}午} 3 \zh{点\hspace{0pt}半} \textsuperscript{1} \\
 \zh{护\hspace{0pt}士\hspace{0pt}说} vaccine \zh{打\hspace{0pt}完\hspace{0pt}要\hspace{0pt}等\hspace{0pt}十\hspace{0pt}五\hspace{0pt}分\hspace{0pt}钟} & \zh{護\hspace{0pt}士\hspace{0pt}說}, vaccine \zh{打\hspace{0pt}完\hspace{0pt}要\hspace{0pt}等} 15 \zh{分\hspace{0pt}鐘} \textsuperscript{0} & \zh{抢\hspace{0pt}了} 15 \zh{分\hspace{0pt}钟\hspace{0pt}抢\hspace{0pt}了} 15 \zh{分\hspace{0pt}钟} \textsuperscript{1} & \zh{忽\hspace{0pt}视\hspace{0pt}说} vaccine \zh{打\hspace{0pt}完\hspace{0pt}要\hspace{0pt}等} 15 \zh{分\hspace{0pt}钟} \textsuperscript{0} \\
@@ -25,6 +25,6 @@ the \zh{贷\hspace{0pt}款} has twelve monthly payments & The Taekwun has 12 mon
 the \zh{期\hspace{0pt}末\hspace{0pt}考} starts on the first of December & The team who caused that on the 1st of December \textsuperscript{3} & the \zh{齐\hspace{0pt}木\hspace{0pt}考} starts on the first of december \textsuperscript{2} & the \zh{起\hspace{0pt}目\hspace{0pt}靠} start on the first of december \textsuperscript{3} \\
 \bottomrule
 \end{tabular}
-\caption{Sixteen human stress recordings drawn at random (seed 425; top: Mandarin-main, bottom: English-main) and the raw outputs of three systems. Superscript: number of embedded units the system got wrong in that clip. Off-the-shelf Whisper often writes Traditional characters, which the normaliser maps to Simplified before scoring.}
+\caption{Sixteen of our phone recordings drawn at random (seed 425; top: Mandarin-main, bottom: English-main) and the raw outputs of three systems. Superscript: number of embedded words the system got wrong in that clip. Off-the-shelf Whisper often writes Traditional characters, which the normaliser maps to Simplified before scoring.}
 \label{tab:examples}
 \end{table*}

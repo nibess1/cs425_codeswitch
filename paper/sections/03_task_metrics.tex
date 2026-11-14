@@ -1,29 +1,59 @@
 \section{Task and Metrics}
 \label{sec:task}
 
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  w/.style={draw, rounded corners=1pt, inner sep=2pt, minimum height=4.4mm},
+  box/.style={draw, rounded corners=2pt, align=center, inner sep=2pt, minimum height=7.5mm, text width=#1},
+  arr/.style={-{Stealth[length=1.5mm]}, thick}]
+  \node[anchor=west, font=\scriptsize\bfseries] (ta) at (0,0) {(a) Roles in one sentence};
+  \node[w, fill=gray!8, below right=1.5mm and 4mm of ta.south west, anchor=north west] (mi) {\zh{我明天要}};
+  \node[w, fill=gray!30, right=0.8mm of mi] (ms1) {\zh{交}};
+  \node[w, fill=black!70, text=white, font=\scriptsize\bfseries, right=0.8mm of ms1] (e) {assignment};
+  \node[w, fill=gray!30, right=0.8mm of e] (ms2) {\zh{啦}};
+  \node[below=0.1mm of mi] {\Mi};
+  \node[below=0.1mm of ms1] {\Ms};
+  \node[below=0.1mm of e] {\Emb};
+  \node[below=0.1mm of ms2] {\Ms};
+  \node[anchor=west, font=\scriptsize\bfseries] (tb) at (0,-1.45) {(b) What we test};
+  \node[box=9mm, below right=1.5mm and 0mm of tb.south west, anchor=north west] (aud) {Audio};
+  \node[box=19mm, right=3.5mm of aud] (wh) {Whisper\\FT or FT+L};
+  \node[box=17mm, right=3.5mm of wh] (rr) {Gated\\re-ranking};
+  \node[box=17mm, below=3.5mm of rr] (sc) {Error by role\\\Emb{} / \Ms{} / \Mi};
+  \node[box=19mm, dashed, below=3.5mm of wh] (q) {8- or 4-bit\\for the device};
+  \draw[arr] (aud) -- (wh);
+  \draw[arr] (wh) -- (rr);
+  \draw[arr] (rr) -- (sc);
+  \draw[arr, dashed] (wh) -- (q);
+  \draw[arr, dashed] (q) -- (sc);
+\end{tikzpicture}
+\caption{(a) Every unit gets a role: embedded (\Emb), matrix next to a switch (\Ms) or other matrix (\Mi). (b) Fine-tuned Whisper (RQ1--2), gated re-ranking (RQ2) and quantized models (RQ3) are all scored by role.}
+\label{fig:overview}
+\end{figure}
+
 \paragraph{Units and roles.}
-A shared text normaliser turns every reference and hypothesis into \emph{units}: one Chinese character, one English word or one digit string. The \emph{matrix} language of a sentence is the language with more words once the Chinese part is segmented into words; sentences with a tie are \emph{balanced} and count towards the overall error rate only. Every unit gets one of three roles that do not overlap: \emph{embedded} (\Emb), a unit in the non-matrix language; \emph{matrix at a switch} (\Ms), a matrix unit directly before or after a change of language; and \emph{matrix elsewhere} (\Mi). In ``\zh{我明天要交} assignment \zh{啦}'', ``assignment'' is \Emb, \zh{交} and \zh{啦} are \Ms{} and \zh{我明天要} are \Mi.
+A shared text normaliser turns every reference and output into \emph{units}: one Chinese character, one English word or one digit string. The matrix language of a sentence is the one with more words, after segmenting the Chinese part into words; sentences with a tie count towards the overall error rate only. Each unit gets one role (Figure~\ref{fig:overview}a): \emph{embedded} (\Emb), a unit in the other language; \emph{matrix at a switch} (\Ms), a matrix unit directly before or after a language change; or \emph{matrix elsewhere} (\Mi). In the text we call embedded units \emph{embedded words}.
 
 \paragraph{Error rates.}
 The mixed error rate is
 \begin{equation}
   \text{MER} = \frac{S + D + I}{N},
 \end{equation}
-where $S$, $D$ and $I$ are the numbers of substituted, deleted and inserted units in the best alignment of hypothesis and reference, and $N$ is the number of reference units.
-To give each error a role, a second alignment pass charges every block of errors, including its insertions, to the reference units it covers. The error rate of a role is then the errors charged to that role divided by its number of units; because insertions are included, it can exceed 100\%. We also report the \emph{critical-word error rate} (CWER), the share of critical words (numbers, dates, names, places, course codes) not reproduced exactly; the \emph{translation rate}, the share of embedded units replaced by their translation; and the \emph{transliteration rate}, the share replaced by a sound-alike in the other script (\S\ref{sec:data}).
+where $S$, $D$ and $I$ are the numbers of substituted, deleted and inserted units in the best alignment of output and reference, and $N$ is the number of reference units.
+A second alignment pass charges each block of errors, including its insertions, to the reference units it covers. The error rate of a role is the errors charged to it divided by its number of units, so it can exceed 100\%. We also report the \emph{critical-word error rate} (CWER), the share of names, numbers, dates, places and course codes not reproduced exactly.
 
 \paragraph{Fragility and recovery.}
-To ask whether quantization hurts embedded units more than matrix units, we compute on code-switched utterances
+To ask whether quantization hurts embedded words more than matrix words, we compute on code-switched utterances
 \begin{equation}
   R = \frac{\Delta_{\Emb}}{\Delta_{M}},
 \end{equation}
-where $\Delta_{\Emb}$ is the change in embedded-unit error (points) from the 16-bit to the quantized model and $\Delta_{M}$ the same change for matrix units (\Ms{} and \Mi{} together).
-$R>1$ means quantization hurts embedded units more. $R$ is reported only when the confidence interval of $\Delta_M$ excludes 0; otherwise the ratio is unstable and we report the two changes. Each quantized model is compared with a 16-bit run of the \emph{same} backend, so that differences between decoders are not credited to quantization. For a repair applied to a quantized model, the recovery is
+where $\Delta_{\Emb}$ is the change in embedded error (points) from the 16-bit model to the quantized one, and $\Delta_{M}$ the same change for matrix units (\Ms{} and \Mi{} together). $R>1$ means quantization hurts embedded words more. Each quantized model is compared with a 16-bit run of the \emph{same} backend. $R$ is reported only when the interval of $\Delta_M$ excludes 0, since otherwise the ratio is unstable. For a repair applied to a quantized model,
 \begin{equation}
   \text{Rec} = \frac{E_{q} - E_{q,\text{fix}}}{E_{q} - E_{16}},
 \end{equation}
-where $E_{16}$, $E_{q}$ and $E_{q,\text{fix}}$ are the embedded-unit errors of the 16-bit model, the quantized model and the quantized model with the repair.
-$\text{Rec}=1$ means the repair removes the whole quantization loss and $0$ means it does not help. Rec is reported only where the quantization loss $E_q - E_{16}$ has a confidence interval excluding 0.
+where $E_{16}$, $E_{q}$ and $E_{q,\text{fix}}$ are the embedded errors of the 16-bit model, the quantized model, and the quantized model with the repair. $\text{Rec}=1$ means the whole quantization loss is removed and $0$ that nothing is. Rec is reported only where the loss $E_q - E_{16}$ has an interval excluding 0.
 
 \paragraph{Confidence intervals.}
-All intervals are 95\% bootstrap intervals over 1{,}000 resamples, paired when comparing two systems on the same utterances. For NSC we also resample whole speakers (speaker-cluster bootstrap), which gives wider intervals; these are the ones we quote for NSC claims. ASCEND test has only two speakers, so its utterance-level intervals are optimistic.
+All intervals are 95\% bootstrap intervals over 1{,}000 resamples, paired when two systems are compared. For NSC we resample whole speakers, which gives wider intervals; these are the ones we quote. ASCEND test has only two speakers, so its utterance-level intervals are optimistic.

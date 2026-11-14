@@ -1,0 +1,6 @@
+\section{Example Outputs}
+\label{sec:examples}
+
+Table~\ref{tab:examples} shows 16 of our phone recordings drawn at random. Off-the-shelf small keeps most embedded English in Mandarin-main sentences (insulin, module, release) but loses embedded Mandarin in English-main ones, writing it as English sound-alikes (\zh{身份证}$\rightarrow$``shuffling jump'', \zh{贷款}$\rightarrow$``Taekwun''). Small FT+L fixes most of these but still fails on rare terms (\zh{布洛芬}$\rightarrow$\zh{不落分}, \zh{会议室}$\rightarrow$``hui yi shah'', prednisolone, polyclinic$\rightarrow$polytechnic), and once repeats a phrase instead of the sentence. In NF4 most outputs are unchanged; it adds errors on \zh{身份证} (written \zh{身分证}) and \zh{期末考}, and happens to avoid the repeated phrase.
+
+\input{sections/09c_examples_table}
